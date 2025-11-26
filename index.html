@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container glass-panel">
+        <header>
+            <h1 id="app-title">Quiz App</h1>
+        </header>
+
+        <main>
+            <!-- Subject Selection Screen -->
+            <div id="subject-selection-screen" class="screen active">
+                <h2>Scegli la Materia</h2>
+                <div class="subject-grid">
+                    <button class="btn subject-btn" data-subject="ps">Legislazione P.S.</button>
+                    <button class="btn subject-btn" data-subject="costituzionale">Diritto Costituzionale</button>
+                    <button class="btn subject-btn" data-subject="penale">Diritto Penale</button>
+                    <button class="btn subject-btn" data-subject="procedura">Procedura Penale</button>
+                    <button class="btn subject-btn" data-subject="all"
+                        style="grid-column: 1 / -1; background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);">Tutti
+                        gli Argomenti</button>
+                </div>
+            </div>
+
+            <!-- Start Screen -->
+            <div id="start-screen" class="screen">
+                <h2 id="subject-title">Benvenuto al Quiz</h2>
+                <p>Il quiz consiste in <strong>20 domande</strong> estratte casualmente.</p>
+                <p>Mettiti alla prova!</p>
+                <button id="start-btn" class="btn primary-btn">Inizia Quiz</button>
+                <button id="back-to-subjects-btn" class="btn secondary-btn" style="margin-top: 10px;">Cambia
+                    Materia</button>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="question-header">
+                    <span id="question-number">Domanda 1/20</span>
+                </div>
+                <div class="question-text" id="question-text">
+                    <!-- Question goes here -->
+                </div>
+                <div class="options-container" id="options-container">
+                    <!-- Options go here -->
+                </div>
+                <div class="feedback" id="feedback"></div>
+                <button id="next-btn" class="btn secondary-btn hidden">Prossima Domanda</button>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="result-screen" class="screen">
+                <h2>Quiz Completato!</h2>
+                <div class="score-display">
+                    <span id="score">0</span> / 20
+                </div>
+                <p id="result-message"></p>
+                <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

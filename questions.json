@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "Chi è l'Autorità nazionale di pubblica sicurezza?",
+    "options": ["Il Prefetto", "Il Questore", "Il Ministro dell'Interno", "Il Presidente del Consiglio"],
+    "answer": "Il Ministro dell'Interno"
+  },
+  {
+    "id": 2,
+    "question": "Chi è l'Autorità provinciale di pubblica sicurezza con attribuzioni politico-amministrative?",
+    "options": ["Il Sindaco", "Il Questore", "Il Prefetto", "Il Presidente della Provincia"],
+    "answer": "Il Prefetto"
+  },
+  {
+    "id": 3,
+    "question": "Chi è l'Autorità provinciale di pubblica sicurezza con attribuzioni tecnico-operative?",
+    "options": ["Il Prefetto", "Il Comandante dei Carabinieri", "Il Questore", "Il Sindaco"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 4,
+    "question": "Chi è l'Autorità locale di pubblica sicurezza nei comuni privi di Commissariato?",
+    "options": ["Il Comandante della Polizia Locale", "Il Sindaco", "Il Maresciallo dei Carabinieri", "Il Segretario Comunale"],
+    "answer": "Il Sindaco"
+  },
+  {
+    "id": 5,
+    "question": "Cosa significa l'acronimo T.U.L.P.S.?",
+    "options": ["Testo Unico Leggi Pubblica Sicurezza", "Testo Unico Leggi Polizia Stato", "Testo Unico Libertà Pubblica Sicurezza", "Testo Unico Leggi Private Sicurezza"],
+    "answer": "Testo Unico Leggi Pubblica Sicurezza"
+  },
+  {
+    "id": 6,
+    "question": "Qual è il compito principale dell'Autorità di P.S. secondo l'art. 1 T.U.L.P.S.?",
+    "options": ["Arrestare i criminali", "Vegliare al mantenimento dell'ordine pubblico", "Emettere sentenze", "Gestire le carceri"],
+    "answer": "Vegliare al mantenimento dell'ordine pubblico"
+  },
+  {
+    "id": 7,
+    "question": "Qual è la funzione principale della Polizia di Sicurezza?",
+    "options": ["Repressiva", "Giudiziaria", "Preventiva", "Investigativa"],
+    "answer": "Preventiva"
+  },
+  {
+    "id": 8,
+    "question": "Qual è la funzione principale della Polizia Giudiziaria?",
+    "options": ["Preventiva", "Repressiva", "Amministrativa", "Politica"],
+    "answer": "Repressiva"
+  },
+  {
+    "id": 9,
+    "question": "Come viene definito l'ordine pubblico?",
+    "options": ["L'assenza di rumore", "Il complesso dei beni giuridici fondamentali e degli interessi pubblici primari", "Il rispetto del codice della strada", "La pulizia delle strade"],
+    "answer": "Il complesso dei beni giuridici fondamentali e degli interessi pubblici primari"
+  },
+  {
+    "id": 10,
+    "question": "Chi presiede il Comitato Provinciale per l'Ordine e la Sicurezza Pubblica?",
+    "options": ["Il Questore", "Il Sindaco", "Il Prefetto", "Il Procuratore della Repubblica"],
+    "answer": "Il Prefetto"
+  },
+  {
+    "id": 11,
+    "question": "Chi ha la direzione tecnica dei servizi di ordine e sicurezza pubblica?",
+    "options": ["Il Prefetto", "Il Questore", "Il Ministro dell'Interno", "Il Sindaco"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 12,
+    "question": "Con quale atto il Questore dispone le modalità operative dei servizi di ordine pubblico?",
+    "options": ["Decreto legge", "Ordinanza di servizio", "Circolare", "Sentenza"],
+    "answer": "Ordinanza di servizio"
+  },
+  {
+    "id": 13,
+    "question": "Quando il Sindaco assume le funzioni di Autorità locale di P.S.?",
+    "options": ["Sempre", "Mai", "Quando manca il Commissariato di P.S.", "Solo la domenica"],
+    "answer": "Quando manca il Commissariato di P.S."
+  },
+  {
+    "id": 14,
+    "question": "Quale compito spetta agli Ufficiali di P.S.?",
+    "options": ["Emanare provvedimenti amministrativi", "Dirigere i servizi di ordine pubblico e vigilare", "Giudicare i reati", "Fare le leggi"],
+    "answer": "Dirigere i servizi di ordine pubblico e vigilare"
+  },
+  {
+    "id": 15,
+    "question": "Quale compito spetta agli Agenti di P.S.?",
+    "options": ["Compiti esecutivi", "Direzione tecnica", "Emanazione ordinanze", "Coordinamento interforze"],
+    "answer": "Compiti esecutivi"
+  },
+  {
+    "id": 16,
+    "question": "Cosa prevede l'art. 4 del T.U.L.P.S.?",
+    "options": ["L'arresto in flagranza", "La facoltà di ordinare rilievi segnaletici", "Il divieto di riunione", "La chiusura dei bar"],
+    "answer": "La facoltà di ordinare rilievi segnaletici"
+  },
+  {
+    "id": 17,
+    "question": "A chi possono essere ordinati i rilievi segnaletici ex art. 4 T.U.L.P.S.?",
+    "options": ["A tutti i cittadini", "Alle persone pericolose, sospette o che non possono provare la loro identità", "Solo agli stranieri", "Solo ai pregiudicati"],
+    "answer": "Alle persone pericolose, sospette o che non possono provare la loro identità"
+  },
+  {
+    "id": 18,
+    "question": "Cosa disciplina l'art. 15 del T.U.L.P.S.?",
+    "options": ["L'arresto", "L'invito a comparire davanti all'Autorità di P.S.", "La perquisizione", "Il sequestro"],
+    "answer": "L'invito a comparire davanti all'Autorità di P.S."
+  },
+  {
+    "id": 19,
+    "question": "Quale reato si configura per l'inosservanza dei provvedimenti dell'Autorità (art. 650 c.p.)?",
+    "options": ["Resistenza a pubblico ufficiale", "Inosservanza dei provvedimenti dell'Autorità", "Oltraggio", "Violenza privata"],
+    "answer": "Inosservanza dei provvedimenti dell'Autorità"
+  },
+  {
+    "id": 20,
+    "question": "Quali sono i caratteri dei provvedimenti di polizia?",
+    "options": ["Autoritatività ed esecutorietà", "Consensualità e libertà", "Segretezza e immunità", "Flessibilità e informalità"],
+    "answer": "Autoritatività ed esecutorietà"
+  },
+  {
+    "id": 21,
+    "question": "Cosa sono gli ordini di polizia?",
+    "options": ["Provvedimenti espansivi", "Provvedimenti restrittivi che impongono comandi o divieti", "Consigli", "Suggerimenti"],
+    "answer": "Provvedimenti restrittivi che impongono comandi o divieti"
+  },
+  {
+    "id": 22,
+    "question": "Chi può emanare ordinanze di necessità e urgenza ex art. 2 T.U.L.P.S.?",
+    "options": ["Il Questore", "Il Prefetto", "Il Sindaco", "Il Comandante dei Vigili"],
+    "answer": "Il Prefetto"
+  },
+  {
+    "id": 23,
+    "question": "Qual è la funzione delle autorizzazioni di polizia?",
+    "options": ["Creare un nuovo diritto", "Rimuovere un limite all'esercizio di un diritto preesistente", "Punire un reato", "Imporre una tassa"],
+    "answer": "Rimuovere un limite all'esercizio di un diritto preesistente"
+  },
+  {
+    "id": 24,
+    "question": "Cos'è una licenza di polizia?",
+    "options": ["Un atto formale esplicito che permette l'esercizio di un'attività", "Un divieto", "Una sanzione", "Un contratto"],
+    "answer": "Un atto formale esplicito che permette l'esercizio di un'attività"
+  },
+  {
+    "id": 25,
+    "question": "Cosa significa SCIA?",
+    "options": ["Segnalazione Certificata di Inizio Attività", "Società Commerciale Italiana Autorizzata", "Sistema Controllo Interno Aziendale", "Servizio Centrale Investigativo Antimafia"],
+    "answer": "Segnalazione Certificata di Inizio Attività"
+  },
+  {
+    "id": 26,
+    "question": "Cosa prevede l'art. 100 del T.U.L.P.S.?",
+    "options": ["Il rilascio del passaporto", "La sospensione della licenza di un esercizio pubblico", "Il divieto di sosta", "L'arresto obbligatorio"],
+    "answer": "La sospensione della licenza di un esercizio pubblico"
+  },
+  {
+    "id": 27,
+    "question": "Chi ha il potere di sospendere la licenza ex art. 100 T.U.L.P.S.?",
+    "options": ["Il Sindaco", "Il Prefetto", "Il Questore", "Il Giudice di Pace"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 28,
+    "question": "Quando può essere revocata la licenza ai sensi dell'art. 100 T.U.L.P.S.?",
+    "options": ["Alla prima violazione", "Qualora si ripetano i fatti che hanno determinato la sospensione", "Mai", "A discrezione del cliente"],
+    "answer": "Qualora si ripetano i fatti che hanno determinato la sospensione"
+  },
+  {
+    "id": 29,
+    "question": "Quanto tempo prima deve essere dato il preavviso per una riunione in luogo pubblico?",
+    "options": ["24 ore", "3 giorni", "1 settimana", "1 mese"],
+    "answer": "3 giorni"
+  },
+  {
+    "id": 30,
+    "question": "A chi va inviato il preavviso di riunione in luogo pubblico?",
+    "options": ["Al Sindaco", "Al Prefetto", "Al Questore", "Al Parroco"],
+    "answer": "Al Questore"
+  },
+  {
+    "id": 31,
+    "question": "Per quale tipo di riunione è obbligatorio il preavviso?",
+    "options": ["Riunione privata", "Riunione in luogo aperto al pubblico", "Riunione in luogo pubblico", "Tutte le riunioni"],
+    "answer": "Riunione in luogo pubblico"
+  },
+  {
+    "id": 32,
+    "question": "È richiesto il preavviso per una riunione in luogo aperto al pubblico (es. cinema)?",
+    "options": ["Sì, sempre", "No", "Solo se ci sono politici", "Solo se a pagamento"],
+    "answer": "No"
+  },
+  {
+    "id": 33,
+    "question": "Quando può essere sciolta una riunione (art. 20 T.U.L.P.S.)?",
+    "options": ["Se piove", "Se ci sono grida sediziose o pericolo per l'ordine pubblico", "Se dura troppo", "Se non piace al Sindaco"],
+    "answer": "Se ci sono grida sediziose o pericolo per l'ordine pubblico"
+  },
+  {
+    "id": 34,
+    "question": "Chi può ordinare lo scioglimento di una riunione?",
+    "options": ["Qualsiasi cittadino", "I Funzionari di P.S. (indossando la fascia tricolore)", "Il Sindaco", "I Vigili del Fuoco"],
+    "answer": "I Funzionari di P.S. (indossando la fascia tricolore)"
+  },
+  {
+    "id": 35,
+    "question": "Quale norma disciplina il fermo per identificazione?",
+    "options": ["Art. 11 Legge 191/78", "Art. 100 T.U.L.P.S.", "Art. 41 T.U.L.P.S.", "Codice della Strada"],
+    "answer": "Art. 11 Legge 191/78"
+  },
+  {
+    "id": 36,
+    "question": "Qual è la durata massima del fermo per identificazione?",
+    "options": ["12 ore", "24 ore", "48 ore", "72 ore"],
+    "answer": "24 ore"
+  },
+  {
+    "id": 37,
+    "question": "A chi deve essere data immediata notizia del fermo per identificazione?",
+    "options": ["Al Questore", "Al Sindaco", "Al Procuratore della Repubblica", "Ai parenti"],
+    "answer": "Al Procuratore della Repubblica"
+  },
+  {
+    "id": 38,
+    "question": "Cosa devono fare i gestori di strutture ricettive (art. 109 T.U.L.P.S.)?",
+    "options": ["Offrire la colazione", "Comunicare le generalità degli alloggiati all'Autorità di P.S.", "Chiudere a mezzanotte", "Non accettare stranieri"],
+    "answer": "Comunicare le generalità degli alloggiati all'Autorità di P.S."
+  },
+  {
+    "id": 39,
+    "question": "Entro quanto tempo devono essere comunicate le generalità degli alloggiati?",
+    "options": ["12 ore", "24 ore", "48 ore", "1 settimana"],
+    "answer": "24 ore"
+  },
+  {
+    "id": 40,
+    "question": "Cos'è il DASPO?",
+    "options": ["Divieto di Accesso alle Manifestazioni Sportive", "Divieto di Assunzione Sostanze Psicotrope", "Dipartimento Analisi Statistiche Polizia", "Direzione Amministrativa Sicurezza Pubblica"],
+    "answer": "Divieto di Accesso alle Manifestazioni Sportive"
+  },
+  {
+    "id": 41,
+    "question": "Chi emette il provvedimento di DASPO?",
+    "options": ["Il Prefetto", "Il Giudice Sportivo", "Il Questore", "L'arbitro"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 42,
+    "question": "Qual è la durata tipica del DASPO?",
+    "options": ["1 mese", "Da 1 a 5 anni", "10 anni", "A vita"],
+    "answer": "Da 1 a 5 anni"
+  },
+  {
+    "id": 43,
+    "question": "Chi ha la facoltà di vietare la detenzione di armi (art. 39 T.U.L.P.S.)?",
+    "options": ["Il Questore", "Il Prefetto", "Il Sindaco", "Il Maresciallo"],
+    "answer": "Il Prefetto"
+  },
+  {
+    "id": 44,
+    "question": "Chi rilascia la licenza di porto d'armi per difesa personale (armi corte)?",
+    "options": ["Il Questore", "Il Prefetto", "Il Ministro della Difesa", "Il Sindaco"],
+    "answer": "Il Prefetto"
+  },
+  {
+    "id": 45,
+    "question": "Chi rilascia la licenza di porto di fucile per uso caccia?",
+    "options": ["Il Prefetto", "Il Questore", "La Regione", "La Provincia"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 46,
+    "question": "Qual è la durata della licenza di porto d'armi per difesa personale?",
+    "options": ["1 anno", "3 anni", "5 anni", "Illimitata"],
+    "answer": "1 anno"
+  },
+  {
+    "id": 47,
+    "question": "Cosa consente l'art. 41 T.U.L.P.S.?",
+    "options": ["L'arresto preventivo", "La perquisizione locale per la ricerca di armi", "L'intercettazione telefonica", "Il pedinamento"],
+    "answer": "La perquisizione locale per la ricerca di armi"
+  },
+  {
+    "id": 48,
+    "question": "Quando si applicano le misure di prevenzione?",
+    "options": ["Dopo la condanna definitiva", "Ante delictum (prima del reato) sulla base della pericolosità sociale", "Solo in caso di flagranza", "Mai"],
+    "answer": "Ante delictum (prima del reato) sulla base della pericolosità sociale"
+  },
+  {
+    "id": 49,
+    "question": "Chi emette il foglio di via obbligatorio?",
+    "options": ["Il Prefetto", "Il Sindaco", "Il Questore", "Il Giudice"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 50,
+    "question": "Chi applica la misura della sorveglianza speciale?",
+    "options": ["Il Questore", "Il Prefetto", "Il Tribunale (Autorità Giudiziaria)", "Il Ministro"],
+    "answer": "Il Tribunale (Autorità Giudiziaria)"
+  },
+  {
+    "id": 51,
+    "question": "Chi emette l'avviso orale?",
+    "options": ["Il Questore", "Il Prefetto", "Il Sindaco", "Il Giudice"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 52,
+    "question": "Chi emette l'ammonimento per atti persecutori (stalking)?",
+    "options": ["Il Giudice", "Il Questore", "Il Prefetto", "L'avvocato"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 53,
+    "question": "Chi emette il decreto di espulsione amministrativa dello straniero?",
+    "options": ["Il Questore", "Il Prefetto", "Il Sindaco", "Il Console"],
+    "answer": "Il Prefetto"
+  },
+  {
+    "id": 54,
+    "question": "Chi dispone il trattenimento dello straniero nei CPR?",
+    "options": ["Il Prefetto", "Il Questore", "Il Giudice", "La Polizia"],
+    "answer": "Il Questore"
+  },
+  {
+    "id": 55,
+    "question": "Chi rilascia il passaporto?",
+    "options": ["Il Prefetto", "Il Sindaco", "Il Questore", "Il Ministero degli Esteri direttamente"],
+    "answer": "Il Questore"
+  }
+]
