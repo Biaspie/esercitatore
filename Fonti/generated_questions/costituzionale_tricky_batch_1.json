@@ -1,0 +1,86 @@
+[
+    {
+        "id": "cost_tricky_1",
+        "category": "Diritto Costituzionale",
+        "question": "L'iniziativa legislativa popolare richiede la raccolta di firme di almeno:",
+        "options": [
+            "50.000 elettori",
+            "500.000 elettori",
+            "5.000 elettori",
+            "100.000 elettori"
+        ],
+        "answer": "50.000 elettori"
+    },
+    {
+        "id": "cost_tricky_2",
+        "category": "Diritto Costituzionale",
+        "question": "Il referendum abrogativo richiede la raccolta di firme di almeno:",
+        "options": [
+            "500.000 elettori",
+            "50.000 elettori",
+            "5 Consigli Regionali",
+            "1/5 dei membri di una Camera"
+        ],
+        "answer": "500.000 elettori"
+    },
+    {
+        "id": "cost_tricky_3",
+        "category": "Diritto Costituzionale",
+        "question": "Il Presidente della Repubblica è eletto per:",
+        "options": [
+            "7 anni",
+            "5 anni",
+            "9 anni",
+            "A vita"
+        ],
+        "answer": "7 anni"
+    },
+    {
+        "id": "cost_tricky_4",
+        "category": "Diritto Costituzionale",
+        "question": "La Camera dei Deputati è eletta per:",
+        "options": [
+            "5 anni",
+            "7 anni",
+            "4 anni",
+            "6 anni"
+        ],
+        "answer": "5 anni"
+    },
+    {
+        "id": "cost_tricky_5",
+        "category": "Diritto Costituzionale",
+        "question": "L'età minima per essere eletti Senatori è:",
+        "options": [
+            "40 anni",
+            "25 anni",
+            "18 anni",
+            "50 anni"
+        ],
+        "answer": "40 anni"
+    },
+    {
+        "id": "cost_tricky_6",
+        "category": "Diritto Costituzionale",
+        "question": "L'età minima per essere eletti Deputati è:",
+        "options": [
+            "25 anni",
+            "18 anni",
+            "40 anni",
+            "21 anni"
+        ],
+        "answer": "25 anni"
+    },
+    {
+        "id": "cost_tricky_7",
+        "category": "Diritto Costituzionale",
+        "question": "I giudici della Corte Costituzionale durano in carica:",
+        "options": [
+            "9 anni",
+            "7 anni",
+            "5 anni",
+            "A vita"
+        ],
+        "answer": "9 anni"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "id": "penale_tricky_1",
+        "category": "Diritto Penale",
+        "question": "L'omicidio preterintenzionale si verifica quando:",
+        "options": [
+            "Dall'azione o omissione deriva un evento dannoso o pericoloso più grave di quello voluto dall'agente",
+            "L'evento è conseguenza della sua azione od omissione, anche se non voluto",
+            "L'evento è preveduto e voluto come conseguenza della propria azione od omissione",
+            "L'evento si verifica per negligenza o imprudenza"
+        ],
+        "answer": "Dall'azione o omissione deriva un evento dannoso o pericoloso più grave di quello voluto dall'agente"
+    },
+    {
+        "id": "penale_tricky_2",
+        "category": "Diritto Penale",
+        "question": "Il delitto colposo si verifica quando:",
+        "options": [
+            "L'evento, anche se preveduto, non è voluto dall'agente e si verifica a causa di negligenza o imprudenza o imperizia",
+            "L'evento è preveduto e voluto dall'agente",
+            "L'evento è più grave di quello voluto dall'agente",
+            "L'evento è conseguenza di caso fortuito"
+        ],
+        "answer": "L'evento, anche se preveduto, non è voluto dall'agente e si verifica a causa di negligenza o imprudenza o imperizia"
+    },
+    {
+        "id": "penale_tricky_3",
+        "category": "Diritto Penale",
+        "question": "La rapina (art. 628 c.p.) si distingue dal furto con strappo (art. 624 bis c.p.) perché:",
+        "options": [
+            "Nella rapina la violenza è diretta alla persona, nel furto con strappo è diretta sulla cosa",
+            "Nella rapina c'è l'uso di armi, nel furto con strappo no",
+            "La rapina è punita più gravemente del furto con strappo",
+            "Il furto con strappo richiede la destrezza"
+        ],
+        "answer": "Nella rapina la violenza è diretta alla persona, nel furto con strappo è diretta sulla cosa"
+    },
+    {
+        "id": "penale_tricky_4",
+        "category": "Diritto Penale",
+        "question": "Il peculato (art. 314 c.p.) si distingue dall'appropriazione indebita (art. 646 c.p.) perché:",
+        "options": [
+            "Il peculato è commesso da un pubblico ufficiale o incaricato di pubblico servizio, l'appropriazione indebita da chiunque",
+            "Il peculato riguarda solo denaro, l'appropriazione indebita anche cose mobili",
+            "L'appropriazione indebita è un reato contro la P.A.",
+            "Il peculato richiede il dolo specifico"
+        ],
+        "answer": "Il peculato è commesso da un pubblico ufficiale o incaricato di pubblico servizio, l'appropriazione indebita da chiunque"
+    },
+    {
+        "id": "penale_tricky_5",
+        "category": "Diritto Penale",
+        "question": "La calunnia (art. 368 c.p.) consiste nel:",
+        "options": [
+            "Incolpare di un reato taluno che egli sa innocente",
+            "Offendere l'onore o il decoro di una persona presente",
+            "Attribuire a taluno un fatto determinato che ne offenda la reputazione",
+            "Affermare il falso in giudizio"
+        ],
+        "answer": "Incolpare di un reato taluno che egli sa innocente"
+    },
+    {
+        "id": "penale_tricky_6",
+        "category": "Diritto Penale",
+        "question": "La diffamazione (art. 595 c.p.) consiste nel:",
+        "options": [
+            "Offendere l'altrui reputazione comunicando con più persone",
+            "Offendere l'onore o il decoro di una persona presente",
+            "Incolpare di un reato taluno che egli sa innocente",
+            "Dire il falso al PM"
+        ],
+        "answer": "Offendere l'altrui reputazione comunicando con più persone"
+    },
+    {
+        "id": "penale_tricky_7",
+        "category": "Diritto Penale",
+        "question": "L'arresto illegale (art. 606 c.p.) è un reato proprio del:",
+        "options": [
+            "Pubblico ufficiale",
+            "Cittadino privato",
+            "Magistrato",
+            "Avvocato"
+        ],
+        "answer": "Pubblico ufficiale"
+    }
+]

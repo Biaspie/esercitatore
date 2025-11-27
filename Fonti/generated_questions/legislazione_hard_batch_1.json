@@ -1,0 +1,122 @@
+[
+    {
+        "id": "leg_ps_hard_1",
+        "category": "Legislazione PS",
+        "question": "Ai sensi dell'art. 2 T.U.L.P.S., il Prefetto può emanare ordinanze contingibili e urgenti in materia di ordine pubblico?",
+        "options": [
+            "Sì, ma solo per motivi di igiene e sanità pubblica",
+            "Sì, nel caso di urgenza o per grave necessità pubblica, se indispensabile per la tutela dell'ordine pubblico e della sicurezza pubblica",
+            "No, tale potere spetta esclusivamente al Ministro dell'Interno",
+            "Sì, ma solo previo parere vincolante del Questore"
+        ],
+        "answer": "Sì, nel caso di urgenza o per grave necessità pubblica, se indispensabile per la tutela dell'ordine pubblico e della sicurezza pubblica"
+    },
+    {
+        "id": "leg_ps_hard_2",
+        "category": "Legislazione PS",
+        "question": "La durata massima del provvedimento di ammonimento del Questore per atti persecutori (stalking) è:",
+        "options": [
+            "6 mesi",
+            "1 anno",
+            "Non è prevista una scadenza specifica, ma l'efficacia cessa con la riabilitazione o la revoca",
+            "3 anni"
+        ],
+        "answer": "Non è prevista una scadenza specifica, ma l'efficacia cessa con la riabilitazione o la revoca"
+    },
+    {
+        "id": "leg_ps_hard_3",
+        "category": "Legislazione PS",
+        "question": "Qual è il termine per presentare ricorso gerarchico al Prefetto avverso un provvedimento non definitivo del Questore?",
+        "options": [
+            "60 giorni",
+            "30 giorni",
+            "10 giorni",
+            "90 giorni"
+        ],
+        "answer": "30 giorni"
+    },
+    {
+        "id": "leg_ps_hard_4",
+        "category": "Legislazione PS",
+        "question": "In materia di armi, la licenza di porto d'armi per difesa personale ha validità:",
+        "options": [
+            "5 anni",
+            "1 anno",
+            "3 anni",
+            "Illimitata, salvo revoca"
+        ],
+        "answer": "1 anno"
+    },
+    {
+        "id": "leg_ps_hard_5",
+        "category": "Legislazione PS",
+        "question": "Chi presiede il Comitato Provinciale per l'Ordine e la Sicurezza Pubblica?",
+        "options": [
+            "Il Questore",
+            "Il Sindaco del capoluogo",
+            "Il Prefetto",
+            "Il Presidente della Provincia"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": "leg_ps_hard_6",
+        "category": "Legislazione PS",
+        "question": "L'arresto facoltativo in flagranza è consentito per i delitti puniti con la reclusione:",
+        "options": [
+            "Superiore nel massimo a 3 anni ovvero per delitti colposi superiore nel massimo a 5 anni",
+            "Superiore nel massimo a 5 anni",
+            "Non inferiore nel minimo a 2 anni",
+            "Superiore nel massimo a 4 anni"
+        ],
+        "answer": "Superiore nel massimo a 3 anni ovvero per delitti colposi superiore nel massimo a 5 anni"
+    },
+    {
+        "id": "leg_ps_hard_7",
+        "category": "Legislazione PS",
+        "question": "Il DASPO (Divieto di Accedere alle manifestazioni SPOrtive) è un provvedimento emesso da:",
+        "options": [
+            "Giudice di Pace",
+            "Prefetto",
+            "Questore",
+            "GIP"
+        ],
+        "answer": "Questore"
+    },
+    {
+        "id": "leg_ps_hard_8",
+        "category": "Legislazione PS",
+        "question": "Quale autorità rilascia il passaporto?",
+        "options": [
+            "Il Prefetto",
+            "Il Sindaco",
+            "Il Ministro degli Esteri",
+            "Il Questore (o autorità consolari all'estero)"
+        ],
+        "answer": "Il Questore (o autorità consolari all'estero)"
+    },
+    {
+        "id": "leg_ps_hard_9",
+        "category": "Legislazione PS",
+        "question": "La 'diffida' ex art. 1 T.U.L.P.S. è un provvedimento:",
+        "options": [
+            "Sanzionatorio pecuniario",
+            "Di polizia di sicurezza, con cui si invita il soggetto a cambiare condotta",
+            "Giudiziario",
+            "Amministrativo revocabile solo dal TAR"
+        ],
+        "answer": "Di polizia di sicurezza, con cui si invita il soggetto a cambiare condotta"
+    },
+    {
+        "id": "leg_ps_hard_10",
+        "category": "Legislazione PS",
+        "question": "In caso di riunione pubblica non preavvisata, il Questore può:",
+        "options": [
+            "Scioglierla solo se degenera in disordini",
+            "Impedirla sempre e comunque",
+            "Ordinare lo scioglimento immediato anche se pacifica",
+            "Impedirla solo se vi sono fondati motivi di temere per l'ordine pubblico, altrimenti si svolge regolarmente (pur essendo sanzionabile il mancato preavviso)"
+        ],
+        "answer": "Impedirla solo se vi sono fondati motivi di temere per l'ordine pubblico, altrimenti si svolge regolarmente (pur essendo sanzionabile il mancato preavviso)"
+    }
+]

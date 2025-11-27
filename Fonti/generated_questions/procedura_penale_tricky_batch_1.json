@@ -1,0 +1,86 @@
+[
+    {
+        "id": "proc_pen_tricky_1",
+        "category": "Procedura Penale",
+        "question": "Il termine per proporre querela è di:",
+        "options": [
+            "3 mesi dal giorno della notizia del fatto che costituisce il reato",
+            "90 giorni dal giorno della notizia del fatto che costituisce il reato",
+            "6 mesi dal giorno della notizia del fatto che costituisce il reato",
+            "30 giorni dal giorno della notizia del fatto che costituisce il reato"
+        ],
+        "answer": "3 mesi dal giorno della notizia del fatto che costituisce il reato"
+    },
+    {
+        "id": "proc_pen_tricky_2",
+        "category": "Procedura Penale",
+        "question": "Il termine per proporre querela per i reati di violenza sessuale è di:",
+        "options": [
+            "12 mesi",
+            "6 mesi",
+            "3 mesi",
+            "90 giorni"
+        ],
+        "answer": "12 mesi"
+    },
+    {
+        "id": "proc_pen_tricky_3",
+        "category": "Procedura Penale",
+        "question": "La convalida dell'arresto o del fermo deve avvenire entro:",
+        "options": [
+            "48 ore dalla messa a disposizione del giudice",
+            "24 ore dall'arresto",
+            "96 ore dall'arresto",
+            "5 giorni dall'arresto"
+        ],
+        "answer": "48 ore dalla messa a disposizione del giudice"
+    },
+    {
+        "id": "proc_pen_tricky_4",
+        "category": "Procedura Penale",
+        "question": "Il Pubblico Ministero deve richiedere la convalida dell'arresto al GIP entro:",
+        "options": [
+            "48 ore dall'arresto",
+            "24 ore dall'arresto",
+            "96 ore dall'arresto",
+            "Immediatamente"
+        ],
+        "answer": "48 ore dall'arresto"
+    },
+    {
+        "id": "proc_pen_tricky_5",
+        "category": "Procedura Penale",
+        "question": "La perquisizione personale può essere eseguita dalla Polizia Giudiziaria di propria iniziativa:",
+        "options": [
+            "In caso di flagranza di reato o evasione",
+            "Sempre, se vi è sospetto di reato",
+            "Solo con decreto del PM",
+            "Solo se c'è il consenso dell'interessato"
+        ],
+        "answer": "In caso di flagranza di reato o evasione"
+    },
+    {
+        "id": "proc_pen_tricky_6",
+        "category": "Procedura Penale",
+        "question": "L'identificazione dell'indagato (art. 349 c.p.p.) può comportare il fermo per identificazione per un massimo di:",
+        "options": [
+            "12 ore (o 24 ore in casi particolari)",
+            "24 ore (o 48 ore in casi particolari)",
+            "48 ore",
+            "6 ore"
+        ],
+        "answer": "12 ore (o 24 ore in casi particolari)"
+    },
+    {
+        "id": "proc_pen_tricky_7",
+        "category": "Procedura Penale",
+        "question": "Il difensore di fiducia può essere nominato:",
+        "options": [
+            "In numero non superiore a due",
+            "In numero non superiore a tre",
+            "Uno solo",
+            "Senza limiti"
+        ],
+        "answer": "In numero non superiore a due"
+    }
+]
