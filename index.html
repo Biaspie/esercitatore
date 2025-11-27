@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>Quiz App - Home</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -39,44 +39,26 @@
             <!-- Start Screen -->
             <div id="start-screen" class="screen">
                 <h2 id="subject-title">Benvenuto al Quiz</h2>
-                <p>Il quiz consiste in <strong>20 domande</strong> estratte casualmente.</p>
-                <p>Mettiti alla prova!</p>
-                <button id="start-btn" class="btn primary-btn">Inizia Quiz</button>
-                <button id="back-to-subjects-btn" class="btn secondary-btn" style="margin-top: 10px;">Cambia
-                    Materia</button>
-            </div>
 
-            <!-- Quiz Screen -->
-            <div id="quiz-screen" class="screen">
-                <div class="progress-container">
-                    <div class="progress-bar" id="progress-bar"></div>
+                <div class="settings-container">
+                    <label for="question-count">Numero di domande:</label>
+                    <select id="question-count" class="settings-select">
+                        <option value="10">10</option>
+                        <option value="20" selected>20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="all">Tutte</option>
+                    </select>
                 </div>
-                <div class="question-header">
-                    <span id="question-number">Domanda 1/20</span>
-                </div>
-                <div class="question-text" id="question-text">
-                    <!-- Question goes here -->
-                </div>
-                <div class="options-container" id="options-container">
-                    <!-- Options go here -->
-                </div>
-                <div class="feedback" id="feedback"></div>
-                <button id="next-btn" class="btn secondary-btn hidden">Prossima Domanda</button>
-            </div>
 
-            <!-- Result Screen -->
-            <div id="result-screen" class="screen">
-                <h2>Quiz Completato!</h2>
-                <div class="score-display">
-                    <span id="score">0</span> / 20
-                </div>
-                <p id="result-message"></p>
-                <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
+                <button id="start-btn" class="btn primary-btn">Avvia Quiz</button>
+                <button id="back-to-subjects-btn" class="btn secondary-btn" style="margin-top: 1rem;">Torna alle
+                    Materie</button>
             </div>
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
 </body>
 
 </html>

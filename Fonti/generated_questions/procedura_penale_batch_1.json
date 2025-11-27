@@ -1,0 +1,602 @@
+[
+    {
+        "id": 4001,
+        "category": "Procedura Penale",
+        "question": "Qual è lo scopo del processo penale?",
+        "options": [
+            "Accertare se una persona ha commesso un reato, la personalità dell'autore e le sanzioni da applicare",
+            "Punire sempre l'indagato",
+            "Risarcire la vittima civilmente",
+            "Creare nuove leggi penali"
+        ],
+        "answer": "Accertare se una persona ha commesso un reato, la personalità dell'autore e le sanzioni da applicare"
+    },
+    {
+        "id": 4002,
+        "category": "Procedura Penale",
+        "question": "Cosa si intende per 'procedimento penale' in senso ampio?",
+        "options": [
+            "Una serie cronologicamente ordinata di atti diretti alla pronuncia di una decisione penale",
+            "Solo la fase del dibattimento",
+            "Solo la fase delle indagini",
+            "L'arresto del colpevole"
+        ],
+        "answer": "Una serie cronologicamente ordinata di atti diretti alla pronuncia di una decisione penale"
+    },
+    {
+        "id": 4003,
+        "category": "Procedura Penale",
+        "question": "Qual è la differenza tra procedimento e processo penale?",
+        "options": [
+            "Il procedimento inizia con la notizia di reato, il processo inizia con l'esercizio dell'azione penale",
+            "Sono sinonimi",
+            "Il processo viene prima del procedimento",
+            "Il procedimento è solo civile"
+        ],
+        "answer": "Il procedimento inizia con la notizia di reato, il processo inizia con l'esercizio dell'azione penale"
+    },
+    {
+        "id": 4004,
+        "category": "Procedura Penale",
+        "question": "Come si chiama il soggetto nei cui confronti si svolgono le indagini preliminari?",
+        "options": [
+            "Indagato (o persona sottoposta alle indagini)",
+            "Imputato",
+            "Condannato",
+            "Reo"
+        ],
+        "answer": "Indagato (o persona sottoposta alle indagini)"
+    },
+    {
+        "id": 4005,
+        "category": "Procedura Penale",
+        "question": "Quando l'indagato assume la qualità di imputato?",
+        "options": [
+            "Con l'esercizio dell'azione penale (es. richiesta di rinvio a giudizio)",
+            "Con l'iscrizione nel registro notizie di reato",
+            "Con l'arresto",
+            "Con la sentenza di condanna"
+        ],
+        "answer": "Con l'esercizio dell'azione penale (es. richiesta di rinvio a giudizio)"
+    },
+    {
+        "id": 4006,
+        "category": "Procedura Penale",
+        "question": "Chi è il dominus delle indagini preliminari?",
+        "options": [
+            "Il Pubblico Ministero (P.M.)",
+            "Il Giudice per le Indagini Preliminari (G.I.P.)",
+            "La Polizia Giudiziaria",
+            "Il Difensore"
+        ],
+        "answer": "Il Pubblico Ministero (P.M.)"
+    },
+    {
+        "id": 4007,
+        "category": "Procedura Penale",
+        "question": "Qual è la funzione del G.I.P. (Giudice per le Indagini Preliminari)?",
+        "options": [
+            "Esercitare una funzione di garanzia e controllo sui provvedimenti più importanti (es. misure cautelari)",
+            "Svolgere le indagini",
+            "Arrestare i colpevoli",
+            "Difendere l'indagato"
+        ],
+        "answer": "Esercitare una funzione di garanzia e controllo sui provvedimenti più importanti (es. misure cautelari)"
+    },
+    {
+        "id": 4008,
+        "category": "Procedura Penale",
+        "question": "Cosa succede se il P.M. ritiene infondata la notizia di reato al termine delle indagini?",
+        "options": [
+            "Chiede al G.I.P. l'archiviazione",
+            "Esercita l'azione penale comunque",
+            "Assolve l'indagato",
+            "Condanna l'indagato"
+        ],
+        "answer": "Chiede al G.I.P. l'archiviazione"
+    },
+    {
+        "id": 4009,
+        "category": "Procedura Penale",
+        "question": "L'azione penale è obbligatoria (art. 112 Cost.)?",
+        "options": [
+            "Sì, il P.M. è tenuto ad esercitarla se non deve chiedere l'archiviazione",
+            "No, è discrezionale",
+            "Solo per i reati gravi",
+            "Solo se c'è la querela"
+        ],
+        "answer": "Sì, il P.M. è tenuto ad esercitarla se non deve chiedere l'archiviazione"
+    },
+    {
+        "id": 4010,
+        "category": "Procedura Penale",
+        "question": "Cos'è l'udienza preliminare?",
+        "options": [
+            "Un'udienza-filtro in cui il G.U.P. decide se rinviare a giudizio l'imputato o emettere sentenza di non luogo a procedere",
+            "La prima udienza del dibattimento",
+            "L'udienza per la convalida dell'arresto",
+            "L'udienza finale del processo"
+        ],
+        "answer": "Un'udienza-filtro in cui il G.U.P. decide se rinviare a giudizio l'imputato o emettere sentenza di non luogo a procedere"
+    },
+    {
+        "id": 4011,
+        "category": "Procedura Penale",
+        "question": "Quali sono i principi del 'giusto processo' (art. 111 Cost.)?",
+        "options": [
+            "Contraddittorio, parità delle parti, giudice terzo e imparziale, ragionevole durata",
+            "Segretezza e inquisizione",
+            "Rapidità a tutti i costi",
+            "Prevalenza dell'accusa"
+        ],
+        "answer": "Contraddittorio, parità delle parti, giudice terzo e imparziale, ragionevole durata"
+    },
+    {
+        "id": 4012,
+        "category": "Procedura Penale",
+        "question": "Il processo penale italiano attuale è ispirato al modello:",
+        "options": [
+            "Accusatorio",
+            "Inquisitorio",
+            "Misto",
+            "Amministrativo"
+        ],
+        "answer": "Accusatorio"
+    },
+    {
+        "id": 4013,
+        "category": "Procedura Penale",
+        "question": "Dove si forma la prova nel processo accusatorio?",
+        "options": [
+            "In dibattimento, nel contraddittorio tra le parti",
+            "Nelle indagini preliminari",
+            "Nel segreto della camera di consiglio",
+            "In commissariato"
+        ],
+        "answer": "In dibattimento, nel contraddittorio tra le parti"
+    },
+    {
+        "id": 4014,
+        "category": "Procedura Penale",
+        "question": "Cos'è l'incidente probatorio?",
+        "options": [
+            "Un istituto che consente di anticipare l'acquisizione della prova nella fase delle indagini preliminari",
+            "Un incidente stradale",
+            "Un errore del giudice",
+            "Una prova falsa"
+        ],
+        "answer": "Un istituto che consente di anticipare l'acquisizione della prova nella fase delle indagini preliminari"
+    },
+    {
+        "id": 4015,
+        "category": "Procedura Penale",
+        "question": "Quando si può ricorrere all'incidente probatorio?",
+        "options": [
+            "In casi tassativi di non rinviabilità (es. teste in pericolo di vita, minacciato, o accertamenti irripetibili)",
+            "Sempre",
+            "Mai",
+            "Quando lo vuole la Polizia"
+        ],
+        "answer": "In casi tassativi di non rinviabilità (es. teste in pericolo di vita, minacciato, o accertamenti irripetibili)"
+    },
+    {
+        "id": 4016,
+        "category": "Procedura Penale",
+        "question": "Il principio del giudice naturale precostituito per legge (art. 25 Cost.) significa che:",
+        "options": [
+            "Il giudice competente deve essere individuato in base a criteri fissati dalla legge prima del fatto",
+            "Il giudice deve essere scelto dalle parti",
+            "Il giudice deve essere scelto dal Governo",
+            "Il giudice deve essere nato nel luogo del reato"
+        ],
+        "answer": "Il giudice competente deve essere individuato in base a criteri fissati dalla legge prima del fatto"
+    },
+    {
+        "id": 4017,
+        "category": "Procedura Penale",
+        "question": "La difesa tecnica è obbligatoria nel processo penale?",
+        "options": [
+            "Sì, è un diritto irrinunciabile",
+            "No, ci si può difendere da soli",
+            "Solo per i reati gravi",
+            "Solo se l'imputato è minorenne"
+        ],
+        "answer": "Sì, è un diritto irrinunciabile"
+    },
+    {
+        "id": 4018,
+        "category": "Procedura Penale",
+        "question": "Chi esercita la giurisdizione penale?",
+        "options": [
+            "I giudici ordinari (Tribunale, Corte d'Appello, Cassazione, ecc.)",
+            "La Polizia",
+            "Il Prefetto",
+            "Il Sindaco"
+        ],
+        "answer": "I giudici ordinari (Tribunale, Corte d'Appello, Cassazione, ecc.)"
+    },
+    {
+        "id": 4019,
+        "category": "Procedura Penale",
+        "question": "Qual è il giudice competente per i reati più gravi (es. omicidio)?",
+        "options": [
+            "La Corte d'Assise",
+            "Il Giudice di Pace",
+            "Il Tribunale Monocratico",
+            "Il Tribunale per i Minorenni"
+        ],
+        "answer": "La Corte d'Assise"
+    },
+    {
+        "id": 4020,
+        "category": "Procedura Penale",
+        "question": "La Corte di Cassazione è giudice di:",
+        "options": [
+            "Legittimità (controlla il rispetto della legge)",
+            "Merito (giudica il fatto)",
+            "Terzo grado (rifà il processo)",
+            "Pace"
+        ],
+        "answer": "Legittimità (controlla il rispetto della legge)"
+    },
+    {
+        "id": 4021,
+        "category": "Procedura Penale",
+        "question": "Il Pubblico Ministero (P.M.) svolge funzioni:",
+        "options": [
+            "Inquirenti (indagini) e requirenti (accusa nel processo)",
+            "Giudicanti (emette sentenze)",
+            "Difensive",
+            "Amministrative"
+        ],
+        "answer": "Inquirenti (indagini) e requirenti (accusa nel processo)"
+    },
+    {
+        "id": 4022,
+        "category": "Procedura Penale",
+        "question": "Il P.M. deve svolgere accertamenti anche a favore dell'indagato (art. 358 c.p.p.)?",
+        "options": [
+            "Sì",
+            "No, solo contro",
+            "Solo se glielo chiede il difensore",
+            "Solo se l'indagato è innocente"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 4023,
+        "category": "Procedura Penale",
+        "question": "Cos'è la Direzione Distrettuale Antimafia (DDA)?",
+        "options": [
+            "Un ufficio della Procura presso il Tribunale capoluogo di distretto competente per i reati di criminalità organizzata",
+            "Un reparto della Polizia",
+            "Un giudice speciale",
+            "Un'associazione privata"
+        ],
+        "answer": "Un ufficio della Procura presso il Tribunale capoluogo di distretto competente per i reati di criminalità organizzata"
+    },
+    {
+        "id": 4024,
+        "category": "Procedura Penale",
+        "question": "La Polizia Giudiziaria (P.G.) dipende funzionalmente da:",
+        "options": [
+            "Autorità Giudiziaria (P.M. e Giudice)",
+            "Prefetto",
+            "Questore",
+            "Sindaco"
+        ],
+        "answer": "Autorità Giudiziaria (P.M. e Giudice)"
+    },
+    {
+        "id": 4025,
+        "category": "Procedura Penale",
+        "question": "Quali sono le tre strutture di P.G. distinte dal codice?",
+        "options": [
+            "Sezioni, Servizi e altri uffici di P.G.",
+            "Commissariati, Stazioni e Comandi",
+            "Squadra Mobile, DIGOS e Volanti",
+            "Polizia, Carabinieri e Finanza"
+        ],
+        "answer": "Sezioni, Servizi e altri uffici di P.G."
+    },
+    {
+        "id": 4026,
+        "category": "Procedura Penale",
+        "question": "Le Sezioni di P.G. sono istituite presso:",
+        "options": [
+            "Ogni Procura della Repubblica",
+            "Ogni Questura",
+            "Ogni Tribunale",
+            "Ogni Comune"
+        ],
+        "answer": "Ogni Procura della Repubblica"
+    },
+    {
+        "id": 4027,
+        "category": "Procedura Penale",
+        "question": "Chi dispone direttamente del personale delle Sezioni di P.G.?",
+        "options": [
+            "Il Pubblico Ministero",
+            "Il Questore",
+            "Il Comandante dei Carabinieri",
+            "Il Prefetto"
+        ],
+        "answer": "Il Pubblico Ministero"
+    },
+    {
+        "id": 4028,
+        "category": "Procedura Penale",
+        "question": "I Servizi di P.G. (es. Squadra Mobile) dipendono dall'A.G.:",
+        "options": [
+            "Funzionalmente, ma organicamente dall'amministrazione di appartenenza",
+            "Totalmente",
+            "Solo per gli stipendi",
+            "Per nulla"
+        ],
+        "answer": "Funzionalmente, ma organicamente dall'amministrazione di appartenenza"
+    },
+    {
+        "id": 4029,
+        "category": "Procedura Penale",
+        "question": "Quali sono le funzioni della Polizia Giudiziaria (art. 55 c.p.p.)?",
+        "options": [
+            "Prendere notizia dei reati, impedire conseguenze ulteriori, ricercare autori, assicurare fonti di prova",
+            "Emettere sentenze",
+            "Difendere i cittadini in tribunale",
+            "Fare leggi"
+        ],
+        "answer": "Prendere notizia dei reati, impedire conseguenze ulteriori, ricercare autori, assicurare fonti di prova"
+    },
+    {
+        "id": 4030,
+        "category": "Procedura Penale",
+        "question": "L'attività di P.G. può essere:",
+        "options": [
+            "D'iniziativa o delegata dall'A.G.",
+            "Solo d'iniziativa",
+            "Solo delegata",
+            "Solo amministrativa"
+        ],
+        "answer": "D'iniziativa o delegata dall'A.G."
+    },
+    {
+        "id": 4031,
+        "category": "Procedura Penale",
+        "question": "La denuncia è una notizia di reato?",
+        "options": [
+            "Sì",
+            "No, è una prova",
+            "No, è una sentenza",
+            "Solo se fatta da un avvocato"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 4032,
+        "category": "Procedura Penale",
+        "question": "Chi ha l'obbligo di denuncia?",
+        "options": [
+            "I pubblici ufficiali e gli incaricati di pubblico servizio per i reati conosciuti nell'esercizio o a causa delle funzioni",
+            "Tutti i cittadini sempre",
+            "Nessuno",
+            "Solo la Polizia"
+        ],
+        "answer": "I pubblici ufficiali e gli incaricati di pubblico servizio per i reati conosciuti nell'esercizio o a causa delle funzioni"
+    },
+    {
+        "id": 4033,
+        "category": "Procedura Penale",
+        "question": "Cos'è il referto?",
+        "options": [
+            "Una denuncia obbligatoria per chi esercita una professione sanitaria in casi che possono presentare caratteri di delitto procedibile d'ufficio",
+            "Un certificato medico generico",
+            "Una ricetta",
+            "Un verbale di arresto"
+        ],
+        "answer": "Una denuncia obbligatoria per chi esercita una professione sanitaria in casi che possono presentare caratteri di delitto procedibile d'ufficio"
+    },
+    {
+        "id": 4034,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo la P.G. deve riferire la notizia di reato al P.M.?",
+        "options": [
+            "Senza ritardo (e per iscritto), o immediatamente in casi urgenti o gravi",
+            "Entro 1 mese",
+            "Quando ha tempo",
+            "Entro 1 anno"
+        ],
+        "answer": "Senza ritardo (e per iscritto), o immediatamente in casi urgenti o gravi"
+    },
+    {
+        "id": 4035,
+        "category": "Procedura Penale",
+        "question": "La querela è:",
+        "options": [
+            "Una condizione di procedibilità",
+            "Una prova",
+            "Una sentenza",
+            "Un atto del giudice"
+        ],
+        "answer": "Una condizione di procedibilità"
+    },
+    {
+        "id": 4036,
+        "category": "Procedura Penale",
+        "question": "Per i reati procedibili a querela, se manca la querela si può procedere?",
+        "options": [
+            "No, salvo atti urgenti per assicurare le prove",
+            "Sì, sempre",
+            "Sì, se il reato è grave",
+            "Sì, se lo decide la Polizia"
+        ],
+        "answer": "No, salvo atti urgenti per assicurare le prove"
+    },
+    {
+        "id": 4037,
+        "category": "Procedura Penale",
+        "question": "La P.G. può assumere sommarie informazioni dall'indagato?",
+        "options": [
+            "Sì, con la necessaria presenza del difensore se l'indagato è libero",
+            "Sì, sempre da sola",
+            "No, mai",
+            "Solo se l'indagato confessa"
+        ],
+        "answer": "Sì, con la necessaria presenza del difensore se l'indagato è libero"
+    },
+    {
+        "id": 4038,
+        "category": "Procedura Penale",
+        "question": "Le dichiarazioni spontanee dell'indagato richiedono la presenza del difensore?",
+        "options": [
+            "No",
+            "Sì, sempre",
+            "Solo se scritte",
+            "Solo se registrate"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": 4039,
+        "category": "Procedura Penale",
+        "question": "La P.G. può porre domande all'indagato nell'immediatezza del fatto senza difensore?",
+        "options": [
+            "Sì, solo sul luogo o nell'immediatezza del fatto per notizie utili alla prosecuzione delle indagini (ma sono inutilizzabili)",
+            "No, mai",
+            "Sì, e sono utilizzabili come prova",
+            "Sì, se l'indagato è d'accordo"
+        ],
+        "answer": "Sì, solo sul luogo o nell'immediatezza del fatto per notizie utili alla prosecuzione delle indagini (ma sono inutilizzabili)"
+    },
+    {
+        "id": 4040,
+        "category": "Procedura Penale",
+        "question": "L'indagato ha diritto di mentire?",
+        "options": [
+            "Sì (nemo tenetur se detegere), tranne che sulle proprie generalità",
+            "No, deve dire la verità",
+            "Solo se è innocente",
+            "Solo se autorizzato"
+        ],
+        "answer": "Sì (nemo tenetur se detegere), tranne che sulle proprie generalità"
+    },
+    {
+        "id": 4041,
+        "category": "Procedura Penale",
+        "question": "Le persone informate sui fatti (testimoni) hanno l'obbligo di dire la verità alla P.G.?",
+        "options": [
+            "Sì, altrimenti commettono favoreggiamento o false informazioni",
+            "No, possono mentire",
+            "Solo se giurano",
+            "Solo davanti al giudice"
+        ],
+        "answer": "Sì, altrimenti commettono favoreggiamento o false informazioni"
+    },
+    {
+        "id": 4042,
+        "category": "Procedura Penale",
+        "question": "L'identificazione (art. 349 c.p.p.) serve a:",
+        "options": [
+            "Individuare le generalità di una persona",
+            "Arrestare una persona",
+            "Perquisire una persona",
+            "Interrogare una persona"
+        ],
+        "answer": "Individuare le generalità di una persona"
+    },
+    {
+        "id": 4043,
+        "category": "Procedura Penale",
+        "question": "Se una persona rifiuta di farsi identificare, la P.G. può:",
+        "options": [
+            "Accompagnarla negli uffici e trattenerla per il tempo necessario (max 12 ore, o 24 in casi complessi)",
+            "Arrestarla subito",
+            "Lasciarla andare",
+            "Picchiarla"
+        ],
+        "answer": "Accompagnarla negli uffici e trattenerla per il tempo necessario (max 12 ore, o 24 in casi complessi)"
+    },
+    {
+        "id": 4044,
+        "category": "Procedura Penale",
+        "question": "Il sopralluogo ha la finalità di:",
+        "options": [
+            "Comprendere la dinamica, raccogliere elementi di prova e cercare spunti per le indagini",
+            "Pulire la scena del crimine",
+            "Fare fotografie per i giornali",
+            "Arrestare i curiosi"
+        ],
+        "answer": "Comprendere la dinamica, raccogliere elementi di prova e cercare spunti per le indagini"
+    },
+    {
+        "id": 4045,
+        "category": "Procedura Penale",
+        "question": "La P.G. può compiere accertamenti urgenti sui luoghi, cose e persone?",
+        "options": [
+            "Sì, se il P.M. non può intervenire tempestivamente e c'è pericolo che le tracce si perdano (art. 354 c.p.p.)",
+            "No, mai",
+            "Solo se autorizzata dal giudice",
+            "Solo se c'è il morto"
+        ],
+        "answer": "Sì, se il P.M. non può intervenire tempestivamente e c'è pericolo che le tracce si perdano (art. 354 c.p.p.)"
+    },
+    {
+        "id": 4046,
+        "category": "Procedura Penale",
+        "question": "La perquisizione d'iniziativa della P.G. è ammessa:",
+        "options": [
+            "In caso di flagranza di reato o evasione",
+            "Sempre",
+            "Mai",
+            "Solo di notte"
+        ],
+        "answer": "In caso di flagranza di reato o evasione"
+    },
+    {
+        "id": 4047,
+        "category": "Procedura Penale",
+        "question": "La perquisizione d'iniziativa deve essere convalidata?",
+        "options": [
+            "Sì, dal P.M. entro 48 ore",
+            "No",
+            "Sì, dal G.I.P.",
+            "Sì, dal Questore"
+        ],
+        "answer": "Sì, dal P.M. entro 48 ore"
+    },
+    {
+        "id": 4048,
+        "category": "Procedura Penale",
+        "question": "Qual è la differenza tra mezzo di prova e mezzo di ricerca della prova?",
+        "options": [
+            "Il mezzo di prova si forma in dibattimento (es. testimonianza), il mezzo di ricerca acquisisce tracce preesistenti (es. perquisizione)",
+            "Sono la stessa cosa",
+            "Il mezzo di prova è solo documentale",
+            "Il mezzo di ricerca è solo informatico"
+        ],
+        "answer": "Il mezzo di prova si forma in dibattimento (es. testimonianza), il mezzo di ricerca acquisisce tracce preesistenti (es. perquisizione)"
+    },
+    {
+        "id": 4049,
+        "category": "Procedura Penale",
+        "question": "La testimonianza è un mezzo di prova?",
+        "options": [
+            "Sì",
+            "No, è un mezzo di ricerca",
+            "No, è un indizio",
+            "Solo se scritta"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 4050,
+        "category": "Procedura Penale",
+        "question": "I prossimi congiunti dell'imputato hanno facoltà di astenersi dal testimoniare?",
+        "options": [
+            "Sì",
+            "No, devono testimoniare",
+            "Solo se minorenni",
+            "Solo se conviventi"
+        ],
+        "answer": "Sì"
+    }
+]

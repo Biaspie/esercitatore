@@ -1,0 +1,602 @@
+[
+    {
+        "id": 4051,
+        "category": "Procedura Penale",
+        "question": "Il sequestro probatorio serve a:",
+        "options": [
+            "Assicurare il corpo del reato o cose pertinenti al reato per finalità probatorie",
+            "Punire l'indagato",
+            "Pignorare i beni per i debiti",
+            "Confiscare i beni ai mafiosi"
+        ],
+        "answer": "Assicurare il corpo del reato o cose pertinenti al reato per finalità probatorie"
+    },
+    {
+        "id": 4052,
+        "category": "Procedura Penale",
+        "question": "Cosa si intende per 'corpo del reato' (art. 240 c.p.p.)?",
+        "options": [
+            "Le cose sulle quali o mediante le quali il reato è stato commesso, e le cose che ne costituiscono il prodotto, profitto o prezzo",
+            "Il cadavere",
+            "L'arma del delitto soltanto",
+            "La refurtiva soltanto"
+        ],
+        "answer": "Le cose sulle quali o mediante le quali il reato è stato commesso, e le cose che ne costituiscono il prodotto, profitto o prezzo"
+    },
+    {
+        "id": 4053,
+        "category": "Procedura Penale",
+        "question": "Chi dispone il sequestro probatorio durante le indagini?",
+        "options": [
+            "Il P.M. con decreto motivato (o la P.G. in caso di urgenza)",
+            "Il G.I.P.",
+            "Il Questore",
+            "Il Prefetto"
+        ],
+        "answer": "Il P.M. con decreto motivato (o la P.G. in caso di urgenza)"
+    },
+    {
+        "id": 4054,
+        "category": "Procedura Penale",
+        "question": "Le intercettazioni devono essere autorizzate da:",
+        "options": [
+            "G.I.P. su richiesta del P.M.",
+            "P.M. autonomamente",
+            "Questore",
+            "Polizia"
+        ],
+        "answer": "G.I.P. su richiesta del P.M."
+    },
+    {
+        "id": 4055,
+        "category": "Procedura Penale",
+        "question": "Quali sono i presupposti per le intercettazioni (art. 266 c.p.p.)?",
+        "options": [
+            "Gravi indizi di reato e assoluta indispensabilità per la prosecuzione delle indagini (per reati specifici)",
+            "Semplice sospetto",
+            "Curiosità investigativa",
+            "Richiesta della vittima"
+        ],
+        "answer": "Gravi indizi di reato e assoluta indispensabilità per la prosecuzione delle indagini (per reati specifici)"
+    },
+    {
+        "id": 4056,
+        "category": "Procedura Penale",
+        "question": "In casi di urgenza, il P.M. può disporre le intercettazioni?",
+        "options": [
+            "Sì, ma deve chiedere la convalida al G.I.P. entro 24 ore (che decide nelle successive 48 ore)",
+            "Sì, senza limiti",
+            "No, mai",
+            "Solo per reati di mafia"
+        ],
+        "answer": "Sì, ma deve chiedere la convalida al G.I.P. entro 24 ore (che decide nelle successive 48 ore)"
+    },
+    {
+        "id": 4057,
+        "category": "Procedura Penale",
+        "question": "Le intercettazioni preventive (art. 226 disp. att.) servono a:",
+        "options": [
+            "Acquisire notizie per la prevenzione di reati gravi (terrorismo, mafia), ma non sono utilizzabili come prova",
+            "Trovare prove per il processo",
+            "Arrestare i colpevoli",
+            "Condannare gli indagati"
+        ],
+        "answer": "Acquisire notizie per la prevenzione di reati gravi (terrorismo, mafia), ma non sono utilizzabili come prova"
+    },
+    {
+        "id": 4058,
+        "category": "Procedura Penale",
+        "question": "L'arresto in flagranza è una misura:",
+        "options": [
+            "Precautelare",
+            "Cautelare",
+            "Definitiva",
+            "Amministrativa"
+        ],
+        "answer": "Precautelare"
+    },
+    {
+        "id": 4059,
+        "category": "Procedura Penale",
+        "question": "Quando è obbligatorio l'arresto in flagranza per la P.G.?",
+        "options": [
+            "Per delitti non colposi gravi (ergastolo o reclusione min 5 anni e max 20 anni) e altri reati specifici (art. 380 c.p.p.)",
+            "Sempre",
+            "Mai",
+            "Solo se c'è pericolo di fuga"
+        ],
+        "answer": "Per delitti non colposi gravi (ergastolo o reclusione min 5 anni e max 20 anni) e altri reati specifici (art. 380 c.p.p.)"
+    },
+    {
+        "id": 4060,
+        "category": "Procedura Penale",
+        "question": "Il privato può eseguire l'arresto in flagranza?",
+        "options": [
+            "Sì, nei casi di arresto obbligatorio per la P.G. e per reati procedibili d'ufficio",
+            "No, mai",
+            "Sì, sempre",
+            "Solo se è una guardia giurata"
+        ],
+        "answer": "Sì, nei casi di arresto obbligatorio per la P.G. e per reati procedibili d'ufficio"
+    },
+    {
+        "id": 4061,
+        "category": "Procedura Penale",
+        "question": "L'arresto facoltativo dipende da:",
+        "options": [
+            "Valutazione discrezionale della P.G. sulla gravità del fatto o pericolosità del soggetto",
+            "Decisione del P.M.",
+            "Decisione del Giudice",
+            "Volontà della vittima"
+        ],
+        "answer": "Valutazione discrezionale della P.G. sulla gravità del fatto o pericolosità del soggetto"
+    },
+    {
+        "id": 4062,
+        "category": "Procedura Penale",
+        "question": "Il fermo di indiziato di delitto è disposto da:",
+        "options": [
+            "P.M. (o P.G. in via sussidiaria)",
+            "G.I.P.",
+            "Questore",
+            "Sindaco"
+        ],
+        "answer": "P.M. (o P.G. in via sussidiaria)"
+    },
+    {
+        "id": 4063,
+        "category": "Procedura Penale",
+        "question": "Qual è il presupposto fondamentale per il fermo?",
+        "options": [
+            "Il pericolo di fuga",
+            "La flagranza",
+            "La confessione",
+            "La testimonianza"
+        ],
+        "answer": "Il pericolo di fuga"
+    },
+    {
+        "id": 4064,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo la P.G. deve dare notizia dell'arresto/fermo al P.M.?",
+        "options": [
+            "Immediatamente",
+            "Entro 24 ore",
+            "Entro 48 ore",
+            "Entro 5 giorni"
+        ],
+        "answer": "Immediatamente"
+    },
+    {
+        "id": 4065,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo la P.G. deve mettere l'arrestato a disposizione del P.M. (in carcere)?",
+        "options": [
+            "Entro 24 ore",
+            "Entro 48 ore",
+            "Entro 12 ore",
+            "Entro 96 ore"
+        ],
+        "answer": "Entro 24 ore"
+    },
+    {
+        "id": 4066,
+        "category": "Procedura Penale",
+        "question": "Chi convalida l'arresto o il fermo?",
+        "options": [
+            "Il G.I.P. (Giudice per le Indagini Preliminari)",
+            "Il P.M.",
+            "Il Questore",
+            "Il Prefetto"
+        ],
+        "answer": "Il G.I.P. (Giudice per le Indagini Preliminari)"
+    },
+    {
+        "id": 4067,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo il P.M. deve chiedere la convalida al G.I.P.?",
+        "options": [
+            "Entro 48 ore dall'arresto",
+            "Entro 24 ore",
+            "Entro 5 giorni",
+            "Entro 10 giorni"
+        ],
+        "answer": "Entro 48 ore dall'arresto"
+    },
+    {
+        "id": 4068,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo il G.I.P. deve decidere sulla convalida?",
+        "options": [
+            "Entro le successive 48 ore",
+            "Entro 24 ore",
+            "Entro 5 giorni",
+            "Entro 10 giorni"
+        ],
+        "answer": "Entro le successive 48 ore"
+    },
+    {
+        "id": 4069,
+        "category": "Procedura Penale",
+        "question": "Se l'arresto non viene convalidato nei termini, cosa succede?",
+        "options": [
+            "L'arrestato deve essere liberato (la misura perde efficacia)",
+            "Rimane in carcere",
+            "Viene processato subito",
+            "Viene multato"
+        ],
+        "answer": "L'arrestato deve essere liberato (la misura perde efficacia)"
+    },
+    {
+        "id": 4070,
+        "category": "Procedura Penale",
+        "question": "Le misure cautelari (es. custodia in carcere) sono disposte da:",
+        "options": [
+            "Giudice (su richiesta del P.M.)",
+            "P.M.",
+            "Polizia",
+            "Prefetto"
+        ],
+        "answer": "Giudice (su richiesta del P.M.)"
+    },
+    {
+        "id": 4071,
+        "category": "Procedura Penale",
+        "question": "Quali sono le esigenze cautelari (art. 274 c.p.p.)?",
+        "options": [
+            "Pericolo di inquinamento prove, pericolo di fuga, pericolo di reiterazione del reato",
+            "Gravità del reato",
+            "Precedenti penali",
+            "Mancanza di lavoro"
+        ],
+        "answer": "Pericolo di inquinamento prove, pericolo di fuga, pericolo di reiterazione del reato"
+    },
+    {
+        "id": 4072,
+        "category": "Procedura Penale",
+        "question": "Il giudizio direttissimo è un procedimento speciale che salta:",
+        "options": [
+            "L'udienza preliminare (si va subito al dibattimento)",
+            "Le indagini preliminari",
+            "Il dibattimento",
+            "L'appello"
+        ],
+        "answer": "L'udienza preliminare (si va subito al dibattimento)"
+    },
+    {
+        "id": 4073,
+        "category": "Procedura Penale",
+        "question": "Quando si può procedere a giudizio direttissimo?",
+        "options": [
+            "In caso di arresto in flagranza convalidato o confessione",
+            "Sempre",
+            "Mai",
+            "Solo per reati lievi"
+        ],
+        "answer": "In caso di arresto in flagranza convalidato o confessione"
+    },
+    {
+        "id": 4074,
+        "category": "Procedura Penale",
+        "question": "Il giudizio immediato salta:",
+        "options": [
+            "L'udienza preliminare",
+            "Le indagini",
+            "Il dibattimento",
+            "La sentenza"
+        ],
+        "answer": "L'udienza preliminare"
+    },
+    {
+        "id": 4075,
+        "category": "Procedura Penale",
+        "question": "Il giudizio abbreviato comporta:",
+        "options": [
+            "Uno sconto di pena (1/3) in caso di condanna e si svolge allo stato degli atti (senza dibattimento)",
+            "L'assoluzione automatica",
+            "Il raddoppio della pena",
+            "La scarcerazione immediata"
+        ],
+        "answer": "Uno sconto di pena (1/3) in caso di condanna e si svolge allo stato degli atti (senza dibattimento)"
+    },
+    {
+        "id": 4076,
+        "category": "Procedura Penale",
+        "question": "Il patteggiamento è:",
+        "options": [
+            "L'applicazione della pena su richiesta delle parti (accordo tra P.M. e imputato)",
+            "Una condanna decisa solo dal giudice",
+            "Un'assoluzione",
+            "Un processo lungo"
+        ],
+        "answer": "L'applicazione della pena su richiesta delle parti (accordo tra P.M. e imputato)"
+    },
+    {
+        "id": 4077,
+        "category": "Procedura Penale",
+        "question": "Il decreto penale di condanna si applica per:",
+        "options": [
+            "Reati perseguibili d'ufficio o a querela, punibili con pena pecuniaria (anche in sostituzione di detentiva)",
+            "Omicidi",
+            "Rapine",
+            "Tutti i reati"
+        ],
+        "answer": "Reati perseguibili d'ufficio o a querela, punibili con pena pecuniaria (anche in sostituzione di detentiva)"
+    },
+    {
+        "id": 4078,
+        "category": "Procedura Penale",
+        "question": "La sospensione del procedimento con messa alla prova comporta:",
+        "options": [
+            "La sospensione del processo e l'affidamento dell'imputato ai servizi sociali per svolgere lavori di pubblica utilità",
+            "La condanna immediata",
+            "L'assoluzione immediata",
+            "L'arresto"
+        ],
+        "answer": "La sospensione del processo e l'affidamento dell'imputato ai servizi sociali per svolgere lavori di pubblica utilità"
+    },
+    {
+        "id": 4079,
+        "category": "Procedura Penale",
+        "question": "Se la prova ha esito positivo, il reato:",
+        "options": [
+            "Si estingue",
+            "Viene punito più severamente",
+            "Viene archiviato per infondatezza",
+            "Diventa un illecito amministrativo"
+        ],
+        "answer": "Si estingue"
+    },
+    {
+        "id": 4080,
+        "category": "Procedura Penale",
+        "question": "La riforma Cartabia (D.Lgs. 150/2022) ha introdotto:",
+        "options": [
+            "La Giustizia Riparativa",
+            "La pena di morte",
+            "Il processo telematico obbligatorio per tutti",
+            "L'abolizione del P.M."
+        ],
+        "answer": "La Giustizia Riparativa"
+    },
+    {
+        "id": 4081,
+        "category": "Procedura Penale",
+        "question": "Cos'è la Giustizia Riparativa?",
+        "options": [
+            "Un programma per la risoluzione delle questioni derivanti dal reato con l'aiuto di un mediatore",
+            "Un risarcimento danni automatico",
+            "Una pena alternativa",
+            "Un processo civile"
+        ],
+        "answer": "Un programma per la risoluzione delle questioni derivanti dal reato con l'aiuto di un mediatore"
+    },
+    {
+        "id": 4082,
+        "category": "Procedura Penale",
+        "question": "L'accesso alla Giustizia Riparativa è:",
+        "options": [
+            "Volontario e gratuito",
+            "Obbligatorio",
+            "A pagamento",
+            "Solo per i minorenni"
+        ],
+        "answer": "Volontario e gratuito"
+    },
+    {
+        "id": 4083,
+        "category": "Procedura Penale",
+        "question": "Qual è l'obiettivo della Giustizia Riparativa?",
+        "options": [
+            "Raggiungere un esito riparativo (simbolico o materiale) e ricostruire il legame con la comunità",
+            "Punire il colpevole",
+            "Assolvere il colpevole",
+            "Dimenticare il reato"
+        ],
+        "answer": "Raggiungere un esito riparativo (simbolico o materiale) e ricostruire il legame con la comunità"
+    },
+    {
+        "id": 4084,
+        "category": "Procedura Penale",
+        "question": "La riforma Cartabia ha modificato i termini delle indagini preliminari?",
+        "options": [
+            "Sì, il termine ordinario è di 1 anno (6 mesi per contravvenzioni, 1 anno e 6 mesi per reati gravi)",
+            "No, sono rimasti uguali",
+            "Li ha aboliti",
+            "Li ha raddoppiati tutti"
+        ],
+        "answer": "Sì, il termine ordinario è di 1 anno (6 mesi per contravvenzioni, 1 anno e 6 mesi per reati gravi)"
+    },
+    {
+        "id": 4085,
+        "category": "Procedura Penale",
+        "question": "La proroga delle indagini può essere chiesta:",
+        "options": [
+            "Una sola volta per 6 mesi, se le indagini sono complesse",
+            "Infinite volte",
+            "Mai",
+            "Ogni mese"
+        ],
+        "answer": "Una sola volta per 6 mesi, se le indagini sono complesse"
+    },
+    {
+        "id": 4086,
+        "category": "Procedura Penale",
+        "question": "Cosa succede se il P.M. non esercita l'azione penale nei termini?",
+        "options": [
+            "Deve effettuare la 'discovery' (deposito atti) e l'indagato può chiedere al G.I.P. di ordinare al P.M. di decidere",
+            "Il reato si estingue",
+            "Il P.M. viene arrestato",
+            "Si ricomincia da capo"
+        ],
+        "answer": "Deve effettuare la 'discovery' (deposito atti) e l'indagato può chiedere al G.I.P. di ordinare al P.M. di decidere"
+    },
+    {
+        "id": 4087,
+        "category": "Procedura Penale",
+        "question": "Il nuovo presupposto per l'archiviazione (Riforma Cartabia) è:",
+        "options": [
+            "Quando gli elementi acquisiti non consentono di formulare una ragionevole previsione di condanna",
+            "Quando la notizia di reato è infondata",
+            "Quando l'indagato è simpatico",
+            "Quando il reato è lieve"
+        ],
+        "answer": "Quando gli elementi acquisiti non consentono di formulare una ragionevole previsione di condanna"
+    },
+    {
+        "id": 4088,
+        "category": "Procedura Penale",
+        "question": "L'avviso di conclusione delle indagini (art. 415-bis) deve contenere:",
+        "options": [
+            "Anche l'avviso della facoltà di accedere ai programmi di giustizia riparativa",
+            "Solo l'accusa",
+            "Solo la data del processo",
+            "La condanna"
+        ],
+        "answer": "Anche l'avviso della facoltà di accedere ai programmi di giustizia riparativa"
+    },
+    {
+        "id": 4089,
+        "category": "Procedura Penale",
+        "question": "La riforma Cartabia ha potenziato le pene sostitutive delle pene detentive brevi?",
+        "options": [
+            "Sì (semilibertà, detenzione domiciliare, lavoro di pubblica utilità, pena pecuniaria)",
+            "No, le ha abolite",
+            "Solo per i minorenni",
+            "Solo per le donne"
+        ],
+        "answer": "Sì (semilibertà, detenzione domiciliare, lavoro di pubblica utilità, pena pecuniaria)"
+    },
+    {
+        "id": 4090,
+        "category": "Procedura Penale",
+        "question": "Il giudice può applicare direttamente una pena sostitutiva?",
+        "options": [
+            "Sì, se ha gli elementi necessari e con il consenso dell'imputato (per alcune misure)",
+            "No, deve decidere il magistrato di sorveglianza",
+            "Solo se lo chiede il P.M.",
+            "Mai"
+        ],
+        "answer": "Sì, se ha gli elementi necessari e con il consenso dell'imputato (per alcune misure)"
+    },
+    {
+        "id": 4091,
+        "category": "Procedura Penale",
+        "question": "L'ispezione personale è un atto:",
+        "options": [
+            "Garantito (richiede preavviso al difensore, salvo urgenza)",
+            "Segreto",
+            "Libero",
+            "Amministrativo"
+        ],
+        "answer": "Garantito (richiede preavviso al difensore, salvo urgenza)"
+    },
+    {
+        "id": 4092,
+        "category": "Procedura Penale",
+        "question": "La perquisizione personale è disposta quando:",
+        "options": [
+            "Vi è fondato motivo di ritenere che taluno occulti sulla persona il corpo del reato o cose pertinenti",
+            "Sempre",
+            "Per identificare una persona",
+            "Per punizione"
+        ],
+        "answer": "Vi è fondato motivo di ritenere che taluno occulti sulla persona il corpo del reato o cose pertinenti"
+    },
+    {
+        "id": 4093,
+        "category": "Procedura Penale",
+        "question": "La perquisizione locale è disposta quando:",
+        "options": [
+            "Vi è fondato motivo di ritenere che cose pertinenti al reato si trovino in un luogo o che lì si trovi l'imputato",
+            "A caso",
+            "Per controllare i documenti",
+            "Per fare un censimento"
+        ],
+        "answer": "Vi è fondato motivo di ritenere che cose pertinenti al reato si trovino in un luogo o che lì si trovi l'imputato"
+    },
+    {
+        "id": 4094,
+        "category": "Procedura Penale",
+        "question": "Il decreto di perquisizione deve essere consegnato all'interessato?",
+        "options": [
+            "Sì, con l'avviso della facoltà di farsi assistere da persona di fiducia",
+            "No, è segreto",
+            "Solo se lo chiede",
+            "Dopo il processo"
+        ],
+        "answer": "Sì, con l'avviso della facoltà di farsi assistere da persona di fiducia"
+    },
+    {
+        "id": 4095,
+        "category": "Procedura Penale",
+        "question": "Sequestro di corrispondenza: chi può aprirla?",
+        "options": [
+            "Solo l'Autorità Giudiziaria (la P.G. deve consegnarla chiusa)",
+            "La P.G.",
+            "Il postino",
+            "Il destinatario"
+        ],
+        "answer": "Solo l'Autorità Giudiziaria (la P.G. deve consegnarla chiusa)"
+    },
+    {
+        "id": 4096,
+        "category": "Procedura Penale",
+        "question": "Sequestro di computer: cosa si sequestra preferibilmente?",
+        "options": [
+            "La copia clone del documento informatico (per garantire l'integrità)",
+            "Il computer intero sempre",
+            "Lo schermo",
+            "La tastiera"
+        ],
+        "answer": "La copia clone del documento informatico (per garantire l'integrità)"
+    },
+    {
+        "id": 4097,
+        "category": "Procedura Penale",
+        "question": "L'accompagnamento coattivo per identificazione (art. 349 c.p.p.) è un arresto?",
+        "options": [
+            "No, è un fermo amministrativo per identificazione",
+            "Sì",
+            "È una misura cautelare",
+            "È una condanna"
+        ],
+        "answer": "No, è un fermo amministrativo per identificazione"
+    },
+    {
+        "id": 4098,
+        "category": "Procedura Penale",
+        "question": "La P.G. può prelevare coattivamente materiale biologico (DNA)?",
+        "options": [
+            "Solo sull'indagato e solo per l'identificazione (art. 349 bis), altrimenti serve autorizzazione del P.M./Giudice",
+            "Su chiunque",
+            "Sempre",
+            "Mai"
+        ],
+        "answer": "Solo sull'indagato e solo per l'identificazione (art. 349 bis), altrimenti serve autorizzazione del P.M./Giudice"
+    },
+    {
+        "id": 4099,
+        "category": "Procedura Penale",
+        "question": "Le sommarie informazioni da persone informate sui fatti sono documentate?",
+        "options": [
+            "Sì, mediante verbale",
+            "No",
+            "Solo se importanti",
+            "Solo se c'è l'avvocato"
+        ],
+        "answer": "Sì, mediante verbale"
+    },
+    {
+        "id": 4100,
+        "category": "Procedura Penale",
+        "question": "La P.G. può avvalersi di esperti (es. psicologi) per sentire minori?",
+        "options": [
+            "Sì, ed è obbligatorio per certi reati (es. violenza sessuale)",
+            "No",
+            "Solo se paga il genitore",
+            "Solo se il minore è malato"
+        ],
+        "answer": "Sì, ed è obbligatorio per certi reati (es. violenza sessuale)"
+    }
+]

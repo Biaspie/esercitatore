@@ -1,4 +1,4 @@
-[
+const allQuestions = [
   {
     "id": 1,
     "question": "Chi è l'Autorità nazionale di pubblica sicurezza?",
@@ -22204,4 +22204,4 @@
     ],
     "answer": "Il Tribunale di Sorveglianza"
   }
-]
+];

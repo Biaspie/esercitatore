@@ -1,0 +1,602 @@
+[
+    {
+        "id": 3101,
+        "category": "Diritto Costituzionale",
+        "question": "La giustizia è amministrata in nome (art. 101):",
+        "options": [
+            "Del Popolo",
+            "Della Legge",
+            "Del Presidente della Repubblica",
+            "Di Dio"
+        ],
+        "answer": "Del Popolo"
+    },
+    {
+        "id": 3102,
+        "category": "Diritto Costituzionale",
+        "question": "I giudici sono soggetti soltanto:",
+        "options": [
+            "Alla legge",
+            "Al Ministro della Giustizia",
+            "Al CSM",
+            "Al Popolo"
+        ],
+        "answer": "Alla legge"
+    },
+    {
+        "id": 3103,
+        "category": "Diritto Costituzionale",
+        "question": "La magistratura costituisce un ordine (art. 104):",
+        "options": [
+            "Autonomo e indipendente da ogni altro potere",
+            "Dipendente dal Ministero della Giustizia",
+            "Gerarchico",
+            "Politico"
+        ],
+        "answer": "Autonomo e indipendente da ogni altro potere"
+    },
+    {
+        "id": 3104,
+        "category": "Diritto Costituzionale",
+        "question": "Chi presiede il Consiglio Superiore della Magistratura (CSM)?",
+        "options": [
+            "Il Presidente della Repubblica",
+            "Il Primo Presidente della Cassazione",
+            "Il Ministro della Giustizia",
+            "Un giudice eletto"
+        ],
+        "answer": "Il Presidente della Repubblica"
+    },
+    {
+        "id": 3105,
+        "category": "Diritto Costituzionale",
+        "question": "Di cosa si occupa il CSM (art. 105)?",
+        "options": [
+            "Assunzioni, assegnazioni, trasferimenti, promozioni e provvedimenti disciplinari nei riguardi dei magistrati",
+            "Giudicare i reati dei politici",
+            "Approvare le leggi sulla giustizia",
+            "Nominare il Ministro della Giustizia"
+        ],
+        "answer": "Assunzioni, assegnazioni, trasferimenti, promozioni e provvedimenti disciplinari nei riguardi dei magistrati"
+    },
+    {
+        "id": 3106,
+        "category": "Diritto Costituzionale",
+        "question": "I magistrati sono inamovibili (art. 107)?",
+        "options": [
+            "Sì, non possono essere dispensati o sospesi dal servizio né destinati ad altre sedi o funzioni se non in seguito a decisione del CSM",
+            "No, il Ministro può trasferirli quando vuole",
+            "Solo quelli della Cassazione",
+            "Solo dopo 10 anni di servizio"
+        ],
+        "answer": "Sì, non possono essere dispensati o sospesi dal servizio né destinati ad altre sedi o funzioni se non in seguito a decisione del CSM"
+    },
+    {
+        "id": 3107,
+        "category": "Diritto Costituzionale",
+        "question": "L'autorità giudiziaria dispone direttamente della polizia giudiziaria (art. 109)?",
+        "options": [
+            "Sì",
+            "No, deve chiedere al Prefetto",
+            "Solo in caso di emergenza",
+            "Solo per reati gravi"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 3108,
+        "category": "Diritto Costituzionale",
+        "question": "La giurisdizione si attua mediante il giusto processo regolato (art. 111):",
+        "options": [
+            "Dalla legge",
+            "Dal giudice",
+            "Dalle parti",
+            "Dal CSM"
+        ],
+        "answer": "Dalla legge"
+    },
+    {
+        "id": 3109,
+        "category": "Diritto Costituzionale",
+        "question": "Nel processo penale, la legge assicura che la persona accusata di un reato:",
+        "options": [
+            "Sia informata riservatamente della natura e dei motivi dell'accusa nel più breve tempo possibile",
+            "Sia arrestata subito",
+            "Sia giudicata entro 24 ore",
+            "Non possa avere un avvocato"
+        ],
+        "answer": "Sia informata riservatamente della natura e dei motivi dell'accusa nel più breve tempo possibile"
+    },
+    {
+        "id": 3110,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti i provvedimenti giurisdizionali devono essere motivati?",
+        "options": [
+            "Sì",
+            "No, solo le sentenze",
+            "No, solo le ordinanze",
+            "Solo se richiesto dalle parti"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 3111,
+        "category": "Diritto Costituzionale",
+        "question": "Contro le sentenze e contro i provvedimenti sulla libertà personale è sempre ammesso ricorso in Cassazione per violazione di legge?",
+        "options": [
+            "Sì",
+            "No, mai",
+            "Solo per le sentenze penali",
+            "Solo se il giudice è d'accordo"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 3112,
+        "category": "Diritto Costituzionale",
+        "question": "Chi è il giudice delle leggi in Italia?",
+        "options": [
+            "La Corte Costituzionale",
+            "La Corte di Cassazione",
+            "Il Consiglio di Stato",
+            "Il Presidente della Repubblica"
+        ],
+        "answer": "La Corte Costituzionale"
+    },
+    {
+        "id": 3113,
+        "category": "Diritto Costituzionale",
+        "question": "Da quanti giudici è composta la Corte Costituzionale?",
+        "options": [
+            "15",
+            "12",
+            "20",
+            "9"
+        ],
+        "answer": "15"
+    },
+    {
+        "id": 3114,
+        "category": "Diritto Costituzionale",
+        "question": "Come sono nominati i giudici della Corte Costituzionale?",
+        "options": [
+            "1/3 dal Presidente della Repubblica, 1/3 dal Parlamento in seduta comune, 1/3 dalle supreme magistrature ordinaria e amministrative",
+            "Tutti dal Parlamento",
+            "Tutti dal Presidente della Repubblica",
+            "Tutti dai magistrati"
+        ],
+        "answer": "1/3 dal Presidente della Repubblica, 1/3 dal Parlamento in seduta comune, 1/3 dalle supreme magistrature ordinaria e amministrative"
+    },
+    {
+        "id": 3115,
+        "category": "Diritto Costituzionale",
+        "question": "Quanto dura in carica un giudice costituzionale?",
+        "options": [
+            "9 anni",
+            "7 anni",
+            "5 anni",
+            "A vita"
+        ],
+        "answer": "9 anni"
+    },
+    {
+        "id": 3116,
+        "category": "Diritto Costituzionale",
+        "question": "I giudici della Corte Costituzionale sono rieleggibili?",
+        "options": [
+            "No",
+            "Sì, una volta",
+            "Sì, sempre",
+            "Solo dopo 3 anni"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": 3117,
+        "category": "Diritto Costituzionale",
+        "question": "Quale funzione NON spetta alla Corte Costituzionale?",
+        "options": [
+            "Giudicare sui reati comuni commessi dai parlamentari",
+            "Giudicare sulla legittimità costituzionale delle leggi",
+            "Giudicare sui conflitti di attribuzione tra i poteri dello Stato",
+            "Giudicare sulle accuse contro il Presidente della Repubblica"
+        ],
+        "answer": "Giudicare sui reati comuni commessi dai parlamentari"
+    },
+    {
+        "id": 3118,
+        "category": "Diritto Costituzionale",
+        "question": "Quando la Corte dichiara l'illegittimità costituzionale di una norma, questa:",
+        "options": [
+            "Cessa di avere efficacia dal giorno successivo alla pubblicazione della decisione",
+            "Cessa di avere efficacia dopo 1 anno",
+            "Rimane valida per i processi in corso",
+            "Viene abrogata dal Parlamento"
+        ],
+        "answer": "Cessa di avere efficacia dal giorno successivo alla pubblicazione della decisione"
+    },
+    {
+        "id": 3119,
+        "category": "Diritto Costituzionale",
+        "question": "Contro le decisioni della Corte Costituzionale:",
+        "options": [
+            "Non è ammessa alcuna impugnazione",
+            "È ammesso ricorso in Cassazione",
+            "È ammesso ricorso al Parlamento",
+            "È ammesso ricorso alla Corte Europea"
+        ],
+        "answer": "Non è ammessa alcuna impugnazione"
+    },
+    {
+        "id": 3120,
+        "category": "Diritto Costituzionale",
+        "question": "Il giudizio di costituzionalità in via incidentale inizia:",
+        "options": [
+            "Da un processo in corso davanti a un'autorità giurisdizionale",
+            "Da un ricorso diretto del cittadino",
+            "Da una richiesta del Governo",
+            "Da una richiesta del Parlamento"
+        ],
+        "answer": "Da un processo in corso davanti a un'autorità giurisdizionale"
+    },
+    {
+        "id": 3121,
+        "category": "Diritto Costituzionale",
+        "question": "Il giudice a quo, per sollevare la questione di costituzionalità, deve accertare:",
+        "options": [
+            "La rilevanza e la non manifesta infondatezza",
+            "Solo la rilevanza",
+            "Solo la fondatezza",
+            "Che la legge sia vecchia"
+        ],
+        "answer": "La rilevanza e la non manifesta infondatezza"
+    },
+    {
+        "id": 3122,
+        "category": "Diritto Costituzionale",
+        "question": "Cosa significa che la questione deve essere rilevante?",
+        "options": [
+            "Che il giudizio non può essere definito indipendentemente dalla risoluzione della questione di legittimità costituzionale",
+            "Che la questione è importante politicamente",
+            "Che la legge è ingiusta",
+            "Che le parti sono d'accordo"
+        ],
+        "answer": "Che il giudizio non può essere definito indipendentemente dalla risoluzione della questione di legittimità costituzionale"
+    },
+    {
+        "id": 3123,
+        "category": "Diritto Costituzionale",
+        "question": "Se il giudice ritiene la questione manifestamente infondata:",
+        "options": [
+            "La respinge con ordinanza motivata",
+            "La invia comunque alla Corte",
+            "Sospende il processo",
+            "Assolve l'imputato"
+        ],
+        "answer": "La respinge con ordinanza motivata"
+    },
+    {
+        "id": 3124,
+        "category": "Diritto Costituzionale",
+        "question": "Il giudizio in via principale (o d'azione) può essere promosso:",
+        "options": [
+            "Dallo Stato contro una legge regionale o dalla Regione contro una legge statale o di altra Regione",
+            "Dai cittadini",
+            "Dai giudici",
+            "Dai sindacati"
+        ],
+        "answer": "Dallo Stato contro una legge regionale o dalla Regione contro una legge statale o di altra Regione"
+    },
+    {
+        "id": 3125,
+        "category": "Diritto Costituzionale",
+        "question": "Entro quanto tempo lo Stato può impugnare una legge regionale?",
+        "options": [
+            "Entro 60 giorni dalla pubblicazione",
+            "Entro 30 giorni",
+            "Entro 1 anno",
+            "Senza limiti di tempo"
+        ],
+        "answer": "Entro 60 giorni dalla pubblicazione"
+    },
+    {
+        "id": 3126,
+        "category": "Diritto Costituzionale",
+        "question": "Le sentenze di accoglimento della Corte Costituzionale hanno effetto:",
+        "options": [
+            "Erga omnes (per tutti)",
+            "Solo tra le parti",
+            "Solo per il giudice a quo",
+            "Solo per il futuro"
+        ],
+        "answer": "Erga omnes (per tutti)"
+    },
+    {
+        "id": 3127,
+        "category": "Diritto Costituzionale",
+        "question": "Le sentenze di rigetto della Corte Costituzionale:",
+        "options": [
+            "Dichiarano non fondata la questione, ma non impediscono che venga riproposta in un altro processo",
+            "Dichiarano la legge legittima per sempre",
+            "Hanno effetto erga omnes",
+            "Abrogano la legge"
+        ],
+        "answer": "Dichiarano non fondata la questione, ma non impediscono che venga riproposta in un altro processo"
+    },
+    {
+        "id": 3128,
+        "category": "Diritto Costituzionale",
+        "question": "Cosa sono le sentenze interpretative di rigetto?",
+        "options": [
+            "Sentenze in cui la Corte dichiara infondata la questione perché la norma può essere interpretata in modo conforme a Costituzione",
+            "Sentenze che annullano la legge",
+            "Sentenze che modificano il testo della legge",
+            "Sentenze che rinviano al Parlamento"
+        ],
+        "answer": "Sentenze in cui la Corte dichiara infondata la questione perché la norma può essere interpretata in modo conforme a Costituzione"
+    },
+    {
+        "id": 3129,
+        "category": "Diritto Costituzionale",
+        "question": "Il referendum abrogativo (art. 75) non è ammesso per:",
+        "options": [
+            "Leggi tributarie e di bilancio, di amnistia e di indulto, di autorizzazione a ratificare trattati internazionali",
+            "Leggi elettorali",
+            "Leggi costituzionali",
+            "Tutte le leggi precedenti"
+        ],
+        "answer": "Leggi tributarie e di bilancio, di amnistia e di indulto, di autorizzazione a ratificare trattati internazionali"
+    },
+    {
+        "id": 3130,
+        "category": "Diritto Costituzionale",
+        "question": "Chi giudica sull'ammissibilità del referendum abrogativo?",
+        "options": [
+            "La Corte Costituzionale",
+            "La Corte di Cassazione",
+            "Il Presidente della Repubblica",
+            "Il Parlamento"
+        ],
+        "answer": "La Corte Costituzionale"
+    },
+    {
+        "id": 3131,
+        "category": "Diritto Costituzionale",
+        "question": "La revisione della Costituzione (art. 138) richiede:",
+        "options": [
+            "Due deliberazioni successive da parte di ciascuna Camera ad intervallo non minore di tre mesi",
+            "Una sola deliberazione a maggioranza semplice",
+            "L'approvazione del Governo",
+            "Un referendum obbligatorio"
+        ],
+        "answer": "Due deliberazioni successive da parte di ciascuna Camera ad intervallo non minore di tre mesi"
+    },
+    {
+        "id": 3132,
+        "category": "Diritto Costituzionale",
+        "question": "Se nella seconda votazione per la revisione costituzionale si raggiunge la maggioranza dei 2/3:",
+        "options": [
+            "La legge è promulgata e non si fa luogo a referendum",
+            "Si fa comunque il referendum",
+            "La legge deve essere approvata dal Presidente",
+            "La legge decade"
+        ],
+        "answer": "La legge è promulgata e non si fa luogo a referendum"
+    },
+    {
+        "id": 3133,
+        "category": "Diritto Costituzionale",
+        "question": "La forma repubblicana può essere oggetto di revisione costituzionale (art. 139)?",
+        "options": [
+            "No",
+            "Sì, con referendum",
+            "Sì, all'unanimità",
+            "Sì, dopo 50 anni"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": 3134,
+        "category": "Diritto Costituzionale",
+        "question": "Le Regioni hanno potestà legislativa (art. 117)?",
+        "options": [
+            "Sì, concorrente o esclusiva a seconda delle materie",
+            "No, solo lo Stato fa le leggi",
+            "Solo le Regioni a statuto speciale",
+            "Solo su delega del Governo"
+        ],
+        "answer": "Sì, concorrente o esclusiva a seconda delle materie"
+    },
+    {
+        "id": 3135,
+        "category": "Diritto Costituzionale",
+        "question": "Nelle materie di legislazione concorrente, allo Stato spetta:",
+        "options": [
+            "La determinazione dei principi fondamentali",
+            "Il dettaglio della normativa",
+            "Nulla",
+            "L'approvazione delle leggi regionali"
+        ],
+        "answer": "La determinazione dei principi fondamentali"
+    },
+    {
+        "id": 3136,
+        "category": "Diritto Costituzionale",
+        "question": "Le Regioni hanno autonomia finanziaria (art. 119)?",
+        "options": [
+            "Sì, di entrata e di spesa",
+            "No, dipendono dallo Stato",
+            "Solo di spesa",
+            "Solo le Regioni ricche"
+        ],
+        "answer": "Sì, di entrata e di spesa"
+    },
+    {
+        "id": 3137,
+        "category": "Diritto Costituzionale",
+        "question": "Il Presidente della Giunta Regionale è eletto:",
+        "options": [
+            "A suffragio universale e diretto, salvo che lo statuto regionale disponga diversamente",
+            "Dal Consiglio Regionale",
+            "Dal Governo",
+            "Dai Sindaci"
+        ],
+        "answer": "A suffragio universale e diretto, salvo che lo statuto regionale disponga diversamente"
+    },
+    {
+        "id": 3138,
+        "category": "Diritto Costituzionale",
+        "question": "Il Governo può sostituirsi a organi delle Regioni, delle Città metropolitane, delle Province e dei Comuni (art. 120)?",
+        "options": [
+            "Sì, nel caso di mancato rispetto di norme e trattati internazionali o della normativa comunitaria oppure di pericolo grave per l'incolumità e la sicurezza pubblica",
+            "No, mai",
+            "Sì, sempre se non è d'accordo",
+            "Solo se lo chiede il Prefetto"
+        ],
+        "answer": "Sì, nel caso di mancato rispetto di norme e trattati internazionali o della normativa comunitaria oppure di pericolo grave per l'incolumità e la sicurezza pubblica"
+    },
+    {
+        "id": 3139,
+        "category": "Diritto Costituzionale",
+        "question": "I Comuni, le Province e le Città metropolitane sono (art. 114):",
+        "options": [
+            "Enti autonomi con propri statuti, poteri e funzioni",
+            "Organi dello Stato",
+            "Uffici del Governo",
+            "Enti privati"
+        ],
+        "answer": "Enti autonomi con propri statuti, poteri e funzioni"
+    },
+    {
+        "id": 3140,
+        "category": "Diritto Costituzionale",
+        "question": "La potestà regolamentare spetta allo Stato:",
+        "options": [
+            "Nelle materie di legislazione esclusiva, salva delega alle Regioni",
+            "In tutte le materie",
+            "Mai",
+            "Solo in caso di guerra"
+        ],
+        "answer": "Nelle materie di legislazione esclusiva, salva delega alle Regioni"
+    },
+    {
+        "id": 3141,
+        "category": "Diritto Costituzionale",
+        "question": "Alle Regioni spetta la potestà regolamentare:",
+        "options": [
+            "In ogni altra materia (non esclusiva statale)",
+            "Solo se autorizzate",
+            "Mai",
+            "Solo per l'organizzazione interna"
+        ],
+        "answer": "In ogni altra materia (non esclusiva statale)"
+    },
+    {
+        "id": 3142,
+        "category": "Diritto Costituzionale",
+        "question": "I Comuni, le Province e le Città metropolitane hanno potestà regolamentare?",
+        "options": [
+            "Sì, in ordine alla disciplina dell'organizzazione e dello svolgimento delle funzioni loro attribuite",
+            "No",
+            "Solo i Comuni capoluogo",
+            "Solo le Province"
+        ],
+        "answer": "Sì, in ordine alla disciplina dell'organizzazione e dello svolgimento delle funzioni loro attribuite"
+    },
+    {
+        "id": 3143,
+        "category": "Diritto Costituzionale",
+        "question": "Il principio di sussidiarietà (art. 118) implica che:",
+        "options": [
+            "Le funzioni amministrative sono attribuite ai Comuni salvo che, per assicurarne l'esercizio unitario, siano conferite a Province, Città metropolitane, Regioni e Stato",
+            "Tutto deve fare lo Stato",
+            "Tutto devono fare le Regioni",
+            "I privati devono gestire tutto"
+        ],
+        "answer": "Le funzioni amministrative sono attribuite ai Comuni salvo che, per assicurarne l'esercizio unitario, siano conferite a Province, Città metropolitane, Regioni e Stato"
+    },
+    {
+        "id": 3144,
+        "category": "Diritto Costituzionale",
+        "question": "Stato, Regioni, Città metropolitane, Province e Comuni favoriscono l'autonoma iniziativa dei cittadini, singoli e associati, per lo svolgimento di attività di interesse generale. Questo è il principio di:",
+        "options": [
+            "Sussidiarietà orizzontale",
+            "Sussidiarietà verticale",
+            "Decentramento",
+            "Autonomia"
+        ],
+        "answer": "Sussidiarietà orizzontale"
+    },
+    {
+        "id": 3145,
+        "category": "Diritto Costituzionale",
+        "question": "Il Consiglio di Stato è (art. 100):",
+        "options": [
+            "Organo di consulenza giuridico-amministrativa e di tutela della giustizia nell'amministrazione",
+            "Organo legislativo",
+            "Organo di governo",
+            "Organo di polizia"
+        ],
+        "answer": "Organo di consulenza giuridico-amministrativa e di tutela della giustizia nell'amministrazione"
+    },
+    {
+        "id": 3146,
+        "category": "Diritto Costituzionale",
+        "question": "La Corte dei conti esercita (art. 100):",
+        "options": [
+            "Il controllo preventivo di legittimità sugli atti del Governo e quello successivo sulla gestione del bilancio dello Stato",
+            "Il potere legislativo",
+            "Il potere esecutivo",
+            "Il potere di grazia"
+        ],
+        "answer": "Il controllo preventivo di legittimità sugli atti del Governo e quello successivo sulla gestione del bilancio dello Stato"
+    },
+    {
+        "id": 3147,
+        "category": "Diritto Costituzionale",
+        "question": "Il CNEL (Consiglio Nazionale dell'Economia e del Lavoro) ha iniziativa legislativa (art. 99)?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo in materia economica",
+            "Solo se richiesto dal Governo"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 3148,
+        "category": "Diritto Costituzionale",
+        "question": "L'Italia ripudia la guerra (art. 11):",
+        "options": [
+            "Come strumento di offesa alla libertà degli altri popoli e come mezzo di risoluzione delle controversie internazionali",
+            "Sempre e comunque",
+            "Mai",
+            "Solo se non provocata"
+        ],
+        "answer": "Come strumento di offesa alla libertà degli altri popoli e come mezzo di risoluzione delle controversie internazionali"
+    },
+    {
+        "id": 3149,
+        "category": "Diritto Costituzionale",
+        "question": "L'ordinamento giuridico italiano si conforma (art. 10):",
+        "options": [
+            "Alle norme del diritto internazionale generalmente riconosciute",
+            "Alle leggi americane",
+            "Alle leggi francesi",
+            "Solo alle leggi interne"
+        ],
+        "answer": "Alle norme del diritto internazionale generalmente riconosciute"
+    },
+    {
+        "id": 3150,
+        "category": "Diritto Costituzionale",
+        "question": "La condizione giuridica dello straniero è regolata (art. 10):",
+        "options": [
+            "Dalla legge in conformità delle norme e dei trattati internazionali",
+            "Dal Prefetto",
+            "Dal Questore",
+            "Dal Sindaco"
+        ],
+        "answer": "Dalla legge in conformità delle norme e dei trattati internazionali"
+    }
+]

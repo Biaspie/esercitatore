@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1101,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per la fabbricazione di armi comuni da sparo?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Ministro dell'Interno",
+            "Il Sindaco"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1102,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per la raccolta di armi da guerra?",
+        "options": [
+            "Il Prefetto (su delega del Ministro)",
+            "Il Questore",
+            "Il Sindaco",
+            "Il Ministero della Difesa"
+        ],
+        "answer": "Il Prefetto (su delega del Ministro)"
+    },
+    {
+        "id": 1103,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per il trasporto di esplosivi?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "La Polizia Stradale"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1104,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per l'importazione di armi comuni da sparo?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "L'Agenzia delle Dogane"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1105,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per l'esercizio dell'arte tipografica (stampa)?",
+        "options": [
+            "Il Sindaco (con obbligo di informare il Questore)",
+            "Il Questore",
+            "Il Prefetto",
+            "La Camera di Commercio"
+        ],
+        "answer": "Il Sindaco (con obbligo di informare il Questore)"
+    },
+    {
+        "id": 1106,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per mestieri ambulanti?",
+        "options": [
+            "Il Sindaco",
+            "Il Questore",
+            "Il Prefetto",
+            "La Regione"
+        ],
+        "answer": "Il Sindaco"
+    },
+    {
+        "id": 1107,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per ascensori e montacarichi in servizio pubblico?",
+        "options": [
+            "Il Sindaco",
+            "Il Prefetto",
+            "Il Questore",
+            "L'ingegnere capo"
+        ],
+        "answer": "Il Sindaco"
+    },
+    {
+        "id": 1108,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per rimesse di autoveicoli?",
+        "options": [
+            "Il Sindaco",
+            "Il Questore",
+            "Il Prefetto",
+            "La Motorizzazione"
+        ],
+        "answer": "Il Sindaco"
+    },
+    {
+        "id": 1109,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per stabilimenti di bagni (balneari)?",
+        "options": [
+            "Il Sindaco",
+            "Il Questore",
+            "Il Prefetto",
+            "La Capitaneria di Porto"
+        ],
+        "answer": "Il Sindaco"
+    },
+    {
+        "id": 1110,
+        "category": "Legislazione PS",
+        "question": "Cosa deve fare il Sindaco quando rilascia una licenza ex art. 86 TULPS (es. bar)?",
+        "options": [
+            "Comunicarlo al Prefetto",
+            "Comunicarlo al Questore",
+            "Nulla",
+            "Pubblicarlo sul sito"
+        ],
+        "answer": "Comunicarlo al Prefetto"
+    },
+    {
+        "id": 1111,
+        "category": "Legislazione PS",
+        "question": "Quando il Prefetto può chiedere al Sindaco di revocare una licenza?",
+        "options": [
+            "Per motivate esigenze di pubblica sicurezza",
+            "Se il locale è brutto",
+            "Se il gestore è antipatico",
+            "Mai"
+        ],
+        "answer": "Per motivate esigenze di pubblica sicurezza"
+    },
+    {
+        "id": 1112,
+        "category": "Legislazione PS",
+        "question": "Cosa succede se il Prefetto esprime parere negativo su una licenza di competenza del Sindaco?",
+        "options": [
+            "Il diniego è efficace (il Sindaco non può rilasciarla)",
+            "Il Sindaco può decidere comunque",
+            "Si va al TAR",
+            "Si chiede al Ministro"
+        ],
+        "answer": "Il diniego è efficace (il Sindaco non può rilasciarla)"
+    },
+    {
+        "id": 1113,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia l'autorizzazione per la costituzione di un istituto di vigilanza privata?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "Il Ministro"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1114,
+        "category": "Legislazione PS",
+        "question": "Chi approva le divise delle guardie giurate?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "Il sarto"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1115,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia il porto d'armi a tassa ridotta per le guardie giurate?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "Il datore di lavoro"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1116,
+        "category": "Legislazione PS",
+        "question": "Chi attribuisce la qualifica di Agente di P.S. alla Polizia Municipale?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "Il Ministro"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1117,
+        "category": "Legislazione PS",
+        "question": "Chi attribuisce la qualifica di Agente di P.S. alle guardie campestri?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "La Regione"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1118,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per il commercio di cose antiche o usate?",
+        "options": [
+            "Il Sindaco (dichiarazione)",
+            "Il Questore",
+            "Il Prefetto",
+            "La Soprintendenza"
+        ],
+        "answer": "Il Sindaco (dichiarazione)"
+    },
+    {
+        "id": 1119,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per accademie e scuole di ballo?",
+        "options": [
+            "Il Sindaco",
+            "Il Questore",
+            "Il Prefetto",
+            "Il Ministero dell'Istruzione"
+        ],
+        "answer": "Il Sindaco"
+    },
+    {
+        "id": 1120,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per l'esercizio di teatri?",
+        "options": [
+            "Il Sindaco (agibilità)",
+            "Il Questore",
+            "Il Prefetto",
+            "Il Ministero della Cultura"
+        ],
+        "answer": "Il Sindaco (agibilità)"
+    },
+    {
+        "id": 1121,
+        "category": "Legislazione PS",
+        "question": "Cosa deve fare chi ospita uno straniero in casa propria?",
+        "options": [
+            "Comunicarlo all'Autorità locale di P.S. entro 48 ore",
+            "Nulla",
+            "Chiedere il permesso al condominio",
+            "Farsi pagare"
+        ],
+        "answer": "Comunicarlo all'Autorità locale di P.S. entro 48 ore"
+    },
+    {
+        "id": 1122,
+        "category": "Legislazione PS",
+        "question": "Chi riceve le denunce di infortunio sul lavoro?",
+        "options": [
+            "L'Autorità locale di P.S.",
+            "Il Sindaco",
+            "Il Prefetto",
+            "Il Medico"
+        ],
+        "answer": "L'Autorità locale di P.S."
+    },
+    {
+        "id": 1123,
+        "category": "Legislazione PS",
+        "question": "Chi riceve le denunce di scoperte archeologiche?",
+        "options": [
+            "L'Autorità locale di P.S.",
+            "Il Museo",
+            "Il Sindaco",
+            "Il Parroco"
+        ],
+        "answer": "L'Autorità locale di P.S."
+    },
+    {
+        "id": 1124,
+        "category": "Legislazione PS",
+        "question": "Chi autorizza l'uso della maschera nei teatri?",
+        "options": [
+            "L'Autorità locale di P.S.",
+            "Il Sindaco",
+            "Il Direttore del teatro",
+            "Il Prefetto"
+        ],
+        "answer": "L'Autorità locale di P.S."
+    },
+    {
+        "id": 1125,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per impianti provvisori elettrici in occasione di feste?",
+        "options": [
+            "L'Autorità locale di P.S.",
+            "L'ENEL",
+            "Il Sindaco",
+            "Il Prefetto"
+        ],
+        "answer": "L'Autorità locale di P.S."
+    },
+    {
+        "id": 1126,
+        "category": "Legislazione PS",
+        "question": "Chi ha facoltà di ordinare la distruzione di esplosivi pericolosi?",
+        "options": [
+            "L'Autorità locale di P.S.",
+            "Il Sindaco",
+            "Il Pompere",
+            "Il Cittadino"
+        ],
+        "answer": "L'Autorità locale di P.S."
+    },
+    {
+        "id": 1127,
+        "category": "Legislazione PS",
+        "question": "Chi vigila sulle riunioni prive di preavviso?",
+        "options": [
+            "L'Autorità locale di P.S.",
+            "Il Sindaco",
+            "Il Giornalista",
+            "Il Passante"
+        ],
+        "answer": "L'Autorità locale di P.S."
+    },
+    {
+        "id": 1128,
+        "category": "Legislazione PS",
+        "question": "Chi può impedire una riunione in caso d'urgenza se manca il preavviso?",
+        "options": [
+            "L'Autorità locale di P.S. (riferendo al Questore)",
+            "Il Sindaco",
+            "Il Vigile",
+            "Nessuno"
+        ],
+        "answer": "L'Autorità locale di P.S. (riferendo al Questore)"
+    },
+    {
+        "id": 1129,
+        "category": "Legislazione PS",
+        "question": "Chi riceve le comunicazioni del movimento alloggiati?",
+        "options": [
+            "L'Autorità locale di P.S. (Questura)",
+            "Il Comune",
+            "L'ISTAT",
+            "La Regione"
+        ],
+        "answer": "L'Autorità locale di P.S. (Questura)"
+    },
+    {
+        "id": 1130,
+        "category": "Legislazione PS",
+        "question": "Qual è la durata della carta d'identità?",
+        "options": [
+            "10 anni",
+            "5 anni",
+            "1 anno",
+            "Illimitata"
+        ],
+        "answer": "10 anni"
+    },
+    {
+        "id": 1131,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la carta d'identità?",
+        "options": [
+            "Il Sindaco",
+            "Il Questore",
+            "Il Prefetto",
+            "Il Ministero"
+        ],
+        "answer": "Il Sindaco"
+    },
+    {
+        "id": 1132,
+        "category": "Legislazione PS",
+        "question": "Quali documenti sono equipollenti alla carta d'identità?",
+        "options": [
+            "Passaporto, patente, porto d'armi, tessere statali con foto",
+            "Solo il passaporto",
+            "Solo la patente",
+            "Nessuno"
+        ],
+        "answer": "Passaporto, patente, porto d'armi, tessere statali con foto"
+    },
+    {
+        "id": 1133,
+        "category": "Legislazione PS",
+        "question": "Chi ha l'obbligo di portare sempre con sé la carta d'identità?",
+        "options": [
+            "Le persone pericolose o sospette a cui è stato ordinato dall'Autorità",
+            "Tutti i cittadini",
+            "Solo gli stranieri",
+            "Nessuno"
+        ],
+        "answer": "Le persone pericolose o sospette a cui è stato ordinato dall'Autorità"
+    },
+    {
+        "id": 1134,
+        "category": "Legislazione PS",
+        "question": "Cosa rischia chi rifiuta di dichiarare le proprie generalità?",
+        "options": [
+            "Accompagnamento in ufficio per identificazione (fermo)",
+            "Arresto immediato",
+            "Multa",
+            "Nulla"
+        ],
+        "answer": "Accompagnamento in ufficio per identificazione (fermo)"
+    },
+    {
+        "id": 1135,
+        "category": "Legislazione PS",
+        "question": "Cosa rischia chi dichiara false generalità?",
+        "options": [
+            "Reato (art. 495/496 c.p.) e accompagnamento",
+            "Solo multa",
+            "Solo ammonimento",
+            "Nulla"
+        ],
+        "answer": "Reato (art. 495/496 c.p.) e accompagnamento"
+    },
+    {
+        "id": 1136,
+        "category": "Legislazione PS",
+        "question": "Chi può disporre l'accompagnamento coattivo per chi non si presenta all'invito ex art. 15 TULPS?",
+        "options": [
+            "L'Autorità di P.S.",
+            "Il Sindaco",
+            "Il Giudice",
+            "L'avvocato"
+        ],
+        "answer": "L'Autorità di P.S."
+    },
+    {
+        "id": 1137,
+        "category": "Legislazione PS",
+        "question": "Qual è la sanzione amministrativa per inosservanza dell'invito ex art. 15 TULPS (se non reato)?",
+        "options": [
+            "Da 154 a 516 euro",
+            "Da 10 a 50 euro",
+            "Da 1000 a 2000 euro",
+            "Nessuna"
+        ],
+        "answer": "Da 154 a 516 euro"
+    },
+    {
+        "id": 1138,
+        "category": "Legislazione PS",
+        "question": "Quando l'inosservanza dell'invito a comparire costituisce reato ex art. 650 c.p.?",
+        "options": [
+            "Quando l'invito è per ragioni di giustizia, sicurezza o ordine pubblico",
+            "Sempre",
+            "Mai",
+            "Solo se recidivi"
+        ],
+        "answer": "Quando l'invito è per ragioni di giustizia, sicurezza o ordine pubblico"
+    },
+    {
+        "id": 1139,
+        "category": "Legislazione PS",
+        "question": "Chi può accedere ai locali pubblici per controlli ex art. 16 TULPS?",
+        "options": [
+            "Gli Ufficiali e Agenti di P.S.",
+            "Solo gli Ufficiali",
+            "Solo il Questore",
+            "Solo il Sindaco"
+        ],
+        "answer": "Gli Ufficiali e Agenti di P.S."
+    },
+    {
+        "id": 1140,
+        "category": "Legislazione PS",
+        "question": "Quando possono accedere gli Ufficiali e Agenti di P.S. nei locali pubblici?",
+        "options": [
+            "In qualunque ora (durante l'apertura)",
+            "Solo di giorno",
+            "Solo con mandato",
+            "Solo se chiamati"
+        ],
+        "answer": "In qualunque ora (durante l'apertura)"
+    },
+    {
+        "id": 1141,
+        "category": "Legislazione PS",
+        "question": "Cosa possono controllare gli Agenti di P.S. nei locali pubblici?",
+        "options": [
+            "L'adempimento delle prescrizioni di legge e amministrative",
+            "La qualità del caffè",
+            "L'abbigliamento dei clienti",
+            "I prezzi dei fornitori"
+        ],
+        "answer": "L'adempimento delle prescrizioni di legge e amministrative"
+    },
+    {
+        "id": 1142,
+        "category": "Legislazione PS",
+        "question": "Chi può ordinare la cessazione di uno spettacolo in caso di disordini?",
+        "options": [
+            "Gli Ufficiali e Agenti di P.S.",
+            "Il pubblico",
+            "Il gestore",
+            "Il Sindaco"
+        ],
+        "answer": "Gli Ufficiali e Agenti di P.S."
+    },
+    {
+        "id": 1143,
+        "category": "Legislazione PS",
+        "question": "Chi può accedere alle sedi di gestori di giochi leciti per controlli?",
+        "options": [
+            "Gli Ufficiali e Agenti di P.S.",
+            "Solo la Finanza",
+            "Solo i Monopoli",
+            "Nessuno"
+        ],
+        "answer": "Gli Ufficiali e Agenti di P.S."
+    },
+    {
+        "id": 1144,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per la vendita di armi comuni da sparo?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "Il Ministero"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1145,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per la riparazione di armi?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "La Camera di Commercio"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1146,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per il deposito di esplosivi?",
+        "options": [
+            "Il Prefetto",
+            "Il Questore",
+            "Il Sindaco",
+            "I Vigili del Fuoco"
+        ],
+        "answer": "Il Prefetto"
+    },
+    {
+        "id": 1147,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per il trasporto di gas tossici?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "La ASL"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1148,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per monti di pietà (pegni)?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "La Banca d'Italia"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1149,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per agenzie d'affari (non di competenza comunale)?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "La Regione"
+        ],
+        "answer": "Il Questore"
+    },
+    {
+        "id": 1150,
+        "category": "Legislazione PS",
+        "question": "Chi rilascia la licenza per l'esercizio dell'arte fotografica in studio?",
+        "options": [
+            "Il Questore",
+            "Il Sindaco",
+            "Il Prefetto",
+            "La Camera di Commercio"
+        ],
+        "answer": "Il Questore"
+    }
+]

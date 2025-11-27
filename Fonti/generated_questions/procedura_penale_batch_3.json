@@ -1,0 +1,602 @@
+[
+    {
+        "id": 4101,
+        "category": "Procedura Penale",
+        "question": "Qual è la funzione delle misure precautelari (arresto e fermo)?",
+        "options": [
+            "Anticipare la condanna definitiva",
+            "Limitare la libertà personale in situazioni di urgenza fino alla convalida del giudice",
+            "Sostituire le misure cautelari",
+            "Punire l'indagato prima del processo"
+        ],
+        "answer": "Limitare la libertà personale in situazioni di urgenza fino alla convalida del giudice"
+    },
+    {
+        "id": 4102,
+        "category": "Procedura Penale",
+        "question": "Chi può disporre l'arresto in flagranza?",
+        "options": [
+            "Solo il Pubblico Ministero",
+            "La Polizia Giudiziaria e, in casi eccezionali, i privati",
+            "Solo il Giudice",
+            "Il Prefetto"
+        ],
+        "answer": "La Polizia Giudiziaria e, in casi eccezionali, i privati"
+    },
+    {
+        "id": 4103,
+        "category": "Procedura Penale",
+        "question": "Quando si ha lo stato di flagranza (art. 382 c.p.p.)?",
+        "options": [
+            "Quando il soggetto ha confessato il reato",
+            "Quando il soggetto viene colto nell'atto di commettere il reato",
+            "Quando il soggetto è indagato da molto tempo",
+            "Quando il reato è stato commesso il giorno prima"
+        ],
+        "answer": "Quando il soggetto viene colto nell'atto di commettere il reato"
+    },
+    {
+        "id": 4104,
+        "category": "Procedura Penale",
+        "question": "Cosa si intende per 'quasi flagranza'?",
+        "options": [
+            "Quando il soggetto sta per commettere il reato",
+            "Quando il soggetto, subito dopo il reato, è inseguito dalla P.G. o sorpreso con cose o tracce del reato",
+            "Quando il soggetto si costituisce",
+            "Quando il reato non è grave"
+        ],
+        "answer": "Quando il soggetto, subito dopo il reato, è inseguito dalla P.G. o sorpreso con cose o tracce del reato"
+    },
+    {
+        "id": 4105,
+        "category": "Procedura Penale",
+        "question": "Quando è obbligatorio l'arresto in flagranza per la P.G.?",
+        "options": [
+            "Per tutti i reati",
+            "Per delitti non colposi con pena dell'ergastolo o reclusione non inferiore nel minimo a 5 anni e nel massimo a 20",
+            "Solo per i reati contro il patrimonio",
+            "A discrezione della P.G."
+        ],
+        "answer": "Per delitti non colposi con pena dell'ergastolo o reclusione non inferiore nel minimo a 5 anni e nel massimo a 20"
+    },
+    {
+        "id": 4106,
+        "category": "Procedura Penale",
+        "question": "I privati possono procedere all'arresto in flagranza?",
+        "options": [
+            "Mai",
+            "Sì, per i delitti procedibili d'ufficio per i quali è previsto l'arresto obbligatorio da parte della P.G.",
+            "Sempre",
+            "Solo se autorizzati dal Sindaco"
+        ],
+        "answer": "Sì, per i delitti procedibili d'ufficio per i quali è previsto l'arresto obbligatorio da parte della P.G."
+    },
+    {
+        "id": 4107,
+        "category": "Procedura Penale",
+        "question": "Cosa deve fare il privato dopo aver eseguito un arresto?",
+        "options": [
+            "Interrogare l'arrestato",
+            "Consegnare senza ritardo l'arrestato e le cose pertinenti al reato alla P.G.",
+            "Trattenere l'arrestato a casa propria",
+            "Giudicare l'arrestato"
+        ],
+        "answer": "Consegnare senza ritardo l'arrestato e le cose pertinenti al reato alla P.G."
+    },
+    {
+        "id": 4108,
+        "category": "Procedura Penale",
+        "question": "Quando è consentito l'arresto facoltativo in flagranza?",
+        "options": [
+            "Sempre",
+            "Quando la misura è giustificata dalla gravità del fatto o dalla pericolosità del soggetto",
+            "Mai",
+            "Solo di notte"
+        ],
+        "answer": "Quando la misura è giustificata dalla gravità del fatto o dalla pericolosità del soggetto"
+    },
+    {
+        "id": 4109,
+        "category": "Procedura Penale",
+        "question": "È consentito l'arresto se il fatto è compiuto nell'adempimento di un dovere?",
+        "options": [
+            "Sì, sempre",
+            "No, mai",
+            "Solo se il dovere è imposto da un superiore",
+            "Dipende dal reato"
+        ],
+        "answer": "No, mai"
+    },
+    {
+        "id": 4110,
+        "category": "Procedura Penale",
+        "question": "Si può procedere all'arresto per un delitto perseguibile a querela se questa non è stata proposta?",
+        "options": [
+            "Sì",
+            "No, la querela deve essere proposta anche oralmente",
+            "Solo se il reato è grave",
+            "Sì, ma solo per 24 ore"
+        ],
+        "answer": "No, la querela deve essere proposta anche oralmente"
+    },
+    {
+        "id": 4111,
+        "category": "Procedura Penale",
+        "question": "Chi dispone di regola il fermo di indiziato di delitto?",
+        "options": [
+            "Il Giudice",
+            "Il Pubblico Ministero",
+            "La Polizia Giudiziaria",
+            "Il Prefetto"
+        ],
+        "answer": "Il Pubblico Ministero"
+    },
+    {
+        "id": 4112,
+        "category": "Procedura Penale",
+        "question": "Quale condizione è necessaria per il fermo oltre ai gravi indizi?",
+        "options": [
+            "Il pericolo di fuga",
+            "La flagranza di reato",
+            "La confessione",
+            "La recidiva"
+        ],
+        "answer": "Il pericolo di fuga"
+    },
+    {
+        "id": 4113,
+        "category": "Procedura Penale",
+        "question": "Quando la P.G. può procedere al fermo di propria iniziativa?",
+        "options": [
+            "Sempre",
+            "Prima che il P.M. abbia assunto la direzione delle indagini o in casi di urgenza se c'è pericolo di fuga",
+            "Mai",
+            "Solo se autorizzata dal Questore"
+        ],
+        "answer": "Prima che il P.M. abbia assunto la direzione delle indagini o in casi di urgenza se c'è pericolo di fuga"
+    },
+    {
+        "id": 4114,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo la P.G. deve dare notizia dell'arresto o fermo al P.M.?",
+        "options": [
+            "Immediatamente",
+            "Entro 24 ore",
+            "Entro 48 ore",
+            "Entro 3 giorni"
+        ],
+        "answer": "Immediatamente"
+    },
+    {
+        "id": 4115,
+        "category": "Procedura Penale",
+        "question": "Quale avviso deve essere dato all'arrestato o fermato?",
+        "options": [
+            "Facoltà di nominare un difensore di fiducia",
+            "Obbligo di confessare",
+            "Divieto di parlare",
+            "Obbligo di pagare una cauzione"
+        ],
+        "answer": "Facoltà di nominare un difensore di fiducia"
+    },
+    {
+        "id": 4116,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo il P.M. deve chiedere la convalida dell'arresto o del fermo al G.I.P.?",
+        "options": [
+            "24 ore",
+            "48 ore",
+            "72 ore",
+            "96 ore"
+        ],
+        "answer": "48 ore"
+    },
+    {
+        "id": 4117,
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo il G.I.P. deve decidere sulla convalida?",
+        "options": [
+            "Nelle 48 ore successive alla richiesta del P.M.",
+            "Entro 5 giorni",
+            "Entro 10 giorni",
+            "Senza termine"
+        ],
+        "answer": "Nelle 48 ore successive alla richiesta del P.M."
+    },
+    {
+        "id": 4118,
+        "category": "Procedura Penale",
+        "question": "Cosa succede se l'arresto o il fermo non viene convalidato nei termini?",
+        "options": [
+            "La misura cessa di avere efficacia e l'arrestato viene liberato",
+            "L'arresto si trasforma in custodia cautelare",
+            "Il termine viene prorogato",
+            "Nulla, il processo continua"
+        ],
+        "answer": "La misura cessa di avere efficacia e l'arrestato viene liberato"
+    },
+    {
+        "id": 4119,
+        "category": "Procedura Penale",
+        "question": "Chi è competente ad applicare le misure cautelari?",
+        "options": [
+            "Il Pubblico Ministero",
+            "Il Giudice",
+            "La Polizia Giudiziaria",
+            "Il Prefetto"
+        ],
+        "answer": "Il Giudice"
+    },
+    {
+        "id": 4120,
+        "category": "Procedura Penale",
+        "question": "Quali sono le esigenze cautelari che giustificano una misura cautelare?",
+        "options": [
+            "Pericolo di inquinamento prove, pericolo di fuga, pericolo di reiterazione del reato",
+            "Gravità del reato e precedenti penali",
+            "Mancanza di collaborazione dell'indagato",
+            "Clamore mediatico"
+        ],
+        "answer": "Pericolo di inquinamento prove, pericolo di fuga, pericolo di reiterazione del reato"
+    },
+    {
+        "id": 4121,
+        "category": "Procedura Penale",
+        "question": "Qual è la misura cautelare personale più grave?",
+        "options": [
+            "Arresti domiciliari",
+            "Custodia cautelare in carcere",
+            "Obbligo di firma",
+            "Divieto di espatrio"
+        ],
+        "answer": "Custodia cautelare in carcere"
+    },
+    {
+        "id": 4122,
+        "category": "Procedura Penale",
+        "question": "Cosa sono le misure cautelari reali?",
+        "options": [
+            "Misure che incidono sui beni patrimoniali (sequestro preventivo e conservativo)",
+            "Misure che incidono sulla libertà personale",
+            "Misure definitive",
+            "Sanzioni amministrative"
+        ],
+        "answer": "Misure che incidono sui beni patrimoniali (sequestro preventivo e conservativo)"
+    },
+    {
+        "id": 4123,
+        "category": "Procedura Penale",
+        "question": "Chi richiede l'applicazione di una misura cautelare?",
+        "options": [
+            "Il Pubblico Ministero",
+            "La Polizia Giudiziaria",
+            "L'imputato",
+            "La persona offesa"
+        ],
+        "answer": "Il Pubblico Ministero"
+    },
+    {
+        "id": 4124,
+        "category": "Procedura Penale",
+        "question": "Cos'è il giudizio abbreviato?",
+        "options": [
+            "Un procedimento speciale che evita il dibattimento e prevede uno sconto di pena",
+            "Un processo rapido per reati minori",
+            "Un giudizio senza giudice",
+            "Un processo solo per minorenni"
+        ],
+        "answer": "Un procedimento speciale che evita il dibattimento e prevede uno sconto di pena"
+    },
+    {
+        "id": 4125,
+        "category": "Procedura Penale",
+        "question": "Qual è il vantaggio per l'imputato nel patteggiamento?",
+        "options": [
+            "Sconto di pena fino a un terzo",
+            "Assoluzione automatica",
+            "Nessuna pena",
+            "Libertà immediata"
+        ],
+        "answer": "Sconto di pena fino a un terzo"
+    },
+    {
+        "id": 4126,
+        "category": "Procedura Penale",
+        "question": "Cos'è il giudizio direttissimo?",
+        "options": [
+            "Un rito speciale celebrato quando l'imputato è arrestato in flagranza o ha confessato",
+            "Un giudizio d'appello",
+            "Un giudizio davanti alla Corte di Cassazione",
+            "Un giudizio civile"
+        ],
+        "answer": "Un rito speciale celebrato quando l'imputato è arrestato in flagranza o ha confessato"
+    },
+    {
+        "id": 4127,
+        "category": "Procedura Penale",
+        "question": "Cos'è il giudizio immediato?",
+        "options": [
+            "Un rito che salta l'udienza preliminare quando la prova è evidente",
+            "Un giudizio senza avvocati",
+            "Un giudizio per reati politici",
+            "Un giudizio sommario"
+        ],
+        "answer": "Un rito che salta l'udienza preliminare quando la prova è evidente"
+    },
+    {
+        "id": 4128,
+        "category": "Procedura Penale",
+        "question": "Cos'è il decreto penale di condanna?",
+        "options": [
+            "Un provvedimento emesso dal G.I.P. su richiesta del P.M. per reati punibili con pena pecuniaria, senza udienza",
+            "Una sentenza della Corte d'Assise",
+            "Un atto della Polizia",
+            "Una condanna definitiva"
+        ],
+        "answer": "Un provvedimento emesso dal G.I.P. su richiesta del P.M. per reati punibili con pena pecuniaria, senza udienza"
+    },
+    {
+        "id": 4129,
+        "category": "Procedura Penale",
+        "question": "L'imputato può opporsi al decreto penale di condanna?",
+        "options": [
+            "Sì, entro 15 giorni dalla notificazione",
+            "No, è definitivo",
+            "Solo se è innocente",
+            "Solo se paga una cauzione"
+        ],
+        "answer": "Sì, entro 15 giorni dalla notificazione"
+    },
+    {
+        "id": 4130,
+        "category": "Procedura Penale",
+        "question": "Qual è la funzione dell'udienza preliminare?",
+        "options": [
+            "Filtrare le accuse infondate e decidere il rinvio a giudizio",
+            "Emettere la sentenza di condanna",
+            "Ascoltare i testimoni",
+            "Arrestare l'imputato"
+        ],
+        "answer": "Filtrare le accuse infondate e decidere il rinvio a giudizio"
+    },
+    {
+        "id": 4131,
+        "category": "Procedura Penale",
+        "question": "Chi è il G.U.P.?",
+        "options": [
+            "Giudice dell'Udienza Preliminare",
+            "Giudice Unico Penale",
+            "Guardia Ufficiale di Polizia",
+            "Gruppo Unità Polizia"
+        ],
+        "answer": "Giudice dell'Udienza Preliminare"
+    },
+    {
+        "id": 4132,
+        "category": "Procedura Penale",
+        "question": "Come si conclude l'udienza preliminare se l'accusa è fondata?",
+        "options": [
+            "Con il decreto che dispone il giudizio",
+            "Con l'archiviazione",
+            "Con l'assoluzione",
+            "Con l'arresto"
+        ],
+        "answer": "Con il decreto che dispone il giudizio"
+    },
+    {
+        "id": 4133,
+        "category": "Procedura Penale",
+        "question": "Come si conclude l'udienza preliminare se l'accusa è infondata?",
+        "options": [
+            "Con sentenza di non luogo a procedere",
+            "Con condanna",
+            "Con rinvio a giudizio",
+            "Con una multa"
+        ],
+        "answer": "Con sentenza di non luogo a procedere"
+    },
+    {
+        "id": 4134,
+        "category": "Procedura Penale",
+        "question": "Cosa succede nel dibattimento?",
+        "options": [
+            "Si forma la prova nel contraddittorio tra le parti",
+            "Si svolgono le indagini preliminari",
+            "Si decide l'arresto",
+            "Si interroga solo l'imputato"
+        ],
+        "answer": "Si forma la prova nel contraddittorio tra le parti"
+    },
+    {
+        "id": 4135,
+        "category": "Procedura Penale",
+        "question": "Chi dirige il dibattimento?",
+        "options": [
+            "Il Presidente del Collegio o il Giudice Monocratico",
+            "Il Pubblico Ministero",
+            "L'avvocato difensore",
+            "Il Cancelliere"
+        ],
+        "answer": "Il Presidente del Collegio o il Giudice Monocratico"
+    },
+    {
+        "id": 4136,
+        "category": "Procedura Penale",
+        "question": "Cos'è l'esame incrociato (cross examination)?",
+        "options": [
+            "Il metodo di assunzione della prova orale in dibattimento (domande di P.M. e difensori)",
+            "Un confronto tra imputati",
+            "Un interrogatorio di polizia",
+            "Un esame medico"
+        ],
+        "answer": "Il metodo di assunzione della prova orale in dibattimento (domande di P.M. e difensori)"
+    },
+    {
+        "id": 4137,
+        "category": "Procedura Penale",
+        "question": "Il giudice può disporre l'assunzione di nuove prove d'ufficio in dibattimento?",
+        "options": [
+            "Sì, se assolutamente necessario (art. 507 c.p.p.)",
+            "No, mai",
+            "Solo su richiesta del P.M.",
+            "Solo su richiesta della difesa"
+        ],
+        "answer": "Sì, se assolutamente necessario (art. 507 c.p.p.)"
+    },
+    {
+        "id": 4138,
+        "category": "Procedura Penale",
+        "question": "Quali sono i possibili esiti della sentenza dibattimentale?",
+        "options": [
+            "Condanna o proscioglimento (assoluzione o non doversi procedere)",
+            "Solo condanna",
+            "Solo assoluzione",
+            "Rinvio a giudizio"
+        ],
+        "answer": "Condanna o proscioglimento (assoluzione o non doversi procedere)"
+    },
+    {
+        "id": 4139,
+        "category": "Procedura Penale",
+        "question": "Cosa significa 'in dubio pro reo'?",
+        "options": [
+            "Se la prova manca o è insufficiente, l'imputato va assolto",
+            "Nel dubbio bisogna condannare",
+            "Il dubbio favorisce l'accusa",
+            "Il giudice decide a caso"
+        ],
+        "answer": "Se la prova manca o è insufficiente, l'imputato va assolto"
+    },
+    {
+        "id": 4140,
+        "category": "Procedura Penale",
+        "question": "Qual è il termine per proporre appello contro una sentenza?",
+        "options": [
+            "Generalmente 15, 30 o 45 giorni a seconda dei casi",
+            "3 giorni",
+            "1 anno",
+            "Sempre 60 giorni"
+        ],
+        "answer": "Generalmente 15, 30 o 45 giorni a seconda dei casi"
+    },
+    {
+        "id": 4141,
+        "category": "Procedura Penale",
+        "question": "Cosa giudica la Corte di Cassazione?",
+        "options": [
+            "La legittimità della sentenza (violazioni di legge, vizi di motivazione)",
+            "Il merito dei fatti",
+            "La colpevolezza dell'imputato",
+            "L'ammontare della pena"
+        ],
+        "answer": "La legittimità della sentenza (violazioni di legge, vizi di motivazione)"
+    },
+    {
+        "id": 4142,
+        "category": "Procedura Penale",
+        "question": "Quando una sentenza diventa irrevocabile (passa in giudicato)?",
+        "options": [
+            "Quando sono esauriti i mezzi di impugnazione ordinari o sono scaduti i termini",
+            "Appena viene emessa",
+            "Dopo 10 anni",
+            "Mai"
+        ],
+        "answer": "Quando sono esauriti i mezzi di impugnazione ordinari o sono scaduti i termini"
+    },
+    {
+        "id": 4143,
+        "category": "Procedura Penale",
+        "question": "Cos'è la revisione del processo?",
+        "options": [
+            "Un mezzo di impugnazione straordinario per revocare una condanna definitiva in presenza di nuove prove",
+            "Un nuovo appello",
+            "Un ricorso in Cassazione",
+            "Una grazia presidenziale"
+        ],
+        "answer": "Un mezzo di impugnazione straordinario per revocare una condanna definitiva in presenza di nuove prove"
+    },
+    {
+        "id": 4144,
+        "category": "Procedura Penale",
+        "question": "Chi esegue le sentenze di condanna divenute definitive?",
+        "options": [
+            "Il Pubblico Ministero",
+            "Il Giudice",
+            "La Polizia Penitenziaria",
+            "Il Sindaco"
+        ],
+        "answer": "Il Pubblico Ministero"
+    },
+    {
+        "id": 4145,
+        "category": "Procedura Penale",
+        "question": "Qual è la funzione del Tribunale di Sorveglianza?",
+        "options": [
+            "Vigilare sull'esecuzione della pena e concedere misure alternative",
+            "Giudicare i reati commessi in carcere",
+            "Sorvegliare la Polizia",
+            "Arrestare i latitanti"
+        ],
+        "answer": "Vigilare sull'esecuzione della pena e concedere misure alternative"
+    },
+    {
+        "id": 4146,
+        "category": "Procedura Penale",
+        "question": "Cosa sono le misure alternative alla detenzione?",
+        "options": [
+            "Misure che consentono di scontare la pena fuori dal carcere (es. affidamento in prova)",
+            "Pene pecuniarie",
+            "Assoluzioni",
+            "Sconti di pena"
+        ],
+        "answer": "Misure che consentono di scontare la pena fuori dal carcere (es. affidamento in prova)"
+    },
+    {
+        "id": 4147,
+        "category": "Procedura Penale",
+        "question": "Quando si applica l'affidamento in prova al servizio sociale?",
+        "options": [
+            "Per pene detentive non superiori a 3 anni (o 4 in casi particolari)",
+            "Solo per l'ergastolo",
+            "Per pene superiori a 10 anni",
+            "Mai"
+        ],
+        "answer": "Per pene detentive non superiori a 3 anni (o 4 in casi particolari)"
+    },
+    {
+        "id": 4148,
+        "category": "Procedura Penale",
+        "question": "Cos'è la detenzione domiciliare?",
+        "options": [
+            "L'espiazione della pena nella propria abitazione per particolari categorie di condannati",
+            "L'arresto in casa",
+            "Una misura cautelare",
+            "Una vacanza premio"
+        ],
+        "answer": "L'espiazione della pena nella propria abitazione per particolari categorie di condannati"
+    },
+    {
+        "id": 4149,
+        "category": "Procedura Penale",
+        "question": "Cos'è la liberazione anticipata?",
+        "options": [
+            "Uno sconto di pena di 45 giorni ogni semestre per buona condotta",
+            "La scarcerazione immediata",
+            "L'indulto",
+            "L'amnistia"
+        ],
+        "answer": "Uno sconto di pena di 45 giorni ogni semestre per buona condotta"
+    },
+    {
+        "id": 4150,
+        "category": "Procedura Penale",
+        "question": "Chi decide sulle misure alternative alla detenzione?",
+        "options": [
+            "Il Tribunale di Sorveglianza",
+            "Il Direttore del carcere",
+            "Il P.M.",
+            "Il Ministro della Giustizia"
+        ],
+        "answer": "Il Tribunale di Sorveglianza"
+    }
+]

@@ -1,0 +1,602 @@
+[
+    {
+        "id": 3051,
+        "category": "Diritto Costituzionale",
+        "question": "La libertà personale è inviolabile (art. 13). In quali casi è ammessa la detenzione, ispezione o perquisizione personale?",
+        "options": [
+            "Solo per atto motivato dell'autorità giudiziaria e nei soli casi e modi previsti dalla legge",
+            "Sempre, se lo decide la polizia",
+            "Mai",
+            "Solo in caso di guerra"
+        ],
+        "answer": "Solo per atto motivato dell'autorità giudiziaria e nei soli casi e modi previsti dalla legge"
+    },
+    {
+        "id": 3052,
+        "category": "Diritto Costituzionale",
+        "question": "In casi eccezionali di necessità ed urgenza, l'autorità di pubblica sicurezza può adottare provvedimenti provvisori restrittivi della libertà personale. Entro quanto tempo devono essere comunicati all'autorità giudiziaria?",
+        "options": [
+            "Entro 48 ore",
+            "Entro 24 ore",
+            "Entro 72 ore",
+            "Entro 5 giorni"
+        ],
+        "answer": "Entro 48 ore"
+    },
+    {
+        "id": 3053,
+        "category": "Diritto Costituzionale",
+        "question": "Se l'autorità giudiziaria non convalida i provvedimenti provvisori di restrizione della libertà entro le successive 48 ore, cosa succede?",
+        "options": [
+            "Si intendono revocati e restano privi di ogni effetto",
+            "Rimangono validi per altri 5 giorni",
+            "Diventano definitivi",
+            "Si trasformano in arresti domiciliari"
+        ],
+        "answer": "Si intendono revocati e restano privi di ogni effetto"
+    },
+    {
+        "id": 3054,
+        "category": "Diritto Costituzionale",
+        "question": "È ammessa la violenza fisica e morale sulle persone sottoposte a restrizione di libertà?",
+        "options": [
+            "No, è punita ogni violenza fisica e morale",
+            "Sì, se necessaria per l'interrogatorio",
+            "Sì, ma solo fisica",
+            "Solo su ordine del giudice"
+        ],
+        "answer": "No, è punita ogni violenza fisica e morale"
+    },
+    {
+        "id": 3055,
+        "category": "Diritto Costituzionale",
+        "question": "Il domicilio è inviolabile (art. 14). Le ispezioni o perquisizioni domiciliari possono essere eseguite:",
+        "options": [
+            "Nei casi e modi stabiliti dalla legge secondo le garanzie prescritte per la tutela della libertà personale",
+            "Sempre liberamente dalla polizia",
+            "Solo di giorno",
+            "Solo se il proprietario acconsente"
+        ],
+        "answer": "Nei casi e modi stabiliti dalla legge secondo le garanzie prescritte per la tutela della libertà personale"
+    },
+    {
+        "id": 3056,
+        "category": "Diritto Costituzionale",
+        "question": "Gli accertamenti e le ispezioni per motivi di sanità e di incolumità pubblica o a fini economici e fiscali sono regolati:",
+        "options": [
+            "Da leggi speciali",
+            "Dal codice penale",
+            "Dalla Costituzione direttamente",
+            "Da regolamenti comunali"
+        ],
+        "answer": "Da leggi speciali"
+    },
+    {
+        "id": 3057,
+        "category": "Diritto Costituzionale",
+        "question": "La libertà e la segretezza della corrispondenza e di ogni altra forma di comunicazione (art. 15) sono:",
+        "options": [
+            "Inviolabili",
+            "Violabili sempre",
+            "Tutelate solo per i cittadini",
+            "Tutelate solo per la posta cartacea"
+        ],
+        "answer": "Inviolabili"
+    },
+    {
+        "id": 3058,
+        "category": "Diritto Costituzionale",
+        "question": "Ogni cittadino può circolare e soggiornare liberamente in qualsiasi parte del territorio nazionale (art. 16), salvo le limitazioni che la legge stabilisce in via generale per motivi di:",
+        "options": [
+            "Sanità o sicurezza",
+            "Politica",
+            "Economia",
+            "Ordine pubblico generico"
+        ],
+        "answer": "Sanità o sicurezza"
+    },
+    {
+        "id": 3059,
+        "category": "Diritto Costituzionale",
+        "question": "I cittadini hanno diritto di riunirsi pacificamente e senz'armi (art. 17). Per le riunioni, anche in luogo aperto al pubblico, è richiesto preavviso?",
+        "options": [
+            "No",
+            "Sì, sempre",
+            "Sì, di 3 giorni",
+            "Solo se ci sono politici"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": 3060,
+        "category": "Diritto Costituzionale",
+        "question": "Per le riunioni in luogo pubblico deve essere dato preavviso alle autorità?",
+        "options": [
+            "Sì, e possono vietarle solo per comprovati motivi di sicurezza o di incolumità pubblica",
+            "No, mai",
+            "Sì, e l'autorità deve autorizzarle",
+            "Solo se sono cortei"
+        ],
+        "answer": "Sì, e possono vietarle solo per comprovati motivi di sicurezza o di incolumità pubblica"
+    },
+    {
+        "id": 3061,
+        "category": "Diritto Costituzionale",
+        "question": "I cittadini hanno diritto di associarsi liberamente, senza autorizzazione (art. 18), per fini che:",
+        "options": [
+            "Non sono vietati ai singoli dalla legge penale",
+            "Sono approvati dal Governo",
+            "Sono utili alla società",
+            "Non sono politici"
+        ],
+        "answer": "Non sono vietati ai singoli dalla legge penale"
+    },
+    {
+        "id": 3062,
+        "category": "Diritto Costituzionale",
+        "question": "Quali associazioni sono proibite dalla Costituzione?",
+        "options": [
+            "Le associazioni segrete e quelle che perseguono, anche indirettamente, scopi politici mediante organizzazioni di carattere militare",
+            "I sindacati",
+            "I partiti politici",
+            "Le associazioni religiose"
+        ],
+        "answer": "Le associazioni segrete e quelle che perseguono, anche indirettamente, scopi politici mediante organizzazioni di carattere militare"
+    },
+    {
+        "id": 3063,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti hanno diritto di professare liberamente la propria fede religiosa (art. 19)?",
+        "options": [
+            "Sì, in qualsiasi forma, individuale o associata, di farne propaganda e di esercitarne in privato o in pubblico il culto, purché non si tratti di riti contrari al buon costume",
+            "Solo in privato",
+            "Solo se cattolici",
+            "Solo se autorizzati"
+        ],
+        "answer": "Sì, in qualsiasi forma, individuale o associata, di farne propaganda e di esercitarne in privato o in pubblico il culto, purché non si tratti di riti contrari al buon costume"
+    },
+    {
+        "id": 3064,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti hanno diritto di manifestare liberamente il proprio pensiero (art. 21) con:",
+        "options": [
+            "La parola, lo scritto e ogni altro mezzo di diffusione",
+            "Solo la parola",
+            "Solo lo scritto",
+            "Solo internet"
+        ],
+        "answer": "La parola, lo scritto e ogni altro mezzo di diffusione"
+    },
+    {
+        "id": 3065,
+        "category": "Diritto Costituzionale",
+        "question": "La stampa può essere soggetta ad autorizzazioni o censure?",
+        "options": [
+            "No",
+            "Sì, sempre",
+            "Solo in tempo di guerra",
+            "Solo se critica il Governo"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": 3066,
+        "category": "Diritto Costituzionale",
+        "question": "Quando si può procedere a sequestro della stampa?",
+        "options": [
+            "Solo per atto motivato dell'autorità giudiziaria nel caso di delitti, per i quali la legge sulla stampa espressamente lo autorizzi",
+            "Sempre se la notizia è falsa",
+            "Se lo ordina il Prefetto",
+            "Mai"
+        ],
+        "answer": "Solo per atto motivato dell'autorità giudiziaria nel caso di delitti, per i quali la legge sulla stampa espressamente lo autorizzi"
+    },
+    {
+        "id": 3067,
+        "category": "Diritto Costituzionale",
+        "question": "Nessuno può essere distolto dal giudice naturale precostituito per legge (art. 25). Cosa significa?",
+        "options": [
+            "Che il giudice competente deve essere individuato in base a criteri oggettivi fissati dalla legge prima che il fatto sia commesso",
+            "Che il giudice deve essere nato nello stesso luogo dell'imputato",
+            "Che l'imputato può scegliersi il giudice",
+            "Che il giudice deve essere naturale e non artificiale"
+        ],
+        "answer": "Che il giudice competente deve essere individuato in base a criteri oggettivi fissati dalla legge prima che il fatto sia commesso"
+    },
+    {
+        "id": 3068,
+        "category": "Diritto Costituzionale",
+        "question": "La responsabilità penale è (art. 27):",
+        "options": [
+            "Personale",
+            "Di gruppo",
+            "Familiare",
+            "Oggettiva"
+        ],
+        "answer": "Personale"
+    },
+    {
+        "id": 3069,
+        "category": "Diritto Costituzionale",
+        "question": "L'imputato non è considerato colpevole sino:",
+        "options": [
+            "Alla condanna definitiva",
+            "Al rinvio a giudizio",
+            "All'arresto",
+            "Alla sentenza di primo grado"
+        ],
+        "answer": "Alla condanna definitiva"
+    },
+    {
+        "id": 3070,
+        "category": "Diritto Costituzionale",
+        "question": "Le pene non possono consistere in trattamenti contrari al senso di umanità e devono tendere:",
+        "options": [
+            "Alla rieducazione del condannato",
+            "Alla vendetta",
+            "All'eliminazione fisica",
+            "Al risarcimento del danno"
+        ],
+        "answer": "Alla rieducazione del condannato"
+    },
+    {
+        "id": 3071,
+        "category": "Diritto Costituzionale",
+        "question": "È ammessa la pena di morte in Italia?",
+        "options": [
+            "Non è ammessa",
+            "Sì, per i casi previsti dalle leggi militari di guerra (ma abrogata anche lì)",
+            "Sì, per omicidio",
+            "Sì, per alto tradimento"
+        ],
+        "answer": "Non è ammessa"
+    },
+    {
+        "id": 3072,
+        "category": "Diritto Costituzionale",
+        "question": "La Repubblica riconosce i diritti della famiglia come società naturale fondata (art. 29):",
+        "options": [
+            "Sul matrimonio",
+            "Sull'amore",
+            "Sulla convivenza",
+            "Sui figli"
+        ],
+        "answer": "Sul matrimonio"
+    },
+    {
+        "id": 3073,
+        "category": "Diritto Costituzionale",
+        "question": "Il matrimonio è ordinato sull'eguaglianza morale e giuridica dei coniugi?",
+        "options": [
+            "Sì, con i limiti stabiliti dalla legge a garanzia dell'unità familiare",
+            "No, il marito è il capo famiglia",
+            "No, la moglie decide per i figli",
+            "Solo se concordatario"
+        ],
+        "answer": "Sì, con i limiti stabiliti dalla legge a garanzia dell'unità familiare"
+    },
+    {
+        "id": 3074,
+        "category": "Diritto Costituzionale",
+        "question": "È dovere e diritto dei genitori (art. 30):",
+        "options": [
+            "Mantenere, istruire ed educare i figli, anche se nati fuori del matrimonio",
+            "Solo mantenerli",
+            "Solo educarli",
+            "Abbandonarli se non li vogliono"
+        ],
+        "answer": "Mantenere, istruire ed educare i figli, anche se nati fuori del matrimonio"
+    },
+    {
+        "id": 3075,
+        "category": "Diritto Costituzionale",
+        "question": "La Repubblica tutela la salute (art. 32) come:",
+        "options": [
+            "Fondamentale diritto dell'individuo e interesse della collettività",
+            "Un lusso",
+            "Un dovere solo per i ricchi",
+            "Una scelta personale"
+        ],
+        "answer": "Fondamentale diritto dell'individuo e interesse della collettività"
+    },
+    {
+        "id": 3076,
+        "category": "Diritto Costituzionale",
+        "question": "Nessuno può essere obbligato a un determinato trattamento sanitario se non:",
+        "options": [
+            "Per disposizione di legge",
+            "Per ordine del medico",
+            "Per ordine del sindaco",
+            "Mai"
+        ],
+        "answer": "Per disposizione di legge"
+    },
+    {
+        "id": 3077,
+        "category": "Diritto Costituzionale",
+        "question": "L'arte e la scienza sono libere e libero ne è l'insegnamento (art. 33). Chi ha il diritto di istituire scuole ed istituti di educazione?",
+        "options": [
+            "Enti e privati, senza oneri per lo Stato",
+            "Solo lo Stato",
+            "Solo la Chiesa",
+            "Solo i Comuni"
+        ],
+        "answer": "Enti e privati, senza oneri per lo Stato"
+    },
+    {
+        "id": 3078,
+        "category": "Diritto Costituzionale",
+        "question": "La scuola è aperta a tutti (art. 34). L'istruzione inferiore è:",
+        "options": [
+            "Obbligatoria e gratuita per almeno 8 anni",
+            "Facoltativa",
+            "A pagamento",
+            "Solo per i cittadini"
+        ],
+        "answer": "Obbligatoria e gratuita per almeno 8 anni"
+    },
+    {
+        "id": 3079,
+        "category": "Diritto Costituzionale",
+        "question": "I capaci e meritevoli, anche se privi di mezzi, hanno diritto di raggiungere i gradi più alti degli studi. Come garantisce ciò la Repubblica?",
+        "options": [
+            "Con borse di studio, assegni alle famiglie ed altre provvidenze, da attribuire mediante concorso",
+            "Con prestiti d'onore",
+            "Non lo garantisce",
+            "Solo se raccomandati"
+        ],
+        "answer": "Con borse di studio, assegni alle famiglie ed altre provvidenze, da attribuire mediante concorso"
+    },
+    {
+        "id": 3080,
+        "category": "Diritto Costituzionale",
+        "question": "Il lavoratore ha diritto ad una retribuzione (art. 36):",
+        "options": [
+            "Proporzionata alla quantità e qualità del suo lavoro e in ogni caso sufficiente ad assicurare a sé e alla famiglia un'esistenza libera e dignitosa",
+            "Uguale per tutti",
+            "Minima stabilita dal datore",
+            "Basata solo sull'anzianità"
+        ],
+        "answer": "Proporzionata alla quantità e qualità del suo lavoro e in ogni caso sufficiente ad assicurare a sé e alla famiglia un'esistenza libera e dignitosa"
+    },
+    {
+        "id": 3081,
+        "category": "Diritto Costituzionale",
+        "question": "La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al lavoratore (art. 37)?",
+        "options": [
+            "Sì",
+            "No, guadagna meno",
+            "Solo se non è sposata",
+            "Solo nel pubblico impiego"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 3082,
+        "category": "Diritto Costituzionale",
+        "question": "Ogni cittadino inabile al lavoro e sprovvisto dei mezzi necessari per vivere ha diritto (art. 38):",
+        "options": [
+            "Al mantenimento e all'assistenza sociale",
+            "Alla pensione di vecchiaia",
+            "A un lavoro statale",
+            "A nulla"
+        ],
+        "answer": "Al mantenimento e all'assistenza sociale"
+    },
+    {
+        "id": 3083,
+        "category": "Diritto Costituzionale",
+        "question": "L'organizzazione sindacale è (art. 39):",
+        "options": [
+            "Libera",
+            "Obbligatoria",
+            "Vietata",
+            "Statale"
+        ],
+        "answer": "Libera"
+    },
+    {
+        "id": 3084,
+        "category": "Diritto Costituzionale",
+        "question": "Ai sindacati può essere imposto altro obbligo se non la loro registrazione?",
+        "options": [
+            "No, salvo la registrazione presso uffici locali o centrali",
+            "Sì, di non fare sciopero",
+            "Sì, di essere apolitici",
+            "Sì, di pagare una tassa"
+        ],
+        "answer": "No, salvo la registrazione presso uffici locali o centrali"
+    },
+    {
+        "id": 3085,
+        "category": "Diritto Costituzionale",
+        "question": "Il diritto di sciopero si esercita (art. 40):",
+        "options": [
+            "Nell'ambito delle leggi che lo regolano",
+            "Senza limiti",
+            "Solo per motivi economici",
+            "Solo se autorizzato dal Prefetto"
+        ],
+        "answer": "Nell'ambito delle leggi che lo regolano"
+    },
+    {
+        "id": 3086,
+        "category": "Diritto Costituzionale",
+        "question": "L'iniziativa economica privata è (art. 41):",
+        "options": [
+            "Libera",
+            "Vietata",
+            "Riservata allo Stato",
+            "Solo per le cooperative"
+        ],
+        "answer": "Libera"
+    },
+    {
+        "id": 3087,
+        "category": "Diritto Costituzionale",
+        "question": "L'iniziativa economica privata non può svolgersi in contrasto con:",
+        "options": [
+            "L'utilità sociale o in modo da recare danno alla sicurezza, alla libertà, alla dignità umana",
+            "Il profitto",
+            "La concorrenza",
+            "Le direttive europee"
+        ],
+        "answer": "L'utilità sociale o in modo da recare danno alla sicurezza, alla libertà, alla dignità umana"
+    },
+    {
+        "id": 3088,
+        "category": "Diritto Costituzionale",
+        "question": "La proprietà è (art. 42):",
+        "options": [
+            "Pubblica o privata",
+            "Solo privata",
+            "Solo pubblica",
+            "Solo collettiva"
+        ],
+        "answer": "Pubblica o privata"
+    },
+    {
+        "id": 3089,
+        "category": "Diritto Costituzionale",
+        "question": "La proprietà privata può essere espropriata per motivi d'interesse generale?",
+        "options": [
+            "Sì, nei casi preveduti dalla legge e salvo indennizzo",
+            "No, mai",
+            "Sì, senza indennizzo",
+            "Solo in caso di guerra"
+        ],
+        "answer": "Sì, nei casi preveduti dalla legge e salvo indennizzo"
+    },
+    {
+        "id": 3090,
+        "category": "Diritto Costituzionale",
+        "question": "La Repubblica incoraggia e tutela (art. 47):",
+        "options": [
+            "Il risparmio in tutte le sue forme",
+            "Il consumo",
+            "L'evasione fiscale",
+            "Il gioco d'azzardo"
+        ],
+        "answer": "Il risparmio in tutte le sue forme"
+    },
+    {
+        "id": 3091,
+        "category": "Diritto Costituzionale",
+        "question": "Il voto è (art. 48):",
+        "options": [
+            "Personale ed eguale, libero e segreto",
+            "Pubblico",
+            "Delegabile",
+            "Obbligatorio (sanzionato penalmente)"
+        ],
+        "answer": "Personale ed eguale, libero e segreto"
+    },
+    {
+        "id": 3092,
+        "category": "Diritto Costituzionale",
+        "question": "Il diritto di voto può essere limitato?",
+        "options": [
+            "Sì, per incapacità civile o per effetto di sentenza penale irrevocabile o nei casi di indegnità morale indicati dalla legge",
+            "No, mai",
+            "Sì, per chi non paga le tasse",
+            "Sì, per chi non ha la licenza media"
+        ],
+        "answer": "Sì, per incapacità civile o per effetto di sentenza penale irrevocabile o nei casi di indegnità morale indicati dalla legge"
+    },
+    {
+        "id": 3093,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti i cittadini hanno diritto di associarsi liberamente in partiti (art. 49) per:",
+        "options": [
+            "Concorrere con metodo democratico a determinare la politica nazionale",
+            "Sovvertire lo Stato",
+            "Fare affari",
+            "Organizzare milizie"
+        ],
+        "answer": "Concorrere con metodo democratico a determinare la politica nazionale"
+    },
+    {
+        "id": 3094,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti i cittadini possono rivolgere petizioni alle Camere (art. 50) per:",
+        "options": [
+            "Chiedere provvedimenti legislativi o esporre comuni necessità",
+            "Chiedere soldi",
+            "Lamentarsi del Governo",
+            "Chiedere lavoro"
+        ],
+        "answer": "Chiedere provvedimenti legislativi o esporre comuni necessità"
+    },
+    {
+        "id": 3095,
+        "category": "Diritto Costituzionale",
+        "question": "La difesa della Patria è (art. 52):",
+        "options": [
+            "Sacro dovere del cittadino",
+            "Facoltativa",
+            "Solo per i militari",
+            "Un obbligo solo in guerra"
+        ],
+        "answer": "Sacro dovere del cittadino"
+    },
+    {
+        "id": 3096,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti sono tenuti a concorrere alle spese pubbliche in ragione (art. 53):",
+        "options": [
+            "Della loro capacità contributiva",
+            "Del loro reddito fisso",
+            "Della loro età",
+            "Della loro residenza"
+        ],
+        "answer": "Della loro capacità contributiva"
+    },
+    {
+        "id": 3097,
+        "category": "Diritto Costituzionale",
+        "question": "Il sistema tributario è informato a criteri di:",
+        "options": [
+            "Progressività",
+            "Proporzionalità fissa",
+            "Regressività",
+            "Casualità"
+        ],
+        "answer": "Progressività"
+    },
+    {
+        "id": 3098,
+        "category": "Diritto Costituzionale",
+        "question": "Tutti i cittadini hanno il dovere di essere fedeli alla Repubblica e di osservarne la Costituzione e le leggi (art. 54)?",
+        "options": [
+            "Sì",
+            "No, solo i dipendenti pubblici",
+            "Solo i politici",
+            "Solo i militari"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": 3099,
+        "category": "Diritto Costituzionale",
+        "question": "I cittadini cui sono affidate funzioni pubbliche hanno il dovere di adempierle:",
+        "options": [
+            "Con disciplina ed onore, prestando giuramento nei casi previsti dalla legge",
+            "Come vogliono",
+            "Senza giuramento",
+            "Gratuitamente"
+        ],
+        "answer": "Con disciplina ed onore, prestando giuramento nei casi previsti dalla legge"
+    },
+    {
+        "id": 3100,
+        "category": "Diritto Costituzionale",
+        "question": "Il Parlamento si riunisce in seduta comune dei membri delle due Camere:",
+        "options": [
+            "Nei soli casi stabiliti dalla Costituzione",
+            "Ogni mese",
+            "Per approvare tutte le leggi",
+            "Mai"
+        ],
+        "answer": "Nei soli casi stabiliti dalla Costituzione"
+    }
+]
