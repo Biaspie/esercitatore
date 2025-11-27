@@ -125,13 +125,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateQuestionNav() {
         const navButtons = document.querySelectorAll('.nav-btn');
         navButtons.forEach((btn, index) => {
-            btn.classList.remove('active');
+            btn.classList.remove('active', 'correct', 'wrong');
             if (index === currentQuestionIndex) {
                 btn.classList.add('active');
             }
 
-            if (currentQuestions[index].userAnswer) {
-                btn.classList.add('answered');
+            const question = currentQuestions[index];
+            if (question.userAnswer) {
+                if (question.userAnswer === question.answer) {
+                    btn.classList.add('correct');
+                } else {
+                    btn.classList.add('wrong');
+                }
             }
         });
     }
@@ -141,6 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateQuestionNav();
 
+        // Trigger Animation
+        questionText.classList.remove('slide-in');
+        void questionText.offsetWidth; // Force reflow
+        questionText.classList.add('slide-in');
+
         questionText.textContent = question.question;
         questionNumberDisplay.textContent = `Domanda ${currentQuestionIndex + 1}/${currentQuestions.length}`;
 
@@ -149,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         optionsContainer.innerHTML = '';
         feedbackDisplay.textContent = '';
+        feedbackDisplay.classList.remove('visible'); // Hide feedback initially
 
         prevBtn.classList.toggle('hidden', currentQuestionIndex === 0);
 
@@ -163,10 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
             question.shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
         }
 
-        question.shuffledOptions.forEach(option => {
+        question.shuffledOptions.forEach((option, index) => {
             const button = document.createElement('button');
             button.classList.add('option-btn');
             button.textContent = option;
+            button.style.animationDelay = `${index * 0.1}s`; // Staggered animation
+            button.classList.add('slide-in'); // Add animation class if defined in CSS for options too
 
             if (question.userAnswer) {
                 button.disabled = true;
@@ -184,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (question.userAnswer) {
+            feedbackDisplay.classList.add('visible');
             if (question.userAnswer === question.answer) {
                 feedbackDisplay.textContent = "Corretto!";
                 feedbackDisplay.style.color = "#10b981";
