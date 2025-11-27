@@ -1,0 +1,122 @@
+[
+    {
+        "id": "norm_disc_1",
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione disciplinare è prevista per il 'mantenimento di relazioni con persone che non godono di pubblica stima'?",
+        "options": [
+            "Pena pecuniaria",
+            "Richiamo scritto",
+            "Deplorazione",
+            "Sospensione dal servizio"
+        ],
+        "answer": "Pena pecuniaria"
+    },
+    {
+        "id": "norm_disc_2",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione della deplorazione comporta il ritardo nell'aumento dello stipendio o nell'attribuzione della classe di stipendio superiore per:",
+        "options": [
+            "Un anno",
+            "Due anni",
+            "Sei mesi",
+            "Tre anni"
+        ],
+        "answer": "Un anno"
+    },
+    {
+        "id": "norm_disc_3",
+        "category": "Normativa Disciplinare",
+        "question": "Il Consiglio Provinciale di Disciplina è competente a giudicare gli appartenenti ai ruoli della Polizia di Stato fino alla qualifica di:",
+        "options": [
+            "Ispettore Capo",
+            "Sovrintendente Capo",
+            "Vice Questore Aggiunto",
+            "Assistente Capo"
+        ],
+        "answer": "Ispettore Capo"
+    },
+    {
+        "id": "norm_disc_4",
+        "category": "Normativa Disciplinare",
+        "question": "Entro quale termine deve essere avviato il procedimento disciplinare per fatti aventi rilevanza penale definiti con sentenza di proscioglimento?",
+        "options": [
+            "120 giorni",
+            "90 giorni",
+            "180 giorni",
+            "60 giorni"
+        ],
+        "answer": "120 giorni"
+    },
+    {
+        "id": "norm_disc_5",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione cautelare obbligatoria dal servizio si applica:",
+        "options": [
+            "Quando il dipendente è colpito da ordine o mandato di cattura o si trova in stato di carcerazione preventiva",
+            "Sempre in caso di rinvio a giudizio",
+            "Solo in caso di condanna definitiva",
+            "Su discrezione del Questore per reati gravi"
+        ],
+        "answer": "Quando il dipendente è colpito da ordine o mandato di cattura o si trova in stato di carcerazione preventiva"
+    },
+    {
+        "id": "norm_disc_6",
+        "category": "Normativa Disciplinare",
+        "question": "Per infliggere la sanzione della deplorazione è necessario sentire il parere:",
+        "options": [
+            "Della Commissione Consultiva",
+            "Del Consiglio Provinciale di Disciplina",
+            "Del Consiglio Centrale di Disciplina",
+            "Del Capo della Polizia"
+        ],
+        "answer": "Della Commissione Consultiva"
+    },
+    {
+        "id": "norm_disc_7",
+        "category": "Normativa Disciplinare",
+        "question": "L'abbandono del posto di servizio (art. 72 L. 121/81) è punito con:",
+        "options": [
+            "La reclusione militare (o pena detentiva ordinaria)",
+            "La sola sanzione disciplinare della destituzione",
+            "L'arresto fino a 6 mesi",
+            "La pena pecuniaria"
+        ],
+        "answer": "La reclusione militare (o pena detentiva ordinaria)"
+    },
+    {
+        "id": "norm_disc_8",
+        "category": "Normativa Disciplinare",
+        "question": "La riabilitazione per una sanzione disciplinare rende nulli gli effetti della sanzione e può essere richiesta dopo:",
+        "options": [
+            "2 anni dalla data dell'atto con cui fu inflitta la sanzione (se non si sono commesse altre infrazioni)",
+            "5 anni",
+            "1 anno",
+            "3 anni"
+        ],
+        "answer": "2 anni dalla data dell'atto con cui fu inflitta la sanzione (se non si sono commesse altre infrazioni)"
+    },
+    {
+        "id": "norm_disc_9",
+        "category": "Normativa Disciplinare",
+        "question": "Chi presiede il Consiglio Provinciale di Disciplina?",
+        "options": [
+            "Il Vice Questore con funzioni vicarie",
+            "Il Questore",
+            "Il Prefetto",
+            "Un magistrato"
+        ],
+        "answer": "Il Vice Questore con funzioni vicarie"
+    },
+    {
+        "id": "norm_disc_10",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione della destituzione può essere inflitta per:",
+        "options": [
+            "Atti che rivelino mancanza del senso dell'onore o del senso morale",
+            "Negligenza in servizio",
+            "Pernottamento non autorizzato fuori struttura",
+            "Disordine nella divisa"
+        ],
+        "answer": "Atti che rivelino mancanza del senso dell'onore o del senso morale"
+    }
+]

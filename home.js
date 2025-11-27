@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentCategory = "ps";
 
+    const subjectMap = {
+        'ps': 'Legislazione P.S.',
+        'costituzionale': 'Diritto Costituzionale',
+        'penale': 'Diritto Penale',
+        'procedura_penale': 'Procedura Penale',
+        'normativa': 'Normativa Disciplinare',
+        'all': 'Tutti gli Argomenti'
+    };
+
     // Initialize: Show Subject Selection
     showScreen(subjectSelectionScreen);
 
@@ -23,12 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function selectSubject(subject) {
         currentCategory = subject;
-
-        let title = "Legislazione P.S.";
-        if (subject === "costituzionale") title = "Diritto Costituzionale";
-        else if (subject === "penale") title = "Diritto Penale";
-        else if (subject === "procedura") title = "Procedura Penale";
-        else if (subject === "all") title = "Tutti gli Argomenti";
+        const title = subjectMap[subject] || "Quiz";
 
         subjectTitle.textContent = `Quiz ${title}`;
         appTitle.textContent = title;

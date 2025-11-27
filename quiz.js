@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ps": [],
         "costituzionale": [],
         "penale": [],
-        "procedura": []
+        "procedura": [],
+        "normativa": []
     };
 
     // Parse URL Parameters
@@ -43,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 questionsData["penale"].push(q);
             } else if (q.category === "Procedura Penale") {
                 questionsData["procedura"].push(q);
+            } else if (q.category === "Normativa Disciplinare") {
+                questionsData["normativa"].push(q);
             } else {
                 questionsData["ps"].push(q);
             }

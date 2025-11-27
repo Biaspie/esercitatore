@@ -1,0 +1,602 @@
+[
+    {
+        "id": "norm_easy_1",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è la fonte principale che regola la disciplina nella Polizia di Stato?",
+        "options": [
+            "D.P.R. 737/1981",
+            "Codice Penale",
+            "Costituzione",
+            "Regolamento di servizio"
+        ],
+        "answer": "D.P.R. 737/1981"
+    },
+    {
+        "id": "norm_easy_2",
+        "category": "Normativa Disciplinare",
+        "question": "Quale tra queste è la sanzione disciplinare meno grave?",
+        "options": [
+            "Richiamo orale",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Deplorazione"
+        ],
+        "answer": "Richiamo orale"
+    },
+    {
+        "id": "norm_easy_3",
+        "category": "Normativa Disciplinare",
+        "question": "Quale tra queste è la sanzione disciplinare più grave?",
+        "options": [
+            "Destituzione",
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "id": "norm_easy_4",
+        "category": "Normativa Disciplinare",
+        "question": "Il richiamo orale è trascritto a matricola?",
+        "options": [
+            "No",
+            "Sì",
+            "Solo se reiterato",
+            "Dipende dalla gravità"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": "norm_easy_5",
+        "category": "Normativa Disciplinare",
+        "question": "Chi può infliggere il richiamo orale?",
+        "options": [
+            "Ogni superiore gerarchico",
+            "Solo il Questore",
+            "Solo il Capo Ufficio",
+            "Il Prefetto"
+        ],
+        "answer": "Ogni superiore gerarchico"
+    },
+    {
+        "id": "norm_easy_6",
+        "category": "Normativa Disciplinare",
+        "question": "Il richiamo scritto è una sanzione disciplinare?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo per gli ufficiali",
+            "Solo per gli agenti"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_7",
+        "category": "Normativa Disciplinare",
+        "question": "La pena pecuniaria consiste in una riduzione dello stipendio?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo della tredicesima",
+            "Solo degli straordinari"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_8",
+        "category": "Normativa Disciplinare",
+        "question": "La deplorazione è una sanzione più grave della pena pecuniaria?",
+        "options": [
+            "Sì",
+            "No",
+            "Sono uguali",
+            "Dipende dal caso"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_9",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione dal servizio comporta l'allontanamento dal servizio?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo per un giorno",
+            "Solo durante l'orario di lavoro"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_10",
+        "category": "Normativa Disciplinare",
+        "question": "La destituzione comporta la cessazione del rapporto di impiego?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo temporaneamente",
+            "Solo per 5 anni"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_11",
+        "category": "Normativa Disciplinare",
+        "question": "Il disordine nella divisa è punito con:",
+        "options": [
+            "Richiamo scritto",
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione"
+        ],
+        "answer": "Richiamo scritto"
+    },
+    {
+        "id": "norm_easy_12",
+        "category": "Normativa Disciplinare",
+        "question": "La negligenza in servizio è punita con:",
+        "options": [
+            "Richiamo scritto",
+            "Destituzione",
+            "Sospensione",
+            "Arresto"
+        ],
+        "answer": "Richiamo scritto"
+    },
+    {
+        "id": "norm_easy_13",
+        "category": "Normativa Disciplinare",
+        "question": "Il comportamento non corretto verso il pubblico è punito con:",
+        "options": [
+            "Richiamo scritto",
+            "Destituzione",
+            "Sospensione",
+            "Radiazione"
+        ],
+        "answer": "Richiamo scritto"
+    },
+    {
+        "id": "norm_easy_14",
+        "category": "Normativa Disciplinare",
+        "question": "L'inosservanza dell'obbligo di mantenere la reperibilità è punita con:",
+        "options": [
+            "Pena pecuniaria",
+            "Richiamo orale",
+            "Destituzione",
+            "Sospensione"
+        ],
+        "answer": "Pena pecuniaria"
+    },
+    {
+        "id": "norm_easy_15",
+        "category": "Normativa Disciplinare",
+        "question": "Il ritardo nell'esecuzione di un ordine è punito con:",
+        "options": [
+            "Pena pecuniaria",
+            "Richiamo orale",
+            "Destituzione",
+            "Sospensione"
+        ],
+        "answer": "Pena pecuniaria"
+    },
+    {
+        "id": "norm_easy_16",
+        "category": "Normativa Disciplinare",
+        "question": "La grave negligenza in servizio è punita con:",
+        "options": [
+            "Pena pecuniaria",
+            "Richiamo scritto",
+            "Richiamo orale",
+            "Ammonimento"
+        ],
+        "answer": "Pena pecuniaria"
+    },
+    {
+        "id": "norm_easy_17",
+        "category": "Normativa Disciplinare",
+        "question": "L'abituale negligenza nell'adempimento dei propri doveri è punita con:",
+        "options": [
+            "Deplorazione",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Richiamo orale"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "id": "norm_easy_18",
+        "category": "Normativa Disciplinare",
+        "question": "Gli atti diretti a impedire l'esercizio dei diritti politici sono puniti con:",
+        "options": [
+            "Deplorazione",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Richiamo orale"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "id": "norm_easy_19",
+        "category": "Normativa Disciplinare",
+        "question": "La condanna per delitto non colposo può comportare:",
+        "options": [
+            "Sospensione dal servizio",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Richiamo orale"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "id": "norm_easy_20",
+        "category": "Normativa Disciplinare",
+        "question": "L'uso non terapeutico di sostanze stupefacenti comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Deplorazione"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "id": "norm_easy_21",
+        "category": "Normativa Disciplinare",
+        "question": "L'allontanamento dalla sede di servizio per più di 5 giorni comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Deplorazione"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "id": "norm_easy_22",
+        "category": "Normativa Disciplinare",
+        "question": "La mancanza del senso dell'onore è punita con:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "id": "norm_easy_23",
+        "category": "Normativa Disciplinare",
+        "question": "Il grave abuso di autorità è punito con:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "id": "norm_easy_24",
+        "category": "Normativa Disciplinare",
+        "question": "L'istigazione all'insubordinazione è punita con:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "id": "norm_easy_25",
+        "category": "Normativa Disciplinare",
+        "question": "Chi è competente a rilevare le infrazioni?",
+        "options": [
+            "Ogni superiore",
+            "Solo il Questore",
+            "Solo il Prefetto",
+            "Solo l'Ispettore"
+        ],
+        "answer": "Ogni superiore"
+    },
+    {
+        "id": "norm_easy_26",
+        "category": "Normativa Disciplinare",
+        "question": "Il superiore che rileva l'infrazione deve fare rapporto?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo se grave",
+            "A sua discrezione"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_27",
+        "category": "Normativa Disciplinare",
+        "question": "Il rapporto disciplinare deve contenere proposte sulla sanzione?",
+        "options": [
+            "No",
+            "Sì",
+            "Sempre",
+            "Se richiesto"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": "norm_easy_28",
+        "category": "Normativa Disciplinare",
+        "question": "L'incolpato ha diritto a presentare giustificazioni?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo per reati gravi",
+            "Solo se assistito da avvocato"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_29",
+        "category": "Normativa Disciplinare",
+        "question": "Il procedimento disciplinare deve garantire il contraddittorio?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo in appello",
+            "Solo per la destituzione"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_30",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione deve essere motivata?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo se grave",
+            "A discrezione"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_31",
+        "category": "Normativa Disciplinare",
+        "question": "La recidiva è una circostanza aggravante?",
+        "options": [
+            "Sì",
+            "No",
+            "È attenuante",
+            "È indifferente"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_32",
+        "category": "Normativa Disciplinare",
+        "question": "I precedenti di servizio sono valutati?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo quelli negativi",
+            "Solo quelli positivi"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_33",
+        "category": "Normativa Disciplinare",
+        "question": "La Commissione Consultiva esprime un parere vincolante?",
+        "options": [
+            "No",
+            "Sì",
+            "Sempre",
+            "Solo per la destituzione"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": "norm_easy_34",
+        "category": "Normativa Disciplinare",
+        "question": "Il Consiglio di Disciplina esprime un parere vincolante?",
+        "options": [
+            "No",
+            "Sì",
+            "Sempre",
+            "Solo per la sospensione"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": "norm_easy_35",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione cautelare è una sanzione definitiva?",
+        "options": [
+            "No",
+            "Sì",
+            "Dipende",
+            "A volte"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": "norm_easy_36",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione cautelare può essere obbligatoria?",
+        "options": [
+            "Sì",
+            "No",
+            "Mai",
+            "Solo per il Prefetto"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_37",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione cautelare può essere facoltativa?",
+        "options": [
+            "Sì",
+            "No",
+            "Mai",
+            "Solo per il Questore"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_38",
+        "category": "Normativa Disciplinare",
+        "question": "Il procedimento disciplinare può essere sospeso?",
+        "options": [
+            "Sì, in attesa del giudizio penale",
+            "No, mai",
+            "Solo se l'incolpato è malato",
+            "Solo se il Questore vuole"
+        ],
+        "answer": "Sì, in attesa del giudizio penale"
+    },
+    {
+        "id": "norm_easy_39",
+        "category": "Normativa Disciplinare",
+        "question": "La sentenza di assoluzione ha efficacia nel giudizio disciplinare?",
+        "options": [
+            "Sì",
+            "No",
+            "Mai",
+            "Solo se condanna"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_40",
+        "category": "Normativa Disciplinare",
+        "question": "È possibile fare ricorso al TAR contro una sanzione disciplinare?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo al Presidente della Repubblica",
+            "Solo al Capo della Polizia"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_41",
+        "category": "Normativa Disciplinare",
+        "question": "È possibile fare ricorso gerarchico contro una sanzione disciplinare?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo al TAR",
+            "Solo al Giudice di Pace"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_42",
+        "category": "Normativa Disciplinare",
+        "question": "La riabilitazione estingue gli effetti della sanzione?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo parzialmente",
+            "Solo per la pena pecuniaria"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_43",
+        "category": "Normativa Disciplinare",
+        "question": "L'abbandono del posto di servizio è un reato?",
+        "options": [
+            "Sì",
+            "No",
+            "È solo illecito amministrativo",
+            "È solo illecito civile"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_44",
+        "category": "Normativa Disciplinare",
+        "question": "La rivolta è un reato?",
+        "options": [
+            "Sì",
+            "No",
+            "È solo illecito disciplinare",
+            "È solo illecito civile"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_45",
+        "category": "Normativa Disciplinare",
+        "question": "Il movimento non autorizzato di reparto è un reato?",
+        "options": [
+            "Sì",
+            "No",
+            "È solo illecito disciplinare",
+            "È solo illecito civile"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_46",
+        "category": "Normativa Disciplinare",
+        "question": "L'alterazione di armi è un reato?",
+        "options": [
+            "Sì",
+            "No",
+            "È solo illecito disciplinare",
+            "È solo illecito civile"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_47",
+        "category": "Normativa Disciplinare",
+        "question": "L'arbitraria utilizzazione di prestazioni lavorative è un reato?",
+        "options": [
+            "Sì",
+            "No",
+            "È solo illecito disciplinare",
+            "È solo illecito civile"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_48",
+        "category": "Normativa Disciplinare",
+        "question": "Il Questore può sospendere dal servizio?",
+        "options": [
+            "Sì, in via cautelare",
+            "No, mai",
+            "Solo definitivamente",
+            "Solo il Prefetto"
+        ],
+        "answer": "Sì, in via cautelare"
+    },
+    {
+        "id": "norm_easy_49",
+        "category": "Normativa Disciplinare",
+        "question": "Il Ministro dell'Interno può decretare la destituzione?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo il Questore",
+            "Solo il Capo della Polizia"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "id": "norm_easy_50",
+        "category": "Normativa Disciplinare",
+        "question": "La responsabilità disciplinare è personale?",
+        "options": [
+            "Sì",
+            "No",
+            "È collettiva",
+            "È oggettiva"
+        ],
+        "answer": "Sì"
+    }
+]
