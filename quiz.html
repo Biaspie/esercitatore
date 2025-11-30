@@ -1,87 +1,73 @@
 <!DOCTYPE html>
-<html lang="it">
+<!-- Dynamic Background -->
+<div class="background-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz in Corso</title>
-    <link rel="stylesheet" href="style.css?v=2">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+<!-- Glass Container -->
+<div class="container">
+    <header>
+        <h1 id="app-title" style="font-size: 1.8rem;">Quiz</h1>
+    </header>
 
-<body>
-    <!-- Dynamic Background -->
-    <div class="background-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
+    <main style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen active">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
 
-    <!-- Glass Container -->
-    <div class="container">
-        <header>
-            <h1 id="app-title" style="font-size: 1.8rem;">Quiz</h1>
-        </header>
+            <div class="question-header">
+                <span id="question-number">Domanda 1/20</span>
+            </div>
 
-        <main style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
-            <!-- Quiz Screen -->
-            <div id="quiz-screen" class="screen active">
-                <div class="progress-container">
-                    <div id="progress-bar" class="progress-bar"></div>
+            <div id="question-nav" class="question-nav">
+                <!-- Navigation buttons will be generated here -->
+            </div>
+
+            <div class="question-content">
+                <div id="question-text" class="question-text">
+                    Caricamento domanda...
                 </div>
 
-                <div class="question-header">
-                    <span id="question-number">Domanda 1/20</span>
-                </div>
-
-                <div id="question-nav" class="question-nav">
-                    <!-- Navigation buttons will be generated here -->
-                </div>
-
-                <div class="question-content">
-                    <div id="question-text" class="question-text">
-                        Caricamento domanda...
-                    </div>
-
-                    <div id="options-container" class="options-container">
-                        <!-- Options will be generated here -->
-                    </div>
-                </div>
-
-                <div id="feedback" class="feedback"></div>
-
-                <div class="navigation-buttons">
-                    <button id="home-btn" class="btn" title="Torna alla Home">
-                        🏠
-                    </button>
-                    <button id="next-btn" class="btn primary-btn hidden">Avanti</button>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be generated here -->
                 </div>
             </div>
 
-            <!-- Result Screen -->
-            <div id="result-screen" class="screen">
-                <h2>Quiz Completato!</h2>
-                <div id="result-message"></div>
-                <div class="score-display"
-                    style="font-size: 2rem; font-weight: 800; text-align: center; margin: 2rem 0;">
-                    Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
-                </div>
+            <div id="feedback" class="feedback"></div>
 
-                <div id="summary-container" class="summary-container">
-                    <!-- Summary items -->
-                </div>
-
-                <div class="navigation-buttons">
-                    <button id="home-result-btn" class="btn secondary-btn">Home</button>
-                    <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
-                </div>
+            <div class="navigation-buttons">
+                <button id="home-btn" class="btn" title="Torna alla Home">
+                    🏠
+                </button>
+                <button id="next-btn" class="btn primary-btn hidden">Avanti</button>
             </div>
-        </main>
-    </div>
+        </div>
 
-    <script src="quiz.js"></script>
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h2>Quiz Completato!</h2>
+            <div id="result-message"></div>
+            <div class="score-display" style="font-size: 2rem; font-weight: 800; text-align: center; margin: 2rem 0;">
+                Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
+            </div>
+
+            <div id="summary-container" class="summary-container">
+                <!-- Summary items -->
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="home-result-btn" class="btn secondary-btn">Home</button>
+                <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="quiz.js"></script>
 </body>
 
 </html>
