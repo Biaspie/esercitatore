@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const resultMessage = document.getElementById('result-message');
 
     const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
     const homeBtn = document.getElementById('home-btn');
     const homeResultBtn = document.getElementById('home-result-btn');
     const restartBtn = document.getElementById('restart-btn');
@@ -149,6 +150,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         feedbackDisplay.textContent = '';
         feedbackDisplay.classList.remove('visible'); // Hide feedback initially
 
+        // Previous Button Logic
+        if (currentQuestionIndex > 0) {
+            prevBtn.classList.remove('hidden');
+        } else {
+            prevBtn.classList.add('hidden');
+        }
+
         if (question.userAnswer) {
             nextBtn.classList.remove('hidden');
             nextBtn.textContent = (currentQuestionIndex === currentQuestions.length - 1) ? "Risultati" : "Avanti";
@@ -212,6 +220,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            loadQuestion();
+        }
+    }
+
     function showResults() {
         showScreen(resultScreen);
         scoreDisplay.textContent = score;
@@ -271,6 +286,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Event Listeners
     nextBtn.addEventListener('click', nextQuestion);
+    prevBtn.addEventListener('click', prevQuestion);
 
     homeBtn.addEventListener('click', () => {
         if (confirm("Sei sicuro di voler tornare alla home? I progressi andranno persi.")) {
@@ -285,16 +301,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     restartBtn.addEventListener('click', () => {
         window.location.reload();
     });
-
-    // Keyboard Shortcuts
-    function prevQuestion() {
-        if (currentQuestionIndex > 0) {
-            currentQuestionIndex--;
-            loadQuestion();
-        }
-    }
-
-    // ... (existing showResults, showScreen, etc.)
 
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {

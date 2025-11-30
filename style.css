@@ -227,29 +227,6 @@ h2 {
     /* AGGRESSIVE: Reduced padding from 1.5rem */
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-}
-
-#home-btn {
-    padding: 0.7rem 1.5rem;
-    /* AGGRESSIVE: Slightly reduced padding */
-    border-radius: 12px;
-    background: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    gap: 0.4rem;
-    /* AGGRESSIVE: Reduced gap */
-    margin-bottom: 1rem;
-    /* AGGRESSIVE: Reduced margin */
-    justify-content: center;
-}
-
-.nav-btn {
-    width: 6px;
-    /* AGGRESSIVE: Smaller dots */
     height: 6px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
