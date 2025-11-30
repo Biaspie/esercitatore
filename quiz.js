@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             item.classList.add('summary-item', isCorrect ? 'correct' : 'wrong');
 
             item.innerHTML = `
-                <span class="summary-icon">${isCorrect ? '✔' : '✖'}</span>
+                <span class="summary-status">${isCorrect ? 'Corretto' : 'Sbagliato'}</span>
                 <span class="summary-text">
                     <strong>${index + 1}.</strong> ${q.question.substring(0, 60)}...
                 </span>
