@@ -48718,5 +48718,2205 @@
       "Nulla"
     ],
     "answer": "Tecnica per ridurre le scalettature (aliasing) nei bordi delle immagini digitali"
+  },
+  {
+    "id": 8898,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 0?",
+    "options": [
+      "Non definito",
+      "0",
+      "1",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8899,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 0?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8900,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8901,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "0",
+      "Non definito",
+      "1",
+      "Errore"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8902,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "0",
+      "1",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8903,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 1?",
+    "options": [
+      "Non definito",
+      "Errore",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8904,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 1?",
+    "options": [
+      "0",
+      "1",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8905,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 1?",
+    "options": [
+      "Non definito",
+      "0",
+      "1",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8906,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 0?",
+    "options": [
+      "0",
+      "Errore",
+      "1",
+      "Non definito"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8907,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8908,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8909,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "0",
+      "Non definito",
+      "Errore",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8910,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 1?",
+    "options": [
+      "Errore",
+      "0",
+      "1",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8911,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8912,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 1?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8913,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 1?",
+    "options": [
+      "1",
+      "Non definito",
+      "Errore",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8914,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 0?",
+    "options": [
+      "1",
+      "Errore",
+      "0",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8915,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 0?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8916,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 1?",
+    "options": [
+      "0",
+      "1",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8917,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 1?",
+    "options": [
+      "0",
+      "Errore",
+      "1",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8918,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 0?",
+    "options": [
+      "1",
+      "0",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8919,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 0?",
+    "options": [
+      "1",
+      "0",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8920,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 0?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8921,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8922,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 1?",
+    "options": [
+      "Errore",
+      "0",
+      "Non definito",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8923,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 1?",
+    "options": [
+      "0",
+      "1",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8924,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 0?",
+    "options": [
+      "1",
+      "0",
+      "Errore",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8925,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 1?",
+    "options": [
+      "Errore",
+      "0",
+      "Non definito",
+      "1"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8926,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 0?",
+    "options": [
+      "Errore",
+      "0",
+      "Non definito",
+      "1"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8927,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 1?",
+    "options": [
+      "1",
+      "Errore",
+      "Non definito",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8928,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 0?",
+    "options": [
+      "Errore",
+      "0",
+      "1",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8929,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "Non definito",
+      "1",
+      "Errore",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8930,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 1?",
+    "options": [
+      "0",
+      "Errore",
+      "1",
+      "Non definito"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8931,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 0?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8932,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 0?",
+    "options": [
+      "Errore",
+      "0",
+      "1",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8933,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 0?",
+    "options": [
+      "Non definito",
+      "0",
+      "Errore",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8934,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 0?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8935,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 1?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8936,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 0?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8937,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 0?",
+    "options": [
+      "Errore",
+      "0",
+      "1",
+      "Non definito"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8938,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 0?",
+    "options": [
+      "Non definito",
+      "Errore",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8939,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8940,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: NOT 0?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8941,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8942,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 0?",
+    "options": [
+      "Errore",
+      "1",
+      "0",
+      "Non definito"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8943,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 0?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "0",
+      "1"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8944,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 OR 0?",
+    "options": [
+      "0",
+      "1",
+      "Non definito",
+      "Errore"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8945,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 1 AND 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8946,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 OR 1?",
+    "options": [
+      "Errore",
+      "Non definito",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8947,
+    "category": "Informatica",
+    "question": "Qual è il risultato di: 0 AND 0?",
+    "options": [
+      "1",
+      "Errore",
+      "Non definito",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8948,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 AND 1) XOR 1",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8949,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NOR 1) NOR 0",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8950,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 OR 0) NAND 0",
+    "options": [
+      "1",
+      "Nessuna delle precedenti",
+      "0",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8951,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 XOR 0) NAND 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8952,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 OR 1) NAND 0",
+    "options": [
+      "Indeterminato",
+      "Nessuna delle precedenti",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8953,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 OR 1) AND 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8954,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 OR 0) AND 0",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8955,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 0) AND 1",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8956,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 0) NOR 0",
+    "options": [
+      "1",
+      "0",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8957,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 XOR 0) OR 0",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8958,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 1) AND 1",
+    "options": [
+      "1",
+      "0",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8959,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 AND 1) XOR 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8960,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 0) NOR 1",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8961,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 1) NOR 1",
+    "options": [
+      "1",
+      "0",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8962,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 AND 1) NAND 1",
+    "options": [
+      "Nessuna delle precedenti",
+      "0",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8963,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NAND 0) NAND 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8964,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 AND 0) OR 1",
+    "options": [
+      "Nessuna delle precedenti",
+      "0",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8965,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) AND 0",
+    "options": [
+      "0",
+      "1",
+      "Nessuna delle precedenti",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8966,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 1) AND 0",
+    "options": [
+      "0",
+      "Indeterminato",
+      "1",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8967,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 1) OR 0",
+    "options": [
+      "Indeterminato",
+      "1",
+      "Nessuna delle precedenti",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8968,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 AND 0) NOR 1",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8969,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NAND 1) NAND 0",
+    "options": [
+      "0",
+      "1",
+      "Nessuna delle precedenti",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8970,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 OR 0) AND 0",
+    "options": [
+      "1",
+      "0",
+      "Nessuna delle precedenti",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8971,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 0) NOR 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8972,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 AND 0) XOR 0",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8973,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) NOR 1",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8974,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 XOR 1) AND 0",
+    "options": [
+      "0",
+      "1",
+      "Nessuna delle precedenti",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8975,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 OR 0) NOR 1",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8976,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NOR 0) AND 1",
+    "options": [
+      "0",
+      "Indeterminato",
+      "Nessuna delle precedenti",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8977,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 AND 0) NAND 0",
+    "options": [
+      "1",
+      "0",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8978,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 0) NOR 0",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8979,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 0) NAND 1",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8980,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 OR 1) NOR 1",
+    "options": [
+      "Indeterminato",
+      "0",
+      "1",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8981,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 1) AND 0",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "0",
+      "1"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8982,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NAND 0) AND 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8983,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 1) NOR 0",
+    "options": [
+      "1",
+      "0",
+      "Nessuna delle precedenti",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8984,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 NOR 1) XOR 1",
+    "options": [
+      "0",
+      "Indeterminato",
+      "1",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8985,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 XOR 1) OR 1",
+    "options": [
+      "0",
+      "Indeterminato",
+      "1",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8986,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) XOR 0",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8987,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 0) NAND 0",
+    "options": [
+      "0",
+      "Nessuna delle precedenti",
+      "1",
+      "Indeterminato"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8988,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 XOR 1) NAND 0",
+    "options": [
+      "1",
+      "0",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8989,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 0) XOR 0",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8990,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) AND 0",
+    "options": [
+      "Indeterminato",
+      "Nessuna delle precedenti",
+      "1",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8991,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 0) OR 1",
+    "options": [
+      "Indeterminato",
+      "1",
+      "Nessuna delle precedenti",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8992,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 AND 1) XOR 0",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8993,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) XOR 0",
+    "options": [
+      "0",
+      "Indeterminato",
+      "1",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8994,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) NAND 0",
+    "options": [
+      "Indeterminato",
+      "0",
+      "Nessuna delle precedenti",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8995,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (0 NAND 1) AND 1",
+    "options": [
+      "Nessuna delle precedenti",
+      "Indeterminato",
+      "1",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8996,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 AND 0) OR 0",
+    "options": [
+      "1",
+      "Nessuna delle precedenti",
+      "0",
+      "Indeterminato"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 8997,
+    "category": "Informatica",
+    "question": "Risolvi l'espressione logica: (1 AND 0) XOR 0",
+    "options": [
+      "0",
+      "1",
+      "Indeterminato",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "0"
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 8998
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: B && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 8999
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: A || !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9000
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: B && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9001
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: A && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9002
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: B && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9003
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: B || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9004
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9005
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: !A && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9006
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9007
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A || !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9008
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: B && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9009
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: A || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9010
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: B && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9011
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: A || !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9012
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: A && !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9013
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A && !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9014
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: !A && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9015
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: A || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9016
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: A && !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9017
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: B || !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9018
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: B || !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9019
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: !B || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9020
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: !B && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9021
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: !A || !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9022
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: B && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9023
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: !B || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9024
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: A && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9025
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: !A || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9026
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: A || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9027
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: !B && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9028
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9029
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: B && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9030
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: B || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9031
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: !B || !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9032
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: !B && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9033
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: B && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9034
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: A || !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9035
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: B || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9036
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: A && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9037
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: B && !B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9038
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: A && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9039
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: B || !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9040
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso. Qual è il risultato di: !B && A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9041
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: A || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9042
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: B && B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9043
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero. Qual è il risultato di: A && !A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9044
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: B || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9045
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero. Qual è il risultato di: A || B ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9046
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso. Qual è il risultato di: B || A ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9047
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (!A && B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9048
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (A || B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9049
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Falso. Qual è il risultato di: (A || !B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9050
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (A || !B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9051
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Falso. Qual è il risultato di: (A || B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9052
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Falso. Qual è il risultato di: (A || B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9053
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (A && !B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9054
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (!A || !B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9055
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A || B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9056
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Falso. Qual è il risultato di: (A && B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9057
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (A || B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9058
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Falso. Qual è il risultato di: (A || B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9059
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (!A && B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9060
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (A || B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9061
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (A || B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9062
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9063
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (A && B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9064
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A || B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9065
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (A || B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9066
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (A || B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9067
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (A && B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9068
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (!A || !B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9069
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Falso. Qual è il risultato di: (A && B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9070
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (A || B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9071
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A && B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9072
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9073
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Falso. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9074
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (!A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9075
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Vero. Qual è il risultato di: (A || B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9076
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (A && !B) || !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9077
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (A && B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9078
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9079
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (A || !B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9080
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (A && !B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9081
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9082
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Falso. Qual è il risultato di: (!A && B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9083
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (!A || B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9084
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Falso. Qual è il risultato di: (!A || !B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9085
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Falso. Qual è il risultato di: (A || B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9086
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (A || B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9087
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Falso. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9088
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A || !B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9089
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (!A && B) && !C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9090
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Falso. Qual è il risultato di: (A || B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9091
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Falso, C=Vero. Qual è il risultato di: (!A && B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9092
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Falso, B=Vero, C=Vero. Qual è il risultato di: (A || B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9093
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A && !B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9094
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Falso, C=Vero. Qual è il risultato di: (A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Vero",
+    "id": 9095
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (!A && !B) && C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9096
+  },
+  {
+    "category": "Informatica",
+    "question": "Dato A=Vero, B=Vero, C=Falso. Qual è il risultato di: (!A && B) || C ?",
+    "options": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": "Falso",
+    "id": 9097
   }
 ]
