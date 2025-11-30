@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         "costituzionale": "Diritto Costituzionale",
         "penale": "Diritto Penale",
         "procedura": "Procedura Penale",
-        "normativa": "Normativa Disciplinare"
+        "normativa": "Normativa Disciplinare",
+        "informatica": "Informatica"
     };
 
     // Parse URL Parameters
