@@ -46,21 +46,37 @@
                     </div>
 
                     <div id="options-container" class="options-container">
-                        <div id="result-message"></div>
-                        <div class="score-display"
-                            style="font-size: 2rem; font-weight: 800; text-align: center; margin: 2rem 0;">
-                            Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
-                        </div>
-
-                        <div id="summary-container" class="summary-container">
-                            <!-- Summary items -->
-                        </div>
-
-                        <div class="navigation-buttons">
-                            <button id="home-result-btn" class="btn secondary-btn">Home</button>
-                            <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
-                        </div>
+                        <!-- Options will be generated here -->
                     </div>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <div class="navigation-buttons">
+                    <button id="prev-btn" class="btn secondary-btn hidden">Indietro</button>
+                    <button id="home-btn" class="btn secondary-btn" title="Torna alla Home">Home</button>
+                    <button id="next-btn" class="btn secondary-btn hidden">Avanti</button>
+                </div>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="result-screen" class="screen">
+                <h2>Quiz Completato!</h2>
+                <div id="result-message"></div>
+                <div class="score-display"
+                    style="font-size: 2rem; font-weight: 800; text-align: center; margin: 2rem 0;">
+                    Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
+                </div>
+
+                <div id="summary-container" class="summary-container">
+                    <!-- Summary items -->
+                </div>
+
+                <div class="navigation-buttons">
+                    <button id="home-result-btn" class="btn secondary-btn">Home</button>
+                    <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
+                </div>
+            </div>
         </main>
     </div>
 
