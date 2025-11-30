@@ -239,6 +239,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    function showScreen(screen) {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        screen.classList.add('active');
+    }
+
     // Event Listeners
     nextBtn.addEventListener('click', nextQuestion);
     prevBtn.addEventListener('click', prevQuestion);
