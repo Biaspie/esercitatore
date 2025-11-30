@@ -4,16 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-    <html lang="it">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quiz App - Game</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    </head>
+    <title>Quiz App - Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <div class="container">
@@ -47,11 +41,36 @@
                 </div>
 
                 <div id="feedback" class="feedback"></div>
-                <!-- Result Screen -->
-                <div id="result-screen" class="screen">
-                    <h2>Quiz Completato!</h2>
-                    <div class="score-display">
-                        <span id="score">0</span> / <span id="total-questions">20</span>
+
+                <div class="navigation-buttons">
+                    <button id="home-btn" class="btn" title="Torna alla Home">
+                        🏠
+                    </button>
+                    <button id="next-btn" class="btn primary-btn hidden">Avanti</button>
+                </div>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="result-screen" class="screen">
+                <h2>Quiz Completato!</h2>
+                <div id="result-message"></div>
+                <div class="score-display">
+                    Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
+                </div>
+
+                <div id="summary-container" class="summary-container">
+                    <!-- Summary items -->
+                </div>
+
+                <div class="navigation-buttons">
+                    <button id="home-result-btn" class="btn secondary-btn">Home</button>
+                    <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="quiz.js"></script>
 </body>
 
 </html>
