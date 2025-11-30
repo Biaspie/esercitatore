@@ -549,3 +549,46 @@ h2 {
         /* Override inline style */
     }
 }
+/* Summary Styles */
+.summary-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.summary-icon {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.summary-text {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.summary-item.correct .summary-icon { color: #10b981; }
+.summary-item.wrong .summary-icon { color: #ef4444; }

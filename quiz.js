@@ -238,6 +238,31 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
             resultMessage.textContent = "Devi studiare di più!";
         }
+
+        // Generate Summary
+        const summaryContainer = document.getElementById('summary-container');
+        summaryContainer.innerHTML = '';
+
+        currentQuestions.forEach((q, index) => {
+            const isCorrect = q.userAnswer === q.answer;
+            const item = document.createElement('div');
+            item.classList.add('summary-item', isCorrect ? 'correct' : 'wrong');
+
+            item.innerHTML = `
+                <span class="summary-icon">${isCorrect ? '✔' : '✖'}</span>
+                <span class="summary-text">
+                    <strong>${index + 1}.</strong> ${q.question.substring(0, 60)}...
+                </span>
+            `;
+
+            item.addEventListener('click', () => {
+                currentQuestionIndex = index;
+                showScreen(quizScreen);
+                loadQuestion();
+            });
+
+            summaryContainer.appendChild(item);
+        });
     }
 
     function showScreen(screen) {
