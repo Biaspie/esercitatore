@@ -1,7 +1,6 @@
 :root {
     /* Minimal Modern Theme */
     --bg-color: #0f172a;
-<<<<<<< HEAD
     --card-bg: rgba(15, 23, 42, 0.6);
     --border-color: rgba(255, 255, 255, 0.08);
 
@@ -212,10 +211,6 @@ h2 {
 
 ::-webkit-scrollbar-track {
     background: transparent;
-=======
-    --card-bg: rgba(30, 41, 59, 0.7);
-    /* Glassy */
->>>>>>> 578afd7e5d5fc4ae3c47a8b973f89327977be7a3
 }
 
 ::-webkit-scrollbar-thumb {
