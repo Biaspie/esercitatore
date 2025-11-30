@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const resultMessage = document.getElementById('result-message');
 
     const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
+    // prevBtn removed
     const homeBtn = document.getElementById('home-btn');
     const homeResultBtn = document.getElementById('home-result-btn');
     const restartBtn = document.getElementById('restart-btn');
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
-    let db = null;
 
     // Check Protocol
     if (window.location.protocol === 'file:') {
@@ -151,7 +150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         feedbackDisplay.textContent = '';
         feedbackDisplay.classList.remove('visible'); // Hide feedback initially
 
-        prevBtn.classList.toggle('hidden', currentQuestionIndex === 0);
+        // prevBtn logic removed
 
         if (question.userAnswer) {
             nextBtn.classList.remove('hidden');
@@ -216,12 +215,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    function prevQuestion() {
-        if (currentQuestionIndex > 0) {
-            currentQuestionIndex--;
-            loadQuestion();
-        }
-    }
+    // prevQuestion removed
 
     function showResults() {
         showScreen(resultScreen);
@@ -272,8 +266,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const reviewBtn = document.getElementById('review-btn');
 
-    // ... (existing code)
-
     if (reviewBtn) {
         reviewBtn.addEventListener('click', () => {
             currentQuestionIndex = 0;
@@ -284,7 +276,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Event Listeners
     nextBtn.addEventListener('click', nextQuestion);
-    prevBtn.addEventListener('click', prevQuestion);
+    // prevBtn listener removed
 
     homeBtn.addEventListener('click', () => {
         if (confirm("Sei sicuro di voler tornare alla home? I progressi andranno persi.")) {
@@ -299,6 +291,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     restartBtn.addEventListener('click', () => {
         window.location.reload();
     });
+
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
         // Only active if quiz screen is visible
@@ -306,9 +299,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (e.key === 'ArrowRight') {
             nextQuestion();
-        } else if (e.key === 'ArrowLeft') {
-            prevQuestion();
-        } else if (e.key === 'Enter') {
+        }
+        // ArrowLeft removed
+        else if (e.key === 'Enter') {
             // Only proceed if the user has answered the current question
             if (currentQuestions[currentQuestionIndex].userAnswer) {
                 nextQuestion();
