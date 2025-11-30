@@ -308,6 +308,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             nextQuestion();
         } else if (e.key === 'ArrowLeft') {
             prevQuestion();
+        } else if (e.key === 'Enter') {
+            // Only proceed if the user has answered the current question
+            if (currentQuestions[currentQuestionIndex].userAnswer) {
+                nextQuestion();
+            }
         } else {
             // Check for number keys 1-4
             const num = parseInt(e.key);
