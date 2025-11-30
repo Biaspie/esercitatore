@@ -188,6 +188,84 @@ h2 {
     text-align: left;
     background: rgba(30, 41, 59, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    /* AGGRESSIVE: Reduced font size from 1.1rem */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover:not([disabled]) {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateX(4px);
+}
+
+.option-btn.correct {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: var(--success-color);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.option-btn.wrong {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: var(--error-color);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    margin-top: auto;
+    padding: 1rem 0 0 0;
+    /* AGGRESSIVE: Reduced padding from 1.5rem */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-indent: -9999px;
+}
+
+.nav-btn.active {
+    background: var(--primary-color);
+    transform: scale(1.5);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.nav-btn.correct {
+    background: var(--success-color);
+}
+
+.nav-btn.wrong {
+    background: var(--error-color);
+}
+
+/* Summary */
+.summary-container {
+    flex: 1;
+    overflow-y: auto;
+    margin: 1rem 0;
+    /* AGGRESSIVE: Reduced margin */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.summary-item {
+    padding: 0.8rem;
+    /* AGGRESSIVE: Reduced padding */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
     gap: 0.8rem;
