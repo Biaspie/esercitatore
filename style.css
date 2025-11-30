@@ -237,32 +237,6 @@ h2 {
         margin-bottom: 2rem;
         color: var(--text-muted);
         font-size: 0.85rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-    }
-
-    .question-content {
-        transform: translateX(4px);
-    }
-
-    .option-btn.correct {
-        background: rgba(16, 185, 129, 0.15);
-        border-color: var(--success-color);
-        color: #fff;
-        box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
-    }
-
-    .option-btn.wrong {
-        background: rgba(239, 68, 68, 0.15);
-        border-color: var(--error-color);
-        color: #fff;
-        box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
-    }
-
-    /* Navigation Buttons */
-    .navigation-buttons {
-        margin-top: auto;
         padding: 2rem 0 0 0;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
         display: flex;
