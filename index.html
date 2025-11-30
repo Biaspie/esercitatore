@@ -9,62 +9,49 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quiz App - Home</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    </head>
+        <!-- Subject Selection Screen -->
+        <div id="subject-selection-screen" class="screen active">
+            <h2>Scegli la Materia</h2>
+            <div class="subject-grid">
+                <button class="btn subject-btn" data-subject="ps">Legislazione P.S.</button>
+                <button class="btn subject-btn" data-subject="costituzionale">Diritto Costituzionale</button>
+                <button class="btn subject-btn" data-subject="penale">Diritto Penale</button>
+                <button class="btn subject-btn" data-subject="procedura_penale">Procedura Penale</button>
+                <button class="btn subject-btn" data-subject="normativa">Normativa Disciplinare</button>
+                <button class="btn subject-btn" data-subject="informatica">Informatica</button>
+                <button class="btn subject-btn primary-btn" data-subject="all" style="grid-column: 1 / -1;">Tutti
+                    gli Argomenti</button>
+            </div>
+        </div>
 
-<body>
-    <div class="container">
-        <header>
-            <h1 id="app-title">Quiz App</h1>
-        </header>
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <h2 id="subject-title">Benvenuto al Quiz</h2>
 
-        <main style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
-            <!-- Subject Selection Screen -->
-            <div id="subject-selection-screen" class="screen active">
-                <h2>Scegli la Materia</h2>
-                <div class="subject-grid">
-                    <button class="btn subject-btn" data-subject="ps">Legislazione P.S.</button>
-                    <button class="btn subject-btn" data-subject="costituzionale">Diritto Costituzionale</button>
-                    <button class="btn subject-btn" data-subject="penale">Diritto Penale</button>
-                    <button class="btn subject-btn" data-subject="procedura_penale">Procedura Penale</button>
-                    <button class="btn subject-btn" data-subject="normativa">Normativa Disciplinare</button>
-                    <button class="btn subject-btn" data-subject="informatica">Informatica</button>
-                    <button class="btn subject-btn primary-btn" data-subject="all" style="grid-column: 1 / -1;">Tutti
-                        gli Argomenti</button>
-                </div>
+            <div class="settings-container" style="margin-bottom: 2rem;">
+                <label for="question-count"
+                    style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Numero di
+                    domande:</label>
+                <select id="question-count" class="settings-select"
+                    style="width: 100%; padding: 0.8rem; border-radius: var(--radius); border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color);">
+                    <option value="10">10</option>
+                    <option value="20" selected>20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">Tutte</option>
+                </select>
             </div>
 
-            <!-- Start Screen -->
-            <div id="start-screen" class="screen">
-                <h2 id="subject-title">Benvenuto al Quiz</h2>
-
-                <div class="settings-container" style="margin-bottom: 2rem;">
-                    <label for="question-count"
-                        style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Numero di
-                        domande:</label>
-                    <select id="question-count" class="settings-select"
-                        style="width: 100%; padding: 0.8rem; border-radius: var(--radius); border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color);">
-                        <option value="10">10</option>
-                        <option value="20" selected>20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="all">Tutte</option>
-                    </select>
-                </div>
-
-                <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
-                    <button id="start-btn" class="btn primary-btn" style="width: 100%;">Avvia Quiz</button>
-                    <button id="back-to-subjects-btn" class="btn secondary-btn" style="width: 100%;">Torna alle
-                        Materie</button>
-                </div>
+            <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
+                <button id="start-btn" class="btn primary-btn" style="width: 100%;">Avvia Quiz</button>
+                <button id="back-to-subjects-btn" class="btn secondary-btn" style="width: 100%;">Torna alle
+                    Materie</button>
             </div>
+        </div>
         </main>
-    </div>
+        </div>
 
-    <script src="home.js"></script>
-</body>
+        <script src="home.js"></script>
+        </body>
 
-</html>
+    </html>
