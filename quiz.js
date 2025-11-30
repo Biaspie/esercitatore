@@ -245,6 +245,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         screen.classList.add('active');
     }
 
+    const reviewBtn = document.getElementById('review-btn');
+
+    // ... (existing code)
+
+    if (reviewBtn) {
+        reviewBtn.addEventListener('click', () => {
+            currentQuestionIndex = 0;
+            showScreen(quizScreen);
+            loadQuestion();
+        });
+    }
+
     // Event Listeners
     nextBtn.addEventListener('click', nextQuestion);
     prevBtn.addEventListener('click', prevQuestion);
