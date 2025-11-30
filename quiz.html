@@ -22,9 +22,6 @@
     <!-- Glass Container -->
     <div class="container">
         <header>
-            <button id="mute-btn" class="icon-btn" title="Attiva/Disattiva Suoni">
-                🔊
-            </button>
             <h1 id="app-title" style="font-size: 1.8rem;">Quiz</h1>
         </header>
 
@@ -50,40 +47,22 @@
 
                     <div id="options-container" class="options-container">
                         <!-- Options will be generated here -->
+                        <h2>Quiz Completato!</h2>
+                        <div id="result-message"></div>
+                        <div class="score-display"
+                            style="font-size: 2rem; font-weight: 800; text-align: center; margin: 2rem 0;">
+                            Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
+                        </div>
+
+                        <div id="summary-container" class="summary-container">
+                            <!-- Summary items -->
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <button id="home-result-btn" class="btn secondary-btn">Home</button>
+                            <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
+                        </div>
                     </div>
-                </div>
-
-                <div id="feedback" class="feedback"></div>
-
-                <div class="navigation-buttons">
-                    <button id="home-btn" class="btn" title="Torna alla Home">
-                        Home
-                    </button>
-                    <div class="nav-controls" style="display: flex; gap: 1rem;">
-                        <button id="prev-btn" class="btn secondary-btn hidden">Indietro</button>
-                        <button id="next-btn" class="btn primary-btn hidden">Avanti</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Result Screen -->
-            <div id="result-screen" class="screen">
-                <h2>Quiz Completato!</h2>
-                <div id="result-message"></div>
-                <div class="score-display"
-                    style="font-size: 2rem; font-weight: 800; text-align: center; margin: 2rem 0;">
-                    Punteggio: <span id="score">0</span> / <span id="total-questions">20</span>
-                </div>
-
-                <div id="summary-container" class="summary-container">
-                    <!-- Summary items -->
-                </div>
-
-                <div class="navigation-buttons">
-                    <button id="home-result-btn" class="btn secondary-btn">Home</button>
-                    <button id="restart-btn" class="btn primary-btn">Ricomincia</button>
-                </div>
-            </div>
         </main>
     </div>
 

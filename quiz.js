@@ -11,59 +11,124 @@ document.addEventListener('DOMContentLoaded', async () => {
     const totalQuestionsDisplay = document.getElementById('total-questions');
     const resultMessage = document.getElementById('result-message');
 
+    const nextBtn = document.getElementById('next-btn');
     const prevBtn = document.getElementById('prev-btn');
-    const muteBtn = document.getElementById('mute-btn');
+    const homeBtn = document.getElementById('home-btn');
+    const homeResultBtn = document.getElementById('home-result-btn');
+    const restartBtn = document.getElementById('restart-btn');
 
-    // Sound Manager
-    class SoundManager {
-        constructor() {
-            this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            this.muted = localStorage.getItem('quizMuted') === 'true';
-            this.updateMuteIcon();
-        }
+    let currentQuestions = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
 
-        toggleMute() {
-            this.muted = !this.muted;
-            localStorage.setItem('quizMuted', this.muted);
-            this.updateMuteIcon();
-        }
+    // Check Protocol
+    if (window.location.protocol === 'file:') {
+        alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
+    }
 
-        updateMuteIcon() {
-            muteBtn.textContent = this.muted ? '🔇' : '🔊';
-        }
+    // Mapping subject params to DB categories
+    const categoryMap = {
+        "ps": "Legislazione PS",
+        "costituzionale": "Diritto Costituzionale",
+        "penale": "Diritto Penale",
+        "procedura": "Procedura Penale",
+        "normativa": "Normativa Disciplinare",
+        "informatica": "Informatica"
+    };
 
-        playTone(frequency, type, duration) {
-            if (this.muted) return;
-            const osc = this.audioCtx.createOscillator();
-            const gain = this.audioCtx.createGain();
-            osc.type = type;
-            osc.frequency.setValueAtTime(frequency, this.audioCtx.currentTime);
-            gain.gain.setValueAtTime(0.1, this.audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.01, this.audioCtx.currentTime + duration);
-            osc.connect(gain);
-            gain.connect(this.audioCtx.destination);
-            osc.start();
-            osc.stop(this.audioCtx.currentTime + duration);
-        }
+    // Parse URL Parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const subjectParam = urlParams.get('subject') || 'ps';
+    const countParam = urlParams.get('count') || '20';
 
-        playCorrect() {
-            this.playTone(600, 'sine', 0.1);
-            setTimeout(() => this.playTone(800, 'sine', 0.2), 100);
-        }
+    // Initialize Quiz
+    startQuiz(subjectParam, countParam);
 
-        playWrong() {
-            this.playTone(300, 'sawtooth', 0.2);
-            setTimeout(() => this.playTone(200, 'sawtooth', 0.2), 150);
+    async function startQuiz(subject, countSetting) {
+        try {
+            // Fetch all questions from the static JSON file
+            const response = await fetch('questions.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            let allQuestions = await response.json();
+
+            // Filter by category
+            let filteredQuestions = allQuestions;
+            if (subject && subject !== 'all') {
+                const categoryName = categoryMap[subject];
+                if (categoryName) {
+                    filteredQuestions = allQuestions.filter(q => q.category === categoryName);
+                }
+            }
+
+            if (filteredQuestions.length === 0) {
+                alert("Nessuna domanda trovata per questa categoria.");
+                return;
+            }
+
+            // Shuffle questions
+            filteredQuestions.sort(() => Math.random() - 0.5);
+
+            // Limit number of questions
+            let limit = parseInt(countSetting);
+            if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
+                filteredQuestions = filteredQuestions.slice(0, limit);
+            }
+
+            currentQuestions = filteredQuestions.map(q => ({
+                ...q,
+                userAnswer: null,
+                shuffledOptions: null
+            }));
+
+            currentQuestionIndex = 0;
+            score = 0;
+
+            showScreen(quizScreen);
+            renderQuestionNav();
+            loadQuestion();
+
+        } catch (error) {
+            console.error("Error fetching questions:", error);
+            alert("Errore nel caricamento delle domande. Assicurati che il file questions.json esista.");
         }
     }
 
-    const soundManager = new SoundManager();
+    function renderQuestionNav() {
+        const navContainer = document.getElementById('question-nav');
+        navContainer.innerHTML = '';
 
-    muteBtn.addEventListener('click', () => {
-        soundManager.toggleMute();
-    });
+        currentQuestions.forEach((_, index) => {
+            const btn = document.createElement('button');
+            btn.classList.add('nav-btn');
+            btn.textContent = index + 1;
+            btn.addEventListener('click', () => {
+                currentQuestionIndex = index;
+                loadQuestion();
+            });
+            navContainer.appendChild(btn);
+        });
+    }
 
-    // ... (rest of the code)
+    function updateQuestionNav() {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        navButtons.forEach((btn, index) => {
+            btn.classList.remove('active', 'correct', 'wrong');
+            if (index === currentQuestionIndex) {
+                btn.classList.add('active');
+            }
+
+            const question = currentQuestions[index];
+            if (question.userAnswer) {
+                if (question.userAnswer === question.answer) {
+                    btn.classList.add('correct');
+                } else {
+                    btn.classList.add('wrong');
+                }
+            }
+        });
+    }
 
     function loadQuestion() {
         const question = currentQuestions[currentQuestionIndex];
@@ -85,7 +150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         feedbackDisplay.textContent = '';
         feedbackDisplay.classList.remove('visible'); // Hide feedback initially
 
-        // Navigation Buttons Logic
+        // Previous Button Logic
         if (currentQuestionIndex > 0) {
             prevBtn.classList.remove('hidden');
         } else {
@@ -141,9 +206,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         currentQuestions[currentQuestionIndex].userAnswer = selectedOption;
         if (selectedOption === correctAnswer) {
             score++;
-            soundManager.playCorrect();
-        } else {
-            soundManager.playWrong();
         }
         updateQuestionNav();
         loadQuestion();
@@ -163,6 +225,63 @@ document.addEventListener('DOMContentLoaded', async () => {
             currentQuestionIndex--;
             loadQuestion();
         }
+    }
+
+    function showResults() {
+        showScreen(resultScreen);
+        scoreDisplay.textContent = score;
+        totalQuestionsDisplay.textContent = currentQuestions.length;
+
+        const percentage = (score / currentQuestions.length) * 100;
+        if (percentage >= 90) {
+            resultMessage.textContent = "Eccellente! Sei un esperto!";
+        } else if (percentage >= 70) {
+            resultMessage.textContent = "Ottimo lavoro! Conosci bene la materia.";
+        } else if (percentage >= 50) {
+            resultMessage.textContent = "Buono, ma puoi migliorare.";
+        } else {
+            resultMessage.textContent = "Devi studiare di più!";
+        }
+
+        // Generate Summary
+        const summaryContainer = document.getElementById('summary-container');
+        summaryContainer.innerHTML = '';
+
+        currentQuestions.forEach((q, index) => {
+            const isCorrect = q.userAnswer === q.answer;
+            const item = document.createElement('div');
+            item.classList.add('summary-item', isCorrect ? 'correct' : 'wrong');
+
+            item.innerHTML = `
+                <span class="summary-status">${isCorrect ? 'Corretto' : 'Sbagliato'}</span>
+                <span class="summary-text">
+                    <strong>${index + 1}.</strong> ${q.question.substring(0, 60)}...
+                </span>
+            `;
+
+            item.addEventListener('click', () => {
+                currentQuestionIndex = index;
+                showScreen(quizScreen);
+                loadQuestion();
+            });
+
+            summaryContainer.appendChild(item);
+        });
+    }
+
+    function showScreen(screen) {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        screen.classList.add('active');
+    }
+
+    const reviewBtn = document.getElementById('review-btn');
+
+    if (reviewBtn) {
+        reviewBtn.addEventListener('click', () => {
+            currentQuestionIndex = 0;
+            showScreen(quizScreen);
+            loadQuestion();
+        });
     }
 
     // Event Listeners
@@ -190,11 +309,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (e.key === 'ArrowRight') {
             nextQuestion();
-        }
-        else if (e.key === 'ArrowLeft') {
+        } else if (e.key === 'ArrowLeft') {
             prevQuestion();
-        }
-        else if (e.key === 'Enter') {
+        } else if (e.key === 'Enter') {
             // Only proceed if the user has answered the current question
             if (currentQuestions[currentQuestionIndex].userAnswer) {
                 nextQuestion();
