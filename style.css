@@ -256,28 +256,6 @@ h2 {
 }
 
 .option-btn.wrong {
-    background: rgba(239, 68, 68, 0.1);
-    border-color: var(--error-color);
-    color: var(--error-color);
-}
-
-.navigation-buttons {
-    margin-top: auto;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hidden {
-    display: none !important;
-}
-
-/* Result Screen */
-.score-display {
-    font-size: 4rem;
-    font-weight: 800;
     margin: 2rem 0;
     color: var(--primary-color);
     text-align: center;

@@ -47,35 +47,22 @@
                 </div>
 
                 <div id="feedback" class="feedback"></div>
+                <!-- Result Screen -->
+                <div id="result-screen" class="screen">
+                    <h2>Quiz Completato!</h2>
+                    <div class="score-display">
+                        <span id="score">0</span> / <span id="total-questions">20</span>
+                    </div>
+                    <p id="result-message">Messaggio risultato</p>
+                    <div id="summary-container" class="summary-container"></div>
 
-                <div class="navigation-buttons">
-                    <button id="prev-btn" class="btn secondary-btn hidden" title="Indietro">
-                        &#8592; Indietro
-                    </button>
-
-                    <button id="home-btn" class="btn secondary-btn" title="Home">
-                        &#8962; Home
-                    </button>
-
-                    <button id="next-btn" class="btn primary-btn hidden">Avanti &#8594;</button>
+                    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
+                        <button id="restart-btn" class="btn primary-btn" style="width: 100%;">Ricomincia Quiz</button>
+                        <button id="review-btn" class="btn secondary-btn" style="width: 100%;">Rivedi Risposte</button>
+                        <button id="home-result-btn" class="btn secondary-btn" style="width: 100%;">Torna alla
+                            Home</button>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Result Screen -->
-            <div id="result-screen" class="screen">
-                <h2>Quiz Completato!</h2>
-                <div class="score-display">
-                    <span id="score">0</span> / <span id="total-questions">20</span>
-                </div>
-                <p id="result-message">Messaggio risultato</p>
-                <div id="summary-container" class="summary-container"></div>
-
-                <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
-                    <button id="restart-btn" class="btn primary-btn" style="width: 100%;">Ricomincia Quiz</button>
-                    <button id="review-btn" class="btn secondary-btn" style="width: 100%;">Rivedi Risposte</button>
-                    <button id="home-result-btn" class="btn secondary-btn" style="width: 100%;">Torna alla Home</button>
-                </div>
-            </div>
         </main>
     </div>
 
