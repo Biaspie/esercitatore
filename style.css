@@ -53,8 +53,8 @@ body {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    padding: 1.5rem;
-    /* Reduced padding */
+    padding: 1rem;
+    /* AGGRESSIVE: Reduced padding from 1.5rem */
 }
 
 @media (min-width: 768px) {
@@ -68,11 +68,13 @@ body {
 
 header {
     text-align: center;
-    padding: 1.5rem 0 2.5rem 0;
+    padding: 1rem 0 1.5rem 0;
+    /* AGGRESSIVE: Reduced padding */
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    /* AGGRESSIVE: Reduced font size */
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--text-color);
@@ -80,9 +82,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    /* AGGRESSIVE: Reduced font size */
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    /* AGGRESSIVE: Reduced margin */
     color: var(--text-color);
     text-align: center;
 }
@@ -94,7 +98,8 @@ h2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    padding: 0 0.5rem 2rem 0.5rem;
+    padding: 0 0.5rem 1rem 0.5rem;
+    /* AGGRESSIVE: Reduced padding */
 }
 
 .screen.active {
@@ -106,9 +111,11 @@ h2 {
 .subject-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
+    /* AGGRESSIVE: Reduced gap */
     overflow-y: auto;
-    padding: 1rem;
+    padding: 0.5rem;
+    /* AGGRESSIVE: Reduced padding */
 }
 
 /* Quiz Interface */
@@ -117,8 +124,8 @@ h2 {
     height: 4px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 2px;
-    margin-bottom: 1.5rem;
-    /* Reduced margin */
+    margin-bottom: 1rem;
+    /* AGGRESSIVE: Reduced margin from 1.5rem */
     overflow: hidden;
 }
 
@@ -134,10 +141,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    /* Reduced margin */
+    margin-bottom: 0.5rem;
+    /* AGGRESSIVE: Reduced margin from 1rem */
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    /* AGGRESSIVE: Reduced font size */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -147,38 +155,43 @@ h2 {
     flex: 1;
     overflow-y: auto;
     padding-right: 5px;
+    display: flex;
+    /* Ensure flex layout for content */
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically if possible */
 }
 
 .question-text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    /* AGGRESSIVE: Reduced font size from 1.6rem */
     font-weight: 700;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    /* Reduced margin */
+    line-height: 1.4;
+    /* AGGRESSIVE: Reduced line height */
+    margin-bottom: 1rem;
+    /* AGGRESSIVE: Reduced margin from 1.5rem */
     color: #ffffff;
-    /* Force white for maximum contrast */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .options-container {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    /* Reduced gap */
+    gap: 0.6rem;
+    /* AGGRESSIVE: Reduced gap from 0.8rem */
 }
 
 .option-btn {
     width: 100%;
-    padding: 1rem 1.25rem;
-    /* Reduced padding */
+    padding: 0.8rem 1rem;
+    /* AGGRESSIVE: Reduced padding from 1rem 1.25rem */
     text-align: left;
     background: rgba(30, 41, 59, 0.6);
-    /* Darker, more opaque background */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     color: #ffffff;
-    /* Force white */
-    font-size: 1.1rem;
+    font-size: 1rem;
+    /* AGGRESSIVE: Reduced font size from 1.1rem */
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -210,19 +223,18 @@ h2 {
 /* Navigation Buttons */
 .navigation-buttons {
     margin-top: auto;
-    padding: 1.5rem 0 0 0;
-    /* Reduced padding */
+    padding: 1rem 0 0 0;
+    /* AGGRESSIVE: Reduced padding from 1.5rem */
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     justify-content: center;
-    /* Centered content */
     gap: 2rem;
-    /* Added gap */
     align-items: center;
 }
 
 #home-btn {
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.5rem;
+    /* AGGRESSIVE: Slightly reduced padding */
     border-radius: 12px;
     background: transparent;
     border: 1px solid var(--border-color);
@@ -241,13 +253,13 @@ h2 {
 }
 
 #next-btn {
-    padding: 0.8rem 2rem;
+    padding: 0.7rem 2rem;
+    /* AGGRESSIVE: Slightly reduced padding */
     border-radius: 12px;
     background: var(--text-color);
     color: var(--bg-color);
     font-weight: 600;
     position: static;
-    /* Reset absolute positioning */
 }
 
 .hidden {
@@ -258,14 +270,17 @@ h2 {
 .question-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 0.4rem;
+    /* AGGRESSIVE: Reduced gap */
+    margin-bottom: 1rem;
+    /* AGGRESSIVE: Reduced margin */
     justify-content: center;
 }
 
 .nav-btn {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    /* AGGRESSIVE: Smaller dots */
+    height: 6px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
     border: none;
@@ -273,7 +288,6 @@ h2 {
     cursor: pointer;
     transition: all 0.3s ease;
     text-indent: -9999px;
-    /* Hide numbers */
 }
 
 .nav-btn.active {
@@ -294,21 +308,24 @@ h2 {
 .summary-container {
     flex: 1;
     overflow-y: auto;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
+    /* AGGRESSIVE: Reduced margin */
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     background: rgba(0, 0, 0, 0.2);
 }
 
 .summary-item {
-    padding: 1rem;
+    padding: 0.8rem;
+    /* AGGRESSIVE: Reduced padding */
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     cursor: pointer;
     transition: background 0.2s;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    /* AGGRESSIVE: Reduced font size */
 }
 
 .summary-item:hover {
@@ -316,10 +333,10 @@ h2 {
 }
 
 .summary-status {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 0.25rem 0.5rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -336,10 +353,11 @@ h2 {
 
 /* Buttons */
 .btn {
-    padding: 1rem;
+    padding: 0.8rem;
+    /* AGGRESSIVE: Reduced padding */
     border: none;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -355,8 +373,9 @@ h2 {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: var(--text-color);
-    height: 80px;
-    font-size: 1.1rem;
+    height: 70px;
+    /* AGGRESSIVE: Reduced height */
+    font-size: 1rem;
     letter-spacing: 0.02em;
 }
 
