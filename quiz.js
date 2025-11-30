@@ -299,4 +299,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     restartBtn.addEventListener('click', () => {
         window.location.reload();
     });
+    // Keyboard Shortcuts
+    document.addEventListener('keydown', (e) => {
+        // Only active if quiz screen is visible
+        if (!quizScreen.classList.contains('active')) return;
+
+        if (e.key === 'ArrowRight') {
+            nextQuestion();
+        } else if (e.key === 'ArrowLeft') {
+            prevQuestion();
+        } else {
+            // Check for number keys 1-4
+            const num = parseInt(e.key);
+            if (!isNaN(num) && num >= 1 && num <= 4) {
+                const options = optionsContainer.querySelectorAll('.option-btn');
+                if (options[num - 1] && !options[num - 1].disabled) {
+                    options[num - 1].click();
+                }
+            }
+        }
+    });
 });
