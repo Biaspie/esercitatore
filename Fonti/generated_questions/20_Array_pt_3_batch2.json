@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Iterazione annidata:",
+        "options": [
+            "Tecnica standard per attraversare matrici (ciclo esterno righe, interno colonne)",
+            "Ricorsione",
+            "Salto",
+            "Nulla"
+        ],
+        "answer": "Tecnica standard per attraversare matrici (ciclo esterno righe, interno colonne)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabili contatore (i, j):",
+        "options": [
+            "Convenzione comune per indici di riga (i) e colonna (j)",
+            "x, y",
+            "a, b",
+            "Nulla"
+        ],
+        "answer": "Convenzione comune per indici di riga (i) e colonna (j)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accesso per colonne:",
+        "options": [
+            "Invertire l'ordine dei cicli (esterno colonne, interno righe)",
+            "Impossibile",
+            "Standard",
+            "Nulla"
+        ],
+        "answer": "Invertire l'ordine dei cicli (esterno colonne, interno righe)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Efficienza accesso per colonne (C):",
+        "options": [
+            "Meno efficiente dell'accesso per righe (salti in memoria, cache miss)",
+            "Più efficiente",
+            "Uguale",
+            "Nulla"
+        ],
+        "answer": "Meno efficiente dell'accesso per righe (salti in memoria, cache miss)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo Matrice Identità:",
+        "options": [
+            "Se i == j assegna 1, altrimenti 0",
+            "Tutti 1",
+            "Tutti 0",
+            "Nulla"
+        ],
+        "answer": "Se i == j assegna 1, altrimenti 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Lettura matrice da input:",
+        "options": [
+            "Due cicli annidati con scanf(\"%d\", &matrice[i][j])",
+            "scanf unica",
+            "gets",
+            "Nulla"
+        ],
+        "answer": "Due cicli annidati con scanf(\"%d\", &matrice[i][j])"
+    },
+    {
+        "category": "Informatica",
+        "question": "Visualizzazione matrice:",
+        "options": [
+            "Cicli annidati con printf e newline alla fine di ogni riga",
+            "printf unica",
+            "puts",
+            "Nulla"
+        ],
+        "answer": "Cicli annidati con printf e newline alla fine di ogni riga"
+    },
+    {
+        "category": "Informatica",
+        "question": "Allineamento stampa (%5d):",
+        "options": [
+            "Specifica larghezza campo di 5 caratteri (allinea colonne)",
+            "5 decimali",
+            "Base 5",
+            "Nulla"
+        ],
+        "answer": "Specifica larghezza campo di 5 caratteri (allinea colonne)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Prodotto matrici (Indici):",
+        "options": [
+            "C[i][j] += A[i][k] * B[k][j]",
+            "C[i][j] = A[i][j] * B[i][j]",
+            "Somma",
+            "Nulla"
+        ],
+        "answer": "C[i][j] += A[i][k] * B[k][j]"
+    },
+    {
+        "category": "Informatica",
+        "question": "Triplo ciclo (Prodotto):",
+        "options": [
+            "Necessario per il prodotto matriciale (righe A, colonne B, comune K)",
+            "Doppio ciclo",
+            "Singolo ciclo",
+            "Nulla"
+        ],
+        "answer": "Necessario per il prodotto matriciale (righe A, colonne B, comune K)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Inizializzazione accumulatore:",
+        "options": [
+            "C[i][j] deve essere inizializzato a 0 prima della somma prodotti",
+            "A 1",
+            "Non serve",
+            "Nulla"
+        ],
+        "answer": "C[i][j] deve essere inizializzato a 0 prima della somma prodotti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Decadimento array 2D:",
+        "options": [
+            "Decade a puntatore a vettore (int (*)[colonne])",
+            "Puntatore a puntatore",
+            "Puntatore int",
+            "Nulla"
+        ],
+        "answer": "Decade a puntatore a vettore (int (*)[colonne])"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passaggio matrice (int m[][5]):",
+        "options": [
+            "Corretto, dimensione colonne obbligatoria",
+            "Errato",
+            "Facoltativo",
+            "Nulla"
+        ],
+        "answer": "Corretto, dimensione colonne obbligatoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passaggio matrice (int m[4][5]):",
+        "options": [
+            "Corretto, ma la prima dimensione (4) è ignorata/documentale",
+            "Errato",
+            "Obbligatorio",
+            "Nulla"
+        ],
+        "answer": "Corretto, ma la prima dimensione (4) è ignorata/documentale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passaggio matrice (int **m):",
+        "options": [
+            "Valido solo per array di puntatori (matrice dinamica), NON per array 2D statico",
+            "Sempre valido",
+            "Mai valido",
+            "Nulla"
+        ],
+        "answer": "Valido solo per array di puntatori (matrice dinamica), NON per array 2D statico"
+    },
+    {
+        "category": "Informatica",
+        "question": "Errore comune matrici parametri:",
+        "options": [
+            "Passare array 2D statico a funzione che attende int **",
+            "Passare dimensioni",
+            "Nulla",
+            "Corretto"
+        ],
+        "answer": "Passare array 2D statico a funzione che attende int **"
+    },
+    {
+        "category": "Informatica",
+        "question": "Appiattimento matrice (Flattening):",
+        "options": [
+            "Trattare matrice come array 1D per semplificare passaggio a funzioni",
+            "Compressione",
+            "Eliminazione",
+            "Nulla"
+        ],
+        "answer": "Trattare matrice come array 1D per semplificare passaggio a funzioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "VLA (Variable Length Array) parametri:",
+        "options": [
+            "In C99 si può usare int m[rows][cols] se rows e cols sono passati PRIMA di m",
+            "Non si può",
+            "Sempre",
+            "Nulla"
+        ],
+        "answer": "In C99 si può usare int m[rows][cols] se rows e cols sono passati PRIMA di m"
+    },
+    {
+        "category": "Informatica",
+        "question": "Limite stack array statici:",
+        "options": [
+            "Grandi matrici statiche possono causare Stack Overflow (usare malloc)",
+            "Nessun limite",
+            "Memoria infinita",
+            "Nulla"
+        ],
+        "answer": "Grandi matrici statiche possono causare Stack Overflow (usare malloc)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice sparsa (CSR - Compressed Sparse Row):",
+        "options": [
+            "Formato efficiente per memorizzare matrici sparse (valori, indici colonne, puntatori righe)",
+            "Matrice densa",
+            "Array",
+            "Nulla"
+        ],
+        "answer": "Formato efficiente per memorizzare matrici sparse (valori, indici colonne, puntatori righe)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice diagonale:",
+        "options": [
+            "Elementi fuori dalla diagonale principale sono 0",
+            "Tutti 1",
+            "Tutti 0",
+            "Nulla"
+        ],
+        "answer": "Elementi fuori dalla diagonale principale sono 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Traccia di una matrice:",
+        "options": [
+            "Somma degli elementi sulla diagonale principale",
+            "Prodotto",
+            "Determinante",
+            "Nulla"
+        ],
+        "answer": "Somma degli elementi sulla diagonale principale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice nulla:",
+        "options": [
+            "Tutti gli elementi sono 0",
+            "Vuota",
+            "Null",
+            "Nulla"
+        ],
+        "answer": "Tutti gli elementi sono 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Somma matrici:",
+        "options": [
+            "Elemento per elemento (devono avere stesse dimensioni)",
+            "Concatenazione",
+            "Prodotto",
+            "Nulla"
+        ],
+        "answer": "Elemento per elemento (devono avere stesse dimensioni)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sottrazione matrici:",
+        "options": [
+            "Elemento per elemento",
+            "Divisione",
+            "Inversa",
+            "Nulla"
+        ],
+        "answer": "Elemento per elemento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Moltiplicazione per scalare:",
+        "options": [
+            "Ogni elemento moltiplicato per lo scalare",
+            "Solo diagonale",
+            "Solo prima riga",
+            "Nulla"
+        ],
+        "answer": "Ogni elemento moltiplicato per lo scalare"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice ortogonale:",
+        "options": [
+            "La sua trasposta è anche la sua inversa (A^T = A^-1)",
+            "Perpendicolare",
+            "Parallela",
+            "Nulla"
+        ],
+        "answer": "La sua trasposta è anche la sua inversa (A^T = A^-1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Rango di una matrice:",
+        "options": [
+            "Numero massimo di righe (o colonne) linearmente indipendenti",
+            "Dimensione",
+            "Ordine",
+            "Nulla"
+        ],
+        "answer": "Numero massimo di righe (o colonne) linearmente indipendenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Autovalori e Autovettori:",
+        "options": [
+            "Concetti fondamentali algebra lineare (Ax = lambda*x)",
+            "Valori",
+            "Vettori",
+            "Nulla"
+        ],
+        "answer": "Concetti fondamentali algebra lineare (Ax = lambda*x)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice di adiacenza (Grafo non orientato):",
+        "options": [
+            "Simmetrica",
+            "Asimmetrica",
+            "Triangolare",
+            "Nulla"
+        ],
+        "answer": "Simmetrica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice di incidenza:",
+        "options": [
+            "Rappresenta relazioni tra nodi e archi",
+            "Adiacenza",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Rappresenta relazioni tra nodi e archi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Bitboard (Scacchi):",
+        "options": [
+            "Rappresentazione scacchiera tramite bit in un intero a 64 bit (efficiente)",
+            "Matrice",
+            "Array",
+            "Nulla"
+        ],
+        "answer": "Rappresentazione scacchiera tramite bit in un intero a 64 bit (efficiente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Z-order curve (Morton code):",
+        "options": [
+            "Mappatura dati multidimensionali in una dimensione preservando località",
+            "Curva",
+            "Ordine",
+            "Nulla"
+        ],
+        "answer": "Mappatura dati multidimensionali in una dimensione preservando località"
+    },
+    {
+        "category": "Informatica",
+        "question": "Tiling (Loop blocking):",
+        "options": [
+            "Ottimizzazione loop per migliorare cache locality (dividere matrice in blocchi)",
+            "Piastrellatura",
+            "Blocco",
+            "Nulla"
+        ],
+        "answer": "Ottimizzazione loop per migliorare cache locality (dividere matrice in blocchi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Loop unrolling:",
+        "options": [
+            "Tecnica ottimizzazione che espande il corpo del ciclo per ridurre overhead controllo",
+            "Srotolamento",
+            "Ciclo",
+            "Nulla"
+        ],
+        "answer": "Tecnica ottimizzazione che espande il corpo del ciclo per ridurre overhead controllo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Magic Square:",
+        "options": [
+            "Matrice quadrata dove somma righe, colonne e diagonali è uguale",
+            "Quadrato",
+            "Magia",
+            "Nulla"
+        ],
+        "answer": "Matrice quadrata dove somma righe, colonne e diagonali è uguale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Game of Life (Regole):",
+        "options": [
+            "Underpopulation, Overpopulation, Reproduction, Survival",
+            "Gioco",
+            "Vita",
+            "Nulla"
+        ],
+        "answer": "Underpopulation, Overpopulation, Reproduction, Survival"
+    },
+    {
+        "category": "Informatica",
+        "question": "Glider (Game of Life):",
+        "options": [
+            "Pattern che si sposta sulla griglia",
+            "Astronave",
+            "Punto",
+            "Nulla"
+        ],
+        "answer": "Pattern che si sposta sulla griglia"
+    },
+    {
+        "category": "Informatica",
+        "question": "Pixel Art:",
+        "options": [
+            "Arte digitale creata modificando pixel individuali (come matrice)",
+            "Vettoriale",
+            "3D",
+            "Nulla"
+        ],
+        "answer": "Arte digitale creata modificando pixel individuali (come matrice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Bitmap:",
+        "options": [
+            "Mappa di bit che rappresenta un'immagine",
+            "Vettoriale",
+            "File",
+            "Nulla"
+        ],
+        "answer": "Mappa di bit che rappresenta un'immagine"
+    },
+    {
+        "category": "Informatica",
+        "question": "Raster Graphics:",
+        "options": [
+            "Grafica basata su griglia di pixel (matrice)",
+            "Vector Graphics",
+            "SVG",
+            "Nulla"
+        ],
+        "answer": "Grafica basata su griglia di pixel (matrice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vector Graphics:",
+        "options": [
+            "Grafica basata su primitive geometriche (punti, linee, curve)",
+            "Raster",
+            "Bitmap",
+            "Nulla"
+        ],
+        "answer": "Grafica basata su primitive geometriche (punti, linee, curve)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Voxel:",
+        "options": [
+            "Pixel volumetrico (elemento di griglia 3D)",
+            "Pixel",
+            "Texel",
+            "Nulla"
+        ],
+        "answer": "Pixel volumetrico (elemento di griglia 3D)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Texel:",
+        "options": [
+            "Texture element (pixel di una texture)",
+            "Pixel",
+            "Voxel",
+            "Nulla"
+        ],
+        "answer": "Texture element (pixel di una texture)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sprite:",
+        "options": [
+            "Immagine 2D integrata in una scena (spesso usata nei giochi)",
+            "Modello 3D",
+            "Texture",
+            "Nulla"
+        ],
+        "answer": "Immagine 2D integrata in una scena (spesso usata nei giochi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Tile Map:",
+        "options": [
+            "Tecnica per costruire livelli di gioco usando tessere (tiles) su una griglia",
+            "Mappa",
+            "Gioco",
+            "Nulla"
+        ],
+        "answer": "Tecnica per costruire livelli di gioco usando tessere (tiles) su una griglia"
+    },
+    {
+        "category": "Informatica",
+        "question": "Isometric Projection:",
+        "options": [
+            "Metodo per rappresentare oggetti 3D in 2D (spesso usato con tile maps)",
+            "Prospettiva",
+            "2D",
+            "Nulla"
+        ],
+        "answer": "Metodo per rappresentare oggetti 3D in 2D (spesso usato con tile maps)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ray Tracing:",
+        "options": [
+            "Tecnica di rendering che simula il percorso dei raggi di luce",
+            "Rasterizzazione",
+            "Grafica",
+            "Nulla"
+        ],
+        "answer": "Tecnica di rendering che simula il percorso dei raggi di luce"
+    },
+    {
+        "category": "Informatica",
+        "question": "Rasterizzazione:",
+        "options": [
+            "Conversione di primitive vettoriali in immagine raster (pixel)",
+            "Ray Tracing",
+            "Grafica",
+            "Nulla"
+        ],
+        "answer": "Conversione di primitive vettoriali in immagine raster (pixel)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Anti-aliasing:",
+        "options": [
+            "Tecnica per ridurre le scalettature (aliasing) nei bordi delle immagini digitali",
+            "Aliasing",
+            "Blur",
+            "Nulla"
+        ],
+        "answer": "Tecnica per ridurre le scalettature (aliasing) nei bordi delle immagini digitali"
+    }
+]

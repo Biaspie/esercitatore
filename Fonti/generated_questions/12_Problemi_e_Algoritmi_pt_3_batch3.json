@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è una tabella hash (Hash Table)?",
+        "options": [
+            "Struttura dati che implementa un array associativo (chiave-valore) usando una funzione di hash",
+            "Una tabella Excel",
+            "Un array ordinato",
+            "Un albero"
+        ],
+        "answer": "Struttura dati che implementa un array associativo (chiave-valore) usando una funzione di hash"
+    },
+    {
+        "category": "Informatica",
+        "question": "Complessità media di ricerca in Hash Table:",
+        "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n^2)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una collisione in una Hash Table?",
+        "options": [
+            "Quando due chiavi diverse producono lo stesso hash (stesso indice)",
+            "Un errore",
+            "Un incidente",
+            "Nulla"
+        ],
+        "answer": "Quando due chiavi diverse producono lo stesso hash (stesso indice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si gestiscono le collisioni?",
+        "options": [
+            "Chaining (liste linkate) o Open Addressing",
+            "Ignorandole",
+            "Cancellando i dati",
+            "Nulla"
+        ],
+        "answer": "Chaining (liste linkate) o Open Addressing"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una lista linkata (Linked List)?",
+        "options": [
+            "Sequenza di nodi dove ogni nodo contiene un dato e un puntatore al successivo",
+            "Un array",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "Sequenza di nodi dove ogni nodo contiene un dato e un puntatore al successivo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio delle liste linkate rispetto agli array:",
+        "options": [
+            "Dimensione dinamica, inserimento/cancellazione efficiente in testa/coda",
+            "Accesso casuale veloce",
+            "Meno memoria",
+            "Nulla"
+        ],
+        "answer": "Dimensione dinamica, inserimento/cancellazione efficiente in testa/coda"
+    },
+    {
+        "category": "Informatica",
+        "question": "Svantaggio delle liste linkate:",
+        "options": [
+            "Accesso sequenziale (O(n) per arrivare all'i-esimo elemento), overhead puntatori",
+            "Dimensione fissa",
+            "Lentezza in scrittura",
+            "Nulla"
+        ],
+        "answer": "Accesso sequenziale (O(n) per arrivare all'i-esimo elemento), overhead puntatori"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è uno Stack (Pila)?",
+        "options": [
+            "Struttura LIFO (Last In First Out)",
+            "FIFO",
+            "Array",
+            "Albero"
+        ],
+        "answer": "Struttura LIFO (Last In First Out)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operazioni principali dello Stack:",
+        "options": [
+            "Push (inserisci) e Pop (estrai)",
+            "Enqueue e Dequeue",
+            "Insert e Delete",
+            "Read e Write"
+        ],
+        "answer": "Push (inserisci) e Pop (estrai)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una Queue (Coda)?",
+        "options": [
+            "Struttura FIFO (First In First Out)",
+            "LIFO",
+            "Stack",
+            "Albero"
+        ],
+        "answer": "Struttura FIFO (First In First Out)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operazioni principali della Queue:",
+        "options": [
+            "Enqueue (accoda) e Dequeue (decoda)",
+            "Push e Pop",
+            "Insert e Delete",
+            "Read e Write"
+        ],
+        "answer": "Enqueue (accoda) e Dequeue (decoda)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un grafo?",
+        "options": [
+            "Insieme di nodi (vertici) collegati da archi",
+            "Un disegno",
+            "Una tabella",
+            "Un albero"
+        ],
+        "answer": "Insieme di nodi (vertici) collegati da archi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un albero?",
+        "options": [
+            "Grafo connesso e aciclico (senza cicli)",
+            "Una pianta",
+            "Una lista",
+            "Un array"
+        ],
+        "answer": "Grafo connesso e aciclico (senza cicli)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la radice di un albero?",
+        "options": [
+            "Il nodo principale da cui partono tutti gli altri",
+            "L'ultimo nodo",
+            "Una foglia",
+            "Nulla"
+        ],
+        "answer": "Il nodo principale da cui partono tutti gli altri"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una foglia in un albero?",
+        "options": [
+            "Nodo senza figli",
+            "Nodo radice",
+            "Nodo intermedio",
+            "Nulla"
+        ],
+        "answer": "Nodo senza figli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la programmazione orientata agli oggetti (OOP)?",
+        "options": [
+            "Paradigma basato su 'oggetti' che contengono dati e metodi (es. Java, C++, Python)",
+            "Programmazione procedurale",
+            "Programmazione funzionale",
+            "Nulla"
+        ],
+        "answer": "Paradigma basato su 'oggetti' che contengono dati e metodi (es. Java, C++, Python)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Concetti chiave OOP:",
+        "options": [
+            "Incapsulamento, Ereditarietà, Polimorfismo, Astrazione",
+            "Variabili, Cicli, Funzioni",
+            "Input, Output",
+            "Nulla"
+        ],
+        "answer": "Incapsulamento, Ereditarietà, Polimorfismo, Astrazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una classe?",
+        "options": [
+            "Modello (blueprint) per creare oggetti",
+            "Un oggetto",
+            "Una funzione",
+            "Una variabile"
+        ],
+        "answer": "Modello (blueprint) per creare oggetti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un oggetto?",
+        "options": [
+            "Istanza di una classe",
+            "Una classe",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "Istanza di una classe"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'incapsulamento?",
+        "options": [
+            "Nascondere i dettagli interni di un oggetto e proteggere i dati (private/public)",
+            "Mettere in scatola",
+            "Ereditare",
+            "Nulla"
+        ],
+        "answer": "Nascondere i dettagli interni di un oggetto e proteggere i dati (private/public)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'ereditarietà?",
+        "options": [
+            "Meccanismo per creare nuove classi basate su classi esistenti (riuso del codice)",
+            "Ricevere soldi",
+            "Copiare file",
+            "Nulla"
+        ],
+        "answer": "Meccanismo per creare nuove classi basate su classi esistenti (riuso del codice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il polimorfismo?",
+        "options": [
+            "Capacità di oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi (es. override)",
+            "Molte forme",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Capacità di oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi (es. override)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un costruttore?",
+        "options": [
+            "Metodo speciale chiamato quando si crea un nuovo oggetto (inizializzazione)",
+            "Un operaio",
+            "Un distruttore",
+            "Una funzione"
+        ],
+        "answer": "Metodo speciale chiamato quando si crea un nuovo oggetto (inizializzazione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un'interfaccia (in OOP)?",
+        "options": [
+            "Contratto che definisce quali metodi una classe deve implementare (senza implementazione)",
+            "Una classe astratta",
+            "Un oggetto",
+            "Un errore"
+        ],
+        "answer": "Contratto che definisce quali metodi una classe deve implementare (senza implementazione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Design Pattern?",
+        "options": [
+            "Soluzione riutilizzabile a un problema comune di progettazione software (es. Singleton, Factory)",
+            "Un disegno",
+            "Un codice",
+            "Un errore"
+        ],
+        "answer": "Soluzione riutilizzabile a un problema comune di progettazione software (es. Singleton, Factory)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Singleton Pattern:",
+        "options": [
+            "Garantisce che una classe abbia una sola istanza",
+            "Crea tanti oggetti",
+            "Nessun oggetto",
+            "Nulla"
+        ],
+        "answer": "Garantisce che una classe abbia una sola istanza"
+    },
+    {
+        "category": "Informatica",
+        "question": "Factory Pattern:",
+        "options": [
+            "Interfaccia per creare oggetti senza specificare la classe esatta",
+            "Una fabbrica",
+            "Un errore",
+            "Nulla"
+        ],
+        "answer": "Interfaccia per creare oggetti senza specificare la classe esatta"
+    },
+    {
+        "category": "Informatica",
+        "question": "Observer Pattern:",
+        "options": [
+            "Definisce una dipendenza uno-a-molti (quando un oggetto cambia stato, notifica gli altri)",
+            "Osservare",
+            "Spiare",
+            "Nulla"
+        ],
+        "answer": "Definisce una dipendenza uno-a-molti (quando un oggetto cambia stato, notifica gli altri)"
+    },
+    {
+        "category": "Informatica",
+        "question": "MVC (Model-View-Controller):",
+        "options": [
+            "Pattern architetturale per separare logica dati (Model), interfaccia utente (View) e controllo (Controller)",
+            "Un gioco",
+            "Un errore",
+            "Un file"
+        ],
+        "answer": "Pattern architetturale per separare logica dati (Model), interfaccia utente (View) e controllo (Controller)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è SQL Injection?",
+        "options": [
+            "Attacco in cui codice SQL malevolo viene inserito in un input per manipolare il database",
+            "Un errore",
+            "Una feature",
+            "Un gioco"
+        ],
+        "answer": "Attacco in cui codice SQL malevolo viene inserito in un input per manipolare il database"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come prevenire SQL Injection?",
+        "options": [
+            "Usare Prepared Statements (query parametrizzate) e validare l'input",
+            "Non usare SQL",
+            "Usare password",
+            "Nulla"
+        ],
+        "answer": "Usare Prepared Statements (query parametrizzate) e validare l'input"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è XSS (Cross-Site Scripting)?",
+        "options": [
+            "Attacco in cui script malevoli vengono iniettati in pagine web visualizzate da altri utenti",
+            "Un errore",
+            "Un gioco",
+            "Un file"
+        ],
+        "answer": "Attacco in cui script malevoli vengono iniettati in pagine web visualizzate da altri utenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come prevenire XSS?",
+        "options": [
+            "Sanificare l'input e fare l'escape dell'output",
+            "Non usare JavaScript",
+            "Usare HTTPS",
+            "Nulla"
+        ],
+        "answer": "Sanificare l'input e fare l'escape dell'output"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è CSRF (Cross-Site Request Forgery)?",
+        "options": [
+            "Attacco che costringe un utente autenticato a eseguire azioni indesiderate su un'applicazione web",
+            "Un errore",
+            "Un gioco",
+            "Un file"
+        ],
+        "answer": "Attacco che costringe un utente autenticato a eseguire azioni indesiderate su un'applicazione web"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come prevenire CSRF?",
+        "options": [
+            "Usare token anti-CSRF",
+            "Non usare cookie",
+            "Usare HTTPS",
+            "Nulla"
+        ],
+        "answer": "Usare token anti-CSRF"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Firewall?",
+        "options": [
+            "Dispositivo/Software che filtra il traffico di rete in base a regole di sicurezza",
+            "Un muro",
+            "Un antivirus",
+            "Un gioco"
+        ],
+        "answer": "Dispositivo/Software che filtra il traffico di rete in base a regole di sicurezza"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Antivirus?",
+        "options": [
+            "Software progettato per rilevare e rimuovere malware",
+            "Un firewall",
+            "Un gioco",
+            "Un errore"
+        ],
+        "answer": "Software progettato per rilevare e rimuovere malware"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'autenticazione a due fattori (2FA)?",
+        "options": [
+            "Metodo di sicurezza che richiede due prove di identità (es. password + codice SMS)",
+            "Due password",
+            "Due utenti",
+            "Nulla"
+        ],
+        "answer": "Metodo di sicurezza che richiede due prove di identità (es. password + codice SMS)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Social Engineering?",
+        "options": [
+            "Manipolazione psicologica delle persone per ottenere informazioni confidenziali",
+            "Social network",
+            "Ingegneria",
+            "Nulla"
+        ],
+        "answer": "Manipolazione psicologica delle persone per ottenere informazioni confidenziali"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Zero-Day Exploit?",
+        "options": [
+            "Attacco che sfrutta una vulnerabilità non ancora nota al fornitore del software (0 giorni per risolverla)",
+            "Un attacco vecchio",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Attacco che sfrutta una vulnerabilità non ancora nota al fornitore del software (0 giorni per risolverla)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la crittografia End-to-End (E2EE)?",
+        "options": [
+            "Sistema dove solo mittente e destinatario possono leggere i messaggi (nemmeno il provider)",
+            "Crittografia normale",
+            "Nessuna crittografia",
+            "Nulla"
+        ],
+        "answer": "Sistema dove solo mittente e destinatario possono leggere i messaggi (nemmeno il provider)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un certificato SSL/TLS?",
+        "options": [
+            "File digitale che autentica l'identità di un sito web e abilita la connessione cifrata (HTTPS)",
+            "Un diploma",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "File digitale che autentica l'identità di un sito web e abilita la connessione cifrata (HTTPS)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Chi rilascia i certificati SSL?",
+        "options": [
+            "Certificate Authority (CA)",
+            "Google",
+            "Microsoft",
+            "Nessuno"
+        ],
+        "answer": "Certificate Authority (CA)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il GDPR?",
+        "options": [
+            "Regolamento generale sulla protezione dei dati (legge privacy UE)",
+            "Un software",
+            "Un virus",
+            "Un gioco"
+        ],
+        "answer": "Regolamento generale sulla protezione dei dati (legge privacy UE)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo genetico?",
+        "options": [
+            "Algoritmo di ottimizzazione ispirato alla selezione naturale (evoluzione)",
+            "Biologia",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Algoritmo di ottimizzazione ispirato alla selezione naturale (evoluzione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Quantum Computing?",
+        "options": [
+            "Calcolo che sfrutta i fenomeni della meccanica quantistica (qubit, sovrapposizione)",
+            "Computer veloce",
+            "Computer piccolo",
+            "Fantascienza"
+        ],
+        "answer": "Calcolo che sfrutta i fenomeni della meccanica quantistica (qubit, sovrapposizione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Qubit?",
+        "options": [
+            "Unità fondamentale dell'informazione quantistica (può essere 0, 1 o entrambi contemporaneamente)",
+            "Un bit",
+            "Un byte",
+            "Un errore"
+        ],
+        "answer": "Unità fondamentale dell'informazione quantistica (può essere 0, 1 o entrambi contemporaneamente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la sovrapposizione quantistica?",
+        "options": [
+            "Capacità di un sistema quantistico di trovarsi in più stati contemporaneamente",
+            "Sovrapporre fogli",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Capacità di un sistema quantistico di trovarsi in più stati contemporaneamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'entanglement quantistico?",
+        "options": [
+            "Fenomeno per cui due particelle rimangono connesse istantaneamente a distanza",
+            "Un nodo",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Fenomeno per cui due particelle rimangono connesse istantaneamente a distanza"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio potenziale dei computer quantistici:",
+        "options": [
+            "Risolvere certi problemi (es. fattorizzazione, simulazione molecolare) esponenzialmente più velocemente dei classici",
+            "Navigare su internet",
+            "Scrivere Word",
+            "Nulla"
+        ],
+        "answer": "Risolvere certi problemi (es. fattorizzazione, simulazione molecolare) esponenzialmente più velocemente dei classici"
+    }
+]

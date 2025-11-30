@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Entro quanto tempo deve essere avviato il disciplinare dopo sentenza di condanna per reati gravi?",
+        "options": [
+            "90 giorni",
+            "180 giorni",
+            "120 giorni",
+            "1 anno"
+        ],
+        "answer": "90 giorni"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Contro il provvedimento disciplinare è ammesso ricorso al TAR?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo per destituzione",
+            "Solo se autorizzato"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Contro il provvedimento disciplinare è ammesso ricorso straordinario al Capo dello Stato?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo per ufficiali",
+            "Mai"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il ricorso gerarchico è ammesso contro le sanzioni disciplinari?",
+        "options": [
+            "Sì, ex artt. 22-25 DPR 737/81",
+            "No",
+            "Solo per richiamo orale",
+            "Mai"
+        ],
+        "answer": "Sì, ex artt. 22-25 DPR 737/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Cos'è la riapertura del procedimento disciplinare?",
+        "options": [
+            "Un rimedio in caso di nuove prove",
+            "Un nuovo processo penale",
+            "Una sanzione aggiuntiva",
+            "Un premio"
+        ],
+        "answer": "Un rimedio in caso di nuove prove"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Cos'è la riabilitazione ex art. 87 DPR 3/57?",
+        "options": [
+            "Rende nulli gli effetti della sanzione",
+            "Aumenta lo stipendio",
+            "Cancella il reato penale",
+            "Permette di andare in pensione"
+        ],
+        "answer": "Rende nulli gli effetti della sanzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quali reati si applicano agli appartenenti alla Polizia di Stato?",
+        "options": [
+            "Reati comuni e reati propri (es. militari o specifici L. 121/81)",
+            "Solo reati comuni",
+            "Solo reati militari",
+            "Nessun reato"
+        ],
+        "answer": "Reati comuni e reati propri (es. militari o specifici L. 121/81)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'abbandono del posto di servizio è un reato previsto da:",
+        "options": [
+            "Art. 72 L. 121/81",
+            "Codice Penale",
+            "Codice Civile",
+            "Regolamento di condominio"
+        ],
+        "answer": "Art. 72 L. 121/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "In cosa consiste il reato di rivolta (art. 73 L. 121/81)?",
+        "options": [
+            "Rifiutare di deporre armi o cessare violenza (condotta collettiva)",
+            "Scioperare",
+            "Lamentarsi del capo",
+            "Arrivare in ritardo"
+        ],
+        "answer": "Rifiutare di deporre armi o cessare violenza (condotta collettiva)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'associazione al fine di commettere rivolta è punibile?",
+        "options": [
+            "Sì, art. 74 L. 121/81",
+            "No, solo se la rivolta avviene",
+            "Solo se armata",
+            "Mai"
+        ],
+        "answer": "Sì, art. 74 L. 121/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il movimento non autorizzato di reparto è un reato?",
+        "options": [
+            "Sì, art. 75 L. 121/81",
+            "No, è solo illecito disciplinare",
+            "Solo in guerra",
+            "Dipende dalla distanza"
+        ],
+        "answer": "Sì, art. 75 L. 121/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Partecipare a manifestazioni con armi della Polizia è reato?",
+        "options": [
+            "Sì, art. 76 L. 121/81",
+            "No",
+            "Solo se cariche",
+            "Solo se in divisa"
+        ],
+        "answer": "Sì, art. 76 L. 121/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'alterazione di armi o munizioni è reato?",
+        "options": [
+            "Sì, art. 77 L. 121/81",
+            "No, è hobby",
+            "Solo se vendute",
+            "Solo se usate"
+        ],
+        "answer": "Sì, art. 77 L. 121/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'arbitraria utilizzazione di prestazioni lavorative è reato?",
+        "options": [
+            "Sì, art. 78 L. 121/81",
+            "No",
+            "Solo se pagate",
+            "Solo se di notte"
+        ],
+        "answer": "Sì, art. 78 L. 121/81"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione rischia chi smarrisce il tesserino di riconoscimento (negligenza)?",
+        "options": [
+            "Pena pecuniaria (o richiamo scritto se lieve)",
+            "Destituzione",
+            "Arresto",
+            "Nulla"
+        ],
+        "answer": "Pena pecuniaria (o richiamo scritto se lieve)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quale organo esprime parere per la deplorazione di un Vice Ispettore?",
+        "options": [
+            "Commissione Consultiva",
+            "Consiglio di Disciplina",
+            "Questore",
+            "Prefetto"
+        ],
+        "answer": "Commissione Consultiva"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quanti anni devono trascorrere per chiedere la riabilitazione?",
+        "options": [
+            "2 anni",
+            "5 anni",
+            "10 anni",
+            "1 anno"
+        ],
+        "answer": "2 anni"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La responsabilità disciplinare ha natura:",
+        "options": [
+            "Amministrativa",
+            "Penale",
+            "Civile",
+            "Politica"
+        ],
+        "answer": "Amministrativa"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quale tra queste NON è una sanzione disciplinare ex DPR 737/81?",
+        "options": [
+            "Degradazione",
+            "Deplorazione",
+            "Destituzione",
+            "Sospensione"
+        ],
+        "answer": "Degradazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La riduzione dello stipendio è una sanzione disciplinare autonoma?",
+        "options": [
+            "No, la pena pecuniaria è una trattenuta",
+            "Sì",
+            "Solo per i dirigenti",
+            "Forse"
+        ],
+        "answer": "No, la pena pecuniaria è una trattenuta"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il richiamo scritto viene trascritto a matricola?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo se recidivo",
+            "A discrezione"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il richiamo orale viene trascritto a matricola?",
+        "options": [
+            "No",
+            "Sì",
+            "Solo se grave",
+            "Sì, ma si cancella dopo 1 mese"
+        ],
+        "answer": "No"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La pena pecuniaria consiste in una riduzione dello stipendio pari a:",
+        "options": [
+            "Da 1/30 a 5/30 di una mensilità",
+            "Metà stipendio",
+            "Tutto lo stipendio",
+            "100 euro fissi"
+        ],
+        "answer": "Da 1/30 a 5/30 di una mensilità"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione dal servizio comporta la privazione dello stipendio?",
+        "options": [
+            "Sì, con concessione di assegno alimentare (50%)",
+            "No, stipendio intero",
+            "No, solo indennità",
+            "Sì, totale senza nulla"
+        ],
+        "answer": "Sì, con concessione di assegno alimentare (50%)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La destituzione comporta la cessazione del rapporto di lavoro?",
+        "options": [
+            "Sì",
+            "No, solo sospensione lunga",
+            "No, trasferimento",
+            "Dipende"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi firma il decreto di destituzione?",
+        "options": [
+            "Il Capo della Polizia (o Ministro)",
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco"
+        ],
+        "answer": "Il Capo della Polizia (o Ministro)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi firma il provvedimento di richiamo scritto?",
+        "options": [
+            "Il Capo dell'Ufficio (o organo competente)",
+            "Il Ministro",
+            "Il Presidente della Repubblica",
+            "Il Collega"
+        ],
+        "answer": "Il Capo dell'Ufficio (o organo competente)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'azione disciplinare è obbligatoria?",
+        "options": [
+            "Sì",
+            "No, discrezionale",
+            "Solo per reati",
+            "Solo se c'è denuncia"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il termine per la conclusione del procedimento disciplinare è perentorio?",
+        "options": [
+            "Sì, la violazione comporta estinzione",
+            "No, ordinatorio",
+            "Dipende",
+            "Solo per la destituzione"
+        ],
+        "answer": "Sì, la violazione comporta estinzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'incolpato può farsi assistere da un difensore?",
+        "options": [
+            "Sì, appartenente all'amministrazione o avvocato (in certi casi)",
+            "No, mai",
+            "Solo da un prete",
+            "Solo dai parenti"
+        ],
+        "answer": "Sì, appartenente all'amministrazione o avvocato (in certi casi)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il difensore nel procedimento disciplinare può essere un sindacalista?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo se avvocato",
+            "Mai"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione disciplinare può essere condonata?",
+        "options": [
+            "Sì, se previsto da legge di condono",
+            "No, mai",
+            "Sì, dal Questore",
+            "Sì, a pagamento"
+        ],
+        "answer": "Sì, se previsto da legge di condono"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La morte del dipendente estingue il procedimento disciplinare?",
+        "options": [
+            "Sì",
+            "No, prosegue contro gli eredi",
+            "Dipende dal reato",
+            "Solo se destituzione"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Le dimissioni impediscono il procedimento disciplinare?",
+        "options": [
+            "No, se il procedimento è per destituzione (che ha effetti peggiori)",
+            "Sì, sempre",
+            "Dipende",
+            "Solo se accettate"
+        ],
+        "answer": "No, se il procedimento è per destituzione (che ha effetti peggiori)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La destituzione comporta la perdita del grado?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo per gli ufficiali",
+            "Forse"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Cosa succede se il procedimento penale si conclude con prescrizione?",
+        "options": [
+            "Il procedimento disciplinare riprende e valuta i fatti",
+            "Si estingue anche il disciplinare",
+            "Condanna automatica",
+            "Assoluzione automatica"
+        ],
+        "answer": "Il procedimento disciplinare riprende e valuta i fatti"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il patteggiamento penale equivale a condanna nel disciplinare?",
+        "options": [
+            "È equiparato a sentenza di condanna",
+            "No, è assoluzione",
+            "È neutro",
+            "Non rileva"
+        ],
+        "answer": "È equiparato a sentenza di condanna"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La messa alla prova sospende il disciplinare?",
+        "options": [
+            "Sì",
+            "No",
+            "Forse",
+            "Solo se minorenni"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'esito positivo della messa alla prova estingue il reato. E il disciplinare?",
+        "options": [
+            "Prosegue per valutare la condotta",
+            "Si estingue",
+            "Condanna automatica",
+            "Nulla"
+        ],
+        "answer": "Prosegue per valutare la condotta"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi è il titolare dell'azione disciplinare?",
+        "options": [
+            "Il Capo dell'Ufficio o Comandante del Reparto",
+            "Il PM",
+            "Il Giudice",
+            "La vittima"
+        ],
+        "answer": "Il Capo dell'Ufficio o Comandante del Reparto"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi è il titolare della potestà disciplinare (chi decide)?",
+        "options": [
+            "L'organo competente a infliggere la sanzione (es. Questore, Capo Polizia)",
+            "Il segnalante",
+            "L'istruttore",
+            "Il testimone"
+        ],
+        "answer": "L'organo competente a infliggere la sanzione (es. Questore, Capo Polizia)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il funzionario istruttore decide la sanzione?",
+        "options": [
+            "No, raccoglie le prove e fa una relazione",
+            "Sì",
+            "Solo se delegato",
+            "Solo per la sospensione"
+        ],
+        "answer": "No, raccoglie le prove e fa una relazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il Consiglio di Disciplina emette sentenze?",
+        "options": [
+            "No, emette pareri (deliberazioni)",
+            "Sì",
+            "Solo in appello",
+            "Mai"
+        ],
+        "answer": "No, emette pareri (deliberazioni)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione deve essere proporzionata?",
+        "options": [
+            "Sì, principio di proporzionalità",
+            "No, deve essere esemplare",
+            "No, deve essere minima",
+            "A caso"
+        ],
+        "answer": "Sì, principio di proporzionalità"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La recidiva è una circostanza aggravante?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo nel penale",
+            "Mai"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "I precedenti di servizio lodevoli sono attenuanti?",
+        "options": [
+            "Sì",
+            "No",
+            "Sono irrilevanti",
+            "Sono aggravanti"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La giovane età è un'attenuante?",
+        "options": [
+            "Può essere valutata",
+            "No, mai",
+            "È aggravante",
+            "Solo sotto i 18 anni"
+        ],
+        "answer": "Può essere valutata"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La scarsa anzianità di servizio è un'attenuante?",
+        "options": [
+            "Può essere valutata (inesperienza)",
+            "No",
+            "È aggravante",
+            "Mai"
+        ],
+        "answer": "Può essere valutata (inesperienza)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il grado elevato comporta maggiori responsabilità?",
+        "options": [
+            "Sì",
+            "No",
+            "Meno responsabilità",
+            "Uguale per tutti"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il Codice di Comportamento dei dipendenti pubblici si applica alla Polizia?",
+        "options": [
+            "Sì, in quanto compatibile",
+            "No, hanno norme speciali esclusive",
+            "Solo agli impiegati civili",
+            "Mai"
+        ],
+        "answer": "Sì, in quanto compatibile"
+    }
+]

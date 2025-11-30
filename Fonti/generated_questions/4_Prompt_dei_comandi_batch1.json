@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Come si apre il prompt dei comandi in Windows con la tastiera?",
+        "options": [
+            "Tasto Windows + R, poi digitare 'cmd' e premere OK",
+            "Tasto Windows + P",
+            "Ctrl + Alt + Canc",
+            "Alt + F4"
+        ],
+        "answer": "Tasto Windows + R, poi digitare 'cmd' e premere OK"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il prompt dei comandi?",
+        "options": [
+            "Un'interfaccia a caratteri per interagire col sistema operativo",
+            "Un programma di grafica",
+            "Un browser",
+            "Un gioco"
+        ],
+        "answer": "Un'interfaccia a caratteri per interagire col sistema operativo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Su cosa lavora il prompt dei comandi?",
+        "options": [
+            "Su una cartella corrente",
+            "Su tutto il disco contemporaneamente",
+            "Solo sulla RAM",
+            "Solo su internet"
+        ],
+        "answer": "Su una cartella corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale comando permette di cambiare la cartella corrente?",
+        "options": [
+            "cd",
+            "dir",
+            "ls",
+            "gcc"
+        ],
+        "answer": "cd"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'cd'?",
+        "options": [
+            "Change Directory",
+            "Create Directory",
+            "Copy Data",
+            "Clear Disk"
+        ],
+        "answer": "Change Directory"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se sono in C:\\Users e scrivo 'cd Brillo', dove vado?",
+        "options": [
+            "In C:\\Users\\Brillo",
+            "In C:\\Brillo",
+            "Rimango in C:\\Users",
+            "In C:\\"
+        ],
+        "answer": "In C:\\Users\\Brillo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale tasto si usa per il completamento automatico dei nomi?",
+        "options": [
+            "Tab",
+            "Invio",
+            "Spazio",
+            "Esc"
+        ],
+        "answer": "Tab"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché è consigliato usare il completamento automatico?",
+        "options": [
+            "Per evitare errori di digitazione e velocizzare",
+            "Perché è obbligatorio",
+            "Perché è più lento",
+            "Perché consuma meno memoria"
+        ],
+        "answer": "Per evitare errori di digitazione e velocizzare"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si indica la cartella genitore (quella sopra)?",
+        "options": [
+            "..",
+            ".",
+            "/",
+            "\\"
+        ],
+        "answer": ".."
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'cd ..'?",
+        "options": [
+            "Risale di un livello nella gerarchia delle cartelle",
+            "Scende di un livello",
+            "Cancella la cartella",
+            "Crea una cartella"
+        ],
+        "answer": "Risale di un livello nella gerarchia delle cartelle"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'cd ../..'?",
+        "options": [
+            "Risale di due livelli",
+            "Risale di un livello",
+            "Non esiste",
+            "Va alla radice"
+        ],
+        "answer": "Risale di due livelli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale comando mostra il contenuto di una cartella in Windows?",
+        "options": [
+            "dir",
+            "ls",
+            "show",
+            "list"
+        ],
+        "answer": "dir"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se scrivo 'dir' senza argomenti, cosa mostra?",
+        "options": [
+            "Il contenuto della cartella corrente",
+            "Il contenuto di C:",
+            "Tutto il disco",
+            "Nulla"
+        ],
+        "answer": "Il contenuto della cartella corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale comando si usa per compilare un programma C?",
+        "options": [
+            "gcc",
+            "compile",
+            "make",
+            "run"
+        ],
+        "answer": "gcc"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'gcc -o prog nomefile.c'?",
+        "options": [
+            "Compila nomefile.c e crea l'eseguibile prog.exe",
+            "Esegue nomefile.c",
+            "Cancella nomefile.c",
+            "Rinomina nomefile.c"
+        ],
+        "answer": "Compila nomefile.c e crea l'eseguibile prog.exe"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se ometto '-o nomeprog' con gcc, come si chiama l'output?",
+        "options": [
+            "a.exe",
+            "out.exe",
+            "prog.exe",
+            "nomefile.exe"
+        ],
+        "answer": "a.exe"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si esegue un programma chiamato 'prova.exe' da prompt?",
+        "options": [
+            "Scrivendo 'prova.exe' (o solo 'prova') e premendo Invio",
+            "Scrivendo 'run prova'",
+            "Cliccando col mouse",
+            "Scrivendo 'start prova'"
+        ],
+        "answer": "Scrivendo 'prova.exe' (o solo 'prova') e premendo Invio"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si chiama il prompt dei comandi su MacOS?",
+        "options": [
+            "Terminal",
+            "Cmd",
+            "Shell",
+            "Console"
+        ],
+        "answer": "Terminal"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale comando sostituisce 'dir' su MacOS/Linux?",
+        "options": [
+            "ls",
+            "dir",
+            "show",
+            "list"
+        ],
+        "answer": "ls"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si esegue un programma 'prova' su MacOS/Linux?",
+        "options": [
+            "./prova",
+            "prova",
+            "run prova",
+            "start prova"
+        ],
+        "answer": "./prova"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa indica il './' prima del nome programma in Linux/Mac?",
+        "options": [
+            "La cartella corrente",
+            "La cartella home",
+            "La cartella root",
+            "Nulla"
+        ],
+        "answer": "La cartella corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il comando 'cd' funziona allo stesso modo su Windows e Mac?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo se piove",
+            "Dipende dalla versione"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il comando 'gcc' funziona allo stesso modo su Windows e Mac?",
+        "options": [
+            "Sì (se installato)",
+            "No",
+            "Solo su Linux",
+            "Mai"
+        ],
+        "answer": "Sì (se installato)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se compilo un file che contiene errori?",
+        "options": [
+            "Il compilatore mostra gli errori e non crea l'eseguibile",
+            "Crea l'eseguibile comunque",
+            "Corregge gli errori",
+            "Si blocca il PC"
+        ],
+        "answer": "Il compilatore mostra gli errori e non crea l'eseguibile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un percorso assoluto?",
+        "options": [
+            "Un percorso che parte dalla radice (es. C:\\Users)",
+            "Un percorso breve",
+            "Un percorso relativo",
+            "Un percorso sbagliato"
+        ],
+        "answer": "Un percorso che parte dalla radice (es. C:\\Users)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un percorso relativo?",
+        "options": [
+            "Un percorso che parte dalla cartella corrente (es. Documenti\\File.txt)",
+            "Un percorso lungo",
+            "Un percorso assoluto",
+            "Un percorso di rete"
+        ],
+        "answer": "Un percorso che parte dalla cartella corrente (es. Documenti\\File.txt)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il carattere separatore di directory in Windows è:",
+        "options": [
+            "\\ (backslash)",
+            "/ (slash)",
+            ":",
+            "-"
+        ],
+        "answer": "\\ (backslash)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il carattere separatore di directory in Unix/Mac è:",
+        "options": [
+            "/ (slash)",
+            "\\ (backslash)",
+            ":",
+            "-"
+        ],
+        "answer": "/ (slash)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se scrivo 'cd' e basta in Windows, cosa succede?",
+        "options": [
+            "Mostra la cartella corrente",
+            "Va alla home",
+            "Non fa nulla",
+            "Dà errore"
+        ],
+        "answer": "Mostra la cartella corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se scrivo 'cd \\' in Windows, dove vado?",
+        "options": [
+            "Alla radice del disco corrente (es. C:\\)",
+            "Alla home",
+            "Al desktop",
+            "Da nessuna parte"
+        ],
+        "answer": "Alla radice del disco corrente (es. C:\\)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa CLI?",
+        "options": [
+            "Command Line Interface",
+            "Computer Line Input",
+            "Control Level Interface",
+            "Central Logic Input"
+        ],
+        "answer": "Command Line Interface"
+    },
+    {
+        "category": "Informatica",
+        "question": "Per cancellare lo schermo nel prompt Windows si usa:",
+        "options": [
+            "cls",
+            "clear",
+            "reset",
+            "clean"
+        ],
+        "answer": "cls"
+    },
+    {
+        "category": "Informatica",
+        "question": "Per cancellare lo schermo nel terminale Mac/Linux si usa:",
+        "options": [
+            "clear",
+            "cls",
+            "reset",
+            "clean"
+        ],
+        "answer": "clear"
+    },
+    {
+        "category": "Informatica",
+        "question": "Per uscire dal prompt dei comandi si usa:",
+        "options": [
+            "exit",
+            "quit",
+            "close",
+            "bye"
+        ],
+        "answer": "exit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se premo 'Freccia Su' nel prompt, cosa succede?",
+        "options": [
+            "Richiama l'ultimo comando digitato (cronologia)",
+            "Scrive una freccia",
+            "Va su col cursore",
+            "Cancella tutto"
+        ],
+        "answer": "Richiama l'ultimo comando digitato (cronologia)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso trascinare una cartella nel prompt per scriverne il percorso?",
+        "options": [
+            "Sì, di solito funziona",
+            "No, mai",
+            "Solo su Mac",
+            "Solo su Linux"
+        ],
+        "answer": "Sì, di solito funziona"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un argomento di un comando?",
+        "options": [
+            "Un'informazione aggiuntiva passata al comando (es. nome cartella per cd)",
+            "Una discussione",
+            "Un errore",
+            "Un file"
+        ],
+        "answer": "Un'informazione aggiuntiva passata al comando (es. nome cartella per cd)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se un nome di cartella contiene spazi, come devo scriverlo nel prompt?",
+        "options": [
+            "Tra virgolette (es. \"Nuova Cartella\")",
+            "Senza spazi",
+            "Con i trattini",
+            "Non si può"
+        ],
+        "answer": "Tra virgolette (es. \"Nuova Cartella\")"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'mkdir'?",
+        "options": [
+            "Crea una nuova directory",
+            "Cancella una directory",
+            "Sposta una directory",
+            "Rinomina una directory"
+        ],
+        "answer": "Crea una nuova directory"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'rmdir' (o 'rd')?",
+        "options": [
+            "Rimuove una directory (se vuota)",
+            "Crea una directory",
+            "Rinomina",
+            "Copia"
+        ],
+        "answer": "Rimuove una directory (se vuota)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'del' (Windows) o 'rm' (Mac/Linux)?",
+        "options": [
+            "Cancella file",
+            "Crea file",
+            "Sposta file",
+            "Copia file"
+        ],
+        "answer": "Cancella file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'copy' (Windows) o 'cp' (Mac/Linux)?",
+        "options": [
+            "Copia file",
+            "Cancella file",
+            "Sposta file",
+            "Rinomina file"
+        ],
+        "answer": "Copia file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il comando 'move' (Windows) o 'mv' (Mac/Linux)?",
+        "options": [
+            "Sposta o rinomina file/directory",
+            "Copia",
+            "Cancella",
+            "Crea"
+        ],
+        "answer": "Sposta o rinomina file/directory"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il 'path' di sistema?",
+        "options": [
+            "Una variabile d'ambiente che dice al SO dove cercare gli eseguibili",
+            "Un sentiero",
+            "Un file",
+            "Un comando"
+        ],
+        "answer": "Una variabile d'ambiente che dice al SO dove cercare gli eseguibili"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se scrivo 'gcc' e dice 'comando non riconosciuto', cosa significa?",
+        "options": [
+            "Che gcc non è installato o non è nel PATH",
+            "Che ho scritto male",
+            "Che il PC è rotto",
+            "Che non ho internet"
+        ],
+        "answer": "Che gcc non è installato o non è nel PATH"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è MinGW?",
+        "options": [
+            "Una versione di GCC per Windows",
+            "Un gioco",
+            "Un editor",
+            "Un browser"
+        ],
+        "answer": "Una versione di GCC per Windows"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché si usa il prompt invece del doppio click per i programmi console?",
+        "options": [
+            "Per vedere l'output prima che la finestra si chiuda",
+            "Perché è più lento",
+            "Perché è obbligatorio",
+            "Non serve"
+        ],
+        "answer": "Per vedere l'output prima che la finestra si chiuda"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo standard output (stdout)?",
+        "options": [
+            "Il flusso di output predefinito (di solito lo schermo)",
+            "La stampante",
+            "Il file",
+            "La tastiera"
+        ],
+        "answer": "Il flusso di output predefinito (di solito lo schermo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo standard input (stdin)?",
+        "options": [
+            "Il flusso di input predefinito (di solito la tastiera)",
+            "Il mouse",
+            "Lo schermo",
+            "Il microfono"
+        ],
+        "answer": "Il flusso di input predefinito (di solito la tastiera)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo standard error (stderr)?",
+        "options": [
+            "Il flusso per i messaggi di errore (di solito lo schermo)",
+            "Un errore grave",
+            "Un file di log",
+            "La stampante"
+        ],
+        "answer": "Il flusso per i messaggi di errore (di solito lo schermo)"
+    }
+]

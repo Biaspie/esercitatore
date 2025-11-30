@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa permettono di fare le istruzioni ripetitive?",
+        "options": [
+            "Eseguire ripetutamente un'istruzione fintanto che è verificata una condizione",
+            "Eseguire una volta sola",
+            "Non eseguire nulla",
+            "Eseguire a caso"
+        ],
+        "answer": "Eseguire ripetutamente un'istruzione fintanto che è verificata una condizione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la sintassi del ciclo while?",
+        "options": [
+            "while (predicato) istruzione_WHILE",
+            "while predicato do istruzione",
+            "do istruzione while predicato",
+            "for (predicato) istruzione"
+        ],
+        "answer": "while (predicato) istruzione_WHILE"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene valutata la condizione nel while?",
+        "options": [
+            "Prima di eseguire il corpo del ciclo",
+            "Dopo aver eseguito il corpo",
+            "A metà",
+            "Mai"
+        ],
+        "answer": "Prima di eseguire il corpo del ciclo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se la condizione del while è falsa all'inizio, quante volte viene eseguito il corpo?",
+        "options": [
+            "0 volte (mai)",
+            "1 volta",
+            "Infine volte",
+            "Dipende"
+        ],
+        "answer": "0 volte (mai)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se la condizione del while è sempre vera (es. while(1))?",
+        "options": [
+            "Ciclo infinito (loop)",
+            "Errore di compilazione",
+            "Esegue una volta",
+            "Si ferma subito"
+        ],
+        "answer": "Ciclo infinito (loop)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la sintassi del ciclo do-while?",
+        "options": [
+            "do istruzione_DO_WHILE while (predicato);",
+            "while (predicato) do istruzione",
+            "do { istruzione } until (predicato)",
+            "repeat istruzione until predicato"
+        ],
+        "answer": "do istruzione_DO_WHILE while (predicato);"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene valutata la condizione nel do-while?",
+        "options": [
+            "Dopo aver eseguito il corpo del ciclo",
+            "Prima di eseguire il corpo",
+            "A metà",
+            "Mai"
+        ],
+        "answer": "Dopo aver eseguito il corpo del ciclo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quante volte viene eseguito ALMENO il corpo del do-while?",
+        "options": [
+            "1 volta",
+            "0 volte",
+            "2 volte",
+            "Infine volte"
+        ],
+        "answer": "1 volta"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il do-while richiede il punto e virgola finale?",
+        "options": [
+            "Sì, dopo il while(predicato);",
+            "No",
+            "Facoltativo",
+            "Solo se c'è un blocco"
+        ],
+        "answer": "Sì, dopo il while(predicato);"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la sintassi del ciclo for?",
+        "options": [
+            "for (inizializzazione; predicato; aggiornamento) istruzione_FOR",
+            "for (predicato) istruzione",
+            "for i to n do istruzione",
+            "loop (inizializzazione; predicato; aggiornamento)"
+        ],
+        "answer": "for (inizializzazione; predicato; aggiornamento) istruzione_FOR"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene eseguita l'inizializzazione nel for?",
+        "options": [
+            "Una sola volta, all'inizio del ciclo",
+            "Ad ogni iterazione",
+            "Alla fine",
+            "Mai"
+        ],
+        "answer": "Una sola volta, all'inizio del ciclo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene valutato il predicato nel for?",
+        "options": [
+            "Prima di ogni esecuzione del corpo (inclusa la prima)",
+            "Dopo il corpo",
+            "Solo all'inizio",
+            "Mai"
+        ],
+        "answer": "Prima di ogni esecuzione del corpo (inclusa la prima)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene eseguito l'aggiornamento nel for?",
+        "options": [
+            "Alla fine di ogni esecuzione del corpo",
+            "All'inizio",
+            "Prima del predicato",
+            "Mai"
+        ],
+        "answer": "Alla fine di ogni esecuzione del corpo"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve tipicamente la variabile contatore nel for?",
+        "options": [
+            "A scandire gli elementi di una sequenza o contare le iterazioni",
+            "A sommare valori",
+            "A nulla",
+            "A caso"
+        ],
+        "answer": "A scandire gli elementi di una sequenza o contare le iterazioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso dichiarare la variabile contatore dentro il for (C99)?",
+        "options": [
+            "Sì (es. for(int i=0; ...))",
+            "No",
+            "Solo se globale",
+            "Solo se static"
+        ],
+        "answer": "Sì (es. for(int i=0; ...))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale ciclo usare se so a priori il numero di iterazioni?",
+        "options": [
+            "For",
+            "While",
+            "Do-While",
+            "If"
+        ],
+        "answer": "For"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale ciclo usare se il numero di iterazioni non è noto a priori?",
+        "options": [
+            "While (o Do-While)",
+            "For",
+            "If",
+            "Switch"
+        ],
+        "answer": "While (o Do-While)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale ciclo usare se devo eseguire il corpo almeno una volta?",
+        "options": [
+            "Do-While",
+            "While",
+            "For",
+            "If"
+        ],
+        "answer": "Do-While"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso trasformare un for in un while?",
+        "options": [
+            "Sì, sempre",
+            "No",
+            "Solo a volte",
+            "Mai"
+        ],
+        "answer": "Sì, sempre"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso trasformare un while in un for?",
+        "options": [
+            "Sì (es. for(; predicato;))",
+            "No",
+            "Solo a volte",
+            "Mai"
+        ],
+        "answer": "Sì (es. for(; predicato;))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa stampa: int i=0; while(i<3) { printf(\"%d \", i); i++; }",
+        "options": [
+            "0 1 2",
+            "1 2 3",
+            "0 1 2 3",
+            "1 2"
+        ],
+        "answer": "0 1 2"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa stampa: for(int i=1; i<=3; i++) printf(\"%d \", i);",
+        "options": [
+            "1 2 3",
+            "0 1 2",
+            "1 2",
+            "1 2 3 4"
+        ],
+        "answer": "1 2 3"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se dimentico l'aggiornamento nel while?",
+        "options": [
+            "Rischio ciclo infinito (se la condizione dipende dalla variabile non aggiornata)",
+            "Errore di sintassi",
+            "Nulla",
+            "Il ciclo non parte"
+        ],
+        "answer": "Rischio ciclo infinito (se la condizione dipende dalla variabile non aggiornata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se metto un punto e virgola dopo while(condizione); { ... }?",
+        "options": [
+            "Il while ha un corpo vuoto (ciclo infinito se la condizione è vera e non cambia)",
+            "Errore di sintassi",
+            "Funziona normalmente",
+            "Il blocco viene eseguito nel ciclo"
+        ],
+        "answer": "Il while ha un corpo vuoto (ciclo infinito se la condizione è vera e non cambia)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Errore 'off-by-one' (errore di uno):",
+        "options": [
+            "Il ciclo viene eseguito una volta in più o in meno del previsto (es. < vs <=)",
+            "Errore di sintassi",
+            "Variabile non dichiarata",
+            "Divisione per zero"
+        ],
+        "answer": "Il ciclo viene eseguito una volta in più o in meno del previsto (es. < vs <=)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cicli annidati:",
+        "options": [
+            "Un ciclo dentro l'altro (es. per scorrere una matrice)",
+            "Cicli vietati",
+            "Cicli paralleli",
+            "Cicli infiniti"
+        ],
+        "answer": "Un ciclo dentro l'altro (es. per scorrere una matrice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio di uso cicli annidati:",
+        "options": [
+            "Stampare una tabella pitagorica",
+            "Stampare un numero",
+            "Sommare due numeri",
+            "Nulla"
+        ],
+        "answer": "Stampare una tabella pitagorica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo MCD (Euclide) con while:",
+        "options": [
+            "while (y > 0) { r = x % y; x = y; y = r; }",
+            "while (x > y) x++",
+            "for (i=0; i<n; i++)",
+            "Nulla"
+        ],
+        "answer": "while (y > 0) { r = x % y; x = y; y = r; }"
+    },
+    {
+        "category": "Informatica",
+        "question": "Fattoriale iterativo:",
+        "options": [
+            "Moltiplicare i numeri da 1 a n in un ciclo",
+            "Sommare i numeri",
+            "Dividere i numeri",
+            "Ricorsione"
+        ],
+        "answer": "Moltiplicare i numeri da 1 a n in un ciclo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Elemento neutro per il fattoriale (inizializzazione):",
+        "options": [
+            "1",
+            "0",
+            "-1",
+            "2"
+        ],
+        "answer": "1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Somma dei primi n numeri (iterativa):",
+        "options": [
+            "Ciclo che accumula la somma in una variabile inizializzata a 0",
+            "Formula di Gauss",
+            "Moltiplicazione",
+            "Nulla"
+        ],
+        "answer": "Ciclo che accumula la somma in una variabile inizializzata a 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Verifica primalità (numero primo) iterativa:",
+        "options": [
+            "Ciclo da 2 a sqrt(n) per cercare divisori",
+            "Ciclo infinito",
+            "If n%2==0",
+            "Nulla"
+        ],
+        "answer": "Ciclo da 2 a sqrt(n) per cercare divisori"
+    },
+    {
+        "category": "Informatica",
+        "question": "Break nei cicli:",
+        "options": [
+            "Termina immediatamente l'esecuzione del ciclo più interno",
+            "Salta un'iterazione",
+            "Esce dal programma",
+            "Nulla"
+        ],
+        "answer": "Termina immediatamente l'esecuzione del ciclo più interno"
+    },
+    {
+        "category": "Informatica",
+        "question": "Continue nei cicli:",
+        "options": [
+            "Salta il resto del corpo dell'iterazione corrente e passa alla successiva",
+            "Termina il ciclo",
+            "Esce dal programma",
+            "Nulla"
+        ],
+        "answer": "Salta il resto del corpo dell'iterazione corrente e passa alla successiva"
+    },
+    {
+        "category": "Informatica",
+        "question": "Goto:",
+        "options": [
+            "Istruzione di salto incondizionato (sconsigliata nella programmazione strutturata)",
+            "Ciclo",
+            "Funzione",
+            "Variabile"
+        ],
+        "answer": "Istruzione di salto incondizionato (sconsigliata nella programmazione strutturata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché evitare il goto?",
+        "options": [
+            "Rende il codice difficile da seguire ('spaghetti code')",
+            "È lento",
+            "Non funziona",
+            "È illegale"
+        ],
+        "answer": "Rende il codice difficile da seguire ('spaghetti code')"
+    },
+    {
+        "category": "Informatica",
+        "question": "Scope variabili nel for(int i=0; ...):",
+        "options": [
+            "La variabile i è visibile solo dentro il ciclo for",
+            "Visibile ovunque",
+            "Visibile nel main",
+            "Errore"
+        ],
+        "answer": "La variabile i è visibile solo dentro il ciclo for"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se modifico la variabile contatore nel corpo del for?",
+        "options": [
+            "Alterazione del flusso del ciclo (pericoloso/confuso, ma possibile)",
+            "Errore di compilazione",
+            "Nulla",
+            "Il ciclo si ferma"
+        ],
+        "answer": "Alterazione del flusso del ciclo (pericoloso/confuso, ma possibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ciclo infinito intenzionale con for:",
+        "options": [
+            "for(;;)",
+            "for(1)",
+            "for(0)",
+            "for(true)"
+        ],
+        "answer": "for(;;)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ciclo infinito intenzionale con while:",
+        "options": [
+            "while(1) o while(true)",
+            "while(0)",
+            "while()",
+            "while(false)"
+        ],
+        "answer": "while(1) o while(true)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un array?",
+        "options": [
+            "Collezione di elementi dello stesso tipo contigui in memoria",
+            "Lista linkata",
+            "Variabile singola",
+            "File"
+        ],
+        "answer": "Collezione di elementi dello stesso tipo contigui in memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si scorre un array?",
+        "options": [
+            "Tipicamente con un ciclo for da 0 a dimensione-1",
+            "Con un if",
+            "Con un switch",
+            "A caso"
+        ],
+        "answer": "Tipicamente con un ciclo for da 0 a dimensione-1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Indici array in C:",
+        "options": [
+            "Partono da 0",
+            "Partono da 1",
+            "Partono da -1",
+            "A scelta"
+        ],
+        "answer": "Partono da 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ultimo indice valido di un array di dim N:",
+        "options": [
+            "N-1",
+            "N",
+            "N+1",
+            "0"
+        ],
+        "answer": "N-1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accesso fuori limiti (buffer overflow) in lettura:",
+        "options": [
+            "Legge memoria sporca o crash (segfault)",
+            "Ritorna 0",
+            "Errore compilazione",
+            "Nulla"
+        ],
+        "answer": "Legge memoria sporca o crash (segfault)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stringhe in C e cicli:",
+        "options": [
+            "Si scorrono fino al terminatore '\\0'",
+            "Fino alla fine della memoria",
+            "Per 100 volte",
+            "Nulla"
+        ],
+        "answer": "Si scorrono fino al terminatore '\\0'"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ciclo while(*s) s++;",
+        "options": [
+            "Avanza il puntatore s fino alla fine della stringa",
+            "Copia la stringa",
+            "Stampa la stringa",
+            "Nulla"
+        ],
+        "answer": "Avanza il puntatore s fino alla fine della stringa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità computazionale di un ciclo semplice da 1 a N?",
+        "options": [
+            "O(N)",
+            "O(1)",
+            "O(N^2)",
+            "O(log N)"
+        ],
+        "answer": "O(N)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità di due cicli annidati da 1 a N?",
+        "options": [
+            "O(N^2)",
+            "O(N)",
+            "O(log N)",
+            "O(1)"
+        ],
+        "answer": "O(N^2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ottimizzazione cicli:",
+        "options": [
+            "Spostare calcoli invarianti fuori dal ciclo",
+            "Mettere tutto nel ciclo",
+            "Usare goto",
+            "Nulla"
+        ],
+        "answer": "Spostare calcoli invarianti fuori dal ciclo"
+    }
+]

@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa indica la leggibilità del software?",
+        "options": [
+            "Quanto facilmente il codice sorgente può essere compreso leggendolo",
+            "Quanto è veloce",
+            "Quanto è piccolo",
+            "Nulla"
+        ],
+        "answer": "Quanto facilmente il codice sorgente può essere compreso leggendolo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché la leggibilità è importante?",
+        "options": [
+            "Per la modificabilità e manutenzione del codice (spesso letto da persone diverse dall'autore)",
+            "Per il compilatore",
+            "Per occupare meno spazio",
+            "Nulla"
+        ],
+        "answer": "Per la modificabilità e manutenzione del codice (spesso letto da persone diverse dall'autore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa sono le convenzioni di codifica?",
+        "options": [
+            "Indicazioni stilistiche su come scrivere codice per favorire la leggibilità",
+            "Regole sintattiche obbligatorie",
+            "Leggi dello stato",
+            "Nulla"
+        ],
+        "answer": "Indicazioni stilistiche su come scrivere codice per favorire la leggibilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le convenzioni di codifica influenzano la semantica del programma?",
+        "options": [
+            "No, non cambiano il funzionamento, solo lo stile",
+            "Sì, cambiano il risultato",
+            "A volte",
+            "Sempre"
+        ],
+        "answer": "No, non cambiano il funzionamento, solo lo stile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Elementi principali dello stile di programmazione:",
+        "options": [
+            "Commenti, Scelta dei nomi, Indentazione, Ordine istruzioni",
+            "Colori, Font, Sfondi",
+            "Hardware, Software",
+            "Nulla"
+        ],
+        "answer": "Commenti, Scelta dei nomi, Indentazione, Ordine istruzioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un commento?",
+        "options": [
+            "Frase che illustra lo scopo o il significato di una porzione di codice (ignorata dal compilatore)",
+            "Istruzione eseguibile",
+            "Variabile",
+            "Errore"
+        ],
+        "answer": "Frase che illustra lo scopo o il significato di una porzione di codice (ignorata dal compilatore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il compilatore legge i commenti?",
+        "options": [
+            "No, li ignora completamente",
+            "Sì, li esegue",
+            "Solo quelli lunghi",
+            "Solo quelli corti"
+        ],
+        "answer": "No, li ignora completamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa servono i commenti di documentazione?",
+        "options": [
+            "Descrivono lo scopo di un'applicazione o di una funzione (interfaccia)",
+            "Descrivono come funziona l'algoritmo",
+            "Descrivono bug",
+            "Nulla"
+        ],
+        "answer": "Descrivono lo scopo di un'applicazione o di una funzione (interfaccia)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dove si scrivono i commenti di documentazione?",
+        "options": [
+            "Prima della funzione (o del main per l'app)",
+            "Dentro la funzione",
+            "Alla fine del file",
+            "Nulla"
+        ],
+        "answer": "Prima della funzione (o del main per l'app)"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa servono i commenti di implementazione?",
+        "options": [
+            "Descrivono scelte realizzative, algoritmi, significato variabili (dettagli interni)",
+            "Descrivono l'interfaccia",
+            "Descrivono l'autore",
+            "Nulla"
+        ],
+        "answer": "Descrivono scelte realizzative, algoritmi, significato variabili (dettagli interni)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dove si scrivono i commenti di implementazione?",
+        "options": [
+            "Vicino al codice che descrivono (prima o sulla stessa riga)",
+            "In un altro file",
+            "Alla fine",
+            "Nulla"
+        ],
+        "answer": "Vicino al codice che descrivono (prima o sulla stessa riga)"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa servono i commenti di asserzione?",
+        "options": [
+            "Descrivono proprietà che si verificano sempre in quel punto (es. pre/post condizioni)",
+            "Descrivono errori",
+            "Descrivono variabili",
+            "Nulla"
+        ],
+        "answer": "Descrivono proprietà che si verificano sempre in quel punto (es. pre/post condizioni)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi commento multi-riga C:",
+        "options": [
+            "/* commento */",
+            "// commento",
+            "# commento",
+            "<!-- commento -->"
+        ],
+        "answer": "/* commento */"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi commento singola riga C (C99+):",
+        "options": [
+            "// commento",
+            "/* commento */",
+            "# commento",
+            "-- commento"
+        ],
+        "answer": "// commento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Regola generale sui commenti:",
+        "options": [
+            "Melius abundare quam deficere (meglio abbondare che deficere), ma senza dire l'ovvio",
+            "Non scrivere mai commenti",
+            "Scrivere solo commenti",
+            "Nulla"
+        ],
+        "answer": "Melius abundare quam deficere (meglio abbondare che deficere), ma senza dire l'ovvio"
+    },
+    {
+        "category": "Informatica",
+        "question": "Convenzione nomi variabili:",
+        "options": [
+            "Sostantivi significativi, camelCase o snake_case",
+            "Nomi a caso (a, b, c)",
+            "Numeri",
+            "Verbi"
+        ],
+        "answer": "Sostantivi significativi, camelCase o snake_case"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio camelCase:",
+        "options": [
+            "sommaTreNumeri",
+            "somma_tre_numeri",
+            "SommaTreNumeri",
+            "SOMMA_TRE_NUMERI"
+        ],
+        "answer": "sommaTreNumeri"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio snake_case:",
+        "options": [
+            "somma_tre_numeri",
+            "sommaTreNumeri",
+            "SommaTreNumeri",
+            "SOMMA_TRE_NUMERI"
+        ],
+        "answer": "somma_tre_numeri"
+    },
+    {
+        "category": "Informatica",
+        "question": "Convenzione nomi funzioni:",
+        "options": [
+            "Verbi o frasi verbali (es. calcolaMedia)",
+            "Sostantivi",
+            "Numeri",
+            "Nulla"
+        ],
+        "answer": "Verbi o frasi verbali (es. calcolaMedia)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Convenzione nomi costanti (#define):",
+        "options": [
+            "TUTTO_MAIUSCOLO_CON_UNDERSCORE",
+            "camelCase",
+            "snake_case",
+            "Nulla"
+        ],
+        "answer": "TUTTO_MAIUSCOLO_CON_UNDERSCORE"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'indentazione?",
+        "options": [
+            "Evidenziare la relazione di contenimento (blocchi) mediante spaziatura a sinistra",
+            "Colorare il codice",
+            "Mettere commenti",
+            "Nulla"
+        ],
+        "answer": "Evidenziare la relazione di contenimento (blocchi) mediante spaziatura a sinistra"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa va indentato?",
+        "options": [
+            "Il contenuto di funzioni, cicli, if/else (tutto ciò che è dentro un blocco)",
+            "Tutto a sinistra",
+            "Solo i commenti",
+            "Nulla"
+        ],
+        "answer": "Il contenuto di funzioni, cicli, if/else (tutto ciò che è dentro un blocco)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posizione parentesi graffe (stile K&R/Java):",
+        "options": [
+            "Aperta sulla stessa riga, chiusa su nuova riga allineata all'inizio",
+            "A capo sempre",
+            "Mai usate",
+            "Nulla"
+        ],
+        "answer": "Aperta sulla stessa riga, chiusa su nuova riga allineata all'inizio"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posizione parentesi graffe (stile Allman/BSD):",
+        "options": [
+            "Aperta su nuova riga, chiusa su nuova riga (allineate verticalmente)",
+            "Stessa riga",
+            "Nulla",
+            "A caso"
+        ],
+        "answer": "Aperta su nuova riga, chiusa su nuova riga (allineate verticalmente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ordine dichiarazioni e istruzioni (C89):",
+        "options": [
+            "Prima tutte le dichiarazioni, poi le istruzioni (all'inizio del blocco)",
+            "Miste",
+            "Prima istruzioni",
+            "Nulla"
+        ],
+        "answer": "Prima tutte le dichiarazioni, poi le istruzioni (all'inizio del blocco)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ordine dichiarazioni e istruzioni (C99+):",
+        "options": [
+            "Dichiarazioni possono essere mescolate alle istruzioni (dichiarare vicino all'uso)",
+            "Solo all'inizio",
+            "Solo alla fine",
+            "Nulla"
+        ],
+        "answer": "Dichiarazioni possono essere mescolate alle istruzioni (dichiarare vicino all'uso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quante istruzioni per riga è consigliato mettere?",
+        "options": [
+            "Una sola",
+            "Due",
+            "Tante",
+            "Dipende"
+        ],
+        "answer": "Una sola"
+    },
+    {
+        "category": "Informatica",
+        "question": "Spaziature (whitespace):",
+        "options": [
+            "Usare spazi attorno agli operatori (=, +, <) e dopo le virgole per leggibilità",
+            "Tutto attaccato",
+            "Tanti spazi",
+            "Nulla"
+        ],
+        "answer": "Usare spazi attorno agli operatori (=, +, <) e dopo le virgole per leggibilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Lunghezza massima riga consigliata:",
+        "options": [
+            "80-120 caratteri (evitare scrolling orizzontale)",
+            "Infinita",
+            "10 caratteri",
+            "Nulla"
+        ],
+        "answer": "80-120 caratteri (evitare scrolling orizzontale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Refactoring per leggibilità:",
+        "options": [
+            "Estrarre codice complesso in funzioni con nomi descrittivi",
+            "Lasciare tutto nel main",
+            "Usare goto",
+            "Nulla"
+        ],
+        "answer": "Estrarre codice complesso in funzioni con nomi descrittivi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Self-documenting code:",
+        "options": [
+            "Codice scritto così chiaramente (nomi, struttura) da non richiedere molti commenti",
+            "Codice senza commenti",
+            "Codice automatico",
+            "Nulla"
+        ],
+        "answer": "Codice scritto così chiaramente (nomi, struttura) da non richiedere molti commenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Code smell:",
+        "options": [
+            "Sintomo nel codice che indica un possibile problema di design o qualità (es. funzioni troppo lunghe)",
+            "Odore del PC",
+            "Errore sintassi",
+            "Nulla"
+        ],
+        "answer": "Sintomo nel codice che indica un possibile problema di design o qualità (es. funzioni troppo lunghe)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Principio di responsabilità singola (SRP):",
+        "options": [
+            "Una funzione/classe dovrebbe fare una cosa sola e farla bene",
+            "Fare tutto",
+            "Fare niente",
+            "Nulla"
+        ],
+        "answer": "Una funzione/classe dovrebbe fare una cosa sola e farla bene"
+    },
+    {
+        "category": "Informatica",
+        "question": "Modularità:",
+        "options": [
+            "Suddividere il programma in moduli indipendenti e intercambiabili",
+            "Scrivere tutto in un file",
+            "Non usare funzioni",
+            "Nulla"
+        ],
+        "answer": "Suddividere il programma in moduli indipendenti e intercambiabili"
+    },
+    {
+        "category": "Informatica",
+        "question": "Incapsulamento:",
+        "options": [
+            "Nascondere i dettagli interni di implementazione ed esporre solo un'interfaccia pubblica",
+            "Mettere in capsule",
+            "Nascondere tutto",
+            "Nulla"
+        ],
+        "answer": "Nascondere i dettagli interni di implementazione ed esporre solo un'interfaccia pubblica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Coesione:",
+        "options": [
+            "Misura di quanto gli elementi di un modulo sono correlati tra loro (alta coesione è bene)",
+            "Colla",
+            "Bassa coesione",
+            "Nulla"
+        ],
+        "answer": "Misura di quanto gli elementi di un modulo sono correlati tra loro (alta coesione è bene)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accoppiamento (Coupling):",
+        "options": [
+            "Misura della dipendenza tra moduli diversi (basso accoppiamento è bene)",
+            "Alto accoppiamento",
+            "Matrimonio",
+            "Nulla"
+        ],
+        "answer": "Misura della dipendenza tra moduli diversi (basso accoppiamento è bene)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Programmazione difensiva:",
+        "options": [
+            "Scrivere codice che prevede e gestisce casi imprevisti o input errati (es. controlli null, assert)",
+            "Difendere il PC",
+            "Attaccare",
+            "Nulla"
+        ],
+        "answer": "Scrivere codice che prevede e gestisce casi imprevisti o input errati (es. controlli null, assert)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Gestione errori:",
+        "options": [
+            "Meccanismi per rilevare e rispondere agli errori a runtime (codici errore, errno)",
+            "Ignorare errori",
+            "Crashare",
+            "Nulla"
+        ],
+        "answer": "Meccanismi per rilevare e rispondere agli errori a runtime (codici errore, errno)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Costanti magiche:",
+        "options": [
+            "Numeri sparsi nel codice (da evitare, usare #define o const)",
+            "Numeri belli",
+            "Numeri primi",
+            "Nulla"
+        ],
+        "answer": "Numeri sparsi nel codice (da evitare, usare #define o const)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabili globali:",
+        "options": [
+            "Da usare con parsimonia (o evitare) perché rendono difficile tracciare lo stato e creano dipendenze",
+            "Da usare sempre",
+            "Mai usare",
+            "Nulla"
+        ],
+        "answer": "Da usare con parsimonia (o evitare) perché rendono difficile tracciare lo stato e creano dipendenze"
+    },
+    {
+        "category": "Informatica",
+        "question": "Effetti collaterali (Side effects):",
+        "options": [
+            "Modifiche di stato osservabili fuori dalla funzione (es. modificare variabili globali, I/O)",
+            "Effetti speciali",
+            "Medicine",
+            "Nulla"
+        ],
+        "answer": "Modifiche di stato osservabili fuori dalla funzione (es. modificare variabili globali, I/O)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Funzioni pure:",
+        "options": [
+            "Funzioni senza effetti collaterali, il cui output dipende solo dagli input (facili da testare)",
+            "Funzioni sporche",
+            "Funzioni void",
+            "Nulla"
+        ],
+        "answer": "Funzioni senza effetti collaterali, il cui output dipende solo dagli input (facili da testare)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ricorsione vs Iterazione (stile):",
+        "options": [
+            "Ricorsione spesso più elegante per certi problemi (alberi), ma occhio allo stack overflow",
+            "Sempre iterazione",
+            "Sempre ricorsione",
+            "Nulla"
+        ],
+        "answer": "Ricorsione spesso più elegante per certi problemi (alberi), ma occhio allo stack overflow"
+    },
+    {
+        "category": "Informatica",
+        "question": "Premature optimization is the root of all evil (Knuth):",
+        "options": [
+            "Non ottimizzare prima di aver misurato e verificato la necessità",
+            "Ottimizzare sempre",
+            "Mai ottimizzare",
+            "Nulla"
+        ],
+        "answer": "Non ottimizzare prima di aver misurato e verificato la necessità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Commentare il 'Cosa' o il 'Perché'?",
+        "options": [
+            "Commentare il 'Perché' (intento), il 'Cosa' si legge dal codice",
+            "Commentare il 'Cosa'",
+            "Commentare tutto",
+            "Nulla"
+        ],
+        "answer": "Commentare il 'Perché' (intento), il 'Cosa' si legge dal codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "TODO comments:",
+        "options": [
+            "Segnalibri per cose da fare o migliorare in futuro",
+            "Errori",
+            "Codice morto",
+            "Nulla"
+        ],
+        "answer": "Segnalibri per cose da fare o migliorare in futuro"
+    },
+    {
+        "category": "Informatica",
+        "question": "FIXME comments:",
+        "options": [
+            "Segnalibri per codice rotto o buggato da sistemare",
+            "Cose fatte",
+            "Codice buono",
+            "Nulla"
+        ],
+        "answer": "Segnalibri per codice rotto o buggato da sistemare"
+    },
+    {
+        "category": "Informatica",
+        "question": "Deprecato (Deprecated):",
+        "options": [
+            "Funzionalità che non dovrebbe più essere usata e potrebbe essere rimossa in futuro",
+            "Nuovo",
+            "Rotto",
+            "Nulla"
+        ],
+        "answer": "Funzionalità che non dovrebbe più essere usata e potrebbe essere rimossa in futuro"
+    },
+    {
+        "category": "Informatica",
+        "question": "Legacy code:",
+        "options": [
+            "Codice ereditato da versioni precedenti o altri sviluppatori (spesso vecchio e difficile da mantenere)",
+            "Codice nuovo",
+            "Codice legale",
+            "Nulla"
+        ],
+        "answer": "Codice ereditato da versioni precedenti o altri sviluppatori (spesso vecchio e difficile da mantenere)"
+    }
+]

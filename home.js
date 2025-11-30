@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const appTitle = document.getElementById('app-title');
     const backToSubjectsBtn = document.getElementById('back-to-subjects-btn');
 
+    // Check Protocol
+    if (window.location.protocol === 'file:') {
+        alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
+    }
+
     let currentCategory = "ps";
 
     const subjectMap = {
@@ -16,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'penale': 'Diritto Penale',
         'procedura_penale': 'Procedura Penale',
         'normativa': 'Normativa Disciplinare',
+        'informatica': 'Informatica',
         'all': 'Tutti gli Argomenti'
     };
 

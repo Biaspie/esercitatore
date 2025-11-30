@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Qual è la differenza tra algoritmo e programma?",
+        "options": [
+            "L'algoritmo è la procedura astratta, il programma è la sua implementazione per il calcolatore",
+            "Sono sinonimi",
+            "Il programma è più veloce dell'algoritmo",
+            "L'algoritmo è scritto in binario"
+        ],
+        "answer": "L'algoritmo è la procedura astratta, il programma è la sua implementazione per il calcolatore"
+    },
+    {
+        "question": "Cosa si intende per 'formalizzazione matematica' di un problema?",
+        "options": [
+            "Esprimere il problema in termini di oggetti e relazioni matematiche",
+            "Scrivere il problema in numeri romani",
+            "Risolvere il problema a mente",
+            "Usare la calcolatrice"
+        ],
+        "answer": "Esprimere il problema in termini di oggetti e relazioni matematiche"
+    },
+    {
+        "question": "Qual è un esempio di problema parametrico?",
+        "options": [
+            "Ordinare una sequenza di interi qualsiasi",
+            "Ordinare la sequenza 1, 5, 2",
+            "Calcolare 2+2",
+            "Trovare il massimo tra 3 e 4"
+        ],
+        "answer": "Ordinare una sequenza di interi qualsiasi"
+    },
+    {
+        "question": "Se un algoritmo richiede che n >= 1, questa è una:",
+        "options": [
+            "Pre-condizione",
+            "Post-condizione",
+            "Istruzione",
+            "Variabile"
+        ],
+        "answer": "Pre-condizione"
+    },
+    {
+        "question": "Se un algoritmo garantisce che Z è il massimo dell'insieme, questa è una:",
+        "options": [
+            "Post-condizione",
+            "Pre-condizione",
+            "Input",
+            "Errore"
+        ],
+        "answer": "Post-condizione"
+    },
+    {
+        "question": "Perché è utile specificare formalmente un problema?",
+        "options": [
+            "Per comprendere il problema e progettare l'algoritmo",
+            "Per perdere tempo",
+            "Per confondere il computer",
+            "Per usare più carta"
+        ],
+        "answer": "Per comprendere il problema e progettare l'algoritmo"
+    },
+    {
+        "question": "L'algoritmo MCD con sottrazioni successive (x-y) funziona se:",
+        "options": [
+            "x e y sono positivi",
+            "x è negativo",
+            "y è zero",
+            "x e y sono decimali"
+        ],
+        "answer": "x e y sono positivi"
+    },
+    {
+        "question": "Nell'algoritmo MCD, se inizializzo risultato = 1, sto assumendo che:",
+        "options": [
+            "1 è sempre un divisore comune",
+            "1 è il massimo comune divisore",
+            "1 è un numero primo",
+            "1 è pari"
+        ],
+        "answer": "1 è sempre un divisore comune"
+    },
+    {
+        "question": "Cosa fa l'istruzione 'se contatore divide x'?",
+        "options": [
+            "Verifica se il resto della divisione tra x e contatore è 0",
+            "Divide x per contatore",
+            "Moltiplica x per contatore",
+            "Sottrae contatore da x"
+        ],
+        "answer": "Verifica se il resto della divisione tra x e contatore è 0"
+    },
+    {
+        "question": "Un algoritmo che controlla tutti i numeri da 2 a min(x,y) per trovare il MCD è:",
+        "options": [
+            "Corretto ma potenzialmente lento",
+            "Sbagliato",
+            "Infinito",
+            "Ambiguo"
+        ],
+        "answer": "Corretto ma potenzialmente lento"
+    },
+    {
+        "question": "Se un algoritmo entra in un ciclo infinito, quale risorsa consuma indefinitamente?",
+        "options": [
+            "Tempo (CPU)",
+            "Memoria (RAM)",
+            "Disco fisso",
+            "Rete"
+        ],
+        "answer": "Tempo (CPU)"
+    },
+    {
+        "question": "La memoria necessaria per eseguire un algoritmo è una risorsa:",
+        "options": [
+            "Finita",
+            "Infinita",
+            "Trascurabile",
+            "Gratuita"
+        ],
+        "answer": "Finita"
+    },
+    {
+        "question": "Cosa si intende per 'efficienza nel caso medio'?",
+        "options": [
+            "Il comportamento dell'algoritmo su input tipici o casuali",
+            "Il comportamento nel caso peggiore",
+            "Il comportamento nel caso migliore",
+            "La media dei voti dell'algoritmo"
+        ],
+        "answer": "Il comportamento dell'algoritmo su input tipici o casuali"
+    },
+    {
+        "question": "Il problema della fermata chiede se:",
+        "options": [
+            "Un dato programma termina su un dato input",
+            "Un treno si ferma in stazione",
+            "Il computer si spegne",
+            "L'algoritmo è corretto"
+        ],
+        "answer": "Un dato programma termina su un dato input"
+    },
+    {
+        "question": "Perché non esistono algoritmi per problemi indecidibili?",
+        "options": [
+            "È dimostrato matematicamente",
+            "Perché i computer non sono abbastanza potenti",
+            "Perché nessuno ci ha provato",
+            "Perché sono problemi noiosi"
+        ],
+        "answer": "È dimostrato matematicamente"
+    },
+    {
+        "question": "Un algoritmo esponenziale diventa inutilizzabile:",
+        "options": [
+            "Al crescere della dimensione dell'input",
+            "Solo per input piccoli",
+            "Mai",
+            "Solo se il computer è vecchio"
+        ],
+        "answer": "Al crescere della dimensione dell'input"
+    },
+    {
+        "question": "Nell'algoritmo MCD che parte da min(x,y) e scende, il primo divisore comune trovato è:",
+        "options": [
+            "Il Massimo Comune Divisore",
+            "Un divisore qualsiasi",
+            "Il minimo comune multiplo",
+            "1"
+        ],
+        "answer": "Il Massimo Comune Divisore"
+    },
+    {
+        "question": "Perché partendo dall'alto (min(x,y)) e scendendo si trova subito il MCD?",
+        "options": [
+            "Perché stiamo cercando il 'Massimo', quindi il più grande possibile",
+            "Per caso",
+            "Perché è più facile sottrarre",
+            "Non è vero"
+        ],
+        "answer": "Perché stiamo cercando il 'Massimo', quindi il più grande possibile"
+    },
+    {
+        "question": "Cosa è una 'traccia' di esecuzione?",
+        "options": [
+            "Una tabella con i valori delle variabili passo dopo passo",
+            "Un disegno dell'algoritmo",
+            "Un errore nel codice",
+            "Il risultato finale"
+        ],
+        "answer": "Una tabella con i valori delle variabili passo dopo passo"
+    },
+    {
+        "question": "Se x=6, y=4, e l'algoritmo fa: min(6,4)=4. 4 divide 6? No. Decrementa a 3. 3 divide 6? Sì. 3 divide 4? No. Decrementa a 2. 2 divide 6? Sì. 2 divide 4? Sì. Output 2. Questo è un esempio di:",
+        "options": [
+            "Traccia di esecuzione",
+            "Errore di calcolo",
+            "Input non valido",
+            "Algoritmo ricorsivo"
+        ],
+        "answer": "Traccia di esecuzione"
+    },
+    {
+        "question": "Le istruzioni di controllo servono a gestire:",
+        "options": [
+            "La dinamicità dell'esecuzione",
+            "La grafica",
+            "Il suono",
+            "La stampa"
+        ],
+        "answer": "La dinamicità dell'esecuzione"
+    },
+    {
+        "question": "Un salto incondizionato:",
+        "options": [
+            "Esegue il salto sempre",
+            "Esegue il salto solo se una condizione è vera",
+            "Non esegue mai il salto",
+            "Chiede all'utente se saltare"
+        ],
+        "answer": "Esegue il salto sempre"
+    },
+    {
+        "question": "La programmazione strutturata mira a:",
+        "options": [
+            "Semplificare la comprensione e manutenzione del codice",
+            "Complicare il codice",
+            "Usare più GOTO possibile",
+            "Scrivere codice più corto possibile"
+        ],
+        "answer": "Semplificare la comprensione e manutenzione del codice"
+    },
+    {
+        "question": "L'istruzione 'fintanto che' (while) corrisponde a:",
+        "options": [
+            "Istruzione ripetitiva",
+            "Istruzione condizionale",
+            "Blocco",
+            "Salto incondizionato"
+        ],
+        "answer": "Istruzione ripetitiva"
+    },
+    {
+        "question": "L'istruzione 'se ... allora ...' corrisponde a:",
+        "options": [
+            "Istruzione condizionale",
+            "Istruzione ripetitiva",
+            "Blocco",
+            "Salto"
+        ],
+        "answer": "Istruzione condizionale"
+    },
+    {
+        "question": "Pseudo codice è:",
+        "options": [
+            "Una descrizione informale di un algoritmo ad alto livello",
+            "Un linguaggio compilabile",
+            "Un codice segreto",
+            "Un virus"
+        ],
+        "answer": "Una descrizione informale di un algoritmo ad alto livello"
+    },
+    {
+        "question": "Un diagramma a blocchi usa forme geometriche per:",
+        "options": [
+            "Rappresentare tipi diversi di istruzioni",
+            "Abbellire il documento",
+            "Occupare spazio",
+            "Fare disegni artistici"
+        ],
+        "answer": "Rappresentare tipi diversi di istruzioni"
+    },
+    {
+        "question": "Quale forma geometrica rappresenta l'inizio o la fine in un diagramma a blocchi?",
+        "options": [
+            "Ovale (o rettangolo arrotondato)",
+            "Rombo",
+            "Rettangolo",
+            "Parallelogramma"
+        ],
+        "answer": "Ovale (o rettangolo arrotondato)"
+    },
+    {
+        "question": "Quale forma geometrica rappresenta l'input/output in un diagramma a blocchi?",
+        "options": [
+            "Parallelogramma",
+            "Rombo",
+            "Rettangolo",
+            "Cerchio"
+        ],
+        "answer": "Parallelogramma"
+    },
+    {
+        "question": "La complessità di un algoritmo si misura spesso con la notazione:",
+        "options": [
+            "O-grande (Big O)",
+            "Piccolo principe",
+            "Numeri romani",
+            "Percentuale"
+        ],
+        "answer": "O-grande (Big O)"
+    },
+    {
+        "question": "Un algoritmo con complessità costante O(1):",
+        "options": [
+            "Impiega lo stesso tempo indipendentemente dall'input",
+            "Impiega 1 secondo",
+            "Impiega 1 minuto",
+            "Non termina mai"
+        ],
+        "answer": "Impiega lo stesso tempo indipendentemente dall'input"
+    },
+    {
+        "question": "Un algoritmo con complessità lineare O(n):",
+        "options": [
+            "Il tempo cresce linearmente con la dimensione dell'input",
+            "Il tempo è sempre costante",
+            "Il tempo cresce esponenzialmente",
+            "Il tempo diminuisce"
+        ],
+        "answer": "Il tempo cresce linearmente con la dimensione dell'input"
+    },
+    {
+        "question": "Qual è il vantaggio di usare il completamento automatico nel prompt dei comandi (Tab)?",
+        "options": [
+            "Evita errori di digitazione e velocizza la scrittura",
+            "Fa sembrare più esperti",
+            "Cancella il disco",
+            "Apre il browser"
+        ],
+        "answer": "Evita errori di digitazione e velocizza la scrittura"
+    },
+    {
+        "question": "Il comando 'cd ..' serve a:",
+        "options": [
+            "Risalire alla cartella genitore",
+            "Entrare in una cartella",
+            "Cancellare una cartella",
+            "Creare una cartella"
+        ],
+        "answer": "Risalire alla cartella genitore"
+    },
+    {
+        "question": "Il comando 'dir' (Windows) o 'ls' (Mac/Linux) serve a:",
+        "options": [
+            "Elencare il contenuto di una directory",
+            "Cancellare file",
+            "Copiare file",
+            "Spostare file"
+        ],
+        "answer": "Elencare il contenuto di una directory"
+    },
+    {
+        "question": "Per compilare un file C con gcc si usa:",
+        "options": [
+            "gcc -o nomeeseguibile nomefile.c",
+            "run nomefile.c",
+            "compile nomefile.c",
+            "start nomefile.c"
+        ],
+        "answer": "gcc -o nomeeseguibile nomefile.c"
+    },
+    {
+        "question": "Se non specifico '-o nomefile' con gcc, come si chiamerà l'eseguibile?",
+        "options": [
+            "a.exe (o a.out)",
+            "programma.exe",
+            "test.exe",
+            "nulla.exe"
+        ],
+        "answer": "a.exe (o a.out)"
+    },
+    {
+        "question": "Per eseguire un programma 'prog.exe' da prompt si digita:",
+        "options": [
+            "prog.exe (o ./prog su Mac/Linux)",
+            "run prog",
+            "start prog",
+            "esegui prog"
+        ],
+        "answer": "prog.exe (o ./prog su Mac/Linux)"
+    },
+    {
+        "question": "Il prompt dei comandi è:",
+        "options": [
+            "Un'interfaccia a caratteri (CLI)",
+            "Un'interfaccia grafica (GUI)",
+            "Un browser web",
+            "Un editor di testo"
+        ],
+        "answer": "Un'interfaccia a caratteri (CLI)"
+    },
+    {
+        "question": "Quale tasto si usa per l'autocompletamento nel prompt?",
+        "options": [
+            "Tab",
+            "Invio",
+            "Spazio",
+            "Esc"
+        ],
+        "answer": "Tab"
+    },
+    {
+        "question": "Cosa indica il percorso 'C:\\Users\\Utente'?",
+        "options": [
+            "Una posizione nel file system",
+            "Un indirizzo web",
+            "Una password",
+            "Un comando"
+        ],
+        "answer": "Una posizione nel file system"
+    },
+    {
+        "question": "Se scrivo 'cd Documenti' e premo Invio:",
+        "options": [
+            "Cambio la directory corrente in 'Documenti'",
+            "Apro il file Documenti",
+            "Cancello Documenti",
+            "Stampo Documenti"
+        ],
+        "answer": "Cambio la directory corrente in 'Documenti'"
+    },
+    {
+        "question": "Cosa succede se scrivo un comando sbagliato nel prompt?",
+        "options": [
+            "Viene mostrato un messaggio di errore",
+            "Il computer esplode",
+            "Si formatta il disco",
+            "Si spegne il monitor"
+        ],
+        "answer": "Viene mostrato un messaggio di errore"
+    },
+    {
+        "question": "Il comando 'gcc' è:",
+        "options": [
+            "Un compilatore per il linguaggio C",
+            "Un editor di testo",
+            "Un gioco",
+            "Un antivirus"
+        ],
+        "answer": "Un compilatore per il linguaggio C"
+    },
+    {
+        "question": "Un file con estensione .c contiene:",
+        "options": [
+            "Codice sorgente C",
+            "Un'immagine",
+            "Un video",
+            "Musica"
+        ],
+        "answer": "Codice sorgente C"
+    },
+    {
+        "question": "Un file con estensione .exe è:",
+        "options": [
+            "Un file eseguibile (Windows)",
+            "Un file di testo",
+            "Un file audio",
+            "Una cartella"
+        ],
+        "answer": "Un file eseguibile (Windows)"
+    },
+    {
+        "question": "La compilazione trasforma:",
+        "options": [
+            "Il codice sorgente in codice macchina (eseguibile)",
+            "Il codice macchina in codice sorgente",
+            "Il testo in immagini",
+            "I numeri in lettere"
+        ],
+        "answer": "Il codice sorgente in codice macchina (eseguibile)"
+    },
+    {
+        "question": "Se il compilatore trova errori nel codice:",
+        "options": [
+            "Non genera l'eseguibile e mostra gli errori",
+            "Genera comunque l'eseguibile",
+            "Corregge gli errori da solo",
+            "Cancella il file sorgente"
+        ],
+        "answer": "Non genera l'eseguibile e mostra gli errori"
+    },
+    {
+        "question": "Cosa significa 'debug'?",
+        "options": [
+            "Il processo di individuazione e correzione degli errori",
+            "Installare un programma",
+            "Comprare un computer nuovo",
+            "Scrivere codice velocemente"
+        ],
+        "answer": "Il processo di individuazione e correzione degli errori"
+    },
+    {
+        "question": "Un algoritmo deterministico:",
+        "options": [
+            "Produce sempre lo stesso output per lo stesso input",
+            "Produce output casuali",
+            "Non produce output",
+            "Cambia ogni volta"
+        ],
+        "answer": "Produce sempre lo stesso output per lo stesso input"
+    }
+]

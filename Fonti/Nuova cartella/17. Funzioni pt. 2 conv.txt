@@ -1,0 +1,236 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Meccanica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Funzioni – Parte II
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Main
+
+mainè una funzione! Ha prototipo	oppure
+oppure	. Il significato del parametro char **argv diverrà chiaro dopo aver parlato di array.
+•   E' una funzione speciale in quanto viene invocata all'avvio di un programma. Ovvero quando si richiede al sistema operativo l'esecuzione di un programma, il sistema operativo invoca la funzione maindi quel programma.
+•   La funzione mainpuò anche essere invocata «normalmente»
+Controllo
+
+Durante l'esecuzione di un'applicazione viene eseguita una istruzione alla volta. Quindi solo una funzione è effettivamente in esecuzione:
+
+
+
+si dice che quella funzione ha il controllo,
+in quanto il processore sta eseguendo le sue istruzioni.
+
+
+
+Tutte le altre funzioni di quel programma la cui esecuzione è iniziata, ma tali che il processore sta attualmente eseguendo istruzioni di un'altra funzione dello stesso programma, sono in attesa di riprendere il controllo.
+Controllo
+
+Quando è in esecuzione un'istruzione di una funzione f che contiene l'invocazione di una funzione g, allora f cede il controllo a g e il sistema operativo inizia l'esecuzione delle istruzioni di g, mentre f si pone in attesa di riprendere il controllo.
+
+
+
+f otterrà nuovamente il controllo quando l'esecuzione di g sarà terminata. Infatti quando termina l'esecuzione delle istruzioni di g, g restituisce il controllo a f. L'esecuzione di f riprende dal punto in cui si era interrotta, ovvero dall'istruzione che contiene l'invocazione a g.
+Attivazione
+
+L'attivazione di una funzione è il periodo dell'esecuzione che va dal momento in cui la funzione viene invocata fino alla sua terminazione.
+
+
+
+Mentre è attiva, una funzione può essere in esecuzione o in attesa, ovvero può avere il controllo oppure no.
+Controllo nel Programma MCD
+Diagramma di Sequenza
+Variabili Automatiche
+
+L'allocazione e deallocazione di variabili locali (inclusi gli array) avviene in maniera automatica.
+
+
+
+La vita di una variabile inizia nel momento in cui la variabile viene dichiarata e termina nel momento in cui la variabile non è più visibile - tipicamente quando termina l'esecuzione della funzione nella quale la variabile è stata dichiarata.
+
+
+
+Lo spazio nel quale vengono salvate tali variabili si chiama stack.
+
+
+
+La dimensione di una variabile automatica deve essere nota in fase di compilazione (ad eccezione degli array la cui lunghezza è il valore di un'altra variabile).
+Aree di Memoria In fase di esecuzione una applicazione viene associata a diverse aree di memoria centrale che ne permettono il funzionamento.
+
+
+
+
+
+
+
+...
+
+L'area di memoria riservata a codice + variabili globali + stack non cresce durante l'esecuzione del programma
+
+
+
+
+
+Variabili locali e altre informazioni relative alle attivazioni di singole funzioni
+
+Variabili visibili in tutto il programma
+
+
+Istruzioni
+Stack Anche detto pila, è una parte della memoria centrale strutturata in record di attivazione o stack frames.
+
+
+Un record di attivazione contiene le informazioni necessarie all'esecuzione di una attivazione di una funzione, tra cui le variabili locali della funzione. Durante l'esecuzione di un programma, per ogni funzione attiva (ovvero che è stata invocata ma la cui esecuzione non è terminata), lo stack contiene un record di attivazione.
+
+
+
+Situazione dello stack durante l'esecuzione
+di una funzione printf, che è stata invocata da una funzione f, che è stata invocata da
+una funzione main.
+Stack: Funzionamento
+
+Quando viene invocata una funzione, viene allocato un record di attivazione in cima allo stack.
+
+
+
+Quando termina l'esecuzione di una attivazione di una funzione, viene deallocato il corrispondente record di attivazione dallo stack.
+
+
+
+Durante ogni momento dell'esecuzione di un programma, il record di attivazione in cima allo stack corrisponde all'attivazione di funzione che è attualmente in esecuzione.
+Stack: Evoluzione
+Stack Overflow
+
+I record di attivazione vengono allocati nello stack durante l'esecuzione del programma.
+
+
+
+La dimensione dello stack viene decisa in fase di compilazione e non può essere modificata durante l'esecuzione del programma.
+
+
+
+L'attivazione di un numero eccessivo di funzioni o la richiesta di una quantità di memoria eccessiva da parte delle singole funzioni (ad esempio, una variabile locale array con 106 elementi) porta al superamento della capacita dello stack. Questa eventualità genera un runtime error noto come stack overflow, che comporta la terminazione dell'esecuzione del programma.
+Nomi delle funzioni Un programma non può contenere due funzioni con lo stesso nome, anche se hanno un prototipo diverso, altrimenti viene generato un errore.
+Ordine delle funzioni La definizione di una funzione dovrebbe precedere la sua invocazione, altrimenti viene generato un warning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ma un ordine in cui ogni invocazione di ciascuna funzione segue la definizione della funzione stessa non esiste sempre ...
+Dichiarazione di Funzioni Il linguaggio C dà la possibilità di dichiarare una funzione (ovvero di dichiarare l'intenzione di definire una funzione) prima della definizione della funzione stessa.
+
+
+Per dichiarare una funzione si segue la seguente sintassi:
+prototipo; ovvero:
+tipo_ritorno nome_funzione (tipo_par1 par1,..., tipo_park park);
+Funzioni di Libreria
+
+Insieme di funzioni predefinite organizzate in librerie. Sono funzioni che il linguaggio mette a disposizione del programmatore.
+
+
+
+Per poter utilizzare tali funzioni, è necessario importare i corrispondenti file di intestazione (header files con estensione .h).
+
+
+
+Osserva: a differenza delle funzioni definite da noi, utilizziamo le funzioni di sistema come una scatola nera, di cui non conosciamo il funzionamento interno ma solo la maniera in cui possono essere utilizzate, ovvero che tipo di valori vogliono come parametri e che tipo di valore restituiscono.
+Alcune Librerie
+
+
+stdio.h
+
+
+
+stdlib.h
+
+
+
+math.h
+
+
+
+string.h
+
+funzioni di input/output
+
+
+
+funzioni di utilità generale
+
+
+
+funzioni matematiche
+
+
+
+funzioni su stringhe
+
+printf, scanf, getchar, fprintf, fclose, ...
+
+
+
+abs, rand, exit, malloc, free, ...
+
+
+
+sin, sqrt, tan, ceil, exp, log, pow, atoi, ...
+
+
+
+strcpy, strcat, strcmp, ...
+Finalmente Capiamo Tutto il Primo Programma
+Stampa Numeri Perfetti
+
+Realizzare un’applicazione StampaPerfettiche legge un intero e stampa tutti i numeri perfetti compresi fra 1 e il numero letto. Un numero si dice perfetto se è uguale alla somma dei suoi divisori diversi da se stesso. Ad esempio 6 è un numero perfetto in quanto i suoi divisori sono 1, 2, 3, 6 e vale 6=1+2+3.
+Soluzione 1
+Soluzione 2
+Soluzione 3
+Perché Usiamo le Funzioni
+
+Nonostante sia possibile scrivere tutto il codice sorgente di una applicazione all'interno della funzione main, è preferibile strutturare un programma in diverse funzioni (sottoprogrammi), ciascuno dei quali è responsabile di uno specifico compito che l'intero programma deve assolvere.
+
+
+
+Questa metodologia di programmazione si chiama programmazione modulare: il programma è suddiviso in moduli (sottoprogrammi o funzioni), ciascuno dei quali svolge determinati compiti.
+Vantaggi Progammazione Modulare
+
+•   Riusabilità: la stessa funzione può essere utilizzata in diversi programmi (semplicemente invocandola) senza dover riscrivere lo stesso codice più volte.
+
+
+
+•   Testabilità: è più semplice verificare il corretto funzionamento (e nel caso individuare gli errori) di tante piccole funzioni che di una grande funzione.
+
+
+
+•   Sviluppo separato: gli sviluppatori del software possono lavorare indipendentemente su diverse porzioni del programma.
+Altre risorse •  Bellini, Guidi: Linguaggio C — 4.10.2, 5.5, 11.1-11.9, 23.7, App. B

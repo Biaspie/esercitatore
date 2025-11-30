@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "HTTP Status Code 200:",
+        "options": [
+            "OK (Successo)",
+            "Errore",
+            "Not Found",
+            "Nulla"
+        ],
+        "answer": "OK (Successo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "HTTP Status Code 404:",
+        "options": [
+            "Not Found (Risorsa non trovata)",
+            "OK",
+            "Errore Server",
+            "Nulla"
+        ],
+        "answer": "Not Found (Risorsa non trovata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "HTTP Status Code 500:",
+        "options": [
+            "Internal Server Error (Errore generico lato server)",
+            "OK",
+            "Not Found",
+            "Nulla"
+        ],
+        "answer": "Internal Server Error (Errore generico lato server)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Autenticazione vs Autorizzazione:",
+        "options": [
+            "Autenticazione: chi sei? (Login). Autorizzazione: cosa puoi fare? (Permessi).",
+            "Sono uguali",
+            "Inverso",
+            "Nulla"
+        ],
+        "answer": "Autenticazione: chi sei? (Login). Autorizzazione: cosa puoi fare? (Permessi)."
+    },
+    {
+        "category": "Informatica",
+        "question": "OAuth 2.0:",
+        "options": [
+            "Standard per l'autorizzazione (es. Login with Google)",
+            "Autenticazione",
+            "Cifratura",
+            "Nulla"
+        ],
+        "answer": "Standard per l'autorizzazione (es. Login with Google)"
+    },
+    {
+        "category": "Informatica",
+        "question": "JWT (JSON Web Token):",
+        "options": [
+            "Standard per creare token di accesso sicuri e compatti (usato in autenticazione stateless)",
+            "Cookie",
+            "Sessione",
+            "Nulla"
+        ],
+        "answer": "Standard per creare token di accesso sicuri e compatti (usato in autenticazione stateless)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Microkernel:",
+        "options": [
+            "Kernel minimale che implementa solo le funzioni base (IPC, scheduling), il resto gira in user space",
+            "Kernel monolitico",
+            "Kernel ibrido",
+            "Nulla"
+        ],
+        "answer": "Kernel minimale che implementa solo le funzioni base (IPC, scheduling), il resto gira in user space"
+    },
+    {
+        "category": "Informatica",
+        "question": "Monolithic Kernel:",
+        "options": [
+            "Kernel che include tutti i driver e servizi nello stesso spazio di memoria (es. Linux classico)",
+            "Microkernel",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Kernel che include tutti i driver e servizi nello stesso spazio di memoria (es. Linux classico)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Scheduler:",
+        "options": [
+            "Componente del SO che decide quale processo eseguire sulla CPU",
+            "Memoria",
+            "Disco",
+            "Nulla"
+        ],
+        "answer": "Componente del SO che decide quale processo eseguire sulla CPU"
+    },
+    {
+        "category": "Informatica",
+        "question": "Round Robin (Scheduling):",
+        "options": [
+            "Algoritmo di scheduling che assegna a ogni processo un quanto di tempo a rotazione",
+            "FIFO",
+            "Priorità",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di scheduling che assegna a ogni processo un quanto di tempo a rotazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Paging (Memoria virtuale):",
+        "options": [
+            "Tecnica che divide la memoria in pagine di dimensione fissa per gestire la memoria virtuale",
+            "Segmentazione",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Tecnica che divide la memoria in pagine di dimensione fissa per gestire la memoria virtuale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Swapping:",
+        "options": [
+            "Spostare processi (o pagine) dalla RAM al disco (swap area) quando la memoria è piena",
+            "Paging",
+            "Caching",
+            "Nulla"
+        ],
+        "answer": "Spostare processi (o pagine) dalla RAM al disco (swap area) quando la memoria è piena"
+    },
+    {
+        "category": "Informatica",
+        "question": "Thrashing:",
+        "options": [
+            "Situazione in cui il sistema passa più tempo a fare swapping che a eseguire processi (performance crollano)",
+            "Crash",
+            "Velocità",
+            "Nulla"
+        ],
+        "answer": "Situazione in cui il sistema passa più tempo a fare swapping che a eseguire processi (performance crollano)"
+    },
+    {
+        "category": "Informatica",
+        "question": "File Descriptor:",
+        "options": [
+            "Intero non negativo che identifica un file aperto (o socket) nel sistema operativo",
+            "Nome file",
+            "Puntatore",
+            "Nulla"
+        ],
+        "answer": "Intero non negativo che identifica un file aperto (o socket) nel sistema operativo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Standard Streams (stdin, stdout, stderr):",
+        "options": [
+            "Canali di I/O predefiniti (0: input, 1: output, 2: errore)",
+            "File",
+            "Socket",
+            "Nulla"
+        ],
+        "answer": "Canali di I/O predefiniti (0: input, 1: output, 2: errore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Buffer Overflow Attack:",
+        "options": [
+            "Sfruttare un buffer overflow per sovrascrivere l'indirizzo di ritorno nello stack ed eseguire codice arbitrario",
+            "Attacco rete",
+            "Virus",
+            "Nulla"
+        ],
+        "answer": "Sfruttare un buffer overflow per sovrascrivere l'indirizzo di ritorno nello stack ed eseguire codice arbitrario"
+    },
+    {
+        "category": "Informatica",
+        "question": "Canary (Stack Canary):",
+        "options": [
+            "Valore segreto inserito nello stack prima dell'indirizzo di ritorno per rilevare buffer overflow",
+            "Uccello",
+            "Virus",
+            "Nulla"
+        ],
+        "answer": "Valore segreto inserito nello stack prima dell'indirizzo di ritorno per rilevare buffer overflow"
+    },
+    {
+        "category": "Informatica",
+        "question": "ASLR (Address Space Layout Randomization):",
+        "options": [
+            "Tecnica di sicurezza che casualizza le posizioni di memoria (stack, heap, lib) per rendere difficili gli exploit",
+            "Random",
+            "Sicurezza",
+            "Nulla"
+        ],
+        "answer": "Tecnica di sicurezza che casualizza le posizioni di memoria (stack, heap, lib) per rendere difficili gli exploit"
+    },
+    {
+        "category": "Informatica",
+        "question": "DEP / NX bit:",
+        "options": [
+            "Data Execution Prevention (impedisce l'esecuzione di codice in aree dati come stack/heap)",
+            "Sicurezza",
+            "Bit",
+            "Nulla"
+        ],
+        "answer": "Data Execution Prevention (impedisce l'esecuzione di codice in aree dati come stack/heap)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sandbox:",
+        "options": [
+            "Ambiente isolato in cui eseguire codice non fidato senza rischi per il sistema ospite",
+            "Sabbia",
+            "Box",
+            "Nulla"
+        ],
+        "answer": "Ambiente isolato in cui eseguire codice non fidato senza rischi per il sistema ospite"
+    },
+    {
+        "category": "Informatica",
+        "question": "Virtual Machine (VM):",
+        "options": [
+            "Emulazione completa di un computer (hardware virtuale) su cui gira un OS ospite",
+            "Container",
+            "Sandbox",
+            "Nulla"
+        ],
+        "answer": "Emulazione completa di un computer (hardware virtuale) su cui gira un OS ospite"
+    },
+    {
+        "category": "Informatica",
+        "question": "Hypervisor:",
+        "options": [
+            "Software che crea e gestisce le macchine virtuali (VMM)",
+            "Supervisore",
+            "Kernel",
+            "Nulla"
+        ],
+        "answer": "Software che crea e gestisce le macchine virtuali (VMM)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Docker vs VM:",
+        "options": [
+            "Docker condivide il kernel dell'host (più leggero). VM ha il suo kernel (più pesante, isolamento forte).",
+            "Sono uguali",
+            "Docker è più pesante",
+            "Nulla"
+        ],
+        "answer": "Docker condivide il kernel dell'host (più leggero). VM ha il suo kernel (più pesante, isolamento forte)."
+    },
+    {
+        "category": "Informatica",
+        "question": "Kubernetes (K8s):",
+        "options": [
+            "Sistema di orchestrazione per container (gestione deployment, scaling, failover)",
+            "Docker",
+            "Cloud",
+            "Nulla"
+        ],
+        "answer": "Sistema di orchestrazione per container (gestione deployment, scaling, failover)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Blockchain:",
+        "options": [
+            "Registro distribuito e immutabile di transazioni (blocchi concatenati crittograficamente)",
+            "Bitcoin",
+            "Catena",
+            "Nulla"
+        ],
+        "answer": "Registro distribuito e immutabile di transazioni (blocchi concatenati crittograficamente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Smart Contract:",
+        "options": [
+            "Programma eseguito su blockchain che applica automaticamente i termini di un contratto",
+            "Contratto",
+            "Legge",
+            "Nulla"
+        ],
+        "answer": "Programma eseguito su blockchain che applica automaticamente i termini di un contratto"
+    },
+    {
+        "category": "Informatica",
+        "question": "IoT (Internet of Things):",
+        "options": [
+            "Rete di oggetti fisici (dispositivi) connessi a internet che scambiano dati",
+            "Internet",
+            "Cose",
+            "Nulla"
+        ],
+        "answer": "Rete di oggetti fisici (dispositivi) connessi a internet che scambiano dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Edge Computing:",
+        "options": [
+            "Elaborazione dati vicino alla fonte (ai bordi della rete) invece che nel cloud centralizzato (riduce latenza)",
+            "Cloud",
+            "Fog",
+            "Nulla"
+        ],
+        "answer": "Elaborazione dati vicino alla fonte (ai bordi della rete) invece che nel cloud centralizzato (riduce latenza)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Big Data:",
+        "options": [
+            "Insiemi di dati così grandi e complessi da richiedere strumenti avanzati per l'analisi (Volume, Velocità, Varietà)",
+            "Database",
+            "Excel",
+            "Nulla"
+        ],
+        "answer": "Insiemi di dati così grandi e complessi da richiedere strumenti avanzati per l'analisi (Volume, Velocità, Varietà)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Data Mining:",
+        "options": [
+            "Processo di estrazione di informazioni utili (pattern) da grandi dataset",
+            "Miniera",
+            "Dati",
+            "Nulla"
+        ],
+        "answer": "Processo di estrazione di informazioni utili (pattern) da grandi dataset"
+    },
+    {
+        "category": "Informatica",
+        "question": "Machine Learning (ML):",
+        "options": [
+            "Sottoinsieme dell'IA che permette ai sistemi di apprendere dai dati senza essere esplicitamente programmati",
+            "AI",
+            "Robot",
+            "Nulla"
+        ],
+        "answer": "Sottoinsieme dell'IA che permette ai sistemi di apprendere dai dati senza essere esplicitamente programmati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Deep Learning:",
+        "options": [
+            "ML basato su reti neurali artificiali profonde (molti strati)",
+            "ML",
+            "AI",
+            "Nulla"
+        ],
+        "answer": "ML basato su reti neurali artificiali profonde (molti strati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Rete Neurale:",
+        "options": [
+            "Modello computazionale ispirato al cervello umano (neuroni, sinapsi)",
+            "Rete",
+            "Cervello",
+            "Nulla"
+        ],
+        "answer": "Modello computazionale ispirato al cervello umano (neuroni, sinapsi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "NLP (Natural Language Processing):",
+        "options": [
+            "Campo dell'IA che si occupa dell'interazione tra computer e linguaggio umano",
+            "Lingua",
+            "Parole",
+            "Nulla"
+        ],
+        "answer": "Campo dell'IA che si occupa dell'interazione tra computer e linguaggio umano"
+    },
+    {
+        "category": "Informatica",
+        "question": "Computer Vision:",
+        "options": [
+            "Campo dell'IA che permette ai computer di 'vedere' e interpretare immagini/video",
+            "Visione",
+            "Occhi",
+            "Nulla"
+        ],
+        "answer": "Campo dell'IA che permette ai computer di 'vedere' e interpretare immagini/video"
+    },
+    {
+        "category": "Informatica",
+        "question": "Realtà Aumentata (AR):",
+        "options": [
+            "Sovrapposizione di elementi digitali al mondo reale (es. Pokémon GO)",
+            "VR",
+            "Realtà",
+            "Nulla"
+        ],
+        "answer": "Sovrapposizione di elementi digitali al mondo reale (es. Pokémon GO)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Realtà Virtuale (VR):",
+        "options": [
+            "Ambiente simulato completamente digitale in cui l'utente è immerso",
+            "AR",
+            "Realtà",
+            "Nulla"
+        ],
+        "answer": "Ambiente simulato completamente digitale in cui l'utente è immerso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quantum Computing:",
+        "options": [
+            "Calcolo basato sulla meccanica quantistica (qubit, sovrapposizione, entanglement)",
+            "Computer veloce",
+            "Fisica",
+            "Nulla"
+        ],
+        "answer": "Calcolo basato sulla meccanica quantistica (qubit, sovrapposizione, entanglement)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qubit:",
+        "options": [
+            "Unità fondamentale di informazione quantistica (può essere 0, 1 o sovrapposizione)",
+            "Bit",
+            "Byte",
+            "Nulla"
+        ],
+        "answer": "Unità fondamentale di informazione quantistica (può essere 0, 1 o sovrapposizione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Entanglement:",
+        "options": [
+            "Fenomeno quantistico dove due particelle rimangono connesse istantaneamente a distanza",
+            "Legame",
+            "Rete",
+            "Nulla"
+        ],
+        "answer": "Fenomeno quantistico dove due particelle rimangono connesse istantaneamente a distanza"
+    },
+    {
+        "category": "Informatica",
+        "question": "5G:",
+        "options": [
+            "Quinta generazione di tecnologia cellulare (alta velocità, bassa latenza, IoT)",
+            "4G",
+            "Wifi",
+            "Nulla"
+        ],
+        "answer": "Quinta generazione di tecnologia cellulare (alta velocità, bassa latenza, IoT)"
+    },
+    {
+        "category": "Informatica",
+        "question": "NFC (Near Field Communication):",
+        "options": [
+            "Tecnologia wireless a corto raggio (es. pagamenti contactless)",
+            "Bluetooth",
+            "Wifi",
+            "Nulla"
+        ],
+        "answer": "Tecnologia wireless a corto raggio (es. pagamenti contactless)"
+    },
+    {
+        "category": "Informatica",
+        "question": "RFID:",
+        "options": [
+            "Identificazione a radiofrequenza (tag passivi/attivi)",
+            "NFC",
+            "Barcode",
+            "Nulla"
+        ],
+        "answer": "Identificazione a radiofrequenza (tag passivi/attivi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Bluetooth Low Energy (BLE):",
+        "options": [
+            "Versione di Bluetooth ottimizzata per basso consumo energetico (IoT, wearable)",
+            "Bluetooth",
+            "Wifi",
+            "Nulla"
+        ],
+        "answer": "Versione di Bluetooth ottimizzata per basso consumo energetico (IoT, wearable)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Zigbee:",
+        "options": [
+            "Protocollo wireless per reti mesh a basso consumo (domotica)",
+            "Wifi",
+            "Bluetooth",
+            "Nulla"
+        ],
+        "answer": "Protocollo wireless per reti mesh a basso consumo (domotica)"
+    },
+    {
+        "category": "Informatica",
+        "question": "MQTT:",
+        "options": [
+            "Protocollo di messaggistica leggero publish/subscribe (usato in IoT)",
+            "HTTP",
+            "FTP",
+            "Nulla"
+        ],
+        "answer": "Protocollo di messaggistica leggero publish/subscribe (usato in IoT)"
+    },
+    {
+        "category": "Informatica",
+        "question": "CoAP:",
+        "options": [
+            "Constrained Application Protocol (simile a HTTP ma per dispositivi vincolati/IoT)",
+            "HTTP",
+            "MQTT",
+            "Nulla"
+        ],
+        "answer": "Constrained Application Protocol (simile a HTTP ma per dispositivi vincolati/IoT)"
+    },
+    {
+        "category": "Informatica",
+        "question": "WebAssembly (Wasm):",
+        "options": [
+            "Formato binario per eseguire codice ad alte prestazioni nel browser (target per C++, Rust)",
+            "JS",
+            "HTML",
+            "Nulla"
+        ],
+        "answer": "Formato binario per eseguire codice ad alte prestazioni nel browser (target per C++, Rust)"
+    },
+    {
+        "category": "Informatica",
+        "question": "PWA (Progressive Web App):",
+        "options": [
+            "App web che si comporta come un'app nativa (offline, installabile, notifiche)",
+            "Sito",
+            "App nativa",
+            "Nulla"
+        ],
+        "answer": "App web che si comporta come un'app nativa (offline, installabile, notifiche)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Single Page Application (SPA):",
+        "options": [
+            "App web che carica una sola pagina HTML e aggiorna dinamicamente il contenuto (es. React, Angular)",
+            "Sito statico",
+            "Multi page",
+            "Nulla"
+        ],
+        "answer": "App web che carica una sola pagina HTML e aggiorna dinamicamente il contenuto (es. React, Angular)"
+    }
+]

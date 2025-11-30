@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore selvaggio (wild pointer)?",
+        "options": [
+            "Puntatore non inizializzato (punta a indirizzo casuale)",
+            "Puntatore nullo",
+            "Puntatore valido",
+            "Nulla"
+        ],
+        "answer": "Puntatore non inizializzato (punta a indirizzo casuale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché inizializzare i puntatori a NULL?",
+        "options": [
+            "Per evitare wild pointers e facilitare controlli (if p != NULL)",
+            "Per occupare memoria",
+            "Per errore",
+            "Per nulla"
+        ],
+        "answer": "Per evitare wild pointers e facilitare controlli (if p != NULL)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un buffer overflow?",
+        "options": [
+            "Scrittura di dati oltre la dimensione allocata per un buffer (sovrascrive memoria adiacente)",
+            "Lettura dati",
+            "Errore disco",
+            "Nulla"
+        ],
+        "answer": "Scrittura di dati oltre la dimensione allocata per un buffer (sovrascrive memoria adiacente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Pericolo del buffer overflow:",
+        "options": [
+            "Crash, corruzione dati, vulnerabilità di sicurezza (es. esecuzione codice arbitrario)",
+            "Rallentamento",
+            "Nulla",
+            "Errore compilazione"
+        ],
+        "answer": "Crash, corruzione dati, vulnerabilità di sicurezza (es. esecuzione codice arbitrario)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Funzione sicura per stringhe (vs strcpy):",
+        "options": [
+            "strncpy (specifica dimensione massima)",
+            "strcpy",
+            "memcpy",
+            "Nulla"
+        ],
+        "answer": "strncpy (specifica dimensione massima)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Funzione sicura per input stringhe (vs gets):",
+        "options": [
+            "fgets (specifica dimensione buffer)",
+            "gets (deprecata/rimossa perché insicura)",
+            "scanf",
+            "Nulla"
+        ],
+        "answer": "fgets (specifica dimensione buffer)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Integer overflow:",
+        "options": [
+            "Risultato operazione intera supera il massimo valore rappresentabile (wrap around)",
+            "Errore float",
+            "Errore stringa",
+            "Nulla"
+        ],
+        "answer": "Risultato operazione intera supera il massimo valore rappresentabile (wrap around)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Comportamento undefined behavior (UB):",
+        "options": [
+            "Comportamento non specificato dallo standard (il compilatore può fare qualsiasi cosa, es. crash, funzionare, cancellare file)",
+            "Errore sintassi",
+            "Warning",
+            "Nulla"
+        ],
+        "answer": "Comportamento non specificato dallo standard (il compilatore può fare qualsiasi cosa, es. crash, funzionare, cancellare file)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio di UB:",
+        "options": [
+            "Dereferenziare puntatore nullo, divisione per zero, signed integer overflow, shift eccessivo",
+            "Somma",
+            "Stampa",
+            "Nulla"
+        ],
+        "answer": "Dereferenziare puntatore nullo, divisione per zero, signed integer overflow, shift eccessivo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sequence point:",
+        "options": [
+            "Punto nell'esecuzione in cui tutti gli effetti collaterali delle valutazioni precedenti devono essere completi",
+            "Punto e virgola",
+            "Virgola",
+            "Nulla"
+        ],
+        "answer": "Punto nell'esecuzione in cui tutti gli effetti collaterali delle valutazioni precedenti devono essere completi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio UB con sequence point:",
+        "options": [
+            "i = i++ (modifica la stessa variabile due volte senza sequence point intermedio)",
+            "i = i + 1",
+            "i++",
+            "Nulla"
+        ],
+        "answer": "i = i++ (modifica la stessa variabile due volte senza sequence point intermedio)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Analisi statica del codice:",
+        "options": [
+            "Analisi del sorgente senza esecuzione per trovare bug (es. cppcheck, clang-tidy)",
+            "Debugging",
+            "Compilazione",
+            "Nulla"
+        ],
+        "answer": "Analisi del sorgente senza esecuzione per trovare bug (es. cppcheck, clang-tidy)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Analisi dinamica del codice:",
+        "options": [
+            "Analisi durante l'esecuzione (es. Valgrind, AddressSanitizer)",
+            "Analisi statica",
+            "Compilazione",
+            "Nulla"
+        ],
+        "answer": "Analisi durante l'esecuzione (es. Valgrind, AddressSanitizer)"
+    },
+    {
+        "category": "Informatica",
+        "question": "AddressSanitizer (ASan):",
+        "options": [
+            "Strumento di compilazione (gcc -fsanitize=address) per rilevare errori di memoria a runtime",
+            "Debugger",
+            "Editor",
+            "Nulla"
+        ],
+        "answer": "Strumento di compilazione (gcc -fsanitize=address) per rilevare errori di memoria a runtime"
+    },
+    {
+        "category": "Informatica",
+        "question": "UndefinedSanitizer (UBSan):",
+        "options": [
+            "Rileva undefined behavior a runtime (gcc -fsanitize=undefined)",
+            "ASan",
+            "Valgrind",
+            "Nulla"
+        ],
+        "answer": "Rileva undefined behavior a runtime (gcc -fsanitize=undefined)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Race condition:",
+        "options": [
+            "Errore in programmi concorrenti/multithread dove il risultato dipende dall'ordine imprevedibile degli eventi",
+            "Gara di auto",
+            "Errore sintassi",
+            "Nulla"
+        ],
+        "answer": "Errore in programmi concorrenti/multithread dove il risultato dipende dall'ordine imprevedibile degli eventi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Deadlock:",
+        "options": [
+            "Situazione in cui due o più processi si bloccano a vicenda aspettando risorse possedute dall'altro",
+            "Blocco totale",
+            "Crash",
+            "Nulla"
+        ],
+        "answer": "Situazione in cui due o più processi si bloccano a vicenda aspettando risorse possedute dall'altro"
+    },
+    {
+        "category": "Informatica",
+        "question": "Heisenbug:",
+        "options": [
+            "Bug che scompare o cambia comportamento quando si cerca di studiarlo (es. attivando il debug)",
+            "Bug facile",
+            "Bug difficile",
+            "Nulla"
+        ],
+        "answer": "Bug che scompare o cambia comportamento quando si cerca di studiarlo (es. attivando il debug)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Off-by-one error (OBOE):",
+        "options": [
+            "Errore logico che coinvolge i limiti di un'iterazione (es. iterare n volte invece di n-1)",
+            "Errore sintassi",
+            "Errore memoria",
+            "Nulla"
+        ],
+        "answer": "Errore logico che coinvolge i limiti di un'iterazione (es. iterare n volte invece di n-1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Fencepost error:",
+        "options": [
+            "Tipo di off-by-one (es. contare i pali invece degli spazi in una staccionata)",
+            "Errore recinto",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Tipo di off-by-one (es. contare i pali invece degli spazi in una staccionata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Spaghetti code:",
+        "options": [
+            "Codice con flusso di controllo complesso e aggrovigliato (spesso per uso eccessivo di goto)",
+            "Codice buono",
+            "Codice pulito",
+            "Nulla"
+        ],
+        "answer": "Codice con flusso di controllo complesso e aggrovigliato (spesso per uso eccessivo di goto)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Refactoring:",
+        "options": [
+            "Ristrutturare il codice esistente senza cambiarne il comportamento esterno (migliorare leggibilità/manutenibilità)",
+            "Riscrivere tutto",
+            "Cambiare funzionalità",
+            "Nulla"
+        ],
+        "answer": "Ristrutturare il codice esistente senza cambiarne il comportamento esterno (migliorare leggibilità/manutenibilità)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Code review:",
+        "options": [
+            "Revisione del codice da parte di altri sviluppatori per trovare errori e migliorare la qualità",
+            "Compilazione",
+            "Test",
+            "Nulla"
+        ],
+        "answer": "Revisione del codice da parte di altri sviluppatori per trovare errori e migliorare la qualità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Pair programming:",
+        "options": [
+            "Due programmatori lavorano insieme allo stesso computer (uno scrive, l'altro controlla)",
+            "Lavorare da soli",
+            "Lavorare in remoto",
+            "Nulla"
+        ],
+        "answer": "Due programmatori lavorano insieme allo stesso computer (uno scrive, l'altro controlla)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Magic numbers:",
+        "options": [
+            "Numeri letterali nel codice senza spiegazione (cattiva pratica, usare costanti con nomi)",
+            "Numeri magici",
+            "Numeri fortunati",
+            "Nulla"
+        ],
+        "answer": "Numeri letterali nel codice senza spiegazione (cattiva pratica, usare costanti con nomi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Hardcoding:",
+        "options": [
+            "Inserire dati o parametri direttamente nel codice sorgente invece di leggerli da config/input",
+            "Codice difficile",
+            "Codice duro",
+            "Nulla"
+        ],
+        "answer": "Inserire dati o parametri direttamente nel codice sorgente invece di leggerli da config/input"
+    },
+    {
+        "category": "Informatica",
+        "question": "DRY principle:",
+        "options": [
+            "Don't Repeat Yourself (evitare duplicazione codice)",
+            "Do Repeat Yourself",
+            "Dry code",
+            "Nulla"
+        ],
+        "answer": "Don't Repeat Yourself (evitare duplicazione codice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "KISS principle:",
+        "options": [
+            "Keep It Simple, Stupid (mantenere il codice semplice)",
+            "Baciare",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Keep It Simple, Stupid (mantenere il codice semplice)"
+    },
+    {
+        "category": "Informatica",
+        "question": "YAGNI principle:",
+        "options": [
+            "You Aren't Gonna Need It (non implementare funzionalità finché non servono)",
+            "Nulla",
+            "Errore",
+            "Principio"
+        ],
+        "answer": "You Aren't Gonna Need It (non implementare funzionalità finché non servono)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Premature optimization:",
+        "options": [
+            "Ottimizzare il codice prima di sapere se è necessario (spesso peggiora leggibilità)",
+            "Ottimizzare subito",
+            "Ottimizzare mai",
+            "Nulla"
+        ],
+        "answer": "Ottimizzare il codice prima di sapere se è necessario (spesso peggiora leggibilità)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Profilazione (Profiling):",
+        "options": [
+            "Misurare le prestazioni del programma (tempo, memoria) per individuare colli di bottiglia",
+            "Debugging",
+            "Compilazione",
+            "Nulla"
+        ],
+        "answer": "Misurare le prestazioni del programma (tempo, memoria) per individuare colli di bottiglia"
+    },
+    {
+        "category": "Informatica",
+        "question": "Collo di bottiglia (Bottleneck):",
+        "options": [
+            "Parte del codice che limita le prestazioni complessive",
+            "Errore",
+            "Bottiglia",
+            "Nulla"
+        ],
+        "answer": "Parte del codice che limita le prestazioni complessive"
+    },
+    {
+        "category": "Informatica",
+        "question": "Big O notation:",
+        "options": [
+            "Notazione per descrivere la complessità asintotica (tempo/spazio) di un algoritmo",
+            "Grande O",
+            "Zero",
+            "Nulla"
+        ],
+        "answer": "Notazione per descrivere la complessità asintotica (tempo/spazio) di un algoritmo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Complessità costante O(1):",
+        "options": [
+            "Il tempo di esecuzione non dipende dalla dimensione dell'input",
+            "Tempo infinito",
+            "Tempo lineare",
+            "Nulla"
+        ],
+        "answer": "Il tempo di esecuzione non dipende dalla dimensione dell'input"
+    },
+    {
+        "category": "Informatica",
+        "question": "Complessità lineare O(n):",
+        "options": [
+            "Il tempo cresce linearmente con l'input (es. scansione array)",
+            "Tempo costante",
+            "Tempo quadratico",
+            "Nulla"
+        ],
+        "answer": "Il tempo cresce linearmente con l'input (es. scansione array)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Complessità quadratica O(n^2):",
+        "options": [
+            "Il tempo cresce col quadrato dell'input (es. doppio ciclo annidato)",
+            "Tempo lineare",
+            "Tempo costante",
+            "Nulla"
+        ],
+        "answer": "Il tempo cresce col quadrato dell'input (es. doppio ciclo annidato)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Complessità logaritmica O(log n):",
+        "options": [
+            "Il tempo cresce logaritmicamente (es. ricerca binaria)",
+            "Tempo lineare",
+            "Tempo esponenziale",
+            "Nulla"
+        ],
+        "answer": "Il tempo cresce logaritmicamente (es. ricerca binaria)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stack trace:",
+        "options": [
+            "Elenco delle chiamate di funzione attive in un determinato momento (utile per debug crash)",
+            "Traccia stack",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Elenco delle chiamate di funzione attive in un determinato momento (utile per debug crash)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dump esadecimale (Hex dump):",
+        "options": [
+            "Visualizzazione del contenuto di un file o memoria in esadecimale",
+            "Dump binario",
+            "Dump testo",
+            "Nulla"
+        ],
+        "answer": "Visualizzazione del contenuto di un file o memoria in esadecimale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Endianness:",
+        "options": [
+            "Ordine dei byte nella rappresentazione di dati multibyte (Big Endian vs Little Endian)",
+            "Fine",
+            "Inizio",
+            "Nulla"
+        ],
+        "answer": "Ordine dei byte nella rappresentazione di dati multibyte (Big Endian vs Little Endian)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Big Endian:",
+        "options": [
+            "Byte più significativo all'indirizzo più basso (prima)",
+            "Byte meno significativo prima",
+            "A caso",
+            "Nulla"
+        ],
+        "answer": "Byte più significativo all'indirizzo più basso (prima)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Little Endian:",
+        "options": [
+            "Byte meno significativo all'indirizzo più basso (prima)",
+            "Byte più significativo prima",
+            "A caso",
+            "Nulla"
+        ],
+        "answer": "Byte meno significativo all'indirizzo più basso (prima)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Portabilità del codice:",
+        "options": [
+            "Capacità di un programma di essere compilato ed eseguito su diverse piattaforme senza modifiche",
+            "Portare il codice",
+            "Codice mobile",
+            "Nulla"
+        ],
+        "answer": "Capacità di un programma di essere compilato ed eseguito su diverse piattaforme senza modifiche"
+    },
+    {
+        "category": "Informatica",
+        "question": "Standard C (ANSI C, C99, C11...):",
+        "options": [
+            "Specifiche ufficiali del linguaggio C per garantire portabilità",
+            "Versioni software",
+            "Compilatori",
+            "Nulla"
+        ],
+        "answer": "Specifiche ufficiali del linguaggio C per garantire portabilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Linter:",
+        "options": [
+            "Strumento che analizza il codice per segnalare errori stilistici, bug potenziali e violazioni di standard",
+            "Compilatore",
+            "Debugger",
+            "Nulla"
+        ],
+        "answer": "Strumento che analizza il codice per segnalare errori stilistici, bug potenziali e violazioni di standard"
+    },
+    {
+        "category": "Informatica",
+        "question": "Obfuscation (Offuscamento):",
+        "options": [
+            "Rendere il codice difficile da leggere/capire intenzionalmente (per protezione proprietà intellettuale)",
+            "Chiarire",
+            "Pulire",
+            "Nulla"
+        ],
+        "answer": "Rendere il codice difficile da leggere/capire intenzionalmente (per protezione proprietà intellettuale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Minification:",
+        "options": [
+            "Rimuovere spazi e commenti per ridurre dimensione file (comune in JS/CSS)",
+            "Compressione",
+            "Offuscamento",
+            "Nulla"
+        ],
+        "answer": "Rimuovere spazi e commenti per ridurre dimensione file (comune in JS/CSS)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Reverse engineering:",
+        "options": [
+            "Analizzare un sistema/software per capirne il funzionamento (spesso partendo dal binario)",
+            "Ingegneria inversa",
+            "Costruire",
+            "Nulla"
+        ],
+        "answer": "Analizzare un sistema/software per capirne il funzionamento (spesso partendo dal binario)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Decompilatore:",
+        "options": [
+            "Tenta di ricostruire il codice sorgente (o simile) dal codice macchina",
+            "Compilatore",
+            "Linker",
+            "Nulla"
+        ],
+        "answer": "Tenta di ricostruire il codice sorgente (o simile) dal codice macchina"
+    },
+    {
+        "category": "Informatica",
+        "question": "Disassemblatore:",
+        "options": [
+            "Traduce il codice macchina in assembly",
+            "Compilatore",
+            "Decompilatore",
+            "Nulla"
+        ],
+        "answer": "Traduce il codice macchina in assembly"
+    }
+]

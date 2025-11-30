@@ -1,0 +1,598 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Problemi e algoritmi – Parte II
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Previously… Specifica di un problema di ingresso-uscita
+
+Descrizione formale di un problema parametrico in termini di: •   dati di ingresso
+•   pre-condizioni •   dati di uscita
+•   post-condizioni
+
+
+
+Descrivere la specifica di un problema è un passo utile per comprendere il problema e poter quindi procedere alla progettazione di un algoritmo per risolvere il problema.
+Previously… Verso la progettazione
+
+
+
+
+Quali sono le caratteristiche che sono richieste al mio algoritmo ? Quali proprietà deve soddisfare ?
+Previously… Proprietà di un algoritmo
+
+
+
+
+
+•	Correttezza •	Finitezza
+•	Non ambiguità •	Eseguibilità
+•	…
+•	Efficienza
+Efficienza
+
+
+
+
+
+Un algoritmo (un programma) è tanto più efficiente quanto minori sono le risorse di calcolo di cui necessita per essere eseguito.
+
+
+
+Risorse:
+•	Tempo
+
+
+
+
+
+•	Memoria
+
+
+
+
+
+•	…
+Previously… Problema: MCD
+
+
+qTrovare il massimo comune divisore fra due interi •   dati di ingresso: due interi X e Y
+•   pre-condizione: X e Y sono interi maggiori di zero •   dati di uscita: un intero Z
+•   post- condizione: Z è un interno uguale al m.c.d. di X e Y
+
+
+
+
+
+qQ: un algoritmo per questo problema?
+Algoritmo per MCD
+
+
+1.   input (𝑥,𝑦)
+2.   inizializza risultato = min {𝑥,𝑦}
+3.   se risultato divide 𝑥 e risultato divide 𝑦, allora vai all'istruzione 5
+4.   decrementa risultato di 1 e torna all'istruzione 3
+5.   output (risultato)
+
+
+
+Q: E’ corretto? E’ finito?
+
+
+
+⇒ 1 ≤ 𝑚𝑐𝑑  𝑥,𝑦   ≤ 𝑚𝑖𝑛{𝑥,𝑦}, poiché 𝑥,𝑦 > 0
+
+
+
+⇒ nel range [1,min{𝑥,𝑦}] un numero più grande viene sempre verificato prima di uno più piccolo
+Previously… Programmazione strutturata
+
+
+Un programma si dice strutturato se utilizza solo le seguenti istruzioni di controllo:
+
+
+
+blocco - permette di eseguire una sequenza di istruzioni.
+
+
+
+istruzione condizionale - permette di determinare quale operazione deve essere eseguita in base al soddisfacimento di una condizione (istruzione di controllo decisionale o di selezione).
+
+
+
+istruzione ripetitiva - permette di eseguire ripetutamente un’istruzione fintanto che è soddisfatta una condizione (istruzione di controllo iterativo).
+Previously… Struttura l'algoritmo!
+
+
+1.   input (𝑥,𝑦)
+2.   inizializza risultato = min {𝑥,𝑦}
+3.   fintanto che (risultato non divide 𝑥 o risultato non divide 𝑦) decrementa risultato di 1
+4.   output (risultato)
+Previously… Esecuzione Flusso di esecuzione
+
+Sequenza di istruzioni che vengono eseguite quando un algoritmo viene applicato per risolvere una istanza del problema.
+
+
+
+Il flusso di esecuzione consiste di una sequenza di passi (un passo è l'esecuzione di una singola istruzione)
+•   Una stessa istruzione può essere eseguita più volte.
+
+
+
+Traccia del processo di esecuzione
+
+
+
+Tabella che mostra i valori assunti dalle variabili durante l'esecuzione.
+Come si scrive un algoritmo?
+
+
+
+
+
+
+•  pseudo codice
+•  diagramma a blocchi
+Pseudocodice o pseudocodifica
+
+
+qUn linguaggio intermedio fra un linguaggio naturale ed un linguaggio di programmazione. Non ha alcuna sintassi da rispettare.
+
+
+
+
+
+1.   input (𝑥,𝑦)
+2.   inizializza risultato = min {𝑥,𝑦}
+3.   fintanto che (risultato non divide 𝑥 o risultato non divide 𝑦) decrementa risultato di 1
+4.   output (risultato)
+Come si scrive un algoritmo? Diagramma a blocchi!
+
+
+Anche detto diagramma di flusso, è un modello grafico per rappresentare il flusso di esecuzione di un algoritmo.
+Diagramma a blocchi per algoritmo MCD
+
+
+
+
+
+
+
+
+
+
+1.   input (𝑥,𝑦)
+2.   inizializza risultato = min {𝑥,𝑦}
+3.   Fintanto che (risultato non divide 𝑥 o risultato non divide 𝑦) decrementa risultato di 1
+4.   output (risultato)
+Semantica diagramma a blocchi
+
+
+
+
+
+Le istruzioni sono rappresentate da poligoni:
+•   parallelogrammi per input e output •   rettangoli per le istruzioni
+•   rombi per i predicati
+
+
+
+
+
+
+La sequenza nella quale le istruzioni vanno eseguite è rappresentata da frecce di collegamento.
+Input e output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I parallelogrammi (a volte vengono invece usati i cerchi) indicano
+il punto di inizio dell'algoritmo (che coincide con l'acquisizione dell'input) ed il punto di fine dell'algoritmo (che coincide con la restituzione dell'output).
+Istruzione semplice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I rettangoli rappresentano le istruzioni semplici che l'algoritmo deve eseguire.
+Predicato
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I rombi rappresentano predicati (ovvero espressioni Booleane) che, a seconda se sono verificati oppure no, fanno proseguire il flusso di esecuzione su una freccia oppure un' altra.
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Esempio di esecuzione realoded
+Istruzioni di controllo?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L'istruzione risultato - - viene eseguita ripetutamente fintanto che è verificata la condizione (x % risultato ≠0 || y % risultato ≠0).
+Istruzioni di controllo
+
+
+qIstruzioni che permettono di controllare (nel senso di regolare, governare, dirigere) il flusso di esecuzione, ovvero quali istruzioni devono essere eseguite e in quale ordine.
+
+
+
+•   Normalmente le istruzioni che compongono un algoritmo vengono eseguite una dopo l'altra, nell’ordine in cui compaiono.
+
+
+
+•   Le istruzioni di controllo permettono di modificare l'ordine in cui le istruzioni di un algoritmo vengono eseguite.
+Blocco o sequenza
+
+
+
+
+
+
+
+
+
+
+Rappresenta: esegui istruzione1 , poi esegui istruzione2 , ... , poi esegui istruzionek.
+
+
+
+⇒ Serve quando: hai una sequenza di istruzioni che vuoi eseguire l'una dopo l'altra.
+Istruzione condizionale
+
+
+
+
+
+
+
+
+
+
+Rappresenta: se è vero il predicato, allora esegui istruzioneA, altrimenti esegui istruzioneB
+
+
+⇒ Serve quando: vuoi eseguire una istruzione solo al verificarsi di una condizione, altrimenti ne vuoi eseguire un'altra.
+Istruzione ripetitiva
+
+
+
+
+
+
+
+
+
+
+Rappresenta: fintanto che è vero il predicato, esegui istruzione
+
+
+⇒ Serve quando: vuoi eseguire ripetutamente la stessa istruzione fintanto che si verifica una condizione.
+Punti di ingresso e uscita
+Istruzioni strutturate
+
+
+Le istruzioni di controllo sono anche dette istruzioni strutturate, perché sono istruzioni che contengono al loro interno altre istruzioni, che a loro volta possono contenere al loro interno altre istruzioni ..., fino ad arrivare a delle istruzioni semplici (non strutturate), che non contengono al loro interno altre istruzioni (ad esempio istruzioni di assegnazione).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questa struttura annidata è resa possibile dal fatto che queste istruzioni hanno un solo punto di ingresso ed un solo punto di uscita.
+Annidamento istruzioni
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+Annidamento istruzioni
+Annidamento istruzioni
+Annidamento istruzioni
+Diversi algoritmi per lo stesso problema!
+
+
+
+
+
+E’ possibile progettare diversi algoritmi per risolvere lo stesso problema.
+
+
+
+Un algoritmo può essere più efficiente di un altro algoritmo per risolvere un problema.
+Un altro algoritmo per MCD Euclide 300 a.C.
+
+
+
+
+
+
+
+Assumiamo 𝑥 > 𝑦
+
+
+
+Teorema: Il MCD fra 𝑥 e 𝑦 è uguale al MCD fra 𝑦 e 𝑥%𝑦.
+Correttezza E’ sufficiente dimostrare il seguente:
+
+Teorema: siano 𝑥,𝑦,𝑞 e 𝑟 ∈ 𝑁! (ovvero interi positivi) tal che
+𝑥 = q ⋅ 𝑦 + 𝑟. Sia 𝑚 = 𝑀𝐶𝐷(𝑥,𝑦) e 𝑚′ = 𝑀𝐶𝐷(𝑦,𝑟) , allora 𝑚 = 𝑚".
+
+
+
+
+
+Dimostrazione:
+Per ipotesi 𝑚′ divide 𝑦 e 𝑟. Da 𝑥 = q ⋅ 𝑦 + 𝑟 segue che 𝑚′ divide 𝑥, quindi 𝑚′ divide 𝑥 e y ⇒ 𝑚" ≤ 𝑚
+
+
+
+Per ipotesi 𝑚 divide 𝑥 e y. Da r = 𝑥  − 𝑞 ⋅ 𝑦 segue che 𝑚 divide 𝑟, quindi 𝑚 divide y e r ⇒ 𝑚 ≤ 𝑚′
+Algoritmi a confronto
+
+
+Se 𝑥 = 129 ed 𝑦 = 127, il primo algoritmo visto impiega 126 iterazioni (𝑟𝑖𝑠𝑢𝑙𝑡𝑎𝑡𝑜 viene inizializzato a 127 e quindi decrementato fino a che non arriva a 1).
+
+
+
+
+
+La traccia di esecuzione dell’algoritmo di Euclide, con lo stesso input, è:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L’algoritmo di Euclide è tipicamente più efficiente.
+Algoritmi «standard»
+
+
+Per progettare un algoritmo è utile rendersi conto che il problema che l'algoritmo deve risolvere è di un certo tipo, ovvero somiglia ad altri problemi già affrontati.
+
+
+
+Se i problemi somigliano, anche gli algoritmi per risolverli si somigliano.
+Algoritmi iterativi
+
+
+Stabiliamo alcuni schemi che permettono di scrivere algoritmi e programmi iterativi.
+
+
+
+⇒ sono algoritmi/programmi che permettono di risolvere problemi in cui
+
+
+
+•   l'input è una sequenza di valori
+
+•   l'output è un valore che rappresenta una proprietà della sequenza
+
+•   l'algoritmo si basa sull’esecuzione ripetitiva, ovvero iterata, di un insieme di istruzioni che  permettono di calcolare la proprietà «processando» tutti gli elementi della sequenza.
+Algoritmi iterativi
+
+
+Un gran numero di problemi possono essere risolti tramite algoritmi iterativi:
+
+
+
+
+1.  Problemi 2.  Problemi 3.  Problemi 4.  Problemi 5.  Problemi
+
+di accumulazione di conteggio
+di verifica esistenziale di verifica universale di minimo o massimo
+Problemi di accumulazione
+
+
+qProblemi in cui bisogna calcolare la somma (o una proprietà sintetica o «cumulata») di una sequenza di valori numerici.
+
+
+
+Algoritmo:
+
+
+
+•   Usa una variabile di accumulazione - anche detta accumulatore — per rappresentare la somma (la proprietà cumulata).
+
+•   Inizializza la variabile di accumulazione a 0 (all’elemento neutro).
+
+•   Visita tutti gli elementi della sequenza ed aggiungi alla variabile di accumulazione il valore di ogni elemento (valuta l’operazione di accumulazione e aggiorna la variabile di accumulazione).
+Digramma a blocchi per accumulazione
+Accumulazione: esempio 1 Problema: somma valori assoluti
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥# sono interi
+
+
+dati di uscita: un intero SOMMA
+
+
+
+post-condizione: SOMMA è la somma dei valori assoluti di 𝑥!,𝑥",…,𝑥# ovvero SOMMA =  𝑥!   +  𝑥"   + …+ |𝑥#|
+Accumulazione: esempio 2 Problema: somma positivi
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥# sono interi
+
+
+dati di uscita: un intero SOMMA
+
+
+
+post-condizione: SOMMA è la somma degli interi positivi fra 𝑥!,𝑥",…,𝑥# ovvero SOMMA = ∑$:&! è )*+$,$-* 𝑥_𝑖
+Accumulazione: esempio 3 Problema: somma quadrati
+
+
+dati di ingresso: un intero 𝑛
+
+
+
+pre-condizione: 𝑛 ≥ 1
+
+
+
+dati di uscita: un intero SOMMA
+
+
+
+post-condizione: SOMMA è la somma dei quadrati degli interi da 1 a 𝑛 , ovvero
+𝑛
+SOMMA =∑$.! 𝑖"
+Osservazioni sull’accumulatore Lo scopo dell'accumulatore è memorizzare il valore da calcolare.
+
+
+o Tuttavia l’accumulatore realizza tale scopo solo dopo che tutti gli elementi della sequenza sono stati processati.
+
+
+
+o Prima di processare la sequenza di elementi il valore dell’accumulatore è pari a 0.
+
+
+
+o Durante il processamento della sequenza, l'accumulatore assume il valore intermedio dell'operazione di accumulazione applicata ai soli elementi processati fino a quel momento.
+•   in Somma Valori Assoluti:  𝑥	+  𝑥	+ ⋯+ |𝑥 | •   in Somma Quadrati: 1 + 2" + 3" + ⋯+ 𝑖"
+#	$	%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To be continued …

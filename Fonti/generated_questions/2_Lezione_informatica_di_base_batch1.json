@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cos'è un calcolatore?",
+        "options": [
+            "Una macchina programmabile in grado di eseguire programmi",
+            "Un elettrodomestico per la cucina",
+            "Un dispositivo solo per giocare",
+            "Uno strumento per misurare la temperatura"
+        ],
+        "answer": "Una macchina programmabile in grado di eseguire programmi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la definizione di calcolatore dal punto di vista funzionale?",
+        "options": [
+            "Un sistema costituito da componenti che interagiscono per ottenere un certo comportamento",
+            "Una scatola magica",
+            "Un insieme di cavi",
+            "Un monitor e una tastiera"
+        ],
+        "answer": "Un sistema costituito da componenti che interagiscono per ottenere un certo comportamento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa si intende per Hardware?",
+        "options": [
+            "La struttura fisica del calcolatore",
+            "I programmi installati",
+            "I dati dell'utente",
+            "La connessione internet"
+        ],
+        "answer": "La struttura fisica del calcolatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa si intende per Software?",
+        "options": [
+            "L'insieme dei programmi che consentono all'hardware di svolgere compiti utili",
+            "I componenti fisici del computer",
+            "Il mouse e la tastiera",
+            "La scrivania su cui poggia il computer"
+        ],
+        "answer": "L'insieme dei programmi che consentono all'hardware di svolgere compiti utili"
+    },
+    {
+        "category": "Informatica",
+        "question": "Chi ha ideato il modello di macchina che rappresenta ancora oggi la struttura dei calcolatori?",
+        "options": [
+            "Von Neumann",
+            "Alan Turing",
+            "Bill Gates",
+            "Steve Jobs"
+        ],
+        "answer": "Von Neumann"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale componente della Macchina di Von Neumann memorizza dati e programmi?",
+        "options": [
+            "Memoria",
+            "CPU",
+            "Bus",
+            "Interfacce I/O"
+        ],
+        "answer": "Memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale componente esegue le istruzioni per l'elaborazione dei dati?",
+        "options": [
+            "CPU o Processore",
+            "Memoria",
+            "Bus",
+            "Hard Disk"
+        ],
+        "answer": "CPU o Processore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fanno le interfacce I/O?",
+        "options": [
+            "Collegano le periferiche al calcolatore",
+            "Eseguono i calcoli",
+            "Memorizzano i dati permanentemente",
+            "Raffreddano il computer"
+        ],
+        "answer": "Collegano le periferiche al calcolatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la funzione del Bus?",
+        "options": [
+            "Trasferire dati e informazioni di controllo tra i componenti",
+            "Alimentare il computer",
+            "Stampare documenti",
+            "Riprodurre suoni"
+        ],
+        "answer": "Trasferire dati e informazioni di controllo tra i componenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "La memoria centrale è volatile?",
+        "options": [
+            "Sì, perde i dati allo spegnimento",
+            "No, conserva i dati sempre",
+            "Solo se piove",
+            "Dipende dalla marca"
+        ],
+        "answer": "Sì, perde i dati allo spegnimento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa RAM?",
+        "options": [
+            "Random Access Memory",
+            "Read All Memory",
+            "Run And Move",
+            "Real Access Mode"
+        ],
+        "answer": "Random Access Memory"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è l'unità base della memoria?",
+        "options": [
+            "Bit",
+            "Byte",
+            "Kilobyte",
+            "Megabyte"
+        ],
+        "answer": "Bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti bit formano un Byte?",
+        "options": [
+            "8",
+            "10",
+            "16",
+            "100"
+        ],
+        "answer": "8"
+    },
+    {
+        "category": "Informatica",
+        "question": "A quanto equivale 1 KB (Kilobyte)?",
+        "options": [
+            "1024 Byte",
+            "1000 Byte",
+            "8 Byte",
+            "100 Byte"
+        ],
+        "answer": "1024 Byte"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una cella di memoria?",
+        "options": [
+            "Un raggruppamento di bit con un indirizzo",
+            "Una batteria",
+            "Un tipo di virus",
+            "Un programma"
+        ],
+        "answer": "Un raggruppamento di bit con un indirizzo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa usa il processore per riferirsi a una cella di memoria?",
+        "options": [
+            "Un indirizzo",
+            "Un nome",
+            "Un colore",
+            "Un suono"
+        ],
+        "answer": "Un indirizzo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quali sono i tre tipi di bus?",
+        "options": [
+            "Dati, Indirizzi, Controllo",
+            "Elettrico, Idraulico, Meccanico",
+            "Input, Output, Memoria",
+            "Veloce, Lento, Medio"
+        ],
+        "answer": "Dati, Indirizzi, Controllo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa ALU?",
+        "options": [
+            "Arithmetic Logic Unit",
+            "All Logic Unit",
+            "Advanced Learning Unit",
+            "Automatic Load Unit"
+        ],
+        "answer": "Arithmetic Logic Unit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa CU?",
+        "options": [
+            "Control Unit",
+            "Central Unit",
+            "Computer Unit",
+            "Calculation Unit"
+        ],
+        "answer": "Control Unit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il compito della ALU?",
+        "options": [
+            "Eseguire le istruzioni (operazioni aritmetiche e logiche)",
+            "Controllare il bus",
+            "Memorizzare i file",
+            "Gestire il mouse"
+        ],
+        "answer": "Eseguire le istruzioni (operazioni aritmetiche e logiche)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il compito della CU?",
+        "options": [
+            "Coordinare i componenti del calcolatore",
+            "Fare i calcoli matematici",
+            "Raffreddare la CPU",
+            "Stampare"
+        ],
+        "answer": "Coordinare i componenti del calcolatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa sono i registri della CPU?",
+        "options": [
+            "Piccole aree di memoria interne alla CPU molto veloci",
+            "Elenchi di utenti",
+            "File di log",
+            "Componenti del disco rigido"
+        ],
+        "answer": "Piccole aree di memoria interne alla CPU molto veloci"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quali sono le tre fasi di esecuzione di un'istruzione?",
+        "options": [
+            "Fetch, Decode, Execute",
+            "Read, Write, Save",
+            "Start, Run, Stop",
+            "Input, Process, Output"
+        ],
+        "answer": "Fetch, Decode, Execute"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa avviene nella fase di Fetch?",
+        "options": [
+            "Viene letta la prossima istruzione da eseguire dalla memoria",
+            "Viene eseguita l'istruzione",
+            "Viene decodificata l'istruzione",
+            "Viene spento il computer"
+        ],
+        "answer": "Viene letta la prossima istruzione da eseguire dalla memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa avviene nella fase di Decode?",
+        "options": [
+            "Viene determinato il tipo dell'istruzione e recuperati gli operandi",
+            "Viene letta l'istruzione",
+            "Viene eseguita l'istruzione",
+            "Viene salvato il risultato"
+        ],
+        "answer": "Viene determinato il tipo dell'istruzione e recuperati gli operandi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Program Counter (PC)?",
+        "options": [
+            "Un registro che memorizza l'indirizzo della prossima istruzione",
+            "Un contatore di programmi installati",
+            "Un programma per contare",
+            "Il tasto di accensione"
+        ],
+        "answer": "Un registro che memorizza l'indirizzo della prossima istruzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Clock?",
+        "options": [
+            "Un segnale che scandisce e sincronizza le operazioni della CPU",
+            "Un orologio da parete",
+            "Un programma per vedere l'ora",
+            "Una batteria"
+        ],
+        "answer": "Un segnale che scandisce e sincronizza le operazioni della CPU"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si misura la frequenza del clock?",
+        "options": [
+            "In Hertz (o Gigahertz)",
+            "In Metri",
+            "In Secondi",
+            "In Byte"
+        ],
+        "answer": "In Hertz (o Gigahertz)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le memorie di massa sono:",
+        "options": [
+            "Permanenti, più capienti e più lente della RAM",
+            "Volatili e velocissime",
+            "Interne alla CPU",
+            "Inutili"
+        ],
+        "answer": "Permanenti, più capienti e più lente della RAM"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un esempio di memoria di massa è:",
+        "options": [
+            "Hard Disk",
+            "Registro CPU",
+            "Cache L1",
+            "RAM"
+        ],
+        "answer": "Hard Disk"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come sono organizzati i dati su un disco magnetico?",
+        "options": [
+            "In tracce e settori",
+            "In righe e colonne",
+            "In pile",
+            "A caso"
+        ],
+        "answer": "In tracce e settori"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Software di Base?",
+        "options": [
+            "Insieme dei programmi che gestiscono l'hardware (es. Sistema Operativo)",
+            "Programmi per scrivere documenti",
+            "Videogiochi",
+            "Browser web"
+        ],
+        "answer": "Insieme dei programmi che gestiscono l'hardware (es. Sistema Operativo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Software Applicativo?",
+        "options": [
+            "Programmi per risolvere problemi specifici dell'utente",
+            "Il BIOS",
+            "I driver",
+            "Il kernel"
+        ],
+        "answer": "Programmi per risolvere problemi specifici dell'utente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è uno dei compiti principali del Sistema Operativo?",
+        "options": [
+            "Gestire le risorse del calcolatore e virtualizzarle",
+            "Creare documenti Word",
+            "Navigare su internet",
+            "Disegnare immagini"
+        ],
+        "answer": "Gestire le risorse del calcolatore e virtualizzarle"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa virtualizzare le risorse?",
+        "options": [
+            "Astrarre la complessità hardware per renderla semplice all'utente",
+            "Creare un mondo virtuale 3D",
+            "Fingere di avere un computer",
+            "Usare occhiali VR"
+        ],
+        "answer": "Astrarre la complessità hardware per renderla semplice all'utente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la parte più interna del Sistema Operativo?",
+        "options": [
+            "Nucleo (Kernel)",
+            "Interfaccia grafica",
+            "File System",
+            "Gestore periferiche"
+        ],
+        "answer": "Nucleo (Kernel)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la differenza tra Programma e Processo?",
+        "options": [
+            "Il programma è statico, il processo è un programma in esecuzione (dinamico)",
+            "Sono la stessa cosa",
+            "Il processo è il file su disco",
+            "Il programma è quello che gira nella CPU"
+        ],
+        "answer": "Il programma è statico, il processo è un programma in esecuzione (dinamico)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la multiprogrammazione (multitasking)?",
+        "options": [
+            "La capacità di eseguire 'contemporaneamente' più processi",
+            "Scrivere programmi in più lingue",
+            "Avere più computer",
+            "Usare più tastiere"
+        ],
+        "answer": "La capacità di eseguire 'contemporaneamente' più processi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come fa la CPU a eseguire più processi se ne può eseguire uno solo alla volta?",
+        "options": [
+            "Salta velocemente da un processo all'altro (time sharing)",
+            "Usa la magia",
+            "Non lo fa",
+            "Usa la RAM"
+        ],
+        "answer": "Salta velocemente da un processo all'altro (time sharing)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Chi gestisce l'accesso dei processi alla CPU (scheduler)?",
+        "options": [
+            "Il Nucleo (Kernel)",
+            "L'utente",
+            "Il disco rigido",
+            "Il mouse"
+        ],
+        "answer": "Il Nucleo (Kernel)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la memoria virtuale?",
+        "options": [
+            "Una tecnica per far credere al processo di avere più memoria di quella fisica disponibile",
+            "La memoria della scheda video",
+            "Una memoria che non esiste",
+            "La memoria USB"
+        ],
+        "answer": "Una tecnica per far credere al processo di avere più memoria di quella fisica disponibile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'area di swap?",
+        "options": [
+            "Un'area su disco usata come estensione della RAM",
+            "Un'area di scambio file",
+            "Un negozio",
+            "Una cartella vuota"
+        ],
+        "answer": "Un'area su disco usata come estensione della RAM"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa sono i driver?",
+        "options": [
+            "Programmi che permettono al SO di comunicare con le periferiche",
+            "Autisti di autobus",
+            "Giochi di guida",
+            "Componenti hardware"
+        ],
+        "answer": "Programmi che permettono al SO di comunicare con le periferiche"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa gestisce il File System?",
+        "options": [
+            "L'organizzazione dei dati sulla memoria di massa",
+            "La memoria RAM",
+            "La CPU",
+            "La rete"
+        ],
+        "answer": "L'organizzazione dei dati sulla memoria di massa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come sono organizzati i file nel File System?",
+        "options": [
+            "In modo gerarchico (ad albero) con directory e sottodirectory",
+            "In modo casuale",
+            "In ordine alfabetico unico",
+            "Per colore"
+        ],
+        "answer": "In modo gerarchico (ad albero) con directory e sottodirectory"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa indica l'estensione di un file (es. .txt)?",
+        "options": [
+            "Il formato del file",
+            "La dimensione del file",
+            "Il proprietario del file",
+            "La data di creazione"
+        ],
+        "answer": "Il formato del file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un percorso (path)?",
+        "options": [
+            "La sequenza di directory per raggiungere un file",
+            "Una strada di montagna",
+            "Un cavo di rete",
+            "Un comando"
+        ],
+        "answer": "La sequenza di directory per raggiungere un file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'interprete dei comandi (Shell)?",
+        "options": [
+            "L'interfaccia che permette all'utente di inviare comandi al SO",
+            "Un traduttore di lingue",
+            "Un programma di grafica",
+            "Un gioco"
+        ],
+        "answer": "L'interfaccia che permette all'utente di inviare comandi al SO"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa GUI?",
+        "options": [
+            "Graphic User Interface",
+            "General User Interface",
+            "Great User Interface",
+            "Global Unit Interface"
+        ],
+        "answer": "Graphic User Interface"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il compito del gestore della memoria?",
+        "options": [
+            "Gestire l'allocazione della RAM ai processi",
+            "Pulire il computer",
+            "Gestire i file su disco",
+            "Gestire la tastiera"
+        ],
+        "answer": "Gestire l'allocazione della RAM ai processi"
+    }
+]

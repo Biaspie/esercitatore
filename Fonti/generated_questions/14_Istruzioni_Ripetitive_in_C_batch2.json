@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore?",
+        "options": [
+            "Variabile che contiene l'indirizzo di memoria di un'altra variabile",
+            "Una freccia",
+            "Un intero",
+            "Un errore"
+        ],
+        "answer": "Variabile che contiene l'indirizzo di memoria di un'altra variabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore indirizzo &:",
+        "options": [
+            "Restituisce l'indirizzo di memoria di una variabile",
+            "Restituisce il valore",
+            "Moltiplica",
+            "Nulla"
+        ],
+        "answer": "Restituisce l'indirizzo di memoria di una variabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore dereferenziazione *:",
+        "options": [
+            "Accede al valore puntato da un puntatore",
+            "Moltiplica",
+            "Divide",
+            "Nulla"
+        ],
+        "answer": "Accede al valore puntato da un puntatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Puntatore NULL:",
+        "options": [
+            "Puntatore che non punta a nulla (valore 0)",
+            "Puntatore a 1",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Puntatore che non punta a nulla (valore 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Aritmetica dei puntatori (p + 1):",
+        "options": [
+            "Avanza di sizeof(tipo_puntato) byte",
+            "Avanza di 1 byte",
+            "Avanza di 1 bit",
+            "Nulla"
+        ],
+        "answer": "Avanza di sizeof(tipo_puntato) byte"
+    },
+    {
+        "category": "Informatica",
+        "question": "Array e puntatori:",
+        "options": [
+            "Il nome dell'array decade a puntatore al primo elemento",
+            "Sono cose diverse",
+            "Sono uguali",
+            "Nulla"
+        ],
+        "answer": "Il nome dell'array decade a puntatore al primo elemento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Allocazione dinamica malloc:",
+        "options": [
+            "Alloca un blocco di memoria nell'heap",
+            "Nello stack",
+            "Nel codice",
+            "Nulla"
+        ],
+        "answer": "Alloca un blocco di memoria nell'heap"
+    },
+    {
+        "category": "Informatica",
+        "question": "Deallocazione free:",
+        "options": [
+            "Libera la memoria allocata con malloc",
+            "Cancella il file",
+            "Chiude il programma",
+            "Nulla"
+        ],
+        "answer": "Libera la memoria allocata con malloc"
+    },
+    {
+        "category": "Informatica",
+        "question": "Memory leak:",
+        "options": [
+            "Mancata liberazione di memoria allocata dinamicamente",
+            "Errore disco",
+            "Errore rete",
+            "Nulla"
+        ],
+        "answer": "Mancata liberazione di memoria allocata dinamicamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dangling pointer:",
+        "options": [
+            "Puntatore che punta a memoria già liberata",
+            "Puntatore nullo",
+            "Puntatore valido",
+            "Nulla"
+        ],
+        "answer": "Puntatore che punta a memoria già liberata"
+    },
+    {
+        "category": "Informatica",
+        "question": "Struct:",
+        "options": [
+            "Tipo di dato composto eterogeneo (campi di tipi diversi)",
+            "Array",
+            "Lista",
+            "File"
+        ],
+        "answer": "Tipo di dato composto eterogeneo (campi di tipi diversi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accesso ai campi struct (operatore .):",
+        "options": [
+            "s.campo",
+            "s->campo",
+            "s*campo",
+            "s&campo"
+        ],
+        "answer": "s.campo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accesso ai campi struct tramite puntatore (operatore ->):",
+        "options": [
+            "p->campo",
+            "p.campo",
+            "p*campo",
+            "p&campo"
+        ],
+        "answer": "p->campo"
+    },
+    {
+        "category": "Informatica",
+        "question": "File I/O fopen:",
+        "options": [
+            "Apre un file e restituisce un puntatore a FILE",
+            "Chiude un file",
+            "Legge un file",
+            "Scrive un file"
+        ],
+        "answer": "Apre un file e restituisce un puntatore a FILE"
+    },
+    {
+        "category": "Informatica",
+        "question": "File I/O fclose:",
+        "options": [
+            "Chiude un file aperto",
+            "Apre un file",
+            "Legge",
+            "Scrive"
+        ],
+        "answer": "Chiude un file aperto"
+    },
+    {
+        "category": "Informatica",
+        "question": "File I/O fprintf:",
+        "options": [
+            "Scrive formattato su file",
+            "Legge da file",
+            "Scrive a video",
+            "Nulla"
+        ],
+        "answer": "Scrive formattato su file"
+    },
+    {
+        "category": "Informatica",
+        "question": "File I/O fscanf:",
+        "options": [
+            "Legge formattato da file",
+            "Scrive su file",
+            "Legge da tastiera",
+            "Nulla"
+        ],
+        "answer": "Legge formattato da file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Standard Input (stdin):",
+        "options": [
+            "Flusso di input predefinito (tastiera)",
+            "File",
+            "Schermo",
+            "Stampante"
+        ],
+        "answer": "Flusso di input predefinito (tastiera)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Standard Output (stdout):",
+        "options": [
+            "Flusso di output predefinito (schermo)",
+            "Tastiera",
+            "File",
+            "Stampante"
+        ],
+        "answer": "Flusso di output predefinito (schermo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Standard Error (stderr):",
+        "options": [
+            "Flusso di errore predefinito (schermo, separato da stdout)",
+            "File",
+            "Tastiera",
+            "Nulla"
+        ],
+        "answer": "Flusso di errore predefinito (schermo, separato da stdout)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria math.h:",
+        "options": [
+            "Funzioni matematiche (sqrt, pow, sin, cos...)",
+            "Input/Output",
+            "Stringhe",
+            "Tempo"
+        ],
+        "answer": "Funzioni matematiche (sqrt, pow, sin, cos...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria string.h:",
+        "options": [
+            "Funzioni per manipolazione stringhe (strcpy, strlen, strcmp...)",
+            "Matematica",
+            "Input/Output",
+            "Tempo"
+        ],
+        "answer": "Funzioni per manipolazione stringhe (strcpy, strlen, strcmp...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria stdlib.h:",
+        "options": [
+            "Funzioni di utilità generale (malloc, free, rand, exit...)",
+            "Matematica",
+            "Stringhe",
+            "Input/Output"
+        ],
+        "answer": "Funzioni di utilità generale (malloc, free, rand, exit...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria time.h:",
+        "options": [
+            "Funzioni per data e ora",
+            "Matematica",
+            "Stringhe",
+            "Input/Output"
+        ],
+        "answer": "Funzioni per data e ora"
+    },
+    {
+        "category": "Informatica",
+        "question": "Generazione numeri casuali (rand):",
+        "options": [
+            "Restituisce un intero pseudo-casuale",
+            "Restituisce 0",
+            "Restituisce 1",
+            "Nulla"
+        ],
+        "answer": "Restituisce un intero pseudo-casuale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Seme per numeri casuali (srand):",
+        "options": [
+            "Inizializza il generatore di numeri casuali (spesso con time(NULL))",
+            "Genera numero",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Inizializza il generatore di numeri casuali (spesso con time(NULL))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il precompilatore (preprocessore)?",
+        "options": [
+            "Elabora il codice prima della compilazione (direttive #include, #define)",
+            "Compila",
+            "Linka",
+            "Esegue"
+        ],
+        "answer": "Elabora il codice prima della compilazione (direttive #include, #define)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Direttiva #include:",
+        "options": [
+            "Include il contenuto di un altro file",
+            "Definisce costante",
+            "Compila condizionale",
+            "Nulla"
+        ],
+        "answer": "Include il contenuto di un altro file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Direttiva #define:",
+        "options": [
+            "Definisce una macro o costante simbolica",
+            "Include file",
+            "Compila condizionale",
+            "Nulla"
+        ],
+        "answer": "Definisce una macro o costante simbolica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Direttive #ifdef / #endif:",
+        "options": [
+            "Compilazione condizionale (se definita macro)",
+            "Include",
+            "Define",
+            "Nulla"
+        ],
+        "answer": "Compilazione condizionale (se definita macro)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Commenti in C:",
+        "options": [
+            "// riga singola, /* multi riga */",
+            "# commento",
+            "-- commento",
+            "<!-- commento -->"
+        ],
+        "answer": "// riga singola, /* multi riga */"
+    },
+    {
+        "category": "Informatica",
+        "question": "Case sensitivity in C:",
+        "options": [
+            "Il C è case-sensitive (maiuscole/minuscole diverse)",
+            "Non è case-sensitive",
+            "Dipende",
+            "Solo variabili"
+        ],
+        "answer": "Il C è case-sensitive (maiuscole/minuscole diverse)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Identificatori validi:",
+        "options": [
+            "Iniziano con lettera o underscore, contengono lettere, numeri, underscore",
+            "Iniziano con numero",
+            "Contengono spazi",
+            "Contengono simboli speciali"
+        ],
+        "answer": "Iniziano con lettera o underscore, contengono lettere, numeri, underscore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parole chiave riservate (keywords):",
+        "options": [
+            "Parole con significato speciale (es. if, while, int) non usabili come nomi",
+            "Nomi variabili",
+            "Commenti",
+            "Nulla"
+        ],
+        "answer": "Parole con significato speciale (es. if, while, int) non usabili come nomi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sequenze di escape (es. \\n):",
+        "options": [
+            "Caratteri speciali rappresentati con backslash",
+            "Errori",
+            "Variabili",
+            "Nulla"
+        ],
+        "answer": "Caratteri speciali rappresentati con backslash"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore virgola ,:",
+        "options": [
+            "Valuta espressioni da sinistra a destra e restituisce l'ultima",
+            "Separa parametri",
+            "Decimale",
+            "Nulla"
+        ],
+        "answer": "Valuta espressioni da sinistra a destra e restituisce l'ultima"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore sizeof è valutato a:",
+        "options": [
+            "Tempo di compilazione (generalmente)",
+            "Runtime",
+            "Mai",
+            "Sempre"
+        ],
+        "answer": "Tempo di compilazione (generalmente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore iniziale variabili locali non statiche:",
+        "options": [
+            "Indefinito (spazzatura)",
+            "0",
+            "Null",
+            "1"
+        ],
+        "answer": "Indefinito (spazzatura)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore iniziale variabili globali/statiche:",
+        "options": [
+            "0 (automaticamente)",
+            "Indefinito",
+            "1",
+            "Null"
+        ],
+        "answer": "0 (automaticamente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Costanti letterali intere (es. 123):",
+        "options": [
+            "Tipo int",
+            "Tipo float",
+            "Tipo char",
+            "Tipo string"
+        ],
+        "answer": "Tipo int"
+    },
+    {
+        "category": "Informatica",
+        "question": "Costanti letterali float (es. 123.45):",
+        "options": [
+            "Tipo double (default)",
+            "Tipo float",
+            "Tipo int",
+            "Tipo char"
+        ],
+        "answer": "Tipo double (default)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Suffisso 'f' per float (es. 123.45f):",
+        "options": [
+            "Forza il tipo a float",
+            "Double",
+            "Int",
+            "Char"
+        ],
+        "answer": "Forza il tipo a float"
+    },
+    {
+        "category": "Informatica",
+        "question": "Suffisso 'L' per long (es. 123L):",
+        "options": [
+            "Forza il tipo a long int",
+            "Float",
+            "Double",
+            "Char"
+        ],
+        "answer": "Forza il tipo a long int"
+    },
+    {
+        "category": "Informatica",
+        "question": "Prefisso '0x' (es. 0xFF):",
+        "options": [
+            "Esadecimale",
+            "Ottale",
+            "Binario",
+            "Decimale"
+        ],
+        "answer": "Esadecimale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Prefisso '0' (es. 010):",
+        "options": [
+            "Ottale",
+            "Esadecimale",
+            "Binario",
+            "Decimale"
+        ],
+        "answer": "Ottale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Notazione scientifica (es. 1.2e3):",
+        "options": [
+            "1.2 * 10^3",
+            "1.2 * 3",
+            "1.2 / 3",
+            "Nulla"
+        ],
+        "answer": "1.2 * 10^3"
+    },
+    {
+        "category": "Informatica",
+        "question": "Limite ricorsione:",
+        "options": [
+            "Dimensione dello stack (Stack Overflow)",
+            "Memoria RAM totale",
+            "Tempo CPU",
+            "Nulla"
+        ],
+        "answer": "Dimensione dello stack (Stack Overflow)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Tail recursion (ricorsione in coda):",
+        "options": [
+            "Chiamata ricorsiva è l'ultima operazione (ottimizzabile dal compilatore in ciclo)",
+            "Prima operazione",
+            "A metà",
+            "Nulla"
+        ],
+        "answer": "Chiamata ricorsiva è l'ultima operazione (ottimizzabile dal compilatore in ciclo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo di ricerca:",
+        "options": [
+            "Trovare un elemento in una collezione",
+            "Ordinare",
+            "Cancellare",
+            "Nulla"
+        ],
+        "answer": "Trovare un elemento in una collezione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo di ordinamento:",
+        "options": [
+            "Mettere gli elementi in un certo ordine (crescente/decrescente)",
+            "Cercare",
+            "Cancellare",
+            "Nulla"
+        ],
+        "answer": "Mettere gli elementi in un certo ordine (crescente/decrescente)"
+    }
+]

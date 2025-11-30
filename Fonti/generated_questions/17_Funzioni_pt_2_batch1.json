@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è la funzione main?",
+        "options": [
+            "Funzione speciale invocata all'avvio del programma dal sistema operativo",
+            "Funzione qualsiasi",
+            "Variabile",
+            "Nulla"
+        ],
+        "answer": "Funzione speciale invocata all'avvio del programma dal sistema operativo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Prototipo standard del main:",
+        "options": [
+            "int main(int argc, char **argv)",
+            "void main()",
+            "int main(void)",
+            "Tutti i precedenti (dipende dallo standard/compilatore)"
+        ],
+        "answer": "Tutti i precedenti (dipende dallo standard/compilatore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'avere il controllo' (CPU)?",
+        "options": [
+            "Il processore sta eseguendo le istruzioni di quella funzione",
+            "Avere il mouse",
+            "Avere la tastiera",
+            "Nulla"
+        ],
+        "answer": "Il processore sta eseguendo le istruzioni di quella funzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quante funzioni hanno il controllo contemporaneamente (single core)?",
+        "options": [
+            "Solo una",
+            "Tutte",
+            "Due",
+            "Nessuna"
+        ],
+        "answer": "Solo una"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede quando f invoca g?",
+        "options": [
+            "f cede il controllo a g e si mette in attesa",
+            "f termina",
+            "g termina",
+            "Nulla"
+        ],
+        "answer": "f cede il controllo a g e si mette in attesa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando f riprende il controllo?",
+        "options": [
+            "Quando g termina e restituisce il controllo",
+            "Subito",
+            "Mai",
+            "Nulla"
+        ],
+        "answer": "Quando g termina e restituisce il controllo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'attivazione di una funzione?",
+        "options": [
+            "Periodo dall'invocazione alla terminazione",
+            "Solo l'esecuzione",
+            "Solo l'attesa",
+            "Nulla"
+        ],
+        "answer": "Periodo dall'invocazione alla terminazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stati di una funzione attiva:",
+        "options": [
+            "In esecuzione (ha il controllo) o in attesa",
+            "Solo in esecuzione",
+            "Solo in attesa",
+            "Nulla"
+        ],
+        "answer": "In esecuzione (ha il controllo) o in attesa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Allocazione variabili automatiche:",
+        "options": [
+            "Automatica nello stack",
+            "Manuale nello heap",
+            "Globale",
+            "Nulla"
+        ],
+        "answer": "Automatica nello stack"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vita di una variabile locale:",
+        "options": [
+            "Dalla dichiarazione alla fine del blocco/funzione",
+            "Tutto il programma",
+            "Solo una riga",
+            "Nulla"
+        ],
+        "answer": "Dalla dichiarazione alla fine del blocco/funzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dove vengono salvate le variabili locali?",
+        "options": [
+            "Nello stack",
+            "Nello heap",
+            "Nel disco",
+            "Nulla"
+        ],
+        "answer": "Nello stack"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dimensione variabili automatiche:",
+        "options": [
+            "Nota a tempo di compilazione (tranne VLA)",
+            "Dinamica",
+            "Infinita",
+            "Nulla"
+        ],
+        "answer": "Nota a tempo di compilazione (tranne VLA)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Area memoria codice (Text segment):",
+        "options": [
+            "Contiene le istruzioni del programma (sola lettura)",
+            "Variabili",
+            "Stack",
+            "Nulla"
+        ],
+        "answer": "Contiene le istruzioni del programma (sola lettura)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Area memoria dati globali (Data segment):",
+        "options": [
+            "Contiene variabili globali e statiche inizializzate",
+            "Codice",
+            "Stack",
+            "Nulla"
+        ],
+        "answer": "Contiene variabili globali e statiche inizializzate"
+    },
+    {
+        "category": "Informatica",
+        "question": "Area BSS:",
+        "options": [
+            "Contiene variabili globali e statiche non inizializzate (o a zero)",
+            "Codice",
+            "Stack",
+            "Nulla"
+        ],
+        "answer": "Contiene variabili globali e statiche non inizializzate (o a zero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Crescita dello stack:",
+        "options": [
+            "Tipicamente verso il basso (indirizzi decrescenti)",
+            "Verso l'alto",
+            "Casuale",
+            "Nulla"
+        ],
+        "answer": "Tipicamente verso il basso (indirizzi decrescenti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Crescita dello heap:",
+        "options": [
+            "Tipicamente verso l'alto (indirizzi crescenti)",
+            "Verso il basso",
+            "Casuale",
+            "Nulla"
+        ],
+        "answer": "Tipicamente verso l'alto (indirizzi crescenti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Record di attivazione (Stack Frame):",
+        "options": [
+            "Struttura dati nello stack per una singola chiamata di funzione",
+            "Variabile",
+            "File",
+            "Nulla"
+        ],
+        "answer": "Struttura dati nello stack per una singola chiamata di funzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa contiene un record di attivazione?",
+        "options": [
+            "Variabili locali, parametri, indirizzo di ritorno, link dinamico",
+            "Codice",
+            "File",
+            "Nulla"
+        ],
+        "answer": "Variabili locali, parametri, indirizzo di ritorno, link dinamico"
+    },
+    {
+        "category": "Informatica",
+        "question": "Funzionamento stack (LIFO):",
+        "options": [
+            "Last In First Out (l'ultimo record creato è il primo a essere distrutto)",
+            "FIFO",
+            "Casuale",
+            "Nulla"
+        ],
+        "answer": "Last In First Out (l'ultimo record creato è il primo a essere distrutto)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa c'è in cima allo stack?",
+        "options": [
+            "Il record di attivazione della funzione attualmente in esecuzione",
+            "Il main",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Il record di attivazione della funzione attualmente in esecuzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stack Overflow (causa):",
+        "options": [
+            "Troppe chiamate annidate (es. ricorsione infinita) o variabili locali enormi",
+            "Troppa RAM",
+            "Troppo codice",
+            "Nulla"
+        ],
+        "answer": "Troppe chiamate annidate (es. ricorsione infinita) o variabili locali enormi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Conseguenza Stack Overflow:",
+        "options": [
+            "Crash del programma (segmentation fault)",
+            "Rallentamento",
+            "Nulla",
+            "Successo"
+        ],
+        "answer": "Crash del programma (segmentation fault)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Nomi funzioni univoci:",
+        "options": [
+            "In C non si possono avere due funzioni con lo stesso nome (no overloading)",
+            "Sì si può",
+            "Dipende",
+            "Nulla"
+        ],
+        "answer": "In C non si possono avere due funzioni con lo stesso nome (no overloading)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ordine definizione funzioni:",
+        "options": [
+            "La definizione (o dichiarazione) deve precedere l'invocazione",
+            "Non importa",
+            "Dopo",
+            "Nulla"
+        ],
+        "answer": "La definizione (o dichiarazione) deve precedere l'invocazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dichiarazione anticipata (Forward declaration):",
+        "options": [
+            "Dichiarare il prototipo prima della definizione per permettere l'uso",
+            "Definire tutto",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Dichiarare il prototipo prima della definizione per permettere l'uso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi dichiarazione:",
+        "options": [
+            "tipo nome(parametri); (con punto e virgola)",
+            "tipo nome(parametri) {}",
+            "nome()",
+            "Nulla"
+        ],
+        "answer": "tipo nome(parametri); (con punto e virgola)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Funzioni di libreria:",
+        "options": [
+            "Funzioni predefinite messe a disposizione dal linguaggio (es. printf)",
+            "Funzioni utente",
+            "Funzioni main",
+            "Nulla"
+        ],
+        "answer": "Funzioni predefinite messe a disposizione dal linguaggio (es. printf)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come usare funzioni di libreria?",
+        "options": [
+            "Includere l'header file (.h) corrispondente",
+            "Copiare il codice",
+            "Scriverle da zero",
+            "Nulla"
+        ],
+        "answer": "Includere l'header file (.h) corrispondente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Scatola nera (Black box):",
+        "options": [
+            "Usare una funzione conoscendo solo interfaccia (input/output) e non l'interno",
+            "Scatola bianca",
+            "Scatola rossa",
+            "Nulla"
+        ],
+        "answer": "Usare una funzione conoscendo solo interfaccia (input/output) e non l'interno"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria stdio.h:",
+        "options": [
+            "Input/Output standard (printf, scanf, fopen)",
+            "Matematica",
+            "Stringhe",
+            "Nulla"
+        ],
+        "answer": "Input/Output standard (printf, scanf, fopen)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria stdlib.h:",
+        "options": [
+            "Utilità generali (malloc, free, rand, exit, atoi)",
+            "I/O",
+            "Matematica",
+            "Nulla"
+        ],
+        "answer": "Utilità generali (malloc, free, rand, exit, atoi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria math.h:",
+        "options": [
+            "Funzioni matematiche (sin, cos, sqrt, pow)",
+            "I/O",
+            "Stringhe",
+            "Nulla"
+        ],
+        "answer": "Funzioni matematiche (sin, cos, sqrt, pow)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria string.h:",
+        "options": [
+            "Manipolazione stringhe (strcpy, strlen, strcmp)",
+            "Matematica",
+            "I/O",
+            "Nulla"
+        ],
+        "answer": "Manipolazione stringhe (strcpy, strlen, strcmp)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Numero perfetto:",
+        "options": [
+            "Numero uguale alla somma dei suoi divisori propri (es. 6 = 1+2+3)",
+            "Numero primo",
+            "Numero pari",
+            "Nulla"
+        ],
+        "answer": "Numero uguale alla somma dei suoi divisori propri (es. 6 = 1+2+3)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Programmazione modulare:",
+        "options": [
+            "Suddividere il programma in moduli/funzioni indipendenti",
+            "Scrivere tutto nel main",
+            "Non usare funzioni",
+            "Nulla"
+        ],
+        "answer": "Suddividere il programma in moduli/funzioni indipendenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio modularità: Riusabilità",
+        "options": [
+            "Usare la stessa funzione in più parti o programmi",
+            "Usare una volta sola",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Usare la stessa funzione in più parti o programmi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio modularità: Testabilità",
+        "options": [
+            "Più facile testare piccole funzioni isolate che un monolito",
+            "Più difficile",
+            "Uguale",
+            "Nulla"
+        ],
+        "answer": "Più facile testare piccole funzioni isolate che un monolito"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio modularità: Sviluppo separato",
+        "options": [
+            "Più sviluppatori possono lavorare su moduli diversi in parallelo",
+            "Lavorare da soli",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Più sviluppatori possono lavorare su moduli diversi in parallelo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Linker:",
+        "options": [
+            "Programma che unisce i file oggetto e le librerie in un unico eseguibile",
+            "Compilatore",
+            "Editor",
+            "Nulla"
+        ],
+        "answer": "Programma che unisce i file oggetto e le librerie in un unico eseguibile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Compilatore:",
+        "options": [
+            "Traduce il codice sorgente in codice oggetto (macchina)",
+            "Esegue",
+            "Linka",
+            "Nulla"
+        ],
+        "answer": "Traduce il codice sorgente in codice oggetto (macchina)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Preprocessore:",
+        "options": [
+            "Elabora le direttive # (include, define) prima della compilazione",
+            "Compila",
+            "Linka",
+            "Nulla"
+        ],
+        "answer": "Elabora le direttive # (include, define) prima della compilazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "File oggetto (.o / .obj):",
+        "options": [
+            "Codice macchina prodotto dalla compilazione di un singolo file sorgente (non ancora eseguibile)",
+            "Eseguibile",
+            "Sorgente",
+            "Nulla"
+        ],
+        "answer": "Codice macchina prodotto dalla compilazione di un singolo file sorgente (non ancora eseguibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria statica (.a / .lib):",
+        "options": [
+            "Collezione di file oggetto linkati staticamente nell'eseguibile (aumenta dimensione)",
+            "Libreria dinamica",
+            "File testo",
+            "Nulla"
+        ],
+        "answer": "Collezione di file oggetto linkati staticamente nell'eseguibile (aumenta dimensione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria dinamica (.so / .dll):",
+        "options": [
+            "Libreria caricata a runtime (condivisa tra processi, riduce dimensione eseguibile)",
+            "Libreria statica",
+            "File testo",
+            "Nulla"
+        ],
+        "answer": "Libreria caricata a runtime (condivisa tra processi, riduce dimensione eseguibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dependency Hell:",
+        "options": [
+            "Problemi complessi di versioni e conflitti tra librerie dipendenti",
+            "Inferno",
+            "Paradiso",
+            "Nulla"
+        ],
+        "answer": "Problemi complessi di versioni e conflitti tra librerie dipendenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "ABI (Application Binary Interface):",
+        "options": [
+            "Interfaccia a basso livello tra programmi e OS/librerie (convenzioni di chiamata, layout memoria)",
+            "API",
+            "GUI",
+            "Nulla"
+        ],
+        "answer": "Interfaccia a basso livello tra programmi e OS/librerie (convenzioni di chiamata, layout memoria)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Calling convention (cdecl, stdcall):",
+        "options": [
+            "Regole su come vengono passati i parametri e chi pulisce lo stack",
+            "Convenzione nomi",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Regole su come vengono passati i parametri e chi pulisce lo stack"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabile extern:",
+        "options": [
+            "Dichiarazione di una variabile definita in un altro file (visibilità globale)",
+            "Locale",
+            "Statica",
+            "Nulla"
+        ],
+        "answer": "Dichiarazione di una variabile definita in un altro file (visibilità globale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabile volatile:",
+        "options": [
+            "Indica al compilatore di non ottimizzare l'accesso alla variabile (può cambiare esternamente)",
+            "Veloce",
+            "Lenta",
+            "Nulla"
+        ],
+        "answer": "Indica al compilatore di non ottimizzare l'accesso alla variabile (può cambiare esternamente)"
+    }
+]

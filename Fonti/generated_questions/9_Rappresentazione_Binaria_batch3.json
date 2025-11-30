@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'Hamming Code?",
+        "options": [
+            "Codice a correzione di errore (può rilevare e correggere errori su singolo bit)",
+            "Un codice postale",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Codice a correzione di errore (può rilevare e correggere errori su singolo bit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la distanza di Hamming?",
+        "options": [
+            "Numero di posizioni in cui due stringhe di bit differiscono",
+            "Una distanza fisica",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Numero di posizioni in cui due stringhe di bit differiscono"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la compressione dati?",
+        "options": [
+            "Riduzione del numero di bit necessari per rappresentare i dati",
+            "Schiacciare il disco",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Riduzione del numero di bit necessari per rappresentare i dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Compressione Lossless:",
+        "options": [
+            "Senza perdita di informazioni (es. ZIP, PNG)",
+            "Con perdita",
+            "Non comprime",
+            "Nulla"
+        ],
+        "answer": "Senza perdita di informazioni (es. ZIP, PNG)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Compressione Lossy:",
+        "options": [
+            "Con perdita di informazioni (es. JPEG, MP3), ma maggiore compressione",
+            "Senza perdita",
+            "Non comprime",
+            "Nulla"
+        ],
+        "answer": "Con perdita di informazioni (es. JPEG, MP3), ma maggiore compressione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'algoritmo di Huffman?",
+        "options": [
+            "Algoritmo di compressione lossless basato sulla frequenza dei caratteri",
+            "Un algoritmo di ordinamento",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Algoritmo di compressione lossless basato sulla frequenza dei caratteri"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file ZIP?",
+        "options": [
+            "Formato di archivio compresso (lossless)",
+            "Un file video",
+            "Un file audio",
+            "Un errore"
+        ],
+        "answer": "Formato di archivio compresso (lossless)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file JPEG?",
+        "options": [
+            "Formato di immagine compresso (lossy)",
+            "Un file testo",
+            "Un file audio",
+            "Un errore"
+        ],
+        "answer": "Formato di immagine compresso (lossy)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file MP3?",
+        "options": [
+            "Formato audio compresso (lossy)",
+            "Un file testo",
+            "Un file immagine",
+            "Un errore"
+        ],
+        "answer": "Formato audio compresso (lossy)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la crittografia?",
+        "options": [
+            "Tecnica per rendere i dati illeggibili a chi non possiede la chiave",
+            "Scrivere male",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Tecnica per rendere i dati illeggibili a chi non possiede la chiave"
+    },
+    {
+        "category": "Informatica",
+        "question": "Crittografia simmetrica:",
+        "options": [
+            "Usa la stessa chiave per cifrare e decifrare (es. AES)",
+            "Usa chiavi diverse",
+            "Non usa chiavi",
+            "Nulla"
+        ],
+        "answer": "Usa la stessa chiave per cifrare e decifrare (es. AES)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Crittografia asimmetrica:",
+        "options": [
+            "Usa una coppia di chiavi: pubblica (per cifrare) e privata (per decifrare) (es. RSA)",
+            "Usa la stessa chiave",
+            "Non usa chiavi",
+            "Nulla"
+        ],
+        "answer": "Usa una coppia di chiavi: pubblica (per cifrare) e privata (per decifrare) (es. RSA)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'hashing crittografico?",
+        "options": [
+            "Funzione one-way che mappa dati di lunghezza arbitraria in una stringa di lunghezza fissa (es. SHA-256)",
+            "Un errore",
+            "Un gioco",
+            "Un file"
+        ],
+        "answer": "Funzione one-way che mappa dati di lunghezza arbitraria in una stringa di lunghezza fissa (es. SHA-256)"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve l'hash delle password?",
+        "options": [
+            "Per non memorizzare le password in chiaro nel database",
+            "Per ricordarle",
+            "Per cancellarle",
+            "Per nulla"
+        ],
+        "answer": "Per non memorizzare le password in chiaro nel database"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il salt nelle password?",
+        "options": [
+            "Dati casuali aggiunti alla password prima dell'hash per proteggere da rainbow tables",
+            "Sale",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Dati casuali aggiunti alla password prima dell'hash per proteggere da rainbow tables"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un certificato digitale?",
+        "options": [
+            "Documento elettronico che associa una chiave pubblica a un'identità (firmato da una CA)",
+            "Un diploma",
+            "Un errore",
+            "Un file"
+        ],
+        "answer": "Documento elettronico che associa una chiave pubblica a un'identità (firmato da una CA)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è HTTPS?",
+        "options": [
+            "HTTP su SSL/TLS (comunicazione sicura cifrata)",
+            "HTTP veloce",
+            "HTTP lento",
+            "Un errore"
+        ],
+        "answer": "HTTP su SSL/TLS (comunicazione sicura cifrata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la Blockchain?",
+        "options": [
+            "Registro distribuito e immutabile di transazioni, basato su crittografia",
+            "Una catena",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Registro distribuito e immutabile di transazioni, basato su crittografia"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Bitcoin?",
+        "options": [
+            "Criptovaluta basata su blockchain",
+            "Una moneta d'oro",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Criptovaluta basata su blockchain"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'Intelligenza Artificiale (AI)?",
+        "options": [
+            "Simulazione dell'intelligenza umana da parte di macchine",
+            "Un robot",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Simulazione dell'intelligenza umana da parte di macchine"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Machine Learning?",
+        "options": [
+            "Sottocampo dell'AI che permette ai computer di imparare dai dati senza essere esplicitamente programmati",
+            "Imparare a memoria",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Sottocampo dell'AI che permette ai computer di imparare dai dati senza essere esplicitamente programmati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Deep Learning?",
+        "options": [
+            "Machine Learning basato su reti neurali artificiali profonde",
+            "Imparare profondo",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Machine Learning basato su reti neurali artificiali profonde"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una rete neurale?",
+        "options": [
+            "Modello computazionale ispirato al cervello umano",
+            "Una rete da pesca",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Modello computazionale ispirato al cervello umano"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Big Data?",
+        "options": [
+            "Insieme di dati così grandi e complessi da richiedere strumenti avanzati per l'analisi",
+            "Dati grandi",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Insieme di dati così grandi e complessi da richiedere strumenti avanzati per l'analisi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'IoT (Internet of Things)?",
+        "options": [
+            "Rete di oggetti fisici connessi a internet (es. termostati smart)",
+            "Internet delle cose",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Rete di oggetti fisici connessi a internet (es. termostati smart)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il 5G?",
+        "options": [
+            "Quinta generazione di tecnologia cellulare (alta velocità, bassa latenza)",
+            "5 grammi",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Quinta generazione di tecnologia cellulare (alta velocità, bassa latenza)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la Realtà Virtuale (VR)?",
+        "options": [
+            "Ambiente simulato al computer in cui l'utente è immerso",
+            "Un gioco",
+            "Un errore",
+            "Un film"
+        ],
+        "answer": "Ambiente simulato al computer in cui l'utente è immerso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la Realtà Aumentata (AR)?",
+        "options": [
+            "Sovrapposizione di elementi digitali al mondo reale (es. Pokémon GO)",
+            "VR",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Sovrapposizione di elementi digitali al mondo reale (es. Pokémon GO)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Cloud Storage?",
+        "options": [
+            "Memorizzazione di dati su server remoti accessibili via internet (es. Dropbox, Google Drive)",
+            "Disco locale",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Memorizzazione di dati su server remoti accessibili via internet (es. Dropbox, Google Drive)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il SaaS (Software as a Service)?",
+        "options": [
+            "Modello di distribuzione software in cui l'applicazione è ospitata dal fornitore e accessibile via web",
+            "Software locale",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Modello di distribuzione software in cui l'applicazione è ospitata dal fornitore e accessibile via web"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'Open Source?",
+        "options": [
+            "Software il cui codice sorgente è disponibile pubblicamente e modificabile",
+            "Software gratis",
+            "Software chiuso",
+            "Un errore"
+        ],
+        "answer": "Software il cui codice sorgente è disponibile pubblicamente e modificabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Linux?",
+        "options": [
+            "Sistema operativo open source basato su Unix",
+            "Un programma",
+            "Un gioco",
+            "Un errore"
+        ],
+        "answer": "Sistema operativo open source basato su Unix"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Android?",
+        "options": [
+            "Sistema operativo mobile basato su Linux",
+            "Un robot",
+            "Un gioco",
+            "Un errore"
+        ],
+        "answer": "Sistema operativo mobile basato su Linux"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è iOS?",
+        "options": [
+            "Sistema operativo mobile di Apple",
+            "Un errore",
+            "Un gioco",
+            "Un robot"
+        ],
+        "answer": "Sistema operativo mobile di Apple"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Windows?",
+        "options": [
+            "Sistema operativo di Microsoft",
+            "Finestre",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Sistema operativo di Microsoft"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è macOS?",
+        "options": [
+            "Sistema operativo desktop di Apple",
+            "Un errore",
+            "Un gioco",
+            "Un robot"
+        ],
+        "answer": "Sistema operativo desktop di Apple"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo di ricerca?",
+        "options": [
+            "Algoritmo per trovare un elemento in un insieme di dati",
+            "Google",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Algoritmo per trovare un elemento in un insieme di dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità computazionale?",
+        "options": [
+            "Studio delle risorse (tempo e spazio) necessarie per eseguire un algoritmo",
+            "Difficoltà",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Studio delle risorse (tempo e spazio) necessarie per eseguire un algoritmo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è P vs NP?",
+        "options": [
+            "Uno dei più grandi problemi aperti dell'informatica (se ogni problema verificabile velocemente è anche risolvibile velocemente)",
+            "Un gioco",
+            "Un errore",
+            "Una formula"
+        ],
+        "answer": "Uno dei più grandi problemi aperti dell'informatica (se ogni problema verificabile velocemente è anche risolvibile velocemente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Test di Turing?",
+        "options": [
+            "Test per determinare se una macchina è in grado di esibire un comportamento intelligente indistinguibile da quello umano",
+            "Un esame",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Test per determinare se una macchina è in grado di esibire un comportamento intelligente indistinguibile da quello umano"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la Legge di Moore?",
+        "options": [
+            "Osservazione empirica che il numero di transistor in un microchip raddoppia circa ogni 2 anni",
+            "Una legge fisica",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Osservazione empirica che il numero di transistor in un microchip raddoppia circa ogni 2 anni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un database relazionale?",
+        "options": [
+            "Database basato sul modello relazionale (tabelle, righe, colonne) e SQL",
+            "Un file",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Database basato sul modello relazionale (tabelle, righe, colonne) e SQL"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è SQL?",
+        "options": [
+            "Structured Query Language (linguaggio per gestire database relazionali)",
+            "Un database",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Structured Query Language (linguaggio per gestire database relazionali)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è NoSQL?",
+        "options": [
+            "Database non relazionali (es. MongoDB, Redis)",
+            "No SQL",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Database non relazionali (es. MongoDB, Redis)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una chiave primaria?",
+        "options": [
+            "Colonna che identifica univocamente ogni riga in una tabella",
+            "Una chiave",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Colonna che identifica univocamente ogni riga in una tabella"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una chiave esterna?",
+        "options": [
+            "Colonna che crea un collegamento tra due tabelle",
+            "Una chiave",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Colonna che crea un collegamento tra due tabelle"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una transazione?",
+        "options": [
+            "Sequenza di operazioni database trattata come un'unica unità atomica (tutto o niente)",
+            "Un bonifico",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Sequenza di operazioni database trattata come un'unica unità atomica (tutto o niente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è ACID?",
+        "options": [
+            "Proprietà delle transazioni: Atomicità, Coerenza, Isolamento, Durabilità",
+            "Acido",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Proprietà delle transazioni: Atomicità, Coerenza, Isolamento, Durabilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'indicizzazione?",
+        "options": [
+            "Tecnica per velocizzare le query su un database",
+            "Un indice",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Tecnica per velocizzare le query su un database"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la normalizzazione?",
+        "options": [
+            "Processo di organizzazione dei dati per ridurre la ridondanza",
+            "Normalizzare",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Processo di organizzazione dei dati per ridurre la ridondanza"
+    }
+]

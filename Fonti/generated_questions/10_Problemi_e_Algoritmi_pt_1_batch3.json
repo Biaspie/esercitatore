@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Cosa significa che un problema è 'parametrico'?",
+        "options": [
+            "Che dipende da parametri variabili (input)",
+            "Che ha un solo parametro fisso",
+            "Che non ha soluzione",
+            "Che è un problema geometrico"
+        ],
+        "answer": "Che dipende da parametri variabili (input)"
+    },
+    {
+        "question": "Qual è l'input per il problema 'Trovare il massimo in un insieme di interi'?",
+        "options": [
+            "Un insieme di interi {x1, ..., xn}",
+            "Un singolo intero",
+            "Due interi",
+            "Una stringa"
+        ],
+        "answer": "Un insieme di interi {x1, ..., xn}"
+    },
+    {
+        "question": "Qual è la pre-condizione per il problema del massimo in un insieme?",
+        "options": [
+            "L'insieme deve contenere almeno un elemento (n >= 1)",
+            "L'insieme deve essere vuoto",
+            "L'insieme deve essere ordinato",
+            "L'insieme deve contenere solo numeri pari"
+        ],
+        "answer": "L'insieme deve contenere almeno un elemento (n >= 1)"
+    },
+    {
+        "question": "Qual è l'output per il problema del massimo in un insieme?",
+        "options": [
+            "Un intero Z che è il massimo dell'insieme",
+            "L'insieme ordinato",
+            "La somma degli elementi",
+            "La media degli elementi"
+        ],
+        "answer": "Un intero Z che è il massimo dell'insieme"
+    },
+    {
+        "question": "Se un algoritmo per il massimo restituisce un numero che non è nell'insieme, viola:",
+        "options": [
+            "La post-condizione (correttezza)",
+            "La pre-condizione",
+            "La finitezza",
+            "L'efficienza"
+        ],
+        "answer": "La post-condizione (correttezza)"
+    },
+    {
+        "question": "Quale problema non ammette un algoritmo risolutivo?",
+        "options": [
+            "Problema della fermata",
+            "Problema del commesso viaggiatore",
+            "Problema dello zaino",
+            "Problema dell'ordinamento"
+        ],
+        "answer": "Problema della fermata"
+    },
+    {
+        "question": "Chi ha dimostrato l'indecidibilità del problema della fermata?",
+        "options": [
+            "Alan Turing",
+            "Bill Gates",
+            "Ada Lovelace",
+            "Charles Babbage"
+        ],
+        "answer": "Alan Turing"
+    },
+    {
+        "question": "In quale anno è stato dimostrato il problema della fermata?",
+        "options": [
+            "1936",
+            "1966",
+            "2000",
+            "1800"
+        ],
+        "answer": "1936"
+    },
+    {
+        "question": "Cosa significa che un problema è 'intrattabile'?",
+        "options": [
+            "Che richiede risorse esponenziali per essere risolto",
+            "Che non può essere risolto",
+            "Che è facile da risolvere",
+            "Che non è interessante"
+        ],
+        "answer": "Che richiede risorse esponenziali per essere risolto"
+    },
+    {
+        "question": "La complessità esponenziale è considerata:",
+        "options": [
+            "Insostenibile in pratica per input grandi",
+            "Ottima",
+            "Accettabile sempre",
+            "Migliore di quella polinomiale"
+        ],
+        "answer": "Insostenibile in pratica per input grandi"
+    },
+    {
+        "question": "La maggior parte dei problemi comuni ha algoritmi:",
+        "options": [
+            "Polinomiali (efficienti)",
+            "Esponenziali",
+            "Indecidibili",
+            "Infiniti"
+        ],
+        "answer": "Polinomiali (efficienti)"
+    },
+    {
+        "question": "Un algoritmo che esegue n^2 operazioni ha complessità:",
+        "options": [
+            "Quadratica",
+            "Lineare",
+            "Costante",
+            "Esponenziale"
+        ],
+        "answer": "Quadratica"
+    },
+    {
+        "question": "Un algoritmo che esegue log(n) operazioni ha complessità:",
+        "options": [
+            "Logaritmica",
+            "Lineare",
+            "Quadratica",
+            "Esponenziale"
+        ],
+        "answer": "Logaritmica"
+    },
+    {
+        "question": "Qual è più veloce per n grande: O(n) o O(n^2)?",
+        "options": [
+            "O(n)",
+            "O(n^2)",
+            "Sono uguali",
+            "Dipende dal computer"
+        ],
+        "answer": "O(n)"
+    },
+    {
+        "question": "L'istruzione 'inizializza risultato = min {x,y}' è un esempio di:",
+        "options": [
+            "Assegnazione",
+            "Confronto",
+            "Ciclo",
+            "Salto"
+        ],
+        "answer": "Assegnazione"
+    },
+    {
+        "question": "L'istruzione 'decrementa risultato di 1' è un esempio di:",
+        "options": [
+            "Operazione aritmetica",
+            "Input",
+            "Output",
+            "Dichiarazione"
+        ],
+        "answer": "Operazione aritmetica"
+    },
+    {
+        "question": "Se un algoritmo ha un bug che lo fa ciclare all'infinito su un input specifico:",
+        "options": [
+            "Non è corretto (o non è finito) per quell'input",
+            "È comunque un buon algoritmo",
+            "Funzionerà su un computer più veloce",
+            "Basta riavviarlo"
+        ],
+        "answer": "Non è corretto (o non è finito) per quell'input"
+    },
+    {
+        "question": "Il testing di un programma serve a:",
+        "options": [
+            "Trovare errori (bug)",
+            "Dimostrare che non ci sono errori (impossibile in generale)",
+            "Vendere il programma",
+            "Scrivere il manuale"
+        ],
+        "answer": "Trovare errori (bug)"
+    },
+    {
+        "question": "Un diagramma a blocchi può contenere cicli (frecce che tornano indietro)?",
+        "options": [
+            "Sì, per rappresentare le iterazioni",
+            "No, mai",
+            "Solo se disegnato a matita",
+            "Solo nei giorni dispari"
+        ],
+        "answer": "Sì, per rappresentare le iterazioni"
+    },
+    {
+        "question": "In un diagramma a blocchi, le frecce indicano:",
+        "options": [
+            "Il flusso di esecuzione",
+            "La direzione del vento",
+            "I commenti",
+            "Le variabili"
+        ],
+        "answer": "Il flusso di esecuzione"
+    },
+    {
+        "question": "La programmazione strutturata evita:",
+        "options": [
+            "Il codice 'spaghetti' (intrecciato)",
+            "Il codice pulito",
+            "I commenti",
+            "Le funzioni"
+        ],
+        "answer": "Il codice 'spaghetti' (intrecciato)"
+    },
+    {
+        "question": "Un blocco di codice è solitamente delimitato da:",
+        "options": [
+            "Parentesi graffe {} (in C/Java)",
+            "Parentesi tonde ()",
+            "Virgolette",
+            "Punti interrogativi"
+        ],
+        "answer": "Parentesi graffe {} (in C/Java)"
+    },
+    {
+        "question": "L'indentazione del codice serve a:",
+        "options": [
+            "Migliorare la leggibilità e mostrare la struttura",
+            "Far funzionare il compilatore (in alcuni linguaggi sì, ma in generale è stile)",
+            "Occupare più spazio",
+            "Nascondere il codice"
+        ],
+        "answer": "Migliorare la leggibilità e mostrare la struttura"
+    },
+    {
+        "question": "Un algoritmo deve essere 'Non ambiguo' per:",
+        "options": [
+            "Poter essere eseguito da una macchina senza intelligenza",
+            "Essere capito dai bambini",
+            "Essere breve",
+            "Essere lungo"
+        ],
+        "answer": "Poter essere eseguito da una macchina senza intelligenza"
+    },
+    {
+        "question": "Se un'istruzione dice 'Fai qualcosa di bello', è:",
+        "options": [
+            "Ambigua",
+            "Non ambigua",
+            "Corretta",
+            "Finita"
+        ],
+        "answer": "Ambigua"
+    },
+    {
+        "question": "Se un'istruzione dice 'Calcola la radice quadrata di -1' (nei reali), è:",
+        "options": [
+            "Non eseguibile (o genera errore)",
+            "Eseguibile",
+            "Ambigua",
+            "Infinita"
+        ],
+        "answer": "Non eseguibile (o genera errore)"
+    },
+    {
+        "question": "La memoria RAM è:",
+        "options": [
+            "Volatile (si cancella allo spegnimento)",
+            "Permanente",
+            "Infinita",
+            "Lenta"
+        ],
+        "answer": "Volatile (si cancella allo spegnimento)"
+    },
+    {
+        "question": "Il disco rigido (Hard Disk) è:",
+        "options": [
+            "Memoria di massa permanente",
+            "Memoria volatile",
+            "Il processore",
+            "La scheda video"
+        ],
+        "answer": "Memoria di massa permanente"
+    },
+    {
+        "question": "La CPU (Central Processing Unit) è:",
+        "options": [
+            "Il cervello del computer che esegue le istruzioni",
+            "La memoria",
+            "Lo schermo",
+            "La tastiera"
+        ],
+        "answer": "Il cervello del computer che esegue le istruzioni"
+    },
+    {
+        "question": "Un algoritmo può essere scritto in linguaggio naturale (italiano)?",
+        "options": [
+            "Sì, ma può essere ambiguo",
+            "No, mai",
+            "Solo in inglese",
+            "Solo in latino"
+        ],
+        "answer": "Sì, ma può essere ambiguo"
+    },
+    {
+        "question": "Perché usiamo linguaggi di programmazione formali?",
+        "options": [
+            "Per eliminare l'ambiguità e comunicare con la macchina",
+            "Perché l'italiano è difficile",
+            "Perché ci piace digitare",
+            "Perché costano meno"
+        ],
+        "answer": "Per eliminare l'ambiguità e comunicare con la macchina"
+    },
+    {
+        "question": "Il linguaggio C è un linguaggio:",
+        "options": [
+            "Compilato",
+            "Interpretato",
+            "Naturale",
+            "Di markup"
+        ],
+        "answer": "Compilato"
+    },
+    {
+        "question": "Un linguaggio interpretato (es. Python) viene eseguito:",
+        "options": [
+            "Tramite un interprete che legge ed esegue riga per riga",
+            "Compilando tutto prima",
+            "Senza computer",
+            "A mano"
+        ],
+        "answer": "Tramite un interprete che legge ed esegue riga per riga"
+    },
+    {
+        "question": "Qual è il vantaggio di un linguaggio compilato?",
+        "options": [
+            "Solitamente è più veloce nell'esecuzione",
+            "È più facile da scrivere",
+            "Non ha bisogno di compilatore",
+            "Occupa meno spazio su disco"
+        ],
+        "answer": "Solitamente è più veloce nell'esecuzione"
+    },
+    {
+        "question": "Qual è il vantaggio di un linguaggio interpretato?",
+        "options": [
+            "Portabilità e facilità di test immediato",
+            "Velocità estrema",
+            "Protezione del codice",
+            "Nessuno"
+        ],
+        "answer": "Portabilità e facilità di test immediato"
+    },
+    {
+        "question": "Un errore di sintassi viene rilevato:",
+        "options": [
+            "Dal compilatore (o interprete)",
+            "Dall'utente finale",
+            "Dalla scheda video",
+            "Dal mouse"
+        ],
+        "answer": "Dal compilatore (o interprete)"
+    },
+    {
+        "question": "Un errore logico (bug) viene rilevato:",
+        "options": [
+            "Durante il testing o l'esecuzione (spesso difficile da trovare)",
+            "Dal compilatore",
+            "Sempre automaticamente",
+            "Mai"
+        ],
+        "answer": "Durante il testing o l'esecuzione (spesso difficile da trovare)"
+    },
+    {
+        "question": "Se scrivo 'prntf' invece di 'printf' in C, è un errore:",
+        "options": [
+            "Di sintassi",
+            "Logico",
+            "Hardware",
+            "Di rete"
+        ],
+        "answer": "Di sintassi"
+    },
+    {
+        "question": "Se scrivo un ciclo che non termina mai per sbaglio, è un errore:",
+        "options": [
+            "Logico",
+            "Di sintassi",
+            "Di compilazione",
+            "Grafico"
+        ],
+        "answer": "Logico"
+    },
+    {
+        "question": "Il termine 'algoritmo' deriva da:",
+        "options": [
+            "Al-Khwarizmi (matematico persiano)",
+            "Algor (freddo in latino)",
+            "Ritmo",
+            "Grecia antica"
+        ],
+        "answer": "Al-Khwarizmi (matematico persiano)"
+    },
+    {
+        "question": "Un algoritmo deve essere generale, cioè:",
+        "options": [
+            "Risolvere una classe di problemi, non solo una singola istanza",
+            "Essere generico e vago",
+            "Essere scritto da un generale",
+            "Essere valido solo oggi"
+        ],
+        "answer": "Risolvere una classe di problemi, non solo una singola istanza"
+    },
+    {
+        "question": "L'analisi degli algoritmi serve a:",
+        "options": [
+            "Confrontare diverse soluzioni e scegliere la migliore",
+            "Criticare gli altri programmatori",
+            "Trovare scuse",
+            "Aumentare il costo"
+        ],
+        "answer": "Confrontare diverse soluzioni e scegliere la migliore"
+    },
+    {
+        "question": "Il caso 'migliore' per un algoritmo di ricerca sequenziale è:",
+        "options": [
+            "L'elemento cercato è il primo",
+            "L'elemento cercato è l'ultimo",
+            "L'elemento non c'è",
+            "L'array è vuoto"
+        ],
+        "answer": "L'elemento cercato è il primo"
+    },
+    {
+        "question": "Il caso 'peggiore' per un algoritmo di ricerca sequenziale è:",
+        "options": [
+            "L'elemento cercato è l'ultimo o non c'è",
+            "L'elemento è il primo",
+            "L'elemento è a metà",
+            "L'array ha un solo elemento"
+        ],
+        "answer": "L'elemento cercato è l'ultimo o non c'è"
+    },
+    {
+        "question": "Un algoritmo ricorsivo è un algoritmo che:",
+        "options": [
+            "Richiama se stesso",
+            "Corre all'indietro",
+            "Usa i ricorsi",
+            "Non termina mai"
+        ],
+        "answer": "Richiama se stesso"
+    },
+    {
+        "question": "Il fattoriale di n (n!) può essere calcolato:",
+        "options": [
+            "Sia iterativamente che ricorsivamente",
+            "Solo ricorsivamente",
+            "Solo iterativamente",
+            "Non si può calcolare"
+        ],
+        "answer": "Sia iterativamente che ricorsivamente"
+    },
+    {
+        "question": "La sequenza di Fibonacci è un classico esempio di:",
+        "options": [
+            "Problema risolvibile con ricorsione",
+            "Problema indecidibile",
+            "Errore di sintassi",
+            "Virus"
+        ],
+        "answer": "Problema risolvibile con ricorsione"
+    },
+    {
+        "question": "Un algoritmo greedy (ingordo):",
+        "options": [
+            "Fa la scelta localmente ottima ad ogni passo",
+            "Mangia molta memoria",
+            "È sempre lento",
+            "Non funziona mai"
+        ],
+        "answer": "Fa la scelta localmente ottima ad ogni passo"
+    },
+    {
+        "question": "Il problema del resto (dare il minor numero di monete) si risolve spesso con:",
+        "options": [
+            "Algoritmo greedy",
+            "Forza bruta",
+            "Casualmente",
+            "Non si risolve"
+        ],
+        "answer": "Algoritmo greedy"
+    },
+    {
+        "question": "La programmazione dinamica serve a:",
+        "options": [
+            "Ottimizzare problemi con sottostruttura ottima e sottoproblemi sovrapposti",
+            "Programmare mentre si corre",
+            "Fare siti web dinamici",
+            "Usare la RAM dinamica"
+        ],
+        "answer": "Ottimizzare problemi con sottostruttura ottima e sottoproblemi sovrapposti"
+    }
+]

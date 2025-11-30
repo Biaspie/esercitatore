@@ -1,0 +1,674 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica Architettura del calcolatore e sistemi operativi
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Norme sul diritto d’autore
+
+
+
+•  La visione dei filmati e l’utilizzo del materiale didattico è riservato agli utenti iscritti al corso al solo fine di studio e approfondimento didattico.
+
+•  L'utente che accede alla sezione e-learning e che ne consulta i contenuti è tenuto a rispettare le disposizioni legislative che tutelano il diritto d'autore e pertanto è fatto espresso divieto di riprodurre, pubblicare o distribuire i materiali tratti dal presente sito, anche in forma parziale, fatta salva la possibilità di realizzare un’unica copia del materiale, in formato cartaceo e/o digitale, all’esclusivo fine di studio.
+
+•  L’utente è responsabile per l'uso improprio o non autorizzato del materiale pubblicato effettuato in violazione delle suddette disposizioni.
+Calcolatore (o Elaboratore o Computer)
+
+§ Che cosa è? Una macchina programmabile, ovvero in grado di eseguire programmi.
+§ Definizione dal punto di vista dell’utente, che interagisce con il calcolatore attraverso i programmi.
+§ Ciascun programma fa svolgere al calcolatore delle operazioni e mette a disposizione dell'utente degli strumenti che l'utente può utilizzare per perseguire un certo scopo.
+Calcolatore (o Elaboratore o Computer)
+
+§ Che cosa è? Un sistema, ovvero un oggetto costituito da un insieme di componenti che interagiscono fra loro per ottenere un certo comportamento
+§ Definizione dal punto di vista funzionale
+Hardware e Software
+
+Hardware: struttura fisica del calcolatore, costituita da componenti elettroniche, elettriche, magnetiche, meccaniche e ottiche
+§ Hard àduro, Ware àManufatto, oggetto, merce
+
+
+Software: insieme di programmi che consentono all’hardware di svolgere compiti utili
+§ Soft àmorbido , Ware àManufatto, oggetto, merce
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HARDWARE
+Architettura del Calcolatore
+
+
+
+
+
+
+§ Quali sono i componenti del sistema?
+
+
+
+§ Come funziona ciascun componente?
+
+
+
+§ Come interagiscono fra loro i componenti?
+Livello di dettaglio
+
+
+
+
+
+
+§ Un calcolatore è costituito da atomi
+
+
+
+
+
+
+
+
+§ Un calcolatore è costituito da transistor, chip …
+
+
+
+
+
+
+
+
+§ Un calcolatore è costituito da componenti funzionali
+Macchina di Von Neumann (1903 – 1957)
+
+§Non è una macchina reale, ma un modello semplificato del funzionamento di un calcolatore che ancora oggi rappresenta correttamente la struttura dei calcolatori.
+Componenti della Macchina di Von Neumann
+
+
+
+
+
+1) Memoria: memorizza e fornisce l’accesso a dati e programmi
+
+
+
+
+
+
+3) Interfacce I/O: componenti di collegamento con le periferiche del calcolatore
+
+2) CPU o Processore: esegue le istruzioni per l’elaborazione dei dati. Inoltre, controlla e coordina il funzionamento delle altre parti
+
+
+
+
+
+4) Bus: svolge la funzionalità di trasferimento di dati e informazioni di controllo tra le altre componenti
+
+
+
+
+
+
+
+Attenzione: tastiera, mouse, schermo, altoparlanti, disco, …, non fanno parte della macchina in questo modello
+Funzionalità dei componenti
+
+
+
+
+
+
+
+1)  Elaborazione dei dati svolta dalla CPU
+2)  Controllo e coordinamento svolti dalla CPU
+
+
+
+3)  Memorizzazione dei dati avviene in memoria centrale
+
+
+
+4)  Scambio dei dati con l’utente realizzato tramite le interfacce di I/O
+
+
+
+5)  Trasferimento dei dati realizzato tramite il bus
+Memoria Centrale
+
+
+
+
+
+
+§Permette di memorizzare in modo temporaneo dati e programmi. E’
+volatile, ovvero allo spegnimento del computer ciò che è presente nella
+memoria centrale viene cancellato. §Permette due tipi di operazioni:
+1.	Scrittura, ovvero memorizzazione dei dati e dei programmi 2.	Lettura, ovvero accesso a dati e programmi memorizzati
+§Può essere acceduta in maniera diretta dal processore (tramite il bus)
+§In Inglese RAM (Random Access Memory), dove random access (accesso
+casuale) evidenzia il fatto che dati e programmi non vengono
+memorizzati secondo un ordine sequenziale.
+Struttura della Memoria Centrale
+
+
+
+
+
+
+§elevatissimo dilbit (le RAM tipiche attuali hanno qualche decina orun
+Costituita da uno o più chip, ciascuno dei quali contiene un nume o
+centinaio di mi iardi di bit)
+
+
+
+
+
+
+
+
+§Bit: elemento base della memoria, può rappresentare due valori (in tipo di dispositivo che ha due stati (per esempio le due posizioni di un
+genere indicati da 0 e 1). Un bit è fisicamente realizzato da un qualche
+interruttore, i due livelli di voltaggio o di corrente di un circuito, due
+livelli distinti di intensità luminosa, due direzioni di magnetizzazione, …) §1 Byte=8 Bit B	1 KB=1024 Byte	1MB=1024 KB	1GB=1024 MB
+1 TB=1024 G	1 PB=1024 TB	…
+Organizzazione della Memoria
+
+
+
+§I bit della memoria centrale sono raggruppati in celle o
+locazioni di memoria
+§Una cella ha una dimensione fissa (la dimensioneitipica attuale è
+32 o 64 bit). Una cella corrisponde a una parola d  memoria,
+ovvero rappresenta una porzione di memoria che viene
+(tipicamente) utilizzata interamente (ovvero letture, scritture e
+trasferimenti vengono effettuati in gruppi di 32 o 64 bit)
+§Una cella ha un valore (la sequenza di bit memorizzata al suo
+interno)
+§Una cella ha un indirizzo che permette al processore di riferirsi ad
+essa per effettuare una lettura o una scrittura
+Organizzazione della Memoria
+
+
+
+In lettura il processore invia sul bus indirizzi l’indirizzo della cella da leggere e la memoria restituisce sul bus dati il valore della cella richiesta.
+
+
+
+
+In scrittura il processore invia sul bus indirizzi l’indirizzo della cella su cui scrivere e sul bus dati il valore da scrivere. La memoria effettua tale scrittura.
+
+
+Ciascuna operazione viene realizzata in un tempo 𝑇! indipendente dall’indirizzo della cella (random access memory).
+Bus
+
+
+
+dati), di indirizzi (bus indirizzi) e di informazioni di controllo (bus di controllo) fra i componenti del calcolatore. E’ l’insieme dei collegamenti su cui vengono trasferiti dati, indirizzi e informazioni
+Componente del calcolatore dedicato al trasferimento di dati (bus
+controllo.
+
+
+
+
+
+
+
+
+
+Tutti i componenti sono collegati al bus!
+Maniera modulare ed espandibile di collegare tutti i componenti di
+un calcolatore. In particolare, quando viene aggiunto un nuovo
+componente al calcolatore, è sufficiente collegarlo al bus per
+metterlo in comunicazione con tutti gli altri componenti.
+Processore
+
+
+
+§Anche chiamato CPU (Central Processing Unit). E’ responsabile della
+elaborazione dei dati e del coordinamento fra i componenti del calcolatore. §La CPU è composta da due parti:
+§La unità aritmetico-logica (ALU – Arithmetic Logic Unit), responsabile della
+esecuzione delle istruzioni.
+§La unità di controllo (CU – Control Unit), responsabile del coordinamento fra i
+componenti.
+⇒ Nei computer attuali la CPU può essere costituita da diversi core, ciascuno
+dei quali può svolgere tutte le funzioni descritte sopra e contiene diverse
+ALU. Il processore è fisicamente un singolo circuito integrato o chip, consistente di transistor, diodi, condensatori e resistori collegati tra loro per
+mezzo della tecnologia VLSI (Very Large Scale Integration) e collocati su uno
+strato di semiconduttore, tipicamente silicio.
+Struttura del Processore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MAR, MDR, PC, IR, PSW, registro A, registro B… sono delle piccole aree di memoria, dette registri, interne alla CPU.
+Elaborazione delle Informazioni
+Avviene mediante l’esecuzione di istruzioni (in linguaggio macchina), corrispondenti a operazioni elementari sui dati, come:
+
+
+
+
+
+§Operazioni aritmetiche: +,∗,−,… §Operazioni relazionali: <,>,<=,… §Operazioni logiche: ¬,&,||
+
+
+
+
+Esempio di schema circuitale di una ALU
+
+
+
+
+
+Poche operazioni, ma molto efficienti – i processori attuali possono tipicamente eseguire qualche decina di miliardi di operazioni per secondo.
+Esecuzione delle Istruzioni
+Il processore esegue le istruzioni di un programma
+memorizzato in memoria centrale attraverso l’esecuzione
+ordinata e ripetuta delle tre fasi:
+
+
+
+
+§Fetch (lettura): viene letta la prossima istruzione da eseguire
+
+
+§Decode (decodifica): viene determinato il tipo della prossima
+istruzione da eseguire
+
+
+§Execute (esecuzione): richiede lo svolgimento di tutte le azioni
+necessarie per l’esecuzione dell’istruzione. E’ possibile che tale
+fase coinvolga altri componenti del calcolatore.
+
+
+
+
+
+1)
+
+
+2)
+
+
+3) 4) 5)
+
+
+6)
+
+
+
+
+
+
+7)
+
+Fetch
+La Control Unit legge dal registro PC l’indirizzo della prossima istruzione da eseguire. PC =
+Program Counter. Memorizza l’indirizzo di memoria della prossima istruzione da eseguire.
+Il contenuto di PC viene copiato nel registro MAR. MAR=Memory Address Register.
+Memorizza un indirizzo di memoria al quale accedere; è collegato al bus indirizzi. La Control Unit invia una richiesta di lettura alla memoria tramite il bus di controllo. La memoria invia l’istruzione tramite il bus dati.
+L’istruzione viene memorizzata nel registro MDR. MDR=Memory Data Register.
+Memorizza il dato o l’istruzione che è stato acceduto. Il contenuto di MDR viene copiato nel registro IR.
+IR=Instruction Register. Memorizza l’istruzione che deve essere eseguita.
+Il contenuto di PC viene incrementato così che faccia riferimento alla prossima istruzione del programma.
+Decode
+La Control Unit decodifica l’istruzione presente nell’IR, ovvero ne determina il tipo e quanti operandi ha.
+
+•Inoltre la CU recupera dalla memoria tali operandi, inviando una richiesta sul bus di controllo e ricevendo i valori sul bus dati.
+
+•I valori degli operandi vengono salvati nei registri ALU (registro A, registro B, …)
+Execute
+La CU coordina i componenti coinvolti nell’operazione, chiedendo loro di svolgere delle operazioni
+§Per l’elaborazione di un dato, viene coinvolta la ALU.
+§Per la lettura o scrittura di un dato in memoria, vengono coinvolti la memoria e il bus.
+
+§Per la lettura o scrittura di un dato verso una periferica, viene coinvolta l’interfaccia corrispondente e i bus.
+
+
+
+
+L’esito dell’istruzione viene scritto nel PSW=Program Status Word. Contiene dell’ultima istruzione eseguita.
+
+registro PSW. informazioni sull’esito
+Clock
+Le attività del processore vengono scandite da un clock, un segnale che è usato come un metronomo per coordinare e sincronizzare le operazioni delle varie parti della CPU.
+
+
+
+
+
+Una caratteristica fondamentale del clock è la sua frequenza, ovvero il numero di segnali che vengono inviati ogni secondo.
+•Nei calcolatori attuali, questa frequenza è dell’ordine di qualche gigahertz, ovvero di qualche miliardo di segnali al secondo.
+Memorie di Massa
+Anche dette secondarie o ausiliarie, sono (rispetto alla memoria centrale):
+§Più capienti (centinaia di GB contro qualche GB nei computer attuali) §Permanenti (conservano il contenuto anche dopo lo spegnimento
+del computer)
+§Più economiche
+§Più lente (il tempo di accesso ai dati contenuti in memoria secondaria è molto maggiore del tempo di accesso ai dati contenuti in memoria centrale)
+⇒ Quando un utente chiede di eseguire un programma, questo viene copiato dalla memoria secondaria alla memoria centrale
+Memorie di Massa
+Caratteristiche rilevanti
+
+
+§Capacità, ovvero la quantità di informazioni che la memoria può contenere. Ad esempio, un CD-ROM può contenere circa 700MB, gli hard disk attuali qualche centinaio di GB.
+
+§Tempo di accesso, ovvero il tempo necessario per accedere ai dati.
+
+§Velocità di trasferimento da e verso la memoria centrale.
+
+§Costo
+Hard Disk Aadncuhneiansoseto. come disco fisso o disco rigido, è costituito
+da un  nsieme di dischi magnetici che ruotano intorno
+
+La superficie di un disco magnetico è divisa in settori,
+che hanno la forma di «spicchi», e in una sequenza di
+tracce, che sono cammini circolari lungo i quali
+
+
+vengono memorizzati i bit
+
+Lettura e scrittura vengono effettuate per mezzo di
+testine, una per ciascun disco magnetico. Le testine si
+accorciano e si allungano per arrivare alla traccia
+
+
+giusta, mentre i dischi ruotano per far sì che le testine
+siano posizionate sul settore giusto
+Interfacce di I/O
+Un calcolatore è in genere collegato a diverse periferiche di
+input (mouse, tastiera, scanner, microfono, telecamera, …),
+che permettono al calcolatore di ricevere dati e istruzioni
+
+
+dall’utente, e a diverse periferiche di output (monitor,
+stampanti, altoparlanti, …) che permettono al calcolatore di
+comunicare all’utente i risultati del lavoro svolto
+
+
+
+Le interfacce di I/O controllano il funzionamento delle
+periferiche di I/O, in particolare devono tradurre i segnali
+interni al calcolatore in un formato comprensibile alla
+
+
+periferica e viceversa. Possono essere pensate come delle
+«piccole CPU dedicate» al funzionamento delle periferiche.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SOFTWARE
+Software di Base e Applicativo Il software si divide in
+
+Software di base: insieme dei programmi che consentono all’hardware
+di svolgere compiti utili - principalmente il sistema operativo
+
+•
+
+gestisce le risorse del computer, semplifica l'utilizzo del computer e lo
+virtualizza - ovvero astrae le funzionalità del computer per l'utente,
+che non deve così essere a conoscenza delle modalità di
+
+
+funzionamento dell'hardware.
+
+
+Software applicativo: mostra il calcolatore come una macchina virtuale,
+che può essere utilizzata per risolvere problemi.
+• Silappoggia al software di base e raramente si deve appoggiare
+al 'hardware – è un insieme di programmi applicativi.
+Sistema Operativo
+
+
+E’ il principale componente del software di base.
+
+
+
+Ha due scopi principali:
+1.  Gestire le risorse del calcolatore – la CPU, le periferiche, la memoria centrale, la memoria di massa, …
+
+2.  Virtualizzare le risorse – le risorse del calcolatore devono essere rese più semplici di quanto non siano in realtà:
+gli utenti, ma anche i programmi applicativi, non devono essere a conoscenza del funzionamento dell’hardware del calcolatore e il sistema operativo deve astrarre le risorse messe a disposizione dall’hardware.
+Esempio di Virtualizzazione: Avvio dell’Esecuzione di un Programma
+
+
+Dal punto di vista dell’utente: basta un doppio click
+e l’esecuzione del programma viene avviata.
+
+
+Quello che fa il sistema operativo:
+§Individua la sequenza di istruzioni che costituiscono il programma
+in memoria secondaria
+
+
+§Assegna risorse al programma – ad esempio, dello spazio in
+memoria centrale
+§Copia le istruzioni del programma in memoria centrale §Fa sì che la CPU esegua le prime istruzioni del programma
+⇒ Tutto questo avviene in maniera non visibile all’utente!
+Struttura del Sistema Operativo
+
+
+
+Può essere descritta in modo gerarchico
+
+
+
+
+
+Programmi applicativi e librerie comuni
+
+
+Interprete dei comandi
+
+L’utente interagisce solo con questo livello
+
+
+
+Gestore dei file
+
+
+Gestore delle periferiche	Sistema Operativo Gestore della memoria
+
+Nucleo
+
+
+Hardware del calcolatore
+Programmi e Processi
+Un programma è un insieme di istruzioni memorizzate su un qualche
+supporto di memoria. Un processo o thread è un programma in
+esecuzione.
+
+
+
+
+Un programma è qualcosa di statico, mentre un processo è dinamico.
+
+corrispondere diversi processi, o
+Allo stesso programma posson
+anche contemporanei.
+
+Un programma può essere
+disinstallato dal calcolatore,
+mentre i processi terminano
+
+
+(«muoiono») continuamente.
+Vita dei Processi I processi nascono quando i programmi vengono mandati in
+esecuzione e muoiono quando l’esecuzione termina.
+
+
+Che succede durante la vita di un processo? ⇒ La CPU esegue le istruzioni del processo.
+
+
+
+Problema: abbiamo 1 sola CPU e molti processi da
+eseguire. Come possiamo eseguire tutti i processi?
+
+
+
+Uniprogrammazione: una possibilità
+è eseguire 1 processo per volta.
+Soluzione estremamente sconveniente!
+Multiprogrammazione e Nucleo
+Anche detta multitasking, la multiprogrammazione fornisce all’utente l’impressione che ci siano diversi processori virtuali, ognuno dedicato ad un processo. – Il processore salta da un processo all’altro, dando l’illusione all’utente che tutti i processi siano in esecuzione contemporanea, mentre in ogni istante la CPU può eseguire un solo processo: tutti gli altri sono in esecuzione virtuale (ovvero sono in attesa che la CPU ne esegua le istruzioni)
+Programmi applicativi e librerie comuni	Il nucleo (o kernel o gestore dei processi)
+è responsabile della gestione del
+Interprete dei comandi
+Gestore dei file	processore (o dei processori), in Gestore delle periferiche	particolare fa da scheduler, ovvero
+Gestore della memoria
+programma l’accesso dei processi alla
+Nucleo
+Hardware del calcolatore	risorsa processore.
+Gestore della Memoria
+
+
+Programmi applicativi e librerie comuni Interprete dei comandi Gestore dei file
+Gestore delle periferiche Gestore della memoria Nucleo
+s
+Hardware del calcolatore
+
+
+E’ responsabile della gestione della memoria centrale e di rendere efficienti gli spostamenti dalla memoria di massa alla memoria centrale e viceversa.
+
+
+
+La quantità di memoria di cui un processo ha bisogno potrebbe essere maggiore della memoria centrale disponibile
+⇒ A ciascun processo viene assegnata una area di memoria virtuale, grande a sufficienza da permettere l'esecuzione del processo. Il gestore della memoria gestisce la corrispondenza tra memoria virtuale e memoria centrale: in ogni istante solo delle porzioni (“pagine”) del programma sono realmente in memoria centrale. Porzioni poco usate vengono mosse in una area di swap, che è parte della memoria secondaria.
+Gestore delle Periferiche Programmi applicativi e librerie comuni
+
+Interprete dei comandi Gestore dei file
+Gestore delle periferiche Gestore della memoria Nucleo
+Hardware del calcolatore
+
+
+E’ responsabile della gestione delle periferiche.
+
+
+
+
+Utilizza un insieme di driver e ha i seguenti scopi:
+
+§Trasformare le periferiche in periferiche virtuali, ovvero l’utente non deve essere a conoscenza della modalità di funzionamento fisico delle periferiche per poterle utilizzare
+
+§Gestire la traduzione dei dati dal formato interno al calcolatore a quello delle periferiche §Gestire le comunicazioni dei segnali da e verso le periferiche
+§Gestire i conflitti legati a processi multipli che vogliono accedere alla stessa periferica
+Gestore dei File o File System Programmi applicativi e librerie comuni
+
+Interprete dei comandi Gestore dei file
+Gestore delle periferiche Gestore della memoria Nucleo
+Hardware del calcolatore
+
+
+§E’ responsabile della gestione delle informazioni memorizzate nella memoria secondaria, ovvero nei dischi rigidi.
+
+
+
+
+§Dal punto di vista fisico, i dischi sono organizzati in superfici, settori e tracce.
+
+§Dal punto di vista dell’utente, le informazioni hanno un’organizzazione gerarchica (ovvero ad albero) in file e cartelle.
+
+§E’ compito del file system virtualizzare la memoria secondaria, così che venga presentata all’utente secondo l’organizzazione gerarchica.
+File, Directory, Volume §File: letteralmente archivio, è l'unità logica
+di memorizzazione – memorizza un singolo
+
+
+documento o applicazione – e può contenere testo, immagini, suoni, filmati,
+programmi, …
+§Directory: contenitore logico di file e altre
+directory. Le directory sono organizzate ad
+
+
+albero.
+§Volume o partizione: porzione della memoria secondaria gestita dal file system
+corrispondente alla radice dell’albero §In Windows, diversi volumi – A:, C:, … §In OS X e Unix, un solo volume
+File
+§Hanno un contenuto, che è una sequenza di byte di lunghezza variabile.
+I dati contenuti in un file vengono interpretati sulla base del formato del file, che indica la convenzione con la quale il contenuto del file viene
+interpretato.
+§Hanno un nome o identificatore che deve essere univoco all'interno
+della directory di cui fanno parte e la cui parte finale, detta estensione
+(es: .txt, .exe, .pdf ), indica il formato del file in molti sistemi operativi.
+§Hanno un percorso o cammino che corrisponde al cammino dalla radice
+alla directory che contiene il file.
+
+
+
+
+
+C:\Home\Teaching\Inf2023\Dispense\02Architetture.pdf Percorso	Nome	Estensione
+Interprete dei Comandi
+
+
+Programmi applicativi e librerie comuni Interprete dei comandi Gestore dei file
+Gestore delle periferiche Gestore della memoria Nucleo
+Hardware del calcolatore
+
+
+§E’ l’interfaccia utente del sistema operativo: definisce e gestisce le operazioni a disposizione dell’utente finale, ovvero i comandi a disposizione dell’utente, come l’esecuzione di un’applicazione o l’apertura di un documento.
+
+
+
+
+
+Interfacce Grafiche
+(GUI – Graphic User Interface)
+
+
+Interfaccia a Caratteri (Shell)
+Altre Risorse
+
+§Bellini, Guidi: Linguaggio C — 1.1 – 1.3, 1.4 (cenni), 1.5 (prima parte), 2.1 (cenni), 2.2 (cenni)

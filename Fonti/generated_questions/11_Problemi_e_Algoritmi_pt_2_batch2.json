@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Come si risolve la verifica universale?",
+        "options": [
+            "Si può terminare (uscire dal ciclo) appena si trova un elemento che NON soddisfa la proprietà (False)",
+            "Bisogna scorrere tutto sempre",
+            "Non si può",
+            "Si usa un contatore"
+        ],
+        "answer": "Si può terminare (uscire dal ciclo) appena si trova un elemento che NON soddisfa la proprietà (False)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se arrivo alla fine senza trovare controesempi (verifica universale), il risultato è:",
+        "options": [
+            "True",
+            "False",
+            "Errore",
+            "0"
+        ],
+        "answer": "True"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un problema di minimo/massimo?",
+        "options": [
+            "Trovare l'elemento con valore minimo o massimo nella sequenza",
+            "Contare",
+            "Sommare",
+            "Cercare"
+        ],
+        "answer": "Trovare l'elemento con valore minimo o massimo nella sequenza"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si inizializza la variabile per il massimo?",
+        "options": [
+            "Con il primo elemento della sequenza (o un valore molto piccolo, -infinito)",
+            "Con 0",
+            "Con un valore molto grande",
+            "Con 1"
+        ],
+        "answer": "Con il primo elemento della sequenza (o un valore molto piccolo, -infinito)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si inizializza la variabile per il minimo?",
+        "options": [
+            "Con il primo elemento della sequenza (o un valore molto grande, +infinito)",
+            "Con 0",
+            "Con un valore molto piccolo",
+            "Con 1"
+        ],
+        "answer": "Con il primo elemento della sequenza (o un valore molto grande, +infinito)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si aggiorna il massimo?",
+        "options": [
+            "Se l'elemento corrente > massimo attuale, allora massimo = elemento corrente",
+            "Se elemento < massimo",
+            "Sempre",
+            "Mai"
+        ],
+        "answer": "Se l'elemento corrente > massimo attuale, allora massimo = elemento corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un'iterazione?",
+        "options": [
+            "Una singola esecuzione del corpo di un ciclo",
+            "Un errore",
+            "Un programma",
+            "Un file"
+        ],
+        "answer": "Una singola esecuzione del corpo di un ciclo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la condizione di terminazione?",
+        "options": [
+            "La condizione che determina quando il ciclo deve fermarsi",
+            "La fine del mondo",
+            "Un errore",
+            "Un file"
+        ],
+        "answer": "La condizione che determina quando il ciclo deve fermarsi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se la condizione di terminazione non viene mai raggiunta?",
+        "options": [
+            "Ciclo infinito (loop)",
+            "Il programma termina subito",
+            "Errore di sintassi",
+            "Nulla"
+        ],
+        "answer": "Ciclo infinito (loop)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'inizializzazione?",
+        "options": [
+            "Assegnare un valore iniziale alle variabili prima di usarle (es. prima del ciclo)",
+            "Chiudere il programma",
+            "Cancellare variabili",
+            "Nulla"
+        ],
+        "answer": "Assegnare un valore iniziale alle variabili prima di usarle (es. prima del ciclo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché è importante inizializzare l'accumulatore?",
+        "options": [
+            "Perché altrimenti partirebbe da un valore indefinito (spazzatura) falsando il risultato",
+            "Non è importante",
+            "Per estetica",
+            "Per velocità"
+        ],
+        "answer": "Perché altrimenti partirebbe da un valore indefinito (spazzatura) falsando il risultato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo ricorsivo?",
+        "options": [
+            "Un algoritmo che richiama se stesso per risolvere sottoproblemi più piccoli",
+            "Un algoritmo iterativo",
+            "Un algoritmo sbagliato",
+            "Un algoritmo lento"
+        ],
+        "answer": "Un algoritmo che richiama se stesso per risolvere sottoproblemi più piccoli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa serve in una funzione ricorsiva per evitare loop infiniti?",
+        "options": [
+            "Un caso base (condizione di terminazione)",
+            "Un ciclo while",
+            "Un goto",
+            "Nulla"
+        ],
+        "answer": "Un caso base (condizione di terminazione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio classico di ricorsione:",
+        "options": [
+            "Fattoriale (n! = n * (n-1)!)",
+            "Somma",
+            "Stampa",
+            "Nulla"
+        ],
+        "answer": "Fattoriale (n! = n * (n-1)!)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il caso base del fattoriale?",
+        "options": [
+            "0! = 1 (o 1! = 1)",
+            "n = 100",
+            "n = -1",
+            "Non c'è"
+        ],
+        "answer": "0! = 1 (o 1! = 1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la sequenza di Fibonacci?",
+        "options": [
+            "Sequenza dove ogni numero è la somma dei due precedenti (0, 1, 1, 2, 3, 5...)",
+            "Sequenza casuale",
+            "Sequenza di primi",
+            "Sequenza pari"
+        ],
+        "answer": "Sequenza dove ogni numero è la somma dei due precedenti (0, 1, 1, 2, 3, 5...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Fibonacci ricorsivo è efficiente?",
+        "options": [
+            "No, ha complessità esponenziale (ricalcola gli stessi valori molte volte)",
+            "Sì, molto",
+            "Dipende",
+            "È lineare"
+        ],
+        "answer": "No, ha complessità esponenziale (ricalcola gli stessi valori molte volte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si ottimizza Fibonacci?",
+        "options": [
+            "Con la programmazione dinamica (memoization) o iterativamente",
+            "Non si può",
+            "Usando un computer più veloce",
+            "Cambiando formula"
+        ],
+        "answer": "Con la programmazione dinamica (memoization) o iterativamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità O(n!)?",
+        "options": [
+            "Complessità fattoriale (molto alta, intrattabile per n grandi)",
+            "Complessità lineare",
+            "Complessità costante",
+            "Complessità logaritmica"
+        ],
+        "answer": "Complessità fattoriale (molto alta, intrattabile per n grandi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un problema intrattabile?",
+        "options": [
+            "Un problema per cui non esistono algoritmi efficienti (polinomiali) per risolverlo",
+            "Un problema impossibile",
+            "Un problema facile",
+            "Un problema risolto"
+        ],
+        "answer": "Un problema per cui non esistono algoritmi efficienti (polinomiali) per risolverlo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'halting problem (problema della terminazione)?",
+        "options": [
+            "Problema di decidere se un dato programma terminerà o andrà in loop infinito (indecidibile)",
+            "Un problema risolto",
+            "Un problema facile",
+            "Un gioco"
+        ],
+        "answer": "Problema di decidere se un dato programma terminerà o andrà in loop infinito (indecidibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Chi ha dimostrato l'indecidibilità dell'halting problem?",
+        "options": [
+            "Alan Turing",
+            "Von Neumann",
+            "Boole",
+            "Shannon"
+        ],
+        "answer": "Alan Turing"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una macchina di Turing?",
+        "options": [
+            "Modello teorico astratto di un computer (nastro infinito, testina, stati)",
+            "Un computer vero",
+            "Un robot",
+            "Un'auto"
+        ],
+        "answer": "Modello teorico astratto di un computer (nastro infinito, testina, stati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa Turing-completo?",
+        "options": [
+            "Che un sistema può calcolare qualsiasi funzione calcolabile da una macchina di Turing (può simulare qualsiasi computer)",
+            "Che è finito",
+            "Che è veloce",
+            "Che è intelligente"
+        ],
+        "answer": "Che un sistema può calcolare qualsiasi funzione calcolabile da una macchina di Turing (può simulare qualsiasi computer)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il linguaggio C è Turing-completo?",
+        "options": [
+            "Sì (con memoria illimitata teorica)",
+            "No",
+            "Forse",
+            "Solo su Linux"
+        ],
+        "answer": "Sì (con memoria illimitata teorica)"
+    },
+    {
+        "category": "Informatica",
+        "question": "HTML è Turing-completo?",
+        "options": [
+            "No (è un linguaggio di markup, non di programmazione)",
+            "Sì",
+            "Forse",
+            "Con CSS sì"
+        ],
+        "answer": "No (è un linguaggio di markup, non di programmazione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo deterministico?",
+        "options": [
+            "Dato lo stesso input, produce sempre lo stesso output passando per gli stessi stati",
+            "Casuale",
+            "Probabilistico",
+            "Veloce"
+        ],
+        "answer": "Dato lo stesso input, produce sempre lo stesso output passando per gli stessi stati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo probabilistico (randomized)?",
+        "options": [
+            "Usa numeri casuali durante l'esecuzione (l'output o il tempo possono variare)",
+            "Deterministico",
+            "Sicuro",
+            "Lento"
+        ],
+        "answer": "Usa numeri casuali durante l'esecuzione (l'output o il tempo possono variare)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio di algoritmo probabilistico:",
+        "options": [
+            "QuickSort con pivot casuale, Monte Carlo",
+            "Bubble Sort",
+            "Ricerca lineare",
+            "MCD"
+        ],
+        "answer": "QuickSort con pivot casuale, Monte Carlo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il metodo Monte Carlo?",
+        "options": [
+            "Classe di algoritmi che usano campionamento casuale per ottenere risultati numerici",
+            "Un casinò",
+            "Un gioco",
+            "Un errore"
+        ],
+        "answer": "Classe di algoritmi che usano campionamento casuale per ottenere risultati numerici"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo euristico?",
+        "options": [
+            "Algoritmo che trova una soluzione buona (non necessariamente ottima) in tempi ragionevoli",
+            "Algoritmo perfetto",
+            "Algoritmo lento",
+            "Algoritmo sbagliato"
+        ],
+        "answer": "Algoritmo che trova una soluzione buona (non necessariamente ottima) in tempi ragionevoli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando si usano le euristiche?",
+        "options": [
+            "Per problemi NP-hard dove la soluzione esatta è troppo costosa",
+            "Per problemi facili",
+            "Per sommare numeri",
+            "Mai"
+        ],
+        "answer": "Per problemi NP-hard dove la soluzione esatta è troppo costosa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il problema del commesso viaggiatore (TSP)?",
+        "options": [
+            "Trovare il percorso più breve che visita un insieme di città e torna al punto di partenza (NP-hard)",
+            "Vendere prodotti",
+            "Viaggiare",
+            "Un errore"
+        ],
+        "answer": "Trovare il percorso più breve che visita un insieme di città e torna al punto di partenza (NP-hard)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un grafo orientato?",
+        "options": [
+            "Grafo dove gli archi hanno una direzione (frecce)",
+            "Grafo non orientato",
+            "Grafo casuale",
+            "Grafo misto"
+        ],
+        "answer": "Grafo dove gli archi hanno una direzione (frecce)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un grafo pesato?",
+        "options": [
+            "Grafo dove agli archi è associato un valore (peso/costo)",
+            "Grafo leggero",
+            "Grafo pesante",
+            "Grafo vuoto"
+        ],
+        "answer": "Grafo dove agli archi è associato un valore (peso/costo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo di Dijkstra:",
+        "options": [
+            "Trova i cammini minimi da un nodo sorgente a tutti gli altri in un grafo pesato (pesi non negativi)",
+            "Trova il massimo",
+            "Ordina",
+            "Cerca"
+        ],
+        "answer": "Trova i cammini minimi da un nodo sorgente a tutti gli altri in un grafo pesato (pesi non negativi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo A* (A-star):",
+        "options": [
+            "Algoritmo di ricerca su grafi che usa un'euristica per trovare il cammino minimo più velocemente",
+            "Dijkstra lento",
+            "Ricerca casuale",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ricerca su grafi che usa un'euristica per trovare il cammino minimo più velocemente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un albero di ricerca binaria (BST)?",
+        "options": [
+            "Albero binario dove per ogni nodo, i valori a sinistra sono minori e a destra maggiori",
+            "Un albero qualsiasi",
+            "Un array",
+            "Una lista"
+        ],
+        "answer": "Albero binario dove per ogni nodo, i valori a sinistra sono minori e a destra maggiori"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio del BST bilanciato:",
+        "options": [
+            "Ricerca, inserimento e cancellazione in O(log n)",
+            "O(1)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "answer": "Ricerca, inserimento e cancellazione in O(log n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una visita in profondità (DFS)?",
+        "options": [
+            "Attraversamento del grafo che esplora quanto più possibile lungo ogni ramo prima di tornare indietro",
+            "Visita in ampiezza",
+            "Visita casuale",
+            "Visita veloce"
+        ],
+        "answer": "Attraversamento del grafo che esplora quanto più possibile lungo ogni ramo prima di tornare indietro"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una visita in ampiezza (BFS)?",
+        "options": [
+            "Attraversamento del grafo che esplora i nodi vicini prima di scendere in profondità (a livelli)",
+            "DFS",
+            "Visita casuale",
+            "Visita lenta"
+        ],
+        "answer": "Attraversamento del grafo che esplora i nodi vicini prima di scendere in profondità (a livelli)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale struttura dati usa la DFS?",
+        "options": [
+            "Stack (pila) o ricorsione",
+            "Queue (coda)",
+            "Array",
+            "Lista"
+        ],
+        "answer": "Stack (pila) o ricorsione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale struttura dati usa la BFS?",
+        "options": [
+            "Queue (coda)",
+            "Stack",
+            "Array",
+            "Albero"
+        ],
+        "answer": "Queue (coda)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo stack overflow?",
+        "options": [
+            "Esaurimento della memoria dello stack (spesso per troppa ricorsione)",
+            "Un sito",
+            "Un errore di disco",
+            "Un virus"
+        ],
+        "answer": "Esaurimento della memoria dello stack (spesso per troppa ricorsione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il buffer overflow?",
+        "options": [
+            "Scrittura di dati oltre i limiti di un buffer allocato (grave vulnerabilità di sicurezza)",
+            "Un errore di rete",
+            "Un errore di stampa",
+            "Un gioco"
+        ],
+        "answer": "Scrittura di dati oltre i limiti di un buffer allocato (grave vulnerabilità di sicurezza)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un exploit?",
+        "options": [
+            "Codice che sfrutta una vulnerabilità per compromettere un sistema",
+            "Un programma utile",
+            "Un gioco",
+            "Un errore"
+        ],
+        "answer": "Codice che sfrutta una vulnerabilità per compromettere un sistema"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un virus informatico?",
+        "options": [
+            "Programma che si replica attaccandosi ad altri file/programmi",
+            "Un batterio",
+            "Un errore hardware",
+            "Un gioco"
+        ],
+        "answer": "Programma che si replica attaccandosi ad altri file/programmi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un worm?",
+        "options": [
+            "Malware che si replica autonomamente attraverso la rete",
+            "Un verme",
+            "Un virus",
+            "Un trojan"
+        ],
+        "answer": "Malware che si replica autonomamente attraverso la rete"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Trojan?",
+        "options": [
+            "Malware mascherato da software legittimo",
+            "Un cavallo",
+            "Un virus",
+            "Un worm"
+        ],
+        "answer": "Malware mascherato da software legittimo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Phishing?",
+        "options": [
+            "Tecnica di ingegneria sociale per rubare dati sensibili (es. email false)",
+            "Pescare",
+            "Un virus",
+            "Un attacco DDoS"
+        ],
+        "answer": "Tecnica di ingegneria sociale per rubare dati sensibili (es. email false)"
+    }
+]

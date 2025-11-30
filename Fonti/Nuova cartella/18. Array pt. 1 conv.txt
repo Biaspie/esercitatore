@@ -1,0 +1,467 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Meccanica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Array – Parte I
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Programma per trovare il minimo
+
+Vogliamo scrivere un programma che prima legga una sequenza di interi e poi ne calcoli il minimo.
+Minimo fra due interi
+
+/* programma che prima legge due interi e poi ne calcola il minimo */ int main() {
+
+
+int x1, x2; // interi da leggere int minimo; // risultato
+
+
+/* input */
+printf("Caro utente introduci due interi\n"); scanf("%d", &x1);
+scanf("%d", &x2);
+
+
+/* calcola e stampa risultato */ minimo = x1;
+if(x2<minimo) minimo = x2;
+
+
+printf("Il minimo vale %d", minimo); }
+Minimo fra tre interi
+
+/* programma che prima legge tre interi e poi ne calcola il minimo */ int main() {
+
+
+int x1, x2, x3; // interi da leggere int minimo;	// risultato
+
+
+/* input */
+printf("Caro utente introduci tre interi\n"); scanf("%d", &x1);
+scanf("%d", &x2); scanf("%d", &x3);
+
+
+/* calcola e stampa risultato */ minimo = x1;
+if(x2<minimo) minimo = x2;
+if(x3<minimo) minimo = x3;
+
+
+printf("il minimo vale %d", minimo); }
+Minimo fra 20 interi
+
+
+
+
+
+
+
+
+
+/* programma che prima legge venti interi e poi ne calcola il minimo */
+
+
+int main() {
+
+int x1, x2, x3, x4, x5, int x11, x12, x13, x14,
+
+x6, x7, x8, x9, x10;
+x15, x16, x17, x18, x19, x20;
+
+// interi da // interi da
+
+leggere leggere
+
+
+
+int minimo; // risultato
+/* input */
+printf("Caro utente introduci venti interi\n"); scanf("%d", &x1);
+scanf("%d", &x2); scanf("%d", &x3); scanf("%d", &x4); scanf("%d", &x5); scanf("%d", &x6); scanf("%d", &x7); scanf("%d", &x8); scanf("%d", &x9); scanf("%d", &x10); scanf("%d", &x11); scanf("%d", &x12); scanf("%d", &x13); scanf("%d", &x14); scanf("%d", &x15); scanf("%d", &x16); scanf("%d", &x17); scanf("%d", &x18); scanf("%d", &x19); scanf("%d", &x20);
+/* calcola e stampa risultato */ minimo = x1;
+if(x2<minimo) minimo = x2;
+if(x3<minimo) minimo = x3;
+if(x4<minimo) minimo = x4;
+if(x5<minimo) minimo = x5;
+if(x6<minimo) minimo = x6;
+if(x7<minimo) minimo = x7;
+if(x8<minimo) minimo = x8;
+if(x9<minimo) minimo = x9;
+if(x10<minimo)
+
+
+if(x12<minimo) minimo = x12;
+if(x13<minimo) minimo = x13;
+if(x14<minimo) minimo = x14;
+if(x15<minimo) minimo = x15;
+if(x16<minimo) minimo = x16;
+if(x17<minimo) minimo = x17;
+if(x18<minimo) minimo = x18;
+if(x19<minimo) minimo = x19;
+if(x20<minimo) minimo = x20;
+
+
+
+minimo = x10; if(x11<minimo)
+minimo = x11;
+
+
+printf("Il minimo vale %d", minimo); }
+Limiti della soluzione proposta
+
+
+•   La lunghezza del codice cresce al crescere del numero di interi.
+Prova a scrivere un programma che legge 1000 interi e poi ne calcola il minimo.
+
+
+•   Bisogna scrivere programmi diversi per problemi molto simili.
+Il programma per calcolare il minimo tra 20 interi contiene variabili e istruzioni diverse rispetto al programma per calcolare il minimo tra 3 interi.
+
+
+
+•   Non è possibile gestire la situazione in cui il numero di interi non è noto a priori. Ovvero non è possibile scrivere un programma che calcola il minimo fra n interi con l’approccio proposto.
+Caratteristiche del problema
+Abbiamo la necessità di gestire un insieme di variabili omogenee, ovvero:
+1.  dello stesso tipo.
+o Es: nel programma per il calcolo del minimo dobbiamo gestire un
+insieme di variabili di tipo int.
+
+2.  con lo stesso significato, ovvero tutte le variabili rappresentano lo stesso tipo di informazione, su cui vanno eseguite le stesse operazioni.
+o Es: nel programma per il calcolo del minimo, a ciascuna variabile va assegnato un valore letto da tastiera, ciascuna variabile va poi acceduta per confrontarne il valore con il valore della variabile minimo, e va di nuovo eventualmente acceduta per memorizzarne il valore minimo.
+Array
+
+
+
+
+E’ una sequenza di variabili omogenee.
+
+
+
+Permette di accedere in lettura ed in scrittura a ciascuna delle variabili che lo compongono sulla base della loro posizione, detta indice.
+Array E’ una sequenza finita di variabili dello stesso tipo.
+
+
+Elementi: le variabili che compongono un array prendono il nome di elementi dell’array.
+
+
+
+Array composto da 8 variabili di tipo int
+
+
+
+Sequenza: gli elementi dell’array sono ordinati, quindi si può parlare del primo elemento, del secondo elemento, …
+
+
+
+Sequenza finita: il numero di variabili che compongono l’array è un numero finito, detto lunghezza o dimensione dell’array.
+
+
+
+Indice: numero intero non negativo associato a ciascun elemento, ne indica la posizione. Le posizioni sono 0, 1, 2, …, lunghezza-1.
+Array: concetti ulteriori Gli array (monodimensionali) sono anche detti vettori.
+
+
+Gli array costituiscono una struttura dati, ovvero un'entità
+metodo utilizzato per memorizzare insiemi di dati.
+
+o un
+
+
+o mneevelelm’adorrreraimzyz.oaraenicvhaelofirsiicdaemglei netleem), ennetlli’ourndoindeoipnoclu’ailctorom(ploagioicnaomente
+Il metodo per memorizzare dati associato ad un array è quello di
+
+
+
+Gli array sono variabili
+sono non strutturate.
+
+strutturate, mentre le variabili semplici
+
+
+
+Gli array hanno un tipo, che è il tipo dei loro elementi.
+Dichiarazione di array
+
+
+
+Per usare un array, è necessario dichiarare una variabile che permetta di referenziare l’array, specificando tipo, nome e lunghezza dell’array.
+
+
+Esempi: int interi[20];	float reali[15/3];
+
+
+Sintassi: tipo nome[lunghezza];
+
+
+Semantica: alloca un’area di memoria sufficiente a contenere l’array.
+
+
+Nota: lunghezza deve essere una espressione di tipo int
+Dichiarazione di array
+
+
+
+#include <stdio.h>
+
+
+int main(){
+int interi[20]; float reali[20]; char caratteri[20];
+printf("Interi occupa %d byte\n", sizeof(interi)); printf("Reali occupa %d byte\n", sizeof(reali)); printf("Caratteri occupa %d byte\n", sizeof(caratteri));
+}
+Accesso
+
+
+Dopo aver dichiarato una variabile per referenziare l’array, è possibile utilizzare l’array.
+o L’unico utilizzo che si può fare di un array è accedere ai suoi
+elementi per memorizzare un valore al loro interno (accesso in scrittura) o per recuperare un valore già memorizzato al loro interno (accesso in lettura).
+
+
+
+Sintassi: nome[indice]
+
+
+
+Semantica: accede all’elemento con indice indice all’interno dell’array referenziato da nome.
+Accesso: esempi
+
+interi[3]=5;
+Accesso in scrittura: memorizza all’interno dell’elemento il cui indice è 3 il valore 5;
+
+
+
+scanf("%d", &interi[i])
+Accesso in scrittura: memorizza all’interno dell’elemento il cui indice è i il valore letto da tastiera.
+
+
+
+printf("%d", interi[2]);
+Accesso in lettura: legge e stampa il valore (-3) dell’elemento con indice 2.
+Accesso: esempi #include <stdio.h>
+
+
+int main(){
+int interi[20]; interi[3] = 7;
+printf("Vediamo cosa ho scritto: %d\n", interi[3]); printf("Vediamo cosa c'è dopo: %d\n", interi[4]);
+}
+Esempio: minimo fra 20 interi #include <stdio.h>
+
+/* programma che prima legge venti interi e poi ne calcola il minimo */ int main() {
+
+
+int interi[20]; // interi da leggere int minimo; // risultato
+/* input */
+
+
+
+printf("Caro for(int i=0;
+
+utente introduci venti interi\n"); i<20; i++)
+
+scanf("%d", &interi[i]);
+
+
+/* calcola e stampa risultato */ minimo = interi[0];
+for(int i=1; i<20; i++) if(interi[i]<minimo)
+minimo = interi[i];
+
+
+printf("il minimo vale %d", minimo); }
+
+
+
+#include <stdio.h>
+
+/* programma che prima legge n interi e poi ne calcola il minimo */
+int main() {
+
+Esempio: minimo fra n interi
+
+
+
+int n;      // int minimo; //
+
+dimensione array risultato
+
+
+/* input */
+printf("Caro utente, quanti interi vuoi introdurre? "); scanf("%d", &n);
+
+/* leggi n interi */
+int interi[n]; // per gli interi da leggere for(int i=0; i<n; i++) {
+printf("introduci un intero: "); scanf("%d", &interi[i]);
+}
+
+/* calcola e stampa risultato */ minimo = interi[0];
+for(int i=1; i<n; i++) if(interi[i]<minimo)
+minimo = interi[i];
+
+printf("il minimo vale %d", minimo); }
+Lettura elementi array di dimensione ignota
+
+Per poter dichiarare un array è necessario conoscere la sua dimensione.
+o Per questo motivo, prima di chiedere all’utente di introdurre i valori
+degli elementi dell’array, è necessario chiedere all’utente quanti valori ha intenzione di introdurre.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attenzione: la dichiarazione dell’array	deve seguire la lettura della sua dimensione!
+Array e iterazioni
+
+Gli elementi di un array vengono molto spesso acceduti all’interno di istruzioni ripetitive.
+o In un’istruzione ripetitiva una variabile contatore rappresenta l’indice di un elemento ed assume tutti i possibili valori dell’indice (ovvero da 0 alla lunghezza dell’array -1).
+o Ad ogni esecuzione del corpo dell’istruzione ripetitiva viene svolta la stessa operazione su un elemento diverso dell’array.
+
+
+
+Viene inserito in ciascun elemento dell’array un valore immesso dall’utente
+
+
+Il valore di ciascun elemento dell’array a partire dal secondo viene confrontato con minimo e possibilmente assegnato a minimo
+Dichiarazione con inizializzazione Sintassi: tipo nome[lunghezza] = {valore1, valore2, …, valorek};
+
+Semantica: alloca un’area di memoria sufficiente a contenere l’array ed assegna ad i primi k elementi i valori valore1, valore2, …, valorek.
+
+
+
+
+
+è equivalente a
+
+
+
+
+
+
+
+Se il numero di espressioni fra graffe è uguale alla lunghezza desiderata per l’array, si può anche omettere la lunghezza nella dichiarazione con inizializzazione:
+Dichiarazione con inizializzazione: esempio #include <stdio.h>
+
+
+int main(){
+int interi[] = {1,2,3};
+
+printf("%d\n", printf("%d\n", printf("%d\n", printf("%d\n",
+
+interi[0]); interi[1]); interi[2]); interi[3]);
+
+
+
+
+
+
+
+Un accesso in lettura oltre i limiti dell’array potrebbe non causare errori a runtime (ma è concettualmente errato), a meno che non si tratti di una zona di memoria
+riservata (Segmentation Fault) Ne parleremo in seguito.
+
+interi[3] = 10;
+
+}
+
+
+
+
+
+
+Un accesso in scrittura oltre i limiti dell’array causa la terminazione del processo!
+Niente assegnazione agli array
+
+Mentre è possibile fare una dichiarazione con inizializzazione per dichiarare un array e assegnare un valore iniziale ai suoi elementi, non è possibile dichiarare un array e poi assegnare un valore all’array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Importante: una volta che hai dichiarato un array, tutto ciò che ci puoi fare è accedere ai suoi elementi.
+Un array in memoria
+
+Da un punto di vista logico, un array è una sequenza di variabili. Da un punto di vista fisico, una variabile è
+una porzione di memoria. Quindi, da un punto di vista fisico, un array è una sequenza di porzioni di memoria consecutive.
+Nome ed indirizzo
+
+Il nome di un array è associato con un valore che è l’indirizzo di memoria del primo elemento dell’array.
+Elementi successivi al primo
+
+
+
+Possiamo accedere all’elemento con indice i di un array num scrivendo num[i].
+
+o A livello fisico, questo equivale ad accedere alla porzione di memoria il cui indirizzo è i*dim_elem byte successivo a num, dove dim_elem è la dimensione di un elemento di num, ad esempio 4 (byte) se l’array è di tipo int.
+Elementi successivi al primo
+Lunghezza e limiti di un array
+
+Gli array – così come descritti finora – si dicono statici in quanto la loro dimensione è fissata in fase di dichiarazione e non può essere modificata.
+
+
+
+Attenzione: provare ad accedere all’elemento di un array con indice pari alla dimensione dell’array è un errore frequente.
+L’ultimo elemento di un array ha un indice pari alla dimensione – 1.
+
+
+
+
+
+
+
+
+E’ un errore o no?
+C non controlla i limiti di un array!
+
+Dopo aver stampato il valore dell’elemento con indice 5, il programma accede alla porzione di
+memoria il cui indirizzo è pari all’indirizzo del primo elemento dell’array più 6*4 (ovvero, indice *  la dimensione degli elementi dell’array), ovvero alla porzione di memoria di 4 byte successiva all’ultimo elemento dell’array.
+Cosa succede andando fuori dai limiti?
+
+Il comportamento di un programma quando prova ad accedere fuori dai limiti di un array non è definito:
+•   Potrebbe non succedere nulla di sbagliato
+
+
+
+•   Potrebbe essere generato un segmentation fault, se il programma prova ad accedere ad un’area riservata
+
+
+
+•   Potrebbero essere generati degli errori logici
+
+
+
+
+Ad esempio, su sistemi Windows, questo programma genera un ciclo infinito poiché interi[3]=0 assegna 0 alla variabile i
+Stampa di indirizzi In questo corso stamperemo indirizzi utilizzando il formato %d.
+
+
+Questa non è la maniera più precisa: sarebbe meglio utilizzare il formato %p, dopo una conversione dell’indirizzo al tipo puntatore a void.
+Altre risorse •  Bellini, Guidi: Linguaggio C — 10.1 – 10.5

@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Quanto vale 2+2 in base 3?",
+        "options": [
+            "11 (perché 4 in base 3 è 11)",
+            "4",
+            "10",
+            "22"
+        ],
+        "answer": "11 (perché 4 in base 3 è 11)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la codifica posizionale?",
+        "options": [
+            "Il valore di una cifra dipende dalla sua posizione",
+            "Il valore è fisso",
+            "Dipende dal colore",
+            "Dipende dalla grandezza"
+        ],
+        "answer": "Il valore di una cifra dipende dalla sua posizione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la base di un sistema di numerazione?",
+        "options": [
+            "Il numero di simboli (cifre) disponibili",
+            "Il numero più grande",
+            "Il numero più piccolo",
+            "Lo zero"
+        ],
+        "answer": "Il numero di simboli (cifre) disponibili"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la base del sistema decimale?",
+        "options": [
+            "10",
+            "2",
+            "8",
+            "16"
+        ],
+        "answer": "10"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la base del sistema binario?",
+        "options": [
+            "2",
+            "10",
+            "8",
+            "16"
+        ],
+        "answer": "2"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la base del sistema ottale?",
+        "options": [
+            "8",
+            "10",
+            "2",
+            "16"
+        ],
+        "answer": "8"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la base del sistema esadecimale?",
+        "options": [
+            "16",
+            "10",
+            "2",
+            "8"
+        ],
+        "answer": "16"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta il simbolo A in esadecimale?",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "1"
+        ],
+        "answer": "10"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta il simbolo F in esadecimale?",
+        "options": [
+            "15",
+            "16",
+            "14",
+            "10"
+        ],
+        "answer": "15"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta il simbolo B in esadecimale?",
+        "options": [
+            "11",
+            "10",
+            "12",
+            "13"
+        ],
+        "answer": "11"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta il simbolo C in esadecimale?",
+        "options": [
+            "12",
+            "11",
+            "13",
+            "14"
+        ],
+        "answer": "12"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta il simbolo D in esadecimale?",
+        "options": [
+            "13",
+            "12",
+            "14",
+            "15"
+        ],
+        "answer": "13"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta il simbolo E in esadecimale?",
+        "options": [
+            "14",
+            "13",
+            "15",
+            "16"
+        ],
+        "answer": "14"
+    },
+    {
+        "category": "Informatica",
+        "question": "Converti 1A (base 16) in base 10:",
+        "options": [
+            "26 (1*16 + 10)",
+            "110",
+            "20",
+            "16"
+        ],
+        "answer": "26 (1*16 + 10)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Converti FF (base 16) in base 10:",
+        "options": [
+            "255",
+            "256",
+            "1515",
+            "100"
+        ],
+        "answer": "255"
+    },
+    {
+        "category": "Informatica",
+        "question": "Converti 100 (base 16) in base 10:",
+        "options": [
+            "256 (1*16^2)",
+            "100",
+            "16",
+            "4096"
+        ],
+        "answer": "256 (1*16^2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Converti 10 (base 8) in base 10:",
+        "options": [
+            "8",
+            "10",
+            "2",
+            "16"
+        ],
+        "answer": "8"
+    },
+    {
+        "category": "Informatica",
+        "question": "Converti 77 (base 8) in base 10:",
+        "options": [
+            "63 (7*8 + 7)",
+            "77",
+            "100",
+            "56"
+        ],
+        "answer": "63 (7*8 + 7)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il massimo numero rappresentabile con 4 bit?",
+        "options": [
+            "15 (1111)",
+            "16",
+            "8",
+            "10"
+        ],
+        "answer": "15 (1111)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il massimo numero rappresentabile con 8 bit?",
+        "options": [
+            "255",
+            "256",
+            "128",
+            "100"
+        ],
+        "answer": "255"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il massimo numero rappresentabile con 16 bit?",
+        "options": [
+            "65535",
+            "65536",
+            "32767",
+            "10000"
+        ],
+        "answer": "65535"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il massimo numero rappresentabile con 32 bit?",
+        "options": [
+            "Circa 4 miliardi (2^32 - 1)",
+            "Circa 2 miliardi",
+            "Circa 1 milione",
+            "Infinito"
+        ],
+        "answer": "Circa 4 miliardi (2^32 - 1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un byte?",
+        "options": [
+            "Un gruppo di 8 bit",
+            "Un bit",
+            "4 bit",
+            "16 bit"
+        ],
+        "answer": "Un gruppo di 8 bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un nibble?",
+        "options": [
+            "Un gruppo di 4 bit (mezzo byte)",
+            "Un byte",
+            "Un bit",
+            "Un errore"
+        ],
+        "answer": "Un gruppo di 4 bit (mezzo byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una word (parola)?",
+        "options": [
+            "La dimensione naturale dei dati gestiti dalla CPU (es. 32 o 64 bit)",
+            "Un byte",
+            "Una lettera",
+            "Un file"
+        ],
+        "answer": "La dimensione naturale dei dati gestiti dalla CPU (es. 32 o 64 bit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il KB (Kilobyte)?",
+        "options": [
+            "1024 byte (2^10)",
+            "1000 byte",
+            "100 byte",
+            "1 byte"
+        ],
+        "answer": "1024 byte (2^10)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il MB (Megabyte)?",
+        "options": [
+            "1024 KB (2^20 byte)",
+            "1000 KB",
+            "1 milione di byte",
+            "1000 byte"
+        ],
+        "answer": "1024 KB (2^20 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il GB (Gigabyte)?",
+        "options": [
+            "1024 MB (2^30 byte)",
+            "1000 MB",
+            "1 miliardo di byte",
+            "1000 byte"
+        ],
+        "answer": "1024 MB (2^30 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il TB (Terabyte)?",
+        "options": [
+            "1024 GB (2^40 byte)",
+            "1000 GB",
+            "1 trilione di byte",
+            "1000 byte"
+        ],
+        "answer": "1024 GB (2^40 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il KiB (Kibibyte)?",
+        "options": [
+            "1024 byte (standard IEC per evitare ambiguità con 1000)",
+            "1000 byte",
+            "1 bit",
+            "10 byte"
+        ],
+        "answer": "1024 byte (standard IEC per evitare ambiguità con 1000)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'underflow?",
+        "options": [
+            "Quando il risultato è troppo piccolo per essere rappresentato (vicino a zero)",
+            "Overflow",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Quando il risultato è troppo piccolo per essere rappresentato (vicino a zero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la precisione finita?",
+        "options": [
+            "I calcolatori non possono rappresentare numeri con infinite cifre decimali",
+            "Precisione assoluta",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "I calcolatori non possono rappresentare numeri con infinite cifre decimali"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'errore di arrotondamento?",
+        "options": [
+            "Errore introdotto quando si approssima un numero reale con un numero finito di bit",
+            "Errore umano",
+            "Errore di calcolo",
+            "Nulla"
+        ],
+        "answer": "Errore introdotto quando si approssima un numero reale con un numero finito di bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la virgola mobile (floating point)?",
+        "options": [
+            "Metodo per rappresentare numeri reali usando mantissa ed esponente",
+            "Virgola fissa",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Metodo per rappresentare numeri reali usando mantissa ed esponente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Standard IEEE 754:",
+        "options": [
+            "Standard internazionale per l'aritmetica in virgola mobile",
+            "Standard per i caratteri",
+            "Standard per i dischi",
+            "Standard per il web"
+        ],
+        "answer": "Standard internazionale per l'aritmetica in virgola mobile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti bit usa un float (singola precisione)?",
+        "options": [
+            "32 bit",
+            "64 bit",
+            "16 bit",
+            "8 bit"
+        ],
+        "answer": "32 bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti bit usa un double (doppia precisione)?",
+        "options": [
+            "64 bit",
+            "32 bit",
+            "128 bit",
+            "16 bit"
+        ],
+        "answer": "64 bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il segno in IEEE 754?",
+        "options": [
+            "1 bit (0 positivo, 1 negativo)",
+            "2 bit",
+            "8 bit",
+            "Non c'è"
+        ],
+        "answer": "1 bit (0 positivo, 1 negativo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'esponente in IEEE 754?",
+        "options": [
+            "Determina l'ordine di grandezza del numero",
+            "La parte decimale",
+            "Il segno",
+            "Nulla"
+        ],
+        "answer": "Determina l'ordine di grandezza del numero"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la mantissa in IEEE 754?",
+        "options": [
+            "Le cifre significative del numero",
+            "L'esponente",
+            "Il segno",
+            "Nulla"
+        ],
+        "answer": "Le cifre significative del numero"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è NaN (Not a Number)?",
+        "options": [
+            "Valore speciale per risultati indefiniti (es. 0/0)",
+            "Infinito",
+            "Zero",
+            "Uno"
+        ],
+        "answer": "Valore speciale per risultati indefiniti (es. 0/0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Infinity?",
+        "options": [
+            "Valore speciale per overflow o divisione per zero",
+            "NaN",
+            "Zero",
+            "Uno"
+        ],
+        "answer": "Valore speciale per overflow o divisione per zero"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il codice Gray?",
+        "options": [
+            "Codifica binaria dove due numeri consecutivi differiscono per un solo bit",
+            "Codice a colori",
+            "Codice segreto",
+            "Codice ASCII"
+        ],
+        "answer": "Codifica binaria dove due numeri consecutivi differiscono per un solo bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve il codice Gray?",
+        "options": [
+            "Minimizzare gli errori nelle transizioni hardware (es. encoder)",
+            "Per scrivere testi",
+            "Per fare calcoli",
+            "Per giocare"
+        ],
+        "answer": "Minimizzare gli errori nelle transizioni hardware (es. encoder)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il BCD (Binary Coded Decimal)?",
+        "options": [
+            "Codifica dove ogni cifra decimale è rappresentata da 4 bit",
+            "Codice binario puro",
+            "Codice esadecimale",
+            "Codice ASCII"
+        ],
+        "answer": "Codifica dove ogni cifra decimale è rappresentata da 4 bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio BCD per il numero 12:",
+        "options": [
+            "0001 0010 (1 e 2 separati)",
+            "1100 (12 in binario)",
+            "C (in hex)",
+            "Nulla"
+        ],
+        "answer": "0001 0010 (1 e 2 separati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la parità?",
+        "options": [
+            "Bit aggiunto per rilevare errori (pari o dispari)",
+            "Uguaglianza",
+            "Un numero",
+            "Un gioco"
+        ],
+        "answer": "Bit aggiunto per rilevare errori (pari o dispari)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parità pari:",
+        "options": [
+            "Il numero totale di 1 (dati + parità) deve essere pari",
+            "Il numero deve essere pari",
+            "Il bit è 0",
+            "Il bit è 1"
+        ],
+        "answer": "Il numero totale di 1 (dati + parità) deve essere pari"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parità dispari:",
+        "options": [
+            "Il numero totale di 1 (dati + parità) deve essere dispari",
+            "Il numero deve essere dispari",
+            "Il bit è 0",
+            "Il bit è 1"
+        ],
+        "answer": "Il numero totale di 1 (dati + parità) deve essere dispari"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il CRC (Cyclic Redundancy Check)?",
+        "options": [
+            "Metodo robusto per rilevare errori nei dati trasmessi",
+            "Un controllo ciclico",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Metodo robusto per rilevare errori nei dati trasmessi"
+    }
+]

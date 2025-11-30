@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Array bidimensionale:",
+        "options": [
+            "Struttura dati tabulare (righe e colonne)",
+            "Array lineare",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Struttura dati tabulare (righe e colonne)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Numero elementi matrice RxC:",
+        "options": [
+            "R * C",
+            "R + C",
+            "R",
+            "Nulla"
+        ],
+        "answer": "R * C"
+    },
+    {
+        "category": "Informatica",
+        "question": "Indici matrice:",
+        "options": [
+            "Due indici: riga e colonna",
+            "Un indice",
+            "Tre indici",
+            "Nulla"
+        ],
+        "answer": "Due indici: riga e colonna"
+    },
+    {
+        "category": "Informatica",
+        "question": "Range indici riga (R righe):",
+        "options": [
+            "Da 0 a R-1",
+            "Da 1 a R",
+            "Da 0 a R",
+            "Nulla"
+        ],
+        "answer": "Da 0 a R-1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Range indici colonna (C colonne):",
+        "options": [
+            "Da 0 a C-1",
+            "Da 1 a C",
+            "Da 0 a C",
+            "Nulla"
+        ],
+        "answer": "Da 0 a C-1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dichiarazione matrice:",
+        "options": [
+            "tipo nome[righe][colonne];",
+            "tipo nome[righe, colonne];",
+            "matrice nome;",
+            "Nulla"
+        ],
+        "answer": "tipo nome[righe][colonne];"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accesso elemento matrice:",
+        "options": [
+            "nome[riga][colonna]",
+            "nome[riga, colonna]",
+            "nome(riga, colonna)",
+            "Nulla"
+        ],
+        "answer": "nome[riga][colonna]"
+    },
+    {
+        "category": "Informatica",
+        "question": "Iterare su matrice:",
+        "options": [
+            "Due cicli for annidati",
+            "Un ciclo for",
+            "While",
+            "Nulla"
+        ],
+        "answer": "Due cicli for annidati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ordine iterazione standard C:",
+        "options": [
+            "Per righe (ciclo esterno righe, interno colonne)",
+            "Per colonne",
+            "Casuale",
+            "Nulla"
+        ],
+        "answer": "Per righe (ciclo esterno righe, interno colonne)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice identità:",
+        "options": [
+            "Matrice quadrata con 1 sulla diagonale principale e 0 altrove",
+            "Matrice di 1",
+            "Matrice di 0",
+            "Nulla"
+        ],
+        "answer": "Matrice quadrata con 1 sulla diagonale principale e 0 altrove"
+    },
+    {
+        "category": "Informatica",
+        "question": "Condizione diagonale principale:",
+        "options": [
+            "indice_riga == indice_colonna",
+            "indice_riga > indice_colonna",
+            "indice_riga < indice_colonna",
+            "Nulla"
+        ],
+        "answer": "indice_riga == indice_colonna"
+    },
+    {
+        "category": "Informatica",
+        "question": "Memorizzazione fisica matrice C:",
+        "options": [
+            "Linearizzata per righe (row-major)",
+            "Per colonne",
+            "A blocchi",
+            "Nulla"
+        ],
+        "answer": "Linearizzata per righe (row-major)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Indirizzo elemento [i][j] (C):",
+        "options": [
+            "base + (i * colonne + j) * sizeof(tipo)",
+            "base + (i + j) * sizeof(tipo)",
+            "base + (j * righe + i) * sizeof(tipo)",
+            "Nulla"
+        ],
+        "answer": "base + (i * colonne + j) * sizeof(tipo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ottenere riga i come vettore:",
+        "options": [
+            "matrice[i]",
+            "matrice[i][]",
+            "Non si può",
+            "Nulla"
+        ],
+        "answer": "matrice[i]"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ottenere colonna j come vettore:",
+        "options": [
+            "Non è possibile direttamente (elementi non contigui)",
+            "matrice[][j]",
+            "matrice[j]",
+            "Nulla"
+        ],
+        "answer": "Non è possibile direttamente (elementi non contigui)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passare matrice a funzione:",
+        "options": [
+            "Bisogna specificare il numero di colonne (es. int m[][10])",
+            "Basta il nome",
+            "Non si può",
+            "Nulla"
+        ],
+        "answer": "Bisogna specificare il numero di colonne (es. int m[][10])"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché specificare colonne in parametro?",
+        "options": [
+            "Per permettere al compilatore di calcolare l'offset (i * colonne + j)",
+            "Per controllo bounds",
+            "Non serve",
+            "Nulla"
+        ],
+        "answer": "Per permettere al compilatore di calcolare l'offset (i * colonne + j)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Inizializzazione matrice:",
+        "options": [
+            "int m[2][2] = {{1,2}, {3,4}};",
+            "int m = {1,2,3,4};",
+            "int m[2,2] = (1,2,3,4);",
+            "Nulla"
+        ],
+        "answer": "int m[2][2] = {{1,2}, {3,4}};"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice quadrata:",
+        "options": [
+            "Numero righe == Numero colonne",
+            "Rettangolare",
+            "Triangolare",
+            "Nulla"
+        ],
+        "answer": "Numero righe == Numero colonne"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice trasposta:",
+        "options": [
+            "Scambia righe con colonne (elemento [i][j] diventa [j][i])",
+            "Inversa",
+            "Opposta",
+            "Nulla"
+        ],
+        "answer": "Scambia righe con colonne (elemento [i][j] diventa [j][i])"
+    },
+    {
+        "category": "Informatica",
+        "question": "Prodotto matriciale (AxB):",
+        "options": [
+            "Riga di A per Colonna di B (somma prodotti)",
+            "Elemento per elemento",
+            "Somma",
+            "Nulla"
+        ],
+        "answer": "Riga di A per Colonna di B (somma prodotti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Condizione prodotto matriciale:",
+        "options": [
+            "Colonne A == Righe B",
+            "Righe A == Colonne B",
+            "Righe A == Righe B",
+            "Nulla"
+        ],
+        "answer": "Colonne A == Righe B"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dimensione risultato prodotto (RxN * NxC):",
+        "options": [
+            "RxC",
+            "NxN",
+            "RxN",
+            "Nulla"
+        ],
+        "answer": "RxC"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice simmetrica:",
+        "options": [
+            "Uguale alla sua trasposta (m[i][j] == m[j][i])",
+            "Identità",
+            "Nulla",
+            "Inversa"
+        ],
+        "answer": "Uguale alla sua trasposta (m[i][j] == m[j][i])"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice triangolare superiore:",
+        "options": [
+            "Elementi sotto la diagonale principale sono 0",
+            "Sopra 0",
+            "Tutti 1",
+            "Nulla"
+        ],
+        "answer": "Elementi sotto la diagonale principale sono 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Matrice sparsa (rappresentazione):",
+        "options": [
+            "Lista di coordinate e valori (i, j, val) per risparmiare spazio",
+            "Matrice completa",
+            "Array",
+            "Nulla"
+        ],
+        "answer": "Lista di coordinate e valori (i, j, val) per risparmiare spazio"
+    },
+    {
+        "category": "Informatica",
+        "question": "Array 3D:",
+        "options": [
+            "int a[x][y][z] (cubo di dati)",
+            "Matrice",
+            "Vettore",
+            "Nulla"
+        ],
+        "answer": "int a[x][y][z] (cubo di dati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Accesso array 3D:",
+        "options": [
+            "a[i][j][k]",
+            "a[i,j,k]",
+            "a(i,j,k)",
+            "Nulla"
+        ],
+        "answer": "a[i][j][k]"
+    },
+    {
+        "category": "Informatica",
+        "question": "Allocazione dinamica matrice contigua:",
+        "options": [
+            "Malloc di R*C elementi, accesso manuale o tramite puntatori a righe",
+            "Malloc singola",
+            "Non si può",
+            "Nulla"
+        ],
+        "answer": "Malloc di R*C elementi, accesso manuale o tramite puntatori a righe"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio matrice contigua:",
+        "options": [
+            "Meno frammentazione, cache friendly, una sola free()",
+            "Più facile",
+            "Nessuno",
+            "Nulla"
+        ],
+        "answer": "Meno frammentazione, cache friendly, una sola free()"
+    },
+    {
+        "category": "Informatica",
+        "question": "Svantaggio matrice array di puntatori:",
+        "options": [
+            "Frammentazione memoria, multiple malloc/free, cache miss potenziali",
+            "Lento accesso",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Frammentazione memoria, multiple malloc/free, cache miss potenziali"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passare matrice dinamica a funzione:",
+        "options": [
+            "Passare puntatore doppio (int **m) o singolo (int *m) con dimensioni",
+            "Come statica",
+            "Non si può",
+            "Nulla"
+        ],
+        "answer": "Passare puntatore doppio (int **m) o singolo (int *m) con dimensioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Linearizzazione indici:",
+        "options": [
+            "Convertire coordinate 2D (i, j) in indice 1D (k = i*cols + j)",
+            "Viceversa",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Convertire coordinate 2D (i, j) in indice 1D (k = i*cols + j)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Delinearizzazione indici:",
+        "options": [
+            "Da k a (i, j): i = k / cols, j = k % cols",
+            "Viceversa",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Da k a (i, j): i = k / cols, j = k % cols"
+    },
+    {
+        "category": "Informatica",
+        "question": "Struttura dati grafo (Matrice adiacenza):",
+        "options": [
+            "Matrice NxN dove M[i][j] indica se c'è arco tra i e j (o peso)",
+            "Lista",
+            "Albero",
+            "Nulla"
+        ],
+        "answer": "Matrice NxN dove M[i][j] indica se c'è arco tra i e j (o peso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio matrice adiacenza:",
+        "options": [
+            "Verifica esistenza arco in O(1)",
+            "Spazio O(N^2)",
+            "Nulla",
+            "Lento"
+        ],
+        "answer": "Verifica esistenza arco in O(1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Svantaggio matrice adiacenza:",
+        "options": [
+            "Spreco spazio per grafi sparsi (O(N^2))",
+            "Lento",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Spreco spazio per grafi sparsi (O(N^2))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Image processing (Matrice):",
+        "options": [
+            "Immagine digitale rappresentata come matrice di pixel (valori colore)",
+            "Vettore",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Immagine digitale rappresentata come matrice di pixel (valori colore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Kernel (Image processing):",
+        "options": [
+            "Piccola matrice usata per convoluzione (filtri, blur, edge detection)",
+            "OS",
+            "CPU",
+            "Nulla"
+        ],
+        "answer": "Piccola matrice usata per convoluzione (filtri, blur, edge detection)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Convoluzione:",
+        "options": [
+            "Operazione matematica che applica un kernel a un'immagine",
+            "Somma",
+            "Prodotto",
+            "Nulla"
+        ],
+        "answer": "Operazione matematica che applica un kernel a un'immagine"
+    },
+    {
+        "category": "Informatica",
+        "question": "Game of Life (Conway):",
+        "options": [
+            "Automa cellulare su griglia (matrice) con regole di evoluzione",
+            "Gioco",
+            "Vita",
+            "Nulla"
+        ],
+        "answer": "Automa cellulare su griglia (matrice) con regole di evoluzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Tic-Tac-Toe (Tris):",
+        "options": [
+            "Gioco rappresentabile con matrice 3x3",
+            "Scacchi",
+            "Dama",
+            "Nulla"
+        ],
+        "answer": "Gioco rappresentabile con matrice 3x3"
+    },
+    {
+        "category": "Informatica",
+        "question": "Battaglia navale:",
+        "options": [
+            "Gioco su griglia (matrice 10x10)",
+            "Carte",
+            "Dadi",
+            "Nulla"
+        ],
+        "answer": "Gioco su griglia (matrice 10x10)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sudoku:",
+        "options": [
+            "Griglia 9x9 (matrice) con vincoli su righe, colonne e sottogriglie 3x3",
+            "Gioco",
+            "Numeri",
+            "Nulla"
+        ],
+        "answer": "Griglia 9x9 (matrice) con vincoli su righe, colonne e sottogriglie 3x3"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo Floyd-Warshall:",
+        "options": [
+            "Trova cammini minimi tra tutte le coppie di nodi (usa matrice adiacenza/distanze)",
+            "Dijkstra",
+            "BFS",
+            "Nulla"
+        ],
+        "answer": "Trova cammini minimi tra tutte le coppie di nodi (usa matrice adiacenza/distanze)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Programmazione dinamica (Tabella):",
+        "options": [
+            "Spesso usa matrici per memorizzare risultati sottoproblemi (memoization/tabulation)",
+            "Ricorsione",
+            "Greedy",
+            "Nulla"
+        ],
+        "answer": "Spesso usa matrici per memorizzare risultati sottoproblemi (memoization/tabulation)"
+    },
+    {
+        "category": "Informatica",
+        "question": "LCS (Longest Common Subsequence):",
+        "options": [
+            "Problema risolvibile con matrice DP (tabella)",
+            "Stringhe",
+            "Array",
+            "Nulla"
+        ],
+        "answer": "Problema risolvibile con matrice DP (tabella)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Knapsack Problem (Zaino):",
+        "options": [
+            "Problema ottimizzazione risolvibile con matrice DP",
+            "Greedy",
+            "NP",
+            "Nulla"
+        ],
+        "answer": "Problema ottimizzazione risolvibile con matrice DP"
+    },
+    {
+        "category": "Informatica",
+        "question": "Rotazione matrice 90 gradi:",
+        "options": [
+            "Trasposta + inversione righe (o colonne)",
+            "Trasposta",
+            "Inversione",
+            "Nulla"
+        ],
+        "answer": "Trasposta + inversione righe (o colonne)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Determinante matrice:",
+        "options": [
+            "Valore scalare associato a matrice quadrata (utile per inversa, sistemi)",
+            "Numero",
+            "Vettore",
+            "Nulla"
+        ],
+        "answer": "Valore scalare associato a matrice quadrata (utile per inversa, sistemi)"
+    }
+]

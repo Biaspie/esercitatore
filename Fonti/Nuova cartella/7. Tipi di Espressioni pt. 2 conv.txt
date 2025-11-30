@@ -1,0 +1,389 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica Tipi ed Espressioni – Parte II
+
+
+
+
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Tipi Fondamentali
+
+
+
+Tipo	Cosa Rappresenta
+int	Interi a 32 bit
+
+Formato
+%d ⟸
+
+
+
+long	Interi a 64 bit	%ld
+
+short	Interi a 16 bit	%hd
+
+
+
+Li usiamo poco
+
+
+
+
+
+
+char
+
+
+
+
+float double
+long double
+
+Caratteri a 8 bit
+
+
+
+
+Reali a 32 bit Reali a 64 bit
+Reali a 128 bit
+
+%c ⟸
+
+
+
+
+%f, %e, %g ⟸
+
+%f, %e,%g,%lf,%le,%lg
+%Lf,%Le,%Lg
+
+
+
+
+
+
+
+
+
+
+
+
+
+Li usiamo poco
+Rappresentazione Valori di un Tipo Codifica
+
+
+Informazione	Rappresentazione
+
+
+
+
+Decodifica
+
+
+Valori di tipo int Valori di tipo char Valori di tipo float Suoni
+Immagini Video
+
+Lezione Aritmatica Binaria Queste slide
+Queste slide
+Tipo float Rappresentazione approssimata dei numeri reali.
+
+
+Nota: è possibile rappresentare tutti gli interi in un certo intervallo tramite una sequenza di bit. Invece non è possibile rappresentare tutti i reali in un intervallo, per piccolo che sia.
+
+
+
+
+
+
+
+
+Rappresentazione approssimata!
+Informazioni sul Tipo float
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La rappresentazione usa 4 byte (32 bit)
+
+
+
+
+Il numero più piccolo e il numero più grande che puoi rappresentare sono 1.175494 x 10-38 e 3.402823 x 1038
+
+
+
+
+
+
+
+Vengono rappresentate 6 cifre decimali
+Rappresentazione in Virgola Mobile Si potrebbe pensare di utilizzare i 32 bit riservati ad un valore di tipo float nella seguente maniera (virgola fissa - fixed point):
+
+
+•  16 bit per la •  16 bit per la
+
+parte intera parte decimale
+
+
+Esiste una scelta migliore (in termini di larghezza dell'intervallo dei valori rappresentabili), quella della virgola mobile (floating point). Questa rappresentazione deriva dalla rappresentazione scientifica in cui un numero é espresso come: M x 10oresponente	Rappresentazione
+E} E
+Parte   Fatt
+scientifica
+Frazionaria   di Scala
+
+Ad esempio, il numero 123,45 può essere rappresentato come 1,2345 x 102 oppure 12,345 x 101 oppure 12345 x 10-2
+Rappresentazione in Virgola Mobile
+
+La rappresentazione in virgola mobile é la rappresentazione scientifica normalizzata —> ovvero viene stabilita una regola che determina univocamente come deve essere rappresentato il numero, ad esempio:
+
+
+
+
+
+
+•  La parte intera deve avere di 0: 1,2345 x 102
+
+una sola cifra, che deve essere maggiore
+
+
+oppure
+
+
+•  La parte intera è 0 e la cifra più significativa della parte decinale deve essere maggiore di 0: 0,12345 x 103
+Un Valore di Tipo float in Memoria Standard IEEE 754 Single-Precision Binary Floating Point
+
+
+
+
+
+
+
+
+rappresenta il numero (-1)s x 2E-127 x (1.M)
+
+
+⟹ s è il bit di segno e vale 0 o 1 a seconda che il numeno sia positivo o negativo
+
+⟹ M rappresenta la parte frazionaria (o mantissa) del numero, espressa in base 2. Ovvero 𝑀 = ∑!"# &!"#$
+$%
+$
+$
+
+⟹ E rappresenta l’esponente, espresso in base 2, a cui viene sottratto 127 per non doverne rappresentare il segno: 𝐸 = ∑!"’ 𝑏$%)! & 2!
+(
+Come Scrivere Valori di Tipo float Si può scrivere solo segno e mantissa
+3.14	-0.555	13.0	1.	-2.00
+
+Si può scrivere il segno, la mantissa, poi una ‘E’, e poi l’esponente 357E2 equivale a 357∗102, ovvero a 35700
+-2.5E-3 equivale a -2.5∗10-3, ovvero a -0.0025
+Formati di Input/Output
+
+
+%f rappresenta il numero in formato decimale
+
+
+
+
+
+%e rappresenta il numero in notazione scientifica
+
+
+
+
+
+%g rappresenta il numero con la rappresentazione più breve fra %f e %e, eliminando zeri superflui
+Operazioni +, ∗, -, / sono operatori analoghi al tipo int
+Nota: 7.0/2.0 vale 3.5 e non 3 come 7/2. Anche 7.0/2 vale 3.5: se un operando è di tipo float e l'altro di tipo int, l'operatore è per float
+
+
+Nota: le operazioni possono portare ad una perdita di precisione.
+
+
+La divisione per zero è consentita!
+Conversione Trasformazione del tipo di un valore.
+Conversioni Implicite
+
+Sono trasformazioni del tipo di un valore effettuate automaticamente dal compilatore (senza che ne debba essere fatta richiesta esplicita).
+
+
+Funzionano così le conversioni da un tipo "meno capiente" ad un tipo "piu capiente" ovvero "che contiene" il tipo di partenza.
+
+Ad es: char → int	int → double
+Conversioni Esplicite
+
+
+Sono trasformazioni del tipo di un valore che vengono richieste
+esplicitamente nel programma. Si chiamano anche operazioni di
+
+
+
+
+cast.
+
+
+
+
+
+
+Funzionano così le conversioni da "meno capiente". Tali conversioni
+precisione.
+
+un tipo "più capiente" ad un tipo
+possono comportare una perdita
+
+
+
+
+di
+
+
+
+•
+
+Il programmatore informa quindi
+perdita di precisione è voluta.
+
+il compilatore che tale possibile
+
+
+
+
+
+Sintassi: (tipo) espressione
+
+Semantica: trasforma il tipo dell’espressione espressione in tipo
+Conversioni Esplicite
+
+
+float → int
+
+
+
+
+
+float → int
+
+
+
+
+
+
+
+float → int (senza cast)
+
+
+
+
+
+
+
+
+
+warning
+Conversione Implicita per Operazione
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+• •
+
+
+
+•
+
+L’istruzione è una assegnazione: viene valutato prima il lato destro
+somma e numero sono due variabili di tipo int, quindi l'operatore /
+rappresenta l'operazione "divisione fra interi"
+Il risultato della divisione fra interi é di tipo int. L'istruzione di assegnazione vuole memorizzare tale risultato dentro ad una variabile di
+tipo float. Vieneiquindi effettuata'una conversione implicita del valore
+da int a float e v ene completata l assegnazione
+•   float non contiene int, quindi una conversione esplicita sarebbe stata
+una scelta migliore
+Conversione Esplicita per Operazione
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+•   L’istruzione è una assegnazione: viene valutato prima il lato destro
+
+•   somma è una variabile di tipo int per la quale viene effetttuata una conversione esplicita a float
+
+•   L’operatore / ha un operando di tipo float e uno di tipo int, quindi rappresenta l'operazione "divisione fra reali". Viene effettuata una conversione implicita del secondo operando da int a float
+•	float non contiene int, quindi una conversione esplicita sarebbe stata una scelta migliore
+
+•   Il risultato della divisione fra reali è di tipo float. Viene quindi completata l'assegnazione.
+Caratteri Numerici e Numeri Hai un carattere numerico (es: ‘7’) e vuoi l’intero corrispondente (es: 7)
+
+
+
+
+
+
+
+
+
+
+
+Hai un intero (es: 5) e vuoi il carattere numerico corrispondente (es: ‘5’)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+char non contiene int, quindi una conversione esplicita sarebbe stata una scelta migliore
+Altre Risorse
+
+
+•  Bellini, Guidi: Linguaggio C — Capitoli 6.1 - 6.4, 8.1 - 8.2 Appendice D.5 - D.6, Appendice E

@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cos'è un algoritmo?",
+        "options": [
+            "Una procedura per risolvere un problema su ogni possibile insieme di dati",
+            "Un programma eseguibile",
+            "Un componente hardware",
+            "Un errore del computer"
+        ],
+        "answer": "Una procedura per risolvere un problema su ogni possibile insieme di dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa si intende per 'istanza' di un problema?",
+        "options": [
+            "Il problema applicato a un certo insieme di dati specifici",
+            "La soluzione del problema",
+            "Il tempo di esecuzione",
+            "La memoria occupata"
+        ],
+        "answer": "Il problema applicato a un certo insieme di dati specifici"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la differenza tra algoritmo e programma?",
+        "options": [
+            "L'algoritmo è la procedura astratta, il programma è la sua traduzione in istruzioni eseguibili dal calcolatore",
+            "Sono la stessa cosa",
+            "L'algoritmo è scritto in binario, il programma in inglese",
+            "Il programma è più veloce"
+        ],
+        "answer": "L'algoritmo è la procedura astratta, il programma è la sua traduzione in istruzioni eseguibili dal calcolatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa serve per scrivere un programma?",
+        "options": [
+            "Un text editor",
+            "Un browser",
+            "Un lettore musicale",
+            "Una stampante"
+        ],
+        "answer": "Un text editor"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file di testo?",
+        "options": [
+            "Un'unità di memorizzazione contenente sequenze di caratteri",
+            "Un'immagine",
+            "Un video",
+            "Un programma eseguibile"
+        ],
+        "answer": "Un'unità di memorizzazione contenente sequenze di caratteri"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il calcolatore può eseguire direttamente un programma scritto in C?",
+        "options": [
+            "No, deve essere prima compilato",
+            "Sì, sempre",
+            "Solo se è corto",
+            "Solo se è scritto bene"
+        ],
+        "answer": "No, deve essere prima compilato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale linguaggio comprende direttamente il calcolatore?",
+        "options": [
+            "Linguaggio Macchina",
+            "Linguaggio C",
+            "Inglese",
+            "Italiano"
+        ],
+        "answer": "Linguaggio Macchina"
+    },
+    {
+        "category": "Informatica",
+        "question": "Da cosa è composto l'alfabeto del linguaggio macchina?",
+        "options": [
+            "Da 0 e 1 (bit)",
+            "Da lettere A-Z",
+            "Da numeri 0-9",
+            "Da simboli speciali"
+        ],
+        "answer": "Da 0 e 1 (bit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta fisicamente un bit?",
+        "options": [
+            "Due stati di un sistema fisico (es. acceso/spento)",
+            "Un piccolo pezzo di silicio",
+            "Un cavo",
+            "Un tasto"
+        ],
+        "answer": "Due stati di un sistema fisico (es. acceso/spento)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come sono organizzati i caratteri nel linguaggio macchina?",
+        "options": [
+            "In parole che costituiscono frasi (istruzioni)",
+            "In paragrafi",
+            "In capitoli",
+            "In libri"
+        ],
+        "answer": "In parole che costituiscono frasi (istruzioni)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un'istruzione in linguaggio macchina è composta da:",
+        "options": [
+            "Codice operativo e operandi",
+            "Soggetto e predicato",
+            "Titolo e testo",
+            "Domanda e risposta"
+        ],
+        "answer": "Codice operativo e operandi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa indica il codice operativo?",
+        "options": [
+            "L'operazione da eseguire (es. leggi, somma)",
+            "Il nome dell'utente",
+            "L'ora corrente",
+            "Il colore dello schermo"
+        ],
+        "answer": "L'operazione da eseguire (es. leggi, somma)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa indicano gli operandi?",
+        "options": [
+            "I dati su cui operare o i loro indirizzi",
+            "Chi ha scritto il programma",
+            "La velocità della CPU",
+            "Il costo del computer"
+        ],
+        "answer": "I dati su cui operare o i loro indirizzi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché non scriviamo direttamente in linguaggio macchina?",
+        "options": [
+            "È difficile, poco potente e dipende dall'hardware",
+            "È troppo facile",
+            "È vietato dalla legge",
+            "Non piace ai programmatori"
+        ],
+        "answer": "È difficile, poco potente e dipende dall'hardware"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa che un linguaggio è 'di basso livello'?",
+        "options": [
+            "Che dipende dalle caratteristiche fisiche del calcolatore",
+            "Che è scritto in basso sullo schermo",
+            "Che è di scarsa qualità",
+            "Che costa poco"
+        ],
+        "answer": "Che dipende dalle caratteristiche fisiche del calcolatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è un vantaggio dei linguaggi di alto livello (come il C)?",
+        "options": [
+            "Semplicità, portabilità e astrazione",
+            "Sono più veloci del linguaggio macchina",
+            "Non richiedono memoria",
+            "Funzionano senza corrente"
+        ],
+        "answer": "Semplicità, portabilità e astrazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa si intende per 'portabilità' di un programma?",
+        "options": [
+            "La possibilità di eseguirlo su macchine diverse indipendentemente dall'hardware",
+            "La possibilità di portarlo in giro su una chiavetta",
+            "La leggerezza del file",
+            "La facilità di installazione"
+        ],
+        "answer": "La possibilità di eseguirlo su macchine diverse indipendentemente dall'hardware"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa si intende per 'astrazione' nella programmazione?",
+        "options": [
+            "Il programmatore non deve conoscere i dettagli fisici dell'hardware",
+            "Il programma è astratto e non fa nulla",
+            "Il programma è un'opera d'arte",
+            "Il programma è invisibile"
+        ],
+        "answer": "Il programmatore non deve conoscere i dettagli fisici dell'hardware"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il compilatore?",
+        "options": [
+            "Traduce il codice sorgente (alto livello) in codice macchina (eseguibile)",
+            "Esegue il programma",
+            "Scrive il programma al posto tuo",
+            "Corregge tutti gli errori automaticamente"
+        ],
+        "answer": "Traduce il codice sorgente (alto livello) in codice macchina (eseguibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il 'codice sorgente'?",
+        "options": [
+            "Il testo del programma scritto dal programmatore",
+            "Il file .exe",
+            "Il risultato del programma",
+            "L'input dell'utente"
+        ],
+        "answer": "Il testo del programma scritto dal programmatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il 'codice eseguibile' (o oggetto)?",
+        "options": [
+            "Il programma tradotto in linguaggio macchina",
+            "Il codice sorgente",
+            "Un file di testo",
+            "Un'immagine"
+        ],
+        "answer": "Il programma tradotto in linguaggio macchina"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quali sono le 4 fasi della compilazione di un programma C?",
+        "options": [
+            "Preprocessamento, Compilazione, Assemblaggio, Collegamento (Linking)",
+            "Scrittura, Lettura, Esecuzione, Stampa",
+            "Input, Output, Memoria, CPU",
+            "Analisi, Progetto, Sviluppo, Test"
+        ],
+        "answer": "Preprocessamento, Compilazione, Assemblaggio, Collegamento (Linking)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il Preprocessore?",
+        "options": [
+            "Esegue le direttive che iniziano con # (es. #include)",
+            "Compila il codice",
+            "Collega i file",
+            "Esegue il programma"
+        ],
+        "answer": "Esegue le direttive che iniziano con # (es. #include)"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve la direttiva #include <stdio.h>?",
+        "options": [
+            "A includere le funzioni della libreria standard di input/output",
+            "A stampare a video",
+            "A leggere da tastiera",
+            "A terminare il programma"
+        ],
+        "answer": "A includere le funzioni della libreria standard di input/output"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa produce la fase di Compilazione (in senso stretto)?",
+        "options": [
+            "Codice in linguaggio Assembly",
+            "Codice macchina",
+            "Codice sorgente",
+            "Un file eseguibile"
+        ],
+        "answer": "Codice in linguaggio Assembly"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il linguaggio Assembly?",
+        "options": [
+            "Un linguaggio intermedio tra alto livello e linguaggio macchina",
+            "Un linguaggio di alto livello",
+            "Il linguaggio macchina puro",
+            "Un linguaggio naturale"
+        ],
+        "answer": "Un linguaggio intermedio tra alto livello e linguaggio macchina"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa l'Assembler?",
+        "options": [
+            "Traduce il codice Assembly in file oggetto (linguaggio macchina non ancora eseguibile)",
+            "Mette insieme i pezzi del computer",
+            "Scrive il codice C",
+            "Esegue il programma"
+        ],
+        "answer": "Traduce il codice Assembly in file oggetto (linguaggio macchina non ancora eseguibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Che estensione hanno tipicamente i file oggetto?",
+        "options": [
+            ".o oppure .obj",
+            ".c",
+            ".exe",
+            ".txt"
+        ],
+        "answer": ".o oppure .obj"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il Linker (Collegatore)?",
+        "options": [
+            "Collega i file oggetto tra loro e con le librerie per creare l'eseguibile unico",
+            "Collega il computer a internet",
+            "Collega il mouse",
+            "Collega i cavi"
+        ],
+        "answer": "Collega i file oggetto tra loro e con le librerie per creare l'eseguibile unico"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è un vantaggio della separazione tra compilazione e linking?",
+        "options": [
+            "Non bisogna ricompilare tutto il programma se si modifica un solo file",
+            "Il programma diventa più veloce",
+            "Il programma occupa meno spazio",
+            "È più divertente"
+        ],
+        "answer": "Non bisogna ricompilare tutto il programma se si modifica un solo file"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa sono i registri MAR e MDR?",
+        "options": [
+            "Registri per gestire indirizzi e dati verso la memoria",
+            "Registri per la grafica",
+            "Registri per il suono",
+            "Registri per la rete"
+        ],
+        "answer": "Registri per gestire indirizzi e dati verso la memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se voglio sommare due numeri in linguaggio macchina, devo:",
+        "options": [
+            "Caricarli nei registri, usare la ALU e salvare il risultato",
+            "Scrivere 'somma' e basta",
+            "Chiedere al computer per favore",
+            "Usare la calcolatrice"
+        ],
+        "answer": "Caricarli nei registri, usare la ALU e salvare il risultato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un programma C può essere eseguito su un Mac e su un PC Windows?",
+        "options": [
+            "Sì, se ricompilato per la specifica macchina (portabilità)",
+            "No, mai",
+            "Sì, senza ricompilare",
+            "Solo se è corto"
+        ],
+        "answer": "Sì, se ricompilato per la specifica macchina (portabilità)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa che il linguaggio macchina è specifico per il processore?",
+        "options": [
+            "Ogni famiglia di processori ha il suo set di istruzioni",
+            "Tutti i processori usano lo stesso linguaggio",
+            "Il linguaggio cambia ogni giorno",
+            "Dipende dal monitor"
+        ],
+        "answer": "Ogni famiglia di processori ha il suo set di istruzioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Chi esegue il programma finale?",
+        "options": [
+            "La CPU (Processore)",
+            "Il compilatore",
+            "L'editor di testo",
+            "Il monitor"
+        ],
+        "answer": "La CPU (Processore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un IDE (Integrated Development Environment)?",
+        "options": [
+            "Un software che include editor, compilatore e debugger",
+            "Un tipo di processore",
+            "Un linguaggio di programmazione",
+            "Un virus"
+        ],
+        "answer": "Un software che include editor, compilatore e debugger"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è un esempio di IDE?",
+        "options": [
+            "Visual Studio Code (con estensioni)",
+            "Word",
+            "Excel",
+            "Paint"
+        ],
+        "answer": "Visual Studio Code (con estensioni)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'debuggare'?",
+        "options": [
+            "Trovare e rimuovere errori dal codice",
+            "Scrivere codice velocemente",
+            "Cancellare il codice",
+            "Salvare il codice"
+        ],
+        "answer": "Trovare e rimuovere errori dal codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un errore di sintassi impedisce:",
+        "options": [
+            "La compilazione del programma",
+            "L'esecuzione corretta (ma compila)",
+            "L'apertura dell'editor",
+            "Lo spegnimento del PC"
+        ],
+        "answer": "La compilazione del programma"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un errore di runtime avviene:",
+        "options": [
+            "Durante l'esecuzione del programma",
+            "Durante la compilazione",
+            "Durante la scrittura",
+            "Mai"
+        ],
+        "answer": "Durante l'esecuzione del programma"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una libreria in programmazione?",
+        "options": [
+            "Una raccolta di funzioni predefinite riutilizzabili",
+            "Un posto dove si leggono libri",
+            "Un database",
+            "Un file di testo"
+        ],
+        "answer": "Una raccolta di funzioni predefinite riutilizzabili"
+    },
+    {
+        "category": "Informatica",
+        "question": "La funzione printf fa parte di quale libreria?",
+        "options": [
+            "stdio.h (Standard Input Output)",
+            "math.h",
+            "stdlib.h",
+            "string.h"
+        ],
+        "answer": "stdio.h (Standard Input Output)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'stdio'?",
+        "options": [
+            "Standard Input Output",
+            "Studio",
+            "Stereo Audio",
+            "Standard Image Option"
+        ],
+        "answer": "Standard Input Output"
+    },
+    {
+        "category": "Informatica",
+        "question": "I commenti nel codice servono a:",
+        "options": [
+            "Spiegare il codice agli umani (ignorati dal compilatore)",
+            "Dire al compilatore cosa fare",
+            "Rallentare il programma",
+            "Occupare memoria"
+        ],
+        "answer": "Spiegare il codice agli umani (ignorati dal compilatore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "In C, come si scrive un commento su una riga?",
+        "options": [
+            "// commento",
+            "/* commento */",
+            "# commento",
+            "-- commento"
+        ],
+        "answer": "// commento"
+    },
+    {
+        "category": "Informatica",
+        "question": "In C, come si scrive un commento su più righe?",
+        "options": [
+            "/* commento */",
+            "// commento",
+            "<!-- commento -->",
+            "{ commento }"
+        ],
+        "answer": "/* commento */"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ogni istruzione in C deve terminare con:",
+        "options": [
+            "Un punto e virgola (;)",
+            "Un punto (.)",
+            "Una virgola (,)",
+            "Due punti (:)"
+        ],
+        "answer": "Un punto e virgola (;)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il punto di ingresso (entry point) di un programma C è la funzione:",
+        "options": [
+            "main()",
+            "start()",
+            "begin()",
+            "init()"
+        ],
+        "answer": "main()"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le parentesi graffe {} servono a:",
+        "options": [
+            "Delimitare un blocco di codice",
+            "Fare calcoli",
+            "Scrivere commenti",
+            "Nulla"
+        ],
+        "answer": "Delimitare un blocco di codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa restituisce solitamente la funzione main() al termine?",
+        "options": [
+            "Un intero (es. 0 per successo)",
+            "Nulla (void)",
+            "Una stringa",
+            "Un carattere"
+        ],
+        "answer": "Un intero (es. 0 per successo)"
+    }
+]

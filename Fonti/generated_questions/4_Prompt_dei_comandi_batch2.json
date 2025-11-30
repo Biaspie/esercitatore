@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è la redirezione dell'output (operatori > e >>)?",
+        "options": [
+            "Inviare l'output di un comando su un file invece che sullo schermo",
+            "Girare lo schermo",
+            "Cambiare colore",
+            "Stampare"
+        ],
+        "answer": "Inviare l'output di un comando su un file invece che sullo schermo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'dir > lista.txt'?",
+        "options": [
+            "Scrive l'elenco dei file nel file lista.txt (sovrascrivendo)",
+            "Stampa a video",
+            "Cancella lista.txt",
+            "Crea una cartella"
+        ],
+        "answer": "Scrive l'elenco dei file nel file lista.txt (sovrascrivendo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'dir >> lista.txt'?",
+        "options": [
+            "Aggiunge l'elenco dei file alla fine di lista.txt (append)",
+            "Sovrascrive lista.txt",
+            "Cancella lista.txt",
+            "Non fa nulla"
+        ],
+        "answer": "Aggiunge l'elenco dei file alla fine di lista.txt (append)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la pipe (|)?",
+        "options": [
+            "Passare l'output di un comando come input a un altro comando",
+            "Un tubo",
+            "Un carattere inutile",
+            "Un errore"
+        ],
+        "answer": "Passare l'output di un comando come input a un altro comando"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file batch (.bat) o script shell (.sh)?",
+        "options": [
+            "Un file di testo contenente una sequenza di comandi da eseguire",
+            "Un virus",
+            "Un'immagine",
+            "Un gioco"
+        ],
+        "answer": "Un file di testo contenente una sequenza di comandi da eseguire"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve il tasto Ctrl+C nel prompt?",
+        "options": [
+            "A interrompere l'esecuzione del comando corrente",
+            "A copiare",
+            "A incollare",
+            "A chiudere la finestra"
+        ],
+        "answer": "A interrompere l'esecuzione del comando corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si incolla nel prompt di Windows (versioni recenti)?",
+        "options": [
+            "Ctrl+V (o tasto destro)",
+            "Ctrl+P",
+            "Alt+V",
+            "Non si può"
+        ],
+        "answer": "Ctrl+V (o tasto destro)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è PowerShell?",
+        "options": [
+            "Una shell più avanzata e potente di cmd in Windows",
+            "Un gioco",
+            "Un antivirus",
+            "Un browser"
+        ],
+        "answer": "Una shell più avanzata e potente di cmd in Windows"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Bash?",
+        "options": [
+            "La shell predefinita in molti sistemi Linux e Mac",
+            "Un comando",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "La shell predefinita in molti sistemi Linux e Mac"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'case sensitive'?",
+        "options": [
+            "Che distingue tra maiuscole e minuscole",
+            "Che è sensibile",
+            "Che è rotto",
+            "Che è lento"
+        ],
+        "answer": "Che distingue tra maiuscole e minuscole"
+    },
+    {
+        "category": "Informatica",
+        "question": "Windows è case sensitive per i nomi dei file?",
+        "options": [
+            "Di solito no (ma il file system NTFS lo supporta)",
+            "Sì sempre",
+            "Solo il martedì",
+            "Dipende dal meteo"
+        ],
+        "answer": "Di solito no (ma il file system NTFS lo supporta)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Linux è case sensitive per i nomi dei file?",
+        "options": [
+            "Sì, 'File.txt' e 'file.txt' sono diversi",
+            "No",
+            "Solo a volte",
+            "Mai"
+        ],
+        "answer": "Sì, 'File.txt' e 'file.txt' sono diversi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un 'wildcard' (jolly)?",
+        "options": [
+            "Un carattere speciale che rappresenta uno o più caratteri (es. *)",
+            "Una carta da gioco",
+            "Un virus",
+            "Un errore"
+        ],
+        "answer": "Un carattere speciale che rappresenta uno o più caratteri (es. *)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'del *.txt'?",
+        "options": [
+            "Cancella tutti i file con estensione .txt nella cartella corrente",
+            "Cancella un file chiamato *.txt",
+            "Non fa nulla",
+            "Crea file txt"
+        ],
+        "answer": "Cancella tutti i file con estensione .txt nella cartella corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'dir a*.c'?",
+        "options": [
+            "Mostra tutti i file .c che iniziano con 'a'",
+            "Mostra tutto",
+            "Cancella tutto",
+            "Copia tutto"
+        ],
+        "answer": "Mostra tutti i file .c che iniziano con 'a'"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .c?",
+        "options": [
+            "Codice sorgente C",
+            "Eseguibile",
+            "Testo",
+            "Immagine"
+        ],
+        "answer": "Codice sorgente C"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .h?",
+        "options": [
+            "Header file C",
+            "Help file",
+            "History file",
+            "Hidden file"
+        ],
+        "answer": "Header file C"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .obj o .o?",
+        "options": [
+            "File oggetto (codice macchina non linkato)",
+            "File di testo",
+            "File immagine",
+            "File audio"
+        ],
+        "answer": "File oggetto (codice macchina non linkato)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .exe?",
+        "options": [
+            "File eseguibile Windows",
+            "File excel",
+            "File esempio",
+            "File errore"
+        ],
+        "answer": "File eseguibile Windows"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .txt?",
+        "options": [
+            "File di testo semplice",
+            "File tassativo",
+            "File texture",
+            "File taxi"
+        ],
+        "answer": "File di testo semplice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .zip?",
+        "options": [
+            "Archivio compresso",
+            "File veloce",
+            "File zero",
+            "File zoom"
+        ],
+        "answer": "Archivio compresso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .pdf?",
+        "options": [
+            "Portable Document Format",
+            "Picture Data File",
+            "Program Data File",
+            "Personal Data File"
+        ],
+        "answer": "Portable Document Format"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .jpg?",
+        "options": [
+            "Immagine compressa",
+            "Programma Java",
+            "Gioco",
+            "Testo"
+        ],
+        "answer": "Immagine compressa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .mp3?",
+        "options": [
+            "File audio compresso",
+            "File video",
+            "File testo",
+            "File programma"
+        ],
+        "answer": "File audio compresso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .mp4?",
+        "options": [
+            "File video compresso",
+            "File audio",
+            "File testo",
+            "File programma"
+        ],
+        "answer": "File video compresso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .html?",
+        "options": [
+            "Pagina web (HyperText Markup Language)",
+            "Programma",
+            "Immagine",
+            "Audio"
+        ],
+        "answer": "Pagina web (HyperText Markup Language)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .css?",
+        "options": [
+            "Foglio di stile (Cascading Style Sheets)",
+            "Programma C",
+            "Sicurezza",
+            "Sistema"
+        ],
+        "answer": "Foglio di stile (Cascading Style Sheets)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .js?",
+        "options": [
+            "Codice JavaScript",
+            "Immagine",
+            "Java Source",
+            "Just Say"
+        ],
+        "answer": "Codice JavaScript"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .py?",
+        "options": [
+            "Codice Python",
+            "Pie",
+            "Play",
+            "Pay"
+        ],
+        "answer": "Codice Python"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'estensione .java?",
+        "options": [
+            "Codice Java",
+            "Caffè",
+            "JavaScript",
+            "Gioco"
+        ],
+        "answer": "Codice Java"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un editor esadecimale?",
+        "options": [
+            "Un editor che mostra il contenuto binario dei file in esadecimale",
+            "Un editor con 6 lati",
+            "Un editor magico",
+            "Un editor di testo"
+        ],
+        "answer": "Un editor che mostra il contenuto binario dei file in esadecimale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il sistema esadecimale ha base:",
+        "options": [
+            "16",
+            "10",
+            "2",
+            "8"
+        ],
+        "answer": "16"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le cifre esadecimali sono:",
+        "options": [
+            "0-9 e A-F",
+            "0-15",
+            "A-Z",
+            "0-1"
+        ],
+        "answer": "0-9 e A-F"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa corrisponde A in esadecimale?",
+        "options": [
+            "10",
+            "1",
+            "11",
+            "16"
+        ],
+        "answer": "10"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa corrisponde F in esadecimale?",
+        "options": [
+            "15",
+            "16",
+            "14",
+            "6"
+        ],
+        "answer": "15"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché si usa l'esadecimale in informatica?",
+        "options": [
+            "Perché è una rappresentazione compatta del binario (1 cifra hex = 4 bit)",
+            "Perché è difficile",
+            "Perché è segreto",
+            "Perché piace ai computer"
+        ],
+        "answer": "Perché è una rappresentazione compatta del binario (1 cifra hex = 4 bit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti bit sono 2 cifre esadecimali?",
+        "options": [
+            "8 bit (1 byte)",
+            "4 bit",
+            "16 bit",
+            "2 bit"
+        ],
+        "answer": "8 bit (1 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il colore #FFFFFF rappresenta:",
+        "options": [
+            "Bianco",
+            "Nero",
+            "Rosso",
+            "Blu"
+        ],
+        "answer": "Bianco"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il colore #000000 rappresenta:",
+        "options": [
+            "Nero",
+            "Bianco",
+            "Rosso",
+            "Blu"
+        ],
+        "answer": "Nero"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il colore #FF0000 rappresenta:",
+        "options": [
+            "Rosso",
+            "Verde",
+            "Blu",
+            "Giallo"
+        ],
+        "answer": "Rosso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il colore #00FF00 rappresenta:",
+        "options": [
+            "Verde",
+            "Rosso",
+            "Blu",
+            "Giallo"
+        ],
+        "answer": "Verde"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il colore #0000FF rappresenta:",
+        "options": [
+            "Blu",
+            "Rosso",
+            "Verde",
+            "Giallo"
+        ],
+        "answer": "Blu"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'RGB?",
+        "options": [
+            "Modello di colori Red Green Blue",
+            "Un formato file",
+            "Un cavo",
+            "Un protocollo"
+        ],
+        "answer": "Modello di colori Red Green Blue"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un pixel?",
+        "options": [
+            "Il più piccolo elemento di un'immagine digitale",
+            "Un punto a caso",
+            "Un errore",
+            "Un colore"
+        ],
+        "answer": "Il più piccolo elemento di un'immagine digitale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la risoluzione di uno schermo?",
+        "options": [
+            "Il numero di pixel orizzontali e verticali (es. 1920x1080)",
+            "La grandezza in pollici",
+            "La luminosità",
+            "Il prezzo"
+        ],
+        "answer": "Il numero di pixel orizzontali e verticali (es. 1920x1080)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il DPI (Dots Per Inch)?",
+        "options": [
+            "Misura della densità di punti (risoluzione di stampa o schermo)",
+            "Un formato file",
+            "Un protocollo",
+            "Un errore"
+        ],
+        "answer": "Misura della densità di punti (risoluzione di stampa o schermo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo di compressione Lossless?",
+        "options": [
+            "Compressione senza perdita di dati (es. ZIP, PNG)",
+            "Compressione con perdita",
+            "Compressione lenta",
+            "Compressione veloce"
+        ],
+        "answer": "Compressione senza perdita di dati (es. ZIP, PNG)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo di compressione Lossy?",
+        "options": [
+            "Compressione con perdita di dati per risparmiare spazio (es. JPEG, MP3)",
+            "Compressione senza perdita",
+            "Compressione inutile",
+            "Compressione costosa"
+        ],
+        "answer": "Compressione con perdita di dati per risparmiare spazio (es. JPEG, MP3)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché si usa la compressione?",
+        "options": [
+            "Per ridurre lo spazio occupato e il tempo di trasmissione",
+            "Per rovinare i file",
+            "Per nascondere i dati",
+            "Per aumentare la qualità"
+        ],
+        "answer": "Per ridurre lo spazio occupato e il tempo di trasmissione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la larghezza di banda (bandwidth)?",
+        "options": [
+            "La capacità massima di trasmissione dati di una rete",
+            "La larghezza del monitor",
+            "La larghezza del cavo",
+            "Il peso del computer"
+        ],
+        "answer": "La capacità massima di trasmissione dati di una rete"
+    }
+]

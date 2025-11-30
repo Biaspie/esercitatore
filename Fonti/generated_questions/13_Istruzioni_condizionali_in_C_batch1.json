@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "A cosa servono le istruzioni di controllo?",
+        "options": [
+            "A regolare il flusso di esecuzione (quali istruzioni eseguire e in che ordine)",
+            "A controllare la memoria",
+            "A controllare il disco",
+            "A nulla"
+        ],
+        "answer": "A regolare il flusso di esecuzione (quali istruzioni eseguire e in che ordine)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come vengono eseguite normalmente le istruzioni?",
+        "options": [
+            "Sequenzialmente, una dopo l'altra",
+            "In parallelo",
+            "A caso",
+            "Al contrario"
+        ],
+        "answer": "Sequenzialmente, una dopo l'altra"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta un blocco (o sequenza)?",
+        "options": [
+            "Una sequenza di istruzioni da eseguire una dopo l'altra",
+            "Un'istruzione singola",
+            "Un errore",
+            "Un commento"
+        ],
+        "answer": "Una sequenza di istruzioni da eseguire una dopo l'altra"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta un'istruzione condizionale?",
+        "options": [
+            "Esegue un'istruzione se una condizione è vera, altrimenti ne esegue un'altra",
+            "Esegue sempre tutto",
+            "Non esegue nulla",
+            "Ripete un'istruzione"
+        ],
+        "answer": "Esegue un'istruzione se una condizione è vera, altrimenti ne esegue un'altra"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta un'istruzione ripetitiva?",
+        "options": [
+            "Esegue ripetutamente un'istruzione finché una condizione è vera",
+            "Esegue una volta sola",
+            "Non esegue nulla",
+            "Esegue a caso"
+        ],
+        "answer": "Esegue ripetutamente un'istruzione finché una condizione è vera"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi dell'istruzione if-else in C:",
+        "options": [
+            "if (predicato) istruzione1; else istruzione2;",
+            "if predicato then istruzione1 else istruzione2",
+            "if {predicato} istruzione1 else istruzione2",
+            "check (predicato) istruzione1 else istruzione2"
+        ],
+        "answer": "if (predicato) istruzione1; else istruzione2;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il predicato in un if?",
+        "options": [
+            "Un'espressione booleana (condizione logica) che vale 0 (falso) o 1 (vero)",
+            "Un numero a caso",
+            "Una stringa",
+            "Una funzione vuota"
+        ],
+        "answer": "Un'espressione booleana (condizione logica) che vale 0 (falso) o 1 (vero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se il predicato vale 1 (vero), quale parte viene eseguita?",
+        "options": [
+            "La parte if (istruzione1)",
+            "La parte else (istruzione2)",
+            "Entrambe",
+            "Nessuna"
+        ],
+        "answer": "La parte if (istruzione1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se il predicato vale 0 (falso), quale parte viene eseguita?",
+        "options": [
+            "La parte else (istruzione2)",
+            "La parte if (istruzione1)",
+            "Entrambe",
+            "Nessuna"
+        ],
+        "answer": "La parte else (istruzione2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si controlla se un numero è positivo in C?",
+        "options": [
+            "if (numero > 0)",
+            "if (numero < 0)",
+            "if (numero == 0)",
+            "if (numero != 0)"
+        ],
+        "answer": "if (numero > 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si controlla se un numero è pari in C?",
+        "options": [
+            "if (numero % 2 == 0)",
+            "if (numero / 2 == 0)",
+            "if (numero % 2 != 0)",
+            "if (numero * 2 == 0)"
+        ],
+        "answer": "if (numero % 2 == 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si controlla se un numero è dispari in C?",
+        "options": [
+            "if (numero % 2 != 0)",
+            "if (numero % 2 == 0)",
+            "if (numero / 2 != 0)",
+            "if (numero * 2 != 0)"
+        ],
+        "answer": "if (numero % 2 != 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Condizione per anno bisestile:",
+        "options": [
+            "(divisibile per 4 E NON per 100) OPPURE (divisibile per 400)",
+            "divisibile per 4",
+            "divisibile per 100",
+            "divisibile per 400"
+        ],
+        "answer": "(divisibile per 4 E NON per 100) OPPURE (divisibile per 400)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Espressione C per anno bisestile:",
+        "options": [
+            "((anno % 4 == 0) && (anno % 100 != 0)) || (anno % 400 == 0)",
+            "anno % 4 == 0",
+            "anno % 100 == 0",
+            "anno % 400 != 0"
+        ],
+        "answer": "((anno % 4 == 0) && (anno % 100 != 0)) || (anno % 400 == 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi dell'istruzione if (senza else):",
+        "options": [
+            "if (predicato) istruzione;",
+            "if predicato then istruzione",
+            "if {predicato} istruzione",
+            "check (predicato) istruzione"
+        ],
+        "answer": "if (predicato) istruzione;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se il predicato è falso in un if senza else, cosa succede?",
+        "options": [
+            "Non viene eseguita l'istruzione e si passa alla successiva",
+            "Si ferma il programma",
+            "Dà errore",
+            "Esegue comunque"
+        ],
+        "answer": "Non viene eseguita l'istruzione e si passa alla successiva"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo per il massimo tra 3 interi (x, y, z):",
+        "options": [
+            "Confronti a cascata o annidati",
+            "Sommarli",
+            "Moltiplicarli",
+            "Scegliere a caso"
+        ],
+        "answer": "Confronti a cascata o annidati"
+    },
+    {
+        "category": "Informatica",
+        "question": "L'indentazione in C è obbligatoria per il compilatore?",
+        "options": [
+            "No, è solo per leggibilità umana (ma fortemente consigliata)",
+            "Sì, sempre",
+            "Solo nei cicli",
+            "Solo nelle funzioni"
+        ],
+        "answer": "No, è solo per leggibilità umana (ma fortemente consigliata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una cascata di if-else?",
+        "options": [
+            "Serie di if-else annidati nel ramo else per gestire più casi mutuamente esclusivi",
+            "Un errore",
+            "Un ciclo infinito",
+            "Una funzione ricorsiva"
+        ],
+        "answer": "Serie di if-else annidati nel ramo else per gestire più casi mutuamente esclusivi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Problema dell'else mancante (dangling else):",
+        "options": [
+            "Ambiguità su quale if appartiene un else in caso di if annidati",
+            "Manca un punto e virgola",
+            "Errore di sintassi",
+            "Variabile non dichiarata"
+        ],
+        "answer": "Ambiguità su quale if appartiene un else in caso di if annidati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Regola per associare l'else all'if:",
+        "options": [
+            "L'else appartiene all'if più vicino (non ancora chiuso)",
+            "L'else appartiene all'if più lontano",
+            "L'else appartiene all'if principale",
+            "A caso"
+        ],
+        "answer": "L'else appartiene all'if più vicino (non ancora chiuso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si risolve l'ambiguità dell'else mancante?",
+        "options": [
+            "Usando le parentesi graffe {} per delimitare i blocchi esplicitamente",
+            "Usando l'indentazione",
+            "Cambiando nomi variabili",
+            "Non si può"
+        ],
+        "answer": "Usando le parentesi graffe {} per delimitare i blocchi esplicitamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se voglio eseguire PIÙ istruzioni in un ramo if, cosa devo usare?",
+        "options": [
+            "Un blocco racchiuso tra parentesi graffe { ... }",
+            "Più if",
+            "Niente",
+            "Punti e virgola"
+        ],
+        "answer": "Un blocco racchiuso tra parentesi graffe { ... }"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se metto un punto e virgola dopo if(condizione); ?",
+        "options": [
+            "Il corpo dell'if diventa un'istruzione vuota (non fa nulla se vero)",
+            "Errore di compilazione",
+            "Funziona normalmente",
+            "Il programma crasha"
+        ],
+        "answer": "Il corpo dell'if diventa un'istruzione vuota (non fa nulla se vero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Visibilità delle variabili dichiarate in un blocco:",
+        "options": [
+            "Sono visibili solo all'interno di quel blocco (scope locale)",
+            "Sono visibili ovunque",
+            "Sono visibili nel main",
+            "Sono globali"
+        ],
+        "answer": "Sono visibili solo all'interno di quel blocco (scope locale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se uso una variabile locale fuori dal suo blocco?",
+        "options": [
+            "Errore di compilazione ('undeclared identifier')",
+            "Funziona",
+            "Valore casuale",
+            "Valore zero"
+        ],
+        "answer": "Errore di compilazione ('undeclared identifier')"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le istruzioni strutturate (if, while, blocchi) sono considerate:",
+        "options": [
+            "Singole istruzioni (possono essere annidate)",
+            "Più istruzioni",
+            "Funzioni",
+            "Variabili"
+        ],
+        "answer": "Singole istruzioni (possono essere annidate)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore logico AND in C:",
+        "options": [
+            "&&",
+            "&",
+            "AND",
+            "and"
+        ],
+        "answer": "&&"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore logico OR in C:",
+        "options": [
+            "||",
+            "|",
+            "OR",
+            "or"
+        ],
+        "answer": "||"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore logico NOT in C:",
+        "options": [
+            "!",
+            "not",
+            "~",
+            "-"
+        ],
+        "answer": "!"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore di verità di (1 && 0):",
+        "options": [
+            "0 (Falso)",
+            "1 (Vero)",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "0 (Falso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore di verità di (1 || 0):",
+        "options": [
+            "1 (Vero)",
+            "0 (Falso)",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "1 (Vero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore di verità di (!1):",
+        "options": [
+            "0 (Falso)",
+            "1 (Vero)",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "0 (Falso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore relazionale 'uguale a' in C:",
+        "options": [
+            "==",
+            "=",
+            "equals",
+            "eq"
+        ],
+        "answer": "=="
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore relazionale 'diverso da' in C:",
+        "options": [
+            "!=",
+            "<>",
+            "not equals",
+            "neq"
+        ],
+        "answer": "!="
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra = e ==:",
+        "options": [
+            "= è assegnazione, == è confronto",
+            "Sono uguali",
+            "= è confronto, == è assegnazione",
+            "Nessuna"
+        ],
+        "answer": "= è assegnazione, == è confronto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se scrivo if(x=5) invece di if(x==5)?",
+        "options": [
+            "Assegna 5 a x, l'espressione vale 5 (vero), quindi entra sempre nell'if",
+            "Errore di sintassi",
+            "Confronta x con 5",
+            "Non fa nulla"
+        ],
+        "answer": "Assegna 5 a x, l'espressione vale 5 (vero), quindi entra sempre nell'if"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore ternario (condizionale):",
+        "options": [
+            "condizione ? valore_se_vero : valore_se_falso",
+            "if else",
+            "switch",
+            "Nulla"
+        ],
+        "answer": "condizione ? valore_se_vero : valore_se_falso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio operatore ternario:",
+        "options": [
+            "max = (a > b) ? a : b;",
+            "max = if(a>b) a else b;",
+            "max = a > b -> a, b;",
+            "Nulla"
+        ],
+        "answer": "max = (a > b) ? a : b;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Istruzione switch:",
+        "options": [
+            "Permette di selezionare tra molti casi basati sul valore di un'espressione intera",
+            "Un ciclo",
+            "Un if",
+            "Una funzione"
+        ],
+        "answer": "Permette di selezionare tra molti casi basati sul valore di un'espressione intera"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parola chiave per i casi nello switch:",
+        "options": [
+            "case",
+            "option",
+            "when",
+            "if"
+        ],
+        "answer": "case"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve 'break' nello switch?",
+        "options": [
+            "Per uscire dallo switch dopo aver eseguito un caso (evita il fall-through)",
+            "Per rompere il computer",
+            "Per fermare il programma",
+            "Per nulla"
+        ],
+        "answer": "Per uscire dallo switch dopo aver eseguito un caso (evita il fall-through)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se manca il break in uno switch?",
+        "options": [
+            "L'esecuzione continua nel caso successivo (fall-through)",
+            "Errore",
+            "Esce dallo switch",
+            "Nulla"
+        ],
+        "answer": "L'esecuzione continua nel caso successivo (fall-through)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parola chiave per il caso di default nello switch:",
+        "options": [
+            "default",
+            "else",
+            "other",
+            "none"
+        ],
+        "answer": "default"
+    },
+    {
+        "category": "Informatica",
+        "question": "Lo switch funziona con le stringhe in C?",
+        "options": [
+            "No, solo con interi e caratteri (char)",
+            "Sì",
+            "Forse",
+            "Dipende"
+        ],
+        "answer": "No, solo con interi e caratteri (char)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Lo switch funziona con i float in C?",
+        "options": [
+            "No",
+            "Sì",
+            "Forse",
+            "Dipende"
+        ],
+        "answer": "No"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso annidare gli switch?",
+        "options": [
+            "Sì",
+            "No",
+            "Solo due livelli",
+            "Mai"
+        ],
+        "answer": "Sì"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un'espressione booleana?",
+        "options": [
+            "Un'espressione che valuta a Vero o Falso",
+            "Un numero",
+            "Una stringa",
+            "Un errore"
+        ],
+        "answer": "Un'espressione che valuta a Vero o Falso"
+    },
+    {
+        "category": "Informatica",
+        "question": "In C, quale valore numerico rappresenta Falso?",
+        "options": [
+            "0",
+            "1",
+            "-1",
+            "Null"
+        ],
+        "answer": "0"
+    },
+    {
+        "category": "Informatica",
+        "question": "In C, quale valore numerico rappresenta Vero?",
+        "options": [
+            "Qualsiasi valore diverso da 0 (tipicamente 1)",
+            "Solo 1",
+            "Solo -1",
+            "Solo 100"
+        ],
+        "answer": "Qualsiasi valore diverso da 0 (tipicamente 1)"
+    }
+]

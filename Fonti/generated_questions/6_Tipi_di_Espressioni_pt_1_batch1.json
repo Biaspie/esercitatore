@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è un tipo di dato?",
+        "options": [
+            "Un insieme di valori (dominio) e un insieme di operazioni applicabili",
+            "Un numero",
+            "Una variabile",
+            "Un errore"
+        ],
+        "answer": "Un insieme di valori (dominio) e un insieme di operazioni applicabili"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il dominio del tipo int (su 32 bit)?",
+        "options": [
+            "Interi nell'intervallo [-2^31, 2^31 - 1]",
+            "Interi infiniti",
+            "Numeri reali",
+            "Caratteri"
+        ],
+        "answer": "Interi nell'intervallo [-2^31, 2^31 - 1]"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti valori distinti può rappresentare un int a 32 bit?",
+        "options": [
+            "2^32",
+            "2^31",
+            "2^16",
+            "Infiniti"
+        ],
+        "answer": "2^32"
+    },
+    {
+        "category": "Informatica",
+        "question": "Con N bit, quanti valori distinti posso rappresentare?",
+        "options": [
+            "2^N",
+            "N^2",
+            "2*N",
+            "N"
+        ],
+        "answer": "2^N"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un operatore?",
+        "options": [
+            "Un simbolo che denota un'operazione (es. +)",
+            "Un numero",
+            "Una variabile",
+            "Un tipo"
+        ],
+        "answer": "Un simbolo che denota un'operazione (es. +)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un letterale?",
+        "options": [
+            "Un elemento del linguaggio che rappresenta un valore specifico (es. 5, 3.14)",
+            "Una variabile",
+            "Un tipo",
+            "Un errore"
+        ],
+        "answer": "Un elemento del linguaggio che rappresenta un valore specifico (es. 5, 3.14)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale di questi è un letterale intero?",
+        "options": [
+            "42",
+            "3.14",
+            "'a'",
+            "\"ciao\""
+        ],
+        "answer": "42"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale di questi è un letterale reale (float)?",
+        "options": [
+            "3.14",
+            "42",
+            "'a'",
+            "\"ciao\""
+        ],
+        "answer": "3.14"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale di questi è un letterale carattere?",
+        "options": [
+            "'a'",
+            "\"a\"",
+            "42",
+            "3.14"
+        ],
+        "answer": "'a'"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un'espressione?",
+        "options": [
+            "Una combinazione di letterali, variabili e operatori che fornisce un valore",
+            "Un'istruzione",
+            "Un tipo",
+            "Un errore"
+        ],
+        "answer": "Una combinazione di letterali, variabili e operatori che fornisce un valore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene determinato il tipo di un'espressione?",
+        "options": [
+            "In fase di compilazione",
+            "In fase di esecuzione",
+            "Mai",
+            "A caso"
+        ],
+        "answer": "In fase di compilazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quando viene determinato il valore di un'espressione?",
+        "options": [
+            "In fase di esecuzione",
+            "In fase di compilazione",
+            "Mai",
+            "A caso"
+        ],
+        "answer": "In fase di esecuzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il formato di stampa per un long int?",
+        "options": [
+            "%ld",
+            "%d",
+            "%f",
+            "%c"
+        ],
+        "answer": "%ld"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il formato di stampa per un double?",
+        "options": [
+            "%lf (o %f in printf)",
+            "%d",
+            "%c",
+            "%s"
+        ],
+        "answer": "%lf (o %f in printf)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti bit occupa un long long int (solitamente)?",
+        "options": [
+            "64 bit",
+            "32 bit",
+            "16 bit",
+            "8 bit"
+        ],
+        "answer": "64 bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se sommo due int e il risultato supera il massimo rappresentabile?",
+        "options": [
+            "Overflow (il valore 'riparte' dal minimo negativo)",
+            "Errore di runtime",
+            "Il PC esplode",
+            "Nulla"
+        ],
+        "answer": "Overflow (il valore 'riparte' dal minimo negativo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 3 + 5?",
+        "options": [
+            "8",
+            "15",
+            "2",
+            "-2"
+        ],
+        "answer": "8"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 3 * 9?",
+        "options": [
+            "27",
+            "12",
+            "3",
+            "6"
+        ],
+        "answer": "27"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato della divisione intera 13 / 5?",
+        "options": [
+            "2",
+            "2.6",
+            "3",
+            "1"
+        ],
+        "answer": "2"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 1 / 2 (tra interi)?",
+        "options": [
+            "0",
+            "0.5",
+            "1",
+            "Errore"
+        ],
+        "answer": "0"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 7 % 2?",
+        "options": [
+            "1",
+            "0",
+            "3.5",
+            "2"
+        ],
+        "answer": "1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa l'operatore ++x (incremento prefisso)?",
+        "options": [
+            "Incrementa x e restituisce il nuovo valore",
+            "Restituisce il vecchio valore e poi incrementa",
+            "Non fa nulla",
+            "Decrementa"
+        ],
+        "answer": "Incrementa x e restituisce il nuovo valore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa l'operatore x++ (incremento postfisso)?",
+        "options": [
+            "Restituisce il vecchio valore e poi incrementa x",
+            "Incrementa subito e restituisce il nuovo",
+            "Non fa nulla",
+            "Decrementa"
+        ],
+        "answer": "Restituisce il vecchio valore e poi incrementa x"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa l'operatore -x (unario)?",
+        "options": [
+            "Cambia il segno di x (negazione aritmetica)",
+            "Sottrae x",
+            "Nulla",
+            "Incrementa"
+        ],
+        "answer": "Cambia il segno di x (negazione aritmetica)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa x += 5?",
+        "options": [
+            "Aggiunge 5 a x",
+            "Assegna 5 a x",
+            "Moltiplica x per 5",
+            "Divide x per 5"
+        ],
+        "answer": "Aggiunge 5 a x"
+    },
+    {
+        "category": "Informatica",
+        "question": "L'assegnazione multipla x = y = z come viene valutata?",
+        "options": [
+            "Da destra a sinistra (z assegnato a y, poi y a x)",
+            "Da sinistra a destra",
+            "A caso",
+            "In parallelo"
+        ],
+        "answer": "Da destra a sinistra (z assegnato a y, poi y a x)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale operatore ha precedenza maggiore tra + e *?",
+        "options": [
+            "*",
+            "+",
+            "Uguale",
+            "Dipende"
+        ],
+        "answer": "*"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale operatore ha precedenza maggiore tra * e /?",
+        "options": [
+            "Hanno la stessa precedenza (associatività a sinistra)",
+            "*",
+            "/",
+            "Dipende"
+        ],
+        "answer": "Hanno la stessa precedenza (associatività a sinistra)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 2 + 3 * 4?",
+        "options": [
+            "14",
+            "20",
+            "24",
+            "10"
+        ],
+        "answer": "14"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di (2 + 3) * 4?",
+        "options": [
+            "20",
+            "14",
+            "24",
+            "10"
+        ],
+        "answer": "20"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 4 * 2 / 4?",
+        "options": [
+            "2",
+            "0.5",
+            "8",
+            "4"
+        ],
+        "answer": "2"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il risultato di 4 * (2 / 4)? (divisione intera)",
+        "options": [
+            "0",
+            "2",
+            "0.5",
+            "4"
+        ],
+        "answer": "0"
+    },
+    {
+        "category": "Informatica",
+        "question": "È consentito dividere per zero (es. 7/0)?",
+        "options": [
+            "No, causa errore di runtime (o comportamento indefinito)",
+            "Sì, fa infinito",
+            "Sì, fa 0",
+            "Sì, fa 7"
+        ],
+        "answer": "No, causa errore di runtime (o comportamento indefinito)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il range del tipo char?",
+        "options": [
+            "[-128, 127] (se signed)",
+            "[0, 255]",
+            "[-32768, 32767]",
+            "Infinito"
+        ],
+        "answer": "[-128, 127] (se signed)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanti bit occupa un char?",
+        "options": [
+            "8 bit (1 byte)",
+            "16 bit",
+            "32 bit",
+            "4 bit"
+        ],
+        "answer": "8 bit (1 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il tipo char è numerico?",
+        "options": [
+            "Sì, memorizza il codice ASCII del carattere",
+            "No, memorizza l'immagine",
+            "No, è testo puro",
+            "Dipende"
+        ],
+        "answer": "Sì, memorizza il codice ASCII del carattere"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il codice ASCII di 'A'?",
+        "options": [
+            "65",
+            "97",
+            "48",
+            "0"
+        ],
+        "answer": "65"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il codice ASCII di 'a'?",
+        "options": [
+            "97",
+            "65",
+            "48",
+            "1"
+        ],
+        "answer": "97"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il codice ASCII di '0'?",
+        "options": [
+            "48",
+            "0",
+            "10",
+            "65"
+        ],
+        "answer": "48"
+    },
+    {
+        "category": "Informatica",
+        "question": "I codici ASCII delle lettere sono ordinati?",
+        "options": [
+            "Sì (A < B < C ...)",
+            "No",
+            "Solo le maiuscole",
+            "Solo le minuscole"
+        ],
+        "answer": "Sì (A < B < C ...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "I codici ASCII sono nel range [0, 255], ma char è [-128, 127]. È un problema?",
+        "options": [
+            "No, l'aritmetica è circolare (i valori > 127 diventano negativi ma il bit pattern è lo stesso)",
+            "Sì, si perdono dati",
+            "Sì, errore di compilazione",
+            "Dipende"
+        ],
+        "answer": "No, l'aritmetica è circolare (i valori > 127 diventano negativi ma il bit pattern è lo stesso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si scrivono i caratteri nel codice?",
+        "options": [
+            "Tra apici singoli (es. 'A')",
+            "Tra doppi apici",
+            "Senza apici",
+            "Tra parentesi"
+        ],
+        "answer": "Tra apici singoli (es. 'A')"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il formato di stampa per un char?",
+        "options": [
+            "%c",
+            "%d",
+            "%s",
+            "%f"
+        ],
+        "answer": "%c"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso sommare due char?",
+        "options": [
+            "Sì, si sommano i loro codici ASCII",
+            "No",
+            "Solo se sono numeri",
+            "Dà errore"
+        ],
+        "answer": "Sì, si sommano i loro codici ASCII"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso confrontare due char (es. 'a' < 'b')?",
+        "options": [
+            "Sì, si confrontano i codici ASCII",
+            "No",
+            "Solo se uguali",
+            "Dà errore"
+        ],
+        "answer": "Sì, si confrontano i codici ASCII"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa stampa printf(\"%d\", 'A');?",
+        "options": [
+            "65",
+            "A",
+            "a",
+            "Errore"
+        ],
+        "answer": "65"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa stampa printf(\"%c\", 65);?",
+        "options": [
+            "A",
+            "65",
+            "a",
+            "Errore"
+        ],
+        "answer": "A"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'aritmetica dei puntatori?",
+        "options": [
+            "Operazioni su indirizzi di memoria",
+            "Matematica avanzata",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Operazioni su indirizzi di memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore?",
+        "options": [
+            "Una variabile che contiene un indirizzo di memoria",
+            "Un intero",
+            "Un carattere",
+            "Un float"
+        ],
+        "answer": "Una variabile che contiene un indirizzo di memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'operatore & (unario)?",
+        "options": [
+            "Restituisce l'indirizzo di una variabile",
+            "AND logico",
+            "AND bitwise",
+            "Nulla"
+        ],
+        "answer": "Restituisce l'indirizzo di una variabile"
+    }
+]

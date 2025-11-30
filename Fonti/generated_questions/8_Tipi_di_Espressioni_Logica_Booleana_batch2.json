@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Come si scrive 'anno bisestile' in espressione booleana?",
+        "options": [
+            "(anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)",
+            "anno % 4 == 0",
+            "anno % 400 == 0",
+            "anno % 100 != 0"
+        ],
+        "answer": "(anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un'istruzione condizionale?",
+        "options": [
+            "Un'istruzione che esegue un blocco di codice solo se una condizione è vera (if, switch)",
+            "Un ciclo",
+            "Una funzione",
+            "Un errore"
+        ],
+        "answer": "Un'istruzione che esegue un blocco di codice solo se una condizione è vera (if, switch)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi dell'if:",
+        "options": [
+            "if (condizione) { istruzioni; }",
+            "if condizione then istruzioni",
+            "if { istruzioni } (condizione)",
+            "check (condizione)"
+        ],
+        "answer": "if (condizione) { istruzioni; }"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi dell'if-else:",
+        "options": [
+            "if (cond) { ... } else { ... }",
+            "if (cond) { ... } then { ... }",
+            "if (cond) ... otherwise ...",
+            "Nulla"
+        ],
+        "answer": "if (cond) { ... } else { ... }"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le parentesi graffe nell'if sono obbligatorie?",
+        "options": [
+            "Solo se il blocco contiene più di un'istruzione (ma consigliate sempre)",
+            "Sì sempre",
+            "Mai",
+            "Solo se piove"
+        ],
+        "answer": "Solo se il blocco contiene più di un'istruzione (ma consigliate sempre)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un bitwise operator?",
+        "options": [
+            "Operatore che agisce sui singoli bit (es. &, |, ^, ~, <<, >>)",
+            "Operatore logico",
+            "Operatore relazionale",
+            "Operatore matematico"
+        ],
+        "answer": "Operatore che agisce sui singoli bit (es. &, |, ^, ~, <<, >>)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra & e &&:",
+        "options": [
+            "& è bitwise AND, && è logical AND",
+            "Sono uguali",
+            "& è logico, && è bitwise",
+            "Nessuna"
+        ],
+        "answer": "& è bitwise AND, && è logical AND"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra | e ||:",
+        "options": [
+            "| è bitwise OR, || è logical OR",
+            "Sono uguali",
+            "| è logico, || è bitwise",
+            "Nessuna"
+        ],
+        "answer": "| è bitwise OR, || è logical OR"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 5 & 3 (in binario 101 & 011)?",
+        "options": [
+            "1 (001)",
+            "7 (111)",
+            "0",
+            "5"
+        ],
+        "answer": "1 (001)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 5 | 3 (in binario 101 | 011)?",
+        "options": [
+            "7 (111)",
+            "1 (001)",
+            "0",
+            "5"
+        ],
+        "answer": "7 (111)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 5 ^ 3 (in binario 101 ^ 011)?",
+        "options": [
+            "6 (110)",
+            "1",
+            "7",
+            "0"
+        ],
+        "answer": "6 (110)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa ~0 (su 32 bit)?",
+        "options": [
+            "-1 (tutti 1)",
+            "0",
+            "1",
+            "Errore"
+        ],
+        "answer": "-1 (tutti 1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 1 << 2?",
+        "options": [
+            "4 (001 diventa 100)",
+            "2",
+            "1",
+            "0"
+        ],
+        "answer": "4 (001 diventa 100)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 8 >> 2?",
+        "options": [
+            "2 (1000 diventa 0010)",
+            "4",
+            "1",
+            "0"
+        ],
+        "answer": "2 (1000 diventa 0010)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una maschera (mask)?",
+        "options": [
+            "Un valore usato con operatori bitwise per selezionare/modificare bit",
+            "Una stringa",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "Un valore usato con operatori bitwise per selezionare/modificare bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come verifico se il bit 0 è 1 (dispari)?",
+        "options": [
+            "if (x & 1)",
+            "if (x % 2 != 0)",
+            "Entrambe",
+            "Nessuna"
+        ],
+        "answer": "Entrambe"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come setto il bit n a 1?",
+        "options": [
+            "x = x | (1 << n)",
+            "x = x & (1 << n)",
+            "x = x ^ (1 << n)",
+            "x = 1"
+        ],
+        "answer": "x = x | (1 << n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come setto il bit n a 0?",
+        "options": [
+            "x = x & ~(1 << n)",
+            "x = x | (1 << n)",
+            "x = x ^ (1 << n)",
+            "x = 0"
+        ],
+        "answer": "x = x & ~(1 << n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come inverto il bit n?",
+        "options": [
+            "x = x ^ (1 << n)",
+            "x = x | (1 << n)",
+            "x = x & (1 << n)",
+            "x = ~x"
+        ],
+        "answer": "x = x ^ (1 << n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un flag?",
+        "options": [
+            "Una variabile booleana (o bit) usata per segnalare una condizione",
+            "Una bandiera",
+            "Un errore",
+            "Un file"
+        ],
+        "answer": "Una variabile booleana (o bit) usata per segnalare una condizione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un ciclo while?",
+        "options": [
+            "Ripete un blocco finché la condizione è vera",
+            "Esegue una volta",
+            "Non fa nulla",
+            "Errore"
+        ],
+        "answer": "Ripete un blocco finché la condizione è vera"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un ciclo for?",
+        "options": [
+            "Ciclo con inizializzazione, condizione e incremento (spesso usato per contatori)",
+            "Ciclo infinito",
+            "Ciclo casuale",
+            "Errore"
+        ],
+        "answer": "Ciclo con inizializzazione, condizione e incremento (spesso usato per contatori)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi for:",
+        "options": [
+            "for (init; cond; incr) { ... }",
+            "for (init, cond, incr) { ... }",
+            "for init to cond step incr",
+            "Nulla"
+        ],
+        "answer": "for (init; cond; incr) { ... }"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un ciclo infinito?",
+        "options": [
+            "Un ciclo la cui condizione è sempre vera (es. while(1))",
+            "Un ciclo lungo",
+            "Un errore",
+            "Un virus"
+        ],
+        "answer": "Un ciclo la cui condizione è sempre vera (es. while(1))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si esce da un ciclo infinito?",
+        "options": [
+            "Con break o return (o uccidendo il processo)",
+            "Non si può",
+            "Aspettando",
+            "Premendo A"
+        ],
+        "answer": "Con break o return (o uccidendo il processo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'continue'?",
+        "options": [
+            "Salta il resto dell'iterazione corrente e passa alla successiva",
+            "Esce dal ciclo",
+            "Termina il programma",
+            "Nulla"
+        ],
+        "answer": "Salta il resto dell'iterazione corrente e passa alla successiva"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo iterativo?",
+        "options": [
+            "Algoritmo che usa cicli",
+            "Algoritmo ricorsivo",
+            "Algoritmo casuale",
+            "Errore"
+        ],
+        "answer": "Algoritmo che usa cicli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'indentazione a 'K&R'?",
+        "options": [
+            "Stile di formattazione del codice (graffa aperta sulla stessa riga)",
+            "Un errore",
+            "Un linguaggio",
+            "Un compilatore"
+        ],
+        "answer": "Stile di formattazione del codice (graffa aperta sulla stessa riga)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'indentazione 'Allman'?",
+        "options": [
+            "Stile di formattazione (graffa aperta su nuova riga)",
+            "Un errore",
+            "Un linguaggio",
+            "Un compilatore"
+        ],
+        "answer": "Stile di formattazione (graffa aperta su nuova riga)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un 'magic number'?",
+        "options": [
+            "Un numero letterale nel codice senza spiegazione (da evitare, usare costanti)",
+            "Un numero magico",
+            "Un numero fortunato",
+            "Un errore"
+        ],
+        "answer": "Un numero letterale nel codice senza spiegazione (da evitare, usare costanti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo spaghetti code?",
+        "options": [
+            "Codice confuso, non strutturato e difficile da seguire (pieno di goto)",
+            "Codice buono",
+            "Codice italiano",
+            "Codice veloce"
+        ],
+        "answer": "Codice confuso, non strutturato e difficile da seguire (pieno di goto)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è 'goto'?",
+        "options": [
+            "Istruzione di salto incondizionato (da usare con estrema cautela)",
+            "Vai a",
+            "Un ciclo",
+            "Una funzione"
+        ],
+        "answer": "Istruzione di salto incondizionato (da usare con estrema cautela)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché goto è sconsigliato?",
+        "options": [
+            "Rende il flusso del programma difficile da seguire (spaghetti code)",
+            "È lento",
+            "Non funziona",
+            "È vecchio"
+        ],
+        "answer": "Rende il flusso del programma difficile da seguire (spaghetti code)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un diagramma di stato?",
+        "options": [
+            "Modello che descrive gli stati di un sistema e le transizioni",
+            "Un disegno",
+            "Un grafico",
+            "Un errore"
+        ],
+        "answer": "Modello che descrive gli stati di un sistema e le transizioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una macchina a stati finiti (FSM)?",
+        "options": [
+            "Modello computazionale con un numero finito di stati",
+            "Un robot",
+            "Un computer",
+            "Un gioco"
+        ],
+        "answer": "Modello computazionale con un numero finito di stati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la logica proposizionale?",
+        "options": [
+            "Studio delle proposizioni e dei connettivi logici (AND, OR, NOT)",
+            "Logica difficile",
+            "Logica matematica",
+            "Nulla"
+        ],
+        "answer": "Studio delle proposizioni e dei connettivi logici (AND, OR, NOT)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una tautologia?",
+        "options": [
+            "Un'espressione sempre vera (es. A || !A)",
+            "Un errore",
+            "Una contraddizione",
+            "Una bugia"
+        ],
+        "answer": "Un'espressione sempre vera (es. A || !A)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una contraddizione?",
+        "options": [
+            "Un'espressione sempre falsa (es. A && !A)",
+            "Una verità",
+            "Una tautologia",
+            "Un errore"
+        ],
+        "answer": "Un'espressione sempre falsa (es. A && !A)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la soddisfacibilità (SAT)?",
+        "options": [
+            "Problema di determinare se esiste un'assegnazione che rende vera una formula booleana",
+            "Essere felici",
+            "Un esame",
+            "Un errore"
+        ],
+        "answer": "Problema di determinare se esiste un'assegnazione che rende vera una formula booleana"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il problema SAT è:",
+        "options": [
+            "NP-completo (difficile da risolvere efficientemente)",
+            "Facile",
+            "Impossibile",
+            "Banale"
+        ],
+        "answer": "NP-completo (difficile da risolvere efficientemente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un gate logico (porta logica)?",
+        "options": [
+            "Componente hardware che implementa una funzione booleana (AND, OR, NOT...)",
+            "Una porta",
+            "Un cancello",
+            "Un software"
+        ],
+        "answer": "Componente hardware che implementa una funzione booleana (AND, OR, NOT...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la porta NAND?",
+        "options": [
+            "NOT AND (falsa solo se entrambi veri)",
+            "AND",
+            "OR",
+            "NOT"
+        ],
+        "answer": "NOT AND (falsa solo se entrambi veri)"
+    },
+    {
+        "category": "Informatica",
+        "question": "La porta NAND è universale?",
+        "options": [
+            "Sì, si possono costruire tutte le altre porte usando solo NAND",
+            "No",
+            "Forse",
+            "Dipende"
+        ],
+        "answer": "Sì, si possono costruire tutte le altre porte usando solo NAND"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la porta XOR?",
+        "options": [
+            "Exclusive OR (vera se gli ingressi sono diversi)",
+            "OR",
+            "AND",
+            "NOT"
+        ],
+        "answer": "Exclusive OR (vera se gli ingressi sono diversi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un mezzo addizionatore (Half Adder)?",
+        "options": [
+            "Circuito che somma due bit (produce somma e riporto)",
+            "Un addizionatore rotto",
+            "Un calcolatore",
+            "Un errore"
+        ],
+        "answer": "Circuito che somma due bit (produce somma e riporto)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un addizionatore completo (Full Adder)?",
+        "options": [
+            "Circuito che somma tre bit (due addendi e riporto in ingresso)",
+            "Un mezzo addizionatore",
+            "Un calcolatore",
+            "Un errore"
+        ],
+        "answer": "Circuito che somma tre bit (due addendi e riporto in ingresso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un flip-flop?",
+        "options": [
+            "Circuito sequenziale che memorizza un bit di stato",
+            "Una ciabatta",
+            "Un errore",
+            "Un gate"
+        ],
+        "answer": "Circuito sequenziale che memorizza un bit di stato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il clock?",
+        "options": [
+            "Segnale periodico che sincronizza i circuiti digitali",
+            "Un orologio",
+            "Un tempo",
+            "Un errore"
+        ],
+        "answer": "Segnale periodico che sincronizza i circuiti digitali"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la frequenza di clock?",
+        "options": [
+            "Numero di cicli al secondo (Hertz)",
+            "Velocità",
+            "Tempo",
+            "Nulla"
+        ],
+        "answer": "Numero di cicli al secondo (Hertz)"
+    },
+    {
+        "category": "Informatica",
+        "question": "1 GHz equivale a:",
+        "options": [
+            "1 miliardo di cicli al secondo",
+            "1 milione",
+            "1000",
+            "1"
+        ],
+        "answer": "1 miliardo di cicli al secondo"
+    }
+]

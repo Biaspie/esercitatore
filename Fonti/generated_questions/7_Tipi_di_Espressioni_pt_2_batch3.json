@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa causa Stack Overflow?",
+        "options": [
+            "Ricorsione infinita o allocazione di troppe variabili locali (es. array enormi sullo stack)",
+            "Un sito web",
+            "Un errore di compilazione",
+            "Un virus"
+        ],
+        "answer": "Ricorsione infinita o allocazione di troppe variabili locali (es. array enormi sullo stack)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore void (void *)?",
+        "options": [
+            "Un puntatore generico che può puntare a qualsiasi tipo di dato",
+            "Un puntatore nullo",
+            "Un errore",
+            "Un puntatore a funzione"
+        ],
+        "answer": "Un puntatore generico che può puntare a qualsiasi tipo di dato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso dereferenziare un void * direttamente?",
+        "options": [
+            "No, devo prima castarlo al tipo corretto",
+            "Sì",
+            "Sempre",
+            "Mai"
+        ],
+        "answer": "No, devo prima castarlo al tipo corretto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso fare aritmetica su void *?",
+        "options": [
+            "No (lo standard non lo permette, anche se GCC lo estende trattandolo come char*)",
+            "Sì",
+            "Sempre",
+            "Mai"
+        ],
+        "answer": "No (lo standard non lo permette, anche se GCC lo estende trattandolo come char*)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è size_t?",
+        "options": [
+            "Un tipo intero senza segno usato per rappresentare dimensioni e indici (restituito da sizeof)",
+            "Un int",
+            "Un float",
+            "Un errore"
+        ],
+        "answer": "Un tipo intero senza segno usato per rappresentare dimensioni e indici (restituito da sizeof)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è NULL?",
+        "options": [
+            "Una macro che rappresenta un puntatore nullo (solitamente (void*)0)",
+            "0",
+            "Un errore",
+            "Una stringa"
+        ],
+        "answer": "Una macro che rappresenta un puntatore nullo (solitamente (void*)0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un operatore unario?",
+        "options": [
+            "Un operatore che agisce su un solo operando (es. ++, --, !, &)",
+            "Un operatore che agisce su due operandi",
+            "Un operatore che agisce su tre operandi",
+            "Un errore"
+        ],
+        "answer": "Un operatore che agisce su un solo operando (es. ++, --, !, &)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un operatore binario?",
+        "options": [
+            "Un operatore che agisce su due operandi (es. +, -, *, /)",
+            "Un operatore che agisce su un operando",
+            "Un operatore che agisce su tre operandi",
+            "Un errore"
+        ],
+        "answer": "Un operatore che agisce su due operandi (es. +, -, *, /)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un operatore ternario?",
+        "options": [
+            "Un operatore che agisce su tre operandi (l'unico in C è ? :)",
+            "Un operatore che agisce su due operandi",
+            "Un operatore che agisce su un operando",
+            "Un errore"
+        ],
+        "answer": "Un operatore che agisce su tre operandi (l'unico in C è ? :)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'associatività a sinistra?",
+        "options": [
+            "Le operazioni vengono raggruppate da sinistra a destra (es. a+b+c -> (a+b)+c)",
+            "Da destra a sinistra",
+            "Casuale",
+            "Nulla"
+        ],
+        "answer": "Le operazioni vengono raggruppate da sinistra a destra (es. a+b+c -> (a+b)+c)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'associatività a destra?",
+        "options": [
+            "Le operazioni vengono raggruppate da destra a sinistra (es. a=b=c -> a=(b=c))",
+            "Da sinistra a destra",
+            "Casuale",
+            "Nulla"
+        ],
+        "answer": "Le operazioni vengono raggruppate da destra a sinistra (es. a=b=c -> a=(b=c))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quali operatori sono associativi a destra?",
+        "options": [
+            "Assegnazione (=, +=, etc.) e operatori unari",
+            "Somma",
+            "Moltiplicazione",
+            "Tutti"
+        ],
+        "answer": "Assegnazione (=, +=, etc.) e operatori unari"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la precedenza?",
+        "options": [
+            "Regola che stabilisce quale operatore viene valutato prima in un'espressione mista",
+            "Chi arriva prima",
+            "Un errore",
+            "Nulla"
+        ],
+        "answer": "Regola che stabilisce quale operatore viene valutato prima in un'espressione mista"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file sorgente (.c)?",
+        "options": [
+            "File contenente il codice C leggibile",
+            "File eseguibile",
+            "File oggetto",
+            "File header"
+        ],
+        "answer": "File contenente il codice C leggibile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file oggetto (.o / .obj)?",
+        "options": [
+            "File contenente codice macchina prodotto dalla compilazione, ma non ancora linkato",
+            "File sorgente",
+            "File eseguibile",
+            "File header"
+        ],
+        "answer": "File contenente codice macchina prodotto dalla compilazione, ma non ancora linkato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file eseguibile (.exe / a.out)?",
+        "options": [
+            "Programma completo pronto per essere eseguito dal sistema operativo",
+            "File sorgente",
+            "File oggetto",
+            "File header"
+        ],
+        "answer": "Programma completo pronto per essere eseguito dal sistema operativo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa il linker?",
+        "options": [
+            "Collega i file oggetto e le librerie per creare l'eseguibile",
+            "Compila",
+            "Esegue",
+            "Cancella"
+        ],
+        "answer": "Collega i file oggetto e le librerie per creare l'eseguibile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una libreria statica (.a / .lib)?",
+        "options": [
+            "Collezione di file oggetto che vengono copiati nell'eseguibile al momento del linking",
+            "Libreria dinamica",
+            "File sorgente",
+            "File header"
+        ],
+        "answer": "Collezione di file oggetto che vengono copiati nell'eseguibile al momento del linking"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una libreria dinamica (.so / .dll)?",
+        "options": [
+            "Libreria caricata a runtime, condivisa tra più programmi",
+            "Libreria statica",
+            "File sorgente",
+            "File header"
+        ],
+        "answer": "Libreria caricata a runtime, condivisa tra più programmi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio delle librerie dinamiche:",
+        "options": [
+            "Risparmio di memoria (condivisa) e aggiornamenti facili senza ricompilare i programmi",
+            "Velocità",
+            "Semplicità",
+            "Nulla"
+        ],
+        "answer": "Risparmio di memoria (condivisa) e aggiornamenti facili senza ricompilare i programmi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il makefile?",
+        "options": [
+            "File di configurazione per il tool 'make', descrive come compilare il progetto",
+            "Un file C",
+            "Un file oggetto",
+            "Un errore"
+        ],
+        "answer": "File di configurazione per il tool 'make', descrive come compilare il progetto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è 'make'?",
+        "options": [
+            "Tool per automatizzare la compilazione (ricompila solo i file modificati)",
+            "Un compilatore",
+            "Un editor",
+            "Un debugger"
+        ],
+        "answer": "Tool per automatizzare la compilazione (ricompila solo i file modificati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un IDE (Integrated Development Environment)?",
+        "options": [
+            "Software che fornisce editor, compilatore, debugger e altri strumenti integrati (es. VS Code, CLion)",
+            "Un compilatore",
+            "Un editor",
+            "Un debugger"
+        ],
+        "answer": "Software che fornisce editor, compilatore, debugger e altri strumenti integrati (es. VS Code, CLion)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'indentazione?",
+        "options": [
+            "Spaziatura all'inizio delle righe per evidenziare la struttura dei blocchi di codice",
+            "Un errore",
+            "Un commento",
+            "Una variabile"
+        ],
+        "answer": "Spaziatura all'inizio delle righe per evidenziare la struttura dei blocchi di codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché l'indentazione è importante?",
+        "options": [
+            "Migliora la leggibilità e la manutenibilità del codice",
+            "È obbligatoria in C",
+            "Rende il codice più veloce",
+            "Non serve"
+        ],
+        "answer": "Migliora la leggibilità e la manutenibilità del codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un commento su una riga in C (C99+)?",
+        "options": [
+            "// commento",
+            "/* commento */",
+            "# commento",
+            "-- commento"
+        ],
+        "answer": "// commento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un commento multi-riga in C?",
+        "options": [
+            "/* commento */",
+            "// commento",
+            "# commento",
+            "<!-- commento -->"
+        ],
+        "answer": "/* commento */"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il refactoring?",
+        "options": [
+            "Ristrutturare il codice per migliorarne la qualità interna senza cambiarne il comportamento esterno",
+            "Riscrivere tutto",
+            "Correggere bug",
+            "Aggiungere feature"
+        ],
+        "answer": "Ristrutturare il codice per migliorarne la qualità interna senza cambiarne il comportamento esterno"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il testing?",
+        "options": [
+            "Processo di verifica per assicurarsi che il software funzioni come previsto",
+            "Scrivere codice",
+            "Compilare",
+            "Eseguire"
+        ],
+        "answer": "Processo di verifica per assicurarsi che il software funzioni come previsto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un unit test?",
+        "options": [
+            "Test che verifica il funzionamento di una singola unità (es. funzione) isolata",
+            "Test completo",
+            "Test manuale",
+            "Test utente"
+        ],
+        "answer": "Test che verifica il funzionamento di una singola unità (es. funzione) isolata"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un integration test?",
+        "options": [
+            "Test che verifica come interagiscono diverse unità/moduli",
+            "Unit test",
+            "System test",
+            "Acceptance test"
+        ],
+        "answer": "Test che verifica come interagiscono diverse unità/moduli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il debugging?",
+        "options": [
+            "Processo di identificazione e rimozione degli errori (bug)",
+            "Scrivere codice",
+            "Testare",
+            "Compilare"
+        ],
+        "answer": "Processo di identificazione e rimozione degli errori (bug)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo?",
+        "options": [
+            "Una sequenza finita di passi non ambigui per risolvere un problema",
+            "Un programma",
+            "Un computer",
+            "Un linguaggio"
+        ],
+        "answer": "Una sequenza finita di passi non ambigui per risolvere un problema"
+    },
+    {
+        "category": "Informatica",
+        "question": "Proprietà di un algoritmo:",
+        "options": [
+            "Finitezza, Definitezza (non ambiguità), Efficacia (realizzabilità), Input, Output",
+            "Velocità, Bellezza",
+            "Lunghezza, Colore",
+            "Nulla"
+        ],
+        "answer": "Finitezza, Definitezza (non ambiguità), Efficacia (realizzabilità), Input, Output"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un diagramma di flusso (flowchart)?",
+        "options": [
+            "Rappresentazione grafica di un algoritmo",
+            "Un disegno",
+            "Un grafico",
+            "Un errore"
+        ],
+        "answer": "Rappresentazione grafica di un algoritmo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Nel flowchart, il rombo rappresenta:",
+        "options": [
+            "Una decisione (condizione)",
+            "Un'azione",
+            "Inizio/Fine",
+            "Input/Output"
+        ],
+        "answer": "Una decisione (condizione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Nel flowchart, il rettangolo rappresenta:",
+        "options": [
+            "Un'azione (processo)",
+            "Una decisione",
+            "Inizio/Fine",
+            "Input/Output"
+        ],
+        "answer": "Un'azione (processo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Nel flowchart, il parallelogramma rappresenta:",
+        "options": [
+            "Input/Output",
+            "Azione",
+            "Decisione",
+            "Inizio/Fine"
+        ],
+        "answer": "Input/Output"
+    },
+    {
+        "category": "Informatica",
+        "question": "Nel flowchart, l'ovale rappresenta:",
+        "options": [
+            "Inizio/Fine (terminale)",
+            "Azione",
+            "Decisione",
+            "Input/Output"
+        ],
+        "answer": "Inizio/Fine (terminale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo pseudocodice?",
+        "options": [
+            "Descrizione di un algoritmo simile al codice ma destinata alla lettura umana",
+            "Codice falso",
+            "Codice sbagliato",
+            "Codice compilabile"
+        ],
+        "answer": "Descrizione di un algoritmo simile al codice ma destinata alla lettura umana"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità temporale?",
+        "options": [
+            "Misura di quanto tempo impiega un algoritmo in funzione della dimensione dell'input",
+            "Quanto è difficile",
+            "Quanto è lungo",
+            "Quanto è vecchio"
+        ],
+        "answer": "Misura di quanto tempo impiega un algoritmo in funzione della dimensione dell'input"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità spaziale?",
+        "options": [
+            "Misura di quanta memoria usa un algoritmo in funzione della dimensione dell'input",
+            "Quanto spazio occupa su disco",
+            "Quanto è grande il PC",
+            "Nulla"
+        ],
+        "answer": "Misura di quanta memoria usa un algoritmo in funzione della dimensione dell'input"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la notazione Big O?",
+        "options": [
+            "Notazione matematica per descrivere il comportamento asintotico (limite superiore) della complessità",
+            "Una lettera grande",
+            "Un cerchio",
+            "Un errore"
+        ],
+        "answer": "Notazione matematica per descrivere il comportamento asintotico (limite superiore) della complessità"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(1) significa:",
+        "options": [
+            "Tempo costante (indipendente dall'input)",
+            "Tempo lineare",
+            "Tempo quadratico",
+            "Tempo esponenziale"
+        ],
+        "answer": "Tempo costante (indipendente dall'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(n) significa:",
+        "options": [
+            "Tempo lineare (proporzionale all'input)",
+            "Tempo costante",
+            "Tempo quadratico",
+            "Tempo esponenziale"
+        ],
+        "answer": "Tempo lineare (proporzionale all'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(n^2) significa:",
+        "options": [
+            "Tempo quadratico (es. due cicli annidati)",
+            "Tempo lineare",
+            "Tempo costante",
+            "Tempo cubico"
+        ],
+        "answer": "Tempo quadratico (es. due cicli annidati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(log n) significa:",
+        "options": [
+            "Tempo logaritmico (molto efficiente, es. ricerca binaria)",
+            "Tempo lineare",
+            "Tempo costante",
+            "Tempo esponenziale"
+        ],
+        "answer": "Tempo logaritmico (molto efficiente, es. ricerca binaria)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo greedy?",
+        "options": [
+            "Algoritmo che fa la scelta localmente ottima ad ogni passo sperando di trovare l'ottimo globale",
+            "Algoritmo avido",
+            "Algoritmo lento",
+            "Algoritmo veloce"
+        ],
+        "answer": "Algoritmo che fa la scelta localmente ottima ad ogni passo sperando di trovare l'ottimo globale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la programmazione dinamica?",
+        "options": [
+            "Tecnica che risolve problemi complessi scomponendoli in sottoproblemi sovrapposti e memorizzando i risultati (memoization)",
+            "Programmazione veloce",
+            "Programmazione difficile",
+            "Programmazione video"
+        ],
+        "answer": "Tecnica che risolve problemi complessi scomponendoli in sottoproblemi sovrapposti e memorizzando i risultati (memoization)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Divide et Impera?",
+        "options": [
+            "Tecnica che divide il problema in sottoproblemi indipendenti, li risolve e combina le soluzioni (es. Merge Sort)",
+            "Dividere e comandare",
+            "Una guerra",
+            "Un errore"
+        ],
+        "answer": "Tecnica che divide il problema in sottoproblemi indipendenti, li risolve e combina le soluzioni (es. Merge Sort)"
+    }
+]

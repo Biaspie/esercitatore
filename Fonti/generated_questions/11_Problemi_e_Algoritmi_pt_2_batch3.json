@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è un attacco DDoS?",
+        "options": [
+            "Distributed Denial of Service (sovraccaricare un server con traffico da molte fonti)",
+            "Un virus",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Distributed Denial of Service (sovraccaricare un server con traffico da molte fonti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una Botnet?",
+        "options": [
+            "Rete di computer infetti controllati da remoto (usati spesso per DDoS)",
+            "Una rete locale",
+            "Un robot",
+            "Un gioco"
+        ],
+        "answer": "Rete di computer infetti controllati da remoto (usati spesso per DDoS)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Ransomware?",
+        "options": [
+            "Malware che cifra i dati dell'utente e chiede un riscatto per decifrarli",
+            "Un virus",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Malware che cifra i dati dell'utente e chiede un riscatto per decifrarli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Keylogger?",
+        "options": [
+            "Software che registra i tasti premuti dall'utente (per rubare password)",
+            "Un log",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Software che registra i tasti premuti dall'utente (per rubare password)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la VPN?",
+        "options": [
+            "Virtual Private Network (crea un tunnel cifrato su internet)",
+            "Una rete privata",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Virtual Private Network (crea un tunnel cifrato su internet)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Tor Browser?",
+        "options": [
+            "Browser per navigare anonimamente nella rete Tor (onion routing)",
+            "Un browser veloce",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Browser per navigare anonimamente nella rete Tor (onion routing)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Dark Web?",
+        "options": [
+            "Parte del web non indicizzata e accessibile solo con software specifici (spesso associata ad attività illegali)",
+            "Il web scuro",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Parte del web non indicizzata e accessibile solo con software specifici (spesso associata ad attività illegali)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un cookie?",
+        "options": [
+            "Piccolo file di testo salvato dal browser per memorizzare preferenze o sessioni",
+            "Un biscotto",
+            "Un virus",
+            "Un errore"
+        ],
+        "answer": "Piccolo file di testo salvato dal browser per memorizzare preferenze o sessioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la cache del browser?",
+        "options": [
+            "Memoria temporanea per salvare risorse web e velocizzare il caricamento",
+            "Un errore",
+            "Un virus",
+            "Un gioco"
+        ],
+        "answer": "Memoria temporanea per salvare risorse web e velocizzare il caricamento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un URL?",
+        "options": [
+            "Uniform Resource Locator (indirizzo web)",
+            "Un link",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Uniform Resource Locator (indirizzo web)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il DNS?",
+        "options": [
+            "Domain Name System (traduce nomi di dominio in indirizzi IP)",
+            "Un server",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Domain Name System (traduce nomi di dominio in indirizzi IP)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un indirizzo IP statico?",
+        "options": [
+            "Indirizzo IP che non cambia nel tempo",
+            "Indirizzo dinamico",
+            "Indirizzo sbagliato",
+            "Nulla"
+        ],
+        "answer": "Indirizzo IP che non cambia nel tempo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un indirizzo IP dinamico?",
+        "options": [
+            "Indirizzo IP assegnato temporaneamente (es. dal provider)",
+            "Indirizzo statico",
+            "Indirizzo sbagliato",
+            "Nulla"
+        ],
+        "answer": "Indirizzo IP assegnato temporaneamente (es. dal provider)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il ping?",
+        "options": [
+            "Comando per testare la raggiungibilità di un host in rete (misura la latenza)",
+            "Un gioco",
+            "Un errore",
+            "Un suono"
+        ],
+        "answer": "Comando per testare la raggiungibilità di un host in rete (misura la latenza)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la latenza?",
+        "options": [
+            "Tempo impiegato dai dati per viaggiare da sorgente a destinazione",
+            "Velocità",
+            "Larghezza di banda",
+            "Errore"
+        ],
+        "answer": "Tempo impiegato dai dati per viaggiare da sorgente a destinazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la larghezza di banda (bandwidth)?",
+        "options": [
+            "Quantità massima di dati trasmissibili nell'unità di tempo",
+            "Velocità",
+            "Latenza",
+            "Errore"
+        ],
+        "answer": "Quantità massima di dati trasmissibili nell'unità di tempo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il throughput?",
+        "options": [
+            "Quantità effettiva di dati trasmessi nell'unità di tempo",
+            "Bandwidth",
+            "Latenza",
+            "Errore"
+        ],
+        "answer": "Quantità effettiva di dati trasmessi nell'unità di tempo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un router?",
+        "options": [
+            "Dispositivo che instrada i pacchetti dati tra reti diverse",
+            "Un modem",
+            "Uno switch",
+            "Un hub"
+        ],
+        "answer": "Dispositivo che instrada i pacchetti dati tra reti diverse"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è uno switch?",
+        "options": [
+            "Dispositivo che collega dispositivi all'interno della stessa rete locale (LAN)",
+            "Un router",
+            "Un modem",
+            "Un hub"
+        ],
+        "answer": "Dispositivo che collega dispositivi all'interno della stessa rete locale (LAN)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un modem?",
+        "options": [
+            "Modulatore-Demodulatore (converte segnali digitali in analogici e viceversa per la trasmissione)",
+            "Un router",
+            "Uno switch",
+            "Un hub"
+        ],
+        "answer": "Modulatore-Demodulatore (converte segnali digitali in analogici e viceversa per la trasmissione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Wi-Fi?",
+        "options": [
+            "Tecnologia per reti locali senza fili (WLAN)",
+            "Internet",
+            "Un cavo",
+            "Un errore"
+        ],
+        "answer": "Tecnologia per reti locali senza fili (WLAN)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Bluetooth?",
+        "options": [
+            "Tecnologia per connessioni senza fili a corto raggio (PAN)",
+            "Wi-Fi",
+            "Internet",
+            "Un errore"
+        ],
+        "answer": "Tecnologia per connessioni senza fili a corto raggio (PAN)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è NFC?",
+        "options": [
+            "Near Field Communication (comunicazione a cortissimo raggio, es. pagamenti contactless)",
+            "Wi-Fi",
+            "Bluetooth",
+            "Un errore"
+        ],
+        "answer": "Near Field Communication (comunicazione a cortissimo raggio, es. pagamenti contactless)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è GPS?",
+        "options": [
+            "Global Positioning System (sistema di posizionamento satellitare)",
+            "Una mappa",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Global Positioning System (sistema di posizionamento satellitare)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un sistema embedded?",
+        "options": [
+            "Sistema informatico dedicato a una specifica funzione all'interno di un sistema più grande (es. centralina auto)",
+            "Un PC",
+            "Un server",
+            "Un errore"
+        ],
+        "answer": "Sistema informatico dedicato a una specifica funzione all'interno di un sistema più grande (es. centralina auto)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Arduino?",
+        "options": [
+            "Piattaforma hardware open source per prototipazione elettronica",
+            "Un computer",
+            "Un robot",
+            "Un gioco"
+        ],
+        "answer": "Piattaforma hardware open source per prototipazione elettronica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Raspberry Pi?",
+        "options": [
+            "Computer a scheda singola (SBC) economico e compatto",
+            "Un frutto",
+            "Un dolce",
+            "Un errore"
+        ],
+        "answer": "Computer a scheda singola (SBC) economico e compatto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il BIOS/UEFI?",
+        "options": [
+            "Firmware che inizializza l'hardware all'avvio del computer",
+            "Un sistema operativo",
+            "Un programma",
+            "Un virus"
+        ],
+        "answer": "Firmware che inizializza l'hardware all'avvio del computer"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Bootloader?",
+        "options": [
+            "Programma che carica il sistema operativo in memoria",
+            "BIOS",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Programma che carica il sistema operativo in memoria"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la virtualizzazione?",
+        "options": [
+            "Creazione di una versione virtuale di una risorsa (es. macchina virtuale)",
+            "Un gioco",
+            "Un errore",
+            "Un sogno"
+        ],
+        "answer": "Creazione di una versione virtuale di una risorsa (es. macchina virtuale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una VM (Virtual Machine)?",
+        "options": [
+            "Emulazione di un sistema computer completo",
+            "Un computer vero",
+            "Un robot",
+            "Un errore"
+        ],
+        "answer": "Emulazione di un sistema computer completo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Docker?",
+        "options": [
+            "Piattaforma per la containerizzazione (eseguire applicazioni in container isolati)",
+            "Una nave",
+            "Un porto",
+            "Un errore"
+        ],
+        "answer": "Piattaforma per la containerizzazione (eseguire applicazioni in container isolati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra VM e Container:",
+        "options": [
+            "I container condividono il kernel del sistema operativo host (più leggeri), le VM hanno il proprio OS completo",
+            "Nessuna",
+            "Le VM sono più leggere",
+            "I container sono hardware"
+        ],
+        "answer": "I container condividono il kernel del sistema operativo host (più leggeri), le VM hanno il proprio OS completo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Cloud Computing?",
+        "options": [
+            "Erogazione di servizi di calcolo (server, storage, database) via internet",
+            "Nuvole",
+            "Meteo",
+            "Errore"
+        ],
+        "answer": "Erogazione di servizi di calcolo (server, storage, database) via internet"
+    },
+    {
+        "category": "Informatica",
+        "question": "Tipi di Cloud:",
+        "options": [
+            "Pubblico, Privato, Ibrido",
+            "Alto, Basso",
+            "Chiaro, Scuro",
+            "Nulla"
+        ],
+        "answer": "Pubblico, Privato, Ibrido"
+    },
+    {
+        "category": "Informatica",
+        "question": "Modelli di servizio Cloud:",
+        "options": [
+            "IaaS, PaaS, SaaS",
+            "A, B, C",
+            "1, 2, 3",
+            "Nulla"
+        ],
+        "answer": "IaaS, PaaS, SaaS"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è IaaS?",
+        "options": [
+            "Infrastructure as a Service (affitto di hardware virtualizzato)",
+            "Internet",
+            "Software",
+            "Piattaforma"
+        ],
+        "answer": "Infrastructure as a Service (affitto di hardware virtualizzato)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è PaaS?",
+        "options": [
+            "Platform as a Service (ambiente di sviluppo e deploy gestito)",
+            "Piattaforma",
+            "Software",
+            "Infrastruttura"
+        ],
+        "answer": "Platform as a Service (ambiente di sviluppo e deploy gestito)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un API?",
+        "options": [
+            "Application Programming Interface (interfaccia per far comunicare software diversi)",
+            "Un'ape",
+            "Un programma",
+            "Un errore"
+        ],
+        "answer": "Application Programming Interface (interfaccia per far comunicare software diversi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è REST?",
+        "options": [
+            "Stile architetturale per API web (basato su risorse e metodi HTTP)",
+            "Riposo",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Stile architetturale per API web (basato su risorse e metodi HTTP)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è JSON?",
+        "options": [
+            "JavaScript Object Notation (formato leggero per lo scambio di dati)",
+            "Un nome",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "JavaScript Object Notation (formato leggero per lo scambio di dati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è XML?",
+        "options": [
+            "eXtensible Markup Language (linguaggio di markup per dati strutturati)",
+            "Un file",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "eXtensible Markup Language (linguaggio di markup per dati strutturati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Git?",
+        "options": [
+            "Sistema di controllo versione distribuito",
+            "Un insulto",
+            "Un programma",
+            "Un errore"
+        ],
+        "answer": "Sistema di controllo versione distribuito"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è GitHub?",
+        "options": [
+            "Piattaforma di hosting per progetti Git",
+            "Git",
+            "Un hub",
+            "Un errore"
+        ],
+        "answer": "Piattaforma di hosting per progetti Git"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un commit?",
+        "options": [
+            "Salvataggio delle modifiche nel repository (snapshot)",
+            "Un comando",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Salvataggio delle modifiche nel repository (snapshot)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un branch?",
+        "options": [
+            "Ramo di sviluppo parallelo",
+            "Un albero",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Ramo di sviluppo parallelo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il merge?",
+        "options": [
+            "Unione di due branch",
+            "Unione",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Unione di due branch"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una pull request?",
+        "options": [
+            "Richiesta di unire le modifiche di un branch in un altro (spesso con review)",
+            "Una richiesta",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Richiesta di unire le modifiche di un branch in un altro (spesso con review)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è CI/CD?",
+        "options": [
+            "Continuous Integration / Continuous Delivery (automazione di build, test e deploy)",
+            "Un CD",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Continuous Integration / Continuous Delivery (automazione di build, test e deploy)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Agile?",
+        "options": [
+            "Metodologia di sviluppo software iterativa e incrementale",
+            "Veloce",
+            "Ginnastica",
+            "Errore"
+        ],
+        "answer": "Metodologia di sviluppo software iterativa e incrementale"
+    }
+]

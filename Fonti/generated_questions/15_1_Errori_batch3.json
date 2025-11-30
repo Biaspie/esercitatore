@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è un IDE?",
+        "options": [
+            "Integrated Development Environment (ambiente di sviluppo integrato: editor + compilatore + debugger)",
+            "Editor di testo",
+            "Compilatore",
+            "Nulla"
+        ],
+        "answer": "Integrated Development Environment (ambiente di sviluppo integrato: editor + compilatore + debugger)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempi di IDE C/C++:",
+        "options": [
+            "Visual Studio, CLion, Code::Blocks, Eclipse CDT",
+            "Word",
+            "Excel",
+            "Paint"
+        ],
+        "answer": "Visual Studio, CLion, Code::Blocks, Eclipse CDT"
+    },
+    {
+        "category": "Informatica",
+        "question": "Makefile:",
+        "options": [
+            "File di configurazione per il tool 'make' che automatizza la compilazione (gestisce dipendenze)",
+            "File di testo",
+            "File eseguibile",
+            "Nulla"
+        ],
+        "answer": "File di configurazione per il tool 'make' che automatizza la compilazione (gestisce dipendenze)"
+    },
+    {
+        "category": "Informatica",
+        "question": "CMake:",
+        "options": [
+            "Tool per generare Makefile o progetti IDE (cross-platform)",
+            "Compilatore",
+            "Editor",
+            "Nulla"
+        ],
+        "answer": "Tool per generare Makefile o progetti IDE (cross-platform)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Version Control System (VCS):",
+        "options": [
+            "Sistema per gestire le versioni del codice (es. Git, SVN)",
+            "Backup",
+            "Cloud",
+            "Nulla"
+        ],
+        "answer": "Sistema per gestire le versioni del codice (es. Git, SVN)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Git:",
+        "options": [
+            "VCS distribuito più diffuso",
+            "Sito web",
+            "Linguaggio",
+            "Nulla"
+        ],
+        "answer": "VCS distribuito più diffuso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Commit:",
+        "options": [
+            "Salvataggio di uno snapshot dello stato del progetto nel VCS",
+            "Invio",
+            "Download",
+            "Nulla"
+        ],
+        "answer": "Salvataggio di uno snapshot dello stato del progetto nel VCS"
+    },
+    {
+        "category": "Informatica",
+        "question": "Branch:",
+        "options": [
+            "Ramo di sviluppo parallelo (per feature o fix isolati)",
+            "Ramo albero",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Ramo di sviluppo parallelo (per feature o fix isolati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Merge:",
+        "options": [
+            "Unione di due branch (integrazione modifiche)",
+            "Divisione",
+            "Cancellazione",
+            "Nulla"
+        ],
+        "answer": "Unione di due branch (integrazione modifiche)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Conflict (Merge conflict):",
+        "options": [
+            "Situazione in cui due modifiche incompatibili impediscono il merge automatico",
+            "Guerra",
+            "Errore compilazione",
+            "Nulla"
+        ],
+        "answer": "Situazione in cui due modifiche incompatibili impediscono il merge automatico"
+    },
+    {
+        "category": "Informatica",
+        "question": "Pull request (PR) / Merge request:",
+        "options": [
+            "Richiesta di unire le modifiche di un branch in un altro (con review)",
+            "Richiesta aiuto",
+            "Richiesta soldi",
+            "Nulla"
+        ],
+        "answer": "Richiesta di unire le modifiche di un branch in un altro (con review)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Continuous Integration (CI):",
+        "options": [
+            "Pratica di integrare frequentemente il codice e testarlo automaticamente",
+            "Integrazione continua",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Pratica di integrare frequentemente il codice e testarlo automaticamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Continuous Deployment (CD):",
+        "options": [
+            "Rilascio automatico del software in produzione dopo i test",
+            "CD musicale",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Rilascio automatico del software in produzione dopo i test"
+    },
+    {
+        "category": "Informatica",
+        "question": "API (Application Programming Interface):",
+        "options": [
+            "Insieme di definizioni e protocolli per costruire e integrare software",
+            "App",
+            "Sito",
+            "Nulla"
+        ],
+        "answer": "Insieme di definizioni e protocolli per costruire e integrare software"
+    },
+    {
+        "category": "Informatica",
+        "question": "SDK (Software Development Kit):",
+        "options": [
+            "Insieme di strumenti (librerie, doc, esempi) per sviluppare software per una piattaforma",
+            "Gioco",
+            "Hardware",
+            "Nulla"
+        ],
+        "answer": "Insieme di strumenti (librerie, doc, esempi) per sviluppare software per una piattaforma"
+    },
+    {
+        "category": "Informatica",
+        "question": "Framework:",
+        "options": [
+            "Struttura software che fornisce funzionalità generiche da estendere (inversione del controllo)",
+            "Libreria",
+            "Linguaggio",
+            "Nulla"
+        ],
+        "answer": "Struttura software che fornisce funzionalità generiche da estendere (inversione del controllo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Libreria vs Framework:",
+        "options": [
+            "Tu chiami la libreria. Il framework chiama te (Hollywood principle).",
+            "Sono uguali",
+            "Framework è più piccolo",
+            "Libreria è più grande"
+        ],
+        "answer": "Tu chiami la libreria. Il framework chiama te (Hollywood principle)."
+    },
+    {
+        "category": "Informatica",
+        "question": "Open Source:",
+        "options": [
+            "Software il cui codice sorgente è disponibile pubblicamente per studio/modifica",
+            "Gratis",
+            "A pagamento",
+            "Chiuso"
+        ],
+        "answer": "Software il cui codice sorgente è disponibile pubblicamente per studio/modifica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Licenza software:",
+        "options": [
+            "Contratto legale che governa l'uso e la ridistribuzione del software (es. GPL, MIT, Apache)",
+            "Patente",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Contratto legale che governa l'uso e la ridistribuzione del software (es. GPL, MIT, Apache)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Copyleft:",
+        "options": [
+            "Pratica di usare le leggi sul copyright per garantire che il software resti libero (es. GPL)",
+            "Copyright",
+            "Destra",
+            "Nulla"
+        ],
+        "answer": "Pratica di usare le leggi sul copyright per garantire che il software resti libero (es. GPL)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Proprietary software:",
+        "options": [
+            "Software chiuso, proprietà esclusiva del creatore",
+            "Open source",
+            "Libero",
+            "Nulla"
+        ],
+        "answer": "Software chiuso, proprietà esclusiva del creatore"
+    },
+    {
+        "category": "Informatica",
+        "question": "Freeware:",
+        "options": [
+            "Software gratuito ma proprietario (sorgente chiuso)",
+            "Open source",
+            "A pagamento",
+            "Nulla"
+        ],
+        "answer": "Software gratuito ma proprietario (sorgente chiuso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Shareware:",
+        "options": [
+            "Software distribuito gratuitamente in prova, poi a pagamento",
+            "Freeware",
+            "Open source",
+            "Nulla"
+        ],
+        "answer": "Software distribuito gratuitamente in prova, poi a pagamento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo greedy:",
+        "options": [
+            "Algoritmo che fa la scelta localmente ottima ad ogni passo sperando nell'ottimo globale",
+            "Algoritmo avido",
+            "Algoritmo lento",
+            "Nulla"
+        ],
+        "answer": "Algoritmo che fa la scelta localmente ottima ad ogni passo sperando nell'ottimo globale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Divide et impera:",
+        "options": [
+            "Paradigma algoritmico: dividere il problema in sottoproblemi più piccoli, risolverli e combinare le soluzioni (es. Merge Sort)",
+            "Comandare",
+            "Dividere",
+            "Nulla"
+        ],
+        "answer": "Paradigma algoritmico: dividere il problema in sottoproblemi più piccoli, risolverli e combinare le soluzioni (es. Merge Sort)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Programmazione dinamica:",
+        "options": [
+            "Tecnica per risolvere problemi complessi scomponendoli in sottoproblemi sovrapposti e memorizzando i risultati (memoization)",
+            "Dinamica",
+            "Veloce",
+            "Nulla"
+        ],
+        "answer": "Tecnica per risolvere problemi complessi scomponendoli in sottoproblemi sovrapposti e memorizzando i risultati (memoization)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Backtracking:",
+        "options": [
+            "Tecnica algoritmica per trovare soluzioni esplorando candidati e abbandonando ('backtrack') quelli che non portano a soluzione",
+            "Tornare indietro",
+            "Andare avanti",
+            "Nulla"
+        ],
+        "answer": "Tecnica algoritmica per trovare soluzioni esplorando candidati e abbandonando ('backtrack') quelli che non portano a soluzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Brute force:",
+        "options": [
+            "Provare tutte le possibili soluzioni fino a trovare quella corretta (spesso inefficiente)",
+            "Forza bruta",
+            "Intelligente",
+            "Nulla"
+        ],
+        "answer": "Provare tutte le possibili soluzioni fino a trovare quella corretta (spesso inefficiente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "NP-completo:",
+        "options": [
+            "Classe di problemi difficili per cui non si conosce algoritmo polinomiale, ma si può verificare soluzione velocemente",
+            "Facile",
+            "Impossibile",
+            "Nulla"
+        ],
+        "answer": "Classe di problemi difficili per cui non si conosce algoritmo polinomiale, ma si può verificare soluzione velocemente"
+    },
+    {
+        "category": "Informatica",
+        "question": "P vs NP:",
+        "options": [
+            "Famoso problema aperto: P (risolvibili velocemente) è uguale a NP (verificabili velocemente)?",
+            "P=NP",
+            "P!=NP",
+            "Nulla"
+        ],
+        "answer": "Famoso problema aperto: P (risolvibili velocemente) è uguale a NP (verificabili velocemente)?"
+    },
+    {
+        "category": "Informatica",
+        "question": "Turing Complete:",
+        "options": [
+            "Sistema in grado di simulare una macchina di Turing (può calcolare qualsiasi cosa calcolabile)",
+            "Completo",
+            "Incompleto",
+            "Nulla"
+        ],
+        "answer": "Sistema in grado di simulare una macchina di Turing (può calcolare qualsiasi cosa calcolabile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Macchina di Turing:",
+        "options": [
+            "Modello teorico di calcolo (nastro infinito, testina, stati)",
+            "Computer vero",
+            "Auto",
+            "Nulla"
+        ],
+        "answer": "Modello teorico di calcolo (nastro infinito, testina, stati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Halting problem (problema della terminazione):",
+        "options": [
+            "Problema indecidibile: non esiste algoritmo che determini se un programma arbitrario terminerà o andrà in loop infinito",
+            "Problema risolto",
+            "Problema facile",
+            "Nulla"
+        ],
+        "answer": "Problema indecidibile: non esiste algoritmo che determini se un programma arbitrario terminerà o andrà in loop infinito"
+    },
+    {
+        "category": "Informatica",
+        "question": "Garbage Collection (GC):",
+        "options": [
+            "Gestione automatica della memoria (recupera memoria non più usata), presente in Java/Python ma non in C",
+            "Spazzatura",
+            "Pulizia",
+            "Nulla"
+        ],
+        "answer": "Gestione automatica della memoria (recupera memoria non più usata), presente in Java/Python ma non in C"
+    },
+    {
+        "category": "Informatica",
+        "question": "Memory leak in linguaggi con GC:",
+        "options": [
+            "Possibile se si mantengono riferimenti inutili a oggetti",
+            "Impossibile",
+            "Frequente",
+            "Nulla"
+        ],
+        "answer": "Possibile se si mantengono riferimenti inutili a oggetti"
+    },
+    {
+        "category": "Informatica",
+        "question": "JIT Compilation (Just-In-Time):",
+        "options": [
+            "Compilazione del bytecode in codice macchina durante l'esecuzione (es. JVM, V8)",
+            "Compilazione statica",
+            "Interpretazione pura",
+            "Nulla"
+        ],
+        "answer": "Compilazione del bytecode in codice macchina durante l'esecuzione (es. JVM, V8)"
+    },
+    {
+        "category": "Informatica",
+        "question": "AOT Compilation (Ahead-Of-Time):",
+        "options": [
+            "Compilazione prima dell'esecuzione (classica, es. C/C++)",
+            "JIT",
+            "Interpretazione",
+            "Nulla"
+        ],
+        "answer": "Compilazione prima dell'esecuzione (classica, es. C/C++)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Transpiler (Source-to-source compiler):",
+        "options": [
+            "Traduce codice sorgente da un linguaggio a un altro (es. TypeScript -> JavaScript)",
+            "Compilatore",
+            "Interprete",
+            "Nulla"
+        ],
+        "answer": "Traduce codice sorgente da un linguaggio a un altro (es. TypeScript -> JavaScript)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Design Patterns:",
+        "options": [
+            "Soluzioni riutilizzabili a problemi comuni di progettazione software (es. Singleton, Factory, Observer)",
+            "Disegni",
+            "Modelli",
+            "Nulla"
+        ],
+        "answer": "Soluzioni riutilizzabili a problemi comuni di progettazione software (es. Singleton, Factory, Observer)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Singleton pattern:",
+        "options": [
+            "Garantisce che una classe abbia una sola istanza e fornisce un punto di accesso globale",
+            "Singolo",
+            "Unico",
+            "Nulla"
+        ],
+        "answer": "Garantisce che una classe abbia una sola istanza e fornisce un punto di accesso globale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Factory pattern:",
+        "options": [
+            "Interfaccia per creare oggetti, lasciando alle sottoclassi la decisione di quale classe istanziare",
+            "Fabbrica",
+            "Creazione",
+            "Nulla"
+        ],
+        "answer": "Interfaccia per creare oggetti, lasciando alle sottoclassi la decisione di quale classe istanziare"
+    },
+    {
+        "category": "Informatica",
+        "question": "Observer pattern:",
+        "options": [
+            "Definisce una dipendenza uno-a-molti: quando un oggetto cambia stato, notifica tutti i dipendenti",
+            "Osservatore",
+            "Spia",
+            "Nulla"
+        ],
+        "answer": "Definisce una dipendenza uno-a-molti: quando un oggetto cambia stato, notifica tutti i dipendenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "MVC (Model-View-Controller):",
+        "options": [
+            "Pattern architetturale che separa logica dati (Model), interfaccia utente (View) e controllo (Controller)",
+            "Modello",
+            "Vista",
+            "Controllo"
+        ],
+        "answer": "Pattern architetturale che separa logica dati (Model), interfaccia utente (View) e controllo (Controller)"
+    },
+    {
+        "category": "Informatica",
+        "question": "REST (Representational State Transfer):",
+        "options": [
+            "Stile architetturale per servizi web (uso di HTTP, risorse, stateless)",
+            "Riposo",
+            "Web",
+            "Nulla"
+        ],
+        "answer": "Stile architetturale per servizi web (uso di HTTP, risorse, stateless)"
+    },
+    {
+        "category": "Informatica",
+        "question": "JSON (JavaScript Object Notation):",
+        "options": [
+            "Formato leggero per lo scambio di dati (testo leggibile)",
+            "XML",
+            "Binario",
+            "Nulla"
+        ],
+        "answer": "Formato leggero per lo scambio di dati (testo leggibile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "XML (Extensible Markup Language):",
+        "options": [
+            "Linguaggio di markup per definire regole per la codifica di documenti (più verboso di JSON)",
+            "JSON",
+            "HTML",
+            "Nulla"
+        ],
+        "answer": "Linguaggio di markup per definire regole per la codifica di documenti (più verboso di JSON)"
+    },
+    {
+        "category": "Informatica",
+        "question": "SQL (Structured Query Language):",
+        "options": [
+            "Linguaggio standard per gestire database relazionali",
+            "NoSQL",
+            "Java",
+            "Nulla"
+        ],
+        "answer": "Linguaggio standard per gestire database relazionali"
+    },
+    {
+        "category": "Informatica",
+        "question": "NoSQL:",
+        "options": [
+            "Database non relazionali (es. MongoDB, Redis, Cassandra)",
+            "SQL",
+            "Excel",
+            "Nulla"
+        ],
+        "answer": "Database non relazionali (es. MongoDB, Redis, Cassandra)"
+    },
+    {
+        "category": "Informatica",
+        "question": "ACID (Database):",
+        "options": [
+            "Proprietà delle transazioni: Atomicità, Consistenza, Isolamento, Durabilità",
+            "Acido",
+            "Base",
+            "Nulla"
+        ],
+        "answer": "Proprietà delle transazioni: Atomicità, Consistenza, Isolamento, Durabilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "CRUD:",
+        "options": [
+            "Create, Read, Update, Delete (operazioni base sui dati)",
+            "Crudelia",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Create, Read, Update, Delete (operazioni base sui dati)"
+    }
+]

@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Il codice sorgente è:",
+        "options": [
+            "Il testo del programma scritto in un linguaggio di programmazione",
+            "Il file eseguibile",
+            "L'hardware",
+            "Il manuale utente"
+        ],
+        "answer": "Il testo del programma scritto in un linguaggio di programmazione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il compilatore trasforma:",
+        "options": [
+            "Il codice sorgente in codice macchina",
+            "Il codice macchina in codice sorgente",
+            "Il testo in immagini",
+            "I numeri in lettere"
+        ],
+        "answer": "Il codice sorgente in codice macchina"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un bit?",
+        "options": [
+            "La cifra binaria (0 o 1)",
+            "Un piccolo pezzo di pane",
+            "Un tipo di cavo",
+            "Un errore"
+        ],
+        "answer": "La cifra binaria (0 o 1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta lo 0 in logica binaria?",
+        "options": [
+            "Falso (o spento)",
+            "Vero (o acceso)",
+            "Forse",
+            "Nulla"
+        ],
+        "answer": "Falso (o spento)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa rappresenta l'1 in logica binaria?",
+        "options": [
+            "Vero (o acceso)",
+            "Falso (o spento)",
+            "Forse",
+            "Tutto"
+        ],
+        "answer": "Vero (o acceso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché i computer usano il sistema binario?",
+        "options": [
+            "Perché è facile da rappresentare con circuiti elettrici (acceso/spento)",
+            "Perché è più difficile per gli umani",
+            "Perché piace ai matematici",
+            "Perché occupa meno spazio"
+        ],
+        "answer": "Perché è facile da rappresentare con circuiti elettrici (acceso/spento)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la base del sistema decimale?",
+        "options": [
+            "10",
+            "2",
+            "16",
+            "8"
+        ],
+        "answer": "10"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la base del sistema binario?",
+        "options": [
+            "2",
+            "10",
+            "16",
+            "8"
+        ],
+        "answer": "2"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Terabyte (TB)?",
+        "options": [
+            "1024 Gigabyte",
+            "1000 Gigabyte",
+            "1024 Megabyte",
+            "100 Gigabyte"
+        ],
+        "answer": "1024 Gigabyte"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Petabyte (PB)?",
+        "options": [
+            "1024 Terabyte",
+            "1000 Terabyte",
+            "100 Terabyte",
+            "10 Terabyte"
+        ],
+        "answer": "1024 Terabyte"
+    },
+    {
+        "category": "Informatica",
+        "question": "La memoria cache è:",
+        "options": [
+            "Una memoria molto veloce e piccola interna alla CPU",
+            "Una memoria lenta ed esterna",
+            "Un tipo di hard disk",
+            "Un tipo di RAM economica"
+        ],
+        "answer": "Una memoria molto veloce e piccola interna alla CPU"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve la memoria cache?",
+        "options": [
+            "A velocizzare l'accesso ai dati usati più frequentemente dalla CPU",
+            "A salvare i file per sempre",
+            "A raffreddare la CPU",
+            "A nulla"
+        ],
+        "answer": "A velocizzare l'accesso ai dati usati più frequentemente dalla CPU"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'multicore'?",
+        "options": [
+            "Più nuclei di elaborazione nello stesso processore",
+            "Più colori",
+            "Più cavi",
+            "Più tasti"
+        ],
+        "answer": "Più nuclei di elaborazione nello stesso processore"
+    },
+    {
+        "category": "Informatica",
+        "question": "La legge di Moore prediceva:",
+        "options": [
+            "Il raddoppio del numero di transistor nei chip ogni 18-24 mesi",
+            "Il raddoppio del prezzo dei computer",
+            "La fine dei computer",
+            "L'aumento della dimensione dei monitor"
+        ],
+        "answer": "Il raddoppio del numero di transistor nei chip ogni 18-24 mesi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un SSD (Solid State Drive)?",
+        "options": [
+            "Un tipo di memoria di massa senza parti meccaniche in movimento",
+            "Un hard disk vecchio",
+            "Un tipo di schermo",
+            "Un processore"
+        ],
+        "answer": "Un tipo di memoria di massa senza parti meccaniche in movimento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il vantaggio dell'SSD rispetto all'HDD?",
+        "options": [
+            "È molto più veloce e resistente agli urti",
+            "È più capiente (a parità di prezzo)",
+            "È più rumoroso",
+            "Consuma di più"
+        ],
+        "answer": "È molto più veloce e resistente agli urti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la GPU?",
+        "options": [
+            "Graphics Processing Unit (processore grafico)",
+            "General Processing Unit",
+            "Global Power Unit",
+            "Game Play Unit"
+        ],
+        "answer": "Graphics Processing Unit (processore grafico)"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa serve la GPU?",
+        "options": [
+            "Ad accelerare l'elaborazione delle immagini e del video (e calcoli paralleli)",
+            "A scrivere testi",
+            "A gestire il mouse",
+            "A stampare"
+        ],
+        "answer": "Ad accelerare l'elaborazione delle immagini e del video (e calcoli paralleli)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una rete di calcolatori?",
+        "options": [
+            "Un insieme di computer collegati tra loro per scambiare dati",
+            "Una rete da pesca",
+            "Un insieme di cavi scollegati",
+            "Un computer rotto"
+        ],
+        "answer": "Un insieme di computer collegati tra loro per scambiare dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Internet?",
+        "options": [
+            "La rete mondiale di reti interconnesse",
+            "Un programma",
+            "Un sito web",
+            "Un gioco"
+        ],
+        "answer": "La rete mondiale di reti interconnesse"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il WWW (World Wide Web)?",
+        "options": [
+            "Un servizio di Internet basato su ipertesti (pagine web)",
+            "Internet stesso",
+            "Un browser",
+            "Un computer"
+        ],
+        "answer": "Un servizio di Internet basato su ipertesti (pagine web)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Browser?",
+        "options": [
+            "Un programma per navigare nel Web (es. Chrome, Firefox)",
+            "Un motore di ricerca",
+            "Un sito web",
+            "Un virus"
+        ],
+        "answer": "Un programma per navigare nel Web (es. Chrome, Firefox)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Motore di Ricerca?",
+        "options": [
+            "Un sistema per trovare informazioni nel Web (es. Google)",
+            "Un browser",
+            "Un componente hardware",
+            "Un gioco"
+        ],
+        "answer": "Un sistema per trovare informazioni nel Web (es. Google)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un indirizzo IP?",
+        "options": [
+            "Un identificativo numerico univoco di un dispositivo in rete",
+            "Un indirizzo di casa",
+            "Un nome utente",
+            "Una password"
+        ],
+        "answer": "Un identificativo numerico univoco di un dispositivo in rete"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Cloud Computing?",
+        "options": [
+            "L'erogazione di servizi informatici (server, storage, database) via Internet",
+            "Un computer tra le nuvole",
+            "Un tipo di pioggia",
+            "Un aereo"
+        ],
+        "answer": "L'erogazione di servizi informatici (server, storage, database) via Internet"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è un vantaggio del Cloud?",
+        "options": [
+            "Accessibilità ovunque e scalabilità",
+            "Funziona solo se piove",
+            "È gratis sempre",
+            "Non serve internet"
+        ],
+        "answer": "Accessibilità ovunque e scalabilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Malware?",
+        "options": [
+            "Software dannoso (virus, trojan, spyware)",
+            "Software buono",
+            "Hardware rotto",
+            "Un antivirus"
+        ],
+        "answer": "Software dannoso (virus, trojan, spyware)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un Antivirus?",
+        "options": [
+            "Un programma per rilevare e rimuovere malware",
+            "Un virus",
+            "Un gioco",
+            "Un browser"
+        ],
+        "answer": "Un programma per rilevare e rimuovere malware"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Firewall?",
+        "options": [
+            "Un sistema di sicurezza che controlla il traffico di rete",
+            "Un muro di fuoco",
+            "Un estintore",
+            "Un virus"
+        ],
+        "answer": "Un sistema di sicurezza che controlla il traffico di rete"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa Open Source?",
+        "options": [
+            "Software il cui codice sorgente è liberamente accessibile e modificabile",
+            "Software a pagamento",
+            "Software chiuso",
+            "Software rotto"
+        ],
+        "answer": "Software il cui codice sorgente è liberamente accessibile e modificabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Linux è un esempio di:",
+        "options": [
+            "Sistema Operativo Open Source",
+            "Software proprietario",
+            "Hardware",
+            "Virus"
+        ],
+        "answer": "Sistema Operativo Open Source"
+    },
+    {
+        "category": "Informatica",
+        "question": "Windows è un esempio di:",
+        "options": [
+            "Sistema Operativo Proprietario (Commerciale)",
+            "Open Source",
+            "Hardware",
+            "Browser"
+        ],
+        "answer": "Sistema Operativo Proprietario (Commerciale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Android è un sistema operativo per:",
+        "options": [
+            "Dispositivi mobili",
+            "Server mainframe",
+            "Solo PC fissi",
+            "Solo stampanti"
+        ],
+        "answer": "Dispositivi mobili"
+    },
+    {
+        "category": "Informatica",
+        "question": "iOS è il sistema operativo di:",
+        "options": [
+            "Apple (iPhone/iPad)",
+            "Google",
+            "Microsoft",
+            "Samsung"
+        ],
+        "answer": "Apple (iPhone/iPad)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo ricorsivo?",
+        "options": [
+            "Un algoritmo che richiama se stesso",
+            "Un algoritmo che corre",
+            "Un algoritmo sbagliato",
+            "Un algoritmo lento"
+        ],
+        "answer": "Un algoritmo che richiama se stesso"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il codice ASCII?",
+        "options": [
+            "Uno standard per la codifica dei caratteri",
+            "Un linguaggio di programmazione",
+            "Un tipo di computer",
+            "Un gioco"
+        ],
+        "answer": "Uno standard per la codifica dei caratteri"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Unicode?",
+        "options": [
+            "Uno standard di codifica caratteri che include quasi tutti i sistemi di scrittura del mondo",
+            "Un codice segreto",
+            "Un solo carattere",
+            "Un tipo di tastiera"
+        ],
+        "answer": "Uno standard di codifica caratteri che include quasi tutti i sistemi di scrittura del mondo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'Backup'?",
+        "options": [
+            "Copia di sicurezza dei dati",
+            "Tornare indietro",
+            "Cancellare tutto",
+            "Rompere il disco"
+        ],
+        "answer": "Copia di sicurezza dei dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'Formattare' un disco?",
+        "options": [
+            "Preparare il disco per l'uso, cancellando i dati esistenti",
+            "Pulirlo con un panno",
+            "Colorarlo",
+            "Romperlo"
+        ],
+        "answer": "Preparare il disco per l'uso, cancellando i dati esistenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un 'Bug'?",
+        "options": [
+            "Un errore nel software",
+            "Un insetto nel case",
+            "Una feature",
+            "Un virus"
+        ],
+        "answer": "Un errore nel software"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il 'Debugging'?",
+        "options": [
+            "Il processo di ricerca e correzione dei bug",
+            "Inserire bug",
+            "Uccidere insetti",
+            "Giocare"
+        ],
+        "answer": "Il processo di ricerca e correzione dei bug"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo di ordinamento?",
+        "options": [
+            "Un algoritmo per mettere in ordine una sequenza di dati",
+            "Un algoritmo per fare ordine in camera",
+            "Un algoritmo per cancellare dati",
+            "Un algoritmo per creare dati"
+        ],
+        "answer": "Un algoritmo per mettere in ordine una sequenza di dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale di questi è un algoritmo di ordinamento?",
+        "options": [
+            "Bubble Sort",
+            "Pizza Sort",
+            "Car Sort",
+            "Dog Sort"
+        ],
+        "answer": "Bubble Sort"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità computazionale?",
+        "options": [
+            "Lo studio delle risorse (tempo e spazio) richieste da un algoritmo",
+            "Quanto è difficile capire l'algoritmo",
+            "Quanto è lungo il codice",
+            "Quanto costa il computer"
+        ],
+        "answer": "Lo studio delle risorse (tempo e spazio) richieste da un algoritmo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa indica la notazione O-grande (Big O)?",
+        "options": [
+            "Il limite superiore della complessità di un algoritmo (caso peggiore)",
+            "Un cerchio grande",
+            "Lo zero",
+            "L'infinito"
+        ],
+        "answer": "Il limite superiore della complessità di un algoritmo (caso peggiore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un algoritmo O(1) è:",
+        "options": [
+            "A tempo costante (molto veloce)",
+            "Lento",
+            "Lineare",
+            "Esponenziale"
+        ],
+        "answer": "A tempo costante (molto veloce)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un algoritmo O(n) è:",
+        "options": [
+            "Lineare (il tempo cresce con l'input)",
+            "Costante",
+            "Quadratico",
+            "Esponenziale"
+        ],
+        "answer": "Lineare (il tempo cresce con l'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un algoritmo O(n^2) è:",
+        "options": [
+            "Quadratico (spesso lento per grandi input)",
+            "Veloce",
+            "Lineare",
+            "Costante"
+        ],
+        "answer": "Quadratico (spesso lento per grandi input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la ricorsione infinita?",
+        "options": [
+            "Quando una funzione richiama se stessa senza mai fermarsi (fino all'errore)",
+            "Una cosa buona",
+            "Un loop for",
+            "Un array vuoto"
+        ],
+        "answer": "Quando una funzione richiama se stessa senza mai fermarsi (fino all'errore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo Stack Overflow?",
+        "options": [
+            "Un errore causato dall'esaurimento della memoria dello stack (spesso per ricorsione infinita)",
+            "Un sito web famoso",
+            "Un bicchiere pieno",
+            "Un tipo di pancake"
+        ],
+        "answer": "Un errore causato dall'esaurimento della memoria dello stack (spesso per ricorsione infinita)"
+    }
+]

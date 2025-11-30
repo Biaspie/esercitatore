@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const quizScreen = document.getElementById('quiz-screen');
     const resultScreen = document.getElementById('result-screen');
 
@@ -20,12 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
-    let questionsData = {
-        "ps": [],
-        "costituzionale": [],
-        "penale": [],
-        "procedura": [],
-        "normativa": []
+    let db = null;
+
+    // Check Protocol
+    if (window.location.protocol === 'file:') {
+        alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
+    }
+
+    // Mapping subject params to DB categories
+    const categoryMap = {
+        "ps": "Legislazione PS",
+        "costituzionale": "Diritto Costituzionale",
+        "penale": "Diritto Penale",
+        "procedura": "Procedura Penale",
+        "normativa": "Normativa Disciplinare"
     };
 
     // Parse URL Parameters
@@ -33,77 +41,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const subjectParam = urlParams.get('subject') || 'ps';
     const countParam = urlParams.get('count') || '20';
 
-    // Load questions
-    if (typeof allQuestions !== 'undefined') {
-        allQuestions.forEach(q => {
-            if (q.category === "Legislazione PS") {
-                questionsData["ps"].push(q);
-            } else if (q.category === "Diritto Costituzionale") {
-                questionsData["costituzionale"].push(q);
-            } else if (q.category === "Diritto Penale") {
-                questionsData["penale"].push(q);
-            } else if (q.category === "Procedura Penale") {
-                questionsData["procedura"].push(q);
-            } else if (q.category === "Normativa Disciplinare") {
-                questionsData["normativa"].push(q);
-            } else {
-                questionsData["ps"].push(q);
+    // Initialize Quiz
+    startQuiz(subjectParam, countParam);
+
+    async function startQuiz(subject, countSetting) {
+        try {
+            const response = await fetch(`/api/questions?subject=${subject}&count=${countSetting}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-        });
-        initQuiz(subjectParam, countParam);
-    } else {
-        console.error("Error: allQuestions not defined.");
-        alert("Errore: Impossibile caricare le domande.");
-    }
+            const questions = await response.json();
 
-    function initQuiz(subject, countSetting) {
-        let categoryQuestions = [];
+            if (questions.length === 0) {
+                alert("Nessuna domanda trovata per questa categoria.");
+                return;
+            }
 
-        if (subject === "all") {
-            Object.values(questionsData).forEach(questions => {
-                categoryQuestions = categoryQuestions.concat(questions);
-            });
-        } else {
-            categoryQuestions = questionsData[subject] || [];
+            currentQuestions = questions.map(q => ({
+                ...q,
+                userAnswer: null,
+                shuffledOptions: null
+            }));
+
+            currentQuestionIndex = 0;
+            score = 0;
+
+            showScreen(quizScreen);
+            renderQuestionNav();
+            loadQuestion();
+
+        } catch (error) {
+            console.error("Error fetching questions:", error);
+            alert("Errore nel caricamento delle domande dal server.");
         }
-
-        if (categoryQuestions.length === 0) {
-            alert("Nessuna domanda trovata per questa categoria.");
-            return;
-        }
-
-        let count = categoryQuestions.length;
-        if (countSetting !== 'all') {
-            count = Math.min(parseInt(countSetting), categoryQuestions.length);
-        }
-
-        // Shuffle and select questions
-        currentQuestions = getRandomQuestions(categoryQuestions, count).map(q => ({
-            ...q,
-            userAnswer: null,
-            shuffledOptions: null // Initialize shuffled options
-        }));
-
-        currentQuestionIndex = 0;
-        score = 0;
-
-        showScreen(quizScreen);
-        renderQuestionNav();
-        loadQuestion();
-    }
-
-    function getRandomQuestions(questions, count) {
-        const shuffled = [...questions];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        return shuffled.slice(0, count);
-    }
-
-    function showScreen(screen) {
-        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-        screen.classList.add('active');
     }
 
     function renderQuestionNav() {
@@ -179,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('option-btn');
             button.textContent = option;
             button.style.animationDelay = `${index * 0.1}s`; // Staggered animation
-            button.classList.add('slide-in'); // Add animation class if defined in CSS for options too
+            button.classList.add('slide-in');
 
             if (question.userAnswer) {
                 button.disabled = true;
@@ -213,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedOption === correctAnswer) {
             score++;
         }
-        updateQuestionNav(); // Update nav to show answered status
+        updateQuestionNav();
         loadQuestion();
     }
 
@@ -265,7 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     restartBtn.addEventListener('click', () => {
-        // Reload page to restart with same settings
         window.location.reload();
     });
 });

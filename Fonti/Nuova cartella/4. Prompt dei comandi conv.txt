@@ -1,0 +1,172 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Meccanica
+
+
+
+
+
+Elementi di Informatica
+
+Installazione del Compilatore e Guida all’utilizzo del Prompt dei Comandi
+
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+
+
+
+
+
+
+
+
+
+
+
+
+Installazione del Compilatore
+
+
+
+
+
+
+
+
+
+
+
+
+
+Guida all’utilizzo del prompt dei comandi (Windows)
+Per aprire il prompt dei comandi, ovvero l'interfaccia a caratteri, premere il tasto windows + R, il che comporta l'apertura di questa finestra:
+Digitare quindi la parola cmd nella finestra e premere OK:
+Ottenendo l’apertura della interfaccia a caratteri:
+Guida ai comandi utili per il corso
+
+
+Da tenere presente è che il prompt dei comandi lavora su una cartella corrente,
+che è quella della quale è mostrato il percorso nel file system.
+
+
+
+CD <directory path> permette di navigare all’interno del file system, cambiando
+la cartella corrente.
+
+
+
+Ad esempio:
+
+
+
+permette di cambiare la cartella corrente, seguendo il percorso Dropbox\Teaching\2021FondamentiCivili\ProgrammiC\1-ProgrammiBase a
+partire dalla precedente cartella corrente C:\Users\Brillo
+Guida ai comandi utili per il corso
+
+
+Suggerimento: non è necessario (ed è sconsigliato) digitare tutto il nome della directory, è invece raccomandato utilizzare la funzione di completamento automatico. Quindi dopo aver scritto un pezzo del nome (ad esempio “cd Dr”) premere il tasto Tab:
+
+
+
+
+
+
+
+
+
+
+che completerà quanto scritto nel nome della prima directory che inizia con quelle lettere (nell’esempio “cd Dropbox”). Per scendere ulteriormente nella directory di cartelle, digitare il carattere \ e quindi scrivere il nome della cartella successiva, di nuovo utilizzando il completamento automatico.
+
+Quando si è raggiunti la cartella voluta, premere il tasto invio (o enter).
+Guida ai comandi utili per il corso
+
+
+La cartella genitore di quella attuale è indicata da un “..”, quindi ad esempio:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+permette di far risalire la cartella corrente di due cartelle nella gerarchia del file system.
+Guida ai comandi utili per il corso
+
+
+DIR <directory path> permette di mostrare il contenuto della cartella specificata.
+
+Non specificando alcun directory path, viene mostrato il contenuto della cartella corrente. Ad esempio:
+Guida ai comandi utili per il corso
+
+
+GCC -o <nomeprogramma> <nomefile.c> permette di compilare il file dal nome nomefile.c nella cartella corrente ed ottenere un file eseguibile dal nome nomeprogramma.exe.
+
+
+
+
+Se non si specifica la parte -o <nomeprogramma> verrà creato un eseguibile dal nome a.exe.
+Guida ai comandi utili per il corso
+
+
+Ad esempio, compilando il programma Duplicatore.c come segue:
+
+
+
+
+
+
+
+La cartella viene modificata con la creazione del file eseguibile:
+Guida ai comandi utili per il corso
+
+
+<nomeprogramma> permette di eseguire il programma con nome nomeprogramma. Ad esempio:
+
+
+
+
+
+
+
+
+
+
+
+
+
+Guida all’utilizzo del prompt dei comandi (MacOS)
+Guida ai comandi utili per il corso Il prompt dei comandi nel Mac si chiama Terminal. Sii apre scrivendo Terminal
+nello spotlight oppure scegliendo Terminal nelle appl cazioni.
+
+
+Il principio di funzionamento è lo stesso del prompt dei comandi di Windows, i
+comandi sono leggermente differenti, in particolare:
+
+
+• il comando cd funziona nella stessa maniera,
+• il comando dir è rimpiazzato da ls (scrivere ls -l per una bella visualizzazione) • il comando gcc si usa nella stessa maniera, in particolare gcc -o
+<nomeprogramma> <nomefile.c> permette di compilare il file dal nome
+
+nomefile.c nella cartella corrente ed ottenere un file eseguibile dal nome
+nomeprogramma
+
+• Se non si specifica la parte -o <nomeprogramma> verrà creato un eseguibile dal nome
+a.out.
+
+
+• per eseguire il file eseguibilelcreato dalla compilazione si scrive
+./nomeprogramma (notare i  ./ iniziale).

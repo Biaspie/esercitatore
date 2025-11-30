@@ -1,0 +1,368 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Meccanica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Strumenti di Programmazione
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Previously…
+
+
+
+hai un problema che vuoi risolvere
+
+
+
+
+
+
+
+trovi una procedura che ti permette di risolvere il problema (su ogni possibile insieme di dati)
+
+Algoritmo
+
+
+
+
+
+
+
+se vuoi risolvere
+il problema su un certo insieme di dati
+
+Istanza
+
+trasformi la procedura in una sequenza di istruzioni che possono essere eseguite dal calcolatore
+
+Programma
+
+
+
+
+
+
+
+
+rappresenti i dati nel calcolatore e
+fai eseguire al calcolatore la sequenza di istruzioni che permettono di risolvere il problema
+Esecuzione del programma
+Previously…
+
+
+
+
+
+hai un problema che vuoi risolvere
+
+
+
+
+
+
+trovi una procedura che ti permette di risolvere il problema (su ogni possibile insieme di dati)
+
+Piano tecnologico legato al calcolatore ed ai programmi
+
+
+
+
+
+
+
+trasformi la procedura in una sequenza di istruzioni che possono essere eseguite dal calcolatore
+
+
+
+
+
+Piano logico-matematico legato ai problemi ed agli algoritmi
+
+
+
+
+se vuoi risolvere
+il problema su un certo insieme di dati
+
+
+rappresenti i dati nel calcolatore e
+fai eseguire al calcolatore la sequenza di istruzioni che permettono di risolvere il problema
+Di cosa parliamo oggi
+
+
+
+
+
+Strumenti che ci permettono di realizzare le fasi
+
+
+
+trasformi la procedura in una sequenza di istruzioni che possono essere eseguite dal calcolatore
+
+
+
+
+
+
+
+
+
+
+
+Trasformazioni del programma, interne al calcolatore,
+che avvengono per realizzare la fase
+
+
+rappresenti i dati nel calcolatore e
+fai eseguire al calcolatore la sequenza di istruzioni che permettono di risolvere il problema
+Dove come dico al
+
+scrivo un programma e computer di eseguirlo?
+
+
+
+§Devi utilizzare un editor per scrivere il tuo programma dentro a un file di testo
+
+
+
+
+
+§Devi compilare il programma per tradurlo in linguaggio macchina
+
+
+
+
+
+§Devi far eseguire il programma al computer
+Editing
+
+
+Operazione di scrittura di un file, che si realizza attraverso una applicazione, chiamata text editor.
+
+
+Un file è una unità (logica) di memorizzazione caratterizzata da un nome (ad esempio, robba.c) e un contenuto, ovvero delle linee ognuna delle quali è una sequenza di caratteri.
+
+
+Il contenuto del file descrive la sequenza di istruzioni che il processore dovrà eseguire quando il programma verrà eseguito.
+Esempio di file di un programma C
+Scrivere un programma non è sufficiente per poterlo eseguire
+
+
+
+Il calcolatore non sa eseguire istruzioni scritte in linguaggio C.
+
+
+
+
+
+Il calcolatore sa eseguire solo istruzioni scritte in linguaggio macchina.
+Linguaggio Macchina
+
+
+
+Linguaggio in cui sono scritti i programmi eseguibili dal
+calcolatore.
+
+Il suo alfabeto è composto da due soli caratteri, generalmente indicati da 0 e 1, corrispondenti ai due valori che possono essere memorizzati dentro ad un bit, ovvero ai
+due stati di un sistema fisico:
+• I due stati stabili di un circuito (flip-flop) • I due stati di un interruttore
+• I due stati di una lampadina
+
+
+I caratteri sono organizzati in parole, che a loro volta costituiscono delle frasi – ovvero le istruzioni del linguaggio
+macchina.
+Linguaggio Macchina
+
+
+
+Il calcolatore vuole calcolare la somma fra due numeri, che sono
+memorizzati all’interno di celle di memoria nella memoria centrale, e
+vuole memorizzare il risultato all’interno della prima delle due celle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quali istruzioni in linguaggio macchina devono essere eseguite?
+Linguaggio Macchina
+
+
+
+Ogni istruzione è associata ad un codice operativo e ad alcuni operandi
+
+
+
+
+Esempio:
+
+Istruzione
+
+00000010
+
+Operando
+
+00000011011100
+
+
+
+Significato: il codice operativo 00000010 è associato all’istruzione: leggi
+il valore contenuto nella cella di memoria il cui indirizzo è «operando»
+e scrivilo in un registro di memoria della CPU.
+
+
+
+
+
+L’operando 00000011011100 rappresenta il numero decimale 220,
+quindi viene letto il contenuto della cella di memoria il cui indirizzo è
+220 e tale contenuto viene scritto in un registro di memoria della CPU
+Struttura del Processore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MAR, MDR, PC, IR, PSW, registro A, registro B… sono delle piccole aree di memoria, dette registri, interne alla CPU.
+Linguaggio Macchina
+
+
+
+Analogamente, altre istruzioni in linguaggio macchina permettono di 1.   Leggere il contenuto della cella di memoria il cui indirizzo è 252
+2.   Sommare tale contenuto al contenuto del registro di memoria precedente
+
+3.   E infine, memorizzare il risultato all’interno della cella di memoria il cui indirizzo è 220
+Perché non scriviamo direttamente in Linguaggio Macchina?
+
+
+Un linguaggio macchina è poco potente, ovvero servono tante frasi in linguaggio macchina per realizzare una singola istruzione in un linguaggio di programmazione ⇒ programmi molto lunghi.
+
+
+Un linguaggio macchina è difficile per noi.
+
+
+I linguaggi macchina sono inoltre diversi per calcolatori che hanno processori o sistemi operativi diversi fra loro.
+
+• Un linguaggio macchina è "di basso livello" perché dipende dalle caratteristiche fisiche del calcolatore
+La stessa istruzione in Linguaggio C
+
+
+
+Si scrive con una notazione «molto matematica», come 𝑥 = 𝑥 + 𝑦; Questo presenta i seguenti vantaggi:
+
+
+§Semplicità: scrivere un programma in C è molto più semplice che scrivere un programma in linguaggio macchina.
+§Portabilità: lo stesso programma in C può essere eseguito su una qualsiasi macchina, indipendentemente dalle sue caratteristiche fisiche.
+§Astrazione: il programmatore non deve essere a conoscenza delle caratteristiche fisiche del calcolatore, in particolare non deve gestire esplicitamente la memoria.
+Compilazione
+
+
+Operazione che traduce un programma scritto in un linguaggio di programmazione "di alto livello" (come il C) nel linguaggio macchina di un calcolatore.
+
+
+I linguaggi di alto livello sono più vicini alla maniera in cui noi pensiamo e parliamo.  E’ dunque più semplice scrivere frasi (ovvero istruzioni e quindi programmi) in un linguaggio di alto livello che in un linguaggio macchina.
+
+
+I linguaggio di alto livello utilizzano simboli matematici (+, *, /, -, %, =, >, …) e parole tipiche del linguaggio naturale (if, else, while, for, main, …).
+Scrittura – Compilazione - Esecuzione
+
+
+
+Il programmatore scrive un programma in un linguaggio di programmazione e lo salva in un file, il cui contenuto prende il nome di «codice sorgente» o «codice».
+
+
+
+
+Un’applicazione, chiamata compilatore, traduce il codice in un programma in linguaggio macchina, che si chiama «codice eseguibile» o «eseguibile» o «codice oggetto».
+
+
+
+
+Il calcolatore esegue le istruzioni del codice eseguibile.
+Compilazione in maggior dettaglio
+
+La compilazione di un programma C consiste di 4 fasi:
+1.  Preprocessamento: esegue i comandi che sono stati impartiti al pre-processore. Tali comandi sono anche detti direttive e sono denotati nel codice dal carattere #
+
+
+Ad esempio: #include <stdio.h>
+
+
+
+#include è una direttiva che serve ad includere funzioni contenute in librerie predefinite all’interno del nostro programma.
+Compilazione in maggior dettaglio La compilazione di un programma C consiste di 4 fasi:
+
+2.   Compilazione: traduce il codice sorgente in un linguaggio intermedio fra un linguaggio di programmazione e un linguaggio macchina, che si chiama linguaggio assembly.
+Compilazione in maggior dettaglio
+
+
+
+3. Assemblaggio: il codice assembly vieneftradotto, per mezzo di un
+programma chiamato assembler, in un  ile oggetto. Tale file ha
+generalmente estensione .o, oppure .obj. Tale file non è
+
+eseguibile.
+§Nota Bene: in alcuni sistemi questo passaggio viene saltato e la
+compilazione produce direttamente un file oggetto.
+Collegamento: un software ch amato linker ha il compito di
+
+
+4. collegare fra loro i file oggettoicreando un singolo file eseguibile.
+
+
+
+⇒La separazione fra compilazione e linking ha molti vantaggi:
+§Più semplice da realizzare
+§Programmi molto grandi che consistono di file diversi non devono essere
+interamente ricompilati quando viene modificato un file
+
+§…
+Altre risorse §Bellini, Guidi: Linguaggio C — Capitoli 4.1 – 4.4

@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Bubble Sort:",
+        "options": [
+            "Algoritmo di ordinamento semplice (O(n^2)) che scambia elementi adiacenti se in ordine errato",
+            "Algoritmo veloce",
+            "Algoritmo ricerca",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ordinamento semplice (O(n^2)) che scambia elementi adiacenti se in ordine errato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Selection Sort:",
+        "options": [
+            "Algoritmo di ordinamento (O(n^2)) che seleziona ripetutamente il minimo e lo sposta all'inizio",
+            "Algoritmo veloce",
+            "Algoritmo ricerca",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ordinamento (O(n^2)) che seleziona ripetutamente il minimo e lo sposta all'inizio"
+    },
+    {
+        "category": "Informatica",
+        "question": "Insertion Sort:",
+        "options": [
+            "Algoritmo di ordinamento (O(n^2)) che costruisce l'array ordinato un elemento alla volta",
+            "Algoritmo veloce",
+            "Algoritmo ricerca",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ordinamento (O(n^2)) che costruisce l'array ordinato un elemento alla volta"
+    },
+    {
+        "category": "Informatica",
+        "question": "Merge Sort:",
+        "options": [
+            "Algoritmo di ordinamento efficiente (O(n log n)) basato su divide et impera",
+            "Algoritmo lento",
+            "Algoritmo ricerca",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ordinamento efficiente (O(n log n)) basato su divide et impera"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quick Sort:",
+        "options": [
+            "Algoritmo di ordinamento efficiente (O(n log n) medio) basato su partizionamento",
+            "Algoritmo lento",
+            "Algoritmo ricerca",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ordinamento efficiente (O(n log n) medio) basato su partizionamento"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ricerca lineare (sequenziale):",
+        "options": [
+            "Scorrere l'array dall'inizio alla fine cercando un valore (O(n))",
+            "Ricerca veloce",
+            "Ricerca binaria",
+            "Nulla"
+        ],
+        "answer": "Scorrere l'array dall'inizio alla fine cercando un valore (O(n))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ricerca binaria (dicotomica):",
+        "options": [
+            "Ricerca efficiente (O(log n)) su array ORDINATO, dividendo l'intervallo a metà",
+            "Ricerca lineare",
+            "Ricerca lenta",
+            "Nulla"
+        ],
+        "answer": "Ricerca efficiente (O(log n)) su array ORDINATO, dividendo l'intervallo a metà"
+    },
+    {
+        "category": "Informatica",
+        "question": "Hash Table (Tabella Hash):",
+        "options": [
+            "Struttura dati che mappa chiavi a valori usando una funzione hash (accesso medio O(1))",
+            "Array",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Struttura dati che mappa chiavi a valori usando una funzione hash (accesso medio O(1))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Collisione Hash:",
+        "options": [
+            "Quando due chiavi diverse producono lo stesso hash (gestita con chaining o open addressing)",
+            "Errore",
+            "Crash",
+            "Nulla"
+        ],
+        "answer": "Quando due chiavi diverse producono lo stesso hash (gestita con chaining o open addressing)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stack (Pila) come struttura dati:",
+        "options": [
+            "LIFO (Last In First Out) - push, pop",
+            "FIFO",
+            "Coda",
+            "Nulla"
+        ],
+        "answer": "LIFO (Last In First Out) - push, pop"
+    },
+    {
+        "category": "Informatica",
+        "question": "Queue (Coda) come struttura dati:",
+        "options": [
+            "FIFO (First In First Out) - enqueue, dequeue",
+            "LIFO",
+            "Stack",
+            "Nulla"
+        ],
+        "answer": "FIFO (First In First Out) - enqueue, dequeue"
+    },
+    {
+        "category": "Informatica",
+        "question": "Linked List (Lista concatenata):",
+        "options": [
+            "Sequenza di nodi dove ogni nodo contiene un dato e un puntatore al successivo",
+            "Array",
+            "Albero",
+            "Nulla"
+        ],
+        "answer": "Sequenza di nodi dove ogni nodo contiene un dato e un puntatore al successivo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Doubly Linked List:",
+        "options": [
+            "Lista dove ogni nodo ha puntatori sia al successivo che al precedente",
+            "Lista singola",
+            "Array",
+            "Nulla"
+        ],
+        "answer": "Lista dove ogni nodo ha puntatori sia al successivo che al precedente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Albero binario:",
+        "options": [
+            "Struttura gerarchica dove ogni nodo ha al massimo due figli (sinistro, destro)",
+            "Lista",
+            "Grafo",
+            "Nulla"
+        ],
+        "answer": "Struttura gerarchica dove ogni nodo ha al massimo due figli (sinistro, destro)"
+    },
+    {
+        "category": "Informatica",
+        "question": "BST (Binary Search Tree):",
+        "options": [
+            "Albero binario ordinato (sinistra < nodo < destra)",
+            "Albero casuale",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Albero binario ordinato (sinistra < nodo < destra)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Grafo:",
+        "options": [
+            "Insieme di nodi (vertici) collegati da archi",
+            "Albero",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Insieme di nodi (vertici) collegati da archi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Grafo orientato vs non orientato:",
+        "options": [
+            "Orientato: archi hanno direzione. Non orientato: archi bidirezionali.",
+            "Sono uguali",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "Orientato: archi hanno direzione. Non orientato: archi bidirezionali."
+    },
+    {
+        "category": "Informatica",
+        "question": "BFS (Breadth-First Search):",
+        "options": [
+            "Visita in ampiezza di un grafo (livello per livello)",
+            "DFS",
+            "Ricerca binaria",
+            "Nulla"
+        ],
+        "answer": "Visita in ampiezza di un grafo (livello per livello)"
+    },
+    {
+        "category": "Informatica",
+        "question": "DFS (Depth-First Search):",
+        "options": [
+            "Visita in profondità di un grafo (scende finché può)",
+            "BFS",
+            "Ricerca binaria",
+            "Nulla"
+        ],
+        "answer": "Visita in profondità di un grafo (scende finché può)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Dijkstra Algorithm:",
+        "options": [
+            "Trova il cammino minimo in un grafo pesato (pesi non negativi)",
+            "Ordinamento",
+            "Ricerca",
+            "Nulla"
+        ],
+        "answer": "Trova il cammino minimo in un grafo pesato (pesi non negativi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Big O Notation:",
+        "options": [
+            "Notazione per descrivere la complessità asintotica (tempo/spazio) di un algoritmo",
+            "Notazione musicale",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Notazione per descrivere la complessità asintotica (tempo/spazio) di un algoritmo"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(1):",
+        "options": [
+            "Tempo costante (indipendente dall'input)",
+            "Tempo lineare",
+            "Tempo quadratico",
+            "Nulla"
+        ],
+        "answer": "Tempo costante (indipendente dall'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(n):",
+        "options": [
+            "Tempo lineare (proporzionale all'input)",
+            "Tempo costante",
+            "Tempo quadratico",
+            "Nulla"
+        ],
+        "answer": "Tempo lineare (proporzionale all'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(n^2):",
+        "options": [
+            "Tempo quadratico (es. cicli annidati)",
+            "Tempo lineare",
+            "Tempo costante",
+            "Nulla"
+        ],
+        "answer": "Tempo quadratico (es. cicli annidati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(log n):",
+        "options": [
+            "Tempo logaritmico (es. ricerca binaria)",
+            "Tempo lineare",
+            "Tempo esponenziale",
+            "Nulla"
+        ],
+        "answer": "Tempo logaritmico (es. ricerca binaria)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Heap (struttura dati):",
+        "options": [
+            "Albero binario quasi completo che soddisfa la proprietà di heap (max-heap o min-heap)",
+            "Memoria heap",
+            "Stack",
+            "Nulla"
+        ],
+        "answer": "Albero binario quasi completo che soddisfa la proprietà di heap (max-heap o min-heap)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Priority Queue:",
+        "options": [
+            "Coda dove ogni elemento ha una priorità (spesso implementata con heap)",
+            "Coda normale",
+            "Stack",
+            "Nulla"
+        ],
+        "answer": "Coda dove ogni elemento ha una priorità (spesso implementata con heap)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Trie (Prefix Tree):",
+        "options": [
+            "Albero usato per memorizzare stringhe (dizionari), efficiente per prefissi",
+            "Albero binario",
+            "Grafo",
+            "Nulla"
+        ],
+        "answer": "Albero usato per memorizzare stringhe (dizionari), efficiente per prefissi"
+    },
+    {
+        "category": "Informatica",
+        "question": "B-Tree:",
+        "options": [
+            "Albero bilanciato ottimizzato per sistemi di storage (database, filesystem)",
+            "Albero binario",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Albero bilanciato ottimizzato per sistemi di storage (database, filesystem)"
+    },
+    {
+        "category": "Informatica",
+        "question": "JSON (JavaScript Object Notation):",
+        "options": [
+            "Formato leggero per interscambio dati (leggibile da umani e macchine)",
+            "XML",
+            "Binario",
+            "Nulla"
+        ],
+        "answer": "Formato leggero per interscambio dati (leggibile da umani e macchine)"
+    },
+    {
+        "category": "Informatica",
+        "question": "XML (eXtensible Markup Language):",
+        "options": [
+            "Linguaggio di markup per definire documenti strutturati",
+            "JSON",
+            "HTML",
+            "Nulla"
+        ],
+        "answer": "Linguaggio di markup per definire documenti strutturati"
+    },
+    {
+        "category": "Informatica",
+        "question": "CSV (Comma Separated Values):",
+        "options": [
+            "Formato file testo per dati tabellari (valori separati da virgola)",
+            "Excel",
+            "Database",
+            "Nulla"
+        ],
+        "answer": "Formato file testo per dati tabellari (valori separati da virgola)"
+    },
+    {
+        "category": "Informatica",
+        "question": "YAML:",
+        "options": [
+            "Linguaggio di serializzazione dati leggibile (usato per configurazioni)",
+            "JSON",
+            "XML",
+            "Nulla"
+        ],
+        "answer": "Linguaggio di serializzazione dati leggibile (usato per configurazioni)"
+    },
+    {
+        "category": "Informatica",
+        "question": "SQL (Structured Query Language):",
+        "options": [
+            "Linguaggio standard per gestire database relazionali",
+            "NoSQL",
+            "Java",
+            "Nulla"
+        ],
+        "answer": "Linguaggio standard per gestire database relazionali"
+    },
+    {
+        "category": "Informatica",
+        "question": "NoSQL:",
+        "options": [
+            "Database non relazionali (documentali, key-value, grafi, wide-column)",
+            "SQL",
+            "Excel",
+            "Nulla"
+        ],
+        "answer": "Database non relazionali (documentali, key-value, grafi, wide-column)"
+    },
+    {
+        "category": "Informatica",
+        "question": "ACID (Database):",
+        "options": [
+            "Proprietà delle transazioni: Atomicity, Consistency, Isolation, Durability",
+            "Base",
+            "Acido",
+            "Nulla"
+        ],
+        "answer": "Proprietà delle transazioni: Atomicity, Consistency, Isolation, Durability"
+    },
+    {
+        "category": "Informatica",
+        "question": "CAP Theorem:",
+        "options": [
+            "In un sistema distribuito puoi avere solo 2 su 3: Consistency, Availability, Partition tolerance",
+            "Teorema",
+            "Legge",
+            "Nulla"
+        ],
+        "answer": "In un sistema distribuito puoi avere solo 2 su 3: Consistency, Availability, Partition tolerance"
+    },
+    {
+        "category": "Informatica",
+        "question": "Primary Key:",
+        "options": [
+            "Colonna (o insieme) che identifica univocamente una riga in una tabella",
+            "Chiave",
+            "Indice",
+            "Nulla"
+        ],
+        "answer": "Colonna (o insieme) che identifica univocamente una riga in una tabella"
+    },
+    {
+        "category": "Informatica",
+        "question": "Foreign Key:",
+        "options": [
+            "Colonna che fa riferimento alla Primary Key di un'altra tabella (relazione)",
+            "Chiave",
+            "Indice",
+            "Nulla"
+        ],
+        "answer": "Colonna che fa riferimento alla Primary Key di un'altra tabella (relazione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Index (Database):",
+        "options": [
+            "Struttura dati ausiliaria per velocizzare le query di ricerca (rallenta scrittura)",
+            "Tabella",
+            "Vista",
+            "Nulla"
+        ],
+        "answer": "Struttura dati ausiliaria per velocizzare le query di ricerca (rallenta scrittura)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Normalization (Database):",
+        "options": [
+            "Processo di organizzazione dei dati per ridurre ridondanza e anomalie",
+            "Denormalizzazione",
+            "Ottimizzazione",
+            "Nulla"
+        ],
+        "answer": "Processo di organizzazione dei dati per ridurre ridondanza e anomalie"
+    },
+    {
+        "category": "Informatica",
+        "question": "Git:",
+        "options": [
+            "Sistema di controllo versione distribuito",
+            "GitHub",
+            "SVN",
+            "Nulla"
+        ],
+        "answer": "Sistema di controllo versione distribuito"
+    },
+    {
+        "category": "Informatica",
+        "question": "Repository (Repo):",
+        "options": [
+            "Cartella contenente il progetto e la sua storia (metadati git)",
+            "Cartella",
+            "File",
+            "Nulla"
+        ],
+        "answer": "Cartella contenente il progetto e la sua storia (metadati git)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Commit:",
+        "options": [
+            "Salvataggio di uno snapshot dello stato del progetto (con messaggio)",
+            "Salva",
+            "Push",
+            "Nulla"
+        ],
+        "answer": "Salvataggio di uno snapshot dello stato del progetto (con messaggio)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Branch:",
+        "options": [
+            "Linea di sviluppo parallela (ramo)",
+            "Albero",
+            "Foglia",
+            "Nulla"
+        ],
+        "answer": "Linea di sviluppo parallela (ramo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Merge (Git):",
+        "options": [
+            "Unire le modifiche di un branch in un altro",
+            "Unire",
+            "Dividere",
+            "Nulla"
+        ],
+        "answer": "Unire le modifiche di un branch in un altro"
+    },
+    {
+        "category": "Informatica",
+        "question": "Pull Request (PR):",
+        "options": [
+            "Richiesta di unire le modifiche di un branch nel branch principale (con review)",
+            "Richiesta",
+            "Merge",
+            "Nulla"
+        ],
+        "answer": "Richiesta di unire le modifiche di un branch nel branch principale (con review)"
+    },
+    {
+        "category": "Informatica",
+        "question": "CI/CD:",
+        "options": [
+            "Continuous Integration / Continuous Delivery (automazione build, test, deploy)",
+            "DevOps",
+            "Agile",
+            "Nulla"
+        ],
+        "answer": "Continuous Integration / Continuous Delivery (automazione build, test, deploy)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Agile:",
+        "options": [
+            "Metodologia di sviluppo software iterativa e incrementale",
+            "Waterfall",
+            "Veloce",
+            "Nulla"
+        ],
+        "answer": "Metodologia di sviluppo software iterativa e incrementale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Scrum:",
+        "options": [
+            "Framework Agile per la gestione di progetti complessi (sprint, standup)",
+            "Agile",
+            "Kanban",
+            "Nulla"
+        ],
+        "answer": "Framework Agile per la gestione di progetti complessi (sprint, standup)"
+    }
+]

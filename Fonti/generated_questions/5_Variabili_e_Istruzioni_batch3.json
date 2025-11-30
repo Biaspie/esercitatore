@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'operatore modulo (%)?",
+        "options": [
+            "Restituisce il resto della divisione intera",
+            "Calcola la percentuale",
+            "Divide",
+            "Moltiplica"
+        ],
+        "answer": "Restituisce il resto della divisione intera"
+    },
+    {
+        "category": "Informatica",
+        "question": "L'operatore % funziona con i float?",
+        "options": [
+            "No, solo con interi",
+            "Sì",
+            "A volte",
+            "Dipende"
+        ],
+        "answer": "No, solo con interi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa a += 5;?",
+        "options": [
+            "Equivale a a = a + 5;",
+            "Equivale a a = 5;",
+            "Equivale a a = a * 5;",
+            "Errore"
+        ],
+        "answer": "Equivale a a = a + 5;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa a -= 2;?",
+        "options": [
+            "Equivale a a = a - 2;",
+            "Equivale a a = -2;",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Equivale a a = a - 2;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa a *= 3;?",
+        "options": [
+            "Equivale a a = a * 3;",
+            "Equivale a a = 3;",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Equivale a a = a * 3;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa a /= 2;?",
+        "options": [
+            "Equivale a a = a / 2;",
+            "Equivale a a = 2;",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Equivale a a = a / 2;"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'incremento prefisso (++a)?",
+        "options": [
+            "Incrementa 'a' e poi usa il nuovo valore nell'espressione",
+            "Usa il valore vecchio e poi incrementa",
+            "Non incrementa",
+            "Errore"
+        ],
+        "answer": "Incrementa 'a' e poi usa il nuovo valore nell'espressione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'incremento postfisso (a++)?",
+        "options": [
+            "Usa il valore corrente di 'a' nell'espressione e poi incrementa",
+            "Incrementa subito",
+            "Non incrementa",
+            "Errore"
+        ],
+        "answer": "Usa il valore corrente di 'a' nell'espressione e poi incrementa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la precedenza degli operatori?",
+        "options": [
+            "L'ordine in cui vengono eseguite le operazioni in un'espressione",
+            "Chi arriva prima vince",
+            "Un errore",
+            "Una regola inutile"
+        ],
+        "answer": "L'ordine in cui vengono eseguite le operazioni in un'espressione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale operatore ha precedenza più alta tra * e +?",
+        "options": [
+            "*",
+            "+",
+            "Uguale",
+            "Dipende"
+        ],
+        "answer": "*"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si altera la precedenza?",
+        "options": [
+            "Usando le parentesi tonde ()",
+            "Usando le quadre []",
+            "Usando le graffe {}",
+            "Gridando"
+        ],
+        "answer": "Usando le parentesi tonde ()"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'associatività degli operatori?",
+        "options": [
+            "L'ordine di valutazione (sx->dx o dx->sx) per operatori con stessa precedenza",
+            "Un'associazione",
+            "Un errore",
+            "Nulla"
+        ],
+        "answer": "L'ordine di valutazione (sx->dx o dx->sx) per operatori con stessa precedenza"
+    },
+    {
+        "category": "Informatica",
+        "question": "L'assegnazione è associativa a:",
+        "options": [
+            "Destra (a = b = c esegue prima b = c)",
+            "Sinistra",
+            "Centro",
+            "Nessuna"
+        ],
+        "answer": "Destra (a = b = c esegue prima b = c)"
+    },
+    {
+        "category": "Informatica",
+        "question": "La somma è associativa a:",
+        "options": [
+            "Sinistra (a + b + c esegue prima a + b)",
+            "Destra",
+            "Centro",
+            "Nessuna"
+        ],
+        "answer": "Sinistra (a + b + c esegue prima a + b)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un'espressione booleana?",
+        "options": [
+            "Un'espressione che valuta a Vero o Falso",
+            "Un numero",
+            "Una stringa",
+            "Un errore"
+        ],
+        "answer": "Un'espressione che valuta a Vero o Falso"
+    },
+    {
+        "category": "Informatica",
+        "question": "In C, come è rappresentato il Falso?",
+        "options": [
+            "Con il valore intero 0",
+            "Con -1",
+            "Con 1",
+            "Con NULL"
+        ],
+        "answer": "Con il valore intero 0"
+    },
+    {
+        "category": "Informatica",
+        "question": "In C, come è rappresentato il Vero?",
+        "options": [
+            "Con qualsiasi valore diverso da 0 (spesso 1)",
+            "Solo con 1",
+            "Con 0",
+            "Con -1"
+        ],
+        "answer": "Con qualsiasi valore diverso da 0 (spesso 1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore AND logico:",
+        "options": [
+            "&&",
+            "&",
+            "AND",
+            "||"
+        ],
+        "answer": "&&"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore OR logico:",
+        "options": [
+            "||",
+            "|",
+            "OR",
+            "&&"
+        ],
+        "answer": "||"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore NOT logico:",
+        "options": [
+            "!",
+            "NOT",
+            "~",
+            "-"
+        ],
+        "answer": "!"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa restituisce (1 && 0)?",
+        "options": [
+            "0 (Falso)",
+            "1 (Vero)",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "0 (Falso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa restituisce (1 || 0)?",
+        "options": [
+            "1 (Vero)",
+            "0 (Falso)",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "1 (Vero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa restituisce (!1)?",
+        "options": [
+            "0 (Falso)",
+            "1 (Vero)",
+            "-1",
+            "Nulla"
+        ],
+        "answer": "0 (Falso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la valutazione cortocircuitata (short-circuit)?",
+        "options": [
+            "Se il risultato è già determinato dal primo operando, il secondo non viene valutato",
+            "Un corto circuito elettrico",
+            "Un errore",
+            "Un virus"
+        ],
+        "answer": "Se il risultato è già determinato dal primo operando, il secondo non viene valutato"
+    },
+    {
+        "category": "Informatica",
+        "question": "In (A && B), se A è falso:",
+        "options": [
+            "B non viene valutato (il risultato è sicuramente Falso)",
+            "B viene valutato comunque",
+            "Dà errore",
+            "Il PC si spegne"
+        ],
+        "answer": "B non viene valutato (il risultato è sicuramente Falso)"
+    },
+    {
+        "category": "Informatica",
+        "question": "In (A || B), se A è vero:",
+        "options": [
+            "B non viene valutato (il risultato è sicuramente Vero)",
+            "B viene valutato comunque",
+            "Dà errore",
+            "Il PC si spegne"
+        ],
+        "answer": "B non viene valutato (il risultato è sicuramente Vero)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un blocco if-else a cascata?",
+        "options": [
+            "if ... else if ... else if ... else",
+            "Un errore",
+            "Un ciclo",
+            "Una funzione"
+        ],
+        "answer": "if ... else if ... else if ... else"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'istruzione switch?",
+        "options": [
+            "Una struttura di controllo per selezioni multiple basate sul valore di un'espressione intera",
+            "Un interruttore",
+            "Un ciclo",
+            "Una funzione"
+        ],
+        "answer": "Una struttura di controllo per selezioni multiple basate sul valore di un'espressione intera"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa serve 'break' nello switch?",
+        "options": [
+            "Per uscire dallo switch dopo aver eseguito un caso (evita il fall-through)",
+            "Per rompere il codice",
+            "Per fermare il PC",
+            "Non serve"
+        ],
+        "answer": "Per uscire dallo switch dopo aver eseguito un caso (evita il fall-through)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il caso 'default' nello switch?",
+        "options": [
+            "Il caso eseguito se nessuno degli altri casi corrisponde",
+            "Il primo caso",
+            "L'ultimo caso",
+            "Un errore"
+        ],
+        "answer": "Il caso eseguito se nessuno degli altri casi corrisponde"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'operatore ternario (condizionale)?",
+        "options": [
+            "condizione ? valore_se_vero : valore_se_falso",
+            "Un operatore con 3 operandi",
+            "Un if abbreviato",
+            "Tutte le precedenti"
+        ],
+        "answer": "Tutte le precedenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi operatore ternario:",
+        "options": [
+            "a ? b : c",
+            "a : b ? c",
+            "a ? b ? c",
+            "a : b : c"
+        ],
+        "answer": "a ? b : c"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un ciclo do-while?",
+        "options": [
+            "Un ciclo che esegue il corpo almeno una volta, poi controlla la condizione",
+            "Un ciclo normale",
+            "Un errore",
+            "Una funzione"
+        ],
+        "answer": "Un ciclo che esegue il corpo almeno una volta, poi controlla la condizione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra while e do-while:",
+        "options": [
+            "Il while controlla prima, il do-while controlla dopo",
+            "Nessuna",
+            "Il while è più veloce",
+            "Il do-while è più veloce"
+        ],
+        "answer": "Il while controlla prima, il do-while controlla dopo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un ciclo annidato (nested loop)?",
+        "options": [
+            "Un ciclo dentro un altro ciclo",
+            "Un ciclo veloce",
+            "Un ciclo lento",
+            "Un errore"
+        ],
+        "answer": "Un ciclo dentro un altro ciclo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità di due cicli for annidati (entrambi da 0 a n)?",
+        "options": [
+            "O(n^2)",
+            "O(n)",
+            "O(1)",
+            "O(log n)"
+        ],
+        "answer": "O(n^2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una funzione ricorsiva?",
+        "options": [
+            "Una funzione che chiama se stessa",
+            "Una funzione veloce",
+            "Una funzione lenta",
+            "Un errore"
+        ],
+        "answer": "Una funzione che chiama se stessa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa serve in una funzione ricorsiva per terminare?",
+        "options": [
+            "Un caso base",
+            "Un break",
+            "Un return 0",
+            "Nulla"
+        ],
+        "answer": "Un caso base"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il fattoriale di n (n!)?",
+        "options": [
+            "n * (n-1) * ... * 1",
+            "n + n",
+            "n * n",
+            "0"
+        ],
+        "answer": "n * (n-1) * ... * 1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il fattoriale è un classico esempio di:",
+        "options": [
+            "Problema risolvibile ricorsivamente",
+            "Problema impossibile",
+            "Errore",
+            "Gioco"
+        ],
+        "answer": "Problema risolvibile ricorsivamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la sequenza di Fibonacci?",
+        "options": [
+            "Ogni numero è la somma dei due precedenti (0, 1, 1, 2, 3, 5...)",
+            "Una sequenza casuale",
+            "Numeri pari",
+            "Numeri dispari"
+        ],
+        "answer": "Ogni numero è la somma dei due precedenti (0, 1, 1, 2, 3, 5...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore a funzione?",
+        "options": [
+            "Una variabile che memorizza l'indirizzo di una funzione",
+            "Un errore",
+            "Una funzione speciale",
+            "Un array"
+        ],
+        "answer": "Una variabile che memorizza l'indirizzo di una funzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "A cosa servono i puntatori a funzione?",
+        "options": [
+            "Per passare funzioni come argomenti (callback) o implementare polimorfismo in C",
+            "A nulla",
+            "A rallentare",
+            "A confondere"
+        ],
+        "answer": "Per passare funzioni come argomenti (callback) o implementare polimorfismo in C"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la memoria statica?",
+        "options": [
+            "Memoria allocata al momento della compilazione (es. variabili globali)",
+            "Memoria ferma",
+            "Memoria veloce",
+            "Memoria lenta"
+        ],
+        "answer": "Memoria allocata al momento della compilazione (es. variabili globali)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la memoria automatica?",
+        "options": [
+            "Memoria allocata e deallocata automaticamente all'entrata/uscita di un blocco (stack)",
+            "Memoria robotica",
+            "Memoria magica",
+            "Memoria virtuale"
+        ],
+        "answer": "Memoria allocata e deallocata automaticamente all'entrata/uscita di un blocco (stack)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la memoria dinamica?",
+        "options": [
+            "Memoria gestita manualmente dal programmatore (heap)",
+            "Memoria che si muove",
+            "Memoria veloce",
+            "Memoria lenta"
+        ],
+        "answer": "Memoria gestita manualmente dal programmatore (heap)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale header file contiene malloc e free?",
+        "options": [
+            "stdlib.h",
+            "stdio.h",
+            "math.h",
+            "string.h"
+        ],
+        "answer": "stdlib.h"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa restituisce malloc in caso di errore (memoria piena)?",
+        "options": [
+            "NULL",
+            "0",
+            "-1",
+            "Errore"
+        ],
+        "answer": "NULL"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un memory leak?",
+        "options": [
+            "Mancata liberazione di memoria allocata dinamicamente",
+            "Perdita di dati",
+            "Fuga di notizie",
+            "Errore di stampa"
+        ],
+        "answer": "Mancata liberazione di memoria allocata dinamicamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un dangling pointer?",
+        "options": [
+            "Un puntatore che punta a un'area di memoria già liberata",
+            "Un puntatore appeso",
+            "Un puntatore valido",
+            "Un puntatore NULL"
+        ],
+        "answer": "Un puntatore che punta a un'area di memoria già liberata"
+    }
+]

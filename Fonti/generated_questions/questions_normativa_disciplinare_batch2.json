@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Per infliggere la sospensione dal servizio deve essere sentito il parere di quale organo?",
+        "options": [
+            "Consiglio di disciplina",
+            "Commissione consultiva",
+            "Sindacato",
+            "Questore"
+        ],
+        "answer": "Consiglio di disciplina"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Per infliggere la destituzione deve essere sentito il parere di quale organo?",
+        "options": [
+            "Consiglio di disciplina",
+            "Commissione consultiva",
+            "Prefetto",
+            "Ministro"
+        ],
+        "answer": "Consiglio di disciplina"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione si applica per abituali o gravi negligenze nell'adempimento dei doveri?",
+        "options": [
+            "Deplorazione",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Sospensione"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Le persistenti trasgressioni già punite con sanzioni minori comportano:",
+        "options": [
+            "Deplorazione",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Le gravi mancanze attinenti alla disciplina o al contegno sono punite con:",
+        "options": [
+            "Deplorazione",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Sospensione"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Gli atti diretti ad impedire l'esercizio dei diritti politici o sindacali sono puniti con:",
+        "options": [
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto",
+            "Sospensione"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La negligenza nel governo o nella cura del benessere del personale comporta:",
+        "options": [
+            "Deplorazione",
+            "Richiamo scritto",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La negligenza nell'uso o custodia di armi ed esplosivi è punita con:",
+        "options": [
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto",
+            "Sospensione"
+        ],
+        "answer": "Deplorazione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La condanna per delitto non colposo comporta almeno:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La denigrazione dell'Amministrazione o dei superiori è punita con:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il comportamento che produce turbamento nella regolarità del servizio è punito con:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La tolleranza di abusi commessi da dipendenti comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Gli atti contrari ai doveri derivanti dalla subordinazione sono puniti con:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'assidua frequenza di persone dedite ad attività immorale o pregiudicati comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'uso non terapeutico di sostanze stupefacenti comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Richiamo scritto"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'allontanamento dalla sede di servizio per oltre 5 giorni senza autorizzazione comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Destituzione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'omessa presentazione in servizio per un periodo tra 48 ore e 5 giorni comporta:",
+        "options": [
+            "Sospensione dal servizio",
+            "Deplorazione",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Sospensione dal servizio"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Gli atti che rivelino mancanza del senso dell'onore comportano:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Gli atti in grave contrasto con i doveri del giuramento comportano:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il grave abuso di autorità o di fiducia comporta:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La dolosa violazione dei doveri con grave pregiudizio allo Stato comporta:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "I gravi atti di insubordinazione commessi pubblicamente comportano:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'istigazione all'insubordinazione comporta:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La reiterazione delle infrazioni previste per la sospensione comporta:",
+        "options": [
+            "Destituzione",
+            "Sospensione aggravata",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "L'omessa riassunzione del servizio dopo 5 giorni di assenza arbitraria comporta:",
+        "options": [
+            "Destituzione",
+            "Sospensione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione si applica agli ufficiali di PG che omettono di riferire la notizia di reato?",
+        "options": [
+            "Censura",
+            "Richiamo orale",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Censura"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Nei casi più gravi, l'omissione di riferire notizia di reato comporta:",
+        "options": [
+            "Sospensione dall'impiego fino a 6 mesi",
+            "Destituzione",
+            "Deplorazione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Sospensione dall'impiego fino a 6 mesi"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il procedimento semplice riguarda quali sanzioni?",
+        "options": [
+            "Fino alla pena pecuniaria",
+            "Fino alla deplorazione",
+            "Solo richiamo orale",
+            "Tutte"
+        ],
+        "answer": "Fino alla pena pecuniaria"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il procedimento complesso riguarda quali sanzioni?",
+        "options": [
+            "Deplorazione, sospensione, destituzione",
+            "Solo destituzione",
+            "Solo sospensione",
+            "Tutte"
+        ],
+        "answer": "Deplorazione, sospensione, destituzione"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il parere della Commissione Consultiva è:",
+        "options": [
+            "Obbligatorio ma non vincolante",
+            "Vincolante",
+            "Facoltativo",
+            "Inappellabile"
+        ],
+        "answer": "Obbligatorio ma non vincolante"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il parere del Consiglio di Disciplina è:",
+        "options": [
+            "Obbligatorio ma non vincolante",
+            "Vincolante",
+            "Facoltativo",
+            "Inappellabile"
+        ],
+        "answer": "Obbligatorio ma non vincolante"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Nel procedimento per sospensione e destituzione c'è una fase istruttoria?",
+        "options": [
+            "Sì, affidata a un funzionario istruttore",
+            "No",
+            "Solo per destituzione",
+            "Solo se richiesto"
+        ],
+        "answer": "Sì, affidata a un funzionario istruttore"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi nomina il funzionario istruttore?",
+        "options": [
+            "Il Questore (o organo competente)",
+            "Il Prefetto",
+            "Il Sindacato",
+            "L'incolpato"
+        ],
+        "answer": "Il Questore (o organo competente)"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Da quanti membri è composta la Commissione Consultiva?",
+        "options": [
+            "3",
+            "5",
+            "7",
+            "1"
+        ],
+        "answer": "3"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi designa il membro sindacale nella Commissione Consultiva?",
+        "options": [
+            "I sindacati di polizia più rappresentativi",
+            "Il Questore",
+            "Il Prefetto",
+            "L'incolpato"
+        ],
+        "answer": "I sindacati di polizia più rappresentativi"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi presiede il Consiglio Provinciale di Disciplina?",
+        "options": [
+            "Il Vice Questore con funzioni vicarie",
+            "Il Questore",
+            "Il Prefetto",
+            "Un magistrato"
+        ],
+        "answer": "Il Vice Questore con funzioni vicarie"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quanti membri del Consiglio Provinciale sono designati dai sindacati?",
+        "options": [
+            "2",
+            "1",
+            "3",
+            "Nessuno"
+        ],
+        "answer": "2"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il Consiglio Provinciale di Disciplina giudica fino a quale qualifica?",
+        "options": [
+            "Ispettore Capo",
+            "Sovrintendente Capo",
+            "Commissario",
+            "Agente Scelto"
+        ],
+        "answer": "Ispettore Capo"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La P.A. dispone di potere discrezionale nel valutare la rilevanza disciplinare?",
+        "options": [
+            "Sì, ampio potere discrezionale",
+            "No, è vincolata",
+            "Solo per fatti lievi",
+            "Solo se c'è reato"
+        ],
+        "answer": "Sì, ampio potere discrezionale"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Il giudice amministrativo può sindacare il merito della sanzione disciplinare?",
+        "options": [
+            "No, salvo eccesso di potere",
+            "Sì, sempre",
+            "Solo se la sanzione è destituzione",
+            "Solo se richiesto dal sindacato"
+        ],
+        "answer": "No, salvo eccesso di potere"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione dal servizio è un provvedimento:",
+        "options": [
+            "Cautelare e temporaneo",
+            "Definitivo",
+            "Premiale",
+            "Amministrativo senza effetti economici"
+        ],
+        "answer": "Cautelare e temporaneo"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Qual è la durata massima della sospensione cautelare?",
+        "options": [
+            "5 anni",
+            "1 anno",
+            "6 mesi",
+            "10 anni"
+        ],
+        "answer": "5 anni"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quando è obbligatoria la sospensione dal servizio?",
+        "options": [
+            "In caso di ordine di cattura o carcerazione preventiva",
+            "Sempre in caso di denuncia",
+            "Mai",
+            "A discrezione del Questore"
+        ],
+        "answer": "In caso di ordine di cattura o carcerazione preventiva"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La condanna anche non definitiva per gravi delitti comporta la sospensione?",
+        "options": [
+            "Sì, ex art. 4 L. 97/2001",
+            "No",
+            "Solo se definitiva",
+            "Solo se superiore a 3 anni"
+        ],
+        "answer": "Sì, ex art. 4 L. 97/2001"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Quando è facoltativa la sospensione dal servizio?",
+        "options": [
+            "Quando la natura del reato è particolarmente grave",
+            "Sempre",
+            "Mai",
+            "Solo per contravvenzioni"
+        ],
+        "answer": "Quando la natura del reato è particolarmente grave"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Chi può disporre la sospensione per gravi motivi ex art. 92 DPR 3/57?",
+        "options": [
+            "Il Capo della Polizia",
+            "Il Questore",
+            "Il Prefetto",
+            "Il Ministro"
+        ],
+        "answer": "Il Capo della Polizia"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Se un dipendente è sottoposto a procedimento penale e disciplinare per gli stessi fatti:",
+        "options": [
+            "Il disciplinare deve essere sospeso fino al giudicato penale",
+            "I due procedimenti vanno avanti paralleli",
+            "Il penale si sospende",
+            "Il disciplinare si estingue"
+        ],
+        "answer": "Il disciplinare deve essere sospeso fino al giudicato penale"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La sentenza penale di assoluzione ha efficacia di giudicato nel disciplinare?",
+        "options": [
+            "Sì, quanto all'accertamento che il fatto non sussiste o l'imputato non lo ha commesso",
+            "No, mai",
+            "Solo se il giudice lo scrive",
+            "Solo per la destituzione"
+        ],
+        "answer": "Sì, quanto all'accertamento che il fatto non sussiste o l'imputato non lo ha commesso"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "La sentenza penale di condanna ha efficacia di giudicato nel disciplinare?",
+        "options": [
+            "Sì, quanto alla sussistenza del fatto e illiceità penale",
+            "No",
+            "Solo se patteggiata",
+            "Solo per la sospensione"
+        ],
+        "answer": "Sì, quanto alla sussistenza del fatto e illiceità penale"
+    },
+    {
+        "category": "Normativa Disciplinare",
+        "question": "Entro quanto tempo deve essere avviato il disciplinare dopo sentenza di proscioglimento?",
+        "options": [
+            "120 giorni",
+            "90 giorni",
+            "180 giorni",
+            "1 anno"
+        ],
+        "answer": "120 giorni"
+    }
+]

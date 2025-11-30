@@ -1,0 +1,372 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica
+Tipi ed Espressioni – Logica Booleana
+
+
+
+
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Algebra di Boole Un tipo astratto, formalizzato da George Boole.
+
+
+
+Dominio: {True, False}
+
+
+
+
+3 operatori:
+
+!  (operatore NOT o di complementazione o di negazione) &&(operatore AND o di congiunzione)
+‖ (operatore OR o di disgiunzione)
+
+
+
+!, && e ‖ si chiamano operatori logici o booleani
+Semantica dell’Operatore NOT Sia A  ∈ {True, False}
+
+
+
+!A vale True se A vale False	A	!A !A vale False se A vale True                                    True    False
+
+
+
+
+Esempi: !True !(!False)
+
+
+
+vale False vale False
+
+False	True
+
+
+Tavola di verità
+Semantica dell’Operatore AND
+
+
+Siano A, B  ∈ {True, False}
+A	B	A && B
+
+A && B vale True se sia A che B valgono True	True	True	True A && B vale False altrimenti	True    False     False
+
+
+
+
+
+Esempi: True && (!False) vale True !(True && False) vale True
+
+False    True     False False   False     False
+
+Tavola di verità
+Semantica dell’Operatore OR
+
+
+Siano A, B  ∈ {True, False}
+A	B	A ‖ B
+
+
+A ‖ B vale vale True
+
+A ‖ B vale
+
+
+True se almeno uno fra A e B
+
+
+
+False altrimenti
+
+True    True      True True    False     True
+False	True	True
+
+
+Esempi: False ‖ (!False) vale True	False   False	False !(True ‖ False) vale False                                Tavola di verità
+Algebra di Boole in C
+
+
+Nel Linguaggio C l’Algebra di Boole viene utilizzata nelle istruzioni di controllo (anche dette istruzioni strutturate) nella seguente maniera:
+
+•   Il valore False viene rappresentato da uno 0
+
+•   Il valore True viene rappresentato da un 1 (e da qualsiasi numero diverso da 0) •   Gli operatori !, && e ‖ sono definiti nel linguaggio
+Alcune proprietà degli operatori Booleani
+
+
+
+
+
+
+Idempotenza di && e || A && A = A
+A || A = A Commutatività di && e ||
+A && B = B && A A || B = B || A
+Associatività di && e ||
+A && (B && C) = (A && B) && C A || (B || C) = (A || B) || C
+Distributività
+A && (B || C) = (A && B) || (A && C) A || (B && C) = (A || B) && (A || C)
+Alcune proprietà degli operatori Booleani
+
+
+
+
+
+
+Elementi neutri di && e || TRUE && A = A
+FALSE || A = A
+Elementi assorbenti di && e || FALSE && A = FALSE
+TRUE || A = TRUE
+Eliminazione della doppia negazione !(!A) = A
+Altre identità notevoli A && (!A) = FALSE
+A || (!A) = TRUE
+Operatori Relazionali
+
+
+Operatori binari, che si applicano ad una coppia di valori dello stesso tipo (ad esempio due valori di tipo int) per verificare l'esistenza di una certa relazione, e forniscono il risultato della verifica come valore booleano (quindi 0 o 1)
+
+
+3==3	vale  1 4!=4	vale  0 5<(11/2)	vale  0 5.5>5	vale  1 -1<=0	vale  1 -1/2>=0	vale  1
+
+(uguale a) (non uguale a) (minore di) (maggiore di)
+(minore o uguale a) (maggiore o uguale a)
+Espressioni Logiche o Booleane
+
+
+Anche dette predicati o condizioni, sono espressioni che hanno un valore Vero o Falso (in C, 1 o 0) quando vengono valutate.
+
+
+
+Sono composte da:
+•  1, 0 e variabili booleane (di tipo int, short, long, float, ...) •  Operatori booleani (!, && e ‖)
+•  Funzioni booleane, ovvero funzioni che restituiscono un valore booleano (ad esempio gli operatori relazionali)
+
+
+
+Esempio: ((x>10 ‖ (y==5)) && (cond1 ‖ cond2)
+dove x,y, cond1 e cond2 sono variabili di tipo int
+Precedenze
+
+
+In ordine decrescente di precedenza •  NOT !
+•  Relazionali di confronto <, >, <=, >= (fra loro precedenza a sinistra) •  Relazionali di uguaglianza ==, != (fra loro precedenza a sinistra)
+•  AND && •  OR ‖
+Le parentesi tonde possono fugare ogni dubbio.
+x>=10 ‖ 1 && !cond1 ‖ x!=5 è equivalente a
+(((x>=10) ‖ (1&& (!cond1))) ‖ (x!=5))
+Esercizi 1 1.  Quanto vale l’espressione 1 ‖ 1 && 0?
+
+
+
+
+2.  Siano a e b variabili di tipo int. Quanto vale l’espressione (((a ‖ b) && (1 && b)) ‖ b) && 0?
+
+
+
+
+
+3.  Siano a e b variabili (a && b) ‖ a?
+
+
+
+
+4.  Siano a e b variabili (!a && b) ‖ a?
+
+di tipo int.
+
+
+
+
+
+
+
+di tipo int.
+
+Quanto vale
+
+
+
+
+
+
+
+Quanto vale
+
+l’espressione
+
+
+
+
+
+
+
+l’espressione
+Esercizi 1a Quanto vale l’espressione 1 ‖ 1 && 0?
+
+
+
+
+
+
+
+1 ‖ 1 && 0 =
+1 ‖ (1 && 0) =
+1 ‖ 0 = 1
+
+
+
+
+
+Siano a e b variabili di tipo int. Quanto (((a ‖ b) && (1 && b)) ‖ b) && 0?
+
+Esercizi 1b vale l’espressione
+
+
+
+
+
+
+(((a ‖ b) && (1 && b)) ‖ b) && 0 =
+X && 0
+con X = (((a ‖ b) && (1 && b)) ‖ b) =
+0 (indipendentemente dal valore di a e b)
+Esercizi 1c Siano a e b variabili di tipo int. Quanto vale l’espressione
+(a && b) ‖ a?
+
+
+
+
+
+(a && b) ‖ a
+
+
+
+
+b=0
+
+(a && 0) ‖ a =
+0 ‖ a = a
+
+b=1
+
+(a && 1) ‖ a =
+a ‖ a = a
+
+
+
+= a
+Esercizi 1d Siano a e b variabili di tipo int. Quanto vale l’espressione
+(!a && b) ‖ a?
+
+
+
+
+
+(!a && b) ‖ a
+
+
+
+
+
+
+b=0	b=1
+
+
+(!a && 0) ‖ a =
+0 ‖ a = a
+
+(!a && 1) ‖ a =
+!a ‖ a =
+=	1 a ‖ b
+Esercizi 1s 1.  Quanto vale l’espressione 1 ‖ 1 && 0?
+⟹ vale 1
+2.  Siano a e b variabili di tipo int. Quanto vale l’espressione (((a ‖ b) && (1 && b)) ‖ b) && 0?
+⟹ vale 0, quasiasi sia il valore di a e b
+
+3.  Siano a e b variabili di tipo int. Quanto vale l’espressione (a && b) ‖ a?
+⟹ vale 1 se e solo se a vale 1
+
+4.  Siano a e b variabili di tipo int. Quanto vale l’espressione (!a && b) ‖ a?
+⟹ vale 1 se e solo se almeno uno fra a e b vale 1
+
+
+
+
+
+5.  Sia x una variabile di tipo int. (x<=10) ‖ (x>9)?
+
+Esercizi 2 Quanto vale l’espressione
+
+
+
+
+
+6.  Siano b e x variabili di tipo int.
+Scrivere un’istruzione di assegnazione b=...; tale che b vale 1 se e solo se x è positivo.
+
+
+
+
+
+5.  Sia x una variabile di tipo int. Quanto (x<=10) ‖ (x>9)?
+⟹ vale 1, qualsiasi sia il valore di x
+
+Esercizi 2s vale l’espressione
+
+
+6.  Siano b e x variabili di tipo int.
+Scrivere un’istruzione di assegnazione b=...; tale che b vale 1 se e solo se x è positivo.
+⟹ b=(x>0);
+Espressioni Booleane: Ulteriori Considerazioni •   Si può assegnare ad una variabile il risultato di una espressione
+booleana. Es: int numero = (x>0) ‖ (!1);
+•   Attenzione alla differenza fra = e ==
+
+
+
+Operatore di Uguaglianza
+
+
+Operatore di Assegnamento
+Leggi di De Morgan
+1
+
+
+
+Siano b , Allora:
+
+b2, ..., bn espressioni di tipo boolean.
+
+
+1)  ! (b  && b  && ... && b ) equivale a ! b  ‖ ! b  ‖ ... ‖ ! b La negazione di una congiunzione di termini equivale alla disgiunzione della negazione dei termini
+1	2	n	1	2	n
+
+2)  ! (b  ‖ b  ‖ ... ‖ b ) equivale a ! b  && ! b  && ... && ! b La negazione di una disgiunzione di termini equivale alla congiunzione della negazione dei termini
+1	2	n	1	2	n
+
+
+
+
+
+Esempio: ! ((a>=0) && (a<b)) equivale a ! (a>=0) ‖ ! (a<b) che è anche equivalente a (a<0) ‖ (a>=b)
+Esercizio per casa
+
+
+
+Sia anno una variabile intera che rappresenta un anno. Scrivere una espressione booleana, in cui compare la variabile anno, che è vera se e solo se anno è bisestile.
+
+•normalmente, anno è bisestile se è divisibile per 4 ècioè la divisione da resto 0
+•ma se è anche divisibile per 100 allora non è bisestile ècome nel caso dell'anno 1900
+•nonostante le condizioni precedenti, se anno è divisibile per 400 allora è bisestile ècome nel caso dell'anno 2000
+Altre Risorse
+
+
+•  Bellini, Guidi: Linguaggio C — Capitoli 6.1 - 6.4, 8.1 - 8.2 Appendice D.5 - D.6, Appendice E

@@ -1,0 +1,657 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Meccanica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Funzioni – Parte I
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Una Funzione Matematica
+
+Può essere pensata come una scatola nera che riceve in ingresso valori di un certo insieme, detto dominio, e restituisce in uscita valori di un altro insieme, detto codominio.
+
+
+
+
+
+
+(𝑥,𝑦) è un elemento del dominio
+
+f(𝑥,𝑦) è un elemento del codominio
+
+
+
+
+
+
+
+
+
+
+
+
+𝑧 = 𝑓  𝑥,𝑦   = 2𝑥! + 𝑦!
+Una Funzione in C
+
+Può essere pensata come una scatola nera che riceve in ingresso valori di un certo insieme, detto dominio, e restituisce in uscita valori di un altro insieme, detto codominio.
+
+
+
+
+
+
+(𝑥,𝑦) è un elemento del dominio
+
+f(𝑥,𝑦) è un elemento del codominio
+
+
+
+
+
+La stessa cosa!
+
+
+Ciascuna delle variabili indipendenti della funzione (che in informatica si chiamano valori di ingresso o parametri) è associata ad un tipo (ad esempio int o float).
+
+La variabile dipendente (che in informatica si chiama valore restituito o valore di ritorno) è anch'essa associata ad un tipo (ad esempio int o float) che si chiama tipo di ritorno.
+Una Funzione isPrimo Vogliamo definire una funzione isPrimo che determina se un intero
+positivo è primo oppure no.
+
+
+Q1: Quanti sono i parametri della funzione isPrimo?
+
+
+
+Q2: Qual è il dominio della funzione isPrimo?
+
+
+
+Q3: Quali sono i tipi associati ai parametri?
+
+
+
+Q4: Qual è il codominio della funzione?
+
+
+
+Q5: Qual è il tipo di ritorno?
+Una Funzione isPrimo Vogliamo definire una funzione isPrimo che determina se un intero
+positivo è primo oppure no.
+
+
+Q1: Quanti sono i parametri della funzione isPrimo?
+⇒ 1 solo parametro, che rappresenta l'intero di cui vogliano stabilire la primalità Q2: Qual è il dominio della funzione isPrimo?
+⇒ L'insieme dei numeri interi positivi
+Q3: Quali sono i tipi associati ai parametri?
+⇒ Il tipo associato al parametro è un tipo per rappresentare interi, come int Q4: Qual è il codominio della funzione?
+⇒ {0,1}
+Q5: Qual è il tipo di ritorno?
+⇒ Un tipo per rappresentare interi, come int
+Funzioni, Algoritmi e Problemi
+
+
+
+
+Una funzione realizza (ovvero implementa) in un linguaggio di programmazione un algoritmo per risolvere un problema parametrico.
+
+
+
+
+
+Ad esempio la funzione isPrimo deve implementare un algoritmo per risolvere il problema test di primalità.
+Specifica di una Funzione
+La specifica di una funzione coincide con la specifica dell’algoritmo che è implementato dalla funzione stessa.
+
+
+Ad esempio, la specifica di isPrimoè:
+
+
+Dati di ingresso: un intero 𝑛𝑢𝑚𝑒𝑟𝑜
+
+
+Pre-condizione: 𝑛𝑢𝑚𝑒𝑟𝑜 è un intero positivo
+
+
+Dati di uscita: un intero 𝑛𝑒𝑠𝑠𝑢𝑛𝐷𝑖𝑣𝑖𝑠𝑜𝑟𝑒
+
+
+Post-condizione: 𝑛𝑒𝑠𝑠𝑢𝑛𝐷𝑖𝑣𝑖𝑠𝑜𝑟𝑒  vale 1 se 𝑛𝑢𝑚𝑒𝑟𝑜 è primo, vale 0 altrimenti
+
+
+Ricorda: l'algoritmo (e quindi anche la funzione isPrimo) non deve
+necessariamente funzionare se i parametri non soddisfano le precondizioni.
+Un Algoritmo per il Problema Test di Primalità
+La Funzione isPrimo
+La Funzione isPrimo
+
+In genere la definizione di una funzione è preceduta da un commento documentazione, che descrive cosa calcola la funzione stessa, ovvero descrive dati di uscita e
+post-condizioni.
+La Funzione isPrimo
+
+
+
+
+
+
+La prima parola nella definizione di una funzione rappresenta il tipo di
+ritorno, ovvero il tipo del valore restituito dalla funzione.
+
+
+La funzione isPrimo restituisce un valore di tipo int.
+La Funzione isPrimo
+
+
+
+
+
+La seconda parola nella definizione di una funzione rappresenta il nome della funzione
+(in questo esempio isPrimo).
+La Funzione isPrimo
+
+
+
+
+
+
+Dopo il nome della funzione troviamo una lista di parametri. La lista è contenuta fra parentesi tonde.
+
+Per ciascun parametro è specificato il tipo
+ed un nome (per esempio int e numero).
+
+
+
+
+
+
+Se la funzione ha più parametri, le coppie tipo nome sono separate da una virgola Es: funz (int p1, int p2, double p3)
+
+I parametri all'interno della lista prendono il nome di parametri formali della funzione.
+La Funzione isPrimo
+
+
+
+Tipo di ritorno, nome e lista di parametri costituiscono il prototipo di una funzione.
+La Funzione isPrimo
+
+
+
+
+
+Dopo il prototipo della funzione troviamo il corpo, ovvero l'insieme delle istruzioni la cui esecuzione permette alla funzione di calcolare il valore
+da restituire.
+
+
+Il corpo
+è delimitato da parentesi graffe.
+La Funzione isPrimo
+
+
+
+In genere la prima riga del corpo è un
+commento che descrive le pre-condizioni
+della funzione.
+La Funzione isPrimo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Per restituire un valore calcolato, una funzione utilizza l'istruzione 𝑟𝑒𝑡𝑢𝑟𝑛 la cui sintassi è
+return espressione;
+
+
+Nella programmazione strutturata una funzione contiene una sola istruzione di return che è in genere l'ultima istruzione del corpo della funzione.
+Definizione di una Funzione
+
+
+
+/* Che cosa calcola la funzione? Dati di uscita e post-condizioni */
+
+
+
+tipo_ ritorno // pre:
+
+nome_funzione (tipo_par1 nome_par1,..., tipo_park nome_park) { quali sono le pre-condizioni?
+
+
+
+…	//qui vanno le istruzioni del corpo
+
+
+return valore_ritorno;	//ultima istruzione del corpo }
+Esempi
+
+Definire una funzione massimoComunDivisoreche riceve in ingresso due interi positivi e ne calcola il massimo comun divisore.
+Esempio 1
+
+Definire una funzione massimoComunDivisoreche riceve in ingresso due interi positivi e ne calcola il massimo comun divisore.
+Esempi
+
+Definire una funzione potenzache riceve in ingresso due interi non negativi e calcola il valore del primo elevato al secondo.
+Esempio 2
+
+Definire una funzione potenzache riceve in ingresso due interi non negativi e calcola il valore del primo elevato al secondo.
+Esempi
+
+Definire una funzione isQuadratoche riceve in ingresso un intero non negativo e determina se tale intero è un quadrato o no.
+Esempio 3
+
+Definire una funzione isQuadratoche riceve in ingresso un intero non negativo e determina se tale intero è un quadrato o no.
+Domande sensate
+
+
+
+
+•   Che ci faccio con una funzione? •   Chi specifica i valori di ingresso?
+•   A chi restituisco il valore di ritorno?
+
+
+
+Un’altra funzione (che potrebbe fare anche parte di un altro programma) può invocare una funzione, ovvero può richiedere il calcolo del valore della funzione su un certo insieme di dati di ingresso.
+
+
+
+Approfondiamo la relazione fra la funzione invocante e la funzione invocata.
+Applicazione che Calcola il MCD
+Dal lato della Funzione Invocante (1) L'invocazione di una funzione si realizza con la seguente sintassi:
+
+
+nome_funzione(par1, ..., park)
+
+
+ovvero per invocare una funzione bisogna scriverne il nome ed una lista di valori (un valore per ciascun parametro formale della funzione invocata). I valori in questa lista prendono il nome di parametri attuali della funzione invocata.
+
+
+§ L'invocazione isPrimo(12653)permette di verificare se il numero
+12653 è primo oppure no.
+
+
+§ L'invocazione massimoComunDivisore(numero1,numero2)
+permette di calcolare il massimo comun divisore fra i valori memorizzati dentro numero1e numero2.
+Dal lato della Funzione Invocante (2)
+
+L'invocazione di una funzione è un’espressione il cui tipo è il tipo di ritorno della funzione ed il cui valore (a tempo di esecuzione) è il valore restituito dalla funzione.
+•  Tale valore può essere utilizzato dalla funzione invocante.	Esempi di utilizzo:
+
+
+mcd=massimoComunDivisore(numero1,numero2);
+•  Il valore restituito dalla funzione massimoComunDivisore viene memorizzato nella variabile mcd.
+
+
+printf("I due interi hanno mcd %d\n", massimoComunDivisore(numero1, numero2)); •  Il valore restituito dalla funzione massimoComunDivisoreviene stampato.
+
+
+
+
+•  Il valore restituito dalla funzione isPrimoviene utilizzato come valore del predicato di una istruzione condizionale.
+Dal lato della Funzione Invocante (3)
+
+Per poter invocare una funzione non è necessario conoscere come è definita, ovvero quali istruzioni esegue se invocata, ma è sufficiente conoscere il prototipo della funzione.
+
+
+
+La funzione viene utilizzata a “scatola nera”, ovvero senza conoscerne il funzionamento interno ed interessandoci solo di cosa fornirle in ingresso e di cosa viene restituito in uscita.
+Dal lato della Funzione Invocata Quando una funzione viene invocata si susseguono i seguenti eventi:
+
+
+1)
+
+Viene valutato il valore di ciascun parametro attuale (nella funzione
+invocante).
+
+
+
+
+
+vengono valutati i valori di numero1e numero2
+
+
+2)
+
+
+
+
+
+
+
+
+
+
+3)
+
+Ciascun parametro formale (nella funzione invocata) prende il valore del
+corrispondente parametro attuale: legame fra parametri.
+
+
+
+
+il parametro x prende	il parametro y prende
+il valore di numero1
+il valore di numero2
+Vengono eseguite le istruzioni nel corpo della funzione invocata ed in particolare viene eseguita l'istruzione returnche restituisce un valore
+alla funzione invocante, terminando il lavoro della funzione invocata.
+Legame tra Parametri nella funzione invocante
+nella funzione invocata
+
+Assegnamento ai parametri formali (i parametri che compaiono nella funzione invocata) del valore dei corrispondenti parametri attuali (quelli che compaiono nella funzione invocante) - legame per valore.
+
+f(val1, ..., valk)	nella funzione invocante
+
+f(tipo_par1 x1, ..., tipo_park xk) nella funzione invocata
+I parametri attuali devono essere nello stesso numero dei parametri formali (altrimenti errore) e devono essere dello stesso tipo dei corrispondenti parametri formali (altrimenti conversione, se possibile, oppure errore).
+
+Quale parametro formale corrisponde a quale parametro attuale è stabilito sulla base dell'ordine di tali parametri nelle rispettive liste.
+Utilizzo dei Parametri Formali
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+All'interno del corpo di una funzione è possibile utilizzare i parametri formali esattamente come delle variabili già dichiarate e inizializzate.
+
+Infatti sono stati dichiarati nel prototipo e inizializzati tramite il legame fra parametri all'atto dell'invocazione della funzione.
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+
+
+
+
+
+
+
+
+⇒
+
+Ecco il numero: 2 Ecco il numero: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+Una modifica del valore di un parametro formale non comporta una modifica del valore di una variabile che è stata utilizzata come parametro attuale.
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+
+
+
+
+
+
+
+
+⇒
+
+Ecco il numero: 2 Ecco il numero: 2
+
+
+
+
+
+
+
+
+
+
+
+Il fatto che variabili e/o parametri in funzioni diverse abbiano lo stesso nome può essere ignorato in quanto non incide in alcun modo sulla semantica di un programma
+
+Stampa: 7
+3
+e non 3
+7
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+
+
+
+
+
+
+
+
+⇒
+
+Ecco il numero: 2 Ecco il numero: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+Il valore restituito dalla funzione modificaValorenon viene utilizzato nel corpo della funzione maine quindi tale restituzione non ha alcun effetto sulla successiva stampa.
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+Esempio di Legame fra Parametri
+
+
+
+Q: Che cosa viene stampato dal seguente codice?
+
+
+
+
+
+
+
+
+⇒
+
+Ecco il numero: 2 Ecco il numero: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+Il valore restituito dalla funzione modificaValoreviene memorizzato nella variabile interoall'interno del corpo della funzione maine tale valore viene quindi stampato.
+Variabili Locali Ma non potevamo adottare questa soluzione?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Le variabili dichiarate all'interno di una funzione non possono essere utilizzate al di fuori di quella funzione - per questo si chiamano variabili locali.
+
+
+Nell'esempio sopra, la funzione mainnon può accedere alla variabile risultato all'interno della funzione modificavalore.
+Variabili Locali Poiché la visibilità di una variabile locale è ristretta alla funzione in cui la variabile
+è dichiarata, è possibile utilizzare lo stesso nome per due variabili che sono locali a due funzioni diverse, mentre non è possibile utilizzare lo stesso nome per due variabili che sono locali alla stessa funzione.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nella stessa maniera, si può dare ad un parametro formale di una funzione lo stesso nome di una variabile locale ad un'altra funzione.
+Scambio di Dati Due variabili con lo stesso nome in due funzioni diverse sono due variabili diverse!
+Quindi quello che succede all'una non influenza quello che succede all'altra. In particolare, il fatto che hanno lo stesso nome non può essere utilizzato per scambiare dati fra le due funzioni.
+
+
+Per scambiare dati fra funzioni si utilizzano invece:
+
+
+
+•   Parametri e valori restituiti. La maniera più semplice e pulita: una funzione può fornire valori ad un'altra funzione per mezzo dei parametri. La funzione invocata può restituire un valore alla funzione invocante.
+
+
+
+•   Variabili globali (sconsigliato, non ne parleremo)
+
+
+
+•   ...
+Funzioni che non Restituiscono Valori E' possibile definire funzioni che non restituiscono valori. Sono funzioni che “fanno
+qualcosa” (ad esempio, visualizzano delle frasi sullo schermo), ma non restituiscono alcun valore alla funzione invocante.
+
+
+
+
+Programma che stampa la tabellina di un numero
+
+
+
+
+
+
+
+
+
+
+
+
+Il tipo speciale void deve essere usato come tipo di ritorno per indicare che una funzione non restituisce alcun valore. In una funzione che non restituisce alcun valore è assente l'istruzione return (oppure è presente come return;).
+Esempio
+
+Definire una funzione numeriTriangolariche riceve in ingresso un intero ne stampa
+i numeri triangolari minori di n. I numeri triangolari sono 1 3 6 10 15 21 28 36 ...
++2  +3  +4	+5	+6	+7	+8
+Funzioni senza Parametri E' possibile definire funzioni senza parametri. Sono funzioni che “fanno qualcosa” senza ricevere valori in ingresso.
+
+
+
+
+
+
+
+
+
+oppure
+
+
+
+
+
+
+
+
+
+
+
+
+Il tipo void può essere opzionalmente usato oppure no nel prototipo della funzione. Non deve essere usato nell'invocazione della funzione.
+Altre risorse •  Bellini, Guidi: Linguaggio C — 4.10.2, 5.5, 11.1-11.9, 23.7, App. B

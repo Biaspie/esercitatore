@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'overflow?",
+        "options": [
+            "Quando il risultato di un'operazione supera il valore massimo rappresentabile dal tipo di dato",
+            "Quando è troppo piccolo",
+            "Quando è zero",
+            "Nulla"
+        ],
+        "answer": "Quando il risultato di un'operazione supera il valore massimo rappresentabile dal tipo di dato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'underflow?",
+        "options": [
+            "Quando il risultato è troppo piccolo (vicino a zero) per essere rappresentato con precisione",
+            "Overflow",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Quando il risultato è troppo piccolo (vicino a zero) per essere rappresentato con precisione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il casting?",
+        "options": [
+            "Conversione esplicita o implicita da un tipo di dato a un altro",
+            "Un film",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Conversione esplicita o implicita da un tipo di dato a un altro"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio di casting esplicito:",
+        "options": [
+            "(float) 5",
+            "5.0",
+            "int 5",
+            "Nulla"
+        ],
+        "answer": "(float) 5"
+    },
+    {
+        "category": "Informatica",
+        "question": "Divisione intera in C (5 / 2):",
+        "options": [
+            "2 (troncamento)",
+            "2.5",
+            "3",
+            "Errore"
+        ],
+        "answer": "2 (troncamento)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Divisione float in C (5.0 / 2.0):",
+        "options": [
+            "2.5",
+            "2",
+            "3",
+            "Errore"
+        ],
+        "answer": "2.5"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore modulo %:",
+        "options": [
+            "Restituisce il resto della divisione intera",
+            "Percentuale",
+            "Divisione",
+            "Moltiplicazione"
+        ],
+        "answer": "Restituisce il resto della divisione intera"
+    },
+    {
+        "category": "Informatica",
+        "question": "5 % 2 vale:",
+        "options": [
+            "1",
+            "0",
+            "2",
+            "2.5"
+        ],
+        "answer": "1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore di incremento ++:",
+        "options": [
+            "Aumenta il valore della variabile di 1",
+            "Aumenta di 2",
+            "Diminuisce",
+            "Nulla"
+        ],
+        "answer": "Aumenta il valore della variabile di 1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore di decremento --:",
+        "options": [
+            "Diminuisce il valore della variabile di 1",
+            "Aumenta",
+            "Moltiplica",
+            "Nulla"
+        ],
+        "answer": "Diminuisce il valore della variabile di 1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra ++i (pre-incremento) e i++ (post-incremento):",
+        "options": [
+            "++i incrementa prima di usare il valore, i++ usa il valore poi incrementa",
+            "Nessuna",
+            "i++ è più veloce",
+            "++i è più veloce"
+        ],
+        "answer": "++i incrementa prima di usare il valore, i++ usa il valore poi incrementa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatori di assegnazione composta (+=, -=, *=, /=):",
+        "options": [
+            "Eseguono l'operazione e assegnano il risultato (x += 5 equivale a x = x + 5)",
+            "Sono errori",
+            "Sono lenti",
+            "Nulla"
+        ],
+        "answer": "Eseguono l'operazione e assegnano il risultato (x += 5 equivale a x = x + 5)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una funzione?",
+        "options": [
+            "Blocco di codice riutilizzabile che esegue un compito specifico",
+            "Una variabile",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "Blocco di codice riutilizzabile che esegue un compito specifico"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggi delle funzioni:",
+        "options": [
+            "Modularità, Riuso del codice, Leggibilità, Manutenibilità",
+            "Velocità",
+            "Memoria",
+            "Nulla"
+        ],
+        "answer": "Modularità, Riuso del codice, Leggibilità, Manutenibilità"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parametri formali:",
+        "options": [
+            "Variabili definite nella dichiarazione della funzione",
+            "Valori passati alla chiamata",
+            "Variabili globali",
+            "Nulla"
+        ],
+        "answer": "Variabili definite nella dichiarazione della funzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parametri attuali (argomenti):",
+        "options": [
+            "Valori passati alla funzione al momento della chiamata",
+            "Parametri formali",
+            "Variabili locali",
+            "Nulla"
+        ],
+        "answer": "Valori passati alla funzione al momento della chiamata"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passaggio per valore:",
+        "options": [
+            "Viene passata una copia del valore (modifiche nella funzione non influenzano l'originale)",
+            "Viene passato l'indirizzo",
+            "Viene passato il nome",
+            "Nulla"
+        ],
+        "answer": "Viene passata una copia del valore (modifiche nella funzione non influenzano l'originale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Passaggio per riferimento (tramite puntatori in C):",
+        "options": [
+            "Viene passato l'indirizzo di memoria (modifiche influenzano l'originale)",
+            "Copia del valore",
+            "Solo lettura",
+            "Nulla"
+        ],
+        "answer": "Viene passato l'indirizzo di memoria (modifiche influenzano l'originale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Scope (ambito) di una variabile:",
+        "options": [
+            "La parte del programma in cui la variabile è visibile e utilizzabile",
+            "La vita della variabile",
+            "Il tipo",
+            "Il valore"
+        ],
+        "answer": "La parte del programma in cui la variabile è visibile e utilizzabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabile globale:",
+        "options": [
+            "Dichiarata fuori da tutte le funzioni, visibile ovunque",
+            "Locale",
+            "Statica",
+            "Nulla"
+        ],
+        "answer": "Dichiarata fuori da tutte le funzioni, visibile ovunque"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabile locale:",
+        "options": [
+            "Dichiarata dentro una funzione/blocco, visibile solo lì",
+            "Globale",
+            "Statica",
+            "Nulla"
+        ],
+        "answer": "Dichiarata dentro una funzione/blocco, visibile solo lì"
+    },
+    {
+        "category": "Informatica",
+        "question": "Variabile statica (static) locale:",
+        "options": [
+            "Mantiene il suo valore tra diverse chiamate della funzione (ma scope locale)",
+            "Globale",
+            "Costante",
+            "Nulla"
+        ],
+        "answer": "Mantiene il suo valore tra diverse chiamate della funzione (ma scope locale)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ricorsione:",
+        "options": [
+            "Quando una funzione chiama se stessa",
+            "Un ciclo",
+            "Un errore",
+            "Un salto"
+        ],
+        "answer": "Quando una funzione chiama se stessa"
+    },
+    {
+        "category": "Informatica",
+        "question": "Caso base nella ricorsione:",
+        "options": [
+            "Condizione che ferma la ricorsione (evita loop infinito)",
+            "Inizio",
+            "Fine",
+            "Errore"
+        ],
+        "answer": "Condizione che ferma la ricorsione (evita loop infinito)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stack frame (record di attivazione):",
+        "options": [
+            "Area di memoria nello stack allocata per ogni chiamata di funzione (contiene parametri, var locali, indirizzo ritorno)",
+            "Heap",
+            "Codice",
+            "Dati"
+        ],
+        "answer": "Area di memoria nello stack allocata per ogni chiamata di funzione (contiene parametri, var locali, indirizzo ritorno)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'Heap?",
+        "options": [
+            "Area di memoria per l'allocazione dinamica (malloc)",
+            "Stack",
+            "Codice",
+            "Dati"
+        ],
+        "answer": "Area di memoria per l'allocazione dinamica (malloc)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo Stack (memoria)?",
+        "options": [
+            "Area di memoria per variabili locali e chiamate di funzione (LIFO)",
+            "Heap",
+            "Codice",
+            "Dati"
+        ],
+        "answer": "Area di memoria per variabili locali e chiamate di funzione (LIFO)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza Stack vs Heap:",
+        "options": [
+            "Stack: gestito automaticamente, veloce, limitato. Heap: gestito manualmente, più lento, flessibile.",
+            "Nessuna",
+            "Heap è più veloce",
+            "Stack è più grande"
+        ],
+        "answer": "Stack: gestito automaticamente, veloce, limitato. Heap: gestito manualmente, più lento, flessibile."
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore a funzione?",
+        "options": [
+            "Variabile che memorizza l'indirizzo di una funzione (permette callback)",
+            "Puntatore a intero",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Variabile che memorizza l'indirizzo di una funzione (permette callback)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è void*?",
+        "options": [
+            "Puntatore generico (a qualsiasi tipo)",
+            "Puntatore nullo",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Puntatore generico (a qualsiasi tipo)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è size_t?",
+        "options": [
+            "Tipo intero senza segno usato per rappresentare dimensioni (es. sizeof)",
+            "Int",
+            "Float",
+            "Char"
+        ],
+        "answer": "Tipo intero senza segno usato per rappresentare dimensioni (es. sizeof)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatore sizeof:",
+        "options": [
+            "Restituisce la dimensione in byte di un tipo o variabile",
+            "Lunghezza stringa",
+            "Valore",
+            "Indirizzo"
+        ],
+        "answer": "Restituisce la dimensione in byte di un tipo o variabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una struct anonima?",
+        "options": [
+            "Struct senza tag (nome)",
+            "Struct vuota",
+            "Struct segreta",
+            "Nulla"
+        ],
+        "answer": "Struct senza tag (nome)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è typedef?",
+        "options": [
+            "Crea un alias (nuovo nome) per un tipo esistente",
+            "Crea un nuovo tipo",
+            "Definisce una variabile",
+            "Nulla"
+        ],
+        "answer": "Crea un alias (nuovo nome) per un tipo esistente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è enum?",
+        "options": [
+            "Tipo enumerativo (insieme di costanti intere con nome)",
+            "Numero",
+            "Stringa",
+            "Lista"
+        ],
+        "answer": "Tipo enumerativo (insieme di costanti intere con nome)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è union?",
+        "options": [
+            "Struttura dati dove tutti i membri condividono la stessa area di memoria (dimensione del più grande)",
+            "Struct",
+            "Array",
+            "Lista"
+        ],
+        "answer": "Struttura dati dove tutti i membri condividono la stessa area di memoria (dimensione del più grande)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza struct vs union:",
+        "options": [
+            "Struct: membri hanno indirizzi diversi (somma dimensioni). Union: membri sovrapposti (max dimensione).",
+            "Nessuna",
+            "Union è più grande",
+            "Struct è più piccola"
+        ],
+        "answer": "Struct: membri hanno indirizzi diversi (somma dimensioni). Union: membri sovrapposti (max dimensione)."
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un bitfield?",
+        "options": [
+            "Membro di struct con dimensione specificata in bit (per risparmiare memoria)",
+            "Un campo di grano",
+            "Un bit",
+            "Un byte"
+        ],
+        "answer": "Membro di struct con dimensione specificata in bit (per risparmiare memoria)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operatori bitwise (bit a bit):",
+        "options": [
+            "& (AND), | (OR), ^ (XOR), ~ (NOT), << (Left Shift), >> (Right Shift)",
+            "+, -, *, /",
+            "&&, ||, !",
+            "Nulla"
+        ],
+        "answer": "& (AND), | (OR), ^ (XOR), ~ (NOT), << (Left Shift), >> (Right Shift)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa x << 1?",
+        "options": [
+            "Shift a sinistra di 1 bit (equivale a moltiplicare per 2)",
+            "Shift a destra",
+            "Divide per 2",
+            "Nulla"
+        ],
+        "answer": "Shift a sinistra di 1 bit (equivale a moltiplicare per 2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa x >> 1?",
+        "options": [
+            "Shift a destra di 1 bit (equivale a dividere per 2)",
+            "Shift a sinistra",
+            "Moltiplica per 2",
+            "Nulla"
+        ],
+        "answer": "Shift a destra di 1 bit (equivale a dividere per 2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la maschera di bit (bitmask)?",
+        "options": [
+            "Valore usato con operatori bitwise per selezionare/modificare specifici bit",
+            "Una maschera",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Valore usato con operatori bitwise per selezionare/modificare specifici bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il complemento a due?",
+        "options": [
+            "Metodo standard per rappresentare interi con segno in binario",
+            "Complemento a uno",
+            "Segno e modulo",
+            "Nulla"
+        ],
+        "answer": "Metodo standard per rappresentare interi con segno in binario"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si ottiene il complemento a due?",
+        "options": [
+            "Inverti tutti i bit e aggiungi 1",
+            "Inverti i bit",
+            "Aggiungi 1",
+            "Togli 1"
+        ],
+        "answer": "Inverti tutti i bit e aggiungi 1"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il codice ASCII?",
+        "options": [
+            "Standard di codifica caratteri a 7 bit (128 caratteri)",
+            "Unicode",
+            "EBCDIC",
+            "Binario"
+        ],
+        "answer": "Standard di codifica caratteri a 7 bit (128 caratteri)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Unicode?",
+        "options": [
+            "Standard universale per la codifica di caratteri di tutte le lingue (es. UTF-8)",
+            "ASCII",
+            "ANSI",
+            "Nulla"
+        ],
+        "answer": "Standard universale per la codifica di caratteri di tutte le lingue (es. UTF-8)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è UTF-8?",
+        "options": [
+            "Codifica Unicode a lunghezza variabile (1-4 byte), retrocompatibile con ASCII",
+            "UTF-16",
+            "ASCII",
+            "Binario"
+        ],
+        "answer": "Codifica Unicode a lunghezza variabile (1-4 byte), retrocompatibile con ASCII"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file system?",
+        "options": [
+            "Metodo e struttura dati che il sistema operativo usa per gestire i file su disco (es. NTFS, FAT32, ext4)",
+            "Un file",
+            "Un disco",
+            "Un errore"
+        ],
+        "answer": "Metodo e struttura dati che il sistema operativo usa per gestire i file su disco (es. NTFS, FAT32, ext4)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il path (percorso)?",
+        "options": [
+            "Indirizzo che specifica la posizione di un file o cartella nel file system",
+            "Una strada",
+            "Un nome",
+            "Un errore"
+        ],
+        "answer": "Indirizzo che specifica la posizione di un file o cartella nel file system"
+    },
+    {
+        "category": "Informatica",
+        "question": "Path assoluto vs relativo:",
+        "options": [
+            "Assoluto: parte dalla radice (es. C:\\). Relativo: parte dalla cartella corrente.",
+            "Nessuna",
+            "Assoluto è più corto",
+            "Relativo è più lungo"
+        ],
+        "answer": "Assoluto: parte dalla radice (es. C:\\). Relativo: parte dalla cartella corrente."
+    }
+]

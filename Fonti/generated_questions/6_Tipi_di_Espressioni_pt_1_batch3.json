@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è argc?",
+        "options": [
+            "Argument Count (numero di argomenti passati)",
+            "Argument Char",
+            "Argument Code",
+            "Nulla"
+        ],
+        "answer": "Argument Count (numero di argomenti passati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è argv?",
+        "options": [
+            "Argument Vector (array di stringhe contenente gli argomenti)",
+            "Argument Value",
+            "Argument Variable",
+            "Nulla"
+        ],
+        "answer": "Argument Vector (array di stringhe contenente gli argomenti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la ricorsione di coda (tail recursion)?",
+        "options": [
+            "Quando la chiamata ricorsiva è l'ultima operazione della funzione",
+            "Quando la funzione chiama la coda",
+            "Un errore",
+            "Un animale"
+        ],
+        "answer": "Quando la chiamata ricorsiva è l'ultima operazione della funzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché la tail recursion è importante?",
+        "options": [
+            "Può essere ottimizzata dal compilatore (Tail Call Optimization) per non consumare stack",
+            "È più bella",
+            "È più veloce",
+            "Non serve"
+        ],
+        "answer": "Può essere ottimizzata dal compilatore (Tail Call Optimization) per non consumare stack"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un algoritmo di ordinamento?",
+        "options": [
+            "Un algoritmo per mettere in ordine gli elementi di una lista/array",
+            "Un algoritmo per pulire",
+            "Un algoritmo per cercare",
+            "Un errore"
+        ],
+        "answer": "Un algoritmo per mettere in ordine gli elementi di una lista/array"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la complessità media del Bubble Sort?",
+        "options": [
+            "O(n^2)",
+            "O(n log n)",
+            "O(n)",
+            "O(1)"
+        ],
+        "answer": "O(n^2)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la complessità media del Quick Sort?",
+        "options": [
+            "O(n log n)",
+            "O(n^2)",
+            "O(n)",
+            "O(1)"
+        ],
+        "answer": "O(n log n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la complessità media del Merge Sort?",
+        "options": [
+            "O(n log n)",
+            "O(n^2)",
+            "O(n)",
+            "O(1)"
+        ],
+        "answer": "O(n log n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la ricerca lineare?",
+        "options": [
+            "Scorrere la lista elemento per elemento fino a trovare quello cercato",
+            "Cercare in linea retta",
+            "Cercare veloce",
+            "Cercare lento"
+        ],
+        "answer": "Scorrere la lista elemento per elemento fino a trovare quello cercato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la complessità della ricerca lineare?",
+        "options": [
+            "O(n)",
+            "O(log n)",
+            "O(1)",
+            "O(n^2)"
+        ],
+        "answer": "O(n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la ricerca binaria (o dicotomica)?",
+        "options": [
+            "Dividere ripetutamente l'intervallo di ricerca a metà (richiede lista ordinata)",
+            "Cercare due volte",
+            "Cercare a caso",
+            "Cercare veloce"
+        ],
+        "answer": "Dividere ripetutamente l'intervallo di ricerca a metà (richiede lista ordinata)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la complessità della ricerca binaria?",
+        "options": [
+            "O(log n)",
+            "O(n)",
+            "O(1)",
+            "O(n^2)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una lista concatenata (linked list)?",
+        "options": [
+            "Una struttura dati dinamica dove ogni elemento punta al successivo",
+            "Un array",
+            "Un file",
+            "Un errore"
+        ],
+        "answer": "Una struttura dati dinamica dove ogni elemento punta al successivo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Vantaggio della lista concatenata rispetto all'array:",
+        "options": [
+            "Inserimento e rimozione efficienti (O(1) se si ha il puntatore), dimensione dinamica",
+            "Accesso casuale veloce",
+            "Meno memoria",
+            "Più facile"
+        ],
+        "answer": "Inserimento e rimozione efficienti (O(1) se si ha il puntatore), dimensione dinamica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Svantaggio della lista concatenata rispetto all'array:",
+        "options": [
+            "Accesso sequenziale (O(n) per arrivare all'i-esimo elemento), overhead memoria per i puntatori",
+            "Lentezza inserimento",
+            "Dimensione fissa",
+            "Difficile"
+        ],
+        "answer": "Accesso sequenziale (O(n) per arrivare all'i-esimo elemento), overhead memoria per i puntatori"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è uno stack (pila)?",
+        "options": [
+            "Struttura dati LIFO (Last In First Out)",
+            "FIFO",
+            "Array",
+            "Lista"
+        ],
+        "answer": "Struttura dati LIFO (Last In First Out)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operazioni principali dello stack:",
+        "options": [
+            "Push (inserisci) e Pop (rimuovi)",
+            "Insert e Delete",
+            "Add e Remove",
+            "Enqueue e Dequeue"
+        ],
+        "answer": "Push (inserisci) e Pop (rimuovi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una coda (queue)?",
+        "options": [
+            "Struttura dati FIFO (First In First Out)",
+            "LIFO",
+            "Array",
+            "Lista"
+        ],
+        "answer": "Struttura dati FIFO (First In First Out)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Operazioni principali della coda:",
+        "options": [
+            "Enqueue (accoda) e Dequeue (decoda)",
+            "Push e Pop",
+            "Add e Remove",
+            "Insert e Delete"
+        ],
+        "answer": "Enqueue (accoda) e Dequeue (decoda)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un albero binario?",
+        "options": [
+            "Una struttura dati gerarchica dove ogni nodo ha al massimo due figli",
+            "Un albero vero",
+            "Una lista",
+            "Un array"
+        ],
+        "answer": "Una struttura dati gerarchica dove ogni nodo ha al massimo due figli"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un grafo?",
+        "options": [
+            "Un insieme di nodi (vertici) collegati da archi",
+            "Un disegno",
+            "Un albero",
+            "Una lista"
+        ],
+        "answer": "Un insieme di nodi (vertici) collegati da archi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una tabella hash (hash table)?",
+        "options": [
+            "Una struttura dati che associa chiavi a valori usando una funzione hash",
+            "Una tabella",
+            "Un array",
+            "Una lista"
+        ],
+        "answer": "Una struttura dati che associa chiavi a valori usando una funzione hash"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è la complessità media di ricerca in una hash table?",
+        "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n^2)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una collisione in una hash table?",
+        "options": [
+            "Quando due chiavi diverse producono lo stesso hash",
+            "Un incidente",
+            "Un errore",
+            "Una cancellazione"
+        ],
+        "answer": "Quando due chiavi diverse producono lo stesso hash"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si risolvono le collisioni?",
+        "options": [
+            "Concatenazione (chaining) o indirizzamento aperto (open addressing)",
+            "Cancellando i dati",
+            "Ignorandole",
+            "Riavviando"
+        ],
+        "answer": "Concatenazione (chaining) o indirizzamento aperto (open addressing)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la programmazione orientata agli oggetti (OOP)?",
+        "options": [
+            "Paradigma basato su 'oggetti' che contengono dati e metodi",
+            "Programmare oggetti",
+            "Programmare velocemente",
+            "Un errore"
+        ],
+        "answer": "Paradigma basato su 'oggetti' che contengono dati e metodi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il C supporta nativamente la OOP?",
+        "options": [
+            "No (è procedurale), ma si può simulare",
+            "Sì",
+            "Solo la versione C++",
+            "Forse"
+        ],
+        "answer": "No (è procedurale), ma si può simulare"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'incapsulamento?",
+        "options": [
+            "Nascondere i dettagli interni di un oggetto e proteggere i dati",
+            "Mettere in capsula",
+            "Chiudere",
+            "Aprire"
+        ],
+        "answer": "Nascondere i dettagli interni di un oggetto e proteggere i dati"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'ereditarietà?",
+        "options": [
+            "Meccanismo per creare nuove classi basate su classi esistenti",
+            "Ricevere soldi",
+            "Copiare codice",
+            "Un errore"
+        ],
+        "answer": "Meccanismo per creare nuove classi basate su classi esistenti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il polimorfismo?",
+        "options": [
+            "Capacità di oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi",
+            "Avere molte forme",
+            "Cambiare forma",
+            "Un errore"
+        ],
+        "answer": "Capacità di oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un design pattern?",
+        "options": [
+            "Una soluzione riutilizzabile a un problema comune di progettazione software",
+            "Un disegno",
+            "Un modello",
+            "Un errore"
+        ],
+        "answer": "Una soluzione riutilizzabile a un problema comune di progettazione software"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio di design pattern:",
+        "options": [
+            "Singleton, Factory, Observer",
+            "For, While, If",
+            "Int, Float, Char",
+            "Nulla"
+        ],
+        "answer": "Singleton, Factory, Observer"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Singleton?",
+        "options": [
+            "Garantisce che una classe abbia una sola istanza",
+            "Un single",
+            "Un numero",
+            "Un errore"
+        ],
+        "answer": "Garantisce che una classe abbia una sola istanza"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è UML?",
+        "options": [
+            "Unified Modeling Language (linguaggio grafico per modellare software)",
+            "Un linguaggio di programmazione",
+            "Un sistema operativo",
+            "Un errore"
+        ],
+        "answer": "Unified Modeling Language (linguaggio grafico per modellare software)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Git?",
+        "options": [
+            "Un sistema di controllo versione distribuito",
+            "Un social network",
+            "Un linguaggio",
+            "Un server"
+        ],
+        "answer": "Un sistema di controllo versione distribuito"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'git init'?",
+        "options": [
+            "Inizializza un nuovo repository Git",
+            "Inizia il PC",
+            "Inizia un programma",
+            "Nulla"
+        ],
+        "answer": "Inizializza un nuovo repository Git"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'git clone'?",
+        "options": [
+            "Copia un repository esistente",
+            "Clona una pecora",
+            "Copia un file",
+            "Nulla"
+        ],
+        "answer": "Copia un repository esistente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'git add'?",
+        "options": [
+            "Aggiunge file all'area di staging (preparazione per il commit)",
+            "Aggiunge numeri",
+            "Aggiunge utenti",
+            "Nulla"
+        ],
+        "answer": "Aggiunge file all'area di staging (preparazione per il commit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'git commit'?",
+        "options": [
+            "Salva le modifiche nello storico (crea uno snapshot)",
+            "Promette",
+            "Invia",
+            "Cancella"
+        ],
+        "answer": "Salva le modifiche nello storico (crea uno snapshot)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'git push'?",
+        "options": [
+            "Invia i commit locali a un repository remoto",
+            "Spinge",
+            "Preme",
+            "Cancella"
+        ],
+        "answer": "Invia i commit locali a un repository remoto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa 'git pull'?",
+        "options": [
+            "Scarica e unisce le modifiche da un repository remoto",
+            "Tira",
+            "Prende",
+            "Cancella"
+        ],
+        "answer": "Scarica e unisce le modifiche da un repository remoto"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un branch in Git?",
+        "options": [
+            "Una linea di sviluppo parallela",
+            "Un ramo",
+            "Un albero",
+            "Un errore"
+        ],
+        "answer": "Una linea di sviluppo parallela"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il merge?",
+        "options": [
+            "L'unione di due branch",
+            "Unione",
+            "Fusione",
+            "Errore"
+        ],
+        "answer": "L'unione di due branch"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un conflitto in Git?",
+        "options": [
+            "Quando due modifiche incompatibili vengono fatte sullo stesso file/riga",
+            "Una guerra",
+            "Un errore di rete",
+            "Un virus"
+        ],
+        "answer": "Quando due modifiche incompatibili vengono fatte sullo stesso file/riga"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è GitHub/GitLab?",
+        "options": [
+            "Piattaforme di hosting per repository Git",
+            "Git stesso",
+            "Un social",
+            "Un server"
+        ],
+        "answer": "Piattaforme di hosting per repository Git"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Docker?",
+        "options": [
+            "Una piattaforma per la containerizzazione di applicazioni",
+            "Una nave",
+            "Un porto",
+            "Un server"
+        ],
+        "answer": "Una piattaforma per la containerizzazione di applicazioni"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un container?",
+        "options": [
+            "Un'unità software standardizzata che impacchetta codice e dipendenze",
+            "Una scatola",
+            "Una macchina virtuale",
+            "Un file"
+        ],
+        "answer": "Un'unità software standardizzata che impacchetta codice e dipendenze"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza tra container e macchina virtuale (VM):",
+        "options": [
+            "I container condividono il kernel dell'OS host (più leggeri), le VM hanno un OS completo (più pesanti)",
+            "Nessuna",
+            "I container sono più lenti",
+            "Le VM sono più leggere"
+        ],
+        "answer": "I container condividono il kernel dell'OS host (più leggeri), le VM hanno un OS completo (più pesanti)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è Kubernetes?",
+        "options": [
+            "Un sistema di orchestrazione per container",
+            "Un container",
+            "Un OS",
+            "Un gioco"
+        ],
+        "answer": "Un sistema di orchestrazione per container"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il Cloud Computing?",
+        "options": [
+            "Erogazione di servizi di calcolo (server, storage, db) tramite Internet",
+            "Computer nelle nuvole",
+            "Meteo",
+            "Rete locale"
+        ],
+        "answer": "Erogazione di servizi di calcolo (server, storage, db) tramite Internet"
+    }
+]

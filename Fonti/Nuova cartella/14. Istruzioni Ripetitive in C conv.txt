@@ -1,0 +1,620 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Meccanica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Istruzioni ripetitive in C
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Istruzioni di controllo
+
+
+qIstruzioni che permettono di controllare (nel senso di regolare, governare, dirigere) il flusso di esecuzione, ovvero quali istruzioni devono essere eseguite e in quale ordine.
+
+
+
+•   Normalmente le istruzioni che compongono un algoritmo vengono eseguite una dopo l'altra, nell’ordine in cui compaiono.
+
+
+
+•   Le istruzioni di controllo permettono di modificare l'ordine in cui le istruzioni di un algoritmo vengono eseguite.
+Istruzione condizionale If-Else: sintassi
+
+
+
+
+if (predicato) istruzione_IF
+else istruzione_ELSE
+
+
+
+
+
+Dove predicato rappresenta una condizione logica (ovvero una espressione booleana, che in C può valere 0 o 1) detta condizione dell'istruzione If-Else.
+
+
+Mentre istruzione_IF è un'istruzione, detta parte If dell'istruzione If-Else. Ed istruzione_ELSE è un'istruzione, detta parte Else dell'istruzione If-Else.
+Istruzione condizionale If-Else: semantica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Se predicato vale 1, allora esegui istruzione_IF, altrimenti (ovvero se predicato vale 0) esegui istruzione_ELSE.
+Istruzione condizionale If: sintassi
+
+
+
+
+if (predicato) istruzione_IF
+
+
+
+
+
+
+
+Dove predicato rappresenta una condizione logica (ovvero una espressione booleana, che in C può valere 0 o 1) detta condizione dell'istruzione IF.
+
+
+Mentre istruzione_IF è un'istruzione, detta parte If dell'istruzione IF.
+Istruzione condizionale If: semantica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Se predicato vale 1, allora esegui istruzione_IF
+Blocco Istruzione strutturata composta da una sequenza di istruzioni
+
+
+
+
+
+
+
+Sintassi:
+
+
+{
+istruzione 1 istruzione 2 … istruzione k
+}
+
+Semantica:
+
+
+
+
+
+ESEGUI istruzione 1 POI	istruzione 2 …
+POI	istruzione k
+Istruzioni ripetitive Sono istruzioni che permettono di eseguire ripetutamente un'istruzione fintanto che è verificata una condizione.
+Istruzione While: sintassi
+
+
+
+
+while (predicato) istruzione_WHILE
+
+
+
+
+
+
+
+Dove predicato rappresenta una condizione logica (ovvero una espressione booleana, che in C può valere 0 o 1) detta condizione dell'istruzione While.
+
+
+Mentre istruzione_WHILE è un'istruzione, detta corpo dell'istruzione While.
+Istruzione While: semantica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Esegui ripetutamente (ed in ordine) i seguenti 2 passi: 1.	Valuta il predicato.
+2.	Se predicato vale 1, allora esegui istruzione_WHILE, altrimenti (ovvero se predicato vale 0) l'istruzione While termina.
+Problema: MCD
+
+§Trovare il massimo comune divisore fra due interi •   dati di ingresso: due interi X e Y
+•   pre-condizione: X e Y sono interi maggiori di zero •   dati di uscita: un intero Z
+•   post- condizione: Z è un interno uguale al m.c.d. di X e Y
+Diagramma a blocchi per algoritmo MCD
+
+
+
+
+
+
+
+
+
+
+1.   input (𝑥,𝑦)
+2.   inizializza risultato = min {𝑥,𝑦}
+3.   Fintanto che (risultato non divide 𝑥 o risultato non divide 𝑦) decrementa risultato di 1
+4.   output (risultato)
+MCD: programma
+Commenti sull'istruzione WHILE
+
+
+§
+
+Potrebbe succedere che il corpo del While non venga eseguito mai (se la
+condizione vale 0 la prima volta che viene valutata).
+
+
+
+
+Es: while ((x%risultato != 0) || (y%risultato != 0))
+
+Il corpo del While non viene eseguito mai se il MCD fra
+x ed y è min{𝑥,𝑦}
+
+§ Potrebbe succedere che l'esecuzione di un'istruzione While non termini
+mai.
+
+
+
+
+Es: while (2<5)	La condizione è sempre vera!
+
+
+
+§
+
+
+
+
+
+
+§
+
+Durante l'esecuzione di un'istruzione While, se il corpo viene eseguito 𝑘 volte, la condizione è stata valutata k+1 volte. Le prime k volte la
+condizione è stata valutata 1, la (𝑘 + 1)-esima volta 0.
+
+
+Il corpo dell'istruzione While non deve necessariamente essere una
+istruzione semplice (può ad esempio essere un blocco).
+
+
+Q: quali sono i valori stampati dal seguente frammento di codice?
+
+
+Q: quali sono i valori stampati dal seguente frammento di codice?
+
+
+A: 4 -1 1 -4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Osserva: durante la prima esecuzione del corpo del While, la variabile 𝑛 assume un valore negativo, quindi la condizione non è verificata; ma questo non implica la terminazione dell'istruzione While, in quanto la condizione viene valutata solo all'inizio ed al termine dell'esecuzione del corpo del While.
+
+
+Q: sul seguente frammento di codice e caduto del caffe! Assumendo che l'istruzione While termini, che cosa viene stampato dall'istruzione printf successiva?
+
+
+Q: sul seguente frammento di codice e caduto del caffe! Assumendo che l'istruzione While termini, che cosa viene stampato dall'istruzione printf successiva?
+
+
+A: 7
+Esercizio
+
+Scrivere un programma che stampa tutti gli interi positivi rappresentati nel tipo short.
+Istruzione Do-While: sintassi
+
+
+
+
+do istruzione_DO_WHILE
+while (predicato);
+
+
+
+
+
+Dove predicato rappresenta una condizione logica (ovvero una espressione booleana, che in C può valere 0 o 1) detta condizione dell'istruzione Do-While.
+
+
+
+Mentre istruzione_DO_WHILE è un'istruzione, detta corpo dell'istruzione Do-While.
+
+
+Occhio al punto e virgola!
+Istruzione Do-While: semantica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Esegui ripetutamente (ed in ordine) i seguenti 2 passi:
+
+
+1.	Esegui istruzione_DO_WHILE.
+
+
+2.	Valuta il predicato. Se predicato vale 1, allora torna ad eseguire questi due passi, altrimenti (ovvero se predicato vale 0) l'istruzione Do-While termina.
+Esercizio
+
+Progettare un'applicazione che ripetutamente legge un intero e stampa un messaggio che informa l'utente se l'intero inserito è positivo o negativo. Il programma termina quando l'utente inserisce il valore 0.
+Esercizio
+
+Progettare un'applicazione che ripetutamente legge un intero e stampa un messaggio che informa l'utente se l'intero inserito è positivo o negativo. Il programma termina quando l'utente inserisce il valore 0.
+Commenti sull'istruzione Do-While
+
+§ Il corpo dell'istruzione Do-While viene eseguito almeno una volta (quando la condizione non è mai stata valutata).
+
+
+
+§ Potrebbe succedere che l'esecuzione di un'istruzione Do-While non termini mai.
+Es: while (2<5)	La condizione è sempre vera!
+
+
+
+§ Durante l'esecuzione di un'istruzione Do-While, se il corpo viene eseguito 𝑘 volte, la condizione viene valutata k volte. Le prime 𝑘 − 1 volte la condizione viene valutata 1, la 𝑘-esima volta 0.
+
+
+
+§ Il corpo dell'istruzione Do-While non deve necessariamente essere una istruzione semplice (può ad esempio essere un blocco).
+Istruzione For: sintassi
+
+
+
+
+for (inizializzazione; predicato; aggiornamento) istruzione_FOR
+
+
+
+
+
+Dove predicato rappresenta una condizione logica (ovvero una espressione booleana, che in C può valere 0 o 1) detta condizione dell'istruzione For.
+
+
+
+Dove istruzione-FOR è un'istruzione, detta corpo dell'istruzione For.
+
+
+Dove inizializzazione è un'istruzione, detta inizializzazione dell'istruzione For.
+
+
+E dove aggiornamento è un'istruzione , detta aggiornamento dell'istruzione For.
+Istruzione For: semantica
+
+
+
+Esegui l’inizializzazione.
+
+
+Esegui ripetutamente (ed in ordine) i seguenti 2 passi:
+
+
+1.	Valuta il predicato.
+
+
+2.	Se predicato vale 1, allora esegui istruzione_For ed esegui aggiornamento, altrimenti (ovvero se predicato vale 0) l'istruzione For termina.
+Esercizio
+
+
+Realizzare un’applicazione Fattoriale che chiede all'utente di inserire un intero da tastiera, legge l'intero inserito dall'utente e stampa un messaggio che informa l'utente sul valore del fattoriale del numero letto.
+
+
+•  Il fattoriale di un numero 𝑛, denotato da 𝑛!, è 𝑛 ∗  𝑛 − 1  ∗
+𝑛 − 2  ∗ ⋯∗ 3 ∗ 2 ∗ 1
+Esercizio
+
+
+Realizzare un’applicazione Fattoriale che chiede all'utente di inserire un intero da tastiera, legge l'intero inserito dall'utente e stampa un messaggio che informa l'utente sul valore del fattoriale del numero letto.
+
+
+•  Il fattoriale di un numero 𝑛, denotato da 𝑛!, è 𝑛 ∗  𝑛 − 1  ∗
+𝑛 − 2  ∗ ⋯∗ 3 ∗ 2 ∗ 1
+Esempio di esecuzione Supponi che l'utente introduca il numero 3
+
+
+numero=3 fattoriale=1 Esegui il for:
+Esegui l'inizializzazione →  𝑖 = 1 Valuta la condizione: 1 ≤ 3 → 1
+Esegui il corpo → 𝑓𝑎𝑡𝑡𝑜𝑟𝑖𝑎𝑙𝑒 ∗= 1 ⇒ 𝑓𝑎𝑡𝑡𝑜𝑟𝑖𝑎𝑙𝑒 = 1 Esegui l'aggiornamento → 𝑖++ → 𝑖 = 2
+Valuta la condizione: 2 ≤ 3 → 1
+Esegui il corpo → 𝑓𝑎𝑡𝑡𝑜𝑟𝑖𝑎𝑙𝑒 ∗= 2 ⇒ 𝑓𝑎𝑡𝑡𝑜𝑟𝑖𝑎𝑙𝑒 = 2 Esegui l'aggiornamento → 𝑖++ → 𝑖 = 3
+Valuta la condizione: 3 ≤ 3 → 1
+Esegui il corpo → 𝑓𝑎𝑡𝑡𝑜𝑟𝑖𝑎𝑙𝑒 ∗= 3 →  𝑓𝑎𝑡𝑡𝑜𝑟𝑖𝑎𝑙𝑒 = 6 Esegui l'aggiornamento → 𝑖++ ⇒ 𝑖 = 4
+Valuta la condizione: 4 ≤ 3 → 0 ⇒ Termina l’esecuzione del For
+Variabile contatore
+
+
+E’ una variabile utilizzata in un'istruzione For, tipicamente per scandire tutti gli elementi di una sequenza. Ad esempio:
+
+
+o Tutti gli interi da 1 ad 𝑛 (o da 0 a 𝑛, o da 𝑛 a 1 ...) o Tutti i caratteri di una stringa
+o Tutti gli elementi di un array
+Istruzione For con variabile contatore
+
+
+Variabile contatore 𝑖 In una istruzione For
+con variabile contatore…
+
+
+
+§ L'inizializzazione del For è un’assegnazione alla variabile contatore (spesso si usa una dichiarazione con inizializzazione).
+§ La condizione del For è un confronto fra la variabile contatore ed una espressione che non viene modificata nel corpo del For.
+§ Il corpo del For accede alla variabile contatore e non ne modifica il valore.
+§ L'aggiornamento del For è un incremento o un decremento della variabile contatore.
+Istruzione For con variabile contatore
+
+
+
+
+
+
+
+
+
+
+
+
+
+§ In pratica, il corpo dell'istruzione For viene eseguito ripetutamente, mentre alla variabile contatore vengono fatti assumere tutti i valori di una successione crescente (es: 𝑖 = 1,2,…,𝑛 − 1,𝑛) o decrescente.
+§ I valori estremi di tale successione sono stabiliti nella inizializzazione e nella condizione.
+§ Il modo di passare da un elemento all'altro della successione è stabilito dall'aggiornamento.
+Esercizio
+
+Realizzare un'applicazione TuttiDivisori che legge un numero e ne stampa tutti i divisori.
+Esercizio
+
+Realizzare un'applicazione TuttiDivisori che legge un numero e ne stampa tutti i divisori.
+Esercizio
+
+Realizzare un'applicazione TuttiDivisori2 che legge un numero e ne stampa tutti i divisori, dal più grande al più piccolo.
+Esercizio
+
+Realizzare un'applicazione TuttiDivisori2 che legge un numero e ne stampa tutti i divisori, dal più grande al più piccolo.
+While, do-while o for? Generalmente si usa l'istruzione For quando bisogna eseguire ripetutamente un'istruzione per un determinato numero di volte
+(ad esempio per un numero di volte pari al valore di una variabile).
+
+
+
+Generalmente si usa l'istruzione While quando bisogna eseguire ripetutamente un’istruzione per un numero imprecisato di volte, che può essere anche zero.
+
+
+
+Generalmente si usa l'istruzione Do-While quando bisogna eseguire ripetutamente un'istruzione per un numero imprecisato di volte, ma almeno una volta.
+Quale istruzione è più potente? Una istruzione For può essere espressa per mezzo di una
+istruzione While.
+
+
+
+for (inizializzazione; predicato; aggiornamento) istruzione_FOR
+
+inizializzazione while (predicato){
+istruzione_FOR aggiornamento
+}
+
+
+
+Una istruzione While può essere espressa per mezzo di una istruzione For.
+
+
+
+while (predicato) istruzione_WHILE
+
+for (; predicato;) istruzione_WHILE
+Quale istruzione è più potente? Una istruzione Do-While può essere espressa per mezzo di una istruzione While.
+
+
+
+do istruzione_DO_WHILE
+while (predicato);
+
+
+istruzione_DO_WHILE while (predicato)
+istruzione_DO_WHILE
+
+
+
+
+Una istruzione While può essere espressa per mezzo di una istruzione Do-While (e di un’istruzione If).
+
+
+
+
+while (predicato) istruzione_WHILE
+
+if (predicato) do
+istruzione_WHILE while (predicato);
+Errori comuni Ciclo infinito: progettazione di un'istruzione ripetitiva in cui la condizione non smette mai di essere verificata.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q: Ciascuno di questi frammenti di codice per stampare i numeri interi da 0 a 9 genera un ciclo infinito. Perché?
+Errori comuni Ciclo infinito: progettazione di un'istruzione ripetitiva in cui la condizione non smette mai di essere verificata.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Manca incremento 𝑖	Manca incremento 𝑖:
+senza parentesi graffe 𝑖++ non fa parte della istruzione_while.
+
+Il punto e virgola dopo il predicato fa si che l'istruzione While sia vuota
+
+
+
+
+
+
+Q: Ciascuno di questi frammenti di codice per stampare i numeri interi da 0 a 9 genera un ciclo infinito. Perché?
+Errori comuni Errori di uno: il corpo di un'istruzione ripetitiva viene eseguito
+una volta in più o una volta in meno di quanto era nelle intenzioni. Sono causati da un errore nell’inizializzazione o nelle condizioni.
+
+
+
+
+
+Es: frammento di codice che “dovrebbe” Stampare 5 numeri a partire da un numero 𝑛.
+
+Ne stampa 6
+
+
+
+Molto comuni con array e stringhe.
+Istruzioni ripetitive annidate Un'istruzione ripetitiva è una singola istruzione. E’ quindi possibile che il
+corpo di un'istruzione ripetitiva sia esso stesso una istruzione ripetitiva.
+
+
+
+Esercizio
+Realizzare un'applicazione CentoNumeri che stampa tutti i numeri compresi fra 0 e 99, in maniera tale che ogni decina compaia su una riga diversa.
+
+
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 ..
+…
+90 91 …	98 99
+Esercizio Scrivere una applicazione CoppieCoprimi che stampa tutte le coppie (𝑖,𝑗) di
+interi tali che 1 ≤ 𝑖 ≤ 𝑗 ≤ 10 e 𝑖 e 𝑗 sono coprimi, ovvero il loro MCD è pari a 1.
+Altre risorse §Bellini, Guidi: Linguaggio C — Capitoli 4.6, 4.8, 4.9,
+9.1—9.5, 9.7, 9.8 (Cenni)

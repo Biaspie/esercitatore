@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "toupper(c):",
+        "options": [
+            "Converte c in maiuscolo (se è lettera minuscola)",
+            "Minuscolo",
+            "Numero",
+            "Nulla"
+        ],
+        "answer": "Converte c in maiuscolo (se è lettera minuscola)"
+    },
+    {
+        "category": "Informatica",
+        "question": "tolower(c):",
+        "options": [
+            "Converte c in minuscolo",
+            "Maiuscolo",
+            "Numero",
+            "Nulla"
+        ],
+        "answer": "Converte c in minuscolo"
+    },
+    {
+        "category": "Informatica",
+        "question": "ASCII:",
+        "options": [
+            "American Standard Code for Information Interchange (codifica 7 bit)",
+            "Unicode",
+            "EBCDIC",
+            "Nulla"
+        ],
+        "answer": "American Standard Code for Information Interchange (codifica 7 bit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore ASCII 'A':",
+        "options": [
+            "65",
+            "97",
+            "48",
+            "Nulla"
+        ],
+        "answer": "65"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore ASCII 'a':",
+        "options": [
+            "97",
+            "65",
+            "48",
+            "Nulla"
+        ],
+        "answer": "97"
+    },
+    {
+        "category": "Informatica",
+        "question": "Valore ASCII '0':",
+        "options": [
+            "48",
+            "0",
+            "10",
+            "Nulla"
+        ],
+        "answer": "48"
+    },
+    {
+        "category": "Informatica",
+        "question": "Differenza puntatore vs array (sizeof):",
+        "options": [
+            "sizeof(array) = dimensione totale byte, sizeof(puntatore) = dimensione indirizzo (4/8 byte)",
+            "Uguali",
+            "Nulla",
+            "Errore"
+        ],
+        "answer": "sizeof(array) = dimensione totale byte, sizeof(puntatore) = dimensione indirizzo (4/8 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Stringa come parametro const (const char *s):",
+        "options": [
+            "Promette che la funzione non modificherà la stringa (buona pratica)",
+            "Modificabile",
+            "Copia",
+            "Nulla"
+        ],
+        "answer": "Promette che la funzione non modificherà la stringa (buona pratica)"
+    },
+    {
+        "category": "Informatica",
+        "question": "strdup(s):",
+        "options": [
+            "Duplica una stringa allocando nuova memoria (non standard ANSI C, ma POSIX)",
+            "Copia",
+            "Incolla",
+            "Nulla"
+        ],
+        "answer": "Duplica una stringa allocando nuova memoria (non standard ANSI C, ma POSIX)"
+    },
+    {
+        "category": "Informatica",
+        "question": "strcspn(s, reject):",
+        "options": [
+            "Calcola lunghezza segmento iniziale che NON contiene caratteri in reject",
+            "Cerca",
+            "Span",
+            "Nulla"
+        ],
+        "answer": "Calcola lunghezza segmento iniziale che NON contiene caratteri in reject"
+    },
+    {
+        "category": "Informatica",
+        "question": "strspn(s, accept):",
+        "options": [
+            "Calcola lunghezza segmento iniziale che contiene SOLO caratteri in accept",
+            "Cerca",
+            "Span",
+            "Nulla"
+        ],
+        "answer": "Calcola lunghezza segmento iniziale che contiene SOLO caratteri in accept"
+    },
+    {
+        "category": "Informatica",
+        "question": "strpbrk(s, accept):",
+        "options": [
+            "Trova la prima occorrenza in s di un qualsiasi carattere presente in accept",
+            "Cerca",
+            "Break",
+            "Nulla"
+        ],
+        "answer": "Trova la prima occorrenza in s di un qualsiasi carattere presente in accept"
+    },
+    {
+        "category": "Informatica",
+        "question": "memchr(ptr, val, num):",
+        "options": [
+            "Cerca la prima occorrenza di val nei primi num byte di ptr",
+            "Cerca",
+            "Memoria",
+            "Nulla"
+        ],
+        "answer": "Cerca la prima occorrenza di val nei primi num byte di ptr"
+    },
+    {
+        "category": "Informatica",
+        "question": "Regular Expression (Regex):",
+        "options": [
+            "Sequenza di caratteri che definisce un pattern di ricerca (potente per stringhe)",
+            "Stringa",
+            "Ricerca",
+            "Nulla"
+        ],
+        "answer": "Sequenza di caratteri che definisce un pattern di ricerca (potente per stringhe)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Pattern Matching:",
+        "options": [
+            "Tecnica per controllare se una sequenza di token ha un certo pattern",
+            "Regex",
+            "Ricerca",
+            "Nulla"
+        ],
+        "answer": "Tecnica per controllare se una sequenza di token ha un certo pattern"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parsing:",
+        "options": [
+            "Analisi sintattica di una stringa per determinarne la struttura grammaticale",
+            "Analisi",
+            "Lettura",
+            "Nulla"
+        ],
+        "answer": "Analisi sintattica di una stringa per determinarne la struttura grammaticale"
+    },
+    {
+        "category": "Informatica",
+        "question": "Tokenization (Lexing):",
+        "options": [
+            "Divisione di una stringa in unità significative (token)",
+            "Parsing",
+            "Analisi",
+            "Nulla"
+        ],
+        "answer": "Divisione di una stringa in unità significative (token)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Concatenazione stringhe efficienza:",
+        "options": [
+            "strcat è O(N) (deve trovare la fine), concatenazioni ripetute sono O(N^2) (Schlemiel the Painter's algorithm)",
+            "Veloce",
+            "O(1)",
+            "Nulla"
+        ],
+        "answer": "strcat è O(N) (deve trovare la fine), concatenazioni ripetute sono O(N^2) (Schlemiel the Painter's algorithm)"
+    },
+    {
+        "category": "Informatica",
+        "question": "StringBuilder (Java/C#) vs C:",
+        "options": [
+            "In C bisogna gestire manualmente buffer e riallocazioni per concatenazioni efficienti",
+            "Uguale",
+            "C è meglio",
+            "Nulla"
+        ],
+        "answer": "In C bisogna gestire manualmente buffer e riallocazioni per concatenazioni efficienti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Internazionalizzazione (i18n):",
+        "options": [
+            "Progettare software adattabile a diverse lingue e regioni senza modifiche ingegneristiche",
+            "Traduzione",
+            "L10n",
+            "Nulla"
+        ],
+        "answer": "Progettare software adattabile a diverse lingue e regioni senza modifiche ingegneristiche"
+    },
+    {
+        "category": "Informatica",
+        "question": "Localizzazione (l10n):",
+        "options": [
+            "Adattare software a una specifica regione (traduzione testi, formati data/ora)",
+            "i18n",
+            "Traduzione",
+            "Nulla"
+        ],
+        "answer": "Adattare software a una specifica regione (traduzione testi, formati data/ora)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Encoding (UTF-8, ASCII):",
+        "options": [
+            "Mappatura tra caratteri e sequenze di bit",
+            "Codice",
+            "Cifratura",
+            "Nulla"
+        ],
+        "answer": "Mappatura tra caratteri e sequenze di bit"
+    },
+    {
+        "category": "Informatica",
+        "question": "BOM (Byte Order Mark):",
+        "options": [
+            "Carattere speciale all'inizio di un file testo per indicare encoding ed endianness",
+            "Mark",
+            "Byte",
+            "Nulla"
+        ],
+        "answer": "Carattere speciale all'inizio di un file testo per indicare encoding ed endianness"
+    },
+    {
+        "category": "Informatica",
+        "question": "CRLF vs LF:",
+        "options": [
+            "Terminatori di riga: Windows usa CRLF (\\r\\n), Unix/Linux usa LF (\\n)",
+            "Uguali",
+            "Mac",
+            "Nulla"
+        ],
+        "answer": "Terminatori di riga: Windows usa CRLF (\\r\\n), Unix/Linux usa LF (\\n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "CSV Parsing:",
+        "options": [
+            "Leggere file Comma Separated Values (attenzione a virgole nelle stringhe quotate)",
+            "Excel",
+            "File",
+            "Nulla"
+        ],
+        "answer": "Leggere file Comma Separated Values (attenzione a virgole nelle stringhe quotate)"
+    },
+    {
+        "category": "Informatica",
+        "question": "JSON Parsing:",
+        "options": [
+            "Analizzare stringhe JSON per estrarre oggetti/array (usare librerie come cJSON)",
+            "XML",
+            "Testo",
+            "Nulla"
+        ],
+        "answer": "Analizzare stringhe JSON per estrarre oggetti/array (usare librerie come cJSON)"
+    },
+    {
+        "category": "Informatica",
+        "question": "XML Parsing:",
+        "options": [
+            "Analizzare XML (DOM vs SAX parsers)",
+            "JSON",
+            "HTML",
+            "Nulla"
+        ],
+        "answer": "Analizzare XML (DOM vs SAX parsers)"
+    },
+    {
+        "category": "Informatica",
+        "question": "URL Encoding (Percent-encoding):",
+        "options": [
+            "Codificare caratteri speciali negli URL (es. spazio diventa %20)",
+            "Web",
+            "Link",
+            "Nulla"
+        ],
+        "answer": "Codificare caratteri speciali negli URL (es. spazio diventa %20)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Base64 Encoding:",
+        "options": [
+            "Codifica dati binari in stringhe ASCII (usato in email, URL)",
+            "Cifratura",
+            "Compressione",
+            "Nulla"
+        ],
+        "answer": "Codifica dati binari in stringhe ASCII (usato in email, URL)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Hash stringa:",
+        "options": [
+            "Calcolare un valore numerico da una stringa (per hash table, checksum)",
+            "Cifratura",
+            "Numero",
+            "Nulla"
+        ],
+        "answer": "Calcolare un valore numerico da una stringa (per hash table, checksum)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Checksum:",
+        "options": [
+            "Valore calcolato per verificare l'integrità dei dati (es. CRC32)",
+            "Hash",
+            "Somma",
+            "Nulla"
+        ],
+        "answer": "Valore calcolato per verificare l'integrità dei dati (es. CRC32)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Levenshtein Distance:",
+        "options": [
+            "Misura della differenza tra due stringhe (numero minimo di modifiche per trasformare una nell'altra)",
+            "Distanza",
+            "Stringa",
+            "Nulla"
+        ],
+        "answer": "Misura della differenza tra due stringhe (numero minimo di modifiche per trasformare una nell'altra)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Hamming Distance:",
+        "options": [
+            "Numero di posizioni in cui due stringhe di uguale lunghezza differiscono",
+            "Distanza",
+            "Bit",
+            "Nulla"
+        ],
+        "answer": "Numero di posizioni in cui due stringhe di uguale lunghezza differiscono"
+    },
+    {
+        "category": "Informatica",
+        "question": "Trie (Prefix Tree) per stringhe:",
+        "options": [
+            "Struttura dati efficiente per memorizzare e cercare stringhe (es. autocompletamento)",
+            "Albero",
+            "Lista",
+            "Nulla"
+        ],
+        "answer": "Struttura dati efficiente per memorizzare e cercare stringhe (es. autocompletamento)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Suffix Tree:",
+        "options": [
+            "Albero che contiene tutti i suffissi di una stringa (potente per ricerche sottostringhe)",
+            "Trie",
+            "Albero",
+            "Nulla"
+        ],
+        "answer": "Albero che contiene tutti i suffissi di una stringa (potente per ricerche sottostringhe)"
+    },
+    {
+        "category": "Informatica",
+        "question": "KMP Algorithm (Knuth-Morris-Pratt):",
+        "options": [
+            "Algoritmo efficiente per ricerca di sottostringhe (evita confronti inutili)",
+            "Ricerca",
+            "Stringa",
+            "Nulla"
+        ],
+        "answer": "Algoritmo efficiente per ricerca di sottostringhe (evita confronti inutili)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Rabin-Karp Algorithm:",
+        "options": [
+            "Algoritmo di ricerca sottostringhe basato su hashing (rolling hash)",
+            "Ricerca",
+            "Hash",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ricerca sottostringhe basato su hashing (rolling hash)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Boyer-Moore Algorithm:",
+        "options": [
+            "Algoritmo di ricerca sottostringhe molto veloce (salta caratteri)",
+            "Ricerca",
+            "Stringa",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di ricerca sottostringhe molto veloce (salta caratteri)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Huffman Coding:",
+        "options": [
+            "Algoritmo di compressione dati lossless basato sulla frequenza dei caratteri",
+            "Compressione",
+            "Codifica",
+            "Nulla"
+        ],
+        "answer": "Algoritmo di compressione dati lossless basato sulla frequenza dei caratteri"
+    },
+    {
+        "category": "Informatica",
+        "question": "LZ77 / LZ78:",
+        "options": [
+            "Algoritmi di compressione dizionario (base di ZIP, GZIP)",
+            "Compressione",
+            "Zip",
+            "Nulla"
+        ],
+        "answer": "Algoritmi di compressione dizionario (base di ZIP, GZIP)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Run-Length Encoding (RLE):",
+        "options": [
+            "Compressione semplice che sostituisce sequenze ripetute con (valore, conteggio)",
+            "Compressione",
+            "Codifica",
+            "Nulla"
+        ],
+        "answer": "Compressione semplice che sostituisce sequenze ripetute con (valore, conteggio)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Lossless Compression:",
+        "options": [
+            "Compressione senza perdita di dati (originale ricostruibile perfettamente)",
+            "Lossy",
+            "Zip",
+            "Nulla"
+        ],
+        "answer": "Compressione senza perdita di dati (originale ricostruibile perfettamente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Lossy Compression:",
+        "options": [
+            "Compressione con perdita di dati (es. JPEG, MP3), approssimazione per risparmiare spazio",
+            "Lossless",
+            "Media",
+            "Nulla"
+        ],
+        "answer": "Compressione con perdita di dati (es. JPEG, MP3), approssimazione per risparmiare spazio"
+    },
+    {
+        "category": "Informatica",
+        "question": "Entropy (Information Theory):",
+        "options": [
+            "Misura dell'incertezza/informazione media in un messaggio (limite compressione)",
+            "Entropia",
+            "Fisica",
+            "Nulla"
+        ],
+        "answer": "Misura dell'incertezza/informazione media in un messaggio (limite compressione)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Shannon's Source Coding Theorem:",
+        "options": [
+            "Stabilisce il limite teorico alla compressione lossless (entropia)",
+            "Teorema",
+            "Shannon",
+            "Nulla"
+        ],
+        "answer": "Stabilisce il limite teorico alla compressione lossless (entropia)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Parity Bit:",
+        "options": [
+            "Bit aggiunto per rilevare errori semplici (pari/dispari)",
+            "Errore",
+            "Bit",
+            "Nulla"
+        ],
+        "answer": "Bit aggiunto per rilevare errori semplici (pari/dispari)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Hamming Code:",
+        "options": [
+            "Codice a correzione d'errore (può correggere errori a singolo bit)",
+            "Codice",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Codice a correzione d'errore (può correggere errori a singolo bit)"
+    },
+    {
+        "category": "Informatica",
+        "question": "CRC (Cyclic Redundancy Check):",
+        "options": [
+            "Codice per rilevare modifiche accidentali ai dati (usato in rete/storage)",
+            "Checksum",
+            "Errore",
+            "Nulla"
+        ],
+        "answer": "Codice per rilevare modifiche accidentali ai dati (usato in rete/storage)"
+    },
+    {
+        "category": "Informatica",
+        "question": "MD5:",
+        "options": [
+            "Funzione hash crittografica (obsoleta, collisioni facili)",
+            "SHA",
+            "Hash",
+            "Nulla"
+        ],
+        "answer": "Funzione hash crittografica (obsoleta, collisioni facili)"
+    },
+    {
+        "category": "Informatica",
+        "question": "SHA-256:",
+        "options": [
+            "Funzione hash crittografica sicura (famiglia SHA-2)",
+            "MD5",
+            "Hash",
+            "Nulla"
+        ],
+        "answer": "Funzione hash crittografica sicura (famiglia SHA-2)"
+    }
+]

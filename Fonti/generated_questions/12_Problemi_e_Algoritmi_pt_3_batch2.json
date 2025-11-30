@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Quale funzione libera la memoria allocata dinamicamente?",
+        "options": [
+            "free()",
+            "delete()",
+            "remove()",
+            "clear()"
+        ],
+        "answer": "free()"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se non libero la memoria (memory leak)?",
+        "options": [
+            "La memoria rimane occupata inutilmente fino alla fine del programma (o riavvio)",
+            "Nulla",
+            "Il computer si spegne",
+            "Errore di compilazione"
+        ],
+        "answer": "La memoria rimane occupata inutilmente fino alla fine del programma (o riavvio)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file binario?",
+        "options": [
+            "File che contiene dati in formato non leggibile direttamente (es. eseguibili, immagini)",
+            "File di testo",
+            "File vuoto",
+            "Errore"
+        ],
+        "answer": "File che contiene dati in formato non leggibile direttamente (es. eseguibili, immagini)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un file di testo?",
+        "options": [
+            "File che contiene caratteri leggibili (ASCII/Unicode)",
+            "File binario",
+            "File eseguibile",
+            "Errore"
+        ],
+        "answer": "File che contiene caratteri leggibili (ASCII/Unicode)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si apre un file in C?",
+        "options": [
+            "fopen()",
+            "open()",
+            "file()",
+            "start()"
+        ],
+        "answer": "fopen()"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si chiude un file in C?",
+        "options": [
+            "fclose()",
+            "close()",
+            "end()",
+            "stop()"
+        ],
+        "answer": "fclose()"
+    },
+    {
+        "category": "Informatica",
+        "question": "Modalità di apertura 'r':",
+        "options": [
+            "Lettura (read)",
+            "Scrittura",
+            "Append",
+            "Esecuzione"
+        ],
+        "answer": "Lettura (read)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Modalità di apertura 'w':",
+        "options": [
+            "Scrittura (write) - sovrascrive se esiste",
+            "Lettura",
+            "Append",
+            "Esecuzione"
+        ],
+        "answer": "Scrittura (write) - sovrascrive se esiste"
+    },
+    {
+        "category": "Informatica",
+        "question": "Modalità di apertura 'a':",
+        "options": [
+            "Append (aggiunge alla fine)",
+            "Lettura",
+            "Scrittura",
+            "Esecuzione"
+        ],
+        "answer": "Append (aggiunge alla fine)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è EOF?",
+        "options": [
+            "End Of File (valore speciale che indica la fine del file)",
+            "Errore",
+            "Inizio",
+            "Nulla"
+        ],
+        "answer": "End Of File (valore speciale che indica la fine del file)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un debugger?",
+        "options": [
+            "Strumento per analizzare l'esecuzione di un programma e trovare bug",
+            "Un compilatore",
+            "Un editor",
+            "Un gioco"
+        ],
+        "answer": "Strumento per analizzare l'esecuzione di un programma e trovare bug"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un breakpoint?",
+        "options": [
+            "Punto in cui il debugger ferma l'esecuzione per permettere l'ispezione",
+            "Un errore",
+            "Una pausa",
+            "Un caffè"
+        ],
+        "answer": "Punto in cui il debugger ferma l'esecuzione per permettere l'ispezione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la compilazione condizionale?",
+        "options": [
+            "Includere o escludere parti di codice in base a direttive del preprocessore (#ifdef)",
+            "Compilare a caso",
+            "Compilare se piove",
+            "Nulla"
+        ],
+        "answer": "Includere o escludere parti di codice in base a direttive del preprocessore (#ifdef)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una macro?",
+        "options": [
+            "Frammento di codice a cui viene dato un nome (#define)",
+            "Una funzione grande",
+            "Un errore",
+            "Un file"
+        ],
+        "answer": "Frammento di codice a cui viene dato un nome (#define)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un header file (.h)?",
+        "options": [
+            "File che contiene dichiarazioni di funzioni e macro condivise tra più file sorgente",
+            "Un file eseguibile",
+            "Un file immagine",
+            "Un errore"
+        ],
+        "answer": "File che contiene dichiarazioni di funzioni e macro condivise tra più file sorgente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa fa #include <stdio.h>?",
+        "options": [
+            "Include l'header standard per input/output (printf, scanf...)",
+            "Include tutto",
+            "Include matematica",
+            "Nulla"
+        ],
+        "answer": "Include l'header standard per input/output (printf, scanf...)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il linking?",
+        "options": [
+            "Fase della compilazione che unisce i file oggetto e le librerie in un unico eseguibile",
+            "Unione di stringhe",
+            "Unione di file",
+            "Errore"
+        ],
+        "answer": "Fase della compilazione che unisce i file oggetto e le librerie in un unico eseguibile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una libreria statica (.lib, .a)?",
+        "options": [
+            "Libreria il cui codice viene copiato nell'eseguibile al momento del linking",
+            "Libreria dinamica",
+            "Libreria online",
+            "Errore"
+        ],
+        "answer": "Libreria il cui codice viene copiato nell'eseguibile al momento del linking"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una libreria dinamica (.dll, .so)?",
+        "options": [
+            "Libreria caricata a runtime (condivisa tra più programmi)",
+            "Libreria statica",
+            "Libreria online",
+            "Errore"
+        ],
+        "answer": "Libreria caricata a runtime (condivisa tra più programmi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il makefile?",
+        "options": [
+            "File che descrive come compilare un progetto (dipendenze e comandi)",
+            "Un file testo",
+            "Un file eseguibile",
+            "Un errore"
+        ],
+        "answer": "File che descrive come compilare un progetto (dipendenze e comandi)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un IDE?",
+        "options": [
+            "Integrated Development Environment (ambiente di sviluppo integrato: editor, compilatore, debugger)",
+            "Un editor",
+            "Un compilatore",
+            "Un gioco"
+        ],
+        "answer": "Integrated Development Environment (ambiente di sviluppo integrato: editor, compilatore, debugger)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Esempio di IDE:",
+        "options": [
+            "Visual Studio, Eclipse, IntelliJ",
+            "Notepad",
+            "Word",
+            "Excel"
+        ],
+        "answer": "Visual Studio, Eclipse, IntelliJ"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il refactoring?",
+        "options": [
+            "Ristrutturare il codice per migliorarne la leggibilità/manutenibilità senza cambiarne il comportamento esterno",
+            "Riscrivere tutto",
+            "Cancellare tutto",
+            "Aggiungere feature"
+        ],
+        "answer": "Ristrutturare il codice per migliorarne la leggibilità/manutenibilità senza cambiarne il comportamento esterno"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il testing?",
+        "options": [
+            "Processo di verifica che il software funzioni correttamente",
+            "Scrivere codice",
+            "Giocare",
+            "Dormire"
+        ],
+        "answer": "Processo di verifica che il software funzioni correttamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo unit testing?",
+        "options": [
+            "Testare singole unità di codice (funzioni, classi) isolatamente",
+            "Testare tutto insieme",
+            "Testare l'utente",
+            "Nulla"
+        ],
+        "answer": "Testare singole unità di codice (funzioni, classi) isolatamente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'integration testing?",
+        "options": [
+            "Testare come interagiscono diversi moduli del sistema",
+            "Unit testing",
+            "System testing",
+            "Nulla"
+        ],
+        "answer": "Testare come interagiscono diversi moduli del sistema"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il debugging?",
+        "options": [
+            "Processo di individuazione e rimozione dei bug (errori)",
+            "Creare bug",
+            "Ignorare bug",
+            "Nulla"
+        ],
+        "answer": "Processo di individuazione e rimozione dei bug (errori)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un bug?",
+        "options": [
+            "Errore o difetto nel software che causa comportamenti imprevisti",
+            "Un insetto",
+            "Una feature",
+            "Un gioco"
+        ],
+        "answer": "Errore o difetto nel software che causa comportamenti imprevisti"
+    },
+    {
+        "category": "Informatica",
+        "question": "Origine del termine 'bug':",
+        "options": [
+            "Un vero insetto (falena) trovato in un computer Mark II nel 1947",
+            "Un errore di calcolo",
+            "Un virus",
+            "Nulla"
+        ],
+        "answer": "Un vero insetto (falena) trovato in un computer Mark II nel 1947"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la documentazione?",
+        "options": [
+            "Testo che spiega come funziona e come si usa il software (commenti, manuali)",
+            "Codice inutile",
+            "File temporanei",
+            "Nulla"
+        ],
+        "answer": "Testo che spiega come funziona e come si usa il software (commenti, manuali)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché i commenti sono importanti?",
+        "options": [
+            "Per aiutare chi legge il codice (incluso se stessi nel futuro) a capirlo",
+            "Per il compilatore",
+            "Per occupare spazio",
+            "Per bellezza"
+        ],
+        "answer": "Per aiutare chi legge il codice (incluso se stessi nel futuro) a capirlo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Simbolo per commenti su una riga in C:",
+        "options": [
+            "//",
+            "/* */",
+            "#",
+            "--"
+        ],
+        "answer": "//"
+    },
+    {
+        "category": "Informatica",
+        "question": "Simbolo per commenti multi-riga in C:",
+        "options": [
+            "/* ... */",
+            "//",
+            "#",
+            "<!-- -->"
+        ],
+        "answer": "/* ... */"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità temporale?",
+        "options": [
+            "Quanto tempo impiega l'algoritmo in funzione della dimensione dell'input (O-grande)",
+            "Quanto è difficile da scrivere",
+            "Quanto dura",
+            "Nulla"
+        ],
+        "answer": "Quanto tempo impiega l'algoritmo in funzione della dimensione dell'input (O-grande)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la complessità spaziale?",
+        "options": [
+            "Quanta memoria usa l'algoritmo in funzione della dimensione dell'input",
+            "Quanto spazio occupa su disco",
+            "Quanto è grande il monitor",
+            "Nulla"
+        ],
+        "answer": "Quanta memoria usa l'algoritmo in funzione della dimensione dell'input"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(1) significa:",
+        "options": [
+            "Tempo costante (indipendente dall'input)",
+            "Tempo lineare",
+            "Tempo quadratico",
+            "Tempo infinito"
+        ],
+        "answer": "Tempo costante (indipendente dall'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(n) significa:",
+        "options": [
+            "Tempo lineare (proporzionale all'input)",
+            "Tempo costante",
+            "Tempo quadratico",
+            "Tempo logaritmico"
+        ],
+        "answer": "Tempo lineare (proporzionale all'input)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(n^2) significa:",
+        "options": [
+            "Tempo quadratico (es. doppio ciclo annidato)",
+            "Tempo lineare",
+            "Tempo costante",
+            "Tempo esponenziale"
+        ],
+        "answer": "Tempo quadratico (es. doppio ciclo annidato)"
+    },
+    {
+        "category": "Informatica",
+        "question": "O(log n) significa:",
+        "options": [
+            "Tempo logaritmico (molto efficiente, es. ricerca binaria)",
+            "Tempo lineare",
+            "Tempo costante",
+            "Tempo esponenziale"
+        ],
+        "answer": "Tempo logaritmico (molto efficiente, es. ricerca binaria)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è più veloce per n grande: O(n) o O(log n)?",
+        "options": [
+            "O(log n)",
+            "O(n)",
+            "Uguali",
+            "Dipende"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è più veloce per n grande: O(n) o O(n^2)?",
+        "options": [
+            "O(n)",
+            "O(n^2)",
+            "Uguali",
+            "Dipende"
+        ],
+        "answer": "O(n)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il caso peggiore (worst case)?",
+        "options": [
+            "Input che richiede il massimo tempo di esecuzione",
+            "Caso medio",
+            "Caso migliore",
+            "Errore"
+        ],
+        "answer": "Input che richiede il massimo tempo di esecuzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il caso medio (average case)?",
+        "options": [
+            "Tempo di esecuzione atteso su input tipici/casuali",
+            "Caso peggiore",
+            "Caso migliore",
+            "Errore"
+        ],
+        "answer": "Tempo di esecuzione atteso su input tipici/casuali"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il caso migliore (best case)?",
+        "options": [
+            "Input che richiede il minimo tempo di esecuzione",
+            "Caso peggiore",
+            "Caso medio",
+            "Errore"
+        ],
+        "answer": "Input che richiede il minimo tempo di esecuzione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo di ordinamento Bubble Sort:",
+        "options": [
+            "Scambia elementi adiacenti se sono in ordine sbagliato (O(n^2))",
+            "Divide et impera",
+            "Inserimento",
+            "Selezione"
+        ],
+        "answer": "Scambia elementi adiacenti se sono in ordine sbagliato (O(n^2))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo di ordinamento Merge Sort:",
+        "options": [
+            "Divide l'array a metà, ordina ricorsivamente e unisce (O(n log n))",
+            "Scambia",
+            "Inserisce",
+            "Seleziona"
+        ],
+        "answer": "Divide l'array a metà, ordina ricorsivamente e unisce (O(n log n))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Algoritmo di ordinamento Quick Sort:",
+        "options": [
+            "Sceglie un pivot e partiziona l'array (O(n log n) medio, O(n^2) peggiore)",
+            "Merge Sort",
+            "Bubble Sort",
+            "Insertion Sort"
+        ],
+        "answer": "Sceglie un pivot e partiziona l'array (O(n log n) medio, O(n^2) peggiore)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Qual è il più veloce in media tra Bubble e Quick Sort?",
+        "options": [
+            "Quick Sort",
+            "Bubble Sort",
+            "Uguali",
+            "Dipende"
+        ],
+        "answer": "Quick Sort"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ricerca Lineare:",
+        "options": [
+            "Scorre l'array dall'inizio alla fine (O(n))",
+            "Divide a metà",
+            "Usa hash",
+            "Nulla"
+        ],
+        "answer": "Scorre l'array dall'inizio alla fine (O(n))"
+    },
+    {
+        "category": "Informatica",
+        "question": "Ricerca Binaria:",
+        "options": [
+            "Divide l'intervallo di ricerca a metà ad ogni passo (richiede array ordinato, O(log n))",
+            "Scorre tutto",
+            "Usa hash",
+            "Nulla"
+        ],
+        "answer": "Divide l'intervallo di ricerca a metà ad ogni passo (richiede array ordinato, O(log n))"
+    }
+]

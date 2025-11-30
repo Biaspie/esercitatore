@@ -1,0 +1,483 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Problemi e algoritmi – Parte III
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Previously... Semantica diagramma a blocchi
+
+
+
+
+
+Le istruzioni sono rappresentate da poligoni:
+•   parallelogrammi per input e output •   rettangoli per le istruzioni
+•   rombi per i predicati
+
+
+
+
+
+
+La sequenza nella quale le istruzioni vanno eseguite è rappresentata da frecce di collegamento.
+Previously... Istruzioni di controllo
+
+
+qIstruzioni che permettono di controllare (nel senso di regolare, governare, dirigere) il flusso di esecuzione, ovvero quali istruzioni devono essere eseguite e in quale ordine.
+
+
+
+•   Normalmente le istruzioni che compongono un algoritmo vengono eseguite una dopo l'altra, nell’ordine in cui compaiono.
+
+
+
+•   Le istruzioni di controllo permettono di modificare l'ordine in cui le istruzioni di un algoritmo vengono eseguite.
+Previously... Punti di ingresso e uscita
+Previously... Istruzioni strutturate
+
+
+Le istruzioni di controllo sono anche dette istruzioni strutturate, perché sono istruzioni che contengono al loro interno altre istruzioni, che a loro volta possono contenere al loro interno altre istruzioni ..., fino ad arrivare a delle istruzioni semplici (non strutturate), che non contengono al loro interno altre istruzioni (ad esempio istruzioni di assegnazione).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questa struttura annidata è resa possibile dal fatto che queste istruzioni hanno un solo punto di ingresso ed un solo punto di uscita.
+Previously... Algoritmi «standard»
+
+
+Per progettare un algoritmo è utile rendersi conto che il problema che l'algoritmo deve risolvere è di un certo tipo, ovvero somiglia ad altri problemi già affrontati.
+
+
+
+Se i problemi somigliano, anche gli algoritmi per risolverli si somigliano.
+Previously… Algoritmi iterativi
+
+
+Stabiliamo alcuni schemi che permettono di scrivere algoritmi e programmi iterativi.
+
+
+
+⇒ sono algoritmi/programmi che permettono di risolvere problemi in cui
+
+
+
+•   l'input è una sequenza di valori
+•   l'output è un valore che rappresenta una proprietà della sequenza
+•   l'algoritmo si basa sull’esecuzione ripetitiva, ovvero iterata, di un insieme di istruzioni che permettono di calcolare la proprietà "processando” tutti gli elementi della sequenza.
+Previously… Algoritmi iterativi
+
+
+Un gran numero di problemi possono essere risolti tramite algoritmi iterativi:
+
+
+
+
+1.  Problemi 2.  Problemi 3.  Problemi 4.  Problemi 5.  Problemi
+
+di accumulazione di conteggio
+di verifica esistenziale di verifica universale di minimo o massimo
+Previously… Problemi di accumulazione
+
+
+qProblemi in cui bisogna calcolare la somma (o una proprietà sintetica o «cumulata») di una sequenza di valori numerici.
+
+
+
+Algoritmo:
+
+
+
+•   Usa una variabile di accumulazione - anche detta accumulatore — per rappresentare la somma (la proprietà cumulata).
+
+•   Inizializza la variabile di accumulazione a 0 (all’elemento neutro).
+
+•   Visita tutti gli elementi della sequenza ed aggiungi alla variabile di accumulazione il valore di ogni elemento (valuta l’operazione di accumulazione e aggiorna la variabile di accumulazione).
+Previously… Digramma a blocchi per accumulazione
+Problema: somma valori assoluti	Problema: somma positivi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problema: somma quadrati
+Algoritmi iterativi
+
+
+Un gran numero di problemi possono essere risolti tramite algoritmi iterativi:
+
+
+
+
+1.  Problemi 2.  Problemi 3.  Problemi 4.  Problemi 5.  Problemi
+
+di accumulazione di conteggio
+di verifica esistenziale di verifica universale di minimo o massimo
+Problemi di conteggio
+
+
+qProblemi in cui bisogna contare il numero di elementi che soddisfano una proprietà in una sequenza di elementi.
+
+
+
+Algoritmo:
+
+
+
+•   Usa una variabile di conteggio per rappresentare il numero di elementi che soddisfano la proprietà.
+•   Inizializza la variabile di conteggio a 0.
+•   Visita tutti gli elementi della sequenza ed incrementa di 1 il valore della variabile di conteggio ogni volta che viene incontrato un elemento che soddisfa la proprietà.
+Digramma a blocchi per conteggio
+Conteggio: esempio 1 Problema: conta positivi
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥# sono interi
+
+
+dati di uscita: un intero QUANTI
+
+
+
+post-condizione: QUANTI è il numero di interi positivi fra 𝑥!,𝑥",…,𝑥# ,ovvero QUANTI = | 𝑥$ | 1 ≤ 𝑖 ≤ 𝑛 𝑒 𝑥$  > 0 |
+
+
+
+
+
+
+
+
+
+
+
+A: che succede se sposto
+i++ nel ramo false?
+
+
+
+
+
+
+
+
+
+
+
+A: che succede se sposto
+i++ nel ramo false?
+
+
+Q: l’algorimo cicla se trova un valore positivo
+Conteggio: esempio 2 Problema: numero occorrenze
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi ed un intero 𝑘
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥# e 𝑘 sono interi
+
+
+dati di uscita: un intero QUANTI
+
+
+
+post-condizione: QUANTI è il numero di interi fra 𝑥!,𝑥",…,𝑥#che sono uguali a 𝑘, ovvero QUANTI = | 𝑥$ | 1 ≤ 𝑖 ≤ 𝑛 𝑒 𝑥$  = 𝑘 |
+Algoritmi iterativi
+
+
+Un gran numero di problemi possono essere risolti tramite algoritmi iterativi:
+
+
+
+
+1.  Problemi 2.  Problemi 3.  Problemi 4.  Problemi 5.  Problemi
+
+di accumulazione di conteggio
+di verifica esistenziale di verifica universale di minimo o massimo
+Problemi di verifica esistenziale
+
+
+qProblemi in cui bisogna verificare l'esistenza di (almeno) un elemento che soddisfa una proprietà in una sequenza di elementi.
+
+
+
+Algoritmo:
+
+
+
+•   Usa una variabile booleana di esistenza che indica se un elemento che soddisfa la proprietà è stato trovato o no.
+•   Inizializza la variabile di esistenza a False.
+•   Visita gli elementi della sequenza fintanto che 1.   non è terminata e
+2.   fintanto che la variabile di esistenza ha valore False.
+Se l'elemento visitato soddisfa la proprietà, allora assegna valore True alla variabile di esistenza.
+Digramma a blocchi per verifica esistenziale
+Verifica esistenziale: esempio 1 Problema: positivo multiplo di 3
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥#   sono interi
+
+
+dati di uscita: una variabile Boolena ESISTE
+
+
+
+post-condizione: ESISTE è True se esiste (almeno) un intero 𝑥$ positivo e multiplo di 3 nella sequenza, è False altrimenti
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A: che succede se sposto i++ a valle dei due rami?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A: che succede se sposto i++ a valle dei due rami?
+
+Q: l’algorimo funziona ancora
+Verifica esistenziale: esempio 2 Problema: consecutivi uguali
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥#   sono interi
+
+
+dati di uscita: una variabile boolena ESISTE
+
+
+
+post-condizione: ESISTE è True se esistono (almeno) due interi consecutivi uguali 𝑥$e 𝑥$&! nella sequenza, è False altrimenti
+Osservazioni sulla variabile di esistenza
+
+
+qLo scopo della variabile di esistenza e di rappresentare il fatto che la sequenza contiene un elemento che soddisfa la proprietà (in questo caso la variabile deve memorizzare il valore True) oppure no (in questo caso la variabile deve memorizzare il valore False).
+
+
+o Tuttavia la variabile di esistenza realizza tale scopo solo dopo che l’algoritmo è terminato.
+o In alcuni casi l’algoritmo può terminare anche senza aver processato tutti gli elementi della sequenza.
+
+
+o Prima di processare la sequenza il valore della variabile di esistenza è False, in quanto nessun elemento che soddisfa la proprietà è ancora stato trovato.
+
+
+o Durante il processamento della sequenza, la variabile di esistenza rappresenta il fatto che un elemento che soddisfa la proprietà è stato trovato oppure no fra i soli elementi processati della sequenza.
+Algoritmi iterativi
+
+
+Un gran numero di problemi possono essere risolti tramite algoritmi iterativi:
+
+
+
+
+1.  Problemi 2.  Problemi 3.  Problemi 4.  Problemi 5.  Problemi
+
+di accumulazione di conteggio
+di verifica esistenziale di verifica universale di minimo o massimo
+Problemi di verifica universale
+
+
+qProblemi in cui bisogna verificare che tutti gli elementi di una sequenza soddisfano una proprietà.
+
+
+
+Algoritmo:
+
+
+
+•   Usa una variabile booleana di universalità che indica che tutti gli elementi visti soddisfano la proprietà.
+•   Inizializza la variabile di universalità a True.
+•   Visita gli elementi della sequenza fintanto che 1.   non è terminata e
+2.   fintanto che la variabile di universalità ha valore True.
+Se l'elemento visitato non soddisfa la proprietà, allora assegna valore False alla variabile di universalità.
+Digramma a blocchi per verifica universale
+Verifica universale: esempio 1 Problema: tutti pari
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥#   sono interi
+
+
+dati di uscita: una variabile boolena TUTTI
+
+
+
+post-condizione: TUTTI è True se tutti gli interi 𝑥$ nella sequenza sono pari, è False altrimenti
+Verifica universale: esempio 2 Problema: crescente
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥#   sono interi
+
+
+dati di uscita: una variabile Boolena CRESCE
+
+
+
+post-condizione: CRESCE è True se la sequenza è crescente, ovvero se per ogni coppia 𝑥$,𝑥$&! di interi consecutivi nella sequenza si ha 𝑥$ <  𝑥$&!; CRESCE è False altrimenti
+Osservazioni sulla variabile di universalità qLo scopo della variabile di universalità e di rappresentare il fatto che tutti gli
+elementi della sequenza soddisfano la proprietà (in questo caso la variabile deve memorizzare il valore True) oppure no (in questo caso la variabile deve memorizzare il valore False).
+
+o Tuttavia la variabile di universalità realizza tale scopo solo dopo che l’algoritmo è terminato
+o In alcuni casi l’algoritmo può terminare anche senza aver processato tutti gli elementi della sequenza.
+
+o Prima di processare la sequenza il valore della variabile di esistenza è True, in quanto nessun elemento che non soddisfa la proprietà è ancora stato trovato.
+
+o Durante il processamento della sequenza, la variabile di universalità rappresenta il fatto che tutti gli elementi processati della sequenza soddisfano la proprietà oppure no.
+Algoritmi iterativi
+
+
+Un gran numero di problemi possono essere risolti tramite algoritmi iterativi:
+
+
+
+
+1.  Problemi 2.  Problemi 3.  Problemi 4.  Problemi 5.  Problemi
+
+di accumulazione di conteggio
+di verifica esistenziale di verifica universale di minimo o massimo
+Problemi di minimo/massimo
+
+
+qProblemi in cui bisogna trovare l’elemento minimo/massimo in una sequenza di elementi, rispetto a qualche relazione d’ordine.
+
+
+
+Algoritmo:
+
+
+
+•   Usa una variabile per il minimo (massimo)  fra gli elementi della sequenza.
+•   Inizializza la variabile al primo elemento della sequenza.
+•   Visita gli elementi della sequenza fintanto che non è terminata. Se l'elemento visitato è minore del minimo (maggiore del massimo) allora modifica il minimo (il massimo) al valore dell’elemento visitato.
+Digramma a blocchi per minimo
+Massimo: esempio 1 Problema: quadrato massimo
+
+
+dati di ingresso: una sequenza [𝑥!,𝑥",…,𝑥#] di interi
+
+
+pre-condizione: 𝑥!,𝑥",…,𝑥#   sono interi e 𝑛 ≥ 1
+
+
+dati di uscita: una intero MAX
+
+
+
+post-condizione: MAX è il massimo quadrato di un intero 𝑥$, ovvero MAX = max  𝑥"
+$
+1 ≤ 𝑖 ≤ 𝑛

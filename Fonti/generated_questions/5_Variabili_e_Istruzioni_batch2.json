@@ -1,0 +1,552 @@
+[
+    {
+        "category": "Informatica",
+        "question": "Cosa è un identificatore?",
+        "options": [
+            "Il nome dato a una variabile, funzione o altra entità definita dall'utente",
+            "Un numero",
+            "Un carattere speciale",
+            "Un file"
+        ],
+        "answer": "Il nome dato a una variabile, funzione o altra entità definita dall'utente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quali caratteri sono permessi in un identificatore?",
+        "options": [
+            "Lettere, numeri e underscore (_)",
+            "Tutti i caratteri",
+            "Solo numeri",
+            "Solo lettere"
+        ],
+        "answer": "Lettere, numeri e underscore (_)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Un identificatore può contenere il simbolo $?",
+        "options": [
+            "No (in C standard)",
+            "Sì",
+            "Solo se paghi",
+            "Solo su Linux"
+        ],
+        "answer": "No (in C standard)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una parola chiave (keyword) in C?",
+        "options": [
+            "Una parola riservata dal linguaggio con un significato speciale (es. if, while, int)",
+            "Una password",
+            "Un nome di variabile",
+            "Un commento"
+        ],
+        "answer": "Una parola riservata dal linguaggio con un significato speciale (es. if, while, int)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Posso chiamare una variabile 'int'?",
+        "options": [
+            "No, è una parola chiave",
+            "Sì",
+            "Solo se scritta maiuscola",
+            "Solo se scritta in corsivo"
+        ],
+        "answer": "No, è una parola chiave"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è camelCase?",
+        "options": [
+            "Una convenzione di scrittura (es. nomeVariabile)",
+            "Un animale",
+            "Un tipo di variabile",
+            "Un errore"
+        ],
+        "answer": "Una convenzione di scrittura (es. nomeVariabile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è snake_case?",
+        "options": [
+            "Una convenzione di scrittura (es. nome_variabile)",
+            "Un serpente",
+            "Un gioco",
+            "Un errore"
+        ],
+        "answer": "Una convenzione di scrittura (es. nome_variabile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è PascalCase?",
+        "options": [
+            "Una convenzione di scrittura (es. NomeVariabile)",
+            "Un linguaggio",
+            "Un filosofo",
+            "Un errore"
+        ],
+        "answer": "Una convenzione di scrittura (es. NomeVariabile)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una costante letterale?",
+        "options": [
+            "Un valore scritto direttamente nel codice (es. 5, 3.14, 'a')",
+            "Una variabile",
+            "Un errore",
+            "Un commento"
+        ],
+        "answer": "Un valore scritto direttamente nel codice (es. 5, 3.14, 'a')"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si scrive una costante carattere?",
+        "options": [
+            "Tra apici singoli (es. 'a')",
+            "Tra doppi apici",
+            "Senza apici",
+            "Tra parentesi"
+        ],
+        "answer": "Tra apici singoli (es. 'a')"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si scrive una costante stringa?",
+        "options": [
+            "Tra doppi apici (es. \"ciao\")",
+            "Tra apici singoli",
+            "Senza apici",
+            "Tra parentesi"
+        ],
+        "answer": "Tra doppi apici (es. \"ciao\")"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'overflow?",
+        "options": [
+            "Quando il risultato di un'operazione supera il valore massimo rappresentabile dal tipo",
+            "Quando l'acqua esce",
+            "Quando il PC si spegne",
+            "Quando si scrive troppo"
+        ],
+        "answer": "Quando il risultato di un'operazione supera il valore massimo rappresentabile dal tipo"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'underflow?",
+        "options": [
+            "Quando il risultato è troppo piccolo (vicino a zero) per essere rappresentato con precisione",
+            "Quando si va sott'acqua",
+            "Quando si scrive poco",
+            "Un errore di sintassi"
+        ],
+        "answer": "Quando il risultato è troppo piccolo (vicino a zero) per essere rappresentato con precisione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è il casting?",
+        "options": [
+            "La conversione esplicita di un tipo in un altro",
+            "Un provino",
+            "Una pesca",
+            "Un errore"
+        ],
+        "answer": "La conversione esplicita di un tipo in un altro"
+    },
+    {
+        "category": "Informatica",
+        "question": "Sintassi del casting:",
+        "options": [
+            "(tipo) espressione",
+            "tipo(espressione)",
+            "cast(espressione, tipo)",
+            "convert(espressione)"
+        ],
+        "answer": "(tipo) espressione"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se assegno un float a un int?",
+        "options": [
+            "Viene troncata la parte decimale (perdita di dati)",
+            "Viene arrotondato",
+            "Dà errore",
+            "Non succede nulla"
+        ],
+        "answer": "Viene troncata la parte decimale (perdita di dati)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa succede se assegno un int a un float?",
+        "options": [
+            "Viene convertito in reale (di solito senza perdita, se entra nella mantissa)",
+            "Dà errore",
+            "Si perde tutto",
+            "Diventa zero"
+        ],
+        "answer": "Viene convertito in reale (di solito senza perdita, se entra nella mantissa)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'aritmetica dei puntatori?",
+        "options": [
+            "Operazioni matematiche sugli indirizzi di memoria (es. p + 1)",
+            "Matematica difficile",
+            "Un errore",
+            "Un gioco"
+        ],
+        "answer": "Operazioni matematiche sugli indirizzi di memoria (es. p + 1)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Se p è un puntatore a int, cosa fa p + 1?",
+        "options": [
+            "Avanza dell'indirizzo di sizeof(int) byte (es. 4 byte)",
+            "Aggiunge 1 all'indirizzo",
+            "Aggiunge 1 al valore puntato",
+            "Nulla"
+        ],
+        "answer": "Avanza dell'indirizzo di sizeof(int) byte (es. 4 byte)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è sizeof?",
+        "options": [
+            "Un operatore che restituisce la dimensione in byte di un tipo o variabile",
+            "Una funzione",
+            "Una variabile",
+            "Un errore"
+        ],
+        "answer": "Un operatore che restituisce la dimensione in byte di un tipo o variabile"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanto è grande un char solitamente?",
+        "options": [
+            "1 byte",
+            "2 byte",
+            "4 byte",
+            "8 byte"
+        ],
+        "answer": "1 byte"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quanto è grande un int solitamente (su architetture 32/64 bit)?",
+        "options": [
+            "4 byte",
+            "1 byte",
+            "2 byte",
+            "8 byte"
+        ],
+        "answer": "4 byte"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un commento?",
+        "options": [
+            "Testo ignorato dal compilatore utile per documentare il codice",
+            "Un errore",
+            "Una variabile",
+            "Un'istruzione"
+        ],
+        "answer": "Testo ignorato dal compilatore utile per documentare il codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo standard C99?",
+        "options": [
+            "Una versione dello standard del linguaggio C (del 1999)",
+            "Un modello di auto",
+            "Un robot",
+            "Un virus"
+        ],
+        "answer": "Una versione dello standard del linguaggio C (del 1999)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo standard ANSI C (C89/C90)?",
+        "options": [
+            "La prima versione standardizzata del C",
+            "L'ultima versione",
+            "Un dialetto",
+            "Un errore"
+        ],
+        "answer": "La prima versione standardizzata del C"
+    },
+    {
+        "category": "Informatica",
+        "question": "Il C è un linguaggio compilato o interpretato?",
+        "options": [
+            "Compilato",
+            "Interpretato",
+            "Entrambi",
+            "Nessuno"
+        ],
+        "answer": "Compilato"
+    },
+    {
+        "category": "Informatica",
+        "question": "Python è un linguaggio compilato o interpretato?",
+        "options": [
+            "Interpretato (generalmente)",
+            "Compilato",
+            "Nessuno",
+            "Solo scritto"
+        ],
+        "answer": "Interpretato (generalmente)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Java è un linguaggio compilato o interpretato?",
+        "options": [
+            "Ibrido (compilato in bytecode, interpretato dalla JVM)",
+            "Solo compilato",
+            "Solo interpretato",
+            "Magico"
+        ],
+        "answer": "Ibrido (compilato in bytecode, interpretato dalla JVM)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è la JVM?",
+        "options": [
+            "Java Virtual Machine",
+            "Java Video Maker",
+            "Just Very Mad",
+            "Java Visual Mode"
+        ],
+        "answer": "Java Virtual Machine"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un IDE?",
+        "options": [
+            "Integrated Development Environment",
+            "Internet Data Exchange",
+            "Internal Data Error",
+            "Input Device Equipment"
+        ],
+        "answer": "Integrated Development Environment"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un debugger?",
+        "options": [
+            "Strumento per analizzare l'esecuzione e trovare errori",
+            "Un virus",
+            "Un gioco",
+            "Un compilatore"
+        ],
+        "answer": "Strumento per analizzare l'esecuzione e trovare errori"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un breakpoint?",
+        "options": [
+            "Un punto in cui il debugger ferma l'esecuzione per permettere l'analisi",
+            "Una pausa caffè",
+            "Un errore",
+            "Un punto e virgola"
+        ],
+        "answer": "Un punto in cui il debugger ferma l'esecuzione per permettere l'analisi"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'step over' nel debugger?",
+        "options": [
+            "Eseguire l'istruzione corrente (senza entrare nelle funzioni chiamate)",
+            "Saltare l'istruzione",
+            "Fermarsi",
+            "Uscire"
+        ],
+        "answer": "Eseguire l'istruzione corrente (senza entrare nelle funzioni chiamate)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa significa 'step into' nel debugger?",
+        "options": [
+            "Entrare nella funzione chiamata dall'istruzione corrente",
+            "Saltare",
+            "Correre",
+            "Uscire"
+        ],
+        "answer": "Entrare nella funzione chiamata dall'istruzione corrente"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una variabile locale?",
+        "options": [
+            "Dichiarata dentro una funzione/blocco, visibile solo lì",
+            "Dichiarata ovunque",
+            "Visibile a tutti",
+            "Un errore"
+        ],
+        "answer": "Dichiarata dentro una funzione/blocco, visibile solo lì"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una variabile globale?",
+        "options": [
+            "Dichiarata fuori dalle funzioni, visibile ovunque",
+            "Dichiarata nel main",
+            "Visibile solo a se stessa",
+            "Un errore"
+        ],
+        "answer": "Dichiarata fuori dalle funzioni, visibile ovunque"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è lo stack?",
+        "options": [
+            "Area di memoria per variabili locali e chiamate a funzione (LIFO)",
+            "Una pila di piatti",
+            "Un mucchio",
+            "Un errore"
+        ],
+        "answer": "Area di memoria per variabili locali e chiamate a funzione (LIFO)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'heap?",
+        "options": [
+            "Area di memoria per l'allocazione dinamica",
+            "Un mucchio",
+            "Lo stack",
+            "Un errore"
+        ],
+        "answer": "Area di memoria per l'allocazione dinamica"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale memoria è gestita automaticamente?",
+        "options": [
+            "Stack",
+            "Heap",
+            "Disco",
+            "Nessuna"
+        ],
+        "answer": "Stack"
+    },
+    {
+        "category": "Informatica",
+        "question": "Quale memoria deve essere gestita manualmente (malloc/free)?",
+        "options": [
+            "Heap",
+            "Stack",
+            "Registri",
+            "Cache"
+        ],
+        "answer": "Heap"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un puntatore NULL?",
+        "options": [
+            "Un puntatore che non punta a nulla (valore 0)",
+            "Un puntatore rotto",
+            "Un puntatore a se stesso",
+            "Un errore"
+        ],
+        "answer": "Un puntatore che non punta a nulla (valore 0)"
+    },
+    {
+        "category": "Informatica",
+        "question": "È sicuro dereferenziare un puntatore NULL?",
+        "options": [
+            "No, causa crash (segmentation fault)",
+            "Sì",
+            "Solo se è venerdì",
+            "Dipende"
+        ],
+        "answer": "No, causa crash (segmentation fault)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un segmentation fault?",
+        "options": [
+            "Errore di accesso a memoria non consentita",
+            "Un terremoto",
+            "Un errore di sintassi",
+            "Un virus"
+        ],
+        "answer": "Errore di accesso a memoria non consentita"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è un buffer overflow?",
+        "options": [
+            "Scrivere oltre i limiti di un buffer (array)",
+            "Riempire troppo il bicchiere",
+            "Un errore di stampa",
+            "Un virus"
+        ],
+        "answer": "Scrivere oltre i limiti di un buffer (array)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Perché il buffer overflow è pericoloso?",
+        "options": [
+            "Può sovrascrivere dati importanti o codice, causando crash o vulnerabilità di sicurezza",
+            "Sporca lo schermo",
+            "Rallenta il PC",
+            "Non è pericoloso"
+        ],
+        "answer": "Può sovrascrivere dati importanti o codice, causando crash o vulnerabilità di sicurezza"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è una stringa letterale?",
+        "options": [
+            "Una sequenza di caratteri tra doppi apici nel codice",
+            "Una variabile",
+            "Un numero",
+            "Un errore"
+        ],
+        "answer": "Una sequenza di caratteri tra doppi apici nel codice"
+    },
+    {
+        "category": "Informatica",
+        "question": "Le stringhe letterali sono modificabili?",
+        "options": [
+            "No, sono costanti (spesso in memoria read-only)",
+            "Sì",
+            "A volte",
+            "Dipende"
+        ],
+        "answer": "No, sono costanti (spesso in memoria read-only)"
+    },
+    {
+        "category": "Informatica",
+        "question": "Cosa è l'escape character?",
+        "options": [
+            "Il backslash \\ usato per rappresentare caratteri speciali",
+            "Il tasto Esc",
+            "Un carattere che scappa",
+            "Un errore"
+        ],
+        "answer": "Il backslash \\ usato per rappresentare caratteri speciali"
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si stampa un doppio apice in una stringa?",
+        "options": [
+            "\\\"",
+            "\"",
+            "'",
+            "''"
+        ],
+        "answer": "\\\""
+    },
+    {
+        "category": "Informatica",
+        "question": "Come si stampa un backslash?",
+        "options": [
+            "\\\\",
+            "\\",
+            "/",
+            "//"
+        ],
+        "answer": "\\\\"
+    }
+]

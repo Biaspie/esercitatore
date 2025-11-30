@@ -1,0 +1,509 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica Tipi ed Espressioni - Parte I
+
+
+
+
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Previously…
+
+Una variabile è una porzione di memoria destinata a contenere dei
+dati che potranno essere acceduti o modificati durante l'esecuzione
+di un programma.
+
+
+
+Una variabile è un contenitore di valori.
+
+
+
+
+
+Una •
+
+
+
+
+
+•
+
+variabile è caratterizzata da
+Un nome, che permette di referenziare la corrispondente area di
+memoria, per leggere il valore che memorizza o per scrivere un valore in
+tale area di memoria
+Un tipo, che specifica l'insieme di valori che possono essere memorizzati
+all'interno della variabile e le operazioni che possono essere effettuate
+su quella variabile
+Tipo
+
+
+Un tipo è costituito da un insieme di valori, detto dominio, e un insieme di operazioni che possono essere applicate ad elementi di tale dominio.
+
+
+
+
+Esempio: il tipo int
+
+
+
+
+
+Il suo dominio e l'insieme dei numeri interi nell'intervallo [-231, 231-1]
+
+Nota: è un insieme finito!
+
+
+
+* Disclaimer: il range di interi rappresentato dal tipo int dipende dalla versione di C installata.
+
+
+
+
+Somma e prodotto sono due operazioni che si applicano ad elementi di tale dominio (e hanno come risultato elementi di tale dominio).
+Perché [-231, 231-1]?
+
+
+
+Nell’intervallo [-231, 231-1] ci sono  232 numeri interi distinti.
+
+
+Quanti numeri interi distinti posso rappresentare con 1 bit?
+2
+
+
+Quanti numeri interi distinti posso rappresentare con 2 bit?
+4
+
+
+Quanti numeri interi distinti posso rappresentare con 3 bit?
+8
+
+
+...
+
+
+In generale , con 𝑥 bit posso rappresentare 2𝑥 numeri interi distinti.
+
+
+
+
+
+Il tipo int permette di rappresentare 232 numeri interi distinti perché utilizza 32 bit per rappresentare valori.
+Operatori
+
+
+
+Le operazioni sono denotate da simboli, detti operatori.
+
+Esempi:
++ è l'operatore che rappresenta la somma fra elementi di tipo int
+
+∗ è l'operatore che rappresenta il prodotto fra elementi di tipo int
+Letterali Elementi del linguaggio C che rappresentano specifici valori.
+
+
+
+Letterali interi: 3, 0, -5, 15, ... Letterali reali: 3.14, -5., 22.20, ... Letterali caratteri: ‘@’, ‘a’, ‘.’, ...
+Letterali stringhe: "ciao", "CIAO", "a", ...
+Espressione
+
+
+Una combinazione di letterali, variabili, operatori ... che fornisce un valore di un certo tipo.
+
+⇒ Una porzione contigua di codice caratterizzata da un tipo.
+
+
+Esempio: int x = 3∗y ;	y, 3, x, 3∗y sono espressioni
+
+•   Ad una espressione è associato un tipo, che viene determinato in fase di compilazione e può essere desunto guardando il codice.
+
+•   Ad una espressione è associato un valore, che viene determinato in fase di esecuzione.
+
+
+Q: esempio di espressione il cui valore non può essere determinato guardando il codice?
+Espressione
+
+
+Una combinazione di letterali, variabili, operatori ... che fornisce un valore di un certo tipo.
+
+⇒ Una porzione contigua di codice caratterizzata da un tipo.
+
+
+Esempio: int x = 3∗y ;	y, 3, x, 3∗y sono espressioni
+
+•   Ad una espressione è associato un tipo, che viene determinato in fase di compilazione e può essere desunto guardando il codice.
+
+•   Ad una espressione è associato un valore, che viene determinato in fase di esecuzione.
+
+
+Q: esempio di espressione il cui valore non può essere determinato guardando il codice?
+
+A: una variabile il cui valore viene letto da tastiera!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tipi Fondamentali
+Tipi Fondamentali
+
+
+
+Tipo	Cosa Rappresenta
+int	Interi a 32 bit
+
+Formato
+%d ⟸
+
+
+
+long	Interi a 64 bit	%ld
+
+short	Interi a 16 bit	%hd
+
+
+
+Li usiamo poco
+
+
+
+
+
+
+char
+
+
+
+
+float double
+long double
+
+Caratteri a 8 bit
+
+
+
+
+Reali a 32 bit Reali a 64 bit
+Reali a 128 bit
+
+%c ⟸
+
+
+
+
+%f, %e, %g ⟸
+
+%f, %e,%g,%lf,%le,%lg
+%Lf,%Le,%Lg
+
+
+
+
+
+
+
+
+
+
+
+
+
+Li usiamo poco
+Rappresentazione Valori di un Tipo Codifica
+
+
+Informazione	Rappresentazione
+
+
+
+
+Decodifica
+
+
+Valori di tipo int Valori di tipo char Valori di tipo float Suoni
+Immagini Video
+
+Lezione Aritmatica Binaria Queste slide
+Queste slide
+Tipo int
+
+
+Dominio: numeri interi nell’intervallo  [-231, 231-1]
+[-2147483648, 2147483647]
+
+
+
+
+
+Osservazione 1: il dominio di int è finito!
+
+Osservazione 2: un valore di tipo int (ad esempio una variabile) è rappresentato da un’area di memoria a 32 bit.
+Minore o Uguale a 2.147.483.647
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In questo caso il compilatore C segnala che qualcosa non va.
+
+Capiremo perché viene stampato il numero
+
+-1304428545 nella lezione sulla Aritmetica Binaria.
+Operazioni Aritmetiche Binarie sul Tipo int
+
+Sono operazioni binarie, in quanto si applicano a due interi, detti operandi, e restituiscono un intero.
+
+
+Somma	Differenza 3+5⇒8	3-7⇒-4
+
+Prodotto 3∗9⇒27
+
+
+
+Divisione intera: 13/5⇒2
+
+arrotondata all’intero 1/2⇒0	-7/2⇒-3
+
+più vicino allo zero -1/2⇒0
+
+
+
+Resto o Modulo: il resto 𝐴%𝐵 è quel numero 𝑅 7%2  ⇒ 1
+-7%2 ⇒-1 in quanto -7-(-7/2)∗2 7%-2 ⇒ 1 in quanto 7-(7/-2)∗(-2)
+
+
+= 𝐴 − (𝐴/𝐵) ∗ 𝐵
+
+
+
+
+divisione intera
+Operazioni Aritmetiche Unarie sul Tipo int Incremento prefisso ++x  Semantica: incrementa il valore di x di 1 e
+poi esegue l’istruzione in cui compare ++x.
+
+Decremento prefisso --x Simile. Si applicano solo a variabili
+
+Incremento postfisso x++  Semantica: esegue l'istruzione nella quale compare x++ (come se ++ non ci fosse) e al termine dell'istruzione incrementa di 1 il valore di x.
+
+Decremento postfisso x-- Simile. Si applicano solo a variabili
+
+Negazione o Cambio di Segno:-x Equivalente a 0-x
+Assegnazione Assegnazione x=y;
+
+
+
+
+Assegnazione composta equivalente a:
+
+x+=5;   x∗=5;   ... x=x+5; x=x∗5; ...
+
+
+
+
+
+
+
+Assegnazione multipla equivalente a:
+w=z; y=w; x=y;
+ovvero: l’assegnazione
+
+x=y=w=z;
+
+
+
+
+
+
+
+
+
+
+
+è associativa a destra
+Precedenza fra Alcuni Operatori La precedenza fra operatori è simile a quella matematica.
+
+
+
+•  - (cambio di segno), ++ e -- (prefissi) hanno precedenza su ∗, / e % •  ∗, / e % hanno precedenza su + e - (sottrazione)
+•  + e - (sottrazione) hanno precedenza su =, +=, ∗=, ...
+•  fra ∗, / e % viene data la precedenza a chi è più a sinistra •  fra + e - viene data la precedenza a chi è più a sinistra
+
+
+
+La precedenza può essere modificata tramite l'utilizzo di parentesi tonde, anche annidate. Niente quadre o graffe, servono ad altro!
+Esercizi
+
+
+
+Q: quanto valgono le seguenti espressioni? 1)   2+3∗4
+2)   ((2+3)∗4)/2 3)   (2+3)4
+4)   4∗2/4 5)   4∗(2/4) 6)   -2-4
+7)   1+1*1+1
+Esercizi
+
+
+
+Q: quanto valgono le seguenti espressioni?
+
+1)   2+3∗4
+2)   ((2+3)∗4)/2 3)   (2+3)4
+4)   4∗2/4 5)   4∗(2/4) 6)   -2-4
+7)   1+1*1+1
+
+14 10
+Non è un’espressione! 2
+0 -6
+3
+Divisione per Zero Non è consentito scrivere x=7/0; nel programma.
+Genera un errore a tempo di esecuzione, che comporta la terminazione del programma.
+
+•   Attenzione: alcuni compilatori C, invece di terminare il programma, hanno altri comportamenti, come la stampa di numeri senza senso.
+Tipo char Dominio: numeri interi nell’intervallo [-27; 27-1], ovvero [-128; 127]
+La rappresentazione di un valore di tipo char in memoria 1 byte = 8 bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ma non dovevano essere caratteri?
+Il Tipo char è Numerico I caratteri sono rappresentati attraverso codici.
+•  Ovvero a ciascun intero fra -128 e 127 corrisponde un carattere. •  I caratteri vengono memorizzati e gestiti attraverso i loro codici.
+Caratteri e Codici L’insieme dei caratteri rappresentabili comprende almeno:
+
+
+•  I caratteri alfabetici A, B, ..., Z,
+Codici: 65 66	90
+
+a, b, ..., z,
+97 98	122
+
+•  Le cifre decimali 0, 1, ..., 9 Codici: 48 49	57
+
+•  Alcuni caratteri grafici !, ", #, %, &, ... Codici: 33 34 35 37 38
+
+La codifica utilizzata per i caratteri é (molto spesso) quella ASCII:
+American Standard Code for Information Interchange
+
+
+Da sapere: i caratteri numerici, i caratteri alfabetici maiuscoli e
+caratteri alfabetici minuscoli hanno codici in ordine crescente.
+
+i
+Da -128 a 127 oppure da 0 a 255?
+I codici ASCII sono nel range [0; 255], mentre i valori di tipo char hanno un range [-128; 127]. Questa discrepanza non crea problemi perché l'aritmetica binaria utilizzata dai calcolatori é circolare.
+Caratteri e Formato •  I caratteri si scrivono fra apici singoli
+•  Il formato dei caratteri è %c
+Aritmetica dei Caratteri
+Sulla base della codifica ASCII, e definita una aritmetica dei caratteri, con le stesse operazioni dell'aritmetica sui numeri interi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Es: l'operatore + fra elementi di tipo char fornisce un valore di tipo char il cui codice é pari alla somma dei codici degli operandi.
+
+
+Es: l'operatore < può essere usato per confrontare due caratteri sulla base del loro codice.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To be continued …
+Altre Risorse
+
+
+•  Bellini, Guidi: Linguaggio C — Capitoli 6.1 - 6.4, 8.1 - 8.2 Appendice D.5 - D.6, Appendice E

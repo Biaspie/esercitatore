@@ -1,0 +1,599 @@
+﻿Dipartimento di Ingegneria Industriale, Elettronica e Meccanica
+
+Collegio Didattico di Ingegneria Elettronica
+
+
+
+
+
+Elementi di Informatica
+
+
+
+
+Rappresentazione Binaria
+
+
+
+
+Giordano Da Lozzo e Giuseppe Sansonetti
+Come sono rappresentati i dati in un calcolatore?
+
+Memoria àCelle di memoria àBit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ciascun dato deve essere rappresentato
+sequenza di 0 e 1 di lunghezza finita.
+
+attraverso una
+Conversione di dati in sequenze di bit
+
+
+
+
+
+
+
+
+
+
+
+• Numeri naturali ℕ
+• Numeri interi relativi ℤ
+
+
+
+Oggi
+
+
+• Numeri reali ℝ ⇒ Esprimi il numero come  −1 !× 1.𝑀"  ×2#!$%"& ⇒ Ottieni la rappresentazione 𝑆𝐸"𝑀"
+• Caratteri ⇒ Codifica il carattere con un numero intero (codice ASCII) ⇒ Converti il codice in formato binario ⇒ Rappresentazione
+
+• Suoni, Immagini, Video, … ⇒ …
+
+
+
+
+
+
+
+
+
+
+Numeri naturali
+
+
+
+
+(Passaggio da un sistema di numerazione decimale ad un sistema di numerazione binario senza curarsi dell’esigenza di utilizzare un numero finito di bit)
+Notazione decimale – anche detta: notazione in base 10
+
+
+E’ una notazione posizionale: le dipendente dalla loro posizione
+
+cifre hanno un valore
+(es. 563 è diverso da 635).
+
+
+
+Esistono 10 cifre (0, 1, … 9).
+
+
+Il valore di una cifra dipende dalla cifra stessa e dalla sua posizione.
+
+
+Sistema di numerazione creato in India fra il 400 a.C. e il 400 d.C. ed esportato in Europa dagli arabi intorno al 900 d.C.
+Il numero 324
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3×100	+	2×10	+	4×1
+
+
+
+
+3×10"	+	2×10%	+	4×10’
+Base 10
+
+
+
+47358 = 4×10( + 7×10) + 3×10" + 5×10% + 8×10^0
+
+
+
+
+Le cifre sono fattori per potenze con base 10 (ed esponenti 0, 1, 2, …, da destra a sinistra).
+Che succede se la base non è 10?
+
+
+
+§Il numero 532 in base 8 vale 5×8! + 3×8"
+⇒ E’ uguale al numero 346 in base 10
+
++ 2×8#
+
+
+
+
+
+
+§Il numero 10 in base 2 vale
+⇒ E’ uguale al numero 2 in
+
+1×2" +
+base 10
+
+0×2#
+
+
+
+
+
+§Il numero 39 in base 12 vale 3×12" + 9×12#
+⇒ E’ uguale al numero 45 in base 10
+Rappresentazione in base b
+
+
+
+Base 10 – cifre 0, 1, …, 9 Ci sono 𝑏 cifre disponibili	Base 8 –  cifre 0, 1, …, 7
+Base 16 – cifre 0, 1, …, 9, A, B, C, D, E, F
+
+
+
+
+
+Il numero 𝑎*𝑎*$% …𝑎%𝑎’ rappresenta
+
+
+
+𝑎*×𝑏* + 𝑎*$%×𝑏*$% + ⋯+ 𝑎%𝑏% + 𝑎’𝑏’
+
+
+
+
+§𝑎* è la cifra più significativa §𝑎’ è la cifra meno significativa
+Contiamo insieme!
+
+
+
+
+§Q: quali sono
+
+
+
+
+
+
+
+
+
+
+
+§Q: quali sono
+
+i primi numeri in base 8?
+
+
+
+
+
+
+
+
+
+
+
+i primi numeri in base 2?
+Contiamo insieme!
+
+
+
+§Q: quali sono i primi numeri in base 8?
+§A: 0, 1, 2, …, 6, 7, 10, 11, 12, …, 16, 17, 20, 21, …, 76, 77, 100, 101, …
+
+
+
+
+§Q: quali sono i primi numeri in base 2?
+§A: 0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111, 10000, 10001, …
+Domandoni
+
+
+
+§Q: come si rappresenta in base 31 il numero che si rappresenta come 32 in base 10?
+
+
+
+
+
+
+
+
+
+
+
+
+§Q: quanto vale 2+2 in base 5? E in base 4? E in base 3?
+Domandoni
+
+
+
+§Q: come si rappresenta in base 31 il numero che si rappresenta come 32 in base 10?
+
+§A: 11
+
+
+
+
+
+
+
+
+§Q: quanto vale 2+2 in base 5? E in base 4? E in base 3? §A: 4, 10, 11
+Sistemi di numerazione più utilizzati
+
+
+-§Base 10	-
+-
+
+Abbastanza cifre Non troppe cifre Ci viene naturale
+
+
+
+
+
+
+§Base 2 – facilità di rappresentare due stati, corrispondenti ai due simboli 0 e 1, tramite grandezze elettromagnetiche in un calcolatore
+
+
+
+
+§Base 16: compatta e facilmente convertibile a base 2
+
+
+
+
+
+
+Base 2 0
+1 10 11 100 101 110 111
+1000 1001 1010 … 1111 …
+1100100 …
+1111101000
+
+Più cifre, più potenza Base 10	Base 16
+0	0 1	1 2	2 3	3 4	4 5	5 6	6 7	7 8	8 9	9 10	A …	… 15	F …	… 100	64 …	…
+1000	3E8
+Rappresentazione binaria, anche detta in base 2
+
+§Ci sono 2 cifre disponibili: 0 e 1
+
+
+
+
+§Il numero 𝑎  𝑎	…𝑎  𝑎   rappresenta
+*   *$%	%   ’
+𝑎*×2* + 𝑎*$%×2*$% + ⋯+ 𝑎%×2% + 𝑎’×2’
+Conversione da base 2 a base 10
+
+
+
+§Data la rappresentazione binaria di un numero, vogliamo costruire la
+sua rappresentazione decimale (decodifica)
+
+
+
+§Algoritmo
+§Input: (𝑎  𝑎	…𝑎  𝑎  )	Base 2 §Output: (𝑎!×2! + 𝑎!"#×2!"# + ⋯+ 𝑎#×2# + 𝑎$×2$)	Base 10
+!   !"#	#   $
+§Esempi:
+§A: 1011 = 1×2% + 0×2& + 1×2# + 1×2$
+8	+	0	+   2	+	1	= 11
+§A: 110010 = 1×2’ + 1×2( + 0×2% + 0×2& + 1×2# + 0×2$
+32	+	16   +	0	+	0	+	2	+	0	= 50
+Conversione da base 10 a base 2
+
+
+
+§Data la rappresentazione decimale di un numero, vogliamo costruire la sua rappresentazione binaria (codifica)
+
+
+
+
+§Sfrutta la seguente idea. Se dividi il numero dato per 2, il resto è la cifra meno significativa della rappresentazione binaria del numero.
+Conversione da base 10 a base 2
+
+
+
+1. Input (𝑥) 2. 𝑖 = 0
+3. Fintanto che (𝑥! = 0)
+
+3.1 𝑎+  = 𝑥%2	(resto divisione intera) 3.2 𝑥 = 𝑥/2	(divisione intera)
+3.3 𝑖 = 𝑖 + 1
+4. Output (𝑎*𝑎*$% …𝑎%𝑎’)
+Sia 𝑥 = 50 e 𝑖 = 0
+
+
+
+
+𝑥 > 0 ⇒ 𝑥 > 0 ⇒ 𝑥 > 0 ⇒ 𝑥 > 0 ⇒ 𝑥 > 0 ⇒ 𝑥 > 0 ⇒
+
+
+𝑎’ 𝑎"
+𝑎
+%
+𝑎
+
+𝑎) 𝑎,
+(
+
+= 𝑥%2 = 0, = 𝑥%2 = 1, = 𝑥%2 = 0, = 𝑥%2 = 0, = 𝑥%2 = 1, = 𝑥%2 = 1,
+
+𝑥 = 𝑥/2=25,           i=1 𝑥 = 𝑥/2=12,           i=2 𝑥 = 𝑥/2=6,              i=3 𝑥 = 𝑥/2=3,              i=4 𝑥 = 𝑥/2=1,              i=5 𝑥 = 𝑥/2=0,              i=6
+
+
+
+
+𝑥 = 0 ⇒ 𝑂𝑢𝑡𝑝𝑢𝑡 𝑎,𝑎(𝑎)𝑎"𝑎%𝑎’	= 110010
+Operazioni dell’aritmetica binaria
+
+
+
+§Ad esempio: somma, differenza, prodotto, …
+
+
+
+
+§Q: come si possono eseguire?
+Operazioni dell’aritmetica binaria
+
+
+
+§Ad esempio: somma, differenza, prodotto, …
+
+
+
+
+§Q: come si possono eseguire?
+
+§A: puoi convertire gli operandi nella loro rappresentazione decimale, eseguire l’operazione e poi convertire il risultato nella rappresentazione binaria
+
+
+
+
+§Ma puoi anche effettuare le operazioni direttamente sulle rappresentazioni binarie…
+Somma
+Somma
+Somma
+Somma
+Somma
+Somma
+Somma
+Somma
+Somma
+Somma
+Prodotto
+Prodotto
+Prodotto
+Prodotto
+Prodotto
+Differenza
+Differenza
++2	Differenza 0
+Differenza
++2	+2 0         1       2
+Differenza 0	1
+Differenza +2
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+Numeri interi relativi
+(nel sistema di numerazione binario, utilizzando un numero finito di bit)
+Interi relativi con pochi bit
+
+
+
+1.  I calcolatori mettono a disposizione un numero limitato di bit per rappresentare ciascun numero ⇒ non si possono rappresentare tutti i numeri!
+
+
+
+
+
+2.  Finora abbiamo descritto una maniera per codificare e decodificare numeri naturali. Come possiamo estendere la rappresentazione per gestire i numeri interi relativi?
+Rappresentazioni con pochi bit
+
+
+
+Assumiamo che la rappresentazione di ciascun numero consista di un numero fisso 𝑛 di bit (es. 𝑛 = 32).
+
+
+0  1  1  1  0  0  1  1  1  0  1  0  0  0  0  1  0  1  0  0  0  0  0  1  1  1  0  1  0  1  1  0
+
+
+
+
+Osserva: i numeri naturali rappresentabili secondo la codifica
+precedentemente descritta sono quelli nell’intervallo [0;2* − 1],
+ovvero 2* numeri distinti.
+Rappresentazione di interi relativi
+
+
+
+Esistono diverse rappresentazioni dei numeri interi relativi •Modulo e segno
+•Complemento a due
+Rappresentazione modulo e segno
+
+
+
+La cifra più significativa rappresenta il segno, le altre il modulo.
+
+
+
+
+0
+
+
+
+Codifica: dato un numero intero relativo 𝑥, la sua cifra più significativa è
+pari a 1 se 𝑥 è negativo, è pari a 0 se 𝑥 è positivo.
+La codifica del modulo si ottiene come abbiamo visto per i numeri
+naturali (ma con 𝑛 − 1 cifre).
+
+Decodifica: il segno è + se la cifra più significativa è 0, è − altrimenti.
+La decodifica del modulo si ottiene come abbiamo visto sui numeri
+naturali.
+Modulo e segno: esempi (con n=8) Qual è la rappresentazione modulo e segno del numero -5 (espresso in
+base 10) con 8 bit?
+• Numero negativo ⇒ cifra più significativa è 1
+• Il modulo 5 si rappresenta come 1 0 1 in base 2. 4  2  1
+⇒La rappresentazione è 10000101: osserva gli 0 di riempimento sul
+modulo.
+
+
+
+
+Quale numero si rappresenta come 00001011 in modulo e segno? • Cifra più significativa è 0 ⇒ numero positivo
+• La rappresentazione del modulo è 1011 ⇒ il modulo è 8+2+1=11 8 4 2 1
+⇒ Il numero è +11
+Modulo e segno: svantaggi
+
+
+
+Doppia rappresentazione per lo zero: sia 0000…0000 che 1000…0000 rappresentano il numero zero.
+
+
+
+Possono essere rappresentati solo 2! − 1 numeri, quelli
+nell’intervallo  −2!"# + 1;2!"# − 1 .
+
+
+
+Rappresentazione non circolare: sommando 1 all’intero più grande rappresentabile (0111…1111) non si ottiene l’intero più piccolo rappresentabile (1111…1111).
+Complemento a due
+
+
+
+Codifica: dato un numero intero relativo 𝑥, allora se 𝑥 è positivo la
+codifica coincide con la codifica del numero naturale 𝑥, altrimenti
+coincide con la codifica del numero naturale 2* + 𝑥.
+
+
+
+
+Qual è la rappresentazione in complemento a 2 con 8 bit del numero -67? Il numero è negativo ⇒ sommagli 2! ⇒ −67 + 2" = −67 + 256 = 189
+Rappresenta 189  ⇒ 1 0 1 1 1 1 0 1 128 64 32  16   8	4	2	1
+
+
+Qual è la rappresentazione in complemento a 2 con 8 bit del numero 37?
+Il numero è positivo ⇒ rappresentalo 0 0 1 0 0 1 0 1 128 64   32 16  8    4   2    1
+Complemento a due
+
+
+
+Algoritmo alternativo per la codifica dei numeri negativi • Rappresenta il modulo
+• Complementa le cifre (1 al posto di 0 e viceversa) • Somma 1
+
+
+
+
+
+
+−67
+⇒ 01000011 ⇒ 10111100 ⇒ 10111101
+Complemento a due: decodifica
+
+
+
+Sfrutta:
+I numeri che iniziano con 0 sono positivi o nulli I numeri che iniziano con 1 sono negativi
+Decodifica A: se la cifra più significativa è 0, allora stessa decodifica dei numeri naturali.
+Altrimenti:
+•  Stessa decodifica dei numeri naturali	10110001
+•  Sottrai 2!	⇒ +177
+⇒ +177 − 256 = −79
+Decodifica B: se la cifra più significativa è 0, allora stessa decodifica dei numeri naturali.
+Altrimenti:
+•  Complementa i bit •  Somma uno
+10110001
+⇒ 01001110
+⇒ 01001111
+•  Stessa decodifica dei numeri naturali
+•  Cambia segno	⇒ 79 ⇒ −79
+Complemento a due: vantaggi
+
+
+
+Una sola rappresentazione per lo zero (0000...0000); il numero
+1000…0000 rappresenta −2*$% e non 0
+
+
+Possono essere rappresentati 2* numeri, quelli nell’intervallo
+[−2*$%;2*$% − 1].
+
+
+Le somme si fanno come per i numeri naturali, anche se i numeri sono negativi, ignorando una eventuale cifra di riporto oltre i bit usati.
+
+
+
+
+
+Stessa cosa per le sottrazioni
+Complemento a due: circolarità
+
+
+
+I numeri che iniziano con 0 sono positivi o nulli, dal più piccolo (0000…0000) al più grande (0111…1111). I numeri che iniziano con 1 sono negativi, dal più piccolo (1000…0000) al più grande (1111…1111)
+
+
+Sommando 1 a -1=1111…1111 Si ottiene	0=0000…0000
+
+
+Sommando 1 a 2*$% − 1 = 011…1111 Si ottiene	−2!"# = 1000…000
+
+
+Ciascun numero 𝑥 rappresenta una classe di equivalenza di numeri
+interi: tutti i numeri 𝑥 + 𝑗 ∗ 2*,𝑐𝑜𝑛 𝑗 ∈ ℤ
+Altre risorse §Bellini, Guidi: Linguaggio C — Appendice D1-D4
