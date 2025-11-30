@@ -287,12 +287,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // Keyboard Shortcuts
+    function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            loadQuestion();
+        }
+    }
+
+    // ... (existing showResults, showScreen, etc.)
+
+    // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
         // Only active if quiz screen is visible
         if (!quizScreen.classList.contains('active')) return;
 
         if (e.key === 'ArrowRight') {
             nextQuestion();
+        } else if (e.key === 'ArrowLeft') {
+            prevQuestion();
         } else if (e.key === 'Enter') {
             // Only proceed if the user has answered the current question
             if (currentQuestions[currentQuestionIndex].userAnswer) {
