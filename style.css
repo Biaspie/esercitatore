@@ -243,43 +243,6 @@ h2 {
     }
 
     .question-content {
-        flex: 1;
-        overflow-y: auto;
-        padding-right: 5px;
-    }
-
-    .question-text {
-        font-size: 1.5rem;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 2.5rem;
-        color: var(--text-color);
-    }
-
-    .options-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .option-btn {
-        width: 100%;
-        padding: 1.25rem 1.5rem;
-        text-align: left;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 12px;
-        color: var(--text-color);
-        font-size: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .option-btn:hover:not([disabled]) {
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255, 255, 255, 0.2);
         transform: translateX(4px);
     }
 
@@ -561,3 +524,4 @@ h2 {
             transform: translateY(0);
         }
     }
+}
