@@ -16,7 +16,7 @@ const questions = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 console.log(`Read ${questions.length} questions from JSON.`);
 
 db.serialize(() => {
-    const stmt = db.prepare("INSERT OR IGNORE INTO questions (id, category, question, options, answer) VALUES (?, ?, ?, ?, ?)");
+    const stmt = db.prepare("INSERT OR REPLACE INTO questions (id, category, question, options, answer) VALUES (?, ?, ?, ?, ?)");
 
     let insertedCount = 0;
 
@@ -34,7 +34,7 @@ db.serialize(() => {
     });
 
     stmt.finalize(() => {
-        console.log(`Sync complete. Inserted ${insertedCount} new questions.`);
+        console.log(`Sync complete. Upserted ${insertedCount} questions.`);
         db.close();
     });
 });
