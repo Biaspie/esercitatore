@@ -46,18 +46,37 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function startQuiz(subject, countSetting) {
         try {
-            const response = await fetch(`/api/questions?subject=${subject}&count=${countSetting}`);
+            // Fetch all questions from the static JSON file
+            const response = await fetch('questions.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            const questions = await response.json();
+            let allQuestions = await response.json();
 
-            if (questions.length === 0) {
+            // Filter by category
+            let filteredQuestions = allQuestions;
+            if (subject && subject !== 'all') {
+                const categoryName = categoryMap[subject];
+                if (categoryName) {
+                    filteredQuestions = allQuestions.filter(q => q.category === categoryName);
+                }
+            }
+
+            if (filteredQuestions.length === 0) {
                 alert("Nessuna domanda trovata per questa categoria.");
                 return;
             }
 
-            currentQuestions = questions.map(q => ({
+            // Shuffle questions
+            filteredQuestions.sort(() => Math.random() - 0.5);
+
+            // Limit number of questions
+            let limit = parseInt(countSetting);
+            if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
+                filteredQuestions = filteredQuestions.slice(0, limit);
+            }
+
+            currentQuestions = filteredQuestions.map(q => ({
                 ...q,
                 userAnswer: null,
                 shuffledOptions: null
@@ -72,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         } catch (error) {
             console.error("Error fetching questions:", error);
-            alert("Errore nel caricamento delle domande dal server.");
+            alert("Errore nel caricamento delle domande. Assicurati che il file questions.json esista.");
         }
     }
 
