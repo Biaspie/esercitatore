@@ -145,26 +145,6 @@ h2 {
     /* AGGRESSIVE: Reduced margin from 1rem */
     color: var(--text-muted);
     font-size: 0.8rem;
-    /* AGGRESSIVE: Reduced font size */
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.question-content {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 5px;
-    display: flex;
-    /* Ensure flex layout for content */
-    flex-direction: column;
-    justify-content: center;
-    /* Center content vertically if possible */
-}
-
-.question-text {
-    font-size: 1.3rem;
-    /* AGGRESSIVE: Reduced font size from 1.6rem */
     font-weight: 700;
     line-height: 1.4;
     /* AGGRESSIVE: Reduced line height */
