@@ -1,19 +1,11 @@
 const fs = require('fs');
+const questions = JSON.parse(fs.readFileSync('questions.json', 'utf8'));
 
-try {
-    const data = fs.readFileSync('questions.json', 'utf8');
-    const questions = JSON.parse(data);
+const distribution = {};
+questions.forEach(q => {
+    const cat = q.category || 'Uncategorized';
+    distribution[cat] = (distribution[cat] || 0) + 1;
+});
 
-    const distribution = {};
-
-    questions.forEach(q => {
-        const index = q.options.indexOf(q.answer);
-        distribution[index] = (distribution[index] || 0) + 1;
-    });
-
-    console.log("Answer Index Distribution:");
-    console.log(distribution);
-
-} catch (e) {
-    console.error(e);
-}
+console.log("Total questions:", questions.length);
+console.log("Distribution:", distribution);

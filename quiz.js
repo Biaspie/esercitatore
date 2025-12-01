@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function startQuiz(subject, countSetting) {
         try {
             // Fetch all questions from the static JSON file
-            const response = await fetch('questions.json');
+            const response = await fetch(`questions.json?v=${new Date().getTime()}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -67,8 +67,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return;
             }
 
-            // Shuffle questions
-            filteredQuestions.sort(() => Math.random() - 0.5);
+            // Shuffle questions using Fisher-Yates algorithm
+            for (let i = filteredQuestions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [filteredQuestions[i], filteredQuestions[j]] = [filteredQuestions[j], filteredQuestions[i]];
+            }
 
             // Limit number of questions
             let limit = parseInt(countSetting);
