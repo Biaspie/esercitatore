@@ -235,11 +235,11 @@ h2 {
     width: 100%;
 }
 
-/* Question Navigation (Numbers) */
+/* Question Navigation (Dots) */
 .question-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.8rem;
     justify-content: center;
     margin-bottom: 1.5rem;
     padding: 1rem;
@@ -249,59 +249,55 @@ h2 {
 }
 
 .nav-btn {
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    font-weight: 600;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
+    font-size: 0;
+    color: transparent;
+    overflow: hidden;
 }
 
 .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.2);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-btn.active {
     background: var(--primary-color);
-    color: #fff;
     border-color: var(--primary-color);
-    box-shadow: 0 0 15px var(--primary-glow);
-    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--primary-glow);
+    transform: scale(1.4);
     z-index: 1;
 }
 
 .nav-btn.correct {
-    background: rgba(16, 185, 129, 0.2);
+    background: var(--success-color);
     border-color: var(--success-color);
-    color: var(--success-color);
+    opacity: 0.8;
 }
 
 .nav-btn.correct.active {
     background: var(--success-color);
-    color: #fff;
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
 }
 
 .nav-btn.wrong {
-    background: rgba(239, 68, 68, 0.2);
+    background: var(--error-color);
     border-color: var(--error-color);
-    color: var(--error-color);
+    opacity: 0.8;
 }
 
 .nav-btn.wrong.active {
     background: var(--error-color);
-    color: #fff;
-    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
 }
 
 /* Summary */
