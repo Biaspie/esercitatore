@@ -479,3 +479,172 @@ h2 {
         transform: translateY(0);
     }
 }
+
+/* Manuals Page Styles */
+.manuals-container {
+    max-width: 1200px;
+    /* Wider container for reading */
+}
+
+.manuals-layout {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.manuals-sidebar {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.manuals-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+.manual-btn {
+    width: 100%;
+    text-align: left;
+    padding: 0.8rem 1rem;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.manual-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-color);
+}
+
+.manual-btn.active {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.manual-group {
+    margin-bottom: 0.5rem;
+}
+
+.manual-group-title {
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.manual-group-title:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.manual-group-title::after {
+    content: '›';
+    transition: transform 0.3s;
+}
+
+.manual-group.expanded .manual-group-title::after {
+    transform: rotate(90deg);
+}
+
+.manual-group-items {
+    display: none;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.manual-group.expanded .manual-group-items {
+    display: block;
+}
+
+.manuals-content {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.manual-title {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.manual-viewer {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.placeholder-text {
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: 3rem;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+.error {
+    color: var(--error-color);
+}
+
+/* Responsive Manuals */
+@media (max-width: 768px) {
+    .manuals-layout {
+        flex-direction: column;
+    }
+
+    .manuals-sidebar {
+        width: 100%;
+        height: 200px;
+        /* Fixed height for sidebar on mobile */
+    }
+
+    .manuals-content {
+        height: auto;
+        flex: 1;
+    }
+}
