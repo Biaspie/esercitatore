@@ -223,23 +223,6 @@ h2 {
     gap: 0.8rem;
     justify-content: center;
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-
-    /* Fix for "All Questions" overflow */
-    max-height: 150px;
-    overflow-y: auto;
-
-    /* Custom Scrollbar for this container */
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
-}
-
-.nav-btn {
-    width: 14px;
-    height: 14px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
