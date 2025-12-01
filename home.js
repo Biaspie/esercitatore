@@ -25,6 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'all': 'Tutti gli Argomenti'
     };
 
+    // Custom Distribution Elements
+    const customDistributionContainer = document.getElementById('custom-distribution');
+    const distributionInputsContainer = document.getElementById('distribution-inputs');
+    const currentTotalDisplay = document.getElementById('current-total');
+    const targetTotalDisplay = document.getElementById('target-total');
+
     // Initialize: Show Subject Selection
     showScreen(subjectSelectionScreen);
 
@@ -43,8 +49,86 @@ document.addEventListener('DOMContentLoaded', () => {
         subjectTitle.textContent = `Quiz ${title}`;
         appTitle.textContent = title;
 
+        // Handle Custom Distribution UI
+        if (subject === 'all') {
+            customDistributionContainer.style.display = 'block';
+            renderDistributionInputs();
+        } else {
+            customDistributionContainer.style.display = 'none';
+        }
+
         showScreen(startScreen);
     }
+
+    function renderDistributionInputs() {
+        distributionInputsContainer.innerHTML = '';
+        const subjects = Object.keys(subjectMap).filter(k => k !== 'all');
+        const totalQuestions = parseInt(questionCountSelect.value) || 20;
+
+        // Calculate even distribution
+        const baseCount = Math.floor(totalQuestions / subjects.length);
+        let remainder = totalQuestions % subjects.length;
+
+        subjects.forEach(key => {
+            let count = baseCount;
+            if (remainder > 0) {
+                count++;
+                remainder--;
+            }
+
+            const div = document.createElement('div');
+            div.style.display = 'flex';
+            div.style.justifyContent = 'space-between';
+            div.style.alignItems = 'center';
+            div.style.background = 'rgba(255,255,255,0.05)';
+            div.style.padding = '0.5rem';
+            div.style.borderRadius = '8px';
+
+            div.innerHTML = `
+                <label style="font-size: 0.9rem; color: var(--text-muted); flex: 1;">${subjectMap[key]}</label>
+                <input type="number" class="dist-input" data-subject="${key}" value="${count}" min="0" max="${totalQuestions}" 
+                    style="width: 60px; padding: 0.3rem; border-radius: 6px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.3); color: white; text-align: center;">
+            `;
+            distributionInputsContainer.appendChild(div);
+        });
+
+        // Add listeners to inputs
+        const inputs = distributionInputsContainer.querySelectorAll('.dist-input');
+        inputs.forEach(input => {
+            input.addEventListener('input', updateCurrentTotal);
+        });
+
+        updateCurrentTotal();
+    }
+
+    function updateCurrentTotal() {
+        const inputs = distributionInputsContainer.querySelectorAll('.dist-input');
+        let total = 0;
+        inputs.forEach(input => {
+            total += parseInt(input.value) || 0;
+        });
+
+        const target = parseInt(questionCountSelect.value) || 0;
+        currentTotalDisplay.textContent = total;
+        targetTotalDisplay.textContent = target;
+
+        if (total === target) {
+            currentTotalDisplay.style.color = 'var(--success-color)';
+            startBtn.disabled = false;
+            startBtn.style.opacity = '1';
+        } else {
+            currentTotalDisplay.style.color = 'var(--error-color)';
+            startBtn.disabled = true;
+            startBtn.style.opacity = '0.5';
+        }
+    }
+
+    // Update inputs when question count changes
+    questionCountSelect.addEventListener('change', () => {
+        if (currentCategory === 'all') {
+            renderDistributionInputs();
+        }
+    });
 
     function showScreen(screen) {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -54,8 +138,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start Quiz - Navigate to quiz.html
     startBtn.addEventListener('click', () => {
         const count = questionCountSelect.value;
-        // Redirect to quiz page with parameters
-        window.location.href = `quiz.html?subject=${currentCategory}&count=${count}`;
+        let url = `quiz.html?subject=${currentCategory}&count=${count}`;
+
+        // Append custom distribution if applicable
+        if (currentCategory === 'all') {
+            const inputs = distributionInputsContainer.querySelectorAll('.dist-input');
+            const distribution = [];
+            inputs.forEach(input => {
+                const sub = input.getAttribute('data-subject');
+                const val = input.value;
+                if (parseInt(val) > 0) {
+                    distribution.push(`${sub}:${val}`);
+                }
+            });
+            url += `&distribution=${distribution.join(',')}`;
+        }
+
+        window.location.href = url;
     });
 
     if (backToSubjectsBtn) {

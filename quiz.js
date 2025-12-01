@@ -56,16 +56,40 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Filter by category
             let filteredQuestions = [];
 
+            // Parse custom distribution if present
+            const distributionParam = urlParams.get('distribution');
+            let customDistribution = null;
+
+            if (distributionParam) {
+                customDistribution = {};
+                distributionParam.split(',').forEach(item => {
+                    const [key, val] = item.split(':');
+                    if (key && val) {
+                        customDistribution[key] = parseInt(val);
+                    }
+                });
+            }
+
             if (subject === 'all') {
-                // Stratified Sampling for "All Subjects"
+                // Stratified Sampling or Custom Distribution for "All Subjects"
                 const categories = Object.values(categoryMap);
                 const limit = parseInt(countSetting) || 20;
 
-                // If limit is 'all', just use all questions (randomized later)
-                if (countSetting === 'all') {
+                if (customDistribution) {
+                    // Use Custom Distribution
+                    for (const [key, count] of Object.entries(customDistribution)) {
+                        const catName = categoryMap[key];
+                        if (catName && count > 0) {
+                            const catQuestions = allQuestions.filter(q => q.category === catName);
+                            catQuestions.sort(() => Math.random() - 0.5);
+                            filteredQuestions = filteredQuestions.concat(catQuestions.slice(0, count));
+                        }
+                    }
+                } else if (countSetting === 'all') {
+                    // If limit is 'all', just use all questions (randomized later)
                     filteredQuestions = allQuestions;
                 } else {
-                    // Calculate questions per category
+                    // Stratified Sampling (Default Balanced)
                     const baseCount = Math.floor(limit / categories.length);
                     let remainder = limit % categories.length;
 
