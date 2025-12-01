@@ -54,26 +54,56 @@ document.addEventListener('DOMContentLoaded', async () => {
             let allQuestions = await response.json();
 
             // Filter by category
-            let filteredQuestions = allQuestions;
-            if (subject && subject !== 'all') {
+            let filteredQuestions = [];
+
+            if (subject === 'all') {
+                // Stratified Sampling for "All Subjects"
+                const categories = Object.values(categoryMap);
+                const limit = parseInt(countSetting) || 20;
+
+                // If limit is 'all', just use all questions (randomized later)
+                if (countSetting === 'all') {
+                    filteredQuestions = allQuestions;
+                } else {
+                    // Calculate questions per category
+                    const baseCount = Math.floor(limit / categories.length);
+                    let remainder = limit % categories.length;
+
+                    categories.forEach(catName => {
+                        // Get all questions for this category
+                        const catQuestions = allQuestions.filter(q => q.category === catName);
+
+                        // Shuffle them
+                        catQuestions.sort(() => Math.random() - 0.5);
+
+                        // Determine count for this category
+                        let count = baseCount;
+                        if (remainder > 0) {
+                            count++;
+                            remainder--;
+                        }
+
+                        // Add to list
+                        filteredQuestions = filteredQuestions.concat(catQuestions.slice(0, count));
+                    });
+                }
+            } else {
+                // Specific Subject
                 const categoryName = categoryMap[subject];
                 if (categoryName) {
                     filteredQuestions = allQuestions.filter(q => q.category === categoryName);
+                } else {
+                    // Fallback if subject not found (shouldn't happen)
+                    filteredQuestions = allQuestions;
                 }
-            }
 
-            if (filteredQuestions.length === 0) {
-                alert("Nessuna domanda trovata per questa categoria.");
-                return;
-            }
-
-            // Shuffle questions
-            filteredQuestions.sort(() => Math.random() - 0.5);
-
-            // Limit number of questions
-            let limit = parseInt(countSetting);
-            if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
-                filteredQuestions = filteredQuestions.slice(0, limit);
+                // Limit for specific subject
+                let limit = parseInt(countSetting);
+                if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
+                    // Shuffle first then slice
+                    filteredQuestions.sort(() => Math.random() - 0.5);
+                    filteredQuestions = filteredQuestions.slice(0, limit);
+                }
             }
 
             currentQuestions = filteredQuestions.map(q => ({
