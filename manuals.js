@@ -111,14 +111,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const text = await response.text();
 
-            // Simple formatting: replace newlines with <br> or wrap in paragraphs
-            // For better readability, we can wrap paragraphs separated by double newlines
-            const formattedText = text.split('\n').map(line => {
-                // Basic cleanup if needed
-                return line.trim() ? `<p>${line}</p>` : '<br>';
-            }).join('');
+            // Improved formatting:
+            // 1. Split by double newlines (paragraphs) to handle the "too many spaces" issue
+            // 2. Join single newlines within a paragraph with a space to create continuous text
+            // 3. Filter out empty paragraphs
 
-            manualViewer.innerHTML = `<div class="text-content">${formattedText}</div>`;
+            const paragraphs = text.split(/\n\s*\n/);
+
+            const formattedHtml = paragraphs
+                .filter(p => p.trim().length > 0) // Remove empty blocks
+                .map(p => {
+                    let cleanPara = p.replace(/\r/g, '').trim();
+
+                    // Replace single newlines with spaces, but keep the text flow
+                    cleanPara = cleanPara.replace(/\n/g, ' ');
+
+                    // Collapse multiple spaces into one
+                    cleanPara = cleanPara.replace(/\s+/g, ' ');
+
+                    return `<p>${cleanPara}</p>`;
+                })
+                .join('');
+
+            manualViewer.innerHTML = `<div class="text-content">${formattedHtml}</div>`;
         } catch (error) {
             manualViewer.innerHTML = `<div class="error">Errore nel caricamento del manuale: ${error.message}</div>`;
         }
