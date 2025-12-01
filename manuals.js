@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("Manuals script loaded");
     const manualsList = document.getElementById('manuals-list');
     const manualTitle = document.getElementById('manual-title');
     const manualViewer = document.getElementById('manual-viewer');
