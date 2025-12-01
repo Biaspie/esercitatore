@@ -55,7 +55,9 @@ body {
     position: relative;
     overflow: hidden;
     padding: 1rem;
-    /* AGGRESSIVE: Reduced padding from 1.5rem */
+    padding: 1rem 1rem 2rem 1rem;
+    /* AGGRESSIVE: Increased bottom padding */
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom));
 }
 
 @media (min-width: 768px) {
