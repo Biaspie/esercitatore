@@ -175,10 +175,11 @@ h2 {
 }
 
 .options-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    /* AGGRESSIVE: Reduced gap from 0.8rem */
+    margin: 1rem 0;
+    /* AGGRESSIVE: Reduced margin */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .option-btn {
@@ -246,6 +247,14 @@ h2 {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+
+    /* Fix for "All Questions" overflow */
+    max-height: 150px;
+    overflow-y: auto;
+
+    /* Custom Scrollbar for this container */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
 .nav-btn {
