@@ -1,0 +1,652 @@
+[
+    {
+        "id": "inf_001",
+        "category": "Informatica",
+        "question": "Secondo il modello di Von Neumann, quali sono i componenti fondamentali di un calcolatore?",
+        "options": [
+            "Monitor, Tastiera, Mouse e Stampante.",
+            "CPU (con ALU e CU), Memoria Centrale, Interfacce di I/O e Bus di sistema.",
+            "Sistema Operativo, Applicazioni e Utente.",
+            "Hard Disk, CD-ROM e USB."
+        ],
+        "answer": "CPU (con ALU e CU), Memoria Centrale, Interfacce di I/O e Bus di sistema.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_002",
+        "category": "Informatica",
+        "question": "Qual è la funzione del registro Program Counter (PC) all'interno della CPU?",
+        "options": [
+            "Memorizzare il risultato dell'ultima operazione aritmetica.",
+            "Memorizzare l'indirizzo di memoria della prossima istruzione da eseguire.",
+            "Contare il numero di programmi installati.",
+            "Memorizzare i dati in ingresso dalla tastiera."
+        ],
+        "answer": "Memorizzare l'indirizzo di memoria della prossima istruzione da eseguire.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_003",
+        "category": "Informatica",
+        "question": "Il ciclo di esecuzione di un'istruzione (Instruction Cycle) si compone delle fasi:",
+        "options": [
+            "Input, Processing, Output.",
+            "Fetch (prelievo), Decode (decodifica), Execute (esecuzione).",
+            "Start, Run, Stop.",
+            "Read, Write, Save."
+        ],
+        "answer": "Fetch (prelievo), Decode (decodifica), Execute (esecuzione).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_004",
+        "category": "Informatica",
+        "question": "Cosa si intende per 'memoria volatile' riferendosi alla RAM?",
+        "options": [
+            "Che è molto veloce.",
+            "Che il suo contenuto viene perso allo spegnimento del calcolatore.",
+            "Che può esplodere se surriscaldata.",
+            "Che è di sola lettura."
+        ],
+        "answer": "Che il suo contenuto viene perso allo spegnimento del calcolatore.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_005",
+        "category": "Informatica",
+        "question": "Qual è il compito della Control Unit (CU) all'interno del processore?",
+        "options": [
+            "Eseguire le operazioni matematiche.",
+            "Coordinare il funzionamento delle altre parti, prelevare le istruzioni, decodificarle e inviare segnali di controllo.",
+            "Memorizzare i file dell'utente.",
+            "Gestire la grafica dello schermo."
+        ],
+        "answer": "Coordinare il funzionamento delle altre parti, prelevare le istruzioni, decodificarle e inviare segnali di controllo.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_006",
+        "category": "Informatica",
+        "question": "Il Bus di sistema è costituito da:",
+        "options": [
+            "Solo cavi elettrici per l'alimentazione.",
+            "Bus Dati, Bus Indirizzi e Bus di Controllo.",
+            "Un cavo USB.",
+            "Una rete Wi-Fi interna."
+        ],
+        "answer": "Bus Dati, Bus Indirizzi e Bus di Controllo.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_007",
+        "category": "Informatica",
+        "question": "Cosa indica la frequenza di clock di una CPU?",
+        "options": [
+            "La capacità della memoria.",
+            "Il numero di cicli elementari (o segnali di sincronizzazione) eseguiti in un secondo (misurata in Hertz/Gigahertz).",
+            "Il consumo energetico.",
+            "La velocità di connessione a internet."
+        ],
+        "answer": "Il numero di cicli elementari (o segnali di sincronizzazione) eseguiti in un secondo (misurata in Hertz/Gigahertz).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_008",
+        "category": "Informatica",
+        "question": "Qual è la funzione principale del Sistema Operativo?",
+        "options": [
+            "Scrivere documenti di testo.",
+            "Gestire le risorse hardware del calcolatore e fornire una macchina virtuale astratta e semplificata all'utente e ai programmi applicativi.",
+            "Proteggere dai virus.",
+            "Navigare su internet."
+        ],
+        "answer": "Gestire le risorse hardware del calcolatore e fornire una macchina virtuale astratta e semplificata all'utente e ai programmi applicativi.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_009",
+        "category": "Informatica",
+        "question": "Cos'è il 'Kernel' (o Nucleo) di un sistema operativo?",
+        "options": [
+            "La parte grafica dell'interfaccia.",
+            "Il componente centrale che gestisce la CPU (scheduling), la memoria e le periferiche, risiedendo sempre in memoria centrale.",
+            "Il programma di installazione.",
+            "Il tasto di accensione."
+        ],
+        "answer": "Il componente centrale che gestisce la CPU (scheduling), la memoria e le periferiche, risiedendo sempre in memoria centrale.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_010",
+        "category": "Informatica",
+        "question": "La tecnica del 'multitasking' (o multiprogrammazione) consente:",
+        "options": [
+            "Di avere più CPU fisiche.",
+            "Di eseguire apparentemente più programmi contemporaneamente, alternando l'assegnazione della CPU ai vari processi in tempi brevissimi.",
+            "Di usare più monitor.",
+            "Di scrivere codice più velocemente."
+        ],
+        "answer": "Di eseguire apparentemente più programmi contemporaneamente, alternando l'assegnazione della CPU ai vari processi in tempi brevissimi.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_011",
+        "category": "Informatica",
+        "question": "Cos'è un 'processo' in informatica?",
+        "options": [
+            "Un componente hardware difettoso.",
+            "Un programma in esecuzione, entità dinamica che possiede uno stato, un program counter e risorse assegnate.",
+            "Un file salvato su disco.",
+            "Una procedura di avvio."
+        ],
+        "answer": "Un programma in esecuzione, entità dinamica che possiede uno stato, un program counter e risorse assegnate.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_012",
+        "category": "Informatica",
+        "question": "La memoria virtuale permette di:",
+        "options": [
+            "Scaricare più RAM da internet.",
+            "Eseguire programmi che richiedono più memoria di quella fisica disponibile, usando una porzione del disco rigido (swap) come estensione della RAM.",
+            "Memorizzare i dati nel cloud.",
+            "Aumentare la velocità della CPU."
+        ],
+        "answer": "Eseguire programmi che richiedono più memoria di quella fisica disponibile, usando una porzione del disco rigido (swap) come estensione della RAM.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_013",
+        "category": "Informatica",
+        "question": "Il File System è responsabile di:",
+        "options": [
+            "Gestire la connessione di rete.",
+            "Organizzare e gestire le informazioni memorizzate nella memoria di massa (file e directory) in modo gerarchico.",
+            "Raffreddare il processore.",
+            "Stampare documenti."
+        ],
+        "answer": "Organizzare e gestire le informazioni memorizzate nella memoria di massa (file e directory) in modo gerarchico.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_014",
+        "category": "Informatica",
+        "question": "Cosa sono i 'driver'?",
+        "options": [
+            "I conducenti dei camion che trasportano i computer.",
+            "Programmi software che permettono al sistema operativo di comunicare e controllare specifiche periferiche hardware.",
+            "Cavi di collegamento.",
+            "Tipi di virus."
+        ],
+        "answer": "Programmi software che permettono al sistema operativo di comunicare e controllare specifiche periferiche hardware.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_015",
+        "category": "Informatica",
+        "question": "Qual è il valore decimale del numero binario 1011?",
+        "options": [
+            "9",
+            "11",
+            "13",
+            "10"
+        ],
+        "answer": "11",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_016",
+        "category": "Informatica",
+        "question": "Come si converte un numero decimale in binario (metodo delle divisioni successive)?",
+        "options": [
+            "Si moltiplica per 2.",
+            "Si divide ripetutamente il numero per 2 e si prendono i resti in ordine inverso (dall'ultimo al primo).",
+            "Si sottrae 2 fino a zero.",
+            "Si aggiungono zeri alla fine."
+        ],
+        "answer": "Si divide ripetutamente il numero per 2 e si prendono i resti in ordine inverso (dall'ultimo al primo).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_017",
+        "category": "Informatica",
+        "question": "Nel sistema esadecimale (base 16), la lettera 'A' corrisponde al valore decimale:",
+        "options": [
+            "1",
+            "10",
+            "11",
+            "16"
+        ],
+        "answer": "10",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_018",
+        "category": "Informatica",
+        "question": "Qual è il vantaggio della rappresentazione in Complemento a Due per i numeri interi relativi?",
+        "options": [
+            "Permette di rappresentare numeri più grandi.",
+            "Ha una sola rappresentazione per lo zero e permette di eseguire sottrazioni utilizzando i circuiti della somma.",
+            "È più facile da leggere per gli umani.",
+            "Usa meno bit."
+        ],
+        "answer": "Ha una sola rappresentazione per lo zero e permette di eseguire sottrazioni utilizzando i circuiti della somma.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_019",
+        "category": "Informatica",
+        "question": "In Complemento a Due con 8 bit, qual è l'intervallo di numeri rappresentabili?",
+        "options": [
+            "Da 0 a 255.",
+            "Da -128 a +127.",
+            "Da -127 a +128.",
+            "Da -256 a +255."
+        ],
+        "answer": "Da -128 a +127.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_020",
+        "category": "Informatica",
+        "question": "Come si ottiene l'opposto di un numero in Complemento a Due?",
+        "options": [
+            "Si cambia solo il bit più significativo.",
+            "Si invertono tutti i bit (complemento a uno) e si aggiunge 1.",
+            "Si aggiunge uno zero.",
+            "Non si può fare."
+        ],
+        "answer": "Si invertono tutti i bit (complemento a uno) e si aggiunge 1.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_021",
+        "category": "Informatica",
+        "question": "La somma binaria 1 + 1 dà come risultato:",
+        "options": [
+            "2",
+            "0 con riporto di 1 (quindi 10 in binario).",
+            "1",
+            "11"
+        ],
+        "answer": "0 con riporto di 1 (quindi 10 in binario).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_022",
+        "category": "Informatica",
+        "question": "Il numero binario 11111111 in Complemento a Due (8 bit) corrisponde a:",
+        "options": [
+            "255",
+            "-1",
+            "-128",
+            "0"
+        ],
+        "answer": "-1",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_023",
+        "category": "Informatica",
+        "question": "Un Byte è composto da:",
+        "options": [
+            "4 bit.",
+            "8 bit.",
+            "16 bit.",
+            "32 bit."
+        ],
+        "answer": "8 bit.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_024",
+        "category": "Informatica",
+        "question": "Il sistema di numerazione binario è un sistema:",
+        "options": [
+            "Additivo.",
+            "Posizionale (il valore della cifra dipende dalla sua posizione).",
+            "Casuale.",
+            "Analogico."
+        ],
+        "answer": "Posizionale (il valore della cifra dipende dalla sua posizione).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_025",
+        "category": "Informatica",
+        "question": "L'operatore logico AND (&&) restituisce VERO (1) se:",
+        "options": [
+            "Almeno uno degli operandi è vero.",
+            "Entrambi gli operandi sono veri.",
+            "Entrambi gli operandi sono falsi.",
+            "Il primo operando è falso."
+        ],
+        "answer": "Entrambi gli operandi sono veri.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_026",
+        "category": "Informatica",
+        "question": "L'operatore logico OR (||) restituisce FALSO (0) solo se:",
+        "options": [
+            "Entrambi gli operandi sono falsi.",
+            "Entrambi gli operandi sono veri.",
+            "Almeno uno è falso.",
+            "Il primo è vero."
+        ],
+        "answer": "Entrambi gli operandi sono falsi.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_027",
+        "category": "Informatica",
+        "question": "Secondo le leggi di De Morgan, l'espressione !(A && B) è equivalente a:",
+        "options": [
+            "!A && !B",
+            "!A || !B",
+            "A || B",
+            "!A && B"
+        ],
+        "answer": "!A || !B",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_028",
+        "category": "Informatica",
+        "question": "In linguaggio C, il valore booleano FALSO è rappresentato da:",
+        "options": [
+            "-1",
+            "0",
+            "NULL",
+            "Qualsiasi numero pari."
+        ],
+        "answer": "0",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_029",
+        "category": "Informatica",
+        "question": "Qual è il risultato dell'espressione booleana 1 || (0 && 1)?",
+        "options": [
+            "0",
+            "1",
+            "Errore",
+            "Indefinito"
+        ],
+        "answer": "1",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_030",
+        "category": "Informatica",
+        "question": "L'operatore NOT (!) è un operatore:",
+        "options": [
+            "Binario.",
+            "Unario (si applica a un solo operando).",
+            "Ternario.",
+            "Relazionale."
+        ],
+        "answer": "Unario (si applica a un solo operando).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_031",
+        "category": "Informatica",
+        "question": "L'espressione !!A (doppia negazione) è equivalente a:",
+        "options": [
+            "!A",
+            "A",
+            "0",
+            "1"
+        ],
+        "answer": "A",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_032",
+        "category": "Informatica",
+        "question": "Quale proprietà degli operatori booleani afferma che A && B = B && A?",
+        "options": [
+            "Associativa.",
+            "Commutativa.",
+            "Distributiva.",
+            "Idempotenza."
+        ],
+        "answer": "Commutativa.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_033",
+        "category": "Informatica",
+        "question": "Un algoritmo deve possedere la proprietà di 'finitezza', che significa:",
+        "options": [
+            "Deve essere corto.",
+            "Deve eseguire un numero finito di passi e terminare per ogni input valido.",
+            "Deve usare poca memoria.",
+            "Deve essere scritto in inglese."
+        ],
+        "answer": "Deve eseguire un numero finito di passi e terminare per ogni input valido.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_034",
+        "category": "Informatica",
+        "question": "La 'correttezza' di un algoritmo implica che:",
+        "options": [
+            "Non contenga errori di sintassi.",
+            "Per ogni input che soddisfa le pre-condizioni, produca un output che soddisfa le post-condizioni.",
+            "Sia veloce.",
+            "Sia facile da leggere."
+        ],
+        "answer": "Per ogni input che soddisfa le pre-condizioni, produca un output che soddisfa le post-condizioni.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_035",
+        "category": "Informatica",
+        "question": "Cosa afferma il Teorema di Böhm-Jacopini?",
+        "options": [
+            "Che ogni problema è risolubile.",
+            "Che qualunque algoritmo può essere implementato utilizzando solo tre strutture di controllo: sequenza, selezione (if-else) e iterazione (loop).",
+            "Che il GOTO è necessario.",
+            "Che i computer diventeranno intelligenti."
+        ],
+        "answer": "Che qualunque algoritmo può essere implementato utilizzando solo tre strutture di controllo: sequenza, selezione (if-else) e iterazione (loop).",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_036",
+        "category": "Informatica",
+        "question": "Un problema si dice 'intrattabile' se:",
+        "options": [
+            "Non esiste alcun algoritmo per risolverlo.",
+            "Esiste un algoritmo risolutivo, ma richiede risorse (tempo/memoria) eccessive (es. esponenziali) per essere praticabile su istanze grandi.",
+            "È difficile da capire.",
+            "Nessuno ci ha mai provato."
+        ],
+        "answer": "Esiste un algoritmo risolutivo, ma richiede risorse (tempo/memoria) eccessive (es. esponenziali) per essere praticabile su istanze grandi.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_037",
+        "category": "Informatica",
+        "question": "Le 'pre-condizioni' di un algoritmo specificano:",
+        "options": [
+            "Cosa fa l'algoritmo.",
+            "Le proprietà che i dati di input devono soddisfare affinché l'algoritmo funzioni correttamente.",
+            "Il tempo di esecuzione.",
+            "Il linguaggio di programmazione."
+        ],
+        "answer": "Le proprietà che i dati di input devono soddisfare affinché l'algoritmo funzioni correttamente.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_038",
+        "category": "Informatica",
+        "question": "L'efficienza temporale di un algoritmo si valuta solitamente in funzione:",
+        "options": [
+            "Della velocità del processore.",
+            "Della dimensione dei dati di input (n).",
+            "Del linguaggio usato.",
+            "Dell'anno di creazione."
+        ],
+        "answer": "Della dimensione dei dati di input (n).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_039",
+        "category": "Informatica",
+        "question": "Quale delle seguenti è un'istruzione di controllo iterativa?",
+        "options": [
+            "if-else",
+            "while (o for)",
+            "assegnamento",
+            "input"
+        ],
+        "answer": "while (o for)",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_040",
+        "category": "Informatica",
+        "question": "Il diagramma a blocchi (flowchart) è:",
+        "options": [
+            "Un componente hardware.",
+            "Una rappresentazione grafica di un algoritmo che usa forme geometriche per indicare istruzioni e frecce per il flusso.",
+            "Un tipo di memoria.",
+            "Un errore di programmazione."
+        ],
+        "answer": "Una rappresentazione grafica di un algoritmo che usa forme geometriche per indicare istruzioni e frecce per il flusso.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_041",
+        "category": "Informatica",
+        "question": "In un diagramma a blocchi, il rombo rappresenta solitamente:",
+        "options": [
+            "L'inizio o la fine.",
+            "Una decisione o test condizionale.",
+            "Un'operazione di I/O.",
+            "Un'azione generica."
+        ],
+        "answer": "Una decisione o test condizionale.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_042",
+        "category": "Informatica",
+        "question": "L'elemento neutro per l'operatore OR è:",
+        "options": [
+            "Vero (1).",
+            "Falso (0).",
+            "Non esiste.",
+            "Se stesso."
+        ],
+        "answer": "Falso (0).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_043",
+        "category": "Informatica",
+        "question": "L'elemento assorbente per l'operatore AND è:",
+        "options": [
+            "Vero (1).",
+            "Falso (0).",
+            "Non esiste.",
+            "L'infinito."
+        ],
+        "answer": "Falso (0).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_044",
+        "category": "Informatica",
+        "question": "Qual è la rappresentazione binaria del numero decimale 255?",
+        "options": [
+            "10000000",
+            "11111111",
+            "10101010",
+            "11001100"
+        ],
+        "answer": "11111111",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_045",
+        "category": "Informatica",
+        "question": "In architettura dei calcolatori, cosa significa l'acronimo RAM?",
+        "options": [
+            "Read Access Memory",
+            "Random Access Memory",
+            "Rapid Access Memory",
+            "Real Access Memory"
+        ],
+        "answer": "Random Access Memory",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_046",
+        "category": "Informatica",
+        "question": "Quale registro contiene l'istruzione attualmente in esecuzione?",
+        "options": [
+            "PC (Program Counter)",
+            "IR (Instruction Register)",
+            "MAR (Memory Address Register)",
+            "MDR (Memory Data Register)"
+        ],
+        "answer": "IR (Instruction Register)",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_047",
+        "category": "Informatica",
+        "question": "La 'non ambiguità' di un algoritmo significa che:",
+        "options": [
+            "Deve essere scritto in C.",
+            "Ogni istruzione deve essere interpretabile in modo univoco dall'esecutore.",
+            "Deve avere un solo output.",
+            "Deve avere un nome chiaro."
+        ],
+        "answer": "Ogni istruzione deve essere interpretabile in modo univoco dall'esecutore.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_048",
+        "category": "Informatica",
+        "question": "Quale tra i seguenti è un problema 'indecidibile'?",
+        "options": [
+            "Ordinare una lista.",
+            "Il problema della fermata (Halting Problem).",
+            "Trovare il massimo.",
+            "Calcolare il fattoriale."
+        ],
+        "answer": "Il problema della fermata (Halting Problem).",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_049",
+        "category": "Informatica",
+        "question": "L'unità di misura della capacità di memoria '1 Gigabyte' (GB) corrisponde a:",
+        "options": [
+            "1000 Byte.",
+            "1024 Megabyte (MB).",
+            "1000 Kilobyte.",
+            "1 milione di bit."
+        ],
+        "answer": "1024 Megabyte (MB).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_050",
+        "category": "Informatica",
+        "question": "Qual è il risultato di (1 && !0) || 0?",
+        "options": [
+            "0",
+            "1",
+            "Errore",
+            "Null"
+        ],
+        "answer": "1",
+        "difficulty": 2
+    }
+]

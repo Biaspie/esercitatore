@@ -1,0 +1,652 @@
+[
+    {
+        "id": "proc_pen_051",
+        "category": "Procedura Penale",
+        "question": "Qual è la differenza fondamentale tra 'arresto in flagranza' e 'fermo di indiziato di delitto'?",
+        "options": [
+            "L'arresto è disposto dal giudice, il fermo dal P.M.",
+            "L'arresto presuppone la flagranza di reato; il fermo presuppone gravi indizi di colpevolezza e il pericolo di fuga, anche fuori dalla flagranza.",
+            "L'arresto è per i delitti, il fermo per le contravvenzioni.",
+            "L'arresto dura 24 ore, il fermo 48 ore."
+        ],
+        "answer": "L'arresto presuppone la flagranza di reato; il fermo presuppone gravi indizi di colpevolezza e il pericolo di fuga, anche fuori dalla flagranza.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_052",
+        "category": "Procedura Penale",
+        "question": "Lo stato di 'quasi flagranza' (art. 382 c.p.p.) si configura quando:",
+        "options": [
+            "Il reato è stato commesso il giorno prima.",
+            "Il colpevole è sorpreso con cose o tracce dalle quali appaia che egli abbia commesso il reato immediatamente prima, oppure è inseguito dalla P.G., dalla persona offesa o da altri subito dopo il reato.",
+            "La polizia ha il sospetto che il reato stia per essere commesso.",
+            "Il colpevole confessa il reato."
+        ],
+        "answer": "Il colpevole è sorpreso con cose o tracce dalle quali appaia che egli abbia commesso il reato immediatamente prima, oppure è inseguito dalla P.G., dalla persona offesa o da altri subito dopo il reato.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_053",
+        "category": "Procedura Penale",
+        "question": "L'arresto obbligatorio in flagranza (art. 380 c.p.p.) deve essere eseguito:",
+        "options": [
+            "Solo per i delitti di mafia.",
+            "Per i delitti non colposi (consumati o tentati) per i quali la legge stabilisce l'ergastolo o la reclusione non inferiore nel minimo a 5 anni e nel massimo a 20 anni, e per altri delitti specifici (es. rapina, estorsione, spaccio ingente).",
+            "A discrezione della Polizia Giudiziaria.",
+            "Solo se c'è pericolo di fuga."
+        ],
+        "answer": "Per i delitti non colposi (consumati o tentati) per i quali la legge stabilisce l'ergastolo o la reclusione non inferiore nel minimo a 5 anni e nel massimo a 20 anni, e per altri delitti specifici (es. rapina, estorsione, spaccio ingente).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_054",
+        "category": "Procedura Penale",
+        "question": "Nell'arresto facoltativo in flagranza (art. 381 c.p.p.), la P.G. deve valutare:",
+        "options": [
+            "Solo la gravità del fatto.",
+            "La gravità del fatto ovvero la pericolosità del soggetto desunta dalla sua personalità o dalle circostanze del fatto.",
+            "Se c'è posto in carcere.",
+            "Se il P.M. è d'accordo."
+        ],
+        "answer": "La gravità del fatto ovvero la pericolosità del soggetto desunta dalla sua personalità o dalle circostanze del fatto.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_055",
+        "category": "Procedura Penale",
+        "question": "Chi ha il potere di disporre il fermo di indiziato di delitto (art. 384 c.p.p.)?",
+        "options": [
+            "Solo il G.I.P.",
+            "Il Pubblico Ministero (e la P.G. in via sussidiaria se il P.M. non ha ancora assunto la direzione delle indagini o in casi di urgenza/pericolo di fuga imminente).",
+            "Il Prefetto.",
+            "Il difensore."
+        ],
+        "answer": "Il Pubblico Ministero (e la P.G. in via sussidiaria se il P.M. non ha ancora assunto la direzione delle indagini o in casi di urgenza/pericolo di fuga imminente).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_056",
+        "category": "Procedura Penale",
+        "question": "Entro quanto tempo la P.G. deve porre l'arrestato o il fermato a disposizione del P.M. (conducendolo in carcere o ai domiciliari)?",
+        "options": [
+            "Entro 48 ore.",
+            "Al più presto e comunque non oltre 24 ore.",
+            "Entro 5 giorni.",
+            "Immediatamente, senza eccezioni."
+        ],
+        "answer": "Al più presto e comunque non oltre 24 ore.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_057",
+        "category": "Procedura Penale",
+        "question": "L'udienza di convalida dell'arresto o del fermo si svolge:",
+        "options": [
+            "Davanti al P.M.",
+            "Davanti al G.I.P. (o al giudice del dibattimento nel direttissimo) entro 48 ore dalla richiesta del P.M. (che a sua volta deve essere fatta entro 48 ore dall'arresto).",
+            "In Questura.",
+            "Senza difensore."
+        ],
+        "answer": "Davanti al G.I.P. (o al giudice del dibattimento nel direttissimo) entro 48 ore dalla richiesta del P.M. (che a sua volta deve essere fatta entro 48 ore dall'arresto).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_058",
+        "category": "Procedura Penale",
+        "question": "Se l'arresto non viene convalidato ma sussistono gravi indizi e esigenze cautelari:",
+        "options": [
+            "L'indagato deve essere liberato immediatamente.",
+            "Il giudice può comunque applicare una misura cautelare (l'arresto perde efficacia ma la misura cautelare subentra).",
+            "Il P.M. può ordinare un nuovo arresto.",
+            "Il processo si estingue."
+        ],
+        "answer": "Il giudice può comunque applicare una misura cautelare (l'arresto perde efficacia ma la misura cautelare subentra).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_059",
+        "category": "Procedura Penale",
+        "question": "Quali sono le 'esigenze cautelari' (art. 274 c.p.p.) che giustificano l'applicazione di una misura cautelare?",
+        "options": [
+            "Solo il pericolo di fuga.",
+            "Pericolo di inquinamento delle prove, pericolo di fuga, pericolo di reiterazione del reato (o commissione di gravi delitti).",
+            "La gravità della pena prevista.",
+            "Il clamore mediatico."
+        ],
+        "answer": "Pericolo di inquinamento delle prove, pericolo di fuga, pericolo di reiterazione del reato (o commissione di gravi delitti).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_060",
+        "category": "Procedura Penale",
+        "question": "I 'gravi indizi di colpevolezza' (art. 273 c.p.p.) sono:",
+        "options": [
+            "La prova certa della colpevolezza.",
+            "Elementi che fanno ritenere altamente probabile la responsabilità dell'indagato (presupposto necessario per le misure cautelari).",
+            "Semplici sospetti.",
+            "Le voci correnti nel pubblico."
+        ],
+        "answer": "Elementi che fanno ritenere altamente probabile la responsabilità dell'indagato (presupposto necessario per le misure cautelari).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_061",
+        "category": "Procedura Penale",
+        "question": "Quale principio governa la scelta della misura cautelare da parte del giudice?",
+        "options": [
+            "Il principio di massima afflizione.",
+            "I principi di adeguatezza e proporzionalità (la misura deve essere idonea allo scopo e proporzionata alla gravità del fatto e alla sanzione).",
+            "Il principio di casualità.",
+            "Il principio di economia processuale."
+        ],
+        "answer": "I principi di adeguatezza e proporzionalità (la misura deve essere idonea allo scopo e proporzionata alla gravità del fatto e alla sanzione).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_062",
+        "category": "Procedura Penale",
+        "question": "La custodia cautelare in carcere è considerata:",
+        "options": [
+            "La prima opzione per ogni reato.",
+            "L'extrema ratio, da applicare solo quando ogni altra misura risulti inadeguata (salvo presunzioni per reati gravissimi).",
+            "Una pena anticipata.",
+            "Un atto amministrativo."
+        ],
+        "answer": "L'extrema ratio, da applicare solo quando ogni altra misura risulti inadeguata (salvo presunzioni per reati gravissimi).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_063",
+        "category": "Procedura Penale",
+        "question": "Quali sono le misure cautelari personali coercitive diverse dalla custodia in carcere?",
+        "options": [
+            "Solo gli arresti domiciliari.",
+            "Divieto di espatrio, obbligo di presentazione alla P.G., allontanamento dalla casa familiare, divieto di avvicinamento ai luoghi frequentati dalla persona offesa, divieto/obbligo di dimora, arresti domiciliari.",
+            "Sospensione dall'esercizio di un pubblico ufficio.",
+            "Sequestro preventivo."
+        ],
+        "answer": "Divieto di espatrio, obbligo di presentazione alla P.G., allontanamento dalla casa familiare, divieto di avvicinamento ai luoghi frequentati dalla persona offesa, divieto/obbligo di dimora, arresti domiciliari.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_064",
+        "category": "Procedura Penale",
+        "question": "Le misure cautelari interdittive (es. sospensione dall'esercizio di un pubblico ufficio) possono essere applicate:",
+        "options": [
+            "A chiunque.",
+            "Per reati che prevedono l'ergastolo o la reclusione superiore nel massimo a 3 anni (art. 287 c.p.p.).",
+            "Solo ai pubblici dipendenti.",
+            "Senza richiesta del P.M."
+        ],
+        "answer": "Per reati che prevedono l'ergastolo o la reclusione superiore nel massimo a 3 anni (art. 287 c.p.p.).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_065",
+        "category": "Procedura Penale",
+        "question": "Il sequestro preventivo (art. 321 c.p.p.) ha lo scopo di:",
+        "options": [
+            "Garantire il pagamento delle spese processuali.",
+            "Interrompere la criminosità, impedendo che la libera disponibilità di una cosa pertinente al reato possa aggravare o protrarre le conseguenze di esso o agevolare la commissione di altri reati.",
+            "Acquisire la prova del reato.",
+            "Punire il colpevole."
+        ],
+        "answer": "Interrompere la criminosità, impedendo che la libera disponibilità di una cosa pertinente al reato possa aggravare o protrarre le conseguenze di esso o agevolare la commissione di altri reati.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_066",
+        "category": "Procedura Penale",
+        "question": "Il sequestro conservativo (art. 316 c.p.p.) serve a:",
+        "options": [
+            "Conservare le prove.",
+            "Garantire il pagamento della pena pecuniaria, delle spese di giustizia e del risarcimento del danno (cautela patrimoniale).",
+            "Impedire la fuga dell'imputato.",
+            "Proteggere i testimoni."
+        ],
+        "answer": "Garantire il pagamento della pena pecuniaria, delle spese di giustizia e del risarcimento del danno (cautela patrimoniale).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_067",
+        "category": "Procedura Penale",
+        "question": "Chi può disporre il sequestro preventivo in caso di urgenza?",
+        "options": [
+            "Solo il giudice.",
+            "Il P.M. con decreto motivato, e anche la P.G. (che deve trasmettere il verbale al P.M. entro 48 ore); in entrambi i casi il P.M. deve chiedere la convalida al G.I.P. entro 48 ore.",
+            "Il Sindaco.",
+            "La parte civile."
+        ],
+        "answer": "Il P.M. con decreto motivato, e anche la P.G. (che deve trasmettere il verbale al P.M. entro 48 ore); in entrambi i casi il P.M. deve chiedere la convalida al G.I.P. entro 48 ore.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_068",
+        "category": "Procedura Penale",
+        "question": "L'interrogatorio di garanzia (art. 294 c.p.p.) deve avvenire:",
+        "options": [
+            "Prima dell'arresto.",
+            "Entro 5 giorni dall'inizio dell'esecuzione della custodia cautelare in carcere (o 10 giorni per altre misure), da parte del G.I.P., per verificare la permanenza delle condizioni di applicabilità.",
+            "Dopo la sentenza di primo grado.",
+            "Solo se richiesto dall'indagato."
+        ],
+        "answer": "Entro 5 giorni dall'inizio dell'esecuzione della custodia cautelare in carcere (o 10 giorni per altre misure), da parte del G.I.P., per verificare la permanenza delle condizioni di applicabilità.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_069",
+        "category": "Procedura Penale",
+        "question": "Il Tribunale del Riesame (Tribunale della Libertà) decide su:",
+        "options": [
+            "Tutte le sentenze.",
+            "Le richieste di riesame contro le ordinanze che dispongono misure coercitive (art. 309 c.p.p.); deve decidere entro 10 giorni dalla ricezione degli atti, pena la perdita di efficacia della misura.",
+            "Le multe.",
+            "Le ferie dei magistrati."
+        ],
+        "answer": "Le richieste di riesame contro le ordinanze che dispongono misure coercitive (art. 309 c.p.p.); deve decidere entro 10 giorni dalla ricezione degli atti, pena la perdita di efficacia della misura.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_070",
+        "category": "Procedura Penale",
+        "question": "Cosa comporta la decorrenza dei termini massimi di custodia cautelare (art. 303 c.p.p.)?",
+        "options": [
+            "L'imputato viene condannato automaticamente.",
+            "La misura perde efficacia e l'imputato deve essere scarcerato (salvo altre misure meno afflittive se sussistono le esigenze).",
+            "Il processo si estingue.",
+            "Il giudice viene sanzionato."
+        ],
+        "answer": "La misura perde efficacia e l'imputato deve essere scarcerato (salvo altre misure meno afflittive se sussistono le esigenze).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_071",
+        "category": "Procedura Penale",
+        "question": "Il giudizio abbreviato (art. 438 c.p.p.) è un rito speciale che prevede:",
+        "options": [
+            "Il giudizio allo stato degli atti delle indagini preliminari (senza dibattimento) su richiesta dell'imputato; in caso di condanna, la pena è ridotta di un terzo (o all'ergastolo semplice/30 anni).",
+            "Un processo più veloce ma con pena aumentata.",
+            "L'accordo tra P.M. e imputato sulla pena.",
+            "Il giudizio immediato senza udienza preliminare."
+        ],
+        "answer": "Il giudizio allo stato degli atti delle indagini preliminari (senza dibattimento) su richiesta dell'imputato; in caso di condanna, la pena è ridotta di un terzo (o all'ergastolo semplice/30 anni).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_072",
+        "category": "Procedura Penale",
+        "question": "Il 'patteggiamento' (applicazione della pena su richiesta delle parti, art. 444 c.p.p.) comporta:",
+        "options": [
+            "L'ammissione di colpa e l'accordo tra imputato e P.M. sulla pena (ridotta fino a un terzo); il giudice controlla la congruità e, se accetta, applica la pena con sentenza equiparata a condanna.",
+            "L'assoluzione dell'imputato.",
+            "Il rinvio a giudizio.",
+            "La sospensione del processo."
+        ],
+        "answer": "L'ammissione di colpa e l'accordo tra imputato e P.M. sulla pena (ridotta fino a un terzo); il giudice controlla la congruità e, se accetta, applica la pena con sentenza equiparata a condanna.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_073",
+        "category": "Procedura Penale",
+        "question": "Qual è il limite di pena (detentiva) per accedere al patteggiamento 'allargato'?",
+        "options": [
+            "2 anni.",
+            "5 anni (compresi o esclusi a seconda delle interpretazioni, ma il codice dice 'pena detentiva... non superiore a cinque anni').",
+            "10 anni.",
+            "Nessun limite."
+        ],
+        "answer": "5 anni (compresi o esclusi a seconda delle interpretazioni, ma il codice dice 'pena detentiva... non superiore a cinque anni').",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_074",
+        "category": "Procedura Penale",
+        "question": "Il giudizio direttissimo (art. 449 c.p.p.) si instaura quando:",
+        "options": [
+            "C'è l'arresto in flagranza (convalidato) o la confessione dell'indagato; si salta l'udienza preliminare e si va subito al dibattimento.",
+            "Le indagini sono durate troppo.",
+            "L'imputato è latitante.",
+            "Il reato è prescritto."
+        ],
+        "answer": "C'è l'arresto in flagranza (convalidato) o la confessione dell'indagato; si salta l'udienza preliminare e si va subito al dibattimento.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_075",
+        "category": "Procedura Penale",
+        "question": "Il giudizio immediato (art. 453 c.p.p.) presuppone:",
+        "options": [
+            "L'evidenza della prova (che rende inutile l'udienza preliminare) e l'interrogatorio dell'indagato (o invito a presentarsi); è chiesto dal P.M. entro 90 giorni.",
+            "L'accordo delle parti.",
+            "La mancanza di prove.",
+            "La richiesta della parte civile."
+        ],
+        "answer": "L'evidenza della prova (che rende inutile l'udienza preliminare) e l'interrogatorio dell'indagato (o invito a presentarsi); è chiesto dal P.M. entro 90 giorni.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_076",
+        "category": "Procedura Penale",
+        "question": "Il giudizio immediato 'custodiale' può essere chiesto quando:",
+        "options": [
+            "L'imputato è in custodia cautelare e la misura è stata confermata in sede di riesame (o sono scaduti i termini per chiederlo).",
+            "L'imputato è libero.",
+            "L'imputato è irreperibile.",
+            "Il reato è lieve."
+        ],
+        "answer": "L'imputato è in custodia cautelare e la misura è stata confermata in sede di riesame (o sono scaduti i termini per chiederlo).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_077",
+        "category": "Procedura Penale",
+        "question": "Il decreto penale di condanna (art. 459 c.p.p.) è:",
+        "options": [
+            "Una sentenza emessa dopo il dibattimento.",
+            "Un provvedimento emesso dal G.I.P. su richiesta del P.M. per reati perseguibili d'ufficio (o a querela se c'è) punibili con sola pena pecuniaria (anche in sostituzione di detentiva); si emette 'inaudita altera parte' (senza contraddittorio).",
+            "Un atto della Polizia.",
+            "Una misura cautelare."
+        ],
+        "answer": "Un provvedimento emesso dal G.I.P. su richiesta del P.M. per reati perseguibili d'ufficio (o a querela se c'è) punibili con sola pena pecuniaria (anche in sostituzione di detentiva); si emette 'inaudita altera parte' (senza contraddittorio).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_078",
+        "category": "Procedura Penale",
+        "question": "Cosa può fare l'imputato contro il decreto penale di condanna?",
+        "options": [
+            "Nulla, è definitivo.",
+            "Proporre opposizione entro 15 giorni, chiedendo il giudizio immediato, il giudizio abbreviato o il patteggiamento (o l'oblazione).",
+            "Fare appello alla Corte d'Assise.",
+            "Chiedere la grazia."
+        ],
+        "answer": "Proporre opposizione entro 15 giorni, chiedendo il giudizio immediato, il giudizio abbreviato o il patteggiamento (o l'oblazione).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_079",
+        "category": "Procedura Penale",
+        "question": "La sospensione del procedimento con messa alla prova (art. 168-bis c.p., art. 464-bis c.p.p.) comporta:",
+        "options": [
+            "La sospensione del processo per un periodo di prova in cui l'imputato svolge lavori di pubblica utilità e risarcisce il danno; se la prova è positiva, il reato si estingue.",
+            "La condanna sospesa.",
+            "L'assoluzione per merito.",
+            "La detenzione domiciliare."
+        ],
+        "answer": "La sospensione del processo per un periodo di prova in cui l'imputato svolge lavori di pubblica utilità e risarcisce il danno; se la prova è positiva, il reato si estingue.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_080",
+        "category": "Procedura Penale",
+        "question": "Quali sono i limiti di pena per chiedere la messa alla prova?",
+        "options": [
+            "Reati puniti con pena pecuniaria o detentiva non superiore nel massimo a 4 anni.",
+            "Qualsiasi reato.",
+            "Solo contravvenzioni.",
+            "Reati puniti fino a 10 anni."
+        ],
+        "answer": "Reati puniti con pena pecuniaria o detentiva non superiore nel massimo a 4 anni.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_081",
+        "category": "Procedura Penale",
+        "question": "La 'latitanza' (art. 296 c.p.p.) è dichiarata quando:",
+        "options": [
+            "Una persona si sottrae volontariamente alla custodia cautelare, agli arresti domiciliari, al divieto di espatrio, all'obbligo di dimora o a un ordine di carcerazione.",
+            "Una persona non risponde al telefono.",
+            "Una persona va in vacanza.",
+            "Una persona cambia residenza regolarmente."
+        ],
+        "answer": "Una persona si sottrae volontariamente alla custodia cautelare, agli arresti domiciliari, al divieto di espatrio, all'obbligo di dimora o a un ordine di carcerazione.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_082",
+        "category": "Procedura Penale",
+        "question": "Le misure precautelari (arresto e fermo) possono essere eseguite dai privati?",
+        "options": [
+            "Mai.",
+            "Sì, l'arresto in flagranza è facoltativo per i privati (art. 383 c.p.p.) nei casi di arresto obbligatorio per la P.G. e per reati procedibili d'ufficio.",
+            "Sì, anche il fermo.",
+            "Solo dalle guardie giurate."
+        ],
+        "answer": "Sì, l'arresto in flagranza è facoltativo per i privati (art. 383 c.p.p.) nei casi di arresto obbligatorio per la P.G. e per reati procedibili d'ufficio.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_083",
+        "category": "Procedura Penale",
+        "question": "L'allontanamento d'urgenza dalla casa familiare (art. 384-bis c.p.p.) è disposto:",
+        "options": [
+            "Dalla P.G. (su autorizzazione del P.M.) in caso di flagranza di delitti di violenza domestica, se c'è fondato motivo di ritenere che la condotta possa essere reiterata con grave pericolo.",
+            "Dal giudice di pace.",
+            "Dai servizi sociali.",
+            "Dal Sindaco."
+        ],
+        "answer": "Dalla P.G. (su autorizzazione del P.M.) in caso di flagranza di delitti di violenza domestica, se c'è fondato motivo di ritenere che la condotta possa essere reiterata con grave pericolo.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_084",
+        "category": "Procedura Penale",
+        "question": "Il divieto di avvicinamento ai luoghi frequentati dalla persona offesa (art. 282-ter c.p.p.) può includere:",
+        "options": [
+            "L'obbligo di mantenere una certa distanza (es. braccialetto elettronico) e il divieto di comunicare con la persona offesa.",
+            "Solo il divieto di entrare in casa sua.",
+            "Il divieto di usare il telefono.",
+            "L'obbligo di firma."
+        ],
+        "answer": "L'obbligo di mantenere una certa distanza (es. braccialetto elettronico) e il divieto di comunicare con la persona offesa.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_085",
+        "category": "Procedura Penale",
+        "question": "La perizia psichiatrica sull'imputato è ammessa?",
+        "options": [
+            "Sempre, per valutare il carattere.",
+            "Solo per accertare l'infermità mentale (vizio di mente) che esclude o scema l'imputabilità, o l'incapacità di partecipare coscientemente al processo; è vietata la perizia psicologica sul carattere/personalità (salvo che per misure di sicurezza).",
+            "Mai.",
+            "Solo su richiesta della parte civile."
+        ],
+        "answer": "Solo per accertare l'infermità mentale (vizio di mente) che esclude o scema l'imputabilità, o l'incapacità di partecipare coscientemente al processo; è vietata la perizia psicologica sul carattere/personalità (salvo che per misure di sicurezza).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_086",
+        "category": "Procedura Penale",
+        "question": "Il testimone ha l'obbligo di dire la verità?",
+        "options": [
+            "Sì, salvo che sia imputato in procedimento connesso o prossimo congiunto dell'imputato (che ha facoltà di astensione).",
+            "No, può mentire per difendersi.",
+            "Solo se è cristiano.",
+            "Solo se è un pubblico ufficiale."
+        ],
+        "answer": "Sì, salvo che sia imputato in procedimento connesso o prossimo congiunto dell'imputato (che ha facoltà di astensione).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_087",
+        "category": "Procedura Penale",
+        "question": "L'esame delle parti (art. 208 c.p.p.) in dibattimento:",
+        "options": [
+            "È obbligatorio per l'imputato.",
+            "È un mezzo di prova che avviene su richiesta o consenso della parte interessata; l'imputato può rifiutarsi di rispondere (diritto al silenzio) o mentire (nemo tenetur se detegere), ma se risponde le sue dichiarazioni sono prova.",
+            "È vietato.",
+            "Sostituisce la testimonianza."
+        ],
+        "answer": "È un mezzo di prova che avviene su richiesta o consenso della parte interessata; l'imputato può rifiutarsi di rispondere (diritto al silenzio) o mentire (nemo tenetur se detegere), ma se risponde le sue dichiarazioni sono prova.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_088",
+        "category": "Procedura Penale",
+        "question": "I confronti (art. 211 c.p.p.) sono ammessi:",
+        "options": [
+            "Tra persone già esaminate o interrogate, quando vi è disaccordo su fatti e circostanze importanti.",
+            "Tra imputato e giudice.",
+            "Tra P.M. e difensore.",
+            "Sempre."
+        ],
+        "answer": "Tra persone già esaminate o interrogate, quando vi è disaccordo su fatti e circostanze importanti.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_089",
+        "category": "Procedura Penale",
+        "question": "L'esperimento giudiziale (art. 218 c.p.p.) consiste:",
+        "options": [
+            "In un test psicologico.",
+            "Nella riproduzione, per quanto possibile, della situazione in cui il fatto si afferma o si ritiene essere avvenuto e nella ripetizione delle modalità di svolgimento del fatto stesso, per accertare se il fatto sia o possa essere avvenuto in un determinato modo.",
+            "In una simulazione al computer.",
+            "In un sopralluogo."
+        ],
+        "answer": "Nella riproduzione, per quanto possibile, della situazione in cui il fatto si afferma o si ritiene essere avvenuto e nella ripetizione delle modalità di svolgimento del fatto stesso, per accertare se il fatto sia o possa essere avvenuto in un determinato modo.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_090",
+        "category": "Procedura Penale",
+        "question": "I documenti (art. 234 c.p.p.) sono ammessi come prova:",
+        "options": [
+            "Solo se scritti a mano.",
+            "Se rappresentano fatti, persone o cose mediante la scrittura, la fotografia, la cinematografia, la fonografia o qualsiasi altro mezzo; sono vietati i documenti anonimi (salvo che provengano dall'imputato o costituiscano corpo del reato).",
+            "Solo se pubblici.",
+            "Mai."
+        ],
+        "answer": "Se rappresentano fatti, persone o cose mediante la scrittura, la fotografia, la cinematografia, la fonografia o qualsiasi altro mezzo; sono vietati i documenti anonimi (salvo che provengano dall'imputato o costituiscano corpo del reato).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_091",
+        "category": "Procedura Penale",
+        "question": "Cosa si intende per 'inutilizzabilità patologica' delle intercettazioni?",
+        "options": [
+            "Quando sono fatte male.",
+            "Quando sono state eseguite fuori dai casi consentiti dalla legge o senza l'osservanza delle disposizioni previste (art. 271 c.p.p.), rendendole inutilizzabili in ogni fase.",
+            "Quando non si sente bene l'audio.",
+            "Quando sono in lingua straniera."
+        ],
+        "answer": "Quando sono state eseguite fuori dai casi consentiti dalla legge o senza l'osservanza delle disposizioni previste (art. 271 c.p.p.), rendendole inutilizzabili in ogni fase.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_092",
+        "category": "Procedura Penale",
+        "question": "Il difensore può assistere alla perquisizione?",
+        "options": [
+            "No, mai.",
+            "Sì, ha diritto di assistere (senza preavviso) se è prontamente reperibile o se interviene in corso d'opera.",
+            "Solo se autorizzato dal P.M.",
+            "Solo se la perquisizione è negativa."
+        ],
+        "answer": "Sì, ha diritto di assistere (senza preavviso) se è prontamente reperibile o se interviene in corso d'opera.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_093",
+        "category": "Procedura Penale",
+        "question": "Il difensore ha diritto al preavviso per l'interrogatorio dell'indagato da parte del P.M.?",
+        "options": [
+            "No.",
+            "Sì, deve essere avvisato almeno 24 ore prima (salvo urgenza), e la sua presenza è facoltativa (ma necessaria per l'interrogatorio di garanzia o delegato alla P.G.).",
+            "Sì, 10 giorni prima.",
+            "Solo se l'indagato è minorenne."
+        ],
+        "answer": "Sì, deve essere avvisato almeno 24 ore prima (salvo urgenza), e la sua presenza è facoltativa (ma necessaria per l'interrogatorio di garanzia o delegato alla P.G.).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_094",
+        "category": "Procedura Penale",
+        "question": "La 'riparazione per ingiusta detenzione' (art. 314 c.p.p.) spetta:",
+        "options": [
+            "A chiunque sia stato in carcere.",
+            "A chi è stato prosciolto con sentenza irrevocabile perché il fatto non sussiste, non l'ha commesso, ecc., o a chi è stato detenuto illegittimamente (senza presupposti), purché non vi abbia dato causa per dolo o colpa grave.",
+            "Solo ai condannati.",
+            "Ai parenti della vittima."
+        ],
+        "answer": "A chi è stato prosciolto con sentenza irrevocabile perché il fatto non sussiste, non l'ha commesso, ecc., o a chi è stato detenuto illegittimamente (senza presupposti), purché non vi abbia dato causa per dolo o colpa grave.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_095",
+        "category": "Procedura Penale",
+        "question": "Il giudizio di revisione (art. 629 c.p.p.) è un mezzo di impugnazione:",
+        "options": [
+            "Ordinario.",
+            "Straordinario, esperibile in ogni tempo contro le sentenze di condanna irrevocabili, per motivi tassativi (es. nuove prove di innocenza, falsità delle prove precedenti).",
+            "Contro le ordinanze.",
+            "Contro i decreti di archiviazione."
+        ],
+        "answer": "Straordinario, esperibile in ogni tempo contro le sentenze di condanna irrevocabili, per motivi tassativi (es. nuove prove di innocenza, falsità delle prove precedenti).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_096",
+        "category": "Procedura Penale",
+        "question": "L'appello (art. 593 c.p.p.) è un mezzo di impugnazione:",
+        "options": [
+            "A critica vincolata.",
+            "Di merito, che devolve al giudice superiore (Corte d'Appello) la cognizione della causa nei limiti dei motivi proposti (effetto devolutivo).",
+            "Solo per motivi di legittimità.",
+            "Che non sospende l'esecuzione della pena."
+        ],
+        "answer": "Di merito, che devolve al giudice superiore (Corte d'Appello) la cognizione della causa nei limiti dei motivi proposti (effetto devolutivo).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_097",
+        "category": "Procedura Penale",
+        "question": "Il ricorso per Cassazione (art. 606 c.p.p.) può essere proposto:",
+        "options": [
+            "Per ingiustizia della sentenza.",
+            "Per motivi tassativi di violazione di legge (es. inosservanza norme processuali, vizio di motivazione, errata applicazione legge penale).",
+            "Per riesaminare i fatti.",
+            "Per sentire nuovi testimoni."
+        ],
+        "answer": "Per motivi tassativi di violazione di legge (es. inosservanza norme processuali, vizio di motivazione, errata applicazione legge penale).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_098",
+        "category": "Procedura Penale",
+        "question": "La sentenza diventa 'irrevocabile' (giudicato) quando:",
+        "options": [
+            "Viene letta in udienza.",
+            "Sono decorsi i termini per impugnarla o sono stati esauriti tutti i mezzi di impugnazione ordinari.",
+            "Il giudice la firma.",
+            "L'imputato va in carcere."
+        ],
+        "answer": "Sono decorsi i termini per impugnarla o sono stati esauriti tutti i mezzi di impugnazione ordinari.",
+        "difficulty": 1
+    },
+    {
+        "id": "proc_pen_099",
+        "category": "Procedura Penale",
+        "question": "Il principio del 'ne bis in idem' (art. 649 c.p.p.) stabilisce che:",
+        "options": [
+            "Si può essere processati due volte per lo stesso fatto.",
+            "L'imputato prosciolto o condannato con sentenza o decreto penale divenuti irrevocabili non può essere di nuovo sottoposto a procedimento penale per il medesimo fatto.",
+            "Il giudice non può cambiare idea.",
+            "Il P.M. deve fare due indagini."
+        ],
+        "answer": "L'imputato prosciolto o condannato con sentenza o decreto penale divenuti irrevocabili non può essere di nuovo sottoposto a procedimento penale per il medesimo fatto.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_100",
+        "category": "Procedura Penale",
+        "question": "L'esecuzione della pena detentiva è ordinata da:",
+        "options": [
+            "Il Giudice di Pace.",
+            "Il Pubblico Ministero presso il giudice dell'esecuzione, che emette l'ordine di esecuzione.",
+            "La Polizia Penitenziaria.",
+            "Il Sindaco."
+        ],
+        "answer": "Il Pubblico Ministero presso il giudice dell'esecuzione, che emette l'ordine di esecuzione.",
+        "difficulty": 2
+    }
+]

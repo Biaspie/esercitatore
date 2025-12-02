@@ -1,0 +1,652 @@
+[
+    {
+        "id": "proc_pen_101",
+        "category": "Procedura Penale",
+        "question": "Secondo la Riforma Cartabia (D.Lgs. 150/2022), qual è la regola generale per la forma degli atti del procedimento penale (art. 110 c.p.p.)?",
+        "options": [
+            "La forma scritta cartacea obbligatoria.",
+            "La forma digitale (documento informatico), salvo deroghe specifiche per malfunzionamenti o esigenze particolari che impediscono la formazione dell'atto nativo digitale.",
+            "La forma orale registrata.",
+            "La forma mista a discrezione del cancelliere."
+        ],
+        "answer": "La forma digitale (documento informatico), salvo deroghe specifiche per malfunzionamenti o esigenze particolari che impediscono la formazione dell'atto nativo digitale.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_102",
+        "category": "Procedura Penale",
+        "question": "Cosa prevede la Riforma Cartabia riguardo al 'domicilio digitale' per le notificazioni?",
+        "options": [
+            "È facoltativo per tutti.",
+            "È il presupposto per la notifica telematica; se il destinatario ne dispone, la notifica deve avvenire telematicamente.",
+            "È vietato per gli atti penali.",
+            "Sostituisce il domicilio fisico solo per gli avvocati."
+        ],
+        "answer": "È il presupposto per la notifica telematica; se il destinatario ne dispone, la notifica deve avvenire telematicamente.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_103",
+        "category": "Procedura Penale",
+        "question": "Come deve essere eseguita la notifica dell'atto introduttivo del giudizio all'imputato detenuto (art. 156 c.p.p.) dopo la Riforma Cartabia?",
+        "options": [
+            "Sempre a mani nel luogo di detenzione (anche per le notifiche successive).",
+            "Via PEC al direttore del carcere.",
+            "Per posta raccomandata.",
+            "Al difensore."
+        ],
+        "answer": "Sempre a mani nel luogo di detenzione (anche per le notifiche successive).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_104",
+        "category": "Procedura Penale",
+        "question": "Per l'imputato non detenuto che non ha eletto domicilio, la prima notifica (atto introduttivo) va fatta (art. 157 c.p.p.):",
+        "options": [
+            "Preferibilmente con consegna di copia alla persona (o a convivente/portiere/luogo di lavoro se non possibile); se non ha domicilio digitale e non ha ricevuto gli avvertimenti ex art. 161 c.p.p.",
+            "Sempre al difensore d'ufficio.",
+            "Mediante affissione alla casa comunale.",
+            "Via WhatsApp."
+        ],
+        "answer": "Preferibilmente con consegna di copia alla persona (o a convivente/portiere/luogo di lavoro se non possibile); se non ha domicilio digitale e non ha ricevuto gli avvertimenti ex art. 161 c.p.p.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_105",
+        "category": "Procedura Penale",
+        "question": "Le notifiche successive alla prima all'imputato non detenuto (art. 157-bis c.p.p.) sono eseguite:",
+        "options": [
+            "Sempre all'imputato personalmente.",
+            "Mediante consegna al difensore di fiducia (o d'ufficio se l'imputato ha ricevuto gli avvertimenti o la prima notifica a mani).",
+            "Alla Polizia Giudiziaria.",
+            "Al P.M."
+        ],
+        "answer": "Mediante consegna al difensore di fiducia (o d'ufficio se l'imputato ha ricevuto gli avvertimenti o la prima notifica a mani).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_106",
+        "category": "Procedura Penale",
+        "question": "Cos'è la 'Giustizia Riparativa' introdotta organicamente dalla Riforma Cartabia?",
+        "options": [
+            "Un programma per riparare le carceri.",
+            "Un modello di giustizia complementare che promuove la risoluzione delle questioni derivanti dal reato tramite l'incontro tra vittima e autore (mediazione), con l'aiuto di un terzo imparziale, per raggiungere un esito riparativo (simbolico o materiale).",
+            "Il risarcimento del danno in denaro.",
+            "La pena di morte."
+        ],
+        "answer": "Un modello di giustizia complementare che promuove la risoluzione delle questioni derivanti dal reato tramite l'incontro tra vittima e autore (mediazione), con l'aiuto di un terzo imparziale, per raggiungere un esito riparativo (simbolico o materiale).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_107",
+        "category": "Procedura Penale",
+        "question": "Quando si può accedere ai programmi di giustizia riparativa?",
+        "options": [
+            "Solo dopo la condanna definitiva.",
+            "In ogni stato e grado del procedimento penale (anche durante le indagini e l'esecuzione della pena).",
+            "Solo per i reati minori.",
+            "Solo se la vittima perdona l'autore."
+        ],
+        "answer": "In ogni stato e grado del procedimento penale (anche durante le indagini e l'esecuzione della pena).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_108",
+        "category": "Procedura Penale",
+        "question": "L'avviso della facoltà di accedere alla giustizia riparativa deve essere dato:",
+        "options": [
+            "Mai.",
+            "In vari momenti, tra cui nell'informazione di garanzia, nell'avviso di conclusione delle indagini, nell'atto di arresto/fermo e nel provvedimento di fissazione dell'udienza di archiviazione.",
+            "Solo dal giudice in udienza.",
+            "Solo dall'avvocato."
+        ],
+        "answer": "In vari momenti, tra cui nell'informazione di garanzia, nell'avviso di conclusione delle indagini, nell'atto di arresto/fermo e nel provvedimento di fissazione dell'udienza di archiviazione.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_109",
+        "category": "Procedura Penale",
+        "question": "Qual è il nuovo criterio di archiviazione (art. 408 c.p.p.) introdotto dalla Riforma Cartabia?",
+        "options": [
+            "L'infondatezza della notizia di reato.",
+            "Quando gli elementi acquisiti non consentono di formulare una 'ragionevole previsione di condanna'.",
+            "La mancanza di prove certe.",
+            "Il dubbio."
+        ],
+        "answer": "Quando gli elementi acquisiti non consentono di formulare una 'ragionevole previsione di condanna'.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_110",
+        "category": "Procedura Penale",
+        "question": "I nuovi termini di durata delle indagini preliminari (art. 407 c.p.p. post-riforma) sono:",
+        "options": [
+            "6 mesi per tutti.",
+            "1 anno per i reati comuni, 6 mesi per le contravvenzioni, 1 anno e 6 mesi per i reati gravi (art. 407 c. 2 lett. a).",
+            "2 anni per tutti.",
+            "3 mesi prorogabili."
+        ],
+        "answer": "1 anno per i reati comuni, 6 mesi per le contravvenzioni, 1 anno e 6 mesi per i reati gravi (art. 407 c. 2 lett. a).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_111",
+        "category": "Procedura Penale",
+        "question": "La proroga delle indagini (art. 406 c.p.p.) può essere chiesta:",
+        "options": [
+            "Per giusta causa.",
+            "Quando le indagini sono complesse (una sola proroga di max 6 mesi).",
+            "Sempre.",
+            "Mai."
+        ],
+        "answer": "Quando le indagini sono complesse (una sola proroga di max 6 mesi).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_112",
+        "category": "Procedura Penale",
+        "question": "Alla scadenza dei termini di indagine, se il P.M. non esercita l'azione penale o non chiede l'archiviazione (stasi patologica), cosa succede (art. 415-ter c.p.p.)?",
+        "options": [
+            "Nulla.",
+            "Deve depositare gli atti (discovery) e notificare l'avviso; se non lo fa, il Procuratore Generale può avocare le indagini o l'indagato/persona offesa possono chiedere al G.I.P. di ordinare al P.M. di provvedere.",
+            "Il reato si estingue.",
+            "L'indagato viene assolto."
+        ],
+        "answer": "Deve depositare gli atti (discovery) e notificare l'avviso; se non lo fa, il Procuratore Generale può avocare le indagini o l'indagato/persona offesa possono chiedere al G.I.P. di ordinare al P.M. di provvedere.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_113",
+        "category": "Procedura Penale",
+        "question": "La documentazione degli atti di indagine (es. interrogatori) deve avvenire (art. 373 c.p.p.):",
+        "options": [
+            "Solo con verbale riassuntivo.",
+            "Anche con riproduzione audiovisiva o fonografica (obbligatoria per interrogatori di indagati, persone vulnerabili, o su richiesta per sommarie informazioni in casi gravi).",
+            "Solo scritta.",
+            "A memoria."
+        ],
+        "answer": "Anche con riproduzione audiovisiva o fonografica (obbligatoria per interrogatori di indagati, persone vulnerabili, o su richiesta per sommarie informazioni in casi gravi).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_114",
+        "category": "Procedura Penale",
+        "question": "L'iscrizione della notizia di reato (art. 335 c.p.p.) deve riguardare:",
+        "options": [
+            "Qualsiasi segnalazione.",
+            "Un fatto determinato e non inverosimile riconducibile a una fattispecie incriminatrice (per evitare iscrizioni inutili).",
+            "Solo i fatti gravi.",
+            "Solo le denunce anonime."
+        ],
+        "answer": "Un fatto determinato e non inverosimile riconducibile a una fattispecie incriminatrice (per evitare iscrizioni inutili).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_115",
+        "category": "Procedura Penale",
+        "question": "Il G.I.P. può ordinare l'iscrizione nel registro degli indagati (art. 335-ter c.p.p.)?",
+        "options": [
+            "No, è competenza esclusiva del P.M.",
+            "Sì, se ritiene che il reato debba essere attribuito a una persona specifica, ordina al P.M. di iscriverla (indicando la data di decorrenza).",
+            "Solo su richiesta della parte civile.",
+            "Solo in dibattimento."
+        ],
+        "answer": "Sì, se ritiene che il reato debba essere attribuito a una persona specifica, ordina al P.M. di iscriverla (indicando la data di decorrenza).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_116",
+        "category": "Procedura Penale",
+        "question": "La 'comunicazione di cortesia' (art. 63-bis c.p.p.) è:",
+        "options": [
+            "Un saluto del giudice.",
+            "Un avviso informale (via telefono/email) inviato dalla cancelleria al destinatario quando la notifica è stata consegnata a persona diversa (es. convivente), per garantire l'effettiva conoscenza.",
+            "La notifica ufficiale.",
+            "L'invito a comparire."
+        ],
+        "answer": "Un avviso informale (via telefono/email) inviato dalla cancelleria al destinatario quando la notifica è stata consegnata a persona diversa (es. convivente), per garantire l'effettiva conoscenza.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_117",
+        "category": "Procedura Penale",
+        "question": "Il querelante ha l'obbligo di dichiarare o eleggere domicilio (art. 153-bis c.p.p.)?",
+        "options": [
+            "No.",
+            "Sì, nella querela o successivamente (anche via PEC); se non lo fa o non comunica variazioni, le notifiche possono essere omesse o fatte al difensore.",
+            "Solo se è straniero.",
+            "Solo per reati gravi."
+        ],
+        "answer": "Sì, nella querela o successivamente (anche via PEC); se non lo fa o non comunica variazioni, le notifiche possono essere omesse o fatte al difensore.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_118",
+        "category": "Procedura Penale",
+        "question": "La sentenza di non doversi procedere per mancata conoscenza della pendenza del processo (art. 420-quater c.p.p.) comporta:",
+        "options": [
+            "La chiusura definitiva del processo.",
+            "La revoca delle misure cautelari (custodia/domiciliari) per l'imputato irreperibile.",
+            "La condanna in contumacia.",
+            "L'arresto del difensore."
+        ],
+        "answer": "La revoca delle misure cautelari (custodia/domiciliari) per l'imputato irreperibile.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_119",
+        "category": "Procedura Penale",
+        "question": "L'udienza predibattimentale (art. 554-bis c.p.p. per il rito monocratico a citazione diretta) serve a:",
+        "options": [
+            "Filtrare i casi prima del dibattimento (simile all'udienza preliminare) per verificare la ragionevole previsione di condanna e tentare riti alternativi.",
+            "Sentire i testimoni.",
+            "Leggere la sentenza.",
+            "Nominare i periti."
+        ],
+        "answer": "Filtrare i casi prima del dibattimento (simile all'udienza preliminare) per verificare la ragionevole previsione di condanna e tentare riti alternativi.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_120",
+        "category": "Procedura Penale",
+        "question": "In tema di misure cautelari, la Riforma Cartabia ha introdotto una nuova causa di estinzione (art. 300 c.p.p.) collegata a:",
+        "options": [
+            "La morte del reo.",
+            "La concessione di pene sostitutive (lavoro di pubblica utilità, detenzione domiciliare sostitutiva) con la sentenza di condanna.",
+            "La prescrizione.",
+            "L'indulto."
+        ],
+        "answer": "La concessione di pene sostitutive (lavoro di pubblica utilità, detenzione domiciliare sostitutiva) con la sentenza di condanna.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_121",
+        "category": "Procedura Penale",
+        "question": "Il diritto al silenzio dell'indagato (art. 64 c.p.p.) prevede che:",
+        "options": [
+            "Egli debba rispondere solo alle generalità.",
+            "Egli abbia facoltà di non rispondere ad alcuna domanda, ma il procedimento seguirà il suo corso; deve comunque fornire le generalità.",
+            "Egli possa mentire sulle generalità.",
+            "Egli debba confessare se ci sono prove."
+        ],
+        "answer": "Egli abbia facoltà di non rispondere ad alcuna domanda, ma il procedimento seguirà il suo corso; deve comunque fornire le generalità.",
+        "difficulty": 1
+    },
+    {
+        "id": "proc_pen_122",
+        "category": "Procedura Penale",
+        "question": "L'incompatibilità del giudice (art. 34 c.p.p.) si verifica quando:",
+        "options": [
+            "Il giudice è parente dell'avvocato.",
+            "Il giudice ha già svolto funzioni nello stesso procedimento (es. G.I.P. e poi G.U.P.) o ha manifestato il suo parere, pregiudicando la sua imparzialità.",
+            "Il giudice è stanco.",
+            "Il giudice non conosce la legge."
+        ],
+        "answer": "Il giudice ha già svolto funzioni nello stesso procedimento (es. G.I.P. e poi G.U.P.) o ha manifestato il suo parere, pregiudicando la sua imparzialità.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_123",
+        "category": "Procedura Penale",
+        "question": "La rimessione del processo (art. 45 c.p.p.) è disposta dalla Cassazione quando:",
+        "options": [
+            "Il giudice è incompetente.",
+            "Gravi situazioni locali, tali da turbare lo svolgimento del processo e non altrimenti eliminabili, pregiudicano la libera determinazione delle persone o la sicurezza/incolumità pubblica (legittimo sospetto).",
+            "L'imputato vuole cambiare città.",
+            "Il tribunale è in ristrutturazione."
+        ],
+        "answer": "Gravi situazioni locali, tali da turbare lo svolgimento del processo e non altrimenti eliminabili, pregiudicano la libera determinazione delle persone o la sicurezza/incolumità pubblica (legittimo sospetto).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_124",
+        "category": "Procedura Penale",
+        "question": "Il conflitto di giurisdizione o competenza (art. 28 c.p.p.) è risolto da:",
+        "options": [
+            "La Corte Costituzionale.",
+            "La Corte di Cassazione.",
+            "Il Ministero della Giustizia.",
+            "Il Consiglio Superiore della Magistratura."
+        ],
+        "answer": "La Corte di Cassazione.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_125",
+        "category": "Procedura Penale",
+        "question": "Le nullità assolute (art. 179 c.p.p.) sono:",
+        "options": [
+            "Sanabili.",
+            "Insanabili e rilevabili d'ufficio in ogni stato e grado del procedimento (es. omessa citazione dell'imputato, assenza del difensore nei casi obbligatori).",
+            "Rilevabili solo dalle parti.",
+            "Valide se non eccepite subito."
+        ],
+        "answer": "Insanabili e rilevabili d'ufficio in ogni stato e grado del procedimento (es. omessa citazione dell'imputato, assenza del difensore nei casi obbligatori).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_126",
+        "category": "Procedura Penale",
+        "question": "L'abnormità dell'atto processuale è:",
+        "options": [
+            "Un vizio non previsto dalla legge ma elaborato dalla giurisprudenza, che riguarda atti talmente stravaganti da non poter essere inquadrati nel sistema (es. P.M. che emette una sentenza).",
+            "Una semplice irregolarità.",
+            "Un errore materiale.",
+            "Una nullità relativa."
+        ],
+        "answer": "Un vizio non previsto dalla legge ma elaborato dalla giurisprudenza, che riguarda atti talmente stravaganti da non poter essere inquadrati nel sistema (es. P.M. che emette una sentenza).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_127",
+        "category": "Procedura Penale",
+        "question": "Il segreto investigativo (art. 329 c.p.p.) copre:",
+        "options": [
+            "Tutti gli atti del processo.",
+            "Gli atti di indagine compiuti dal P.M. e dalla P.G. fino a quando l'imputato non ne possa avere conoscenza e comunque non oltre la chiusura delle indagini.",
+            "Solo le intercettazioni.",
+            "Solo i nomi dei testimoni."
+        ],
+        "answer": "Gli atti di indagine compiuti dal P.M. e dalla P.G. fino a quando l'imputato non ne possa avere conoscenza e comunque non oltre la chiusura delle indagini.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_128",
+        "category": "Procedura Penale",
+        "question": "La pubblicazione arbitraria di atti di un procedimento penale (art. 684 c.p.) è:",
+        "options": [
+            "Sempre lecita per il diritto di cronaca.",
+            "Reato (contravvenzione) se riguarda atti coperti dal segreto o anche non segreti ma non ancora pubblicabili (es. prima del dibattimento).",
+            "Illecito amministrativo.",
+            "Consentita se l'atto è vero."
+        ],
+        "answer": "Reato (contravvenzione) se riguarda atti coperti dal segreto o anche non segreti ma non ancora pubblicabili (es. prima del dibattimento).",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_129",
+        "category": "Procedura Penale",
+        "question": "L'agente provocatore (in operazioni sotto copertura, art. 9 L. 146/2006) è punibile?",
+        "options": [
+            "Sì, sempre.",
+            "No, se agisce nell'ambito delle sue funzioni e secondo le disposizioni di legge per acquisire prove in ordine a specifici reati (es. droga, riciclaggio), senza istigare a commettere reati che non sarebbero stati commessi.",
+            "Sì, ma con pena ridotta.",
+            "Dipende dal risultato."
+        ],
+        "answer": "No, se agisce nell'ambito delle sue funzioni e secondo le disposizioni di legge per acquisire prove in ordine a specifici reati (es. droga, riciclaggio), senza istigare a commettere reati che non sarebbero stati commessi.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_130",
+        "category": "Procedura Penale",
+        "question": "Il ritardo o l'omissione di atti d'ufficio da parte del P.M. o del Giudice può comportare:",
+        "options": [
+            "Solo sanzioni disciplinari.",
+            "Responsabilità penale (art. 328 c.p.) e civile (L. 117/1988), oltre a quella disciplinare.",
+            "Nulla.",
+            "La promozione."
+        ],
+        "answer": "Responsabilità penale (art. 328 c.p.) e civile (L. 117/1988), oltre a quella disciplinare.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_131",
+        "category": "Procedura Penale",
+        "question": "La competenza per connessione (art. 12 c.p.p.) opera quando:",
+        "options": [
+            "I reati sono commessi dagli stessi amici.",
+            "Vi è un legame tra più reati (es. concorso di persone, reato continuato, reato per eseguirne un altro) che consiglia la trattazione unitaria (attrae la competenza verso il giudice superiore o più competente).",
+            "I reati sono commessi nella stessa città.",
+            "I reati sono prescritti."
+        ],
+        "answer": "Vi è un legame tra più reati (es. concorso di persone, reato continuato, reato per eseguirne un altro) che consiglia la trattazione unitaria (attrae la competenza verso il giudice superiore o più competente).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_132",
+        "category": "Procedura Penale",
+        "question": "Il principio del 'favor rei' nelle successioni di leggi processuali:",
+        "options": [
+            "Si applica sempre come nel diritto penale sostanziale.",
+            "Non si applica di regola (vige il principio 'tempus regit actum'), salvo specifiche disposizioni transitorie.",
+            "Si applica solo per le misure cautelari.",
+            "Si applica solo in Cassazione."
+        ],
+        "answer": "Non si applica di regola (vige il principio 'tempus regit actum'), salvo specifiche disposizioni transitorie.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_133",
+        "category": "Procedura Penale",
+        "question": "L'estradizione (art. 697 c.p.p.) è:",
+        "options": [
+            "L'espulsione dello straniero.",
+            "La consegna di una persona a uno Stato estero per l'esecuzione di una pena o per un processo (passiva) o la richiesta di consegna (attiva); è regolata da convenzioni e dalla legge, con il divieto per reati politici (art. 10 e 26 Cost.).",
+            "Il rimpatrio assistito.",
+            "La condanna all'estero."
+        ],
+        "answer": "La consegna di una persona a uno Stato estero per l'esecuzione di una pena o per un processo (passiva) o la richiesta di consegna (attiva); è regolata da convenzioni e dalla legge, con il divieto per reati politici (art. 10 e 26 Cost.).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_134",
+        "category": "Procedura Penale",
+        "question": "Il Mandato di Arresto Europeo (MAE) sostituisce:",
+        "options": [
+            "L'estradizione tra i paesi membri dell'UE, semplificando la procedura (consegna diretta tra autorità giudiziarie).",
+            "Il passaporto.",
+            "L'arresto in flagranza.",
+            "La rogatoria."
+        ],
+        "answer": "L'estradizione tra i paesi membri dell'UE, semplificando la procedura (consegna diretta tra autorità giudiziarie).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_135",
+        "category": "Procedura Penale",
+        "question": "La rogatoria internazionale (art. 723 c.p.p.) serve a:",
+        "options": [
+            "Chiedere soldi all'estero.",
+            "Compiere atti processuali (es. audizione testimoni, perquisizioni) all'estero o su richiesta di autorità estera.",
+            "Arrestare latitanti.",
+            "Tradurre gli atti."
+        ],
+        "answer": "Compiere atti processuali (es. audizione testimoni, perquisizioni) all'estero o su richiesta di autorità estera.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_136",
+        "category": "Procedura Penale",
+        "question": "Il casellario giudiziale contiene:",
+        "options": [
+            "Le multe non pagate.",
+            "Le iscrizioni relative a provvedimenti giudiziari (condanne, misure di sicurezza, ecc.) riferiti a una persona.",
+            "I voti scolastici.",
+            "Le cartelle esattoriali."
+        ],
+        "answer": "Le iscrizioni relative a provvedimenti giudiziari (condanne, misure di sicurezza, ecc.) riferiti a una persona.",
+        "difficulty": 1
+    },
+    {
+        "id": "proc_pen_137",
+        "category": "Procedura Penale",
+        "question": "La riabilitazione (art. 178 c.p., art. 683 c.p.p.) estingue:",
+        "options": [
+            "Il reato.",
+            "Le pene accessorie e ogni altro effetto penale della condanna, se il condannato ha dato prove effettive e costanti di buona condotta per un certo periodo.",
+            "La pena principale.",
+            "Il debito con lo Stato."
+        ],
+        "answer": "Le pene accessorie e ogni altro effetto penale della condanna, se il condannato ha dato prove effettive e costanti di buona condotta per un certo periodo.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_138",
+        "category": "Procedura Penale",
+        "question": "Il patrocinio a spese dello Stato (Gratuito Patrocinio) è garantito (art. 24 Cost.):",
+        "options": [
+            "A tutti.",
+            "Ai non abbienti (con reddito inferiore a una certa soglia) per agire e difendersi davanti a ogni giurisdizione.",
+            "Solo agli stranieri.",
+            "Solo per i reati gravi."
+        ],
+        "answer": "Ai non abbienti (con reddito inferiore a una certa soglia) per agire e difendersi davanti a ogni giurisdizione.",
+        "difficulty": 1
+    },
+    {
+        "id": "proc_pen_139",
+        "category": "Procedura Penale",
+        "question": "La Corte Costituzionale giudica sull'ammissibilità del referendum abrogativo (art. 75 Cost.)?",
+        "options": [
+            "Sì.",
+            "No, giudica la Cassazione.",
+            "Sì, ma solo per leggi regionali.",
+            "No, giudica il Presidente della Repubblica."
+        ],
+        "answer": "Sì.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_140",
+        "category": "Procedura Penale",
+        "question": "Il CSM (Consiglio Superiore della Magistratura) è presieduto da:",
+        "options": [
+            "Il Ministro della Giustizia.",
+            "Il Presidente della Repubblica.",
+            "Il Primo Presidente della Cassazione.",
+            "Il Procuratore Generale."
+        ],
+        "answer": "Il Presidente della Repubblica.",
+        "difficulty": 1
+    },
+    {
+        "id": "proc_pen_141",
+        "category": "Procedura Penale",
+        "question": "La responsabilità civile dei magistrati (L. 117/88) è:",
+        "options": [
+            "Diretta verso il cittadino.",
+            "Indiretta: il cittadino cita lo Stato (Pres. Consiglio), che poi si rivale sul magistrato in caso di dolo o negligenza inescusabile.",
+            "Inesistente.",
+            "Penale."
+        ],
+        "answer": "Indiretta: il cittadino cita lo Stato (Pres. Consiglio), che poi si rivale sul magistrato in caso di dolo o negligenza inescusabile.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_142",
+        "category": "Procedura Penale",
+        "question": "Il principio di 'obbligatorietà dell'azione penale' implica che:",
+        "options": [
+            "Il P.M. deve indagare su tutto.",
+            "Il P.M. non può archiviare arbitrariamente ma deve sottoporre la richiesta al controllo del G.I.P.",
+            "La Polizia deve arrestare tutti.",
+            "Il giudice deve condannare."
+        ],
+        "answer": "Il P.M. non può archiviare arbitrariamente ma deve sottoporre la richiesta al controllo del G.I.P.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_143",
+        "category": "Procedura Penale",
+        "question": "La separazione delle carriere tra Giudici e P.M. in Italia:",
+        "options": [
+            "Esiste ed è totale.",
+            "Non esiste separazione delle carriere (appartengono allo stesso ordine e possono passare da una funzione all'altra con limiti), ma c'è separazione delle funzioni nel processo.",
+            "Esiste solo in Cassazione.",
+            "Dipende dalla regione."
+        ],
+        "answer": "Non esiste separazione delle carriere (appartengono allo stesso ordine e possono passare da una funzione all'altra con limiti), ma c'è separazione delle funzioni nel processo.",
+        "difficulty": 3
+    },
+    {
+        "id": "proc_pen_144",
+        "category": "Procedura Penale",
+        "question": "Il 'giudice naturale precostituito per legge' (art. 25 Cost.) significa che:",
+        "options": [
+            "Il giudice deve essere nato nel luogo del reato.",
+            "L'organo giudicante deve essere individuato in base a criteri oggettivi (competenza) fissati dalla legge prima della commissione del fatto, per evitare giudici 'ad hoc'.",
+            "Il giudice deve essere un esperto di natura.",
+            "L'imputato può scegliere il giudice."
+        ],
+        "answer": "L'organo giudicante deve essere individuato in base a criteri oggettivi (competenza) fissati dalla legge prima della commissione del fatto, per evitare giudici 'ad hoc'.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_145",
+        "category": "Procedura Penale",
+        "question": "La presunzione di non colpevolezza (art. 27 Cost.) vale:",
+        "options": [
+            "Fino alla sentenza di primo grado.",
+            "Fino alla condanna definitiva (irrevocabile).",
+            "Fino all'arresto.",
+            "Mai."
+        ],
+        "answer": "Fino alla condanna definitiva (irrevocabile).",
+        "difficulty": 1
+    },
+    {
+        "id": "proc_pen_146",
+        "category": "Procedura Penale",
+        "question": "Le misure di sicurezza (es. REMS, libertà vigilata) si applicano:",
+        "options": [
+            "Ai condannati pericolosi.",
+            "Alle persone socialmente pericolose che hanno commesso un fatto di reato (anche se non imputabili o parzialmente imputabili).",
+            "Agli innocenti.",
+            "Ai testimoni."
+        ],
+        "answer": "Alle persone socialmente pericolose che hanno commesso un fatto di reato (anche se non imputabili o parzialmente imputabili).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_147",
+        "category": "Procedura Penale",
+        "question": "Il 'concorso formale' di reati (art. 81 c.p.) si ha quando:",
+        "options": [
+            "Più persone commettono un reato.",
+            "Con una sola azione od omissione si violano diverse disposizioni di legge o si commettono più violazioni della stessa disposizione (cumulo giuridico della pena).",
+            "Si commettono più reati in tempi diversi.",
+            "Si aiuta qualcuno a commettere un reato."
+        ],
+        "answer": "Con una sola azione od omissione si violano diverse disposizioni di legge o si commettono più violazioni della stessa disposizione (cumulo giuridico della pena).",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_148",
+        "category": "Procedura Penale",
+        "question": "La 'continuazione' nel reato (art. 81 cpv c.p.) prevede:",
+        "options": [
+            "Il cumulo materiale delle pene.",
+            "Il cumulo giuridico (pena per il reato più grave aumentata fino al triplo) per chi con più azioni od omissioni, esecutive di un medesimo disegno criminoso, commette più reati.",
+            "L'assoluzione.",
+            "La pena dimezzata."
+        ],
+        "answer": "Il cumulo giuridico (pena per il reato più grave aumentata fino al triplo) per chi con più azioni od omissioni, esecutive di un medesimo disegno criminoso, commette più reati.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_149",
+        "category": "Procedura Penale",
+        "question": "L'oblazione (art. 162 c.p.) è:",
+        "options": [
+            "Una causa di estinzione del reato (contravvenzione) mediante il pagamento di una somma di denaro prima del decreto di condanna o del giudizio.",
+            "Una confessione.",
+            "Una misura cautelare.",
+            "Una pena accessoria."
+        ],
+        "answer": "Una causa di estinzione del reato (contravvenzione) mediante il pagamento di una somma di denaro prima del decreto di condanna o del giudizio.",
+        "difficulty": 2
+    },
+    {
+        "id": "proc_pen_150",
+        "category": "Procedura Penale",
+        "question": "La prescrizione del reato (art. 157 c.p.) estingue il reato:",
+        "options": [
+            "Per decorso del tempo (tempo necessario a prescrivere varia in base alla pena massima edittale).",
+            "Per morte del reo.",
+            "Per perdono della vittima.",
+            "Per amnistia."
+        ],
+        "answer": "Per decorso del tempo (tempo necessario a prescrivere varia in base alla pena massima edittale).",
+        "difficulty": 2
+    }
+]

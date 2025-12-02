@@ -1,0 +1,652 @@
+[
+    {
+        "id": "norm_disc_001",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è la fonte normativa principale che disciplina le sanzioni disciplinari per il personale della Polizia di Stato?",
+        "options": [
+            "Il Codice Penale.",
+            "Il D.P.R. 25 ottobre 1981, n. 737.",
+            "Il D.P.R. 3/1957 (Statuto degli impiegati civili).",
+            "Il Regolamento di servizio (D.P.R. 782/85) in via esclusiva."
+        ],
+        "answer": "Il D.P.R. 25 ottobre 1981, n. 737.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_002",
+        "category": "Normativa Disciplinare",
+        "question": "Secondo l'art. 2105 del Codice Civile, quale obbligo fondamentale ha il prestatore di lavoro che rileva anche ai fini disciplinari?",
+        "options": [
+            "L'obbligo di fedeltà (non trattare affari in concorrenza, non divulgare notizie riservate).",
+            "L'obbligo di indossare la divisa.",
+            "L'obbligo di salutare i superiori.",
+            "L'obbligo di residenza."
+        ],
+        "answer": "L'obbligo di fedeltà (non trattare affari in concorrenza, non divulgare notizie riservate).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_003",
+        "category": "Normativa Disciplinare",
+        "question": "Quali sono le sanzioni disciplinari previste dall'art. 1 del D.P.R. 737/81, in ordine crescente di gravità?",
+        "options": [
+            "Richiamo orale, richiamo scritto, multa, sospensione, arresto di rigore.",
+            "Richiamo orale, richiamo scritto, pena pecuniaria, deplorazione, sospensione dal servizio, destituzione.",
+            "Censura, riduzione dello stipendio, sospensione, licenziamento.",
+            "Ammonizione, deplorazione, sospensione, radiazione."
+        ],
+        "answer": "Richiamo orale, richiamo scritto, pena pecuniaria, deplorazione, sospensione dal servizio, destituzione.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_004",
+        "category": "Normativa Disciplinare",
+        "question": "Il richiamo orale (art. 2 D.P.R. 737/81) si applica per:",
+        "options": [
+            "Lievi mancanze non abituali, omesse o ritardate presentazioni in servizio fino a 24 ore.",
+            "Lievi mancanze ai doveri di servizio e disciplina, non espressamente previste per sanzioni più gravi; non è proceduralizzato (non richiede contestazione formale scritta).",
+            "Gravi negligenze.",
+            "Reati colposi."
+        ],
+        "answer": "Lievi mancanze ai doveri di servizio e disciplina, non espressamente previste per sanzioni più gravi; non è proceduralizzato (non richiede contestazione formale scritta).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_005",
+        "category": "Normativa Disciplinare",
+        "question": "Per quale infrazione è previsto il richiamo scritto (art. 3 D.P.R. 737/81)?",
+        "options": [
+            "Uso di stupefacenti.",
+            "Reiterazione in lievi mancanze, negligenza in servizio, disordine nella divisa, contegno scorretto, pernottamento non autorizzato fuori struttura.",
+            "Insubordinazione grave.",
+            "Abbandono del posto."
+        ],
+        "answer": "Reiterazione in lievi mancanze, negligenza in servizio, disordine nella divisa, contegno scorretto, pernottamento non autorizzato fuori struttura.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_006",
+        "category": "Normativa Disciplinare",
+        "question": "La pena pecuniaria (art. 4 D.P.R. 737/81) consiste in:",
+        "options": [
+            "Una multa da pagare alla Polizia.",
+            "Una riduzione dello stipendio da 1/30 a 5/30 di una mensilità.",
+            "Il pagamento delle spese processuali.",
+            "Una donazione obbligatoria."
+        ],
+        "answer": "Una riduzione dello stipendio da 1/30 a 5/30 di una mensilità.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_007",
+        "category": "Normativa Disciplinare",
+        "question": "Quale tra le seguenti condotte è punita con la pena pecuniaria?",
+        "options": [
+            "Atti contrari al senso dell'onore.",
+            "Esercizio occasionale di commercio o mestiere incompatibile, mantenimento di relazioni con persone che non godono di pubblica stima, contrarre debiti senza onorarli, allontanamento dalla sede senza autorizzazione.",
+            "Denigrazione dell'Amministrazione.",
+            "Uso di armi non in dotazione."
+        ],
+        "answer": "Esercizio occasionale di commercio o mestiere incompatibile, mantenimento di relazioni con persone che non godono di pubblica stima, contrarre debiti senza onorarli, allontanamento dalla sede senza autorizzazione.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_008",
+        "category": "Normativa Disciplinare",
+        "question": "L'omessa o ritardata presentazione in servizio fino a un massimo di 48 ore è punita con:",
+        "options": [
+            "Richiamo orale.",
+            "Pena pecuniaria.",
+            "Sospensione dal servizio.",
+            "Destituzione."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_009",
+        "category": "Normativa Disciplinare",
+        "question": "La deplorazione (art. 5 D.P.R. 737/81) è inflitta per:",
+        "options": [
+            "Mancanze lievi.",
+            "Abituali o gravi negligenze nell'adempimento dei doveri, persistenti trasgressioni già punite, gravi mancanze attinenti alla disciplina o al contegno, atti diretti a limitare i diritti politici/sindacali altrui.",
+            "Reati non colposi.",
+            "Mancanza di senso dell'onore."
+        ],
+        "answer": "Abituali o gravi negligenze nell'adempimento dei doveri, persistenti trasgressioni già punite, gravi mancanze attinenti alla disciplina o al contegno, atti diretti a limitare i diritti politici/sindacali altrui.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_010",
+        "category": "Normativa Disciplinare",
+        "question": "La negligenza o imprudenza nell'uso, custodia o conservazione di armi, esplosivi o mezzi è punita con:",
+        "options": [
+            "Richiamo scritto.",
+            "Deplorazione.",
+            "Sospensione dal servizio.",
+            "Destituzione."
+        ],
+        "answer": "Deplorazione.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_011",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione dal servizio (art. 6 D.P.R. 737/81) comporta:",
+        "options": [
+            "Solo l'allontanamento dall'ufficio.",
+            "L'allontanamento dal servizio per un periodo da 1 a 6 mesi, con privazione della retribuzione (salvo assegno alimentare) e deduzione del tempo dal computo dell'anzianità.",
+            "Il licenziamento.",
+            "Il trasferimento ad altra sede."
+        ],
+        "answer": "L'allontanamento dal servizio per un periodo da 1 a 6 mesi, con privazione della retribuzione (salvo assegno alimentare) e deduzione del tempo dal computo dell'anzianità.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_012",
+        "category": "Normativa Disciplinare",
+        "question": "Quale delle seguenti infrazioni comporta la sospensione dal servizio?",
+        "options": [
+            "Disordine nella divisa.",
+            "Denigrazione dell'Amministrazione o dei superiori, tolleranza di abusi commessi da dipendenti, uso non terapeutico di stupefacenti (risultante da referto), condanna per delitto non colposo (se non comporta destituzione).",
+            "Ritardo di 10 minuti.",
+            "Mancato saluto."
+        ],
+        "answer": "Denigrazione dell'Amministrazione o dei superiori, tolleranza di abusi commessi da dipendenti, uso non terapeutico di stupefacenti (risultante da referto), condanna per delitto non colposo (se non comporta destituzione).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_013",
+        "category": "Normativa Disciplinare",
+        "question": "L'omessa o ritardata presentazione in servizio per un periodo superiore a 48 ore e inferiore a 5 giorni è punita con:",
+        "options": [
+            "Pena pecuniaria.",
+            "Sospensione dal servizio.",
+            "Destituzione.",
+            "Deplorazione."
+        ],
+        "answer": "Sospensione dal servizio.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_014",
+        "category": "Normativa Disciplinare",
+        "question": "La destituzione (art. 7 D.P.R. 737/81) consiste nella:",
+        "options": [
+            "Sospensione a tempo indeterminato.",
+            "Cancellazione dai ruoli dell'Amministrazione (licenziamento) per gravi motivi.",
+            "Degradazione al grado inferiore.",
+            "Perdita della pensione."
+        ],
+        "answer": "Cancellazione dai ruoli dell'Amministrazione (licenziamento) per gravi motivi.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_015",
+        "category": "Normativa Disciplinare",
+        "question": "Quale condotta comporta la destituzione?",
+        "options": [
+            "Atti che rivelino mancanza del senso dell'onore o del senso morale, grave abuso di autorità o fiducia, dolosa violazione dei doveri con grave pregiudizio per lo Stato/privati, gravi atti di insubordinazione pubblica.",
+            "Dormire in servizio.",
+            "Perdere il berretto.",
+            "Litigare con un collega."
+        ],
+        "answer": "Atti che rivelino mancanza del senso dell'onore o del senso morale, grave abuso di autorità o fiducia, dolosa violazione dei doveri con grave pregiudizio per lo Stato/privati, gravi atti di insubordinazione pubblica.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_016",
+        "category": "Normativa Disciplinare",
+        "question": "L'assenza arbitraria dal servizio per più di 5 giorni (omessa riassunzione) comporta:",
+        "options": [
+            "Sospensione dal servizio.",
+            "Destituzione.",
+            "Pena pecuniaria.",
+            "Deplorazione."
+        ],
+        "answer": "Destituzione.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_017",
+        "category": "Normativa Disciplinare",
+        "question": "La recidiva nelle infrazioni punibili con la sospensione dal servizio può portare alla:",
+        "options": [
+            "Pena pecuniaria raddoppiata.",
+            "Destituzione.",
+            "Deplorazione con nota di biasimo.",
+            "Trasferimento d'ufficio."
+        ],
+        "answer": "Destituzione.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_018",
+        "category": "Normativa Disciplinare",
+        "question": "Gli ufficiali e agenti di P.G. che omettono o ritardano senza giustificato motivo di riferire la notizia di reato sono soggetti (art. 16 disp. att. c.p.p.):",
+        "options": [
+            "Solo a sanzione penale.",
+            "Alla sanzione disciplinare della censura e, nei casi più gravi, alla sospensione dall'impiego fino a 6 mesi (oltre alle sanzioni del proprio ordinamento).",
+            "Al richiamo orale.",
+            "A nulla."
+        ],
+        "answer": "Alla sanzione disciplinare della censura e, nei casi più gravi, alla sospensione dall'impiego fino a 6 mesi (oltre alle sanzioni del proprio ordinamento).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_019",
+        "category": "Normativa Disciplinare",
+        "question": "Chi è competente a rilevare le infrazioni disciplinari (art. 12 D.P.R. 737/81)?",
+        "options": [
+            "Solo il Questore.",
+            "Ogni superiore gerarchico.",
+            "Solo il Capo della Polizia.",
+            "I sindacati."
+        ],
+        "answer": "Ogni superiore gerarchico.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_020",
+        "category": "Normativa Disciplinare",
+        "question": "Il superiore che rileva un'infrazione deve:",
+        "options": [
+            "Fare finta di nulla.",
+            "Far constatare la mancanza al responsabile (qualificandosi), identificarlo, evitare richiami in pubblico (salvo necessità), dare disposizioni per eliminare le conseguenze e inoltrare rapporto all'organo competente.",
+            "Punirlo immediatamente con una multa.",
+            "Arrestarlo."
+        ],
+        "answer": "Far constatare la mancanza al responsabile (qualificandosi), identificarlo, evitare richiami in pubblico (salvo necessità), dare disposizioni per eliminare le conseguenze e inoltrare rapporto all'organo competente.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_021",
+        "category": "Normativa Disciplinare",
+        "question": "Il rapporto disciplinare deve contenere:",
+        "options": [
+            "La proposta della sanzione da infliggere.",
+            "L'indicazione chiara e concisa degli elementi utili a configurare l'infrazione, senza alcuna proposta sulla specie ed entità della sanzione.",
+            "Le opinioni personali del superiore.",
+            "La biografia dell'incolpato."
+        ],
+        "answer": "L'indicazione chiara e concisa degli elementi utili a configurare l'infrazione, senza alcuna proposta sulla specie ed entità della sanzione.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_022",
+        "category": "Normativa Disciplinare",
+        "question": "Nel graduare la sanzione, l'organo competente deve tener conto (art. 13 D.P.R. 737/81):",
+        "options": [
+            "Solo della gravità del fatto.",
+            "Delle circostanze attenuanti, dei precedenti disciplinari e di servizio, del carattere, dell'età, della qualifica e dell'anzianità di servizio.",
+            "Delle amicizie dell'incolpato.",
+            "Della situazione politica."
+        ],
+        "answer": "Delle circostanze attenuanti, dei precedenti disciplinari e di servizio, del carattere, dell'età, della qualifica e dell'anzianità di servizio.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_023",
+        "category": "Normativa Disciplinare",
+        "question": "Le mancanze commesse in servizio o in presenza di inferiori devono essere sanzionate:",
+        "options": [
+            "Con minor rigore.",
+            "Con maggior rigore.",
+            "Allo stesso modo.",
+            "Non sono punibili."
+        ],
+        "answer": "Con maggior rigore.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_024",
+        "category": "Normativa Disciplinare",
+        "question": "Quale principio fondamentale deve essere garantito nello svolgimento del procedimento disciplinare?",
+        "options": [
+            "La segretezza assoluta.",
+            "Il contraddittorio (previa contestazione degli addebiti e facoltà di difesa).",
+            "La rapidità a discapito della difesa.",
+            "L'assenza dell'incolpato."
+        ],
+        "answer": "Il contraddittorio (previa contestazione degli addebiti e facoltà di difesa).",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_025",
+        "category": "Normativa Disciplinare",
+        "question": "Per infliggere la deplorazione è necessario il parere di quale organo?",
+        "options": [
+            "Consiglio di Disciplina.",
+            "Commissione Consultiva (parere obbligatorio ma non vincolante).",
+            "Sindacato.",
+            "Prefetto."
+        ],
+        "answer": "Commissione Consultiva (parere obbligatorio ma non vincolante).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_026",
+        "category": "Normativa Disciplinare",
+        "question": "Per infliggere la sospensione dal servizio o la destituzione è necessario il giudizio di quale organo?",
+        "options": [
+            "Commissione Consultiva.",
+            "Consiglio Centrale o Provinciale di Disciplina (parere obbligatorio non vincolante).",
+            "Tribunale Militare.",
+            "Corte dei Conti."
+        ],
+        "answer": "Consiglio Centrale o Provinciale di Disciplina (parere obbligatorio non vincolante).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_027",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione deve essere motivata?",
+        "options": [
+            "No, è un atto discrezionale puro.",
+            "Sì, il provvedimento che infligge la sanzione deve essere motivato (art. 1 D.P.R. 737/81).",
+            "Solo se è la destituzione.",
+            "Solo se l'incolpato lo richiede."
+        ],
+        "answer": "Sì, il provvedimento che infligge la sanzione deve essere motivato (art. 1 D.P.R. 737/81).",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_028",
+        "category": "Normativa Disciplinare",
+        "question": "Cosa si intende per 'recidiva' in ambito disciplinare?",
+        "options": [
+            "La commissione di un reato.",
+            "La reiterazione di una mancanza già punita, che comporta l'applicazione di una sanzione più grave (es. recidiva in mancanza da richiamo scritto -> pena pecuniaria).",
+            "L'assenza ingiustificata.",
+            "La promozione per merito."
+        ],
+        "answer": "La reiterazione di una mancanza già punita, che comporta l'applicazione di una sanzione più grave (es. recidiva in mancanza da richiamo scritto -> pena pecuniaria).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_029",
+        "category": "Normativa Disciplinare",
+        "question": "L'inosservanza dell'obbligo di mantenere la permanenza o la reperibilità è punita con:",
+        "options": [
+            "Richiamo scritto.",
+            "Pena pecuniaria.",
+            "Deplorazione.",
+            "Sospensione."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_030",
+        "category": "Normativa Disciplinare",
+        "question": "Il comportamento non corretto verso il pubblico o i colleghi è punito, in prima istanza, con:",
+        "options": [
+            "Richiamo orale.",
+            "Richiamo scritto.",
+            "Destituzione.",
+            "Nulla."
+        ],
+        "answer": "Richiamo scritto.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_031",
+        "category": "Normativa Disciplinare",
+        "question": "L'emanazione di un ordine non attinente al servizio o lesivo della dignità personale comporta:",
+        "options": [
+            "Pena pecuniaria.",
+            "Deplorazione.",
+            "Sospensione.",
+            "Richiamo orale."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_032",
+        "category": "Normativa Disciplinare",
+        "question": "L'assidua frequenza di persone dedite ad attività immorale o pregiudicati comporta:",
+        "options": [
+            "Richiamo scritto.",
+            "Sospensione dal servizio.",
+            "Deplorazione.",
+            "Pena pecuniaria."
+        ],
+        "answer": "Sospensione dal servizio.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_033",
+        "category": "Normativa Disciplinare",
+        "question": "La 'grave negligenza in servizio' è punita con:",
+        "options": [
+            "Richiamo scritto.",
+            "Pena pecuniaria.",
+            "Deplorazione (se abituale o grave nell'adempimento doveri).",
+            "Destituzione."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_034",
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione si applica per 'atti diretti a impedire o limitare l'esercizio dei diritti politici o sindacali'?",
+        "options": [
+            "Pena pecuniaria.",
+            "Deplorazione.",
+            "Sospensione.",
+            "Destituzione."
+        ],
+        "answer": "Deplorazione.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_035",
+        "category": "Normativa Disciplinare",
+        "question": "La 'mancanza del senso dell'onore' è causa di:",
+        "options": [
+            "Deplorazione.",
+            "Destituzione.",
+            "Sospensione.",
+            "Pena pecuniaria."
+        ],
+        "answer": "Destituzione.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_036",
+        "category": "Normativa Disciplinare",
+        "question": "Il 'grave abuso di autorità o di fiducia' comporta:",
+        "options": [
+            "Sospensione.",
+            "Destituzione.",
+            "Deplorazione.",
+            "Pena pecuniaria."
+        ],
+        "answer": "Destituzione.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_037",
+        "category": "Normativa Disciplinare",
+        "question": "L'uso non terapeutico di sostanze stupefacenti, accertato con referto medico, comporta:",
+        "options": [
+            "Pena pecuniaria.",
+            "Sospensione dal servizio.",
+            "Destituzione immediata.",
+            "Richiamo scritto."
+        ],
+        "answer": "Sospensione dal servizio.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_038",
+        "category": "Normativa Disciplinare",
+        "question": "La 'tolleranza di abusi commessi da dipendenti' è punita con:",
+        "options": [
+            "Deplorazione.",
+            "Sospensione dal servizio.",
+            "Pena pecuniaria.",
+            "Richiamo scritto."
+        ],
+        "answer": "Sospensione dal servizio.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_039",
+        "category": "Normativa Disciplinare",
+        "question": "L'inosservanza delle norme di comportamento politico fissate per gli appartenenti alla Polizia comporta:",
+        "options": [
+            "Pena pecuniaria.",
+            "Deplorazione.",
+            "Sospensione.",
+            "Destituzione."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_040",
+        "category": "Normativa Disciplinare",
+        "question": "La 'negligenza nel governo o nella cura del benessere del personale' è punita con:",
+        "options": [
+            "Pena pecuniaria.",
+            "Deplorazione.",
+            "Sospensione.",
+            "Richiamo scritto."
+        ],
+        "answer": "Deplorazione.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_041",
+        "category": "Normativa Disciplinare",
+        "question": "Il 'comportamento che produce turbamento nella regolarità o continuità del servizio' comporta:",
+        "options": [
+            "Deplorazione.",
+            "Sospensione dal servizio.",
+            "Destituzione.",
+            "Pena pecuniaria."
+        ],
+        "answer": "Sospensione dal servizio.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_042",
+        "category": "Normativa Disciplinare",
+        "question": "La 'dolosa violazione dei doveri che abbia arrecato grave pregiudizio allo Stato' comporta:",
+        "options": [
+            "Sospensione.",
+            "Destituzione.",
+            "Deplorazione.",
+            "Pena pecuniaria."
+        ],
+        "answer": "Destituzione.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_043",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione disciplinare deve essere proporzionata:",
+        "options": [
+            "All'umore del superiore.",
+            "Alla gravità dell'infrazione e alle conseguenze prodotte (principio di proporzionalità e adeguatezza).",
+            "Al grado dell'incolpato.",
+            "Al tempo trascorso."
+        ],
+        "answer": "Alla gravità dell'infrazione e alle conseguenze prodotte (principio di proporzionalità e adeguatezza).",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_044",
+        "category": "Normativa Disciplinare",
+        "question": "Il richiamo scritto è trascritto nel foglio matricolare?",
+        "options": [
+            "No.",
+            "Sì, come tutte le sanzioni scritte.",
+            "Solo se l'interessato vuole.",
+            "Solo se recidivo."
+        ],
+        "answer": "Sì, come tutte le sanzioni scritte.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_045",
+        "category": "Normativa Disciplinare",
+        "question": "La pena pecuniaria può essere rateizzata?",
+        "options": [
+            "No.",
+            "Sì, la trattenuta avviene sullo stipendio.",
+            "Dipende dal Questore.",
+            "Solo se superiore a 1000 euro."
+        ],
+        "answer": "Sì, la trattenuta avviene sullo stipendio.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_046",
+        "category": "Normativa Disciplinare",
+        "question": "L'esercizio di diritti sindacali in violazione delle norme è punito con:",
+        "options": [
+            "Pena pecuniaria.",
+            "Sospensione.",
+            "Destituzione.",
+            "Deplorazione."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_047",
+        "category": "Normativa Disciplinare",
+        "question": "La 'manifesta negligenza nel prendere visione dell'ordine di servizio' comporta:",
+        "options": [
+            "Richiamo scritto.",
+            "Pena pecuniaria.",
+            "Deplorazione.",
+            "Richiamo orale."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_048",
+        "category": "Normativa Disciplinare",
+        "question": "Il 'ritardo o la negligenza nell'esecuzione di un ordine' comporta:",
+        "options": [
+            "Richiamo scritto.",
+            "Pena pecuniaria.",
+            "Sospensione.",
+            "Destituzione."
+        ],
+        "answer": "Pena pecuniaria.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_049",
+        "category": "Normativa Disciplinare",
+        "question": "La 'denigrazione dell'Amministrazione o dei superiori' comporta:",
+        "options": [
+            "Pena pecuniaria.",
+            "Sospensione dal servizio.",
+            "Deplorazione.",
+            "Richiamo scritto."
+        ],
+        "answer": "Sospensione dal servizio.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_050",
+        "category": "Normativa Disciplinare",
+        "question": "La 'persistente riprovevole condotta' (dopo altre sanzioni) può portare alla:",
+        "options": [
+            "Deplorazione.",
+            "Destituzione.",
+            "Sospensione.",
+            "Pena pecuniaria."
+        ],
+        "answer": "Destituzione.",
+        "difficulty": 2
+    }
+]

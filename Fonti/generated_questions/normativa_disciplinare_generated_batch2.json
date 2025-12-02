@@ -1,0 +1,652 @@
+[
+    {
+        "id": "norm_disc_051",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è la differenza fondamentale tra il procedimento disciplinare 'semplice' e quello 'complesso'?",
+        "options": [
+            "Il procedimento semplice è orale, quello complesso è scritto.",
+            "Il procedimento semplice si applica per sanzioni fino alla pena pecuniaria (contestazione-giustificazioni-decisione); quello complesso per deplorazione, sospensione e destituzione e richiede il parere di un organo collegiale (Commissione Consultiva o Consiglio di Disciplina).",
+            "Il procedimento semplice dura 10 giorni, quello complesso 1 anno.",
+            "Il procedimento semplice è deciso dal Questore, quello complesso dal Prefetto."
+        ],
+        "answer": "Il procedimento semplice si applica per sanzioni fino alla pena pecuniaria (contestazione-giustificazioni-decisione); quello complesso per deplorazione, sospensione e destituzione e richiede il parere di un organo collegiale (Commissione Consultiva o Consiglio di Disciplina).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_052",
+        "category": "Normativa Disciplinare",
+        "question": "Nel procedimento per l'irrogazione della deplorazione, quale organo deve esprimere un parere obbligatorio ma non vincolante?",
+        "options": [
+            "Il Consiglio Provinciale di Disciplina.",
+            "La Commissione Consultiva.",
+            "Il Consiglio di Stato.",
+            "L'Avvocatura dello Stato."
+        ],
+        "answer": "La Commissione Consultiva.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_053",
+        "category": "Normativa Disciplinare",
+        "question": "Da chi è composta la Commissione Consultiva?",
+        "options": [
+            "Da tre membri: uno di qualifica superiore e uno di qualifica pari al trasgressore (designati dall'Amministrazione), e uno di qualifica superiore indicato dai sindacati di polizia più rappresentativi.",
+            "Da tre membri tutti scelti dal Questore.",
+            "Da un giudice e due poliziotti.",
+            "Dal Questore e due Vice Questori."
+        ],
+        "answer": "Da tre membri: uno di qualifica superiore e uno di qualifica pari al trasgressore (designati dall'Amministrazione), e uno di qualifica superiore indicato dai sindacati di polizia più rappresentativi.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_054",
+        "category": "Normativa Disciplinare",
+        "question": "Nel procedimento per sospensione dal servizio o destituzione, quale organo esprime il parere?",
+        "options": [
+            "La Commissione Consultiva.",
+            "Il Consiglio Provinciale di Disciplina (per personale fino a Ispettore Capo) o il Consiglio Centrale di Disciplina.",
+            "Il Tribunale Amministrativo Regionale.",
+            "Il Capo della Polizia."
+        ],
+        "answer": "Il Consiglio Provinciale di Disciplina (per personale fino a Ispettore Capo) o il Consiglio Centrale di Disciplina.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_055",
+        "category": "Normativa Disciplinare",
+        "question": "Come è composto il Consiglio Provinciale di Disciplina?",
+        "options": [
+            "Da 5 membri: il Vicario del Questore (presidente), due funzionari (max Vice Questore) e due appartenenti di qualifica superiore all'incolpato designati dai sindacati.",
+            "Da 3 membri scelti dal Prefetto.",
+            "Da 5 sindacalisti.",
+            "Dal Questore e 4 dirigenti."
+        ],
+        "answer": "Da 5 membri: il Vicario del Questore (presidente), due funzionari (max Vice Questore) e due appartenenti di qualifica superiore all'incolpato designati dai sindacati.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_056",
+        "category": "Normativa Disciplinare",
+        "question": "Chi svolge le funzioni di segretario nel Consiglio Provinciale di Disciplina?",
+        "options": [
+            "Un appartenente ai ruoli civili.",
+            "Un funzionario della Polizia di Stato con qualifica non superiore a Vice Questore o equiparate.",
+            "Un agente scelto.",
+            "Il presidente stesso."
+        ],
+        "answer": "Un funzionario della Polizia di Stato con qualifica non superiore a Vice Questore o equiparate.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_057",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è la prima fase formale del procedimento disciplinare?",
+        "options": [
+            "La decisione.",
+            "La contestazione degli addebiti.",
+            "L'appello.",
+            "La sospensione cautelare."
+        ],
+        "answer": "La contestazione degli addebiti.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_058",
+        "category": "Normativa Disciplinare",
+        "question": "Dopo la contestazione degli addebiti, l'incolpato ha facoltà di:",
+        "options": [
+            "Dimettersi immediatamente.",
+            "Presentare giustificazioni scritte, produrre memorie e documenti, e chiedere l'audizione di testimoni (nel termine assegnato).",
+            "Rifiutare il procedimento.",
+            "Chiedere il trasferimento."
+        ],
+        "answer": "Presentare giustificazioni scritte, produrre memorie e documenti, e chiedere l'audizione di testimoni (nel termine assegnato).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_059",
+        "category": "Normativa Disciplinare",
+        "question": "Nel procedimento per sospensione o destituzione, chi conduce l'inchiesta disciplinare?",
+        "options": [
+            "Il Questore personalmente.",
+            "Un funzionario istruttore nominato dal titolare della potestà disciplinare (o dal Questore).",
+            "Un sindacalista.",
+            "Un giudice."
+        ],
+        "answer": "Un funzionario istruttore nominato dal titolare della potestà disciplinare (o dal Questore).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_060",
+        "category": "Normativa Disciplinare",
+        "question": "Il funzionario istruttore, al termine dell'inchiesta, redige:",
+        "options": [
+            "Una sentenza.",
+            "Una relazione conclusiva che trasmette all'organo collegiale (Consiglio di Disciplina).",
+            "Un articolo di giornale.",
+            "Una lettera di scuse."
+        ],
+        "answer": "Una relazione conclusiva che trasmette all'organo collegiale (Consiglio di Disciplina).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_061",
+        "category": "Normativa Disciplinare",
+        "question": "Il parere espresso dagli organi collegiali (Commissione/Consiglio) è:",
+        "options": [
+            "Vincolante per l'amministrazione.",
+            "Obbligatorio (deve essere richiesto) ma non vincolante (l'amministrazione può discostarsene motivando).",
+            "Facoltativo.",
+            "Inappellabile."
+        ],
+        "answer": "Obbligatorio (deve essere richiesto) ma non vincolante (l'amministrazione può discostarsene motivando).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_062",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione cautelare dal servizio (art. 9 D.P.R. 737/81) è una sanzione disciplinare?",
+        "options": [
+            "Sì, è la più grave.",
+            "No, è un provvedimento provvisorio (cautelare) di natura amministrativa, in attesa della definizione del procedimento penale o disciplinare.",
+            "Sì, equivale alla destituzione.",
+            "No, è un premio."
+        ],
+        "answer": "No, è un provvedimento provvisorio (cautelare) di natura amministrativa, in attesa della definizione del procedimento penale o disciplinare.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_063",
+        "category": "Normativa Disciplinare",
+        "question": "Quando è obbligatoria la sospensione cautelare dal servizio?",
+        "options": [
+            "Sempre.",
+            "Quando il dipendente è colpito da misura restrittiva della libertà personale (arresto, fermo, custodia cautelare) o condannato (anche non definitiva) per certi reati gravi (art. 4 L. 97/2001).",
+            "Quando arriva in ritardo.",
+            "Quando perde la pistola."
+        ],
+        "answer": "Quando il dipendente è colpito da misura restrittiva della libertà personale (arresto, fermo, custodia cautelare) o condannato (anche non definitiva) per certi reati gravi (art. 4 L. 97/2001).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_064",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione cautelare facoltativa può essere disposta:",
+        "options": [
+            "Quando il dipendente è sottoposto a procedimento penale per reati di particolare gravità (su rapporto motivato del capo ufficio).",
+            "Se il dipendente è antipatico.",
+            "Se il dipendente è malato.",
+            "Se il dipendente chiede ferie."
+        ],
+        "answer": "Quando il dipendente è sottoposto a procedimento penale per reati di particolare gravità (su rapporto motivato del capo ufficio).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_065",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione per 'gravi motivi' (art. 92 D.P.R. 3/57) può essere disposta:",
+        "options": [
+            "Dal Capo della Polizia, anche prima dell'inizio del procedimento disciplinare, ove ricorrano gravi motivi (urgenza).",
+            "Dal Sindaco.",
+            "Dal Questore autonomamente.",
+            "Dal sindacato."
+        ],
+        "answer": "Dal Capo della Polizia, anche prima dell'inizio del procedimento disciplinare, ove ricorrano gravi motivi (urgenza).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_066",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è la durata massima della sospensione cautelare (in costanza di procedimento penale)?",
+        "options": [
+            "1 anno.",
+            "5 anni.",
+            "10 anni.",
+            "Indeterminata."
+        ],
+        "answer": "5 anni.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_067",
+        "category": "Normativa Disciplinare",
+        "question": "Durante la sospensione cautelare, il dipendente percepisce lo stipendio?",
+        "options": [
+            "Sì, intero.",
+            "No, percepisce un assegno alimentare (pari a circa la metà dello stipendio base).",
+            "No, nulla.",
+            "Sì, ma deve restituirlo."
+        ],
+        "answer": "No, percepisce un assegno alimentare (pari a circa la metà dello stipendio base).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_068",
+        "category": "Normativa Disciplinare",
+        "question": "Chi è il titolare dell'azione disciplinare (chi avvia il procedimento)?",
+        "options": [
+            "Sempre il Capo della Polizia.",
+            "Il funzionario dirigente responsabile dell'ufficio o reparto (che può non coincidere con chi ha il potere di infliggere la sanzione).",
+            "Il giudice.",
+            "Il collega più anziano."
+        ],
+        "answer": "Il funzionario dirigente responsabile dell'ufficio o reparto (che può non coincidere con chi ha il potere di infliggere la sanzione).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_069",
+        "category": "Normativa Disciplinare",
+        "question": "Chi ha la potestà di infliggere la destituzione?",
+        "options": [
+            "Il Questore.",
+            "Il Capo della Polizia (o autorità centrale delegata).",
+            "Il Prefetto.",
+            "Il Consiglio di Disciplina."
+        ],
+        "answer": "Il Capo della Polizia (o autorità centrale delegata).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_070",
+        "category": "Normativa Disciplinare",
+        "question": "Il Consiglio Provinciale di Disciplina giudica il personale fino alla qualifica di:",
+        "options": [
+            "Agente Scelto.",
+            "Ispettore Capo (ora Sostituto Commissario/Ispettore Superiore secondo nuove qualifiche, ma il testo cita Ispettore Capo come limite storico).",
+            "Vice Questore.",
+            "Dirigente Superiore."
+        ],
+        "answer": "Ispettore Capo (ora Sostituto Commissario/Ispettore Superiore secondo nuove qualifiche, ma il testo cita Ispettore Capo come limite storico).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_071",
+        "category": "Normativa Disciplinare",
+        "question": "I membri del Consiglio di Disciplina designati dai sindacati devono avere una qualifica:",
+        "options": [
+            "Inferiore all'incolpato.",
+            "Pari all'incolpato.",
+            "Superiore a quella dell'incolpato.",
+            "Qualsiasi."
+        ],
+        "answer": "Superiore a quella dell'incolpato.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_072",
+        "category": "Normativa Disciplinare",
+        "question": "La mancata audizione della Commissione Consultiva nel procedimento per deplorazione comporta:",
+        "options": [
+            "Nulla.",
+            "L'illegittimità del provvedimento sanzionatorio (vizio di procedura).",
+            "Una multa per l'amministrazione.",
+            "La promozione dell'incolpato."
+        ],
+        "answer": "L'illegittimità del provvedimento sanzionatorio (vizio di procedura).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_073",
+        "category": "Normativa Disciplinare",
+        "question": "Il procedimento disciplinare deve concludersi entro un termine perentorio?",
+        "options": [
+            "No, mai.",
+            "Sì, i termini sono stabiliti dalla legge (es. 90 o 180 giorni a seconda dei casi) e il loro superamento comporta l'estinzione del procedimento.",
+            "Sì, ma solo se l'incolpato lo chiede.",
+            "No, basta che finisca."
+        ],
+        "answer": "Sì, i termini sono stabiliti dalla legge (es. 90 o 180 giorni a seconda dei casi) e il loro superamento comporta l'estinzione del procedimento.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_074",
+        "category": "Normativa Disciplinare",
+        "question": "Se il procedimento disciplinare è connesso a un procedimento penale (art. 11 D.P.R. 737/81):",
+        "options": [
+            "Prosegue parallelamente.",
+            "Deve essere sospeso fino alla definizione del procedimento penale con sentenza passata in giudicato (pregiudiziale penale).",
+            "Il procedimento penale viene sospeso.",
+            "Si annullano a vicenda."
+        ],
+        "answer": "Deve essere sospeso fino alla definizione del procedimento penale con sentenza passata in giudicato (pregiudiziale penale).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_075",
+        "category": "Normativa Disciplinare",
+        "question": "La sentenza penale irrevocabile di assoluzione ha efficacia di giudicato nel giudizio disciplinare?",
+        "options": [
+            "Mai.",
+            "Sì, quanto all'accertamento che il fatto non sussiste, non costituisce illecito penale o che l'imputato non lo ha commesso (art. 653 c.p.p.).",
+            "Solo se il giudice lo scrive.",
+            "Solo per la destituzione."
+        ],
+        "answer": "Sì, quanto all'accertamento che il fatto non sussiste, non costituisce illecito penale o che l'imputato non lo ha commesso (art. 653 c.p.p.).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_076",
+        "category": "Normativa Disciplinare",
+        "question": "La sentenza penale irrevocabile di condanna ha efficacia nel giudizio disciplinare?",
+        "options": [
+            "No.",
+            "Sì, quanto all'accertamento della sussistenza del fatto, della sua illiceità penale e all'affermazione che l'imputato lo ha commesso.",
+            "Solo se la pena è superiore a 3 anni.",
+            "Solo se c'è la parte civile."
+        ],
+        "answer": "Sì, quanto all'accertamento della sussistenza del fatto, della sua illiceità penale e all'affermazione che l'imputato lo ha commesso.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_077",
+        "category": "Normativa Disciplinare",
+        "question": "Entro quanto tempo deve essere riattivato il procedimento disciplinare dopo la sentenza penale irrevocabile?",
+        "options": [
+            "Entro 10 anni.",
+            "Entro 180 giorni (o 90 giorni in casi specifici) dalla notizia della sentenza.",
+            "Entro 1 mese.",
+            "Non c'è termine."
+        ],
+        "answer": "Entro 180 giorni (o 90 giorni in casi specifici) dalla notizia della sentenza.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_078",
+        "category": "Normativa Disciplinare",
+        "question": "Il ricorso gerarchico contro una sanzione disciplinare si presenta a:",
+        "options": [
+            "Al TAR.",
+            "All'organo gerarchicamente superiore a quello che ha inflitto la sanzione (es. al Capo della Polizia contro sanzione del Questore).",
+            "Al Presidente della Repubblica.",
+            "Al giudice di pace."
+        ],
+        "answer": "All'organo gerarchicamente superiore a quello che ha inflitto la sanzione (es. al Capo della Polizia contro sanzione del Questore).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_079",
+        "category": "Normativa Disciplinare",
+        "question": "Il ricorso al TAR deve essere presentato entro:",
+        "options": [
+            "30 giorni.",
+            "60 giorni dalla notifica del provvedimento.",
+            "120 giorni.",
+            "1 anno."
+        ],
+        "answer": "60 giorni dalla notifica del provvedimento.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_080",
+        "category": "Normativa Disciplinare",
+        "question": "Il ricorso straordinario al Capo dello Stato deve essere presentato entro:",
+        "options": [
+            "60 giorni.",
+            "120 giorni dalla notifica.",
+            "180 giorni.",
+            "30 giorni."
+        ],
+        "answer": "120 giorni dalla notifica.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_081",
+        "category": "Normativa Disciplinare",
+        "question": "La riapertura del procedimento disciplinare (art. 26 D.P.R. 737/81) è ammessa:",
+        "options": [
+            "Sempre.",
+            "Se sopravvengono nuove prove che possono portare al proscioglimento o a una sanzione più lieve (simile alla revisione penale).",
+            "Solo se cambia il Questore.",
+            "Mai."
+        ],
+        "answer": "Se sopravvengono nuove prove che possono portare al proscioglimento o a una sanzione più lieve (simile alla revisione penale).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_082",
+        "category": "Normativa Disciplinare",
+        "question": "La riabilitazione (art. 87 D.P.R. 3/57) cancella gli effetti della sanzione disciplinare:",
+        "options": [
+            "Dopo 2 anni di buona condotta.",
+            "Immediatamente.",
+            "Mai.",
+            "Dopo 5 anni."
+        ],
+        "answer": "Dopo 2 anni di buona condotta.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_083",
+        "category": "Normativa Disciplinare",
+        "question": "Il funzionario istruttore può essere di qualifica inferiore all'incolpato?",
+        "options": [
+            "Sì.",
+            "No, deve essere di qualifica superiore o, se non possibile, più anziano nella stessa qualifica.",
+            "Dipende dal caso.",
+            "Solo se autorizzato."
+        ],
+        "answer": "No, deve essere di qualifica superiore o, se non possibile, più anziano nella stessa qualifica.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_084",
+        "category": "Normativa Disciplinare",
+        "question": "Nel procedimento disciplinare, l'incolpato può farsi assistere?",
+        "options": [
+            "No, deve difendersi da solo.",
+            "Sì, da un difensore (avvocato o appartenente all'amministrazione/sindacalista).",
+            "Solo da un parente.",
+            "Solo dal prete."
+        ],
+        "answer": "Sì, da un difensore (avvocato o appartenente all'amministrazione/sindacalista).",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_085",
+        "category": "Normativa Disciplinare",
+        "question": "La contestazione degli addebiti deve essere:",
+        "options": [
+            "Orale.",
+            "Scritta, precisa e specifica (indicando fatto, norma violata, termini a difesa).",
+            "Generica.",
+            "Telefonica."
+        ],
+        "answer": "Scritta, precisa e specifica (indicando fatto, norma violata, termini a difesa).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_086",
+        "category": "Normativa Disciplinare",
+        "question": "Se l'incolpato non presenta giustificazioni:",
+        "options": [
+            "Il procedimento si estingue.",
+            "Il procedimento prosegue e si decide allo stato degli atti.",
+            "Viene assolto.",
+            "Viene arrestato."
+        ],
+        "answer": "Il procedimento prosegue e si decide allo stato degli atti.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_087",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione disciplinare ha natura:",
+        "options": [
+            "Penale.",
+            "Amministrativa.",
+            "Civile.",
+            "Politica."
+        ],
+        "answer": "Amministrativa.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_088",
+        "category": "Normativa Disciplinare",
+        "question": "Il principio del 'ne bis in idem' si applica al procedimento disciplinare?",
+        "options": [
+            "No, si può essere puniti due volte per lo stesso fatto disciplinare.",
+            "Sì, non si può essere sottoposti a nuovo procedimento disciplinare per i medesimi fatti già giudicati (salvo riapertura a favore).",
+            "Solo per la destituzione.",
+            "Dipende dal giudice."
+        ],
+        "answer": "Sì, non si può essere sottoposti a nuovo procedimento disciplinare per i medesimi fatti già giudicati (salvo riapertura a favore).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_089",
+        "category": "Normativa Disciplinare",
+        "question": "La sospensione dalla qualifica (art. 98 D.P.R. 3/57) si applica:",
+        "options": [
+            "A seguito di condanna a pena detentiva passata in giudicato, se non viene disposta la destituzione (sospensione fino a che non ha scontato la pena).",
+            "Per motivi di salute.",
+            "Per scarso rendimento.",
+            "Per motivi sindacali."
+        ],
+        "answer": "A seguito di condanna a pena detentiva passata in giudicato, se non viene disposta la destituzione (sospensione fino a che non ha scontato la pena).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_090",
+        "category": "Normativa Disciplinare",
+        "question": "Il Consiglio di Disciplina decide a maggioranza?",
+        "options": [
+            "Sì.",
+            "No, all'unanimità.",
+            "Decide il presidente.",
+            "Decide il segretario."
+        ],
+        "answer": "Sì.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_091",
+        "category": "Normativa Disciplinare",
+        "question": "Se il Consiglio di Disciplina propone una sanzione più lieve di quella ipotizzata:",
+        "options": [
+            "L'amministrazione è vincolata.",
+            "L'amministrazione può comunque infliggere quella più grave (motivando).",
+            "Il procedimento si annulla.",
+            "Si rifà l'inchiesta."
+        ],
+        "answer": "L'amministrazione può comunque infliggere quella più grave (motivando).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_092",
+        "category": "Normativa Disciplinare",
+        "question": "La 'censura' (art. 16 disp. att. c.p.p.) per ufficiali di P.G. corrisponde nel sistema disciplinare di polizia a:",
+        "options": [
+            "Richiamo orale.",
+            "Una sanzione specifica non esattamente sovrapponibile, ma assimilabile per gravità a richiamo scritto/pena pecuniaria (la norma dice 'rimangono soggetti alle sanzioni dei propri ordinamenti').",
+            "Destituzione.",
+            "Sospensione."
+        ],
+        "answer": "Una sanzione specifica non esattamente sovrapponibile, ma assimilabile per gravità a richiamo scritto/pena pecuniaria (la norma dice 'rimangono soggetti alle sanzioni dei propri ordinamenti').",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_093",
+        "category": "Normativa Disciplinare",
+        "question": "L'esonero dal servizio presso le sezioni di P.G. (art. 16 disp. att. c.p.p.) è:",
+        "options": [
+            "Una sanzione disciplinare accessoria disposta dall'autorità giudiziaria.",
+            "Un premio.",
+            "Una misura cautelare.",
+            "Una vacanza."
+        ],
+        "answer": "Una sanzione disciplinare accessoria disposta dall'autorità giudiziaria.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_094",
+        "category": "Normativa Disciplinare",
+        "question": "Il termine per la conclusione del procedimento disciplinare decorre:",
+        "options": [
+            "Dalla commissione del fatto.",
+            "Dalla contestazione degli addebiti (o dall'avvio dell'inchiesta per i procedimenti complessi).",
+            "Dalla nascita dell'incolpato.",
+            "Dall'assunzione."
+        ],
+        "answer": "Dalla contestazione degli addebiti (o dall'avvio dell'inchiesta per i procedimenti complessi).",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_095",
+        "category": "Normativa Disciplinare",
+        "question": "La sanzione disciplinare estingue il reato?",
+        "options": [
+            "Sì.",
+            "No, sono procedimenti autonomi (salvo pregiudiziale).",
+            "Dipende.",
+            "Solo se pecuniaria."
+        ],
+        "answer": "No, sono procedimenti autonomi (salvo pregiudiziale).",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_096",
+        "category": "Normativa Disciplinare",
+        "question": "Il 'travisamento dei fatti' è un vizio di legittimità che può portare all'annullamento della sanzione da parte del TAR?",
+        "options": [
+            "Sì, rientra nell'eccesso di potere.",
+            "No, il giudice non entra nel merito.",
+            "Solo se c'è dolo.",
+            "Mai."
+        ],
+        "answer": "Sì, rientra nell'eccesso di potere.",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_097",
+        "category": "Normativa Disciplinare",
+        "question": "La 'disparità di trattamento' (punire diversamente fatti identici) è:",
+        "options": [
+            "Ammessa.",
+            "Un vizio di eccesso di potere sindacabile dal giudice amministrativo.",
+            "Irrilevante.",
+            "Giusta."
+        ],
+        "answer": "Un vizio di eccesso di potere sindacabile dal giudice amministrativo.",
+        "difficulty": 2
+    },
+    {
+        "id": "norm_disc_098",
+        "category": "Normativa Disciplinare",
+        "question": "Il procedimento disciplinare può essere riaperto 'in peius' (per aggravare la sanzione)?",
+        "options": [
+            "Sì, sempre.",
+            "No, la riapertura è prevista solo a favore del dipendente (art. 26 D.P.R. 737/81).",
+            "Sì, entro 5 anni.",
+            "Sì, se lo chiede il sindacato."
+        ],
+        "answer": "No, la riapertura è prevista solo a favore del dipendente (art. 26 D.P.R. 737/81).",
+        "difficulty": 3
+    },
+    {
+        "id": "norm_disc_099",
+        "category": "Normativa Disciplinare",
+        "question": "La morte del dipendente estingue il procedimento disciplinare?",
+        "options": [
+            "Sì.",
+            "No, prosegue contro gli eredi.",
+            "No, si conclude con la condanna alla memoria.",
+            "Dipende."
+        ],
+        "answer": "Sì.",
+        "difficulty": 1
+    },
+    {
+        "id": "norm_disc_100",
+        "category": "Normativa Disciplinare",
+        "question": "La destituzione comporta la perdita del grado?",
+        "options": [
+            "Sì.",
+            "No, si rimane poliziotti a casa.",
+            "Solo se militare.",
+            "No, solo dello stipendio."
+        ],
+        "answer": "Sì.",
+        "difficulty": 1
+    }
+]

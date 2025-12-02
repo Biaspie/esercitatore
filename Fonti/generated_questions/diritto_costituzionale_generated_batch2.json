@@ -1,0 +1,652 @@
+[
+    {
+        "id": "dc_51",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il decreto-legge (art. 77 Cost.) è un atto avente forza di legge emanato dal Governo:",
+        "options": [
+            "Su delega del Parlamento.",
+            "In casi straordinari di necessità e d'urgenza.",
+            "Per dichiarare guerra.",
+            "Per approvare il bilancio."
+        ],
+        "answer": "In casi straordinari di necessità e d'urgenza."
+    },
+    {
+        "id": "dc_52",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Cosa accade se un decreto-legge non viene convertito in legge entro 60 giorni dalla sua pubblicazione?",
+        "options": [
+            "Rimane in vigore come legge ordinaria.",
+            "Perde efficacia sin dall'inizio (ex tunc), come se non fosse mai esistito.",
+            "Perde efficacia solo per il futuro (ex nunc).",
+            "Deve essere ripresentato dal Governo."
+        ],
+        "answer": "Perde efficacia sin dall'inizio (ex tunc), come se non fosse mai esistito."
+    },
+    {
+        "id": "dc_53",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "In caso di mancata conversione di un decreto-legge, il Parlamento può:",
+        "options": [
+            "Non fare nulla.",
+            "Regolare con legge i rapporti giuridici sorti sulla base dei decreti non convertiti (legge di sanatoria).",
+            "Convertirlo in ritardo.",
+            "Chiedere un parere alla Corte Costituzionale."
+        ],
+        "answer": "Regolare con legge i rapporti giuridici sorti sulla base dei decreti non convertiti (legge di sanatoria)."
+    },
+    {
+        "id": "dc_54",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "La Corte Costituzionale ha dichiarato illegittima la prassi della 'reiterazione' dei decreti-legge (sent. 360/1996) perché:",
+        "options": [
+            "Viola il principio di provvisorietà del decreto-legge e altera la natura straordinaria della necessità e urgenza.",
+            "Aumenta troppo il potere del Parlamento.",
+            "È contraria ai trattati europei.",
+            "Costa troppo allo Stato."
+        ],
+        "answer": "Viola il principio di provvisorietà del decreto-legge e altera la natura straordinaria della necessità e urgenza."
+    },
+    {
+        "id": "dc_55",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il decreto legislativo (art. 76 Cost.) presuppone:",
+        "options": [
+            "Un caso di necessità e urgenza.",
+            "Una legge di delegazione del Parlamento che definisca oggetto, tempo limitato e principi e criteri direttivi.",
+            "Un referendum popolare.",
+            "L'approvazione delle Regioni."
+        ],
+        "answer": "Una legge di delegazione del Parlamento che definisca oggetto, tempo limitato e principi e criteri direttivi."
+    },
+    {
+        "id": "dc_56",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Se il decreto legislativo viola i principi e criteri direttivi stabiliti nella legge di delega, esso è:",
+        "options": [
+            "Valido ma inefficace.",
+            "Costituzionalmente illegittimo per violazione dell'art. 76 Cost. (eccesso di delega), attraverso la violazione della norma interposta (legge di delega).",
+            "Annullabile dal Governo successivo.",
+            "Soggetto a referendum abrogativo automatico."
+        ],
+        "answer": "Costituzionalmente illegittimo per violazione dell'art. 76 Cost. (eccesso di delega), attraverso la violazione della norma interposta (legge di delega)."
+    },
+    {
+        "id": "dc_57",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "I regolamenti governativi sono fonti:",
+        "options": [
+            "Primarie (parificate alla legge).",
+            "Secondarie (subordinate alla legge).",
+            "Costituzionali.",
+            "Amministrative interne senza rilevanza esterna."
+        ],
+        "answer": "Secondarie (subordinate alla legge)."
+    },
+    {
+        "id": "dc_58",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Cosa si intende per 'delegificazione' (art. 17 L. 400/1988)?",
+        "options": [
+            "L'abrogazione di tutte le leggi.",
+            "Il trasferimento della disciplina di una materia dalla fonte legislativa (primaria) alla fonte regolamentare (secondaria), previa autorizzazione legislativa che pone le norme generali e dispone l'abrogazione differita delle norme vigenti.",
+            "La trasformazione di un regolamento in legge.",
+            "La cessione di sovranità all'UE."
+        ],
+        "answer": "Il trasferimento della disciplina di una materia dalla fonte legislativa (primaria) alla fonte regolamentare (secondaria), previa autorizzazione legislativa che pone le norme generali e dispone l'abrogazione differita delle norme vigenti."
+    },
+    {
+        "id": "dc_59",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "I regolamenti indipendenti possono disciplinare:",
+        "options": [
+            "Materie coperte da riserva di legge assoluta.",
+            "Materie non disciplinate dalla legge e non coperte da riserva di legge.",
+            "Materie penali.",
+            "Materie costituzionali."
+        ],
+        "answer": "Materie non disciplinate dalla legge e non coperte da riserva di legge."
+    },
+    {
+        "id": "dc_60",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "L'adattamento al diritto internazionale consuetudinario (art. 10 Cost.) avviene:",
+        "options": [
+            "Mediante ordine di esecuzione.",
+            "In via automatica, completa e continua ('trasformatore permanente').",
+            "Solo se recepito con legge costituzionale.",
+            "Solo se approvato dall'ONU."
+        ],
+        "answer": "In via automatica, completa e continua ('trasformatore permanente')."
+    },
+    {
+        "id": "dc_61",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "L'adattamento ai trattati internazionali (diritto pattizio) avviene di regola:",
+        "options": [
+            "Automaticamente ex art. 10 Cost.",
+            "Mediante l'ordine di esecuzione, solitamente contenuto in una legge ordinaria che autorizza anche la ratifica.",
+            "Con decreto del Presidente della Repubblica.",
+            "Con regolamento governativo."
+        ],
+        "answer": "Mediante l'ordine di esecuzione, solitamente contenuto in una legge ordinaria che autorizza anche la ratifica."
+    },
+    {
+        "id": "dc_62",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Qual è la differenza tra Regolamenti e Direttive dell'UE?",
+        "options": [
+            "I Regolamenti sono raccomandazioni, le Direttive sono leggi.",
+            "I Regolamenti hanno portata generale e sono direttamente applicabili; le Direttive vincolano lo Stato al risultato da raggiungere ma richiedono un atto interno di recepimento.",
+            "I Regolamenti si applicano solo alle imprese, le Direttive agli Stati.",
+            "Non c'è differenza."
+        ],
+        "answer": "I Regolamenti hanno portata generale e sono direttamente applicabili; le Direttive vincolano lo Stato al risultato da raggiungere ma richiedono un atto interno di recepimento."
+    },
+    {
+        "id": "dc_63",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "In caso di contrasto tra una norma interna e una norma dell'UE direttamente applicabile (es. Regolamento), il giudice italiano deve:",
+        "options": [
+            "Sollevare questione di legittimità costituzionale.",
+            "Disapplicare la norma interna e applicare quella europea (sent. Granital).",
+            "Applicare la norma interna perché è sovrana.",
+            "Chiedere al Governo come comportarsi."
+        ],
+        "answer": "Disapplicare la norma interna e applicare quella europea (sent. Granital)."
+    },
+    {
+        "id": "dc_64",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Cosa sono i 'controlimiti' nel rapporto tra diritto interno e diritto dell'UE?",
+        "options": [
+            "I dazi doganali.",
+            "I principi fondamentali dell'ordinamento costituzionale e i diritti inalienabili della persona, che non possono essere violati nemmeno dalle norme europee.",
+            "I limiti di velocità sulle autostrade.",
+            "Le quote latte."
+        ],
+        "answer": "I principi fondamentali dell'ordinamento costituzionale e i diritti inalienabili della persona, che non possono essere violati nemmeno dalle norme europee."
+    },
+    {
+        "id": "dc_65",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "L'art. 81 della Costituzione, come modificato nel 2012, ha introdotto:",
+        "options": [
+            "L'obbligo di pareggio di bilancio (equilibrio tra entrate e spese) in attuazione del Fiscal Compact.",
+            "Il divieto di tasse.",
+            "L'obbligo di spendere tutto il budget.",
+            "Il ritorno alla Lira."
+        ],
+        "answer": "L'obbligo di pareggio di bilancio (equilibrio tra entrate e spese) in attuazione del Fiscal Compact."
+    },
+    {
+        "id": "dc_66",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "La forma di Stato 'liberale' (o Stato di diritto) si caratterizza per:",
+        "options": [
+            "Il suffragio universale.",
+            "La tutela delle libertà negative (libertà dallo Stato), la separazione dei poteri e il principio di legalità.",
+            "L'intervento massiccio dello Stato nell'economia.",
+            "Il partito unico."
+        ],
+        "answer": "La tutela delle libertà negative (libertà dallo Stato), la separazione dei poteri e il principio di legalità."
+    },
+    {
+        "id": "dc_67",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Lo Stato 'sociale' (Welfare State) si differenzia da quello liberale perché:",
+        "options": [
+            "Abolisce la proprietà privata.",
+            "Interviene nell'economia e nella società per rimuovere le diseguaglianze e garantire diritti sociali (salute, istruzione, previdenza).",
+            "È una dittatura.",
+            "Non ha una Costituzione."
+        ],
+        "answer": "Interviene nell'economia e nella società per rimuovere le diseguaglianze e garantire diritti sociali (salute, istruzione, previdenza)."
+    },
+    {
+        "id": "dc_68",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "La forma di governo italiana è:",
+        "options": [
+            "Presidenziale.",
+            "Parlamentare.",
+            "Semipresidenziale.",
+            "Direttoriale."
+        ],
+        "answer": "Parlamentare."
+    },
+    {
+        "id": "dc_69",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il rapporto di fiducia nel sistema parlamentare italiano intercorre tra:",
+        "options": [
+            "Presidente della Repubblica e Governo.",
+            "Parlamento e Governo.",
+            "Magistratura e Governo.",
+            "Regioni e Stato."
+        ],
+        "answer": "Parlamento e Governo."
+    },
+    {
+        "id": "dc_70",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Cosa comporta la mozione di sfiducia approvata da una Camera (art. 94 Cost.)?",
+        "options": [
+            "Lo scioglimento delle Camere.",
+            "L'obbligo di dimissioni del Governo.",
+            "La revoca del Presidente della Repubblica.",
+            "Nuove elezioni immediate."
+        ],
+        "answer": "L'obbligo di dimissioni del Governo."
+    },
+    {
+        "id": "dc_71",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "La questione di fiducia posta dal Governo su un provvedimento:",
+        "options": [
+            "È prevista dalla Costituzione.",
+            "È un istituto di prassi parlamentare (disciplinato dai regolamenti) che lega l'approvazione del provvedimento alla permanenza in carica del Governo (se bocciato, il Governo si dimette).",
+            "Serve solo a velocizzare la discussione.",
+            "Non ha effetti politici."
+        ],
+        "answer": "È un istituto di prassi parlamentare (disciplinato dai regolamenti) che lega l'approvazione del provvedimento alla permanenza in carica del Governo (se bocciato, il Governo si dimette)."
+    },
+    {
+        "id": "dc_72",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il Parlamento italiano si compone di:",
+        "options": [
+            "Una sola Camera.",
+            "Camera dei deputati e Senato della Repubblica (bicameralismo perfetto).",
+            "Camera dei Lord e Camera dei Comuni.",
+            "Camera dei deputati e Consiglio delle Regioni."
+        ],
+        "answer": "Camera dei deputati e Senato della Repubblica (bicameralismo perfetto)."
+    },
+    {
+        "id": "dc_73",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "L'elettorato attivo per la Camera dei deputati spetta a:",
+        "options": [
+            "Tutti i cittadini che hanno raggiunto la maggiore età (18 anni).",
+            "Chi ha 25 anni.",
+            "Solo agli uomini.",
+            "Solo a chi lavora."
+        ],
+        "answer": "Tutti i cittadini che hanno raggiunto la maggiore età (18 anni)."
+    },
+    {
+        "id": "dc_74",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "L'elettorato passivo (per essere eletti) al Senato richiede:",
+        "options": [
+            "18 anni.",
+            "25 anni.",
+            "40 anni.",
+            "50 anni."
+        ],
+        "answer": "40 anni."
+    },
+    {
+        "id": "dc_75",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "I parlamentari esercitano le loro funzioni:",
+        "options": [
+            "Con vincolo di mandato verso il partito.",
+            "Senza vincolo di mandato (divieto di mandato imperativo), rappresentando la Nazione.",
+            "Seguendo le istruzioni degli elettori.",
+            "Sotto il controllo del Governo."
+        ],
+        "answer": "Senza vincolo di mandato (divieto di mandato imperativo), rappresentando la Nazione."
+    },
+    {
+        "id": "dc_76",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "L'insindacabilità dei parlamentari (art. 68 Cost.) copre:",
+        "options": [
+            "Tutti i reati commessi.",
+            "Le opinioni espresse e i voti dati nell'esercizio delle loro funzioni.",
+            "Solo i reati politici.",
+            "Le multe stradali."
+        ],
+        "answer": "Le opinioni espresse e i voti dati nell'esercizio delle loro funzioni."
+    },
+    {
+        "id": "dc_77",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Per sottoporre un parlamentare a perquisizione personale o domiciliare, arresto (salvo flagranza di reato grave) o intercettazione, occorre:",
+        "options": [
+            "L'autorizzazione del Presidente della Repubblica.",
+            "L'autorizzazione della Camera di appartenenza.",
+            "L'autorizzazione del Governo.",
+            "Nessuna autorizzazione."
+        ],
+        "answer": "L'autorizzazione della Camera di appartenenza."
+    },
+    {
+        "id": "dc_78",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Le Commissioni parlamentari d'inchiesta (art. 82 Cost.):",
+        "options": [
+            "Hanno poteri meramente consultivi.",
+            "Procedono alle indagini e agli esami con gli stessi poteri e le stesse limitazioni dell'autorità giudiziaria.",
+            "Possono emettere sentenze di condanna.",
+            "Sono composte da giudici."
+        ],
+        "answer": "Procedono alle indagini e agli esami con gli stessi poteri e le stesse limitazioni dell'autorità giudiziaria."
+    },
+    {
+        "id": "dc_79",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il Presidente della Repubblica è eletto:",
+        "options": [
+            "Dal popolo a suffragio universale.",
+            "Dal Parlamento in seduta comune, integrato dai delegati regionali.",
+            "Dal Governo.",
+            "Dalla Corte Costituzionale."
+        ],
+        "answer": "Dal Parlamento in seduta comune, integrato dai delegati regionali."
+    },
+    {
+        "id": "dc_80",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Qual è la durata del mandato del Presidente della Repubblica?",
+        "options": [
+            "5 anni.",
+            "7 anni.",
+            "A vita.",
+            "4 anni."
+        ],
+        "answer": "7 anni."
+    },
+    {
+        "id": "dc_81",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Tutti gli atti del Presidente della Repubblica devono essere controfirmati dai ministri proponenti (o competenti). A cosa serve la controfirma (art. 89 Cost.)?",
+        "options": [
+            "A dare validità all'atto e a trasferire la responsabilità politica e giuridica dal Presidente al Governo (irresponsabilità presidenziale).",
+            "A controllare il Presidente.",
+            "A informare il Parlamento.",
+            "È una mera formalità senza valore."
+        ],
+        "answer": "A dare validità all'atto e a trasferire la responsabilità politica e giuridica dal Presidente al Governo (irresponsabilità presidenziale)."
+    },
+    {
+        "id": "dc_82",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Il Presidente della Repubblica può sciogliere le Camere:",
+        "options": [
+            "Sempre, a sua discrezione.",
+            "Sentiti i loro Presidenti, salvo che negli ultimi sei mesi del suo mandato (semestre bianco), a meno che non coincidano con gli ultimi sei mesi della legislatura.",
+            "Mai.",
+            "Solo su richiesta del Governo."
+        ],
+        "answer": "Sentiti i loro Presidenti, salvo che negli ultimi sei mesi del suo mandato (semestre bianco), a meno che non coincidano con gli ultimi sei mesi della legislatura."
+    },
+    {
+        "id": "dc_83",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il Presidente della Repubblica risponde degli atti compiuti nell'esercizio delle sue funzioni?",
+        "options": [
+            "Sì, sempre.",
+            "No, tranne che per alto tradimento o attentato alla Costituzione.",
+            "Solo civilmente.",
+            "Solo se non controfirmati."
+        ],
+        "answer": "No, tranne che per alto tradimento o attentato alla Costituzione."
+    },
+    {
+        "id": "dc_84",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Chi mette in stato di accusa il Presidente della Repubblica per alto tradimento o attentato alla Costituzione?",
+        "options": [
+            "La Corte di Cassazione.",
+            "Il Parlamento in seduta comune, a maggioranza assoluta.",
+            "Il Governo.",
+            "Il popolo."
+        ],
+        "answer": "Il Parlamento in seduta comune, a maggioranza assoluta."
+    },
+    {
+        "id": "dc_85",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Chi giudica il Presidente della Repubblica messo in stato di accusa?",
+        "options": [
+            "La Corte di Cassazione.",
+            "La Corte Costituzionale (in composizione integrata da 16 giudici aggregati).",
+            "Il Senato.",
+            "Un tribunale internazionale."
+        ],
+        "answer": "La Corte Costituzionale (in composizione integrata da 16 giudici aggregati)."
+    },
+    {
+        "id": "dc_86",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il Governo della Repubblica è composto da:",
+        "options": [
+            "Presidente del Consiglio e Ministri, che costituiscono insieme il Consiglio dei Ministri.",
+            "Solo dal Presidente del Consiglio.",
+            "Dal Parlamento e dal Presidente della Repubblica.",
+            "Dai giudici."
+        ],
+        "answer": "Presidente del Consiglio e Ministri, che costituiscono insieme il Consiglio dei Ministri."
+    },
+    {
+        "id": "dc_87",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il Presidente del Consiglio dei Ministri è nominato da:",
+        "options": [
+            "Il Parlamento.",
+            "Il Presidente della Repubblica.",
+            "Il popolo.",
+            "I Ministri."
+        ],
+        "answer": "Il Presidente della Repubblica."
+    },
+    {
+        "id": "dc_88",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Entro quanto tempo il Governo deve presentarsi alle Camere per ottenere la fiducia dopo la sua formazione?",
+        "options": [
+            "Entro 10 giorni.",
+            "Entro 30 giorni.",
+            "Entro 60 giorni.",
+            "Immediatamente."
+        ],
+        "answer": "Entro 10 giorni."
+    },
+    {
+        "id": "dc_89",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "La mozione di fiducia al Governo deve essere votata:",
+        "options": [
+            "Per appello nominale (palese).",
+            "A scrutinio segreto.",
+            "Per alzata di mano.",
+            "Per acclamazione."
+        ],
+        "answer": "Per appello nominale (palese)."
+    },
+    {
+        "id": "dc_90",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "I reati ministeriali (commessi dai ministri nell'esercizio delle funzioni) sono giudicati da:",
+        "options": [
+            "La Corte Costituzionale.",
+            "La magistratura ordinaria (Tribunale dei Ministri), previa autorizzazione della Camera di appartenenza.",
+            "Il Parlamento.",
+            "Il Presidente della Repubblica."
+        ],
+        "answer": "La magistratura ordinaria (Tribunale dei Ministri), previa autorizzazione della Camera di appartenenza."
+    },
+    {
+        "id": "dc_91",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il Consiglio Superiore della Magistratura (CSM) è presieduto da:",
+        "options": [
+            "Il Primo Presidente della Cassazione.",
+            "Il Presidente della Repubblica.",
+            "Il Ministro della Giustizia.",
+            "Un membro eletto dal CSM."
+        ],
+        "answer": "Il Presidente della Repubblica."
+    },
+    {
+        "id": "dc_92",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Qual è la funzione principale del CSM?",
+        "options": [
+            "Giudicare i magistrati.",
+            "Garantire l'autonomia e l'indipendenza della magistratura dagli altri poteri (autogoverno), occupandosi di assunzioni, assegnazioni, trasferimenti, promozioni e provvedimenti disciplinari.",
+            "Scrivere le leggi sulla giustizia.",
+            "Controllare il Ministero della Giustizia."
+        ],
+        "answer": "Garantire l'autonomia e l'indipendenza della magistratura dagli altri poteri (autogoverno), occupandosi di assunzioni, assegnazioni, trasferimenti, promozioni e provvedimenti disciplinari."
+    },
+    {
+        "id": "dc_93",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "I giudici sono soggetti soltanto:",
+        "options": [
+            "Al Presidente della Repubblica.",
+            "Alla legge.",
+            "Al Ministro della Giustizia.",
+            "Al popolo."
+        ],
+        "answer": "Alla legge."
+    },
+    {
+        "id": "dc_94",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "La Corte Costituzionale è composta da:",
+        "options": [
+            "15 giudici (5 nominati dal Presidente della Repubblica, 5 dal Parlamento in seduta comune, 5 dalle supreme magistrature).",
+            "12 giudici eletti dal popolo.",
+            "Tutti i giudici della Cassazione.",
+            "20 giudici nominati dal Governo."
+        ],
+        "answer": "15 giudici (5 nominati dal Presidente della Repubblica, 5 dal Parlamento in seduta comune, 5 dalle supreme magistrature)."
+    },
+    {
+        "id": "dc_95",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Quale delle seguenti NON è una funzione della Corte Costituzionale?",
+        "options": [
+            "Giudicare sulla legittimità costituzionale delle leggi e degli atti aventi forza di legge.",
+            "Giudicare sui conflitti di attribuzione tra i poteri dello Stato e tra Stato e Regioni.",
+            "Giudicare sulle accuse promosse contro il Presidente della Repubblica.",
+            "Giudicare in appello le sentenze civili e penali."
+        ],
+        "answer": "Giudicare in appello le sentenze civili e penali."
+    },
+    {
+        "id": "dc_96",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Il giudizio di legittimità costituzionale in via incidentale è promosso da:",
+        "options": [
+            "Un cittadino qualsiasi.",
+            "Un giudice (giudice a quo) nel corso di un giudizio, se ritiene la questione rilevante e non manifestamente infondata.",
+            "Il Presidente della Repubblica.",
+            "Il Governo."
+        ],
+        "answer": "Un giudice (giudice a quo) nel corso di un giudizio, se ritiene la questione rilevante e non manifestamente infondata."
+    },
+    {
+        "id": "dc_97",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Le sentenze di accoglimento della Corte Costituzionale hanno effetto:",
+        "options": [
+            "Solo per il futuro.",
+            "Retroattivo (ex tunc), con il limite dei rapporti esauriti (salvo in materia penale se più favorevole).",
+            "Solo per le parti del processo.",
+            "Sospensivo."
+        ],
+        "answer": "Retroattivo (ex tunc), con il limite dei rapporti esauriti (salvo in materia penale se più favorevole)."
+    },
+    {
+        "id": "dc_98",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Le Regioni hanno potestà legislativa (art. 117 Cost.)?",
+        "options": [
+            "No, solo amministrativa.",
+            "Sì, concorrente (nelle materie elencate) e residuale (in tutte le materie non riservate allo Stato).",
+            "Sì, ma solo se autorizzate dal Governo.",
+            "Sì, ma solo le Regioni a statuto speciale."
+        ],
+        "answer": "Sì, concorrente (nelle materie elencate) e residuale (in tutte le materie non riservate allo Stato)."
+    },
+    {
+        "id": "dc_99",
+        "category": "Diritto Costituzionale",
+        "difficulty": 3,
+        "question": "Nelle materie di legislazione concorrente, la potestà legislativa spetta alle Regioni, salvo che per:",
+        "options": [
+            "La determinazione dei principi fondamentali, riservata alla legislazione dello Stato.",
+            "Le norme penali.",
+            "Le norme tributarie.",
+            "Tutto, lo Stato può intervenire quando vuole."
+        ],
+        "answer": "La determinazione dei principi fondamentali, riservata alla legislazione dello Stato."
+    },
+    {
+        "id": "dc_100",
+        "category": "Diritto Costituzionale",
+        "difficulty": 2,
+        "question": "Il referendum abrogativo (art. 75 Cost.) è valido se:",
+        "options": [
+            "Vota la maggioranza degli aventi diritto (quorum strutturale) e si raggiunge la maggioranza dei voti validamente espressi.",
+            "Vota il 30% degli elettori.",
+            "Vota la maggioranza dei residenti.",
+            "Lo approva il Governo."
+        ],
+        "answer": "Vota la maggioranza degli aventi diritto (quorum strutturale) e si raggiunge la maggioranza dei voti validamente espressi."
+    }
+]

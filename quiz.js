@@ -176,6 +176,35 @@ document.addEventListener('DOMContentLoaded', async () => {
         const progress = ((currentQuestionIndex) / currentQuestions.length) * 100;
         progressBar.style.width = `${progress}%`;
 
+        // Difficulty Indicator
+        const difficultyBadge = document.getElementById('difficulty-badge');
+        const difficultyStars = document.getElementById('difficulty-stars');
+
+        if (question.difficulty) {
+            difficultyBadge.classList.remove('hidden');
+            // Remove old classes
+            difficultyBadge.classList.remove('diff-1', 'diff-2', 'diff-3');
+
+            let stars = '';
+            let diffClass = '';
+
+            if (question.difficulty == 1) {
+                stars = '★☆☆';
+                diffClass = 'diff-1';
+            } else if (question.difficulty == 2) {
+                stars = '★★☆';
+                diffClass = 'diff-2';
+            } else if (question.difficulty == 3) {
+                stars = '★★★';
+                diffClass = 'diff-3';
+            }
+
+            difficultyStars.textContent = stars;
+            difficultyBadge.classList.add(diffClass);
+        } else {
+            difficultyBadge.classList.add('hidden');
+        }
+
         optionsContainer.innerHTML = '';
         feedbackDisplay.textContent = '';
         feedbackDisplay.classList.remove('visible'); // Hide feedback initially

@@ -684,3 +684,34 @@ h2 {
         margin-bottom: 0;
     }
 }
+/* Difficulty Badge */
+.difficulty-badge {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.difficulty-badge.diff-1 {
+    color: #10b981;
+    border-color: rgba(16, 185, 129, 0.3);
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.difficulty-badge.diff-2 {
+    color: #f59e0b;
+    border-color: rgba(245, 158, 11, 0.3);
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.difficulty-badge.diff-3 {
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.3);
+    background: rgba(239, 68, 68, 0.1);
+}

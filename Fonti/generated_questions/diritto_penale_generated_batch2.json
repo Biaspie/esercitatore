@@ -1,0 +1,652 @@
+[
+    {
+        "id": "dp_51",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "In tema di lesioni personali, quale delle seguenti circostanze distingue la lesione grave dalla lesione gravissima ai sensi dell'art. 583 c.p.?",
+        "options": [
+            "La lesione grave comporta una malattia superiore a 20 giorni, mentre la gravissima comporta il pericolo di vita.",
+            "La lesione grave comporta l'indebolimento permanente di un senso o di un organo, mentre la gravissima comporta la perdita di un senso o di un arto.",
+            "La lesione grave è procedibile a querela, mentre la gravissima è sempre procedibile d'ufficio.",
+            "La lesione grave comporta una malattia insanabile, mentre la gravissima comporta la deformazione del viso."
+        ],
+        "answer": "La lesione grave comporta l'indebolimento permanente di un senso o di un organo, mentre la gravissima comporta la perdita di un senso o di un arto."
+    },
+    {
+        "id": "dp_52",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Tizio, durante una discussione, colpisce Caio con uno schiaffo. Caio non riporta alcuna malattia nel corpo o nella mente, ma solo una sensazione dolorosa temporanea. Di quale reato risponde Tizio e qual è il regime di procedibilità?",
+        "options": [
+            "Lesioni personali lievissime, procedibile a querela.",
+            "Percosse (art. 581 c.p.), procedibile a querela.",
+            "Violenza privata, procedibile d'ufficio.",
+            "Nessun reato, in quanto manca l'evento dannoso."
+        ],
+        "answer": "Percosse (art. 581 c.p.), procedibile a querela."
+    },
+    {
+        "id": "dp_53",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è l'elemento distintivo tra il reato di rissa (art. 588 c.p.) e il semplice concorso nel reato di lesioni o percosse?",
+        "options": [
+            "Nella rissa è necessaria la presenza di almeno cinque persone.",
+            "Nella rissa è necessario l'intento reciproco di offendere e difendersi (animus offendendi e defendendi) tra più contendenti.",
+            "Nella rissa non è necessario che vi sia violenza fisica, bastano le minacce.",
+            "Il reato di rissa assorbe sempre il reato di omicidio se questo si verifica."
+        ],
+        "answer": "Nella rissa è necessario l'intento reciproco di offendere e difendersi (animus offendendi e defendendi) tra più contendenti."
+    },
+    {
+        "id": "dp_54",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di sequestro di persona (art. 605 c.p.) si considera un reato permanente. Cosa implica questa qualificazione giuridica?",
+        "options": [
+            "Che il reato si consuma istantaneamente ma gli effetti perdurano nel tempo.",
+            "Che l'offesa al bene giuridico si protrae nel tempo per volontà del reo, e la flagranza dura fino a quando non cessa la privazione della libertà.",
+            "Che il reato non ammette il tentativo.",
+            "Che la competenza territoriale appartiene sempre al giudice del luogo in cui è iniziata l'azione."
+        ],
+        "answer": "Che l'offesa al bene giuridico si protrae nel tempo per volontà del reo, e la flagranza dura fino a quando non cessa la privazione della libertà."
+    },
+    {
+        "id": "dp_55",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Un pubblico ufficiale procede all'arresto di una persona fuori dai casi di flagranza e in assenza delle condizioni di legge, abusando dei suoi poteri. Di quale reato risponde?",
+        "options": [
+            "Abuso d'ufficio (art. 323 c.p.).",
+            "Sequestro di persona aggravato.",
+            "Arresto illegale (art. 606 c.p.).",
+            "Violenza privata aggravata."
+        ],
+        "answer": "Arresto illegale (art. 606 c.p.)."
+    },
+    {
+        "id": "dp_56",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "In materia di violenza sessuale (art. 609 bis c.p.), il dissenso della vittima:",
+        "options": [
+            "È irrilevante se non c'è violenza fisica.",
+            "Costituisce elemento costitutivo del reato.",
+            "Deve essere manifestato in forma scritta.",
+            "È presunto solo se la vittima è minorenne."
+        ],
+        "answer": "Costituisce elemento costitutivo del reato."
+    },
+    {
+        "id": "dp_57",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è il regime di procedibilità per il reato di violenza sessuale (art. 609 bis c.p.) commesso da un maggiorenne contro un altro maggiorenne, al di fuori delle ipotesi aggravate?",
+        "options": [
+            "Procedibilità d'ufficio.",
+            "Querela di parte, proponibile entro 3 mesi.",
+            "Querela di parte, proponibile entro 6 mesi e irrevocabile.",
+            "Richiesta del Ministro della Giustizia."
+        ],
+        "answer": "Querela di parte, proponibile entro 6 mesi e irrevocabile."
+    },
+    {
+        "id": "dp_58",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "L'art. 572 c.p. punisce i maltrattamenti contro familiari e conviventi. Quale elemento è essenziale per la configurazione di questo reato?",
+        "options": [
+            "Un singolo episodio di violenza grave.",
+            "L'abitualità della condotta vessatoria, che rende la convivenza dolorosa e umiliante.",
+            "La presenza di lesioni fisiche certificabili.",
+            "Che la vittima sia legata da vincolo matrimoniale con l'agente."
+        ],
+        "answer": "L'abitualità della condotta vessatoria, che rende la convivenza dolorosa e umiliante."
+    },
+    {
+        "id": "dp_59",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Cosa si intende per 'ius corrigendi' nell'ambito del reato di abuso dei mezzi di correzione (art. 571 c.p.)?",
+        "options": [
+            "Il diritto del genitore di punire fisicamente il figlio in ogni caso.",
+            "L'uso lecito di mezzi correttivi o disciplinari che non implichino violenza fisica, limitato a rapporti di autorità o affidamento.",
+            "Il potere del datore di lavoro di sanzionare i dipendenti.",
+            "Il diritto dell'insegnante di sospendere l'alunno."
+        ],
+        "answer": "L'uso lecito di mezzi correttivi o disciplinari che non implichino violenza fisica, limitato a rapporti di autorità o affidamento."
+    },
+    {
+        "id": "dp_60",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è la differenza principale tra il reato di associazione per delinquere (art. 416 c.p.) e il concorso di persone nel reato (art. 110 c.p.)?",
+        "options": [
+            "L'associazione richiede almeno 5 persone, il concorso ne richiede 2.",
+            "L'associazione presuppone un vincolo stabile e un programma criminoso indeterminato, mentre il concorso è un accordo occasionale per uno o più reati determinati.",
+            "L'associazione è punita meno severamente del concorso.",
+            "Non vi è alcuna differenza sostanziale."
+        ],
+        "answer": "L'associazione presuppone un vincolo stabile e un programma criminoso indeterminato, mentre il concorso è un accordo occasionale per uno o più reati determinati."
+    },
+    {
+        "id": "dp_61",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "L'art. 416 bis c.p. definisce l'associazione di tipo mafioso. Qual è l'elemento caratterizzante che la distingue dalla comune associazione per delinquere?",
+        "options": [
+            "Il numero degli associati superiore a dieci.",
+            "L'uso di armi da guerra.",
+            "La forza di intimidazione del vincolo associativo e la condizione di assoggettamento e omertà che ne deriva.",
+            "La commissione esclusiva di reati contro la Pubblica Amministrazione."
+        ],
+        "answer": "La forza di intimidazione del vincolo associativo e la condizione di assoggettamento e omertà che ne deriva."
+    },
+    {
+        "id": "dp_62",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Nel reato di furto (art. 624 c.p.), quando si considera consumato il delitto?",
+        "options": [
+            "Quando l'agente tocca la cosa altrui.",
+            "Quando l'agente si impossessa della cosa, sottraendola alla disponibilità del detentore (spossessamento).",
+            "Quando l'agente consegue il profitto sperato.",
+            "Quando la vittima si accorge del furto."
+        ],
+        "answer": "Quando l'agente si impossessa della cosa, sottraendola alla disponibilità del detentore (spossessamento)."
+    },
+    {
+        "id": "dp_63",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è la differenza tra furto con strappo (scippo) e rapina?",
+        "options": [
+            "Nel furto con strappo la violenza è diretta sulla cosa, nella rapina la violenza o minaccia è diretta alla persona.",
+            "Il furto con strappo è procedibile a querela, la rapina d'ufficio.",
+            "La rapina richiede l'uso di armi, lo scippo no.",
+            "Non c'è differenza, sono sinonimi."
+        ],
+        "answer": "Nel furto con strappo la violenza è diretta sulla cosa, nella rapina la violenza o minaccia è diretta alla persona."
+    },
+    {
+        "id": "dp_64",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Tizio minaccia Caio di rivelare un segreto imbarazzante se non gli consegnerà 5000 euro. Caio, intimorito, paga. Quale reato si configura?",
+        "options": [
+            "Rapina (art. 628 c.p.).",
+            "Violenza privata (art. 610 c.p.).",
+            "Estorsione (art. 629 c.p.).",
+            "Truffa (art. 640 c.p.)."
+        ],
+        "answer": "Estorsione (art. 629 c.p.)."
+    },
+    {
+        "id": "dp_65",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Nella truffa (art. 640 c.p.), qual è il nesso causale richiesto tra la condotta e l'evento?",
+        "options": [
+            "Gli artifizi o raggiri devono indurre la vittima in errore, determinandola a un atto di disposizione patrimoniale dannoso.",
+            "È sufficiente che l'agente menta alla vittima.",
+            "È necessario che l'agente usi violenza psicologica.",
+            "Il profitto deve essere superiore a 1000 euro."
+        ],
+        "answer": "Gli artifizi o raggiri devono indurre la vittima in errore, determinandola a un atto di disposizione patrimoniale dannoso."
+    },
+    {
+        "id": "dp_66",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è l'elemento soggettivo del reato di ricettazione (art. 648 c.p.)?",
+        "options": [
+            "La colpa grave nel non accertare la provenienza della cosa.",
+            "Il dolo specifico (fine di profitto) e la consapevolezza della provenienza delittuosa della cosa.",
+            "La semplice detenzione della cosa rubata.",
+            "L'intenzione di restituire la cosa al proprietario."
+        ],
+        "answer": "Il dolo specifico (fine di profitto) e la consapevolezza della provenienza delittuosa della cosa."
+    },
+    {
+        "id": "dp_67",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di riciclaggio (art. 648 bis c.p.) punisce chi:",
+        "options": [
+            "Acquista cose di provenienza delittuosa per uso personale.",
+            "Sostituisce o trasferisce denaro, beni o utilità provenienti da delitto non colposo, in modo da ostacolare l'identificazione della loro provenienza.",
+            "Falsifica banconote.",
+            "Commette usura bancaria."
+        ],
+        "answer": "Sostituisce o trasferisce denaro, beni o utilità provenienti da delitto non colposo, in modo da ostacolare l'identificazione della loro provenienza."
+    },
+    {
+        "id": "dp_68",
+        "category": "Diritto Penale",
+        "difficulty": 1,
+        "question": "Chi sono i 'pubblici ufficiali' agli effetti della legge penale (art. 357 c.p.)?",
+        "options": [
+            "Solo i dipendenti dei Ministeri.",
+            "Coloro che esercitano una pubblica funzione legislativa, giudiziaria o amministrativa.",
+            "Tutti i cittadini italiani maggiorenni.",
+            "Solo gli appartenenti alle forze di polizia."
+        ],
+        "answer": "Coloro che esercitano una pubblica funzione legislativa, giudiziaria o amministrativa."
+    },
+    {
+        "id": "dp_69",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Qual è la differenza tra pubblico ufficiale e incaricato di pubblico servizio (art. 358 c.p.)?",
+        "options": [
+            "L'incaricato di pubblico servizio ha poteri autoritativi, il pubblico ufficiale no.",
+            "L'incaricato di pubblico servizio svolge un'attività disciplinata nelle forme della pubblica funzione ma priva dei poteri tipici (autoritativi e certificativi).",
+            "Il pubblico ufficiale è sempre un dipendente statale, l'incaricato di pubblico servizio è un privato.",
+            "Non c'è differenza, sono sinonimi."
+        ],
+        "answer": "L'incaricato di pubblico servizio svolge un'attività disciplinata nelle forme della pubblica funzione ma priva dei poteri tipici (autoritativi e certificativi)."
+    },
+    {
+        "id": "dp_70",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Il peculato (art. 314 c.p.) si configura quando il pubblico ufficiale:",
+        "options": [
+            "Si appropria di denaro o cosa mobile altrui di cui ha il possesso o la disponibilità per ragione del suo ufficio.",
+            "Riceve denaro da un privato per compiere un atto del suo ufficio.",
+            "Costringe un privato a dargli denaro.",
+            "Usa violenza contro un superiore."
+        ],
+        "answer": "Si appropria di denaro o cosa mobile altrui di cui ha il possesso o la disponibilità per ragione del suo ufficio."
+    },
+    {
+        "id": "dp_71",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Cosa distingue il peculato d'uso (art. 314 c. 2 c.p.) dal peculato ordinario?",
+        "options": [
+            "Nel peculato d'uso l'oggetto è un bene immobile.",
+            "Nel peculato d'uso l'agente agisce al solo scopo di fare uso momentaneo della cosa, che viene immediatamente restituita.",
+            "Il peculato d'uso è punito più severamente.",
+            "Il peculato d'uso richiede la complicità di un privato."
+        ],
+        "answer": "Nel peculato d'uso l'agente agisce al solo scopo di fare uso momentaneo della cosa, che viene immediatamente restituita."
+    },
+    {
+        "id": "dp_72",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La concussione (art. 317 c.p.) è un reato proprio del pubblico ufficiale che:",
+        "options": [
+            "Accetta una promessa di denaro per compiere un atto d'ufficio.",
+            "Abusando della sua qualità o dei suoi poteri, costringe taluno a dare o promettere indebitamente denaro o altra utilità.",
+            "Si appropria di fondi pubblici.",
+            "Rifiuta un atto d'ufficio dovuto."
+        ],
+        "answer": "Abusando della sua qualità o dei suoi poteri, costringe taluno a dare o promettere indebitamente denaro o altra utilità."
+    },
+    {
+        "id": "dp_73",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è la differenza fondamentale tra concussione e corruzione?",
+        "options": [
+            "Nella concussione c'è un accordo paritario (pactum sceleris), nella corruzione c'è costrizione.",
+            "Nella concussione c'è costrizione e prevaricazione del pubblico ufficiale (metus publicae potestatis), nella corruzione c'è un accordo libero e paritario.",
+            "La concussione è commessa dal privato, la corruzione dal pubblico ufficiale.",
+            "La corruzione riguarda solo somme di denaro, la concussione qualsiasi utilità."
+        ],
+        "answer": "Nella concussione c'è costrizione e prevaricazione del pubblico ufficiale (metus publicae potestatis), nella corruzione c'è un accordo libero e paritario."
+    },
+    {
+        "id": "dp_74",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La corruzione per l'esercizio della funzione (art. 318 c.p.), detta anche 'impropria', punisce:",
+        "options": [
+            "Il pubblico ufficiale che riceve denaro per compiere un atto contrario ai doveri d'ufficio.",
+            "Il pubblico ufficiale che riceve indebitamente denaro o altra utilità per l'esercizio delle sue funzioni o poteri.",
+            "Il privato che costringe il pubblico ufficiale a compiere un atto.",
+            "Il pubblico ufficiale che omette un atto dovuto."
+        ],
+        "answer": "Il pubblico ufficiale che riceve indebitamente denaro o altra utilità per l'esercizio delle sue funzioni o poteri."
+    },
+    {
+        "id": "dp_75",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nella corruzione propria (art. 319 c.p.), l'oggetto dell'accordo illecito è:",
+        "options": [
+            "Il compimento di un atto conforme ai doveri d'ufficio.",
+            "L'omissione, il ritardo di un atto d'ufficio o il compimento di un atto contrario ai doveri d'ufficio.",
+            "La semplice disponibilità del funzionario.",
+            "L'uso momentaneo di un bene dell'ufficio."
+        ],
+        "answer": "L'omissione, il ritardo di un atto d'ufficio o il compimento di un atto contrario ai doveri d'ufficio."
+    },
+    {
+        "id": "dp_76",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di induzione indebita a dare o promettere utilità (art. 319 quater c.p.) si differenzia dalla concussione perché:",
+        "options": [
+            "Il privato non è punito.",
+            "Il privato è indotto, non costretto, e persegue un proprio vantaggio indebito, venendo quindi punito anch'egli.",
+            "È commesso solo dall'incaricato di pubblico servizio.",
+            "Richiede l'uso della violenza fisica."
+        ],
+        "answer": "Il privato è indotto, non costretto, e persegue un proprio vantaggio indebito, venendo quindi punito anch'egli."
+    },
+    {
+        "id": "dp_77",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "L'abuso d'ufficio (art. 323 c.p.) richiede che il pubblico ufficiale agisca:",
+        "options": [
+            "Con colpa grave.",
+            "Intenzionalmente, allo scopo di procurare a sé o ad altri un ingiusto vantaggio patrimoniale o arrecare ad altri un danno ingiusto.",
+            "Per errore scusabile.",
+            "Su ordine superiore."
+        ],
+        "answer": "Intenzionalmente, allo scopo di procurare a sé o ad altri un ingiusto vantaggio patrimoniale o arrecare ad altri un danno ingiusto."
+    },
+    {
+        "id": "dp_78",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il rifiuto di atti d'ufficio (art. 328 c.p.) punisce il pubblico ufficiale che:",
+        "options": [
+            "Rifiuta indebitamente un atto che deve essere compiuto senza ritardo per ragioni di giustizia, sicurezza, ordine pubblico, igiene e sanità.",
+            "Rifiuta di salutare un superiore.",
+            "Rifiuta di accettare un regalo.",
+            "Rifiuta di lavorare straordinario."
+        ],
+        "answer": "Rifiuta indebitamente un atto che deve essere compiuto senza ritardo per ragioni di giustizia, sicurezza, ordine pubblico, igiene e sanità."
+    },
+    {
+        "id": "dp_79",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Per la configurabilità del secondo comma dell'art. 328 c.p. (omissione di atti d'ufficio su richiesta), è necessario che:",
+        "options": [
+            "Siano decorsi 30 giorni dalla richiesta scritta dell'interessato senza che il pubblico ufficiale abbia risposto o esposto le ragioni del ritardo.",
+            "Il pubblico ufficiale abbia agito con violenza.",
+            "Vi sia un danno patrimoniale per il richiedente.",
+            "La richiesta sia stata fatta oralmente."
+        ],
+        "answer": "Siano decorsi 30 giorni dalla richiesta scritta dell'interessato senza che il pubblico ufficiale abbia risposto o esposto le ragioni del ritardo."
+    },
+    {
+        "id": "dp_80",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La malversazione a danno dello Stato (art. 316 bis c.p.) è un reato commesso da:",
+        "options": [
+            "Un pubblico ufficiale che ruba denaro pubblico.",
+            "Chiunque, estraneo alla P.A., che avendo ottenuto contributi pubblici per opere o attività di pubblico interesse, non li destina a tali finalità.",
+            "Un magistrato che emette una sentenza ingiusta.",
+            "Un evasore fiscale."
+        ],
+        "answer": "Chiunque, estraneo alla P.A., che avendo ottenuto contributi pubblici per opere o attività di pubblico interesse, non li destina a tali finalità."
+    },
+    {
+        "id": "dp_81",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di violenza o minaccia a un pubblico ufficiale (art. 336 c.p.) tutela:",
+        "options": [
+            "L'incolumità fisica del pubblico ufficiale come privato cittadino.",
+            "La libera formazione della volontà della P.A. e l'attività funzionale del pubblico ufficiale.",
+            "Il patrimonio del pubblico ufficiale.",
+            "L'onore del pubblico ufficiale."
+        ],
+        "answer": "La libera formazione della volontà della P.A. e l'attività funzionale del pubblico ufficiale."
+    },
+    {
+        "id": "dp_82",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è la differenza tra violenza a pubblico ufficiale (art. 336 c.p.) e resistenza a pubblico ufficiale (art. 337 c.p.)?",
+        "options": [
+            "La violenza (art. 336) è diretta a costringere il P.U. a compiere un atto futuro; la resistenza (art. 337) si oppone a un atto che il P.U. sta compiendo.",
+            "La resistenza richiede l'uso delle armi, la violenza no.",
+            "La violenza è punita con l'ergastolo, la resistenza con la multa.",
+            "Non c'è differenza."
+        ],
+        "answer": "La violenza (art. 336) è diretta a costringere il P.U. a compiere un atto futuro; la resistenza (art. 337) si oppone a un atto che il P.U. sta compiendo."
+    },
+    {
+        "id": "dp_83",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La resistenza passiva (es. buttarsi a terra) integra il reato di resistenza a pubblico ufficiale (art. 337 c.p.)?",
+        "options": [
+            "Sì, sempre.",
+            "No, la resistenza richiede violenza o minaccia attiva.",
+            "Sì, se costringe gli agenti a sollevarlo di peso.",
+            "Dipende dall'intenzione del soggetto."
+        ],
+        "answer": "No, la resistenza richiede violenza o minaccia attiva."
+    },
+    {
+        "id": "dp_84",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'oltraggio a pubblico ufficiale (art. 341 bis c.p.) richiede che l'offesa all'onore e al prestigio avvenga:",
+        "options": [
+            "In luogo pubblico o aperto al pubblico e in presenza di più persone.",
+            "Anche in privato, purché sia offensiva.",
+            "Solo tramite scritti anonimi.",
+            "Solo se il pubblico ufficiale indossa l'uniforme."
+        ],
+        "answer": "In luogo pubblico o aperto al pubblico e in presenza di più persone."
+    },
+    {
+        "id": "dp_85",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La 'reazione agli atti arbitrari' del pubblico ufficiale (art. 393 bis c.p.) opera come:",
+        "options": [
+            "Circostanza attenuante.",
+            "Causa di giustificazione (o esimente) che esclude la punibilità per i reati di violenza, resistenza e oltraggio.",
+            "Causa di estinzione del reato per prescrizione.",
+            "Scusa non richiesta."
+        ],
+        "answer": "Causa di giustificazione (o esimente) che esclude la punibilità per i reati di violenza, resistenza e oltraggio."
+    },
+    {
+        "id": "dp_86",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'omessa denuncia di reato da parte del pubblico ufficiale (art. 361 c.p.) punisce:",
+        "options": [
+            "Il P.U. che omette o ritarda di denunciare un reato di cui ha avuto notizia nell'esercizio o a causa delle sue funzioni.",
+            "Il cittadino che non denuncia un furto.",
+            "Il P.U. che non arresta il colpevole.",
+            "Il medico che non fa il referto."
+        ],
+        "answer": "Il P.U. che omette o ritarda di denunciare un reato di cui ha avuto notizia nell'esercizio o a causa delle sue funzioni."
+    },
+    {
+        "id": "dp_87",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La simulazione di reato (art. 367 c.p.) si distingue dalla calunnia (art. 368 c.p.) perché:",
+        "options": [
+            "Nella simulazione si denuncia un reato inesistente senza accusare nessuno (o accusando ignoti), nella calunnia si incolpa taluno che si sa innocente.",
+            "La simulazione è un reato contro il patrimonio, la calunnia contro la persona.",
+            "La simulazione richiede la querela, la calunnia è d'ufficio.",
+            "La simulazione è punita più gravemente."
+        ],
+        "answer": "Nella simulazione si denuncia un reato inesistente senza accusare nessuno (o accusando ignoti), nella calunnia si incolpa taluno che si sa innocente."
+    },
+    {
+        "id": "dp_88",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di calunnia (art. 368 c.p.) si consuma:",
+        "options": [
+            "Quando la persona falsamente accusata viene condannata.",
+            "Nel momento in cui l'autorità riceve la falsa notizia di reato o scopre le tracce simulate.",
+            "Quando il calunniatore ritratta.",
+            "Solo se viene aperto un processo."
+        ],
+        "answer": "Nel momento in cui l'autorità riceve la falsa notizia di reato o scopre le tracce simulate."
+    },
+    {
+        "id": "dp_89",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'autocalunnia (art. 369 c.p.) consiste nel:",
+        "options": [
+            "Incolpare se stesso di un reato che non è stato commesso o commesso da altri.",
+            "Confessare un reato realmente commesso.",
+            "Insultare se stessi in pubblico.",
+            "Rifiutarsi di rispondere al giudice."
+        ],
+        "answer": "Incolpare se stesso di un reato che non è stato commesso o commesso da altri."
+    },
+    {
+        "id": "dp_90",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Il favoreggiamento personale (art. 378 c.p.) presuppone:",
+        "options": [
+            "Che il favoreggiatore sia concorrente nel reato presupposto.",
+            "La commissione di un reato precedente e la mancanza di concorso in esso da parte del favoreggiatore.",
+            "Che il favoreggiatore riceva un compenso.",
+            "Che il reato presupposto sia un delitto di mafia."
+        ],
+        "answer": "La commissione di un reato precedente e la mancanza di concorso in esso da parte del favoreggiatore."
+    },
+    {
+        "id": "dp_91",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Qual è la differenza tra favoreggiamento personale e favoreggiamento reale (art. 379 c.p.)?",
+        "options": [
+            "Il personale aiuta a eludere le investigazioni, il reale aiuta ad assicurare il prodotto, profitto o prezzo del reato.",
+            "Il personale è commesso da un parente, il reale da un estraneo.",
+            "Il personale riguarda delitti, il reale contravvenzioni.",
+            "Non esiste il favoreggiamento reale."
+        ],
+        "answer": "Il personale aiuta a eludere le investigazioni, il reale aiuta ad assicurare il prodotto, profitto o prezzo del reato."
+    },
+    {
+        "id": "dp_92",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'evasione (art. 385 c.p.) punisce:",
+        "options": [
+            "Chiunque, essendo legalmente arrestato o detenuto, evade.",
+            "Chi non paga le tasse.",
+            "Chi fugge all'estero per turismo.",
+            "Chi non si presenta al lavoro."
+        ],
+        "answer": "Chiunque, essendo legalmente arrestato o detenuto, evade."
+    },
+    {
+        "id": "dp_93",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "L'allontanamento dal luogo degli arresti domiciliari integra il reato di evasione?",
+        "options": [
+            "No, è solo una violazione amministrativa.",
+            "Sì, perché gli arresti domiciliari sono equiparati allo stato di detenzione.",
+            "Solo se l'allontanamento dura più di 24 ore.",
+            "Solo se c'è violenza."
+        ],
+        "answer": "Sì, perché gli arresti domiciliari sono equiparati allo stato di detenzione."
+    },
+    {
+        "id": "dp_94",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "In tema di falsità in atti, qual è la differenza tra falsità materiale e falsità ideologica?",
+        "options": [
+            "La falsità materiale riguarda la contraffazione o alterazione del documento (forma), la ideologica riguarda la non veridicità del contenuto (sostanza).",
+            "La falsità materiale è commessa dal privato, la ideologica dal pubblico ufficiale.",
+            "La falsità materiale è punita con la multa, la ideologica con la reclusione.",
+            "La falsità materiale riguarda oggetti, la ideologica riguarda idee."
+        ],
+        "answer": "La falsità materiale riguarda la contraffazione o alterazione del documento (forma), la ideologica riguarda la non veridicità del contenuto (sostanza)."
+    },
+    {
+        "id": "dp_95",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il pubblico ufficiale che, nell'esercizio delle funzioni, forma un atto falso o altera un atto vero, commette:",
+        "options": [
+            "Falsità materiale in atto pubblico (art. 476 c.p.).",
+            "Falsità ideologica in atto pubblico (art. 479 c.p.).",
+            "Truffa aggravata.",
+            "Abuso d'ufficio."
+        ],
+        "answer": "Falsità materiale in atto pubblico (art. 476 c.p.)."
+    },
+    {
+        "id": "dp_96",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il pubblico ufficiale che attesta falsamente che un fatto è avvenuto in sua presenza commette:",
+        "options": [
+            "Falsità ideologica in atto pubblico (art. 479 c.p.).",
+            "Falsità materiale.",
+            "Errore materiale.",
+            "Calunnia."
+        ],
+        "answer": "Falsità ideologica in atto pubblico (art. 479 c.p.)."
+    },
+    {
+        "id": "dp_97",
+        "category": "Diritto Penale",
+        "difficulty": 1,
+        "question": "L'esercizio arbitrario delle proprie ragioni con violenza sulle cose (art. 392 c.p.) si configura quando:",
+        "options": [
+            "Si distrugge una cosa propria.",
+            "Si usa violenza sulle cose per esercitare un preteso diritto, potendo ricorrere al giudice.",
+            "Si ripara un oggetto rotto.",
+            "Si vende una cosa altrui."
+        ],
+        "answer": "Si usa violenza sulle cose per esercitare un preteso diritto, potendo ricorrere al giudice."
+    },
+    {
+        "id": "dp_98",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nel reato di usura (art. 644 c.p.), quando si considerano usurari gli interessi?",
+        "options": [
+            "Solo se superano il 50%.",
+            "Quando superano il limite legale stabilito dalla legge o, anche se inferiori, sono sproporzionati e c'è stato di difficoltà della vittima.",
+            "Solo se la vittima denuncia.",
+            "Solo se c'è violenza."
+        ],
+        "answer": "Quando superano il limite legale stabilito dalla legge o, anche se inferiori, sono sproporzionati e c'è stato di difficoltà della vittima."
+    },
+    {
+        "id": "dp_99",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'appropriazione indebita (art. 646 c.p.) si differenzia dal furto perché:",
+        "options": [
+            "L'agente ha già il possesso o la disponibilità della cosa, e se ne appropria.",
+            "L'agente sottrae la cosa a chi la detiene.",
+            "È commessa con violenza.",
+            "Riguarda beni immobili."
+        ],
+        "answer": "L'agente ha già il possesso o la disponibilità della cosa, e se ne appropria."
+    },
+    {
+        "id": "dp_100",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Il reato di riciclaggio (art. 648 bis c.p.) richiede come reato presupposto:",
+        "options": [
+            "Un delitto non colposo.",
+            "Una contravvenzione.",
+            "Un illecito amministrativo.",
+            "Un delitto colposo."
+        ],
+        "answer": "Un delitto non colposo."
+    }
+]

@@ -1,0 +1,652 @@
+[
+    {
+        "id": "dp_101",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Qual è la principale differenza sanzionatoria tra delitti e contravvenzioni nel codice penale italiano?",
+        "options": [
+            "I delitti sono puniti con ergastolo, reclusione o multa; le contravvenzioni con arresto o ammenda.",
+            "I delitti sono puniti con l'arresto, le contravvenzioni con la reclusione.",
+            "I delitti prevedono sempre la pena di morte, le contravvenzioni no.",
+            "Non vi è alcuna differenza, dipende dalla gravità del fatto."
+        ],
+        "answer": "I delitti sono puniti con ergastolo, reclusione o multa; le contravvenzioni con arresto o ammenda."
+    },
+    {
+        "id": "dp_102",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nelle contravvenzioni, qual è la regola generale per l'elemento soggettivo (dolo o colpa)?",
+        "options": [
+            "Sono punibili solo a titolo di dolo, salvo espressa previsione di colpa.",
+            "Sono punibili indifferentemente a titolo di dolo o di colpa.",
+            "Sono punibili solo a titolo di colpa.",
+            "Non richiedono alcun elemento soggettivo (responsabilità oggettiva)."
+        ],
+        "answer": "Sono punibili indifferentemente a titolo di dolo o di colpa."
+    },
+    {
+        "id": "dp_103",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "È configurabile il tentativo (art. 56 c.p.) nelle contravvenzioni?",
+        "options": [
+            "Sì, sempre.",
+            "No, il tentativo è previsto solo per i delitti.",
+            "Sì, ma solo per le contravvenzioni punite con l'arresto.",
+            "Dipende dalla discrezionalità del giudice."
+        ],
+        "answer": "No, il tentativo è previsto solo per i delitti."
+    },
+    {
+        "id": "dp_104",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'art. 650 c.p. (Inosservanza dei provvedimenti dell'Autorità) è un esempio di 'norma penale in bianco'. Cosa significa?",
+        "options": [
+            "Che la sanzione non è determinata.",
+            "Che il precetto è generico e deve essere specificato da un atto normativo di grado inferiore o provvedimento amministrativo.",
+            "Che la norma non è scritta nel codice.",
+            "Che si applica solo ai cittadini stranieri."
+        ],
+        "answer": "Che il precetto è generico e deve essere specificato da un atto normativo di grado inferiore o provvedimento amministrativo."
+    },
+    {
+        "id": "dp_105",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Quali sono i presupposti per l'applicazione dell'art. 650 c.p.?",
+        "options": [
+            "L'inosservanza di un provvedimento legalmente dato dall'Autorità per ragioni di giustizia, sicurezza, ordine pubblico o igiene, se il fatto non costituisce un più grave reato.",
+            "L'inosservanza di qualsiasi ordine verbale.",
+            "La violazione di una legge regionale.",
+            "Il mancato pagamento di una multa."
+        ],
+        "answer": "L'inosservanza di un provvedimento legalmente dato dall'Autorità per ragioni di giustizia, sicurezza, ordine pubblico o igiene, se il fatto non costituisce un più grave reato."
+    },
+    {
+        "id": "dp_106",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "In materia di stupefacenti (D.P.R. 309/90), come viene distinta la rilevanza penale della detenzione?",
+        "options": [
+            "La detenzione è sempre reato.",
+            "La detenzione è reato se destinata a terzi (spaccio) o se appare tale per quantità e modalità; è illecito amministrativo se per uso esclusivamente personale.",
+            "La detenzione è reato solo per le droghe pesanti.",
+            "La detenzione non è mai reato se avviene in casa."
+        ],
+        "answer": "La detenzione è reato se destinata a terzi (spaccio) o se appare tale per quantità e modalità; è illecito amministrativo se per uso esclusivamente personale."
+    },
+    {
+        "id": "dp_107",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Quali elementi indiziari possono far presumere la destinazione a terzi della sostanza stupefacente (art. 73 D.P.R. 309/90)?",
+        "options": [
+            "Solo la confessione dell'indagato.",
+            "Il superamento dei limiti massimi di principio attivo, il confezionamento frazionato, la presenza di bilancini o denaro contante.",
+            "Il colore della sostanza.",
+            "L'età del detentore."
+        ],
+        "answer": "Il superamento dei limiti massimi di principio attivo, il confezionamento frazionato, la presenza di bilancini o denaro contante."
+    },
+    {
+        "id": "dp_108",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Cosa prevede l'art. 73 comma 5 del D.P.R. 309/90 per i fatti di lieve entità?",
+        "options": [
+            "La non punibilità.",
+            "Una sanzione amministrativa raddoppiata.",
+            "Un'autonoma figura di reato con pene ridotte (reclusione da 6 mesi a 4 anni), senza distinzione tra droghe leggere e pesanti.",
+            "L'applicazione dell'ergastolo."
+        ],
+        "answer": "Un'autonoma figura di reato con pene ridotte (reclusione da 6 mesi a 4 anni), senza distinzione tra droghe leggere e pesanti."
+    },
+    {
+        "id": "dp_109",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'associazione finalizzata al traffico illecito di sostanze stupefacenti è punita dall'art.:",
+        "options": [
+            "Art. 416 c.p.",
+            "Art. 74 D.P.R. 309/90.",
+            "Art. 73 D.P.R. 309/90.",
+            "Art. 416 bis c.p."
+        ],
+        "answer": "Art. 74 D.P.R. 309/90."
+    },
+    {
+        "id": "dp_110",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Qual è la conseguenza per chi detiene sostanze stupefacenti per uso esclusivamente personale?",
+        "options": [
+            "Arresto obbligatorio.",
+            "Sanzioni amministrative (art. 75 D.P.R. 309/90) come la sospensione della patente o del passaporto.",
+            "Nessuna conseguenza.",
+            "Obbligo di firma."
+        ],
+        "answer": "Sanzioni amministrative (art. 75 D.P.R. 309/90) come la sospensione della patente o del passaporto."
+    },
+    {
+        "id": "dp_111",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di atti persecutori (Stalking, art. 612 bis c.p.) richiede:",
+        "options": [
+            "Condotte reiterate di minaccia o molestia che cagionino un perdurante stato di ansia, paura o costringano a cambiare abitudini di vita.",
+            "Un singolo atto di minaccia grave.",
+            "La convivenza tra vittima e aggressore.",
+            "L'uso di armi."
+        ],
+        "answer": "Condotte reiterate di minaccia o molestia che cagionino un perdurante stato di ansia, paura o costringano a cambiare abitudini di vita."
+    },
+    {
+        "id": "dp_112",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è il termine per proporre querela nel reato di stalking?",
+        "options": [
+            "3 mesi.",
+            "6 mesi.",
+            "1 anno.",
+            "Non c'è termine."
+        ],
+        "answer": "6 mesi."
+    },
+    {
+        "id": "dp_113",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Cos'è l'ammonimento del Questore in materia di stalking?",
+        "options": [
+            "Una misura cautelare emessa dal GIP.",
+            "Un provvedimento amministrativo preventivo che la vittima può richiedere prima di proporre querela.",
+            "Una condanna penale.",
+            "Una sanzione pecuniaria."
+        ],
+        "answer": "Un provvedimento amministrativo preventivo che la vittima può richiedere prima di proporre querela."
+    },
+    {
+        "id": "dp_114",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di ingresso e soggiorno illegale nel territorio dello Stato (art. 10-bis D.Lgs. 286/98) è punito con:",
+        "options": [
+            "La reclusione fino a 4 anni.",
+            "L'ammenda da 5.000 a 10.000 euro.",
+            "L'arresto fino a 6 mesi.",
+            "I lavori forzati."
+        ],
+        "answer": "L'ammenda da 5.000 a 10.000 euro."
+    },
+    {
+        "id": "dp_115",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "In caso di inottemperanza all'ordine di espulsione del Questore, qual è la sanzione prevista dopo la sentenza 'El Dridi' e le successive modifiche normative?",
+        "options": [
+            "La reclusione da 1 a 4 anni.",
+            "La multa (pena pecuniaria), salvo giustificato motivo.",
+            "L'arresto obbligatorio.",
+            "Nessuna sanzione."
+        ],
+        "answer": "La multa (pena pecuniaria), salvo giustificato motivo."
+    },
+    {
+        "id": "dp_116",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Cosa si intende per 'giustificato motivo' nell'inottemperanza all'ordine di espulsione?",
+        "options": [
+            "Qualsiasi scusa fornita dallo straniero.",
+            "Situazioni oggettive o soggettive che rendono impossibile o estremamente difficile l'adempimento (es. mancanza di documenti per il rimpatrio, gravi motivi di salute).",
+            "La mancanza di denaro per il biglietto aereo (se non provata).",
+            "La volontà di restare in Italia."
+        ],
+        "answer": "Situazioni oggettive o soggettive che rendono impossibile o estremamente difficile l'adempimento (es. mancanza di documenti per il rimpatrio, gravi motivi di salute)."
+    },
+    {
+        "id": "dp_117",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il favoreggiamento dell'immigrazione clandestina (art. 12 D.Lgs. 286/98) punisce:",
+        "options": [
+            "Chiunque promuove, dirige, organizza, finanzia o effettua il trasporto di stranieri nel territorio dello Stato in violazione delle norme.",
+            "Lo straniero che entra illegalmente.",
+            "Chi ospita un amico straniero regolare.",
+            "Chi assume uno straniero con permesso di soggiorno."
+        ],
+        "answer": "Chiunque promuove, dirige, organizza, finanzia o effettua il trasporto di stranieri nel territorio dello Stato in violazione delle norme."
+    },
+    {
+        "id": "dp_118",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Costituiscono reato le attività di soccorso e assistenza umanitaria prestate in Italia agli stranieri in condizioni di bisogno?",
+        "options": [
+            "Sì, sempre.",
+            "No, sono espressamente escluse dal reato di favoreggiamento dell'immigrazione clandestina.",
+            "Sì, se non autorizzate dal Prefetto.",
+            "Dipende dalla nazionalità degli stranieri."
+        ],
+        "answer": "No, sono espressamente escluse dal reato di favoreggiamento dell'immigrazione clandestina."
+    },
+    {
+        "id": "dp_119",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La Riforma Cartabia (D.Lgs. 150/2022) ha modificato l'art. 131-bis c.p. (particolare tenuità del fatto). Qual è una delle principali novità?",
+        "options": [
+            "L'istituto è stato abolito.",
+            "Si applica a tutti i reati puniti con pena minima pari o inferiore a due anni, senza più il limite massimo di pena edittale (purché non superiore a certi limiti impliciti o esclusioni espresse).",
+            "Si applica solo alle contravvenzioni.",
+            "Richiede sempre il consenso della vittima."
+        ],
+        "answer": "Si applica a tutti i reati puniti con pena minima pari o inferiore a due anni, senza più il limite massimo di pena edittale (purché non superiore a certi limiti impliciti o esclusioni espresse)."
+    },
+    {
+        "id": "dp_120",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La Riforma Cartabia ha esteso il regime di procedibilità a querela per molti reati. Quale dei seguenti reati è divenuto procedibile a querela (salvo aggravanti specifiche)?",
+        "options": [
+            "Omicidio.",
+            "Furto (art. 624 c.p.), salvo aggravanti specifiche o incapacità della vittima.",
+            "Rapina.",
+            "Estorsione."
+        ],
+        "answer": "Furto (art. 624 c.p.), salvo aggravanti specifiche o incapacità della vittima."
+    },
+    {
+        "id": "dp_121",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Per il reato di lesioni personali (art. 582 c.p.), come è cambiato il regime di procedibilità con la Riforma Cartabia?",
+        "options": [
+            "È sempre procedibile d'ufficio.",
+            "È procedibile a querela, salvo che la malattia superi i 20 giorni e la vittima sia incapace, o ricorrano aggravanti specifiche.",
+            "È procedibile a querela solo se la malattia è inferiore a 10 giorni.",
+            "Non è più reato."
+        ],
+        "answer": "È procedibile a querela, salvo che la malattia superi i 20 giorni e la vittima sia incapace, o ricorrano aggravanti specifiche."
+    },
+    {
+        "id": "dp_122",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Il reato di sequestro di persona (art. 605 c.p.) è divenuto procedibile a querela con la Riforma Cartabia?",
+        "options": [
+            "Sì, salvo che il fatto sia commesso nei confronti di persona incapace per età o infermità.",
+            "No, è rimasto sempre procedibile d'ufficio.",
+            "Sì, in tutti i casi.",
+            "Solo se dura meno di 24 ore."
+        ],
+        "answer": "Sì, salvo che il fatto sia commesso nei confronti di persona incapace per età o infermità."
+    },
+    {
+        "id": "dp_123",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La violenza privata (art. 610 c.p.) è ora procedibile a querela?",
+        "options": [
+            "Sì, ad eccezione dei fatti aggravati o commessi contro incapaci.",
+            "No, mai.",
+            "Solo se commessa tra parenti.",
+            "Sì, ma solo se c'è minaccia e non violenza."
+        ],
+        "answer": "Sì, ad eccezione dei fatti aggravati o commessi contro incapaci."
+    },
+    {
+        "id": "dp_124",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Il danneggiamento (art. 635 c.p.) è procedibile a querela?",
+        "options": [
+            "Sì, ad eccezione del fatto commesso in occasione di interruzione di pubblico servizio o contro incapaci.",
+            "No, è sempre d'ufficio.",
+            "Solo se il danno è lieve.",
+            "Solo se riguarda edifici pubblici."
+        ],
+        "answer": "Sì, ad eccezione del fatto commesso in occasione di interruzione di pubblico servizio o contro incapaci."
+    },
+    {
+        "id": "dp_125",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Cosa prevede il D.Lgs. 31/2024 (Correttivo Cartabia) riguardo alle lesioni personali lievi in danno di personale sanitario?",
+        "options": [
+            "La procedibilità a querela.",
+            "La procedibilità d'ufficio.",
+            "La depenalizzazione.",
+            "L'obbligo di mediazione."
+        ],
+        "answer": "La procedibilità d'ufficio."
+    },
+    {
+        "id": "dp_126",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di riduzione in schiavitù (art. 600 c.p.) punisce chi:",
+        "options": [
+            "Esercita su una persona poteri corrispondenti al diritto di proprietà o la riduce in stato di soggezione continuativa.",
+            "Non paga lo stipendio ai dipendenti.",
+            "Costringe qualcuno a lavorare straordinario.",
+            "Chiude a chiave una persona in una stanza per un'ora."
+        ],
+        "answer": "Esercita su una persona poteri corrispondenti al diritto di proprietà o la riduce in stato di soggezione continuativa."
+    },
+    {
+        "id": "dp_127",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La tratta di persone (art. 601 c.p.) consiste nel:",
+        "options": [
+            "Trasportare merci illegali.",
+            "Commettere tratta di persone che si trovano in condizione di schiavitù o indurre/costringere persone a entrare/uscire/soggiornare nello Stato per ridurle in schiavitù.",
+            "Organizzare viaggi turistici non autorizzati.",
+            "Assumere lavoratori stranieri irregolari."
+        ],
+        "answer": "Commettere tratta di persone che si trovano in condizione di schiavitù o indurre/costringere persone a entrare/uscire/soggiornare nello Stato per ridurle in schiavitù."
+    },
+    {
+        "id": "dp_128",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La circonvenzione di persone incapaci (art. 643 c.p.) richiede:",
+        "options": [
+            "L'abuso dei bisogni, passioni o inesperienza di un minore o dello stato d'infermità/deficienza psichica di una persona per indurla a compiere un atto dannoso.",
+            "La violenza fisica.",
+            "La minaccia di un male ingiusto.",
+            "Il furto di beni dell'incapace."
+        ],
+        "answer": "L'abuso dei bisogni, passioni o inesperienza di un minore o dello stato d'infermità/deficienza psichica di una persona per indurla a compiere un atto dannoso."
+    },
+    {
+        "id": "dp_129",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "I reati di discriminazione razziale (L. 654/1975) puniscono:",
+        "options": [
+            "Chi diffonde idee fondate sulla superiorità o odio razziale o incita alla discriminazione.",
+            "Chi non assume stranieri.",
+            "Chi parla una lingua straniera.",
+            "Chi viaggia all'estero."
+        ],
+        "answer": "Chi diffonde idee fondate sulla superiorità o odio razziale o incita alla discriminazione."
+    },
+    {
+        "id": "dp_130",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La prostituzione minorile (art. 600 bis c.p.) punisce:",
+        "options": [
+            "Il minore che si prostituisce.",
+            "Chi recluta o induce alla prostituzione un minore di 18 anni o ne sfrutta la prostituzione, e il cliente che compie atti sessuali con minore di 18 anni in cambio di denaro.",
+            "Solo lo sfruttatore, non il cliente.",
+            "Solo se il minore ha meno di 14 anni."
+        ],
+        "answer": "Chi recluta o induce alla prostituzione un minore di 18 anni o ne sfrutta la prostituzione, e il cliente che compie atti sessuali con minore di 18 anni in cambio di denaro."
+    },
+    {
+        "id": "dp_131",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La pornografia minorile (art. 600 ter c.p.) punisce anche la detenzione del materiale?",
+        "options": [
+            "No, solo la produzione.",
+            "Sì, la detenzione è punita dall'art. 600 quater c.p.",
+            "Sì, ma solo se a fini di spaccio.",
+            "Solo se il materiale è cartaceo."
+        ],
+        "answer": "Sì, la detenzione è punita dall'art. 600 quater c.p."
+    },
+    {
+        "id": "dp_132",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La pornografia virtuale (art. 600 quater.1 c.p.) è reato?",
+        "options": [
+            "No, perché non ci sono vittime reali.",
+            "Sì, se le immagini sono realizzate utilizzando immagini di minori di 18 anni o parti di esse.",
+            "Solo se distribuita a pagamento.",
+            "Solo se i soggetti rappresentati hanno meno di 10 anni."
+        ],
+        "answer": "Sì, se le immagini sono realizzate utilizzando immagini di minori di 18 anni o parti di esse."
+    },
+    {
+        "id": "dp_133",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Lo sfruttamento della prostituzione (Legge Merlin) consiste nel:",
+        "options": [
+            "Esercitare la prostituzione.",
+            "Favorire o sfruttare la prostituzione altrui, o gestire case di prostituzione.",
+            "Andare con una prostituta.",
+            "Pagare per una prestazione sessuale tra adulti."
+        ],
+        "answer": "Favorire o sfruttare la prostituzione altrui, o gestire case di prostituzione."
+    },
+    {
+        "id": "dp_134",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nel reato di maltrattamenti (art. 572 c.p.), la competenza territoriale spetta:",
+        "options": [
+            "Al giudice del luogo dove è avvenuto l'ultimo atto della condotta abituale.",
+            "Al giudice del luogo di residenza della vittima.",
+            "Al giudice del luogo di nascita dell'imputato.",
+            "Alla Corte d'Assise."
+        ],
+        "answer": "Al giudice del luogo dove è avvenuto l'ultimo atto della condotta abituale."
+    },
+    {
+        "id": "dp_135",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'omicidio stradale (art. 589 bis c.p.) è un reato:",
+        "options": [
+            "Doloso.",
+            "Colposo.",
+            "Preterintenzionale.",
+            "Di responsabilità oggettiva."
+        ],
+        "answer": "Colposo."
+    },
+    {
+        "id": "dp_136",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Qual è l'aggravante prevista per l'omicidio stradale se il conducente è in stato di ebbrezza grave (tasso > 1,5 g/l)?",
+        "options": [
+            "La pena è aumentata fino al triplo.",
+            "La pena è la reclusione da 8 a 12 anni.",
+            "Non c'è aggravante, è un reato autonomo.",
+            "Si applica l'ergastolo."
+        ],
+        "answer": "La pena è la reclusione da 8 a 12 anni."
+    },
+    {
+        "id": "dp_137",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Le lesioni personali stradali gravi o gravissime (art. 590 bis c.p.) sono procedibili:",
+        "options": [
+            "Sempre d'ufficio.",
+            "A querela, salvo le ipotesi aggravate (ebbrezza, alterazione, ecc.).",
+            "Sempre a querela.",
+            "Su richiesta del Prefetto."
+        ],
+        "answer": "A querela, salvo le ipotesi aggravate (ebbrezza, alterazione, ecc.)."
+    },
+    {
+        "id": "dp_138",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di rissa aggravata (art. 588 c. 2 c.p.) si configura se:",
+        "options": [
+            "Nella rissa taluno rimane ucciso o riporta lesioni personali.",
+            "La rissa avviene in uno stadio.",
+            "Partecipano più di 10 persone.",
+            "Vengono usati bastoni."
+        ],
+        "answer": "Nella rissa taluno rimane ucciso o riporta lesioni personali."
+    },
+    {
+        "id": "dp_139",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nel reato di furto in abitazione (art. 624 bis c.p.), cosa si intende per 'privata dimora'?",
+        "options": [
+            "Solo la casa di residenza anagrafica.",
+            "Qualsiasi luogo destinato in tutto o in parte a privata dimora o nelle pertinenze di essa (es. garage, cortile condominiale, studio professionale annesso, camera d'albergo).",
+            "Solo la camera da letto.",
+            "Qualsiasi edificio coperto."
+        ],
+        "answer": "Qualsiasi luogo destinato in tutto o in parte a privata dimora o nelle pertinenze di essa (es. garage, cortile condominiale, studio professionale annesso, camera d'albergo)."
+    },
+    {
+        "id": "dp_140",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La rapina impropria (art. 628 c. 2 c.p.) si verifica quando:",
+        "options": [
+            "La violenza o minaccia è usata immediatamente dopo la sottrazione per assicurare il possesso della cosa o l'impunità.",
+            "La rapina è commessa con armi giocattolo.",
+            "La rapina non riesce.",
+            "La vittima è consenziente."
+        ],
+        "answer": "La violenza o minaccia è usata immediatamente dopo la sottrazione per assicurare il possesso della cosa o l'impunità."
+    },
+    {
+        "id": "dp_141",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "L'estorsione (art. 629 c.p.) richiede che la vittima compia un atto di disposizione patrimoniale?",
+        "options": [
+            "Sì, facendo o omettendo qualcosa che procuri un ingiusto profitto con altrui danno.",
+            "No, basta la minaccia.",
+            "No, basta che l'agente prenda la cosa.",
+            "Sì, ma solo se c'è un notaio."
+        ],
+        "answer": "Sì, facendo o omettendo qualcosa che procuri un ingiusto profitto con altrui danno."
+    },
+    {
+        "id": "dp_142",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di truffa aggravata ai danni dello Stato (art. 640 c. 2 n. 1 c.p.) è procedibile:",
+        "options": [
+            "A querela.",
+            "D'ufficio.",
+            "Su richiesta del Ministro.",
+            "Non è punibile."
+        ],
+        "answer": "D'ufficio."
+    },
+    {
+        "id": "dp_143",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'usura (art. 644 c.p.) punisce anche la mediazione usuraria?",
+        "options": [
+            "Sì, chi procura denaro facendo dare o promettere un compenso usurario per la mediazione.",
+            "No, solo chi presta il denaro.",
+            "Solo se il mediatore è un banchiere.",
+            "No, la mediazione è lecita."
+        ],
+        "answer": "Sì, chi procura denaro facendo dare o promettere un compenso usurario per la mediazione."
+    },
+    {
+        "id": "dp_144",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nel reato di ricettazione, il dolo eventuale è compatibile?",
+        "options": [
+            "Sì, secondo la giurisprudenza prevalente (accettazione del rischio della provenienza illecita).",
+            "No, è richiesto il dolo diretto o la certezza della provenienza illecita.",
+            "Solo per le contravvenzioni.",
+            "Mai."
+        ],
+        "answer": "Sì, secondo la giurisprudenza prevalente (accettazione del rischio della provenienza illecita)."
+    },
+    {
+        "id": "dp_145",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "L'incauto acquisto (art. 712 c.p.) si differenzia dalla ricettazione perché:",
+        "options": [
+            "È una contravvenzione punita a titolo di colpa (mancato accertamento della provenienza per negligenza), mentre la ricettazione è un delitto doloso.",
+            "Riguarda cose di poco valore.",
+            "È commesso da un commerciante.",
+            "Non è punibile."
+        ],
+        "answer": "È una contravvenzione punita a titolo di colpa (mancato accertamento della provenienza per negligenza), mentre la ricettazione è un delitto doloso."
+    },
+    {
+        "id": "dp_146",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il reato di falso nummario (falsificazione di monete, art. 453 c.p.) tutela:",
+        "options": [
+            "La fede pubblica.",
+            "Il patrimonio della Banca d'Italia.",
+            "L'ordine pubblico.",
+            "L'economia nazionale."
+        ],
+        "answer": "La fede pubblica."
+    },
+    {
+        "id": "dp_147",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "La sostituzione di persona (art. 494 c.p.) è un reato sussidiario. Cosa significa?",
+        "options": [
+            "Che si applica solo se il fatto non costituisce un altro delitto contro la fede pubblica.",
+            "Che si applica solo se il colpevole non viene scoperto.",
+            "Che è punito con una sanzione amministrativa.",
+            "Che richiede la querela."
+        ],
+        "answer": "Che si applica solo se il fatto non costituisce un altro delitto contro la fede pubblica."
+    },
+    {
+        "id": "dp_148",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "Il possesso di documenti di identificazione falsi validi per l'espatrio (art. 497 bis c.p.) è punito:",
+        "options": [
+            "Come delitto autonomo.",
+            "Come tentativo di espatrio illegale.",
+            "Come ricettazione.",
+            "Solo se usati."
+        ],
+        "answer": "Come delitto autonomo."
+    },
+    {
+        "id": "dp_149",
+        "category": "Diritto Penale",
+        "difficulty": 3,
+        "question": "Nel reato di evasione, la 'violenza o minaccia' costituisce:",
+        "options": [
+            "Una circostanza aggravante.",
+            "Un elemento costitutivo del reato base.",
+            "Un reato a parte.",
+            "Una causa di giustificazione."
+        ],
+        "answer": "Una circostanza aggravante."
+    },
+    {
+        "id": "dp_150",
+        "category": "Diritto Penale",
+        "difficulty": 2,
+        "question": "La mancata esecuzione dolosa di un provvedimento del giudice (art. 388 c.p.) punisce:",
+        "options": [
+            "Chi compie atti simulati o fraudolenti per sottrarsi all'adempimento di obblighi civili nascenti da sentenza o provvedimento giudiziario.",
+            "Chi non paga una multa.",
+            "Chi non si presenta in udienza.",
+            "Chi insulta il giudice."
+        ],
+        "answer": "Chi compie atti simulati o fraudolenti per sottrarsi all'adempimento di obblighi civili nascenti da sentenza o provvedimento giudiziario."
+    }
+]

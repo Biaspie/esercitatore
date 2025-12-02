@@ -1,0 +1,652 @@
+[
+    {
+        "id": "inf_051",
+        "category": "Informatica",
+        "question": "In linguaggio C, qual è la differenza tra l'operatore '=' e l'operatore '=='?",
+        "options": [
+            "Nessuna, sono sinonimi.",
+            "'=' è l'operatore di assegnazione, mentre '==' è l'operatore di confronto (uguaglianza).",
+            "'=' confronta due valori, '==' assegna un valore.",
+            "'==' si usa solo per le stringhe."
+        ],
+        "answer": "'=' è l'operatore di assegnazione, mentre '==' è l'operatore di confronto (uguaglianza).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_052",
+        "category": "Informatica",
+        "question": "Cosa stampa il seguente frammento di codice? int x = 5; if (x = 10) printf(\"Vero\"); else printf(\"Falso\");",
+        "options": [
+            "Falso",
+            "Vero",
+            "Errore di compilazione",
+            "Nulla"
+        ],
+        "answer": "Vero",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_053",
+        "category": "Informatica",
+        "question": "Qual è l'effetto dell'istruzione 'int a = 3.14;'?",
+        "options": [
+            "La variabile 'a' conterrà 3.14.",
+            "Errore di compilazione perché 3.14 non è un intero.",
+            "La variabile 'a' conterrà 3 (troncamento della parte decimale) e potrebbe essere generato un warning.",
+            "La variabile 'a' conterrà 4 (arrotondamento)."
+        ],
+        "answer": "La variabile 'a' conterrà 3 (troncamento della parte decimale) e potrebbe essere generato un warning.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_054",
+        "category": "Informatica",
+        "question": "Quale specificatore di formato si usa nella funzione printf per stampare un numero intero (int)?",
+        "options": [
+            "%f",
+            "%c",
+            "%d",
+            "%s"
+        ],
+        "answer": "%d",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_055",
+        "category": "Informatica",
+        "question": "Nella funzione scanf(\"%d\", &x), a cosa serve il simbolo '&' prima della variabile x?",
+        "options": [
+            "È opzionale.",
+            "Indica l'indirizzo di memoria della variabile x, dove scanf deve scrivere il valore letto.",
+            "Indica che x è una costante.",
+            "Serve per leggere stringhe."
+        ],
+        "answer": "Indica l'indirizzo di memoria della variabile x, dove scanf deve scrivere il valore letto.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_056",
+        "category": "Informatica",
+        "question": "Cosa succede se si omette l'istruzione 'else' in una struttura 'if'?",
+        "options": [
+            "Errore di sintassi.",
+            "Se la condizione è falsa, non viene eseguita alcuna istruzione e il programma prosegue.",
+            "Il programma si blocca.",
+            "Viene eseguita comunque l'istruzione dell'if."
+        ],
+        "answer": "Se la condizione è falsa, non viene eseguita alcuna istruzione e il programma prosegue.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_057",
+        "category": "Informatica",
+        "question": "Nel problema dell' 'else mancante' (dangling else), a quale 'if' si riferisce un 'else'?",
+        "options": [
+            "Al primo 'if' del blocco.",
+            "All' 'if' più vicino che non ha ancora un 'else' associato.",
+            "A quello indentato allo stesso livello.",
+            "È casuale."
+        ],
+        "answer": "All' 'if' più vicino che non ha ancora un 'else' associato.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_058",
+        "category": "Informatica",
+        "question": "Qual è la differenza principale tra il ciclo 'while' e il ciclo 'do-while'?",
+        "options": [
+            "Nessuna.",
+            "Il 'while' valuta la condizione prima di eseguire il corpo, il 'do-while' la valuta dopo (eseguendo il corpo almeno una volta).",
+            "Il 'do-while' non può avere condizioni complesse.",
+            "Il 'while' si usa solo per i numeri."
+        ],
+        "answer": "Il 'while' valuta la condizione prima di eseguire il corpo, il 'do-while' la valuta dopo (eseguendo il corpo almeno una volta).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_059",
+        "category": "Informatica",
+        "question": "Cosa stampa il seguente ciclo? for(int i=0; i<3; i++); printf(\"%d\", i);",
+        "options": [
+            "012",
+            "0123",
+            "3",
+            "Errore: i non dichiarata (se C99 standard non supportato o scope limitato al for)."
+        ],
+        "answer": "3",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_060",
+        "category": "Informatica",
+        "question": "Un 'ciclo infinito' si verifica quando:",
+        "options": [
+            "Il computer è troppo lento.",
+            "La condizione di terminazione del ciclo rimane sempre vera.",
+            "Si usano troppe variabili.",
+            "Manca il punto e virgola."
+        ],
+        "answer": "La condizione di terminazione del ciclo rimane sempre vera.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_061",
+        "category": "Informatica",
+        "question": "Quale errore genera l'accesso all'indice 10 di un array di dimensione 10 (int a[10])?",
+        "options": [
+            "Errore di sintassi.",
+            "Comportamento indefinito (spesso Segmentation Fault o lettura di memoria sporca), poiché gli indici validi sono da 0 a 9.",
+            "Restituisce 0.",
+            "Nessun errore."
+        ],
+        "answer": "Comportamento indefinito (spesso Segmentation Fault o lettura di memoria sporca), poiché gli indici validi sono da 0 a 9.",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_062",
+        "category": "Informatica",
+        "question": "Un errore di 'Segmentation Fault' è tipicamente causato da:",
+        "options": [
+            "Divisione per zero.",
+            "Accesso a un'area di memoria non consentita (es. puntatore nullo o indice fuori array).",
+            "Ciclo infinito.",
+            "Mancanza di commenti."
+        ],
+        "answer": "Accesso a un'area di memoria non consentita (es. puntatore nullo o indice fuori array).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_063",
+        "category": "Informatica",
+        "question": "Cosa si intende per 'errore logico' (o bug)?",
+        "options": [
+            "Un errore che impedisce la compilazione.",
+            "Un errore che causa il crash del programma.",
+            "Un errore nella progettazione dell'algoritmo che porta a risultati non corretti, pur essendo il programma sintatticamente valido.",
+            "Un errore hardware."
+        ],
+        "answer": "Un errore nella progettazione dell'algoritmo che porta a risultati non corretti, pur essendo il programma sintatticamente valido.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_064",
+        "category": "Informatica",
+        "question": "Quale dei seguenti è un errore di sintassi?",
+        "options": [
+            "int x = 5/0;",
+            "if (x == 5) printf(\"Ciao\")",
+            "while(true);",
+            "int a[5]; a[10] = 1;"
+        ],
+        "answer": "if (x == 5) printf(\"Ciao\")",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_065",
+        "category": "Informatica",
+        "question": "I commenti in C possono essere scritti:",
+        "options": [
+            "Solo con //.",
+            "Solo con /* ... */.",
+            "Con // per singola riga e /* ... */ per blocchi multilinea.",
+            "Con #."
+        ],
+        "answer": "Con // per singola riga e /* ... */ per blocchi multilinea.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_066",
+        "category": "Informatica",
+        "question": "Cosa si intende per 'Camel Case' nella nomenclatura delle variabili?",
+        "options": [
+            "Scrivere tutto maiuscolo.",
+            "Scrivere tutto minuscolo con underscore.",
+            "Iniziare con minuscola e usare la maiuscola per la prima lettera di ogni parola successiva (es. miaVariabile).",
+            "Iniziare con maiuscola."
+        ],
+        "answer": "Iniziare con minuscola e usare la maiuscola per la prima lettera di ogni parola successiva (es. miaVariabile).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_067",
+        "category": "Informatica",
+        "question": "L'indentazione del codice serve a:",
+        "options": [
+            "Far funzionare il programma (in C è obbligatoria).",
+            "Migliorare la leggibilità evidenziando la struttura logica e l'annidamento dei blocchi.",
+            "Risparmiare memoria.",
+            "Compilare più velocemente."
+        ],
+        "answer": "Migliorare la leggibilità evidenziando la struttura logica e l'annidamento dei blocchi.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_068",
+        "category": "Informatica",
+        "question": "Un 'Warning' del compilatore indica:",
+        "options": [
+            "Un errore fatale che impedisce la creazione dell'eseguibile.",
+            "Una possibile anomalia o costrutto ambiguo che non impedisce la compilazione ma potrebbe causare problemi a runtime.",
+            "Che il codice è perfetto.",
+            "Che il computer si sta surriscaldando."
+        ],
+        "answer": "Una possibile anomalia o costrutto ambiguo che non impedisce la compilazione ma potrebbe causare problemi a runtime.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_069",
+        "category": "Informatica",
+        "question": "Qual è l'output di: int i=0; do { printf(\"%d\", i); i++; } while(i<0);",
+        "options": [
+            "Nulla.",
+            "0",
+            "01",
+            "Ciclo infinito."
+        ],
+        "answer": "0",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_070",
+        "category": "Informatica",
+        "question": "Cosa accade se si dichiara una variabile all'interno di un blocco if?",
+        "options": [
+            "È visibile in tutto il programma.",
+            "È visibile solo all'interno di quel blocco (scope locale).",
+            "Errore di compilazione.",
+            "Diventa globale."
+        ],
+        "answer": "È visibile solo all'interno di quel blocco (scope locale).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_071",
+        "category": "Informatica",
+        "question": "Quale operatore si usa per l'AND logico in una condizione if?",
+        "options": [
+            "&",
+            "&&",
+            "AND",
+            "|"
+        ],
+        "answer": "&&",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_072",
+        "category": "Informatica",
+        "question": "Per incrementare una variabile intera 'i' di 1, quale istruzione è corretta?",
+        "options": [
+            "i = i + 1;",
+            "i++;",
+            "++i;",
+            "Tutte le precedenti."
+        ],
+        "answer": "Tutte le precedenti.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_073",
+        "category": "Informatica",
+        "question": "In un ciclo for(A; B; C), quando viene eseguita l'istruzione A (inizializzazione)?",
+        "options": [
+            "Ad ogni iterazione.",
+            "Solo una volta all'inizio del ciclo.",
+            "Alla fine del ciclo.",
+            "Mai."
+        ],
+        "answer": "Solo una volta all'inizio del ciclo.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_074",
+        "category": "Informatica",
+        "question": "Cosa stampa: int x=10; printf(\"%d\", x++);",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "9"
+        ],
+        "answer": "10",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_075",
+        "category": "Informatica",
+        "question": "Cosa stampa: int x=10; printf(\"%d\", ++x);",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "9"
+        ],
+        "answer": "11",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_076",
+        "category": "Informatica",
+        "question": "Qual è il tipo di dato per memorizzare un singolo carattere?",
+        "options": [
+            "string",
+            "char",
+            "text",
+            "byte"
+        ],
+        "answer": "char",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_077",
+        "category": "Informatica",
+        "question": "Quale libreria standard bisogna includere per usare printf e scanf?",
+        "options": [
+            "stdlib.h",
+            "stdio.h",
+            "math.h",
+            "string.h"
+        ],
+        "answer": "stdio.h",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_078",
+        "category": "Informatica",
+        "question": "Cosa indica il carattere '\\n' in una stringa di formato?",
+        "options": [
+            "Tabulazione.",
+            "Fine stringa.",
+            "Newline (ritorno a capo).",
+            "Nulla."
+        ],
+        "answer": "Newline (ritorno a capo).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_079",
+        "category": "Informatica",
+        "question": "Se x è int e vale 5, quanto vale l'espressione (x > 3 && x < 10)?",
+        "options": [
+            "0 (Falso)",
+            "1 (Vero)",
+            "5",
+            "Errore"
+        ],
+        "answer": "1 (Vero)",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_080",
+        "category": "Informatica",
+        "question": "Qual è il risultato della divisione intera 7 / 2 in C?",
+        "options": [
+            "3.5",
+            "3",
+            "4",
+            "Errore"
+        ],
+        "answer": "3",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_081",
+        "category": "Informatica",
+        "question": "Per ottenere il resto della divisione intera si usa l'operatore:",
+        "options": [
+            "/",
+            "%",
+            "mod",
+            "\\"
+        ],
+        "answer": "%",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_082",
+        "category": "Informatica",
+        "question": "Cosa fa l'istruzione 'break' all'interno di un ciclo?",
+        "options": [
+            "Interrompe l'esecuzione del programma.",
+            "Termina immediatamente il ciclo e passa all'istruzione successiva al blocco del ciclo.",
+            "Salta all'iterazione successiva.",
+            "Riavvia il computer."
+        ],
+        "answer": "Termina immediatamente il ciclo e passa all'istruzione successiva al blocco del ciclo.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_083",
+        "category": "Informatica",
+        "question": "Cosa fa l'istruzione 'continue' all'interno di un ciclo?",
+        "options": [
+            "Termina il ciclo.",
+            "Salta il resto del corpo del ciclo per l'iterazione corrente e passa alla successiva.",
+            "Stampa 'continue'.",
+            "Mette in pausa il programma."
+        ],
+        "answer": "Salta il resto del corpo del ciclo per l'iterazione corrente e passa alla successiva.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_084",
+        "category": "Informatica",
+        "question": "Quale dei seguenti nomi di variabile NON è valido in C?",
+        "options": [
+            "somma_totale",
+            "1numero",
+            "_valore",
+            "numero1"
+        ],
+        "answer": "1numero",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_085",
+        "category": "Informatica",
+        "question": "Il tipo 'float' serve per rappresentare:",
+        "options": [
+            "Numeri interi.",
+            "Caratteri.",
+            "Numeri reali in virgola mobile (con decimali).",
+            "Valori booleani."
+        ],
+        "answer": "Numeri reali in virgola mobile (con decimali).",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_086",
+        "category": "Informatica",
+        "question": "Cosa succede se si assegna un valore float a una variabile int (es. int x = 3.9;)?",
+        "options": [
+            "Arrotondamento al più vicino (4).",
+            "Troncamento della parte decimale (3).",
+            "Errore di runtime.",
+            "La variabile diventa float."
+        ],
+        "answer": "Troncamento della parte decimale (3).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_087",
+        "category": "Informatica",
+        "question": "Qual è il valore di !1 in C?",
+        "options": [
+            "1",
+            "0",
+            "-1",
+            "2"
+        ],
+        "answer": "0",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_088",
+        "category": "Informatica",
+        "question": "Un blocco di codice in C è delimitato da:",
+        "options": [
+            "Parentesi tonde ( ).",
+            "Parentesi quadre [ ].",
+            "Parentesi graffe { }.",
+            "Apici \" \"."
+        ],
+        "answer": "Parentesi graffe { }.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_089",
+        "category": "Informatica",
+        "question": "Qual è lo scopo dei commenti 'asserzione'?",
+        "options": [
+            "Descrivere l'autore del codice.",
+            "Descrivere proprietà che devono essere vere in un determinato punto dell'esecuzione (es. x > 0).",
+            "Disabilitare il codice.",
+            "Fare disegni ASCII."
+        ],
+        "answer": "Descrivere proprietà che devono essere vere in un determinato punto dell'esecuzione (es. x > 0).",
+        "difficulty": 3
+    },
+    {
+        "id": "inf_090",
+        "category": "Informatica",
+        "question": "In un diagramma di flusso, quale forma rappresenta un'operazione di Input/Output?",
+        "options": [
+            "Rettangolo.",
+            "Rombo.",
+            "Parallelogramma.",
+            "Ovale."
+        ],
+        "answer": "Parallelogramma.",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_091",
+        "category": "Informatica",
+        "question": "Qual è l'output di: int x=0; while(x<3) { x++; } printf(\"%d\", x);",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "0"
+        ],
+        "answer": "3",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_092",
+        "category": "Informatica",
+        "question": "Cosa significa l'errore 'undeclared identifier'?",
+        "options": [
+            "Variabile usata senza essere stata dichiarata.",
+            "Variabile dichiarata due volte.",
+            "Variabile con nome troppo lungo.",
+            "Variabile di tipo sbagliato."
+        ],
+        "answer": "Variabile usata senza essere stata dichiarata.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_093",
+        "category": "Informatica",
+        "question": "Qual è la precedenza corretta degli operatori (dal più alto al più basso)?",
+        "options": [
+            "&&, ||, !",
+            "!, &&, ||",
+            "||, &&, !",
+            "Sono uguali."
+        ],
+        "answer": "!, &&, ||",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_094",
+        "category": "Informatica",
+        "question": "Cosa stampa: printf(\"%%d\");",
+        "options": [
+            "%d",
+            "Un numero casuale.",
+            "Errore.",
+            "Nulla."
+        ],
+        "answer": "%d",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_095",
+        "category": "Informatica",
+        "question": "Quale tra questi è un buon nome di variabile secondo le convenzioni?",
+        "options": [
+            "x",
+            "val",
+            "numeroStudenti",
+            "n_s"
+        ],
+        "answer": "numeroStudenti",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_096",
+        "category": "Informatica",
+        "question": "L'istruzione 'return 0;' nel main indica:",
+        "options": [
+            "Che il programma è terminato con un errore.",
+            "Che il programma è terminato correttamente.",
+            "Che il programma deve ricominciare.",
+            "Nulla."
+        ],
+        "answer": "Che il programma è terminato correttamente.",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_097",
+        "category": "Informatica",
+        "question": "Cosa succede se si divide un numero intero per 0 in C?",
+        "options": [
+            "Restituisce infinito.",
+            "Restituisce 0.",
+            "Errore di runtime (comportamento indefinito, spesso crash).",
+            "Restituisce NaN."
+        ],
+        "answer": "Errore di runtime (comportamento indefinito, spesso crash).",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_098",
+        "category": "Informatica",
+        "question": "Qual è il valore di x dopo: int x = 10; x += 5;",
+        "options": [
+            "10",
+            "5",
+            "15",
+            "Errore"
+        ],
+        "answer": "15",
+        "difficulty": 1
+    },
+    {
+        "id": "inf_099",
+        "category": "Informatica",
+        "question": "Cosa stampa: printf(\"%.2f\", 3.14159);",
+        "options": [
+            "3.14159",
+            "3.14",
+            "3.1",
+            "3"
+        ],
+        "answer": "3.14",
+        "difficulty": 2
+    },
+    {
+        "id": "inf_100",
+        "category": "Informatica",
+        "question": "Qual è l'output di: int a=5, b=10; if(a>b) printf(\"A\"); else printf(\"B\");",
+        "options": [
+            "A",
+            "B",
+            "AB",
+            "Nulla"
+        ],
+        "answer": "B",
+        "difficulty": 1
+    }
+]
