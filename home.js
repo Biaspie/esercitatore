@@ -16,12 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentCategory = "ps";
 
     const subjectMap = {
-        'ps': 'Legislazione P.S.',
+        'ps': 'Legislazione di Pubblica Sicurezza',
         'costituzionale': 'Diritto Costituzionale',
         'penale': 'Diritto Penale',
         'procedura_penale': 'Procedura Penale',
         'normativa': 'Normativa Disciplinare',
         'informatica': 'Informatica',
+        'amministrativo': 'Diritto Amministrativo',
+        'civile': 'Diritto Civile',
         'all': 'Tutti gli Argomenti'
     };
 

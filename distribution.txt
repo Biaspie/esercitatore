@@ -1,8 +1,0 @@
-Category Distribution:
-Informatica: 3150
-Diritto Costituzionale: 167
-Legislazione PS: 267
-Normativa Disciplinare: 310
-Diritto Penale: 167
-Procedura Penale: 167
-Total Questions: 4228

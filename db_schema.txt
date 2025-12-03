@@ -1,5 +1,0 @@
-Column: id (Type: INTEGER)
-Column: category (Type: TEXT)
-Column: question (Type: TEXT)
-Column: options (Type: TEXT)
-Column: answer (Type: TEXT)

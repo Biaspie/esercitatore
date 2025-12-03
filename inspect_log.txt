@@ -1,6 +1,0 @@
-ID: 1
-Question: Chi è l'Autorità nazionale di pubblica sicurezza?
-Options (Raw): ["Il Prefetto","Il Questore","Il Ministro dell'Interno","Il Presidente del Consiglio"]
-Correct Index: undefined
-Options (Parsed): ["Il Prefetto","Il Questore","Il Ministro dell'Interno","Il Presidente del Consiglio"]
-Selected Correct Option: undefined

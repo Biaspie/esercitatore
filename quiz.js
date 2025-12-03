@@ -27,13 +27,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Mapping subject params to DB categories
+    // Mapping subject params to DB categories
     const categoryMap = {
-        "ps": "Legislazione PS",
+        "ps": "Legislazione di Pubblica Sicurezza",
         "costituzionale": "Diritto Costituzionale",
         "penale": "Diritto Penale",
-        "procedura": "Procedura Penale",
+        "procedura_penale": "Procedura Penale",
         "normativa": "Normativa Disciplinare",
-        "informatica": "Informatica"
+        "informatica": "Informatica",
+        "amministrativo": "Diritto Amministrativo",
+        "civile": "Diritto Civile"
     };
 
     // Parse URL Parameters
@@ -69,9 +72,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const baseCount = Math.floor(limit / categories.length);
                     let remainder = limit % categories.length;
 
-                    categories.forEach(catName => {
-                        // Get all questions for this category
-                        const catQuestions = allQuestions.filter(q => q.category === catName);
+                    categories.forEach(catPrefix => {
+                        // Get all questions for this category (using prefix match)
+                        const catQuestions = allQuestions.filter(q => q.category.startsWith(catPrefix));
 
                         // Shuffle them
                         catQuestions.sort(() => Math.random() - 0.5);
@@ -89,9 +92,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             } else {
                 // Specific Subject
-                const categoryName = categoryMap[subject];
-                if (categoryName) {
-                    filteredQuestions = allQuestions.filter(q => q.category === categoryName);
+                const categoryPrefix = categoryMap[subject];
+                if (categoryPrefix) {
+                    // Use startsWith for sub-categories
+                    filteredQuestions = allQuestions.filter(q => q.category.startsWith(categoryPrefix));
                 } else {
                     // Fallback if subject not found (shouldn't happen)
                     filteredQuestions = allQuestions;
@@ -348,9 +352,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     prevBtn.addEventListener('click', prevQuestion);
 
     homeBtn.addEventListener('click', () => {
-        if (confirm("Sei sicuro di voler tornare alla home? I progressi andranno persi.")) {
-            window.location.href = 'index.html';
-        }
+        window.location.href = 'index.html';
     });
 
     homeResultBtn.addEventListener('click', () => {
