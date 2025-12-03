@@ -1576,1300 +1576,1274 @@
         "id": 19,
         "category": "Informatica",
         "question": "Quale termine definisce una procedura che risolve un problema su ogni possibile insieme di dati?",
-        "options": {
-            "A": "Programma",
-            "B": "Algoritmo",
-            "C": "Istruzione",
-            "D": "Istanza"
-        },
-        "answer": "B",
+        "options": [
+            "Programma",
+            "Algoritmo",
+            "Istruzione",
+            "Istanza"
+        ],
+        "answer": "Algoritmo",
         "difficulty": 1
     },
     {
         "id": 20,
         "category": "Informatica",
         "question": "Cosa si intende per **Semantica** di un'istruzione nel linguaggio C?",
-        "options": {
-            "A": "Le regole grammaticali per scrivere la frase in modo corretto.",
-            "B": "Il significato dell'istruzione e il suo effetto durante l'esecuzione.",
-            "C": "La sua traduzione in linguaggio macchina.",
-            "D": "Il nome della variabile utilizzata."
-        },
-        "answer": "B",
+        "options": [
+            "Le regole grammaticali per scrivere la frase in modo corretto.",
+            "Il significato dell'istruzione e il suo effetto durante l'esecuzione.",
+            "La sua traduzione in linguaggio macchina.",
+            "Il nome della variabile utilizzata."
+        ],
+        "answer": "Il significato dell'istruzione e il suo effetto durante l'esecuzione.",
         "difficulty": 1
     },
     {
         "id": 21,
         "category": "Informatica",
         "question": "In informatica, cos'è una **Variabile** nel modo più semplice?",
-        "options": {
-            "A": "Un carattere alfabetico che rappresenta un numero arbitrario.",
-            "B": "Una sequenza di istruzioni.",
-            "C": "Un contenitore di valori.",
-            "D": "Un operatore aritmetico."
-        },
-        "answer": "C",
+        "options": [
+            "Un carattere alfabetico che rappresenta un numero arbitrario.",
+            "Una sequenza di istruzioni.",
+            "Un contenitore di valori.",
+            "Un operatore aritmetico."
+        ],
+        "answer": "Un contenitore di valori.",
         "difficulty": 1
     },
     {
         "id": 22,
         "category": "Informatica",
         "question": "Quale direttiva è necessaria all'inizio di un programma C per poter utilizzare la funzione $\\\\texttt{printf}$?",
-        "options": {
-            "A": "$\\\\texttt{\\\\#include <main.h>}$",
-            "B": "$\\\\texttt{\\\\#include <stdio.h>}$",
-            "C": "$\\\\texttt{int main()}$",
-            "D": "$\\\\texttt{void library.h}$"
-        },
-        "answer": "B",
+        "options": [
+            "$\\\\texttt{\\\\#include <main.h>}$",
+            "$\\\\texttt{\\\\#include <stdio.h>}$",
+            "$\\\\texttt{int main()}$",
+            "$\\\\texttt{void library.h}$"
+        ],
+        "answer": "$\\\\texttt{\\\\#include <stdio.h>}$",
         "difficulty": 1
     },
     {
         "id": 23,
         "category": "Informatica",
         "question": "Qual è la differenza semantica fondamentale tra un **accesso in scrittura** e un **accesso in lettura** a una variabile?",
-        "options": {
-            "A": "L'accesso in lettura è consentito solo all'inizio del programma.",
-            "B": "L'accesso in scrittura cambia il valore e l'accesso in lettura lo mantiene.",
-            "C": "Solo l'accesso in scrittura richiede la dichiarazione della variabile.",
-            "D": "L'accesso in lettura utilizza un operatore di assegnazione."
-        },
-        "answer": "B",
+        "options": [
+            "L'accesso in lettura è consentito solo all'inizio del programma.",
+            "L'accesso in scrittura cambia il valore e l'accesso in lettura lo mantiene.",
+            "Solo l'accesso in scrittura richiede la dichiarazione della variabile.",
+            "L'accesso in lettura utilizza un operatore di assegnazione."
+        ],
+        "answer": "L'accesso in scrittura cambia il valore e l'accesso in lettura lo mantiene.",
         "difficulty": 2
     },
     {
         "id": 24,
         "category": "Informatica",
         "question": "Qual è il ruolo principale della **Direttiva di Inclusione** ($\\texttt{\\\\#include}$) durante il ciclo di vita di un programma C?",
-        "options": {
-            "A": "Tradurre il codice sorgente in linguaggio macchina.",
-            "B": "Definire la funzione principale del programma $\\\\texttt{main()}$ .",
-            "C": "Aggiungere riferimenti a funzioni contenute in librerie esterne.",
-            "D": "Collegare i file oggetto tra loro per creare un eseguibile."
-        },
-        "answer": "C",
+        "options": [
+            "Tradurre il codice sorgente in linguaggio macchina.",
+            "Definire la funzione principale del programma $\\\\texttt{main()}$ .",
+            "Aggiungere riferimenti a funzioni contenute in librerie esterne.",
+            "Collegare i file oggetto tra loro per creare un eseguibile."
+        ],
+        "answer": "Aggiungere riferimenti a funzioni contenute in librerie esterne.",
         "difficulty": 2
     },
     {
         "id": 25,
         "category": "Informatica",
         "question": "Quale concetto spiega l'effetto della dichiarazione $\\\\texttt{int x = 5;}$ sull'area di memoria?",
-        "options": {
-            "A": "Assegnazione post-dichiarativa che modifica il contenuto.",
-            "B": "Allocazione di memoria e primo accesso in lettura.",
-            "C": "Allocazione di un'area di memoria e memorizzazione del valore iniziale.",
-            "D": "Assicurazione che la variabile non sia utilizzata fino all'esecuzione."
-        },
-        "answer": "C",
+        "options": [
+            "Assegnazione post-dichiarativa che modifica il contenuto.",
+            "Allocazione di memoria e primo accesso in lettura.",
+            "Allocazione di un'area di memoria e memorizzazione del valore iniziale.",
+            "Assicurazione che la variabile non sia utilizzata fino all'esecuzione."
+        ],
+        "answer": "Allocazione di un'area di memoria e memorizzazione del valore iniziale.",
         "difficulty": 3
     },
     {
         "id": 26,
         "category": "Informatica",
         "question": "Quale termine è una descrizione formale di un problema in termini di dati di ingresso, pre-condizioni, dati di uscita e post-condizioni?",
-        "options": {
-            "A": "Traccia di esecuzione",
-            "B": "Specifica di un problema di ingresso-uscita",
-            "C": "Algoritmo iterativo",
-            "D": "Programmazione strutturata"
-        },
-        "answer": "B",
+        "options": [
+            "Traccia di esecuzione",
+            "Specifica di un problema di ingresso-uscita",
+            "Algoritmo iterativo",
+            "Programmazione strutturata"
+        ],
+        "answer": "Specifica di un problema di ingresso-uscita",
         "difficulty": 1
     },
     {
         "id": 27,
         "category": "Informatica",
         "question": "Qual è la definizione di **Programma** in relazione a un algoritmo?",
-        "options": {
-            "A": "La procedura logica per risolvere un problema.",
-            "B": "L'insieme dei dati di ingresso.",
-            "C": "La sequenza di istruzioni eseguibili dal calcolatore.",
-            "D": "Il codice sorgente prima della scrittura."
-        },
-        "answer": "C",
+        "options": [
+            "La procedura logica per risolvere un problema.",
+            "L'insieme dei dati di ingresso.",
+            "La sequenza di istruzioni eseguibili dal calcolatore.",
+            "Il codice sorgente prima della scrittura."
+        ],
+        "answer": "La sequenza di istruzioni eseguibili dal calcolatore.",
         "difficulty": 1
     },
     {
         "id": 28,
         "category": "Informatica",
         "question": "Quale proprietà di un algoritmo stabilisce che deve terminare dopo aver eseguito un numero finito di operazioni?",
-        "options": {
-            "A": "Correttezza",
-            "B": "Eseguibilità",
-            "C": "Finitezza",
-            "D": "Efficienza"
-        },
-        "answer": "C",
+        "options": [
+            "Correttezza",
+            "Eseguibilità",
+            "Finitezza",
+            "Efficienza"
+        ],
+        "answer": "Finitezza",
         "difficulty": 1
     },
     {
         "id": 29,
         "category": "Informatica",
         "question": "Qual è il principale vantaggio di scrivere un programma in un **Linguaggio di Alto Livello** (come C) rispetto al Linguaggio Macchina?",
-        "options": {
-            "A": "Massima efficienza e velocità di esecuzione.",
-            "B": "Dipendenza dalle caratteristiche fisiche del calcolatore.",
-            "C": "Semplicità e Portabilità su diverse architetture.",
-            "D": "Assenza della fase di compilazione."
-        },
-        "answer": "C",
+        "options": [
+            "Massima efficienza e velocità di esecuzione.",
+            "Dipendenza dalle caratteristiche fisiche del calcolatore.",
+            "Semplicità e Portabilità su diverse architetture.",
+            "Assenza della fase di compilazione."
+        ],
+        "answer": "Semplicità e Portabilità su diverse architetture.",
         "difficulty": 2
     },
     {
         "id": 30,
         "category": "Informatica",
         "question": "Quale principio stabilisce che la stessa istruzione $\\\\texttt{printf}$ non va a capo se non viene specificato il carattere $\\\\texttt{\\\\n}$?",
-        "options": {
-            "A": "Principio di Ambiguity",
-            "B": "La Semantica delle Istruzioni successive alla prima.",
-            "C": "La Sintassi dei caratteri speciali.",
-            "D": "Il meccanismo del Linker."
-        },
-        "answer": "B",
+        "options": [
+            "Principio di Ambiguity",
+            "La Semantica delle Istruzioni successive alla prima.",
+            "La Sintassi dei caratteri speciali.",
+            "Il meccanismo del Linker."
+        ],
+        "answer": "La Semantica delle Istruzioni successive alla prima.",
         "difficulty": 2
     },
     {
         "id": 31,
         "category": "Informatica",
         "question": "Cosa indica l'espressione $\\\\texttt{x}$ quando non è a sinistra di un operatore di assegnazione?",
-        "options": {
-            "A": "Che la variabile verrà usata per memorizzare un valore.",
-            "B": "Un errore di compilazione se il tipo non è esplicitato.",
-            "C": "L'accesso al valore memorizzato in $\\\\texttt{x}$ per usarlo in un calcolo.",
-            "D": "Una dichiarazione implicita di tipo intero."
-        },
-        "answer": "C",
+        "options": [
+            "Che la variabile verrà usata per memorizzare un valore.",
+            "Un errore di compilazione se il tipo non è esplicitato.",
+            "L'accesso al valore memorizzato in $\\\\texttt{x}$ per usarlo in un calcolo.",
+            "Una dichiarazione implicita di tipo intero."
+        ],
+        "answer": "L'accesso al valore memorizzato in $\\\\texttt{x}$ per usarlo in un calcolo.",
         "difficulty": 3
-    },
-    {
-        "id": 32,
-        "category": "Informatica",
-        "question": "Cosa definisce l'**Hardware** di un calcolatore?",
-        "options": {
-            "A": "L'insieme dei programmi che svolgono compiti utili.",
-            "B": "I programmi che si possono solo maledire.",
-            "C": "La struttura fisica e i componenti elettronici e meccanici.",
-            "D": "Il Sistema Operativo e i programmi applicativi."
-        },
-        "answer": "C",
-        "difficulty": 1
     },
     {
         "id": 33,
         "category": "Informatica",
         "question": "Qual è il ruolo del **Processore** (CPU) secondo il modello di Von Neumann?",
-        "options": {
-            "A": "Memorizzare dati e programmi.",
-            "B": "Trasferire dati e informazioni di controllo tra i componenti.",
-            "C": "Eseguire le istruzioni e controllare le altre parti.",
-            "D": "Collegare le periferiche del calcolatore."
-        },
-        "answer": "C",
+        "options": [
+            "Memorizzare dati e programmi.",
+            "Trasferire dati e informazioni di controllo tra i componenti.",
+            "Eseguire le istruzioni e controllare le altre parti.",
+            "Collegare le periferiche del calcolatore."
+        ],
+        "answer": "Eseguire le istruzioni e controllare le altre parti.",
         "difficulty": 1
     },
     {
         "id": 34,
         "category": "Informatica",
         "question": "Qual è l'unità base della memoria che può rappresentare due valori (0 o 1)?",
-        "options": {
-            "A": "Byte",
-            "B": "Gigabyte",
-            "C": "Bit",
-            "D": "Cella di memoria"
-        },
-        "answer": "C",
+        "options": [
+            "Byte",
+            "Gigabyte",
+            "Bit",
+            "Cella di memoria"
+        ],
+        "answer": "Bit",
         "difficulty": 1
     },
     {
         "id": 35,
         "category": "Informatica",
         "question": "Qual è la caratteristica distintiva della **Memoria Centrale** (RAM) al momento dello spegnimento del computer?",
-        "options": {
-            "A": "È più capiente delle memorie di massa.",
-            "B": "È permanente e conserva il contenuto.",
-            "C": "È volatile e il suo contenuto viene cancellato.",
-            "D": "È accessibile solo sequenzialmente."
-        },
-        "answer": "C",
+        "options": [
+            "È più capiente delle memorie di massa.",
+            "È permanente e conserva il contenuto.",
+            "È volatile e il suo contenuto viene cancellato.",
+            "È accessibile solo sequenzialmente."
+        ],
+        "answer": "È volatile e il suo contenuto viene cancellato.",
         "difficulty": 1
     },
     {
         "id": 36,
         "category": "Informatica",
         "question": "Qual è il compito principale del **Sistema Operativo** in relazione alle risorse del calcolatore?",
-        "options": {
-            "A": "Creare il codice eseguibile dai file sorgente.",
-            "B": "Gestire le risorse del calcolatore e virtualizzarle.",
-            "C": "Eseguire la fase di Fetch, Decode, Execute della CPU.",
-            "D": "Definire le interfacce grafiche (GUI)."
-        },
-        "answer": "B",
+        "options": [
+            "Creare il codice eseguibile dai file sorgente.",
+            "Gestire le risorse del calcolatore e virtualizzarle.",
+            "Eseguire la fase di Fetch, Decode, Execute della CPU.",
+            "Definire le interfacce grafiche (GUI)."
+        ],
+        "answer": "Gestire le risorse del calcolatore e virtualizzarle.",
         "difficulty": 2
     },
     {
         "id": 37,
         "category": "Informatica",
         "question": "Quale componente del Sistema Operativo è responsabile della programmazione dell'accesso dei processi alla CPU (Scheduler)?",
-        "options": {
-            "A": "Interprete dei comandi",
-            "B": "Gestore delle periferiche",
-            "C": "Nucleo (Kernel)",
-            "D": "Gestore dei file (File System)"
-        },
-        "answer": "C",
+        "options": [
+            "Interprete dei comandi",
+            "Gestore delle periferiche",
+            "Nucleo (Kernel)",
+            "Gestore dei file (File System)"
+        ],
+        "answer": "Nucleo (Kernel)",
         "difficulty": 2
     },
     {
         "id": 38,
         "category": "Informatica",
         "question": "Qual è il concetto che distingue un **Programma** da un **Processo**?",
-        "options": {
-            "A": "Il programma è statico, il processo è dinamico e in esecuzione.",
-            "B": "Il programma risiede in memoria centrale, il processo in memoria di massa.",
-            "C": "Il processo ha un solo punto di ingresso, il programma ha molteplici ingressi.",
-            "D": "Il programma può essere terminato, il processo può essere disinstallato."
-        },
-        "answer": "A",
+        "options": [
+            "Il programma è statico, il processo è dinamico e in esecuzione.",
+            "Il programma risiede in memoria centrale, il processo in memoria di massa.",
+            "Il processo ha un solo punto di ingresso, il programma ha molteplici ingressi.",
+            "Il programma può essere terminato, il processo può essere disinstallato."
+        ],
+        "answer": "Il programma è statico, il processo è dinamico e in esecuzione.",
         "difficulty": 3
     },
     {
         "id": 39,
         "category": "Informatica",
         "question": "Qual è la funzione principale del **Compilatore**?",
-        "options": {
-            "A": "Eseguire i comandi impartiti al pre-processore.",
-            "B": "Collegare i file oggetto per creare un unico eseguibile.",
-            "C": "Tradurre un programma scritto in linguaggio di alto livello in linguaggio macchina.",
-            "D": "Creare un file sorgente."
-        },
-        "answer": "C",
+        "options": [
+            "Eseguire i comandi impartiti al pre-processore.",
+            "Collegare i file oggetto per creare un unico eseguibile.",
+            "Tradurre un programma scritto in linguaggio di alto livello in linguaggio macchina.",
+            "Creare un file sorgente."
+        ],
+        "answer": "Tradurre un programma scritto in linguaggio di alto livello in linguaggio macchina.",
         "difficulty": 1
     },
     {
         "id": 40,
         "category": "Informatica",
         "question": "Cosa rappresenta il **Linguaggio Macchina**?",
-        "options": {
-            "A": "Un linguaggio di alto livello che usa simboli matematici.",
-            "B": "Il linguaggio in cui sono scritti i programmi eseguibili dal calcolatore (sequenze di 0 e 1).",
-            "C": "Il codice sorgente prima della compilazione.",
-            "D": "Un linguaggio intermedio tra linguaggio di programmazione e linguaggio macchina."
-        },
-        "answer": "B",
+        "options": [
+            "Un linguaggio di alto livello che usa simboli matematici.",
+            "Il linguaggio in cui sono scritti i programmi eseguibili dal calcolatore (sequenze di 0 e 1).",
+            "Il codice sorgente prima della compilazione.",
+            "Un linguaggio intermedio tra linguaggio di programmazione e linguaggio macchina."
+        ],
+        "answer": "Il linguaggio in cui sono scritti i programmi eseguibili dal calcolatore (sequenze di 0 e 1).",
         "difficulty": 1
     },
     {
         "id": 41,
         "category": "Informatica",
         "question": "Cosa si ottiene dopo la fase di **Assemblaggio** di un programma C (se non viene saltata)?",
-        "options": {
-            "A": "Il codice eseguibile finale con estensione $\\\\texttt{.exe}$.",
-            "B": "Il codice sorgente con le direttive risolte.",
-            "C": "Un file oggetto non eseguibile con estensione $\\\\texttt{.o}$ o $\\\\texttt{.obj}$.",
-            "D": "Il codice in linguaggio assembly."
-        },
-        "answer": "C",
+        "options": [
+            "Il codice eseguibile finale con estensione $\\\\texttt{.exe}$.",
+            "Il codice sorgente con le direttive risolte.",
+            "Un file oggetto non eseguibile con estensione $\\\\texttt{.o}$ o $\\\\texttt{.obj}$.",
+            "Il codice in linguaggio assembly."
+        ],
+        "answer": "Un file oggetto non eseguibile con estensione $\\\\texttt{.o}$ o $\\\\texttt{.obj}$.",
         "difficulty": 2
     },
     {
         "id": 42,
         "category": "Informatica",
         "question": "Qual è la ragione principale per cui il Linguaggio Macchina è considerato 'di basso livello'?",
-        "options": {
-            "A": "Dipende fortemente dalle caratteristiche fisiche del calcolatore.",
-            "B": "È difficile per gli umani a causa dell'uso di soli zero e uno.",
-            "C": "Ha troppe istruzioni elementari da memorizzare.",
-            "D": "È meno potente in quanto usa meno istruzioni."
-        },
-        "answer": "A",
+        "options": [
+            "Dipende fortemente dalle caratteristiche fisiche del calcolatore.",
+            "È difficile per gli umani a causa dell'uso di soli zero e uno.",
+            "Ha troppe istruzioni elementari da memorizzare.",
+            "È meno potente in quanto usa meno istruzioni."
+        ],
+        "answer": "Dipende fortemente dalle caratteristiche fisiche del calcolatore.",
         "difficulty": 3
     },
     {
         "id": 43,
         "category": "Informatica",
         "question": "Cosa si intende per **Tipo** di una variabile in C?",
-        "options": {
-            "A": "Il suo nome o identificatore.",
-            "B": "La sua allocazione in memoria centrale.",
-            "C": "L'insieme dei valori che può assumere e le operazioni permesse.",
-            "D": "La sua rappresentazione binaria."
-        },
-        "answer": "C",
+        "options": [
+            "Il suo nome o identificatore.",
+            "La sua allocazione in memoria centrale.",
+            "L'insieme dei valori che può assumere e le operazioni permesse.",
+            "La sua rappresentazione binaria."
+        ],
+        "answer": "L'insieme dei valori che può assumere e le operazioni permesse.",
         "difficulty": 1
     },
     {
         "id": 44,
         "category": "Informatica",
         "question": "Quale parola chiave in C è tipicamente associata all'insieme di interi a $32$ bit?",
-        "options": {
-            "A": "$\\\\texttt{float}$",
-            "B": "$\\\\texttt{char}$",
-            "C": "$\\\\texttt{int}$",
-            "D": "$\\\\texttt{long double}$"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{float}$",
+            "$\\\\texttt{char}$",
+            "$\\\\texttt{int}$",
+            "$\\\\texttt{long double}$"
+        ],
+        "answer": "$\\\\texttt{int}$",
         "difficulty": 1
     },
     {
         "id": 45,
         "category": "Informatica",
         "question": "Qual è il formato di stampa che permette a $\\\\texttt{printf}$ di visualizzare un valore di tipo intero?",
-        "options": {
-            "A": "$\\\\texttt{\\\\%f}$",
-            "B": "$\\\\texttt{\\\\%c}$",
-            "C": "$\\\\texttt{\\\\%d}$",
-            "D": "$\\\\texttt{\\\\%e}$"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{\\\\%f}$",
+            "$\\\\texttt{\\\\%c}$",
+            "$\\\\texttt{\\\\%d}$",
+            "$\\\\texttt{\\\\%e}$"
+        ],
+        "answer": "$\\\\texttt{\\\\%d}$",
         "difficulty": 2
     },
     {
         "id": 46,
         "category": "Informatica",
         "question": "Cosa si intende per **Dichiarazione con Inizializzazione** in C?",
-        "options": {
-            "A": "La dichiarazione di più variabili con la stessa istruzione.",
-            "B": "L'uso di un cast per convertire il tipo di variabile.",
-            "C": "La dichiarazione di una variabile e la memorizzazione del valore iniziale nella stessa istruzione.",
-            "D": "L'allocazione di spazio in memoria senza assegnare un valore."
-        },
-        "answer": "C",
+        "options": [
+            "La dichiarazione di più variabili con la stessa istruzione.",
+            "L'uso di un cast per convertire il tipo di variabile.",
+            "La dichiarazione di una variabile e la memorizzazione del valore iniziale nella stessa istruzione.",
+            "L'allocazione di spazio in memoria senza assegnare un valore."
+        ],
+        "answer": "La dichiarazione di una variabile e la memorizzazione del valore iniziale nella stessa istruzione.",
         "difficulty": 2
     },
     {
         "id": 47,
         "category": "Informatica",
         "question": "Qual è il significato dell'operatore **Modulo** ($\\\\%$) tra due interi $\\\\texttt{A}$ e $\\\\texttt{B}$?",
-        "options": {
-            "A": "Il risultato della divisione intera $\\\\texttt{A/B}$ arrotondato.",
-            "B": "La parte decimale del risultato aritmetico $\\\\texttt{A/B}$ .",
-            "C": "Il resto $\\\\texttt{R}$ tale che $\\\\texttt{R = A - (A/B) * B}$.",
-            "D": "Il numero più vicino a $\\\\texttt{0}$ che si ottiene dalla sottrazione."
-        },
-        "answer": "C",
+        "options": [
+            "Il risultato della divisione intera $\\\\texttt{A/B}$ arrotondato.",
+            "La parte decimale del risultato aritmetico $\\\\texttt{A/B}$ .",
+            "Il resto $\\\\texttt{R}$ tale che $\\\\texttt{R = A - (A/B) * B}$.",
+            "Il numero più vicino a $\\\\texttt{0}$ che si ottiene dalla sottrazione."
+        ],
+        "answer": "Il resto $\\\\texttt{R}$ tale che $\\\\texttt{R = A - (A/B) * B}$.",
         "difficulty": 3
     },
     {
         "id": 48,
         "category": "Informatica",
         "question": "Cosa si intende per **Notazione Posizionale** in un sistema di numerazione?",
-        "options": {
-            "A": "L'uso di sole $10$ cifre (base $10$).",
-            "B": "L'uso di simboli arabi per i numeri.",
-            "C": "Il valore di una cifra dipende dalla sua posizione.",
-            "D": "La cifra più significativa si trova a destra."
-        },
-        "answer": "C",
+        "options": [
+            "L'uso di sole $10$ cifre (base $10$).",
+            "L'uso di simboli arabi per i numeri.",
+            "Il valore di una cifra dipende dalla sua posizione.",
+            "La cifra più significativa si trova a destra."
+        ],
+        "answer": "Il valore di una cifra dipende dalla sua posizione.",
         "difficulty": 1
     },
     {
         "id": 49,
         "category": "Informatica",
         "question": "Cos'è un **Bit** nel contesto della rappresentazione binaria?",
-        "options": {
-            "A": "Un raggruppamento di $8$ cifre.",
-            "B": "Il componente che gestisce la memoria di massa.",
-            "C": "L'elemento base della memoria che può rappresentare $0$ o $1$.",
-            "D": "Una cella di memoria con $32$ bit."
-        },
-        "answer": "C",
+        "options": [
+            "Un raggruppamento di $8$ cifre.",
+            "Il componente che gestisce la memoria di massa.",
+            "L'elemento base della memoria che può rappresentare $0$ o $1$.",
+            "Una cella di memoria con $32$ bit."
+        ],
+        "answer": "L'elemento base della memoria che può rappresentare $0$ o $1$.",
         "difficulty": 1
     },
     {
         "id": 50,
         "category": "Informatica",
         "question": "In un numero binario, quale operazione corrisponde a convertire il numero dato per $2$ per trovare la cifra meno significativa?",
-        "options": {
-            "A": "Divisione intera ($/2$)",
-            "B": "Moltiplicazione per $10$ ($\\cdot 10$)",
-            "C": "Resto della divisione intera ($\\\\% 2$)",
-            "D": "Sottrazione di potenze di $2$."
-        },
-        "answer": "C",
+        "options": [
+            "Divisione intera ($/2$)",
+            "Moltiplicazione per $10$ ($\\cdot 10$)",
+            "Resto della divisione intera ($\\\\% 2$)",
+            "Sottrazione di potenze di $2$."
+        ],
+        "answer": "Resto della divisione intera ($\\\\% 2$)",
         "difficulty": 1
     },
     {
         "id": 51,
         "category": "Informatica",
         "question": "Qual è il principale vantaggio della rappresentazione in **Complemento a Due** rispetto a Modulo e Segno per gli interi relativi?",
-        "options": {
-            "A": "L'uso di un numero minore di bit.",
-            "B": "L'assenza di doppia rappresentazione per lo zero.",
-            "C": "Una maggiore facilità nella conversione in base $10$.",
-            "D": "La rappresentazione non circolare degli interi."
-        },
-        "answer": "B",
+        "options": [
+            "L'uso di un numero minore di bit.",
+            "L'assenza di doppia rappresentazione per lo zero.",
+            "Una maggiore facilità nella conversione in base $10$.",
+            "La rappresentazione non circolare degli interi."
+        ],
+        "answer": "L'assenza di doppia rappresentazione per lo zero.",
         "difficulty": 2
     },
     {
         "id": 52,
         "category": "Informatica",
         "question": "Cosa rappresenta la sequenza di bit $1000...000$ in notazione Complemento a Due con $n$ bit?",
-        "options": {
-            "A": "Il numero $0$ con segno negativo.",
-            "B": "Il numero più grande positivo ($2^{n-1}-1$).",
-            "C": "Il numero più piccolo rappresentabile ($-2^{n-1}$).",
-            "D": "Un errore di overflow."
-        },
-        "answer": "C",
+        "options": [
+            "Il numero $0$ con segno negativo.",
+            "Il numero più grande positivo ($2^{n-1}-1$).",
+            "Il numero più piccolo rappresentabile ($-2^{n-1}$).",
+            "Un errore di overflow."
+        ],
+        "answer": "Il numero più piccolo rappresentabile ($-2^{n-1}$).",
         "difficulty": 3
     },
     {
         "id": 53,
         "category": "Informatica",
         "question": "Quale espressione aritmetica unaria in C incrementa il valore della variabile $\\\\texttt{x}$ di $1$ e poi esegue l'istruzione in cui compare?",
-        "options": {
-            "A": "$\\\\texttt{x++}$",
-            "B": "$\\\\texttt{++x}$",
-            "C": "$\\\\texttt{x+=1}$",
-            "D": "$\\\\texttt{-x}$"
-        },
-        "answer": "B",
+        "options": [
+            "$\\\\texttt{x++}$",
+            "$\\\\texttt{++x}$",
+            "$\\\\texttt{x+=1}$",
+            "$\\\\texttt{-x}$"
+        ],
+        "answer": "$\\\\texttt{++x}$",
         "difficulty": 1
     },
     {
         "id": 54,
         "category": "Informatica",
         "question": "Quale operatore in C è definito come **Operatore di Uguaglianza**?",
-        "options": {
-            "A": "$\\\\texttt{=}$",
-            "B": "$\\\\texttt{!=}$",
-            "C": "$\\\\texttt{==}$",
-            "D": "$\\\\texttt{>}$"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{=}$",
+            "$\\\\texttt{!=}$",
+            "$\\\\texttt{==}$",
+            "$\\\\texttt{>}$"
+        ],
+        "answer": "$\\\\texttt{==}$",
         "difficulty": 1
     },
     {
         "id": 55,
         "category": "Informatica",
         "question": "Qual è l'effetto di un'**Assegnazione Composta** del tipo $\\\\texttt{x *= 5}$?",
-        "options": {
-            "A": "È equivalente a $\\\\texttt{x = x + 5}$",
-            "B": "Assegna $5$ alla variabile $\\\\texttt{x}$ se il prodotto precedente è $\\\\texttt{True}$",
-            "C": "È equivalente a $\\\\texttt{x = x * 5}$",
-            "D": "Incrementa il valore di $\\\\texttt{x}$ di $5$ in modo postfisso."
-        },
-        "answer": "C",
+        "options": [
+            "È equivalente a $\\\\texttt{x = x + 5}$",
+            "Assegna $5$ alla variabile $\\\\texttt{x}$ se il prodotto precedente è $\\\\texttt{True}$",
+            "È equivalente a $\\\\texttt{x = x * 5}$",
+            "Incrementa il valore di $\\\\texttt{x}$ di $5$ in modo postfisso."
+        ],
+        "answer": "È equivalente a $\\\\texttt{x = x * 5}$",
         "difficulty": 2
     },
     {
         "id": 56,
         "category": "Informatica",
         "question": "In quale ordine vengono valutati gli operatori relazionali di uguaglianza ($\\texttt{==}$, $\\texttt{!=}$) quando compaiono nella stessa espressione?",
-        "options": {
-            "A": "Da destra a sinistra",
-            "B": "Hanno la stessa precedenza degli operatori aritmetici.",
-            "C": "In base al loro ordine, da sinistra a destra.",
-            "D": "Il loro ordine è forzato dall'uso di parentesi quadre."
-        },
-        "answer": "C",
+        "options": [
+            "Da destra a sinistra",
+            "Hanno la stessa precedenza degli operatori aritmetici.",
+            "In base al loro ordine, da sinistra a destra.",
+            "Il loro ordine è forzato dall'uso di parentesi quadre."
+        ],
+        "answer": "In base al loro ordine, da sinistra a destra.",
         "difficulty": 2
     },
     {
         "id": 57,
         "category": "Informatica",
         "question": "Quale regola definisce l'associazione a destra dell'**Assegnazione Multipla** $\\\\texttt{x = y = z = w}$?",
-        "options": {
-            "A": "L'istruzione viene valutata come $\\\\texttt{x = (y = (z = w))}$",
-            "B": "Tutte le variabili devono essere dichiarate di tipo $\\\\texttt{int}$.",
-            "C": "L'istruzione viene valutata come $\\\\texttt{((x = y) = z) = w}$",
-            "D": "Solo l'ultima variabile, $\\\\texttt{w}$"
-        },
-        "answer": "A",
+        "options": [
+            "L'istruzione viene valutata come $\\\\texttt{x = (y = (z = w))}$",
+            "Tutte le variabili devono essere dichiarate di tipo $\\\\texttt{int}$.",
+            "L'istruzione viene valutata come $\\\\texttt{((x = y) = z) = w}$",
+            "Solo l'ultima variabile, $\\\\texttt{w}$"
+        ],
+        "answer": "L'istruzione viene valutata come $\\\\texttt{x = (y = (z = w))}$",
         "difficulty": 3
     },
     {
         "id": 58,
         "category": "Informatica",
         "question": "Qual è l'unità logica di memorizzazione che ha un contenuto (sequenza di byte) e un nome con estensione?",
-        "options": {
-            "A": "Volume",
-            "B": "Directory",
-            "C": "File",
-            "D": "Percorso"
-        },
-        "answer": "C",
+        "options": [
+            "Volume",
+            "Directory",
+            "File",
+            "Percorso"
+        ],
+        "answer": "File",
         "difficulty": 1
     },
     {
         "id": 59,
         "category": "Informatica",
         "question": "Cosa si intende per **Virtualizzazione** delle risorse da parte del Sistema Operativo?",
-        "options": {
-            "A": "Il processo di copia delle istruzioni dalla memoria secondaria alla memoria centrale.",
-            "B": "L'astrazione delle funzionalità del computer per l'utente.",
-            "C": "La gestione gerarchica dei file e delle cartelle.",
-            "D": "La divisione del processore in ALU e Control Unit."
-        },
-        "answer": "B",
+        "options": [
+            "Il processo di copia delle istruzioni dalla memoria secondaria alla memoria centrale.",
+            "L'astrazione delle funzionalità del computer per l'utente.",
+            "La gestione gerarchica dei file e delle cartelle.",
+            "La divisione del processore in ALU e Control Unit."
+        ],
+        "answer": "L'astrazione delle funzionalità del computer per l'utente.",
         "difficulty": 1
-    },
-    {
-        "id": 60,
-        "category": "Informatica",
-        "question": "Qual è la differenza di significato tra $\\\\texttt{Hardware}$ e $\\\\texttt{Software}$?",
-        "options": {
-            "A": "L'hardware si può maledire, il software si può colpire con un martello.",
-            "B": "Il software è la struttura fisica, l'hardware sono i programmi.",
-            "C": "L'hardware è la struttura fisica, il software è l'insieme di programmi che la fanno funzionare.",
-            "D": "L'hardware è permanente, il software è volatile."
-        },
-        "answer": "C",
-        "difficulty": 2
     },
     {
         "id": 61,
         "category": "Informatica",
         "question": "In un sistema operativo che implementa la **Multiprogrammazione**, cosa succede a un processo che non è in esecuzione in un dato istante?",
-        "options": {
-            "A": "Il processo muore temporaneamente.",
-            "B": "È in esecuzione virtuale, in attesa della CPU.",
-            "C": "Viene mosso nell'area di swap della memoria centrale.",
-            "D": "Il suo codice viene rimosso dalla memoria centrale."
-        },
-        "answer": "B",
+        "options": [
+            "Il processo muore temporaneamente.",
+            "È in esecuzione virtuale, in attesa della CPU.",
+            "Viene mosso nell'area di swap della memoria centrale.",
+            "Il suo codice viene rimosso dalla memoria centrale."
+        ],
+        "answer": "È in esecuzione virtuale, in attesa della CPU.",
         "difficulty": 3
     },
     {
         "id": 62,
         "category": "Informatica",
         "question": "Cos'è una **Espressione** nel linguaggio C?",
-        "options": {
-            "A": "Una sequenza di istruzioni che termina con un punto e virgola.",
-            "B": "Una dichiarazione di variabile.",
-            "C": "Una combinazione di letterali, variabili e operatori che fornisce un valore di un certo tipo.",
-            "D": "Una costante definita in fase di esecuzione."
-        },
-        "answer": "C",
+        "options": [
+            "Una sequenza di istruzioni che termina con un punto e virgola.",
+            "Una dichiarazione di variabile.",
+            "Una combinazione di letterali, variabili e operatori che fornisce un valore di un certo tipo.",
+            "Una costante definita in fase di esecuzione."
+        ],
+        "answer": "Una combinazione di letterali, variabili e operatori che fornisce un valore di un certo tipo.",
         "difficulty": 1
     },
     {
         "id": 63,
         "category": "Informatica",
         "question": "Qual è il dominio di valori per l'**Algebra di Boole** in C?",
-        "options": {
-            "A": "$\\\\mathbb{Z}$ (Insieme degli interi relativi).",
-            "B": "$\\\\mathbb{R}$ (Insieme dei numeri reali).",
-            "C": "Vero o Falso.",
-            "D": "Caratteri ASCII."
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\mathbb{Z}$ (Insieme degli interi relativi).",
+            "$\\\\mathbb{R}$ (Insieme dei numeri reali).",
+            "Vero o Falso.",
+            "Caratteri ASCII."
+        ],
+        "answer": "Vero o Falso.",
         "difficulty": 1
     },
     {
         "id": 64,
         "category": "Informatica",
         "question": "Quale operatore logico si chiama di **Complementazione** o **Negazione**?",
-        "options": {
-            "A": "$\\\\texttt{\\\\&\\\\&}$ (AND)",
-            "B": "$\\\\texttt{\\\\|\\\\|}$ (OR)",
-            "C": "$\\\\texttt{!}$ (NOT)",
-            "D": "$\\\\texttt{=}$ (Assegnazione)"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{\\\\&\\\\&}$ (AND)",
+            "$\\\\texttt{\\\\|\\\\|}$ (OR)",
+            "$\\\\texttt{!}$ (NOT)",
+            "$\\\\texttt{=}$ (Assegnazione)"
+        ],
+        "answer": "$\\\\texttt{!}$ (NOT)",
         "difficulty": 2
     },
     {
         "id": 65,
         "category": "Informatica",
         "question": "Come viene rappresentato il valore **Vero** ($\\texttt{True}$) nel linguaggio C in un contesto booleano?",
-        "options": {
-            "A": "Solo dal numero $1$.",
-            "B": "Solo da un valore negativo.",
-            "C": "Da $1$ e da qualsiasi numero diverso da $0$.",
-            "D": "Dalla stringa \"True\"."
-        },
-        "answer": "C",
+        "options": [
+            "Solo dal numero $1$.",
+            "Solo da un valore negativo.",
+            "Da $1$ e da qualsiasi numero diverso da $0$.",
+            "Dalla stringa \"True\"."
+        ],
+        "answer": "Da $1$ e da qualsiasi numero diverso da $0$.",
         "difficulty": 2
     },
     {
         "id": 66,
         "category": "Informatica",
         "question": "Qual è la conseguenza principale per la precisione di un **Cast Esplicito** da $\\\\texttt{float}$ a $\\\\texttt{int}$?",
-        "options": {
-            "A": "Si ottiene un valore non definito (overflow).",
-            "B": "Viene forzata la parte decimale senza troncamento.",
-            "C": "Può comportare una perdita di precisione per l'arrotondamento.",
-            "D": "Il compilatore genera automaticamente un errore."
-        },
-        "answer": "C",
+        "options": [
+            "Si ottiene un valore non definito (overflow).",
+            "Viene forzata la parte decimale senza troncamento.",
+            "Può comportare una perdita di precisione per l'arrotondamento.",
+            "Il compilatore genera automaticamente un errore."
+        ],
+        "answer": "Può comportare una perdita di precisione per l'arrotondamento.",
         "difficulty": 3
     },
     {
         "id": 67,
         "category": "Informatica",
         "question": "Cosa definisce la **Proprietà di Correttezza** di un algoritmo?",
-        "options": {
-            "A": "L'algoritmo termina sempre in un tempo finito.",
-            "B": "Ogni istruzione è univocamente interpretabile.",
-            "C": "L'algoritmo fornisce l'output atteso per ogni input valido.",
-            "D": "L'algoritmo utilizza un numero minimo di operazioni."
-        },
-        "answer": "C",
+        "options": [
+            "L'algoritmo termina sempre in un tempo finito.",
+            "Ogni istruzione è univocamente interpretabile.",
+            "L'algoritmo fornisce l'output atteso per ogni input valido.",
+            "L'algoritmo utilizza un numero minimo di operazioni."
+        ],
+        "answer": "L'algoritmo fornisce l'output atteso per ogni input valido.",
         "difficulty": 1
     },
     {
         "id": 68,
         "category": "Informatica",
         "question": "Quale strumento grafico è utilizzato per rappresentare il flusso di esecuzione di un algoritmo?",
-        "options": {
-            "A": "Pseudocodice",
-            "B": "Traccia di esecuzione",
-            "C": "Diagramma a blocchi",
-            "D": "Codice sorgente"
-        },
-        "answer": "C",
+        "options": [
+            "Pseudocodice",
+            "Traccia di esecuzione",
+            "Diagramma a blocchi",
+            "Codice sorgente"
+        ],
+        "answer": "Diagramma a blocchi",
         "difficulty": 1
     },
     {
         "id": 69,
         "category": "Informatica",
         "question": "Qual è lo scopo principale delle **Pre-condizioni** nella specifica di un problema?",
-        "options": {
-            "A": "Descrivere la soluzione attesa dal problema.",
-            "B": "Definire l'insieme di proprietà che devono essere soddisfatte dai dati di ingresso.",
-            "C": "Assicurare che l'algoritmo sia finito.",
-            "D": "Stabilire il formato di stampa dell'output."
-        },
-        "answer": "B",
+        "options": [
+            "Descrivere la soluzione attesa dal problema.",
+            "Definire l'insieme di proprietà che devono essere soddisfatte dai dati di ingresso.",
+            "Assicurare che l'algoritmo sia finito.",
+            "Stabilire il formato di stampa dell'output."
+        ],
+        "answer": "Definire l'insieme di proprietà che devono essere soddisfatte dai dati di ingresso.",
         "difficulty": 2
     },
     {
         "id": 70,
         "category": "Informatica",
         "question": "Cosa rappresenta la struttura di controllo **Istruzione Ripetitiva** in un algoritmo?",
-        "options": {
-            "A": "L'esecuzione di una istruzione solo se una condizione è vera.",
-            "B": "L'esecuzione di una sequenza di istruzioni una dopo l'altra.",
-            "C": "L'esecuzione ripetuta di un'istruzione fintanto che è soddisfatta una condizione.",
-            "D": "La possibilità di saltare da un punto all'altro del codice."
-        },
-        "answer": "C",
+        "options": [
+            "L'esecuzione di una istruzione solo se una condizione è vera.",
+            "L'esecuzione di una sequenza di istruzioni una dopo l'altra.",
+            "L'esecuzione ripetuta di un'istruzione fintanto che è soddisfatta una condizione.",
+            "La possibilità di saltare da un punto all'altro del codice."
+        ],
+        "answer": "L'esecuzione ripetuta di un'istruzione fintanto che è soddisfatta una condizione.",
         "difficulty": 2
     },
     {
         "id": 71,
         "category": "Informatica",
         "question": "Perché il $\\\\texttt{float}$ è considerato una rappresentazione **approssimata** dei numeri reali?",
-        "options": {
-            "A": "Perché usa solo $32$ bit per l'esponente.",
-            "B": "Non è possibile rappresentare tutti i reali in un intervallo con un numero finito di bit.",
-            "C": "È basato sulla notazione scientifica decimale.",
-            "D": "Perché è un tipo meno capiente di $\\\\texttt{int}$"
-        },
-        "answer": "B",
+        "options": [
+            "Perché usa solo $32$ bit per l'esponente.",
+            "Non è possibile rappresentare tutti i reali in un intervallo con un numero finito di bit.",
+            "È basato sulla notazione scientifica decimale.",
+            "Perché è un tipo meno capiente di $\\\\texttt{int}$"
+        ],
+        "answer": "Non è possibile rappresentare tutti i reali in un intervallo con un numero finito di bit.",
         "difficulty": 3
     },
     {
         "id": 72,
         "category": "Informatica",
         "question": "Cosa si intende per **Tempo di Accesso** in relazione alla memoria centrale?",
-        "options": {
-            "A": "Il tempo per trasferire un intero blocco di dati tra CPU e disco.",
-            "B": "Il tempo necessario per accedere ai dati, indipendente dall'indirizzo della cella.",
-            "C": "La frequenza del clock del processore.",
-            "D": "La durata del ciclo Fetch-Decode-Execute."
-        },
-        "answer": "B",
+        "options": [
+            "Il tempo per trasferire un intero blocco di dati tra CPU e disco.",
+            "Il tempo necessario per accedere ai dati, indipendente dall'indirizzo della cella.",
+            "La frequenza del clock del processore.",
+            "La durata del ciclo Fetch-Decode-Execute."
+        ],
+        "answer": "Il tempo necessario per accedere ai dati, indipendente dall'indirizzo della cella.",
         "difficulty": 1
     },
     {
         "id": 73,
         "category": "Informatica",
         "question": "In un sistema di numerazione in base $b$, cosa rappresenta la cifra più a sinistra di un numero?",
-        "options": {
-            "A": "La cifra meno significativa ($a_0$).",
-            "B": "La base $b$ elevata a zero.",
-            "C": "La cifra più significativa ($a_n$).",
-            "D": "Il resto della divisione per $b$."
-        },
-        "answer": "C",
+        "options": [
+            "La cifra meno significativa ($a_0$).",
+            "La base $b$ elevata a zero.",
+            "La cifra più significativa ($a_n$).",
+            "Il resto della divisione per $b$."
+        ],
+        "answer": "La cifra più significativa ($a_n$).",
         "difficulty": 1
     },
     {
         "id": 74,
         "category": "Informatica",
         "question": "Quale tra le seguenti è una proprietà degli operatori Booleani $\\\\texttt{\\\\&\\&}$ e $\\\\texttt{\\\\|\\\\|}$?",
-        "options": {
-            "A": "Non associatività",
-            "B": "Distributività",
-            "C": "Precedenza su $\\\\texttt{!}$ (NOT)",
-            "D": "Associatività a destra"
-        },
-        "answer": "B",
+        "options": [
+            "Non associatività",
+            "Distributività",
+            "Precedenza su $\\\\texttt{!}$ (NOT)",
+            "Associatività a destra"
+        ],
+        "answer": "Distributività",
         "difficulty": 2
     },
     {
         "id": 75,
         "category": "Informatica",
         "question": "Come si definisce un **Problema Indecidibile** in informatica?",
-        "options": {
-            "A": "Un problema per cui esiste solo un algoritmo non deterministico.",
-            "B": "Un problema la cui soluzione richiede un tempo esponenziale.",
-            "C": "Un problema per il quale non esiste un algoritmo risolutivo.",
-            "D": "Un problema che non soddisfa le pre-condizioni."
-        },
-        "answer": "C",
+        "options": [
+            "Un problema per cui esiste solo un algoritmo non deterministico.",
+            "Un problema la cui soluzione richiede un tempo esponenziale.",
+            "Un problema per il quale non esiste un algoritmo risolutivo.",
+            "Un problema che non soddisfa le pre-condizioni."
+        ],
+        "answer": "Un problema per il quale non esiste un algoritmo risolutivo.",
         "difficulty": 3
     },
     {
         "id": 76,
         "category": "Informatica",
         "question": "Qual è il formato di stampa che $\\\\texttt{printf}$ utilizza per visualizzare un $\\\\texttt{char}$ come carattere?",
-        "options": {
-            "A": "$\\\\texttt{\\\\%d}$",
-            "B": "$\\\\texttt{\\\\%s}$",
-            "C": "$\\\\texttt{\\\\%c}$",
-            "D": "$\\\\texttt{\\\\%f}$"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{\\\\%d}$",
+            "$\\\\texttt{\\\\%s}$",
+            "$\\\\texttt{\\\\%c}$",
+            "$\\\\texttt{\\\\%f}$"
+        ],
+        "answer": "$\\\\texttt{\\\\%c}$",
         "difficulty": 1
     },
     {
         "id": 77,
         "category": "Informatica",
         "question": "Cos'è una **Cella di Memoria** nella Memoria Centrale?",
-        "options": {
-            "A": "Un singolo bit.",
-            "B": "Una porzione di memoria con una dimensione fissa, tipicamente $32$ o $64$ bit.",
-            "C": "Il registro che memorizza l'istruzione da eseguire (IR).",
-            "D": "L'indirizzo del dato."
-        },
-        "answer": "B",
+        "options": [
+            "Un singolo bit.",
+            "Una porzione di memoria con una dimensione fissa, tipicamente $32$ o $64$ bit.",
+            "Il registro che memorizza l'istruzione da eseguire (IR).",
+            "L'indirizzo del dato."
+        ],
+        "answer": "Una porzione di memoria con una dimensione fissa, tipicamente $32$ o $64$ bit.",
         "difficulty": 1
     },
     {
         "id": 78,
         "category": "Informatica",
         "question": "Qual è il significato dell'**Efficienza Temporale** di un algoritmo?",
-        "options": {
-            "A": "La sua capacità di produrre risultati esatti.",
-            "B": "Il numero di operazioni elementari svolte come funzione della dimensione dei dati di ingresso.",
-            "C": "Il tempo di esecuzione misurato in secondi sul proprio calcolatore.",
-            "D": "Il numero massimo di iterazioni che può compiere."
-        },
-        "answer": "B",
+        "options": [
+            "La sua capacità di produrre risultati esatti.",
+            "Il numero di operazioni elementari svolte come funzione della dimensione dei dati di ingresso.",
+            "Il tempo di esecuzione misurato in secondi sul proprio calcolatore.",
+            "Il numero massimo di iterazioni che può compiere."
+        ],
+        "answer": "Il numero di operazioni elementari svolte come funzione della dimensione dei dati di ingresso.",
         "difficulty": 2
     },
     {
         "id": 79,
         "category": "Informatica",
         "question": "Quale concetto giustifica il fatto che la somma $\\\\texttt{1E100 + 1E-100}$ restituisce un valore perdendo $\\\\texttt{1E-100}$?",
-        "options": {
-            "A": "Divisione per zero.",
-            "B": "Il range massimo di $\\\\texttt{float}$ è superato.",
-            "C": "Perdita di precisione dovuta alla limitata mantissa del $\\\\texttt{float}$.",
-            "D": "Conversione implicita tra $\\\\texttt{int}$ e $\\\\texttt{float}$."
-        },
-        "answer": "C",
+        "options": [
+            "Divisione per zero.",
+            "Il range massimo di $\\\\texttt{float}$ è superato.",
+            "Perdita di precisione dovuta alla limitata mantissa del $\\\\texttt{float}$.",
+            "Conversione implicita tra $\\\\texttt{int}$ e $\\\\texttt{float}$."
+        ],
+        "answer": "Perdita di precisione dovuta alla limitata mantissa del $\\\\texttt{float}$.",
         "difficulty": 3
     },
     {
         "id": 80,
         "category": "Informatica",
         "question": "Cosa si intende per **Letterale** nel linguaggio C?",
-        "options": {
-            "A": "Un operatore aritmetico o logico.",
-            "B": "Il nome di una variabile.",
-            "C": "Un elemento del linguaggio che rappresenta un valore specifico.",
-            "D": "Una funzione che restituisce un valore."
-        },
-        "answer": "C",
+        "options": [
+            "Un operatore aritmetico o logico.",
+            "Il nome di una variabile.",
+            "Un elemento del linguaggio che rappresenta un valore specifico.",
+            "Una funzione che restituisce un valore."
+        ],
+        "answer": "Un elemento del linguaggio che rappresenta un valore specifico.",
         "difficulty": 1
     },
     {
         "id": 81,
         "category": "Informatica",
         "question": "Quale delle seguenti è una tipica **Operazione Aritmetica Unaria** per il tipo $\\\\texttt{int}$ in C?",
-        "options": {
-            "A": "Modulo ($\\\\%$).",
-            "B": "Incremento prefisso ($\\texttt{++x}$).",
-            "C": "Divisione intera ($\\texttt{/}$).",
-            "D": "Congiunzione ($\\texttt{\\\\&\\&}$)."
-        },
-        "answer": "B",
+        "options": [
+            "Modulo ($\\\\%$).",
+            "Incremento prefisso ($\\texttt{++x}$).",
+            "Divisione intera ($\\texttt{/}$).",
+            "Congiunzione ($\\texttt{\\\\&\\&}$)."
+        ],
+        "answer": "Incremento prefisso ($\\texttt{++x}$).",
         "difficulty": 1
     },
     {
         "id": 82,
         "category": "Informatica",
         "question": "Qual è il formato di stampa in $\\\\texttt{printf}$ che seleziona la rappresentazione più breve tra notazione decimale e scientifica?",
-        "options": {
-            "A": "$\\\\texttt{\\\\%f}$",
-            "B": "$\\\\texttt{\\\\%e}$",
-            "C": "$\\\\texttt{\\\\%g}$",
-            "D": "$\\\\texttt{\\\\%d}$"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{\\\\%f}$",
+            "$\\\\texttt{\\\\%e}$",
+            "$\\\\texttt{\\\\%g}$",
+            "$\\\\texttt{\\\\%d}$"
+        ],
+        "answer": "$\\\\texttt{\\\\%g}$",
         "difficulty": 2
     },
     {
         "id": 83,
         "category": "Informatica",
         "question": "Cosa assicura l'uso della **Programmazione Strutturata** rispetto all'uso dei salti incondizionati?",
-        "options": {
-            "A": "L'algoritmo sarà sempre più veloce (efficienza garantita).",
-            "B": "Il programma sarà composto da un numero minore di istruzioni.",
-            "C": "Qualunque algoritmo può essere realizzato con le istruzioni strutturate.",
-            "D": "L'assenza totale di errori di compilazione."
-        },
-        "answer": "C",
+        "options": [
+            "L'algoritmo sarà sempre più veloce (efficienza garantita).",
+            "Il programma sarà composto da un numero minore di istruzioni.",
+            "Qualunque algoritmo può essere realizzato con le istruzioni strutturate.",
+            "L'assenza totale di errori di compilazione."
+        ],
+        "answer": "Qualunque algoritmo può essere realizzato con le istruzioni strutturate.",
         "difficulty": 3
     },
     {
         "id": 84,
         "category": "Informatica",
         "question": "Qual è il ruolo del **Bus** nel modello di Von Neumann?",
-        "options": {
-            "A": "Eseguire le operazioni aritmetiche.",
-            "B": "Memorizzare l'indirizzo della prossima istruzione.",
-            "C": "Trasferire dati, indirizzi e informazioni di controllo tra i componenti.",
-            "D": "Sincronizzare le operazioni della CPU (Clock)."
-        },
-        "answer": "C",
+        "options": [
+            "Eseguire le operazioni aritmetiche.",
+            "Memorizzare l'indirizzo della prossima istruzione.",
+            "Trasferire dati, indirizzi e informazioni di controllo tra i componenti.",
+            "Sincronizzare le operazioni della CPU (Clock)."
+        ],
+        "answer": "Trasferire dati, indirizzi e informazioni di controllo tra i componenti.",
         "difficulty": 1
     },
     {
         "id": 85,
         "category": "Informatica",
         "question": "Cosa si intende per **Volatilità** della Memoria Centrale (RAM)?",
-        "options": {
-            "A": "La memoria è troppo veloce per essere gestita dal processore.",
-            "B": "Il contenuto viene cancellato allo spegnimento del computer.",
-            "C": "La memoria è solo lettura (Read Only Memory).",
-            "D": "Il dato può essere letto una sola volta."
-        },
-        "answer": "B",
+        "options": [
+            "La memoria è troppo veloce per essere gestita dal processore.",
+            "Il contenuto viene cancellato allo spegnimento del computer.",
+            "La memoria è solo lettura (Read Only Memory).",
+            "Il dato può essere letto una sola volta."
+        ],
+        "answer": "Il contenuto viene cancellato allo spegnimento del computer.",
         "difficulty": 1
     },
     {
         "id": 86,
         "category": "Informatica",
         "question": "Qual è il principale inconveniente della rappresentazione **Modulo e Segno** per gli interi relativi?",
-        "options": {
-            "A": "La necessità di utilizzare più di $32$ bit.",
-            "B": "La non circolarità e la doppia rappresentazione dello zero.",
-            "C": "L'impossibilità di rappresentare numeri positivi.",
-            "D": "La lenta velocità di accesso alla memoria."
-        },
-        "answer": "B",
+        "options": [
+            "La necessità di utilizzare più di $32$ bit.",
+            "La non circolarità e la doppia rappresentazione dello zero.",
+            "L'impossibilità di rappresentare numeri positivi.",
+            "La lenta velocità di accesso alla memoria."
+        ],
+        "answer": "La non circolarità e la doppia rappresentazione dello zero.",
         "difficulty": 2
     },
     {
         "id": 87,
         "category": "Informatica",
         "question": "Quale concetto è associato all'**efficienza nel caso peggiore** di un algoritmo?",
-        "options": {
-            "A": "Il tempo medio di esecuzione su tutti i possibili input.",
-            "B": "Il numero di operazioni elementari come funzione della dimensione dei dati che richiede il tempo massimo.",
-            "C": "La quantità di memoria richiesta per l'esecuzione.",
-            "D": "La velocità del calcolatore misurata in gigahertz."
-        },
-        "answer": "B",
+        "options": [
+            "Il tempo medio di esecuzione su tutti i possibili input.",
+            "Il numero di operazioni elementari come funzione della dimensione dei dati che richiede il tempo massimo.",
+            "La quantità di memoria richiesta per l'esecuzione.",
+            "La velocità del calcolatore misurata in gigahertz."
+        ],
+        "answer": "Il numero di operazioni elementari come funzione della dimensione dei dati che richiede il tempo massimo.",
         "difficulty": 3
     },
     {
         "id": 88,
         "category": "Informatica",
         "question": "Cosa si intende per **Codifica** nel contesto della rappresentazione dei dati?",
-        "options": {
-            "A": "La trasformazione di una rappresentazione in un'informazione.",
-            "B": "Il processo per cui l'informazione viene trasformata in una rappresentazione (sequenza di bit).",
-            "C": "L'allocazione di una variabile in memoria.",
-            "D": "La selezione del formato di stampa."
-        },
-        "answer": "B",
+        "options": [
+            "La trasformazione di una rappresentazione in un'informazione.",
+            "Il processo per cui l'informazione viene trasformata in una rappresentazione (sequenza di bit).",
+            "L'allocazione di una variabile in memoria.",
+            "La selezione del formato di stampa."
+        ],
+        "answer": "Il processo per cui l'informazione viene trasformata in una rappresentazione (sequenza di bit).",
         "difficulty": 1
     },
     {
         "id": 89,
         "category": "Informatica",
         "question": "Quale operatore aritmetico binario in C ha la precedenza maggiore tra gli operatori di base $\\\\texttt{+}, \\\\texttt{-}, \\\\texttt{*}, \\\\texttt{/}$?",
-        "options": {
-            "A": "Addizione ($\\texttt{+}$)",
-            "B": "Sottrazione ($\\texttt{-}$)",
-            "C": "Moltiplicazione ($\\texttt{*}$)",
-            "D": "Assegnazione ($\\texttt{=}$)"
-        },
-        "answer": "C",
+        "options": [
+            "Addizione ($\\texttt{+}$)",
+            "Sottrazione ($\\texttt{-}$)",
+            "Moltiplicazione ($\\texttt{*}$)",
+            "Assegnazione ($\\texttt{=}$)"
+        ],
+        "answer": "Moltiplicazione ($\\texttt{*}$)",
         "difficulty": 1
     },
     {
         "id": 90,
         "category": "Informatica",
         "question": "Qual è il valore (in base $10$) del numero $\\\\texttt{10}$ in **Base $2$**?",
-        "options": {
-            "A": "$10$",
-            "B": "$1$",
-            "C": "$2$",
-            "D": "$3$"
-        },
-        "answer": "C",
+        "options": [
+            "$10$",
+            "$1$",
+            "$2$",
+            "$3$"
+        ],
+        "answer": "$2$",
         "difficulty": 2
     },
     {
         "id": 91,
         "category": "Informatica",
         "question": "Perché le **Istruzioni di Controllo** (condizionale, ripetitiva) sono utili in un algoritmo?",
-        "options": {
-            "A": "Permettono di scrivere il codice più velocemente.",
-            "B": "Permettono di regolare il flusso di esecuzione anche se alcune informazioni non sono note a priori.",
-            "C": "Riducono la necessità di usare variabili.",
-            "D": "Rendono l'algoritmo non ambiguo."
-        },
-        "answer": "B",
+        "options": [
+            "Permettono di scrivere il codice più velocemente.",
+            "Permettono di regolare il flusso di esecuzione anche se alcune informazioni non sono note a priori.",
+            "Riducono la necessità di usare variabili.",
+            "Rendono l'algoritmo non ambiguo."
+        ],
+        "answer": "Permettono di regolare il flusso di esecuzione anche se alcune informazioni non sono note a priori.",
         "difficulty": 3
     },
     {
         "id": 92,
         "category": "Informatica",
         "question": "Cosa contiene il registro **Program Counter** (PC) nella CPU?",
-        "options": {
-            "A": "Il dato o l'istruzione appena letta (MDR).",
-            "B": "L'istruzione che deve essere eseguita (IR).",
-            "C": "L'indirizzo di memoria della prossima istruzione da eseguire.",
-            "D": "Le informazioni sull'esito dell'ultima istruzione eseguita (PSW)."
-        },
-        "answer": "C",
+        "options": [
+            "Il dato o l'istruzione appena letta (MDR).",
+            "L'istruzione che deve essere eseguita (IR).",
+            "L'indirizzo di memoria della prossima istruzione da eseguire.",
+            "Le informazioni sull'esito dell'ultima istruzione eseguita (PSW)."
+        ],
+        "answer": "L'indirizzo di memoria della prossima istruzione da eseguire.",
         "difficulty": 1
     },
     {
         "id": 93,
         "category": "Informatica",
         "question": "Quale componente del Sistema Operativo è responsabile della gestione delle informazioni memorizzate nella memoria secondaria (dischi rigidi)?",
-        "options": {
-            "A": "Gestore della memoria",
-            "B": "Nucleo (Kernel)",
-            "C": "Gestore delle periferiche",
-            "D": "Gestore dei File (File System)"
-        },
-        "answer": "D",
+        "options": [
+            "Gestore della memoria",
+            "Nucleo (Kernel)",
+            "Gestore delle periferiche",
+            "Gestore dei File (File System)"
+        ],
+        "answer": "Gestore dei File (File System)",
         "difficulty": 1
     },
     {
         "id": 94,
         "category": "Informatica",
         "question": "Qual è lo scopo delle **Post-condizioni** nella specifica di un problema?",
-        "options": {
-            "A": "Definire l'insieme di valori che possono essere utilizzati come input.",
-            "B": "Definire le proprietà che i dati di uscita devono soddisfare per essere una soluzione.",
-            "C": "Stabilire il formato di input del programma.",
-            "D": "Garantire che l'algoritmo sia efficiente."
-        },
-        "answer": "B",
+        "options": [
+            "Definire l'insieme di valori che possono essere utilizzati come input.",
+            "Definire le proprietà che i dati di uscita devono soddisfare per essere una soluzione.",
+            "Stabilire il formato di input del programma.",
+            "Garantire che l'algoritmo sia efficiente."
+        ],
+        "answer": "Definire le proprietà che i dati di uscita devono soddisfare per essere una soluzione.",
         "difficulty": 2
     },
     {
         "id": 95,
         "category": "Informatica",
         "question": "Qual è il principale svantaggio (o rischio) di non usare un **Cast Esplicito** quando si assegna un $\\\\texttt{float}$ a un $\\\\texttt{int}$?",
-        "options": {
-            "A": "La perdita di precisione non è voluta e il compilatore emette un $\\\\texttt{warning}$.",
-            "B": "Si verifica un overflow matematico in ogni caso.",
-            "C": "Il valore $\\\\texttt{int}$ risultante è sempre $0$.",
-            "D": "Il tipo $\\\\texttt{int}$ viene convertito in $\\\\texttt{float}$ (conversione implicita)."
-        },
-        "answer": "A",
+        "options": [
+            "La perdita di precisione non è voluta e il compilatore emette un $\\\\texttt{warning}$.",
+            "Si verifica un overflow matematico in ogni caso.",
+            "Il valore $\\\\texttt{int}$ risultante è sempre $0$.",
+            "Il tipo $\\\\texttt{int}$ viene convertito in $\\\\texttt{float}$ (conversione implicita)."
+        ],
+        "answer": "La perdita di precisione non è voluta e il compilatore emette un $\\\\texttt{warning}$.",
         "difficulty": 3
     },
     {
         "id": 96,
         "category": "Informatica",
         "question": "Cosa si intende per **Flusso di Esecuzione** di un algoritmo?",
-        "options": {
-            "A": "La sequenza di istruzioni che vengono eseguite quando un algoritmo risolve un'istanza.",
-            "B": "L'insieme delle pre-condizioni e post-condizioni.",
-            "C": "La struttura gerarchica del codice sorgente.",
-            "D": "Il processo di compilazione e linking."
-        },
-        "answer": "A",
+        "options": [
+            "La sequenza di istruzioni che vengono eseguite quando un algoritmo risolve un'istanza.",
+            "L'insieme delle pre-condizioni e post-condizioni.",
+            "La struttura gerarchica del codice sorgente.",
+            "Il processo di compilazione e linking."
+        ],
+        "answer": "La sequenza di istruzioni che vengono eseguite quando un algoritmo risolve un'istanza.",
         "difficulty": 1
     },
     {
         "id": 97,
         "category": "Informatica",
         "question": "Quale operatore logico si chiama di **Congiunzione**?",
-        "options": {
-            "A": "$\\\\texttt{!}$ (NOT)",
-            "B": "$\\\\texttt{\\\\|\\\\|}$ (OR)",
-            "C": "$\\\\texttt{\\\\&\\\\&}$ (AND)",
-            "D": "$\\\\texttt{>=}$"
-        },
-        "answer": "C",
+        "options": [
+            "$\\\\texttt{!}$ (NOT)",
+            "$\\\\texttt{\\\\|\\\\|}$ (OR)",
+            "$\\\\texttt{\\\\&\\\\&}$ (AND)",
+            "$\\\\texttt{>=}$"
+        ],
+        "answer": "$\\\\texttt{\\\\&\\\\&}$ (AND)",
         "difficulty": 1
     },
     {
         "id": 98,
         "category": "Informatica",
         "question": "Qual è il formato di stampa in $\\\\texttt{printf}$ che visualizza un $\\\\texttt{float}$ in **Notazione Scientifica**?",
-        "options": {
-            "A": "$\\\\texttt{\\\\%f}$",
-            "B": "$\\\\texttt{\\\\%e}$",
-            "C": "$\\\\texttt{\\\\%g}$",
-            "D": "$\\\\texttt{\\\\%d}$"
-        },
-        "answer": "B",
+        "options": [
+            "$\\\\texttt{\\\\%f}$",
+            "$\\\\texttt{\\\\%e}$",
+            "$\\\\texttt{\\\\%g}$",
+            "$\\\\texttt{\\\\%d}$"
+        ],
+        "answer": "$\\\\texttt{\\\\%e}$",
         "difficulty": 2
     },
     {
         "id": 99,
         "category": "Informatica",
         "question": "Quale concetto è descritto dal Teorema di **Böhm-Jacopini**?",
-        "options": {
-            "A": "Che i problemi indecidibili non hanno soluzione.",
-            "B": "Che la programmazione strutturata è più efficiente dei salti incondizionati.",
-            "C": "Che qualsiasi algoritmo può essere realizzato da un programma che usa solo istruzioni strutturate.",
-            "D": "Che la fase di linking deve sempre seguire la compilazione."
-        },
-        "answer": "C",
+        "options": [
+            "Che i problemi indecidibili non hanno soluzione.",
+            "Che la programmazione strutturata è più efficiente dei salti incondizionati.",
+            "Che qualsiasi algoritmo può essere realizzato da un programma che usa solo istruzioni strutturate.",
+            "Che la fase di linking deve sempre seguire la compilazione."
+        ],
+        "answer": "Che qualsiasi algoritmo può essere realizzato da un programma che usa solo istruzioni strutturate.",
         "difficulty": 3
     },
     {
         "id": 100,
         "category": "Informatica",
         "question": "Cosa si intende per **Overload** (trabocco) in un tipo numerico come $\\\\texttt{int}$?",
-        "options": {
-            "A": "L'uso di troppe variabili.",
-            "B": "L'assegnazione di un valore $\\\\texttt{float}$ a un $\\\\texttt{int}$.",
-            "C": "Il superamento del limite massimo o minimo rappresentabile dal tipo.",
-            "D": "L'uso dell'operatore $\\\\texttt{\\\\%}$ (modulo)."
-        },
-        "answer": "C",
+        "options": [
+            "L'uso di troppe variabili.",
+            "L'assegnazione di un valore $\\\\texttt{float}$ a un $\\\\texttt{int}$.",
+            "Il superamento del limite massimo o minimo rappresentabile dal tipo.",
+            "L'uso dell'operatore $\\\\texttt{\\\\%}$ (modulo)."
+        ],
+        "answer": "Il superamento del limite massimo o minimo rappresentabile dal tipo.",
         "difficulty": 1
     },
     {
         "id": 101,
         "category": "Informatica",
         "question": "Cos'è una **Traccia del Processo di Esecuzione** di un algoritmo?",
-        "options": {
-            "A": "Il diagramma a blocchi dell'algoritmo.",
-            "B": "La sequenza di istruzioni in linguaggio macchina.",
-            "C": "Una tabella che mostra i valori assunti dalle variabili durante l'esecuzione.",
-            "D": "L'elenco delle pre-condizioni e post-condizioni."
-        },
-        "answer": "C",
+        "options": [
+            "Il diagramma a blocchi dell'algoritmo.",
+            "La sequenza di istruzioni in linguaggio macchina.",
+            "Una tabella che mostra i valori assunti dalle variabili durante l'esecuzione.",
+            "L'elenco delle pre-condizioni e post-condizioni."
+        ],
+        "answer": "Una tabella che mostra i valori assunti dalle variabili durante l'esecuzione.",
         "difficulty": 1
     },
     {
         "id": 102,
         "category": "Informatica",
         "question": "Qual è il ruolo del **Linker** nel processo di compilazione?",
-        "options": {
-            "A": "Eseguire i comandi del preprocessore.",
-            "B": "Tradurre il codice sorgente in linguaggio assembly.",
-            "C": "Collegare i file oggetto tra loro per creare un singolo file eseguibile.",
-            "D": "Convertire il linguaggio assembly in file oggetto."
-        },
-        "answer": "C",
+        "options": [
+            "Eseguire i comandi del preprocessore.",
+            "Tradurre il codice sorgente in linguaggio assembly.",
+            "Collegare i file oggetto tra loro per creare un singolo file eseguibile.",
+            "Convertire il linguaggio assembly in file oggetto."
+        ],
+        "answer": "Collegare i file oggetto tra loro per creare un singolo file eseguibile.",
         "difficulty": 2
     },
     {
         "id": 103,
         "category": "Informatica",
         "question": "Cosa si intende per **Memoria Virtuale** gestita dal Sistema Operativo?",
-        "options": {
-            "A": "Una porzione di memoria di massa dedicata allo swap.",
-            "B": "Un'area di memoria centrale limitata usata per i programmi.",
-            "C": "Un'area logica assegnata a ciascun processo per permetterne l'esecuzione.",
-            "D": "L'interfaccia a caratteri utilizzata per eseguire i programmi."
-        },
-        "answer": "C",
+        "options": [
+            "Una porzione di memoria di massa dedicata allo swap.",
+            "Un'area di memoria centrale limitata usata per i programmi.",
+            "Un'area logica assegnata a ciascun processo per permetterne l'esecuzione.",
+            "L'interfaccia a caratteri utilizzata per eseguire i programmi."
+        ],
+        "answer": "Un'area logica assegnata a ciascun processo per permetterne l'esecuzione.",
         "difficulty": 3
     },
     {
         "id": 104,
         "category": "Informatica",
         "question": "Cosa definisce il termine **Istanza** in relazione a un problema parametrico?",
-        "options": {
-            "A": "Il risultato atteso del problema.",
-            "B": "Il problema risolto su un certo insieme di dati specifici.",
-            "C": "La procedura generale di risoluzione (algoritmo).",
-            "D": "L'insieme delle pre-condizioni."
-        },
-        "answer": "B",
+        "options": [
+            "Il risultato atteso del problema.",
+            "Il problema risolto su un certo insieme di dati specifici.",
+            "La procedura generale di risoluzione (algoritmo).",
+            "L'insieme delle pre-condizioni."
+        ],
+        "answer": "Il problema risolto su un certo insieme di dati specifici.",
         "difficulty": 1
     },
     {
         "id": 105,
         "category": "Informatica",
         "question": "Quale organo nella CPU è responsabile delle operazioni aritmetiche e logiche?",
-        "options": {
-            "A": "Unità di Controllo (CU).",
-            "B": "Bus di Controllo.",
-            "C": "Unità Aritmetico-Logica (ALU).",
-            "D": "Program Counter (PC)."
-        },
-        "answer": "C",
+        "options": [
+            "Unità di Controllo (CU).",
+            "Bus di Controllo.",
+            "Unità Aritmetico-Logica (ALU).",
+            "Program Counter (PC)."
+        ],
+        "answer": "Unità Aritmetico-Logica (ALU).",
         "difficulty": 1
     },
     {
         "id": 106,
         "category": "Informatica",
         "question": "Qual è la funzione del **Gestore delle Periferiche** (driver) nel Sistema Operativo?",
-        "options": {
-            "A": "Gestire lo swap di memoria di massa.",
-            "B": "Creare il file system gerarchico.",
-            "C": "Controllare il funzionamento delle periferiche e tradurre i segnali interni.",
-            "D": "Eseguire la fase di Decode della CPU."
-        },
-        "answer": "C",
+        "options": [
+            "Gestire lo swap di memoria di massa.",
+            "Creare il file system gerarchico.",
+            "Controllare il funzionamento delle periferiche e tradurre i segnali interni.",
+            "Eseguire la fase di Decode della CPU."
+        ],
+        "answer": "Controllare il funzionamento delle periferiche e tradurre i segnali interni.",
         "difficulty": 2
     },
     {
         "id": 107,
         "category": "Informatica",
         "question": "Perché si afferma che gli operatori $\\\\texttt{\\\\&\\\\&}$ e $\\\\texttt{\\\\|\\\\|}$ godono della proprietà di **Idempotenza**?",
-        "options": {
-            "A": "Perché $\\\\texttt{A \\\\&\\\\& A = A}$ e $\\\\texttt{A \\\\|\\\\| A = A}$",
-            "B": "Perché $\\\\texttt{A \\\\&\\\\& B = B \\\\&\\\\& A}$",
-            "C": "Perché l'operatore NOT è il suo elemento neutro.",
-            "D": "Perché $0$ è il loro elemento assorbente."
-        },
-        "answer": "A",
+        "options": [
+            "Perché $\\\\texttt{A \\\\&\\\\& A = A}$ e $\\\\texttt{A \\\\|\\\\| A = A}$",
+            "Perché $\\\\texttt{A \\\\&\\\\& B = B \\\\&\\\\& A}$",
+            "Perché l'operatore NOT è il suo elemento neutro.",
+            "Perché $0$ è il loro elemento assorbente."
+        ],
+        "answer": "Perché $\\\\texttt{A \\\\&\\\\& A = A}$ e $\\\\texttt{A \\\\|\\\\| A = A}$",
         "difficulty": 3
     },
     {
         "id": 108,
         "category": "Informatica",
         "question": "Quale strumento logico per la progettazione di algoritmi si basa su un linguaggio intermedio tra linguaggio naturale e linguaggio di programmazione?",
-        "options": {
-            "A": "Diagramma a blocchi",
-            "B": "Traccia di esecuzione",
-            "C": "Pseudocodice",
-            "D": "Linguaggio assembly"
-        },
-        "answer": "C",
+        "options": [
+            "Diagramma a blocchi",
+            "Traccia di esecuzione",
+            "Pseudocodice",
+            "Linguaggio assembly"
+        ],
+        "answer": "Pseudocodice",
         "difficulty": 1
     },
     {
         "id": 109,
         "category": "Informatica",
         "question": "Nel formato in virgola mobile $\\\\texttt{float}$ (IEEE 754), quanti bit sono dedicati alla **Mantissa** ($\\texttt{M}$)?",
-        "options": {
-            "A": "$1$ bit",
-            "B": "$8$ bit",
-            "C": "$23$ bit",
-            "D": "$32$ bit"
-        },
-        "answer": "C",
+        "options": [
+            "$1$ bit",
+            "$8$ bit",
+            "$23$ bit",
+            "$32$ bit"
+        ],
+        "answer": "$23$ bit",
         "difficulty": 1
     },
     {
         "id": 110,
         "category": "Informatica",
         "question": "Quale definizione descrive meglio il concetto di **Accumulatore** in un algoritmo iterativo?",
-        "options": {
-            "A": "Una variabile che conta il numero di elementi processati.",
-            "B": "Una variabile che memorizza il valore intermedio di una proprietà cumulata sugli elementi processati finora.",
-            "C": "Una variabile che memorizza il risultato finale dopo il ciclo $\\\\texttt{while}$.",
-            "D": "Una variabile inizializzata a $\\\\texttt{1}$ per la somma."
-        },
-        "answer": "B",
+        "options": [
+            "Una variabile che conta il numero di elementi processati.",
+            "Una variabile che memorizza il valore intermedio di una proprietà cumulata sugli elementi processati finora.",
+            "Una variabile che memorizza il risultato finale dopo il ciclo $\\\\texttt{while}$.",
+            "Una variabile inizializzata a $\\\\texttt{1}$ per la somma."
+        ],
+        "answer": "Una variabile che memorizza il valore intermedio di una proprietà cumulata sugli elementi processati finora.",
         "difficulty": 2
     },
     {
         "id": 111,
         "category": "Informatica",
         "question": "Secondo le **Leggi di De Morgan**, a cosa equivale l'espressione $\\\\texttt{!(A \\\\|\\\\| B)}$?",
-        "options": {
-            "A": "$\\\\texttt{!A \\\\|\\\\| !B}$",
-            "B": "$\\\\texttt{!A \\\\&\\\\& !B}$",
-            "C": "$\\\\texttt{A \\\\&\\\\& B}$",
-            "D": "Dipende dalla precedenza degli operatori."
-        },
-        "answer": "B",
+        "options": [
+            "$\\\\texttt{!A \\\\|\\\\| !B}$",
+            "$\\\\texttt{!A \\\\&\\\\& !B}$",
+            "$\\\\texttt{A \\\\&\\\\& B}$",
+            "Dipende dalla precedenza degli operatori."
+        ],
+        "answer": "$\\\\texttt{!A \\\\&\\\\& !B}$",
         "difficulty": 3
     },
     {
         "id": 112,
         "category": "Informatica",
         "question": "Cosa si intende per **Gerarchia** nel File System (dal punto di vista utente)?",
-        "options": {
-            "A": "L'organizzazione fisica in tracce e settori.",
-            "B": "L'organizzazione ad albero in file e cartelle.",
-            "C": "La priorità di accesso dei processi ai file.",
-            "D": "L'uso di più volumi ($\\texttt{C:}, \\\\texttt{D:}$ etc.)."
-        },
-        "answer": "B",
+        "options": [
+            "L'organizzazione fisica in tracce e settori.",
+            "L'organizzazione ad albero in file e cartelle.",
+            "La priorità di accesso dei processi ai file.",
+            "L'uso di più volumi ($\\texttt{C:}, \\\\texttt{D:}$ etc.)."
+        ],
+        "answer": "L'organizzazione ad albero in file e cartelle.",
         "difficulty": 1
     },
     {
         "id": 113,
         "category": "Informatica",
         "question": "Quale processo è definito dall'esecuzione ordinata e ripetuta delle fasi: Fetch, Decode, Execute?",
-        "options": {
-            "A": "Ciclo di Compilazione.",
-            "B": "Esecuzione delle Istruzioni (da parte della CPU).",
-            "C": "Multiprogrammazione.",
-            "D": "Conversione binaria."
-        },
-        "answer": "B",
+        "options": [
+            "Ciclo di Compilazione.",
+            "Esecuzione delle Istruzioni (da parte della CPU).",
+            "Multiprogrammazione.",
+            "Conversione binaria."
+        ],
+        "answer": "Esecuzione delle Istruzioni (da parte della CPU).",
         "difficulty": 1
     },
     {
         "id": 114,
         "category": "Informatica",
         "question": "Qual è il significato del $\\\\texttt{+}$ in Base $4$ quando si calcola $\\\\texttt{2 + 2}$?",
-        "options": {
-            "A": "$4$",
-            "B": "$10$",
-            "C": "$11$",
-            "D": "$3$"
-        },
-        "answer": "B",
+        "options": [
+            "$4$",
+            "$10$",
+            "$11$",
+            "$3$"
+        ],
+        "answer": "$10$",
         "difficulty": 2
     },
     {
         "id": 115,
         "category": "Informatica",
         "question": "Quale caratteristica del $\\\\texttt{char}$ permette l'**Aritmetica dei Caratteri** in C?",
-        "options": {
-            "A": "Il $\\\\texttt{char}$ è essenzialmente un tipo numerico che memorizza il codice ASCII.",
-            "B": "L'uso di una libreria esterna per le operazioni logiche.",
-            "C": "Il $\\\\texttt{char}$ ha un range limitato a $0$ e $1$.",
-            "D": "Il $\\\\texttt{char}$ viene sempre convertito in $\\\\texttt{int}$ prima dell'operazione."
-        },
-        "answer": "A",
+        "options": [
+            "Il $\\\\texttt{char}$ è essenzialmente un tipo numerico che memorizza il codice ASCII.",
+            "L'uso di una libreria esterna per le operazioni logiche.",
+            "Il $\\\\texttt{char}$ ha un range limitato a $0$ e $1$.",
+            "Il $\\\\texttt{char}$ viene sempre convertito in $\\\\texttt{int}$ prima dell'operazione."
+        ],
+        "answer": "Il $\\\\texttt{char}$ è essenzialmente un tipo numerico che memorizza il codice ASCII.",
         "difficulty": 3
     },
     {
         "id": 116,
         "category": "Informatica",
         "question": "Cosa si intende per **Predicato** nel contesto dei diagrammi a blocchi?",
-        "options": {
-            "A": "Un'istruzione di input.",
-            "B": "Un'espressione Booleana che determina il flusso di esecuzione.",
-            "C": "Un'assegnazione di valore.",
-            "D": "Il punto di uscita di una istruzione."
-        },
-        "answer": "B",
+        "options": [
+            "Un'istruzione di input.",
+            "Un'espressione Booleana che determina il flusso di esecuzione.",
+            "Un'assegnazione di valore.",
+            "Il punto di uscita di una istruzione."
+        ],
+        "answer": "Un'espressione Booleana che determina il flusso di esecuzione.",
         "difficulty": 1
     },
     {
         "id": 117,
         "category": "Informatica",
         "question": "Quale termine descrive il fenomeno per cui il processore salta tra processi diversi per dare l'illusione di esecuzione contemporanea?",
-        "options": {
-            "A": "Uniprogrammazione",
-            "B": "Virtualizzazione del File System",
-            "C": "Multiprogrammazione (Multitasking)",
-            "D": "Esecuzione in parallelo"
-        },
-        "answer": "C",
+        "options": [
+            "Uniprogrammazione",
+            "Virtualizzazione del File System",
+            "Multiprogrammazione (Multitasking)",
+            "Esecuzione in parallelo"
+        ],
+        "answer": "Multiprogrammazione (Multitasking)",
         "difficulty": 2
     },
     {
         "id": 118,
         "category": "Informatica",
         "question": "Secondo la definizione, quando un programma **legge** il valore di una variabile, cosa succede al valore memorizzato?",
-        "options": {
-            "A": "Il valore viene perso per la sua volatilità.",
-            "B": "Il valore viene conservato (non modificato).",
-            "C": "Il valore viene convertito in un letterale per l'uso nell'espressione.",
-            "D": "Il valore viene spostato in un registro della CPU e rimosso dalla memoria."
-        },
-        "answer": "B",
+        "options": [
+            "Il valore viene perso per la sua volatilità.",
+            "Il valore viene conservato (non modificato).",
+            "Il valore viene convertito in un letterale per l'uso nell'espressione.",
+            "Il valore viene spostato in un registro della CPU e rimosso dalla memoria."
+        ],
+        "answer": "Il valore viene conservato (non modificato).",
         "difficulty": 3
     },
     {
@@ -5471,5 +5445,1136 @@
         ],
         "answer": "Grazia",
         "difficulty": 1
+    },
+    {
+        "id": "nd_resp_1",
+        "category": "Normativa Disciplinare",
+        "question": "Quale principio stabilisce che la sanzione irrogata deve essere proporzionale alla gravità dell'infrazione commessa?",
+        "options": [
+            "Principio di ragionevole prontezza",
+            "Adeguatezza della sanzione",
+            "Tassatività della legge",
+            "Principio di irrogabilità"
+        ],
+        "answer": "Adeguatezza della sanzione",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_2",
+        "category": "Normativa Disciplinare",
+        "question": "Quale D.P.R. contiene le norme sostanziali e procedurali per l'applicazione delle sanzioni disciplinari al personale della pubblica sicurezza?",
+        "options": [
+            "D.P.R. 3/1957",
+            "D.P.R. 782/85",
+            "D.P.R. 737/81",
+            "L. 121/1981"
+        ],
+        "answer": "D.P.R. 737/81",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_3",
+        "category": "Normativa Disciplinare",
+        "question": "Quale tra le seguenti sanzioni disciplinari **non** è prevista dal D.P.R. 737/81?",
+        "options": [
+            "Richiamo orale",
+            "Riduzione in un grado",
+            "Pena pecuniaria",
+            "Destituzione"
+        ],
+        "answer": "Riduzione in un grado",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_4",
+        "category": "Normativa Disciplinare",
+        "question": "Per quale infrazione è astrattamente prevista la sanzione della **Deplorazione**?",
+        "options": [
+            "Manifesta negligenza nel prendere visione dell'ordine di servizio",
+            "Atto diretto a limitare l'esercizio dei diritti sindacali",
+            "Omessa presentazione in servizio per un periodo superiore a cinque giorni",
+            "Denigrazione dei superiori"
+        ],
+        "answer": "Atto diretto a limitare l'esercizio dei diritti sindacali",
+        "difficulty": 2
+    },
+    {
+        "id": "nd_resp_5",
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione è prevista per l'omessa o ritardata presentazione in servizio sino a un massimo di **48 ore**?",
+        "options": [
+            "Richiamo orale",
+            "Pena pecuniaria",
+            "Sospensione dal servizio",
+            "Deplorazione"
+        ],
+        "answer": "Pena pecuniaria",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_6",
+        "category": "Normativa Disciplinare",
+        "question": "Quale infrazione disciplinare è punibile con la sanzione della **Sospensione dal servizio**?",
+        "options": [
+            "Recidiva in mancanza punibile con il richiamo scritto",
+            "Assidua frequenza di persone pregiudicate",
+            "Abituali negligenze nell'adempimento dei doveri",
+            "Inosservanza dell'obbligo di mantenere la reperibilità"
+        ],
+        "answer": "Assidua frequenza di persone pregiudicate",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_7",
+        "category": "Normativa Disciplinare",
+        "question": "Quale organo esprime parere obbligatorio non vincolante per l'irrogazione della sanzione della **Deplorazione**?",
+        "options": [
+            "Consiglio di Stato",
+            "Consiglio Centrale o Provinciale di Disciplina",
+            "Commissione Consultiva",
+            "Il Titolare della Potestà Disciplinare"
+        ],
+        "answer": "Commissione Consultiva",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_8",
+        "category": "Normativa Disciplinare",
+        "question": "Quali sono le **garanzie a difesa** previste per l'incolpato nel procedimento disciplinare (procedimento amministrativo)?",
+        "options": [
+            "Diritto al ricorso gerarchico e nomina del Funzionario Istruttore",
+            "Facoltà di presentare giustificazioni e produrre memorie e documenti",
+            "Audizione obbligatoria e parere vincolante della Commissione Consultiva",
+            "Sospensione obbligatoria dal servizio fino alla decisione finale"
+        ],
+        "answer": "Facoltà di presentare giustificazioni e produrre memorie e documenti",
+        "difficulty": 2
+    },
+    {
+        "id": "nd_resp_9",
+        "category": "Normativa Disciplinare",
+        "question": "In caso di infrazione disciplinare, il **Rapporto del superiore** all'organo competente deve contenere...",
+        "options": [
+            "La sua proposta sulla specie e sull'entità della sanzione",
+            "Unicamente gli elementi utili a configurare l'infrazione in modo conciso",
+            "Una valutazione preliminare della proporzionalità della sanzione",
+            "L'accertamento che i fatti non costituiscano reato"
+        ],
+        "answer": "Unicamente gli elementi utili a configurare l'infrazione in modo conciso",
+        "difficulty": 3
+    },
+    {
+        "id": "nd_resp_10",
+        "category": "Normativa Disciplinare",
+        "question": "Quale provvedimento cautelare è **obbligatorio** per l'appartenente colpito da ordine di cattura o in stato di carcerazione preventiva?",
+        "options": [
+            "Destituzione cautelare",
+            "Sospensione facoltativa",
+            "Sospensione obbligatoria dal servizio",
+            "Sospensione per gravi motivi ex art. 92 d.P.R. 3/57"
+        ],
+        "answer": "Sospensione obbligatoria dal servizio",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_11",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è il termine massimo di durata della sospensione cautelare dal servizio in costanza di **procedimento penale**?",
+        "options": [
+            "90 giorni",
+            "2 anni",
+            "5 anni",
+            "Fino al massimo della sanzione disciplinare"
+        ],
+        "answer": "5 anni",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_12",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è l'atto procedurale che conclude la **Fase Istruttoria** nel procedimento per sospensione e destituzione?",
+        "options": [
+            "Avvio dell'inchiesta",
+            "Notifica della Contestazione degli Addebiti",
+            "Relazione del funzionario istruttore",
+            "Giudizio del Consiglio di Disciplina"
+        ],
+        "answer": "Relazione del funzionario istruttore",
+        "difficulty": 2
+    },
+    {
+        "id": "nd_resp_13",
+        "category": "Normativa Disciplinare",
+        "question": "La sentenza penale irrevocabile di **assoluzione** per formula 'il fatto non sussiste' ha quale effetto sul giudizio disciplinare?",
+        "options": [
+            "Consente la riattivazione del procedimento disciplinare entro 120 giorni.",
+            "Non ha efficacia di giudicato e l'Amministrazione può procedere autonomamente.",
+            "Ha efficacia di giudicato sull'accertamento che il fatto non sussiste.",
+            "Il procedimento disciplinare deve essere sospeso per 180 giorni."
+        ],
+        "answer": "Ha efficacia di giudicato sull'accertamento che il fatto non sussiste.",
+        "difficulty": 3
+    },
+    {
+        "id": "nd_resp_14",
+        "category": "Normativa Disciplinare",
+        "question": "Entro quale termine massimo deve essere avviato il procedimento disciplinare per **fatti non aventi rilevanza penale**?",
+        "options": [
+            "Entro 120 giorni dalla conoscenza dei fatti",
+            "Entro 90 giorni dalla conoscenza dei fatti",
+            "Subito (criterio di ragionevole prontezza)",
+            "Entro 180 giorni dalla conoscenza dei fatti"
+        ],
+        "answer": "Subito (criterio di ragionevole prontezza)",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_15",
+        "category": "Normativa Disciplinare",
+        "question": "Quale provvedimento cautelare è adottabile dal Capo della Polizia **anche prima** che il procedimento disciplinare abbia inizio, ove ricorrano gravi motivi?",
+        "options": [
+            "Sospensione obbligatoria ex art. 9 comma 1 dPR 737/81",
+            "Sospensione per gravi motivi ex art. 92 d.P.R. 3/57",
+            "Destituzione immediata",
+            "Richiamo scritto immediato"
+        ],
+        "answer": "Sospensione per gravi motivi ex art. 92 d.P.R. 3/57",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_16",
+        "category": "Normativa Disciplinare",
+        "question": "Quale infrazione disciplinare comporta la sanzione della **Destituzione**?",
+        "options": [
+            "Abuso di autorità che non arrechi grave pregiudizio all'Amministrazione",
+            "Condanna con sentenza passata in giudicato per delitto colposo",
+            "Dolosa violazione dei doveri che abbia arrecato grave pregiudizio allo Stato",
+            "Assidua frequenza di persone dedite ad attività immorale"
+        ],
+        "answer": "Dolosa violazione dei doveri che abbia arrecato grave pregiudizio allo Stato",
+        "difficulty": 2
+    },
+    {
+        "id": "nd_resp_17",
+        "category": "Normativa Disciplinare",
+        "question": "Cosa si intende per **Richiamo Orale** (Art. 2 D.P.R. 737/81)?",
+        "options": [
+            "Sanzione proceduralizzata che richiede un rapporto scritto",
+            "Sanzione non proceduralizzata per lievi mancanze",
+            "È una sanzione applicabile solo dal Capo della Polizia",
+            "È un provvedimento cautelare in attesa del giudizio"
+        ],
+        "answer": "Sanzione non proceduralizzata per lievi mancanze",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_18",
+        "category": "Normativa Disciplinare",
+        "question": "Nel procedimento per **Deplorazione**, quali atti sono formalmente notificati all'interessato?",
+        "options": [
+            "Segnalazione e Parere della Commissione Consultiva",
+            "Contestazione degli Addebiti e Provvedimento di Irrogazione",
+            "Solo il Provvedimento di Irrogazione della sanzione",
+            "Giustificazioni e Valutazione delle Giustificazioni"
+        ],
+        "answer": "Contestazione degli Addebiti e Provvedimento di Irrogazione",
+        "difficulty": 2
+    },
+    {
+        "id": "nd_resp_19",
+        "category": "Normativa Disciplinare",
+        "question": "Quale sanzione è prevista per gli ufficiali e agenti di Polizia Giudiziaria che omettono o ritardano l'esecuzione di un ordine dell'autorità giudiziaria?",
+        "options": [
+            "Richiamo scritto",
+            "Censura e nei casi più gravi Sospensione dall'impiego non eccedente sei mesi",
+            "Solo Destituzione",
+            "Pena pecuniaria"
+        ],
+        "answer": "Censura e nei casi più gravi Sospensione dall'impiego non eccedente sei mesi",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_20",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è uno dei **Rimedi e Impugnazioni** ammessi contro un provvedimento disciplinare?",
+        "options": [
+            "Ricorso all'Autorità Giudiziaria Ordinaria",
+            "Ricorso gerarchico",
+            "Istanza di Revisione",
+            "Annullamento d'ufficio"
+        ],
+        "answer": "Ricorso gerarchico",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_21",
+        "category": "Normativa Disciplinare",
+        "question": "Cosa si intende per **Riabilitazione** (ex art. 87 D.P.R. 3/57) in materia disciplinare?",
+        "options": [
+            "La riapertura del procedimento per nuove prove.",
+            "L'annullamento degli effetti della sanzione disciplinare dopo due anni dalla notifica.",
+            "La sospensione cautelare del dipendente.",
+            "La conversione della destituzione in sospensione dal servizio."
+        ],
+        "answer": "L'annullamento degli effetti della sanzione disciplinare dopo due anni dalla notifica.",
+        "difficulty": 2
+    },
+    {
+        "id": "nd_resp_22",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è il limite del **sindacato del giudice amministrativo** sulla decisione di merito della Pubblica Amministrazione in materia disciplinare?",
+        "options": [
+            "Il giudice può sempre sostituirsi all'Amministrazione nel valutare l'adeguatezza della sanzione.",
+            "È ammesso solo per la verifica di eccesso di potere nelle sue forme sintomatiche",
+            "Il giudice può sindacare la sanzione solo se l'infrazione è prevista come reato proprio.",
+            "È ammissibile solo se si dimostra la sussistenza di un errore di diritto nel procedimento."
+        ],
+        "answer": "È ammesso solo per la verifica di eccesso di potere nelle sue forme sintomatiche",
+        "difficulty": 3
+    },
+    {
+        "id": "nd_resp_23",
+        "category": "Normativa Disciplinare",
+        "question": "Qual è il termine per l'avvio o la riattivazione del procedimento disciplinare in caso di sentenza penale irrevocabile di **condanna** (Art. 9 L. 19/90) per la destituzione?",
+        "options": [
+            "Subito",
+            "120 giorni",
+            "180 giorni",
+            "90 giorni"
+        ],
+        "answer": "180 giorni",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_24",
+        "category": "Normativa Disciplinare",
+        "question": "Cosa si intende per **Richiamo Scritto** (Art. 3 D.P.R. 737/81)?",
+        "options": [
+            "Sanzione per lievi mancanze, non proceduralizzata",
+            "Sanzione per reiterazione in lievi mancanze e negligenza in servizio",
+            "Sanzione che richiede il parere della Commissione Consultiva",
+            "Provvedimento cautelare, in attesa di definizione"
+        ],
+        "answer": "Sanzione per reiterazione in lievi mancanze e negligenza in servizio",
+        "difficulty": 1
+    },
+    {
+        "id": "nd_resp_25",
+        "category": "Normativa Disciplinare",
+        "question": "Quando l'appartenente è sottoposto per gli stessi fatti a procedimento disciplinare e procedimento penale, la regola di base è:",
+        "options": [
+            "L'azione disciplinare è sempre esercitata immediatamente (Principio di separatezza)",
+            "Il procedimento disciplinare deve essere sospeso fino alla sentenza penale irrevocabile (Pregiudiziale penale)",
+            "Si procede immediatamente con la destituzione in caso di reato proprio",
+            "L'Amministrazione può sempre decidere la sospensione o meno (Valutazione di opportunità)"
+        ],
+        "answer": "Il procedimento disciplinare deve essere sospeso fino alla sentenza penale irrevocabile (Pregiudiziale penale)",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_16",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale che si appropria di cosa mobile altrui avendone il possesso per ragione d'ufficio?",
+        "options": [
+            "Appropriazione indebita (Art. 646 c.p.).",
+            "Peculato (Art. 314 c.p.).",
+            "Concussione (Art. 317 c.p.).",
+            "Abuso d'ufficio (Art. 323 c.p.)."
+        ],
+        "answer": "Peculato (Art. 314 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_18",
+        "category": "Diritto Penale",
+        "question": "Quale condizione permette l'esercizio del **diritto di cronaca** (causa di giustificazione)?",
+        "options": [
+            "Il fatto divulgato deve essere di interesse per l'opinione pubblica (pertinenza) e senza l'uso di espressioni corrette (continenza).",
+            "Il fatto deve essere vero, pertinente e caratterizzato dalla continenza.",
+            "Il fatto può essere falso, ma non deve ledere l'onore di una persona.",
+            "Il fatto deve essere pertinente alla vita privata della persona, anche se non noto."
+        ],
+        "answer": "Il fatto deve essere vero, pertinente e caratterizzato dalla continenza.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_26",
+        "category": "Diritto Penale",
+        "question": "Quale elemento caratterizza il **diritto penale** come complesso di norme giuridiche?",
+        "options": [
+            "Il precetto (comando o divieto).",
+            "Il risarcimento del danno.",
+            "Il diritto pubblico interno e il diritto internazionale.",
+            "L'assenza di pena edittale."
+        ],
+        "answer": "Il precetto (comando o divieto).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_27",
+        "category": "Diritto Penale",
+        "question": "In caso di **abolitio criminis** (abrogazione totale del reato) da parte di una legge successiva, cosa accade ai fatti commessi in precedenza?",
+        "options": [
+            "La pena resta in esecuzione (Art. 2 c. 1 c.p.).",
+            "Cessano l'esecuzione e gli effetti penali della condanna.",
+            "Si applica la sanzione amministrativa sostitutiva.",
+            "Il reo è sottoposto a misure di sicurezza."
+        ],
+        "answer": "Cessano l'esecuzione e gli effetti penali della condanna.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_28",
+        "category": "Diritto Penale",
+        "question": "Qual è il rapporto tra il **principio di legalità** e il **principio di riserva di legge**?",
+        "options": [
+            "Sono concetti distinti e non correlati.",
+            "La riserva di legge è un corollario che specifica la fonte esclusiva della norma penale.",
+            "La riserva di legge vieta l'analogia in malam partem.",
+            "La legalità è solo formale, la riserva è sostanziale."
+        ],
+        "answer": "La riserva di legge è un corollario che specifica la fonte esclusiva della norma penale.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_29",
+        "category": "Diritto Penale",
+        "question": "Qual è l'elemento che differenzia un **delitto** da una **contravvenzione**?",
+        "options": [
+            "La gravità del fatto commesso.",
+            "Il tipo di pena stabilita dalla legge (es. reclusione/arresto).",
+            "La volontà di arrecare danno.",
+            "L'applicabilità dell'oblazione."
+        ],
+        "answer": "Il tipo di pena stabilita dalla legge (es. reclusione/arresto).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_30",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **reato a forma libera** (es. omicidio)?",
+        "options": [
+            "La norma specifica le particolari modalità della condotta.",
+            "È sufficiente che una condotta cagioni un evento, senza specificare le modalità.",
+            "La condotta è convertibile da omissiva in commissiva.",
+            "Il fatto è punibile solo a querela di parte."
+        ],
+        "answer": "È sufficiente che una condotta cagioni un evento, senza specificare le modalità.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_31",
+        "category": "Diritto Penale",
+        "question": "Qual è l'unica condizione che esclude l'applicabilità dell'**oblazione** alle contravvenzioni?",
+        "options": [
+            "Il reato è perseguibile d'ufficio.",
+            "La contravvenzione è punita con pena detentiva e non con la sola ammenda.",
+            "L'oblazione è richiesta prima dell'apertura del dibattimento.",
+            "Il reato è pluri-offensivo."
+        ],
+        "answer": "La contravvenzione è punita con pena detentiva e non con la sola ammenda.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_32",
+        "category": "Diritto Penale",
+        "question": "Qual è il limite del **divieto di analogia** nel diritto penale?",
+        "options": [
+            "È ammissibile l'analogia per le norme eccezionali.",
+            "È vietata l'analogia in malam partem (sfavorevole al reo) ma ammissibile l'analogia in bonam partem.",
+            "È ammessa solo per i reati a forma libera.",
+            "È vietata sia l'analogia legis sia l'analogia iuris (principio di tassatività)."
+        ],
+        "answer": "È vietata l'analogia in malam partem (sfavorevole al reo) ma ammissibile l'analogia in bonam partem.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_33",
+        "category": "Diritto Penale",
+        "question": "Qual è il criterio per distinguere i **reati comuni** dai **reati propri**?",
+        "options": [
+            "La perseguibilità d'ufficio o a querela.",
+            "Il tipo di pena (detentiva o pecuniaria).",
+            "La speciale qualifica soggettiva richiesta all'autore del reato.",
+            "Il nesso di causalità tra condotta e evento."
+        ],
+        "answer": "La speciale qualifica soggettiva richiesta all'autore del reato.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_34",
+        "category": "Diritto Penale",
+        "question": "Quale elemento costitutivo del reato è escluso dal verificarsi di un **caso fortuito o forza maggiore**?",
+        "options": [
+            "L'Antigiuridicità.",
+            "La Colpevolezza.",
+            "Il nesso di causalità e la tipicità del reato.",
+            "La Responsabilità Penale Personale."
+        ],
+        "answer": "Il nesso di causalità e la tipicità del reato.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_35",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **dolo generico** e **dolo specifico**?",
+        "options": [
+            "Il dolo generico non richiede il fine, il dolo specifico richiede un fine la cui realizzazione non è necessaria per il reato.",
+            "Il dolo generico è per i reati a forma libera, il dolo specifico per i reati a forma vincolata.",
+            "Il dolo generico è per il tentativo, il dolo specifico per il reato consumato.",
+            "Il dolo specifico è l'eccezione, il dolo generico è la regola."
+        ],
+        "answer": "Il dolo generico non richiede il fine, il dolo specifico richiede un fine la cui realizzazione non è necessaria per il reato.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_36",
+        "category": "Diritto Penale",
+        "question": "In caso di **Concorso Materiale** di reati (più azioni, più violazioni), quale modello sanzionatorio è limitato nella sua operatività dall'espansione del reato continuato?",
+        "options": [
+            "Assorbimento (si applica solo la pena più grave).",
+            "Cumulo materiale (somma delle pene).",
+            "Cumulo giuridico (pena più grave aumentata fino al triplo).",
+            "Reato continuato (medesimo disegno criminoso)."
+        ],
+        "answer": "Cumulo materiale (somma delle pene).",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_37",
+        "category": "Diritto Penale",
+        "question": "Qual è la sanzione penale per i **delitti**?",
+        "options": [
+            "Arresto e ammenda.",
+            "Ergastolo, reclusione e multa.",
+            "Detenzione domiciliare sostitutiva.",
+            "Multa e arresto."
+        ],
+        "answer": "Ergastolo, reclusione e multa.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_38",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **principio di materialità** del reato?",
+        "options": [
+            "Il reato deve consistere nell'offesa di un bene giuridico.",
+            "Il reato consiste in un fatto materiale (comportamento umano).",
+            "Il reato è solo un fatto previsto come tale dalla legge.",
+            "Il reato deve essere attribuibile al soggetto (responsabilità personale)."
+        ],
+        "answer": "Il reato consiste in un fatto materiale (comportamento umano).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_39",
+        "category": "Diritto Penale",
+        "question": "Quando il reato è **omissivo improprio** (es. omicidio della madre che non allatta) la responsabilità deriva da:",
+        "options": [
+            "L'obbligo giuridico di astenersi dall'azione.",
+            "La conversione di un'ipotesi commissiva in omissiva per il mancato impedimento di un evento.",
+            "Il semplice compimento di un'omissione (reati omissivi propri).",
+            "La lesione di un bene giuridico che perdura nel tempo (reato permanente)."
+        ],
+        "answer": "La conversione di un'ipotesi commissiva in omissiva per il mancato impedimento di un evento.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_40",
+        "category": "Diritto Penale",
+        "question": "In un delitto **preterintenzionale** (es. omicidio), qual è l'elemento doloso e quale quello oggettivo non voluto?",
+        "options": [
+            "Dolo sulla morte, colpa sul ferimento.",
+            "Volontà di un evento minore (lesioni/percosse) e assenza di volontà di un evento più grave (morte).",
+            "Dolo generico sull'omicidio, colpa sulla condotta.",
+            "Volontà della condotta e colpa sull'evento morte (omicidio colposo)."
+        ],
+        "answer": "Volontà di un evento minore (lesioni/percosse) e assenza di volontà di un evento più grave (morte).",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_41",
+        "category": "Diritto Penale",
+        "question": "Quale tra le seguenti è una causa di estinzione della **Pena**?",
+        "options": [
+            "Prescrizione del reato.",
+            "Morte del reo dopo la sentenza di condanna definitiva.",
+            "Amnistia.",
+            "Remissione della querela."
+        ],
+        "answer": "Morte del reo dopo la sentenza di condanna definitiva.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_42",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Omessa Denuncia di Reato** da parte del pubblico ufficiale?",
+        "options": [
+            "Il reato si configura se la denuncia è omessa o ritardata per delitto perseguibile a querela di parte.",
+            "Omettere o ritardare la denuncia di reato all'Autorità Giudiziaria o ad altra Autorità.",
+            "Aiutare taluno ad eludere le investigazioni (favoreggiamento personale).",
+            "La condotta si configura solo se il pubblico ufficiale ne è venuto a conoscenza nell'esercizio delle funzioni."
+        ],
+        "answer": "Omettere o ritardare la denuncia di reato all'Autorità Giudiziaria o ad altra Autorità.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_43",
+        "category": "Diritto Penale",
+        "question": "Qual è il rapporto tra l'atto dell'**Omessa Denuncia di Reato** e l'**Omissione di Referto**?",
+        "options": [
+            "Sono lo stesso reato, ma commessi da soggetti diversi.",
+            "La prima è commessa dal pubblico ufficiale o incaricato, la seconda dall'esercente la professione sanitaria.",
+            "Il referto espone sempre la persona assistita a procedimento penale.",
+            "La prima è punibile d'ufficio, la seconda è punibile a querela di parte."
+        ],
+        "answer": "La prima è commessa dal pubblico ufficiale o incaricato, la seconda dall'esercente la professione sanitaria.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_44",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Ricettazione** (Art. 648 c.p.)?",
+        "options": [
+            "Sostituire denaro proveniente da delitto non colposo (riciclaggio).",
+            "Acquistare o ricevere cose provenienti da un qualsiasi delitto, al fine di procurare profitto.",
+            "Appropriarsi di cosa mobile altrui avendone il possesso per ragione d'ufficio (peculato).",
+            "Aiutare taluno ad assicurarsi il profitto del reato (favoreggiamento reale)."
+        ],
+        "answer": "Acquistare o ricevere cose provenienti da un qualsiasi delitto, al fine di procurare profitto.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_45",
+        "category": "Diritto Penale",
+        "question": "Qual è il presupposto dell'applicazione delle **Misure di Sicurezza**?",
+        "options": [
+            "La commissione di un delitto doloso.",
+            "La pericolosità sociale del reo, vagliata caso per caso.",
+            "L'imputabilità piena del soggetto.",
+            "Il reato non è più punibile per prescrizione."
+        ],
+        "answer": "La pericolosità sociale del reo, vagliata caso per caso.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_46",
+        "category": "Diritto Penale",
+        "question": "In caso di **Concorso Materiale** di reati (più azioni, più violazioni), perché il **cumulo materiale** (somma delle pene) è limitato nel nostro ordinamento?",
+        "options": [
+            "È limitato dall'espansione dei casi di **Reato Continuato** (cumulo giuridico).",
+            "Si applica solo il modello dell'assorbimento (reato più grave).",
+            "Si applica solo il cumulo giuridico (pena più grave aumentata fino al triplo).",
+            "La sanzione è sempre la destituzione."
+        ],
+        "answer": "È limitato dall'espansione dei casi di **Reato Continuato** (cumulo giuridico).",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_47",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Reato Pluri-offensivo** (es. calunnia)?",
+        "options": [
+            "Un reato commesso da più persone (concorso di persone).",
+            "Un reato che lede contemporaneamente una pluralità di beni giuridici.",
+            "Un reato che si consuma con più azioni od omissioni.",
+            "Un reato commesso con violenza alle persone."
+        ],
+        "answer": "Un reato che lede contemporaneamente una pluralità di beni giuridici.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_48",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **dolo diretto** e **dolo eventuale**?",
+        "options": [
+            "Il dolo diretto si applica ai reati omissivi, il dolo eventuale ai reati commissivi.",
+            "Nel dolo diretto l'evento è voluto, nel dolo eventuale è solo accettato come rischio.",
+            "Il dolo diretto richiede la negligenza, il dolo eventuale richiede la imprudenza.",
+            "Il dolo diretto è per il tentativo incompiuto, il dolo eventuale per il tentativo compiuto."
+        ],
+        "answer": "Nel dolo diretto l'evento è voluto, nel dolo eventuale è solo accettato come rischio.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_49",
+        "category": "Diritto Penale",
+        "question": "In caso di **esercizio di un ordine illegittimo** (Art. 51 c.p.), in quale caso l'inferiore risponde **solo** il superiore gerarchico?",
+        "options": [
+            "L'ordine è palesemente illegittimo (illegittimità formale).",
+            "Per errore di fatto l'inferiore ha ritenuto di obbedire a un ordine legittimo o l'ordine è insindacabile.",
+            "L'esecuzione dell'ordine costituisce reato palesemente illegittimo (crimini di guerra).",
+            "L'ordine è illegittimo formalmente (es. non firmato dal superiore)."
+        ],
+        "answer": "Per errore di fatto l'inferiore ha ritenuto di obbedire a un ordine legittimo o l'ordine è insindacabile.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_50",
+        "category": "Diritto Penale",
+        "question": "Quale elemento costitutivo del reato si riferisce al nesso psichico che lega il soggetto agente al fatto tipico e antigiuridico?",
+        "options": [
+            "L'Antigiuridicità.",
+            "Il Fatto Tipico.",
+            "La Colpevolezza.",
+            "L'Imputabilità."
+        ],
+        "answer": "La Colpevolezza.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_51",
+        "category": "Diritto Penale",
+        "question": "Quale sanzione penale è prevista per le **contravvenzioni**?",
+        "options": [
+            "Ergastolo, reclusione e multa.",
+            "Arresto e ammenda.",
+            "Pene accessorie e pecuniarie.",
+            "Misure di sicurezza patrimoniali."
+        ],
+        "answer": "Arresto e ammenda.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_52",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **reato di danno** in relazione al principio di offensività?",
+        "options": [
+            "Un reato in cui si verifica un tentativo di lesione del bene giuridico.",
+            "Un reato in cui si verifica una lesione del bene giuridico (es. omicidio).",
+            "Un reato la cui punibilità è esclusa per inidoneità dell'azione (reato impossibile).",
+            "Un reato che si consuma in un determinato istante temporale."
+        ],
+        "answer": "Un reato in cui si verifica una lesione del bene giuridico (es. omicidio).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_53",
+        "category": "Diritto Penale",
+        "question": "Quando è applicabile l'**esimente** di cui all'Art. 393-bis c.p. (reazione a un atto arbitrario di un P.U.)?",
+        "options": [
+            "Quando il pubblico ufficiale ha dato causa al fatto, eccedendo con atti arbitrari i limiti delle sue attribuzioni.",
+            "Quando la reazione è sproporzionata all'eccesso del funzionario (tesi della giurisprudenza).",
+            "Quando il pubblico ufficiale si è limitato a rivolgersi con modi scortesi (tesi prevalente).",
+            "Quando l'atto arbitrario è unicamente un abuso d'ufficio (Art. 323 c.p.)."
+        ],
+        "answer": "Quando il pubblico ufficiale ha dato causa al fatto, eccedendo con atti arbitrari i limiti delle sue attribuzioni.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_54",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Dolo** (elemento psicologico del reato)?",
+        "options": [
+            "Mancanza di volontà del fatto di reato (colpa).",
+            "Inosservanza di leggi e regolamenti (colpa specifica).",
+            "Previsione e volontà del fatto di reato (Art. 43 c.p.).",
+            "Causare un evento più grave di quello voluto (preterintenzione)."
+        ],
+        "answer": "Previsione e volontà del fatto di reato (Art. 43 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_55",
+        "category": "Diritto Penale",
+        "question": "Quale delle seguenti è una caratteristica che esclude o diminuisce l'imputabilità?",
+        "options": [
+            "Stati emotivi o passionali (Art. 90 c.p.).",
+            "Mancanza di volontà del fatto di reato.",
+            "Infermità mentali (vizio totale o parziale di mente).",
+            "Ubriachezza preordinata alla commissione di un reato."
+        ],
+        "answer": "Infermità mentali (vizio totale o parziale di mente).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_56",
+        "category": "Diritto Penale",
+        "question": "Qual è il rapporto tra **Errore di Diritto sulla Legge Penale** e **Errore di Diritto su Norma Extra-penale** che ricade sul fatto di reato?",
+        "options": [
+            "Entrambi sono scusabili se inevitabili (ignoranza inevitabile).",
+            "L'errore sulla legge penale è inescusabile, l'errore su norma extra-penale è scusabile se ha cagionato un errore sul fatto.",
+            "Entrambi escludono sempre la responsabilità dolosa e colposa.",
+            "L'errore su norma extra-penale è rilevante solo per la recidiva."
+        ],
+        "answer": "L'errore sulla legge penale è inescusabile, l'errore su norma extra-penale è scusabile se ha cagionato un errore sul fatto.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_57",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale che, abusando dei poteri, costringe taluno a dare o promettere indebitamente denaro a lui o a un terzo?",
+        "options": [
+            "Peculato (Art. 314 c.p.).",
+            "Corruzione per l'esercizio della funzione (Art. 318 c.p.).",
+            "Induzione indebita a dare o promettere utilità (Art. 319-quater c.p.).",
+            "Abuso d'ufficio (Art. 323 c.p.)."
+        ],
+        "answer": "Induzione indebita a dare o promettere utilità (Art. 319-quater c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_58",
+        "category": "Diritto Penale",
+        "question": "Qual è il criterio per distinguere un **reato perseguibile d'ufficio** da uno **a querela di parte**?",
+        "options": [
+            "La specie della pena prevista (delitto/contravvenzione).",
+            "La necessità di una formale richiesta della persona offesa per procedere.",
+            "Il concorso di persone nel reato.",
+            "La possibilità di applicare l'oblazione."
+        ],
+        "answer": "La necessità di una formale richiesta della persona offesa per procedere.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_59",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Errore di Fatto sul Fatto**?",
+        "options": [
+            "Erronea interpretazione di una norma extra-penale.",
+            "Falsa conoscenza di un dato di fatto della realtà materiale (es. cacciatore/cinghiale).",
+            "Inesatta conoscenza della vigenza di una legge (scusabile).",
+            "L'errore dovuto a negligenza (inescusabile)."
+        ],
+        "answer": "Falsa conoscenza di un dato di fatto della realtà materiale (es. cacciatore/cinghiale).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_60",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **Riciclaggio** e **Favoreggiamento Reale**?",
+        "options": [
+            "Il Riciclaggio è per delitti non colposi, il Favoreggiamento Reale per qualsiasi reato.",
+            "Il Riciclaggio richiede un'operazione per ostacolare l'identificazione della provenienza delittuosa, non richiesta nel Favoreggiamento Reale.",
+            "Il Favoreggiamento Reale richiede un profitto, il Riciclaggio no.",
+            "Il Riciclaggio è reato proprio, il Favoreggiamento Reale è reato comune."
+        ],
+        "answer": "Il Riciclaggio richiede un'operazione per ostacolare l'identificazione della provenienza delittuosa, non richiesta nel Favoreggiamento Reale.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_61",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale che, nell'esercizio delle sue funzioni, forma in tutto o in parte un atto falso?",
+        "options": [
+            "Falsità ideologica (Art. 479 c.p.).",
+            "Falsità materiale (Art. 476 c.p.).",
+            "Falsità in scrittura privata.",
+            "Simulazione di reato (Art. 367 c.p.)."
+        ],
+        "answer": "Falsità materiale (Art. 476 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_62",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza tra **Omicidio Doloso** e **Omicidio Colposo**?",
+        "options": [
+            "L'Omicidio Doloso si consuma con la morte, il Colposo con le lesioni.",
+            "L'Omicidio Colposo è perseguibile d'ufficio, il Doloso a querela.",
+            "L'Omicidio Doloso è volontario, il Colposo si verifica per negligenza, imprudenza o imperizia.",
+            "Il Doloso è a forma vincolata, il Colposo a forma libera."
+        ],
+        "answer": "L'Omicidio Doloso è volontario, il Colposo si verifica per negligenza, imprudenza o imperizia.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_63",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Recesso Attivo** (o ravvedimento operoso) nel tentativo di delitto?",
+        "options": [
+            "L'agente interrompe volontariamente l'attività criminosa (desistenza volontaria).",
+            "Il reato è impossibile per inidoneità dell'azione.",
+            "Il soggetto, dopo aver posto in essere tutti gli atti idonei, impedisce l'evento.",
+            "La condotta è stata interamente portata a compimento, ma non ha ottenuto il risultato sperato (tentativo compiuto)."
+        ],
+        "answer": "Il soggetto, dopo aver posto in essere tutti gli atti idonei, impedisce l'evento.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_64",
+        "category": "Diritto Penale",
+        "question": "Qual è il limite del **consenso dell'avente diritto** (Art. 50 c.p.) come causa di giustificazione?",
+        "options": [
+            "Il consenso non può riguardare diritti personali.",
+            "Il consenso deve riguardare un diritto disponibile (es. non il diritto alla vita).",
+            "È ammissibile solo se l'agente non ha commesso altri reati.",
+            "Il consenso è ammissibile solo per i reati a forma vincolata."
+        ],
+        "answer": "Il consenso deve riguardare un diritto disponibile (es. non il diritto alla vita).",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_65",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Imputabilità** (Art. 85 c.p.)?",
+        "options": [
+            "Il nesso psichico tra l'agente e il fatto criminoso (colpevolezza).",
+            "La capacità di intendere e di volere al momento del fatto.",
+            "La previsione e volontà del fatto di reato (dolo).",
+            "La pericolosità sociale del reo (misure di sicurezza)."
+        ],
+        "answer": "La capacità di intendere e di volere al momento del fatto.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_66",
+        "category": "Diritto Penale",
+        "question": "Qual è la sanzione per il **Furto** (Art. 624 c.p.)?",
+        "options": [
+            "Reclusione non inferiore a 21 anni.",
+            "Reclusione da 6 mesi a 3 anni e multa.",
+            "Arresto e ammenda.",
+            "Ergastolo."
+        ],
+        "answer": "Reclusione da 6 mesi a 3 anni e multa.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_67",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Recidiva Semplice**?",
+        "options": [
+            "Aumento di pena per delitti della stessa indole.",
+            "Aumento di pena per chi commette un delitto non colposo dopo una precedente condanna per delitto non colposo.",
+            "Reiterazione di violazioni amministrative (Art. 8 bis L. 689/81).",
+            "Aumento di pena fino alla metà (recidiva reiterata)."
+        ],
+        "answer": "Aumento di pena per chi commette un delitto non colposo dopo una precedente condanna per delitto non colposo.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_68",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **Favoreggiamento Personale** e **Ricettazione**?",
+        "options": [
+            "Il Personale aiuta a procurarsi il profitto, la Ricettazione aiuta a eludere le investigazioni.",
+            "La Ricettazione richiede il dolo specifico (profitto), il Favoreggiamento Personale il dolo generico (aiuto a eludere le investigazioni).",
+            "Il Favoreggiamento Personale non richiede un reato presupposto, la Ricettazione sì.",
+            "Il Favoreggiamento Personale si applica ai delitti, la Ricettazione alle contravvenzioni."
+        ],
+        "answer": "La Ricettazione richiede il dolo specifico (profitto), il Favoreggiamento Personale il dolo generico (aiuto a eludere le investigazioni).",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_69",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale o incaricato di pubblico servizio che, nell'esercizio delle sue funzioni, viola norme di legge o regolamentari, procurandosi un ingiusto vantaggio patrimoniale?",
+        "options": [
+            "Peculato (Art. 314 c.p.).",
+            "Abuso d'ufficio (Art. 323 c.p.).",
+            "Omissione o rifiuto di atti d'ufficio (Art. 328 c.p.).",
+            "Concussione (Art. 317 c.p.)."
+        ],
+        "answer": "Abuso d'ufficio (Art. 323 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_70",
+        "category": "Diritto Penale",
+        "question": "Quale principio costituzionale è attuato dalla previsione di un **massimo e un minimo di pena edittale**?",
+        "options": [
+            "Principio di tassatività (Art. 25 Cost.).",
+            "Principio di legalità (Art. 25 Cost.).",
+            "Principio di irretroattività (Art. 25 Cost.).",
+            "Principio di offensività (Art. 25 Cost.)."
+        ],
+        "answer": "Principio di legalità (Art. 25 Cost.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_71",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Delitto Tentato Incompiuto**?",
+        "options": [
+            "La condotta è stata interamente portata a compimento, ma non ha ottenuto il risultato sperato (tentativo compiuto).",
+            "L'agente interrompe volontariamente l'attività criminosa (desistenza volontaria).",
+            "La condotta criminosa non è stata portata al suo totale compimento.",
+            "L'agente impedisce l'evento dopo aver posto in essere tutti gli atti idonei (recesso attivo)."
+        ],
+        "answer": "La condotta criminosa non è stata portata al suo totale compimento.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_72",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **Corruzione** e **Concussione** (Art. 317 c.p.)?",
+        "options": [
+            "Nella Corruzione le parti sono in condizione di parità, nella Concussione il P.U. è in posizione di preminenza (costrizione).",
+            "La Corruzione ha dolo specifico, la Concussione ha dolo generico.",
+            "Il corruttore risponde solo nella Concussione.",
+            "Nella Corruzione il P.U. mira ad evitare un danno, nella Concussione mira a conseguire un vantaggio."
+        ],
+        "answer": "Nella Corruzione le parti sono in condizione di parità, nella Concussione il P.U. è in posizione di preminenza (costrizione).",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_73",
+        "category": "Diritto Penale",
+        "question": "Quale reato si configura se un privato attesta falsamente, al pubblico ufficiale, in un atto pubblico, fatti dei quali l'atto è destinato a provare la verità?",
+        "options": [
+            "Falsità materiale (Art. 476 c.p.).",
+            "Falsità ideologica (Art. 483 c.p.).",
+            "Falsità in scrittura privata.",
+            "Simulazione di reato (Art. 367 c.p.)."
+        ],
+        "answer": "Falsità ideologica (Art. 483 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_74",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale o incaricato di pubblico servizio che, abusando della sua qualità o dei suoi poteri, induce taluno a dare o promettere indebitamente denaro a lui o a un terzo?",
+        "options": [
+            "Peculato (Art. 314 c.p.).",
+            "Induzione indebita a dare o promettere utilità (Art. 319-quater c.p.).",
+            "Corruzione per l'esercizio della funzione (Art. 318 c.p.).",
+            "Concussione (Art. 317 c.p.)."
+        ],
+        "answer": "Induzione indebita a dare o promettere utilità (Art. 319-quater c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_75",
+        "category": "Diritto Penale",
+        "question": "Qual è il regime sanzionatorio del **Reato Continuato**?",
+        "options": [
+            "Cumulo materiale: si applicano tante pene quanti sono i reati commessi.",
+            "Cumulo giuridico: si applica la pena prevista per il reato più grave aumentata fino al triplo.",
+            "Assorbimento: si applica solo la pena prevista per il reato più grave.",
+            "Reclusione da 6 mesi a 3 anni e multa (furto)."
+        ],
+        "answer": "Cumulo giuridico: si applica la pena prevista per il reato più grave aumentata fino al triplo.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_76",
+        "category": "Diritto Penale",
+        "question": "Qual è il significato del **divieto di analogia** nel diritto penale?",
+        "options": [
+            "È ammissibile l'analogia per le norme eccezionali.",
+            "È vietata l'analogia in malam partem (sfavorevole al reo) ma ammissibile l'analogia in bonam partem.",
+            "È ammessa solo per i reati a forma libera.",
+            "È vietata sia l'analogia legis sia l'analogia iuris (principio di tassatività)."
+        ],
+        "answer": "È vietata l'analogia in malam partem (sfavorevole al reo) ma ammissibile l'analogia in bonam partem.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_77",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal privato che, con artifizi o raggiri, induce taluno in errore, procurando a sé o ad altri un ingiusto profitto con altrui danno?",
+        "options": [
+            "Appropriazione indebita (Art. 646 c.p.).",
+            "Estorsione (Art. 629 c.p.).",
+            "Truffa (Art. 640 c.p.).",
+            "Ricettazione (Art. 648 c.p.)."
+        ],
+        "answer": "Truffa (Art. 640 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_78",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Fatto Tipico** nel reato?",
+        "options": [
+            "Il nesso psichico tra l'agente e il fatto criminoso (colpevolezza).",
+            "La contrarietà del fatto all'ordinamento giuridico (antigiuridicità).",
+            "L'accadimento umano descritto da una norma penale (elemento oggettivo).",
+            "La capacità di intendere e di volere (imputabilità)."
+        ],
+        "answer": "L'accadimento umano descritto da una norma penale (elemento oggettivo).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_79",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **Riciclaggio** (Art. 648-bis c.p.) e **Ricettazione** (Art. 648 c.p.)?",
+        "options": [
+            "La Ricettazione richiede il dolo specifico, il Riciclaggio il dolo generico.",
+            "La Ricettazione è per qualsiasi delitto, il Riciclaggio solo per delitti non colposi (provenienza).",
+            "La Ricettazione è per l'appropriazione indebita, il Riciclaggio per i reati contro la P.A..",
+            "Entrambi si configurano solo con l'effettivo conseguimento del profitto."
+        ],
+        "answer": "La Ricettazione è per qualsiasi delitto, il Riciclaggio solo per delitti non colposi (provenienza).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_81",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale che esegue una perquisizione o un'ispezione personale abusando dei poteri inerenti alle sue funzioni?",
+        "options": [
+            "Arresto illegale (Art. 606 c.p.).",
+            "Abuso d'autorità contro arrestati o detenuti (Art. 608 c.p.).",
+            "Perquisizioni e ispezioni personali arbitrarie (Art. 609 c.p.).",
+            "Violenza privata (Art. 610 c.p.)."
+        ],
+        "answer": "Perquisizioni e ispezioni personali arbitrarie (Art. 609 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_83",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso da chiunque, con violenza o minaccia, costringendo taluno a fare o ad omettere qualche cosa, procura a sé o ad altri un ingiusto profitto con altrui danno?",
+        "options": [
+            "Rapina (Art. 628 c.p.).",
+            "Estorsione (Art. 629 c.p.).",
+            "Truffa (Art. 640 c.p.).",
+            "Violenza privata (Art. 610 c.p.)."
+        ],
+        "answer": "Estorsione (Art. 629 c.p.).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_2_85",
+        "category": "Diritto Penale",
+        "question": "Qual è la sanzione per i **delitti**?",
+        "options": [
+            "Arresto e ammenda.",
+            "Ergastolo, reclusione e multa.",
+            "Pene accessorie e pecuniarie.",
+            "Misure di sicurezza patrimoniali."
+        ],
+        "answer": "Ergastolo, reclusione e multa.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_88",
+        "category": "Diritto Penale",
+        "question": "In caso di **Reato Impossibile** (es. sparo a cadavere), quale sanzione è applicabile?",
+        "options": [
+            "La pena prevista per il reato consumato (tentativo compiuto).",
+            "La punibilità è esclusa, ma si applica una **Misura di Sicurezza**.",
+            "La pena prevista per il reato colposo (errore inescusabile).",
+            "L'arresto e l'ammenda (contravvenzione)."
+        ],
+        "answer": "La punibilità è esclusa, ma si applica una **Misura di Sicurezza**.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_2_89",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso da chiunque, con violenza o minaccia, costringe altri a fare, tollerare o omettere qualcosa (senza che si procuri un ingiusto profitto)?",
+        "options": [
+            "Rapina (Art. 628 c.p.).",
+            "Estorsione (Art. 629 c.p.).",
+            "Violenza privata (Art. 610 c.p.).",
+            "Truffa (Art. 640 c.p.)."
+        ],
+        "answer": "Violenza privata (Art. 610 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2_92",
+        "category": "Diritto Penale",
+        "question": "Qual è la conseguenza penale del **Recesso Attivo** (o ravvedimento operoso) nel tentativo di delitto?",
+        "options": [
+            "Il soggetto è punito solo per gli atti compiuti (desistenza volontaria).",
+            "Il soggetto soggiace alla pena stabilita per il delitto tentato, diminuita da un terzo alla metà.",
+            "Il soggetto è esente da pena, in quanto l'evento non si è verificato.",
+            "Il soggetto è punito con la reclusione da 6 mesi a 3 anni (furto)."
+        ],
+        "answer": "Il soggetto soggiace alla pena stabilita per il delitto tentato, diminuita da un terzo alla metà.",
+        "difficulty": 3
     }
 ]
