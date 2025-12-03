@@ -56,8 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start Quiz - Navigate to quiz.html
     startBtn.addEventListener('click', () => {
         const count = questionCountSelect.value;
+        const difficulty = document.getElementById('difficulty-select').value;
         // Redirect to quiz page with parameters
-        window.location.href = `quiz.html?subject=${currentCategory}&count=${count}`;
+        window.location.href = `quiz.html?subject=${currentCategory}&count=${count}&difficulty=${difficulty}`;
     });
 
     if (backToSubjectsBtn) {

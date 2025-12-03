@@ -4506,5 +4506,330 @@
         ],
         "answer": "Il procedimento disciplinare deve essere sospeso fino alla sentenza penale irrevocabile (Pregiudiziale penale)",
         "difficulty": 2
+    },
+    {
+        "id": "ls_ps_1",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale Autorità è responsabile della tutela dell'ordine e della sicurezza pubblica ed è l'Autorità nazionale di P.S.?",
+        "options": [
+            "Il Prefetto",
+            "Il Ministro dell'Interno",
+            "Il Questore",
+            "Il Sindaco"
+        ],
+        "answer": "Il Ministro dell'Interno",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_2",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Cosa si intende per attività **preventiva** di polizia di sicurezza?",
+        "options": [
+            "Attività per assicurare i responsabili alla giustizia.",
+            "Attività diretta a prevenire la commissione dei reati.",
+            "Attività svolta solo dopo che il reato si è verificato.",
+            "Attività per la bonaria composizione dei privati dissidi."
+        ],
+        "answer": "Attività diretta a prevenire la commissione dei reati.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_3",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale Autorità provinciale di P.S. dispone della forza pubblica e ne coordina le attività in provincia?",
+        "options": [
+            "Il Questore, in quanto Autorità tecnica.",
+            "Il Prefetto, in quanto Autorità politico-amministrativa.",
+            "Il Comandante provinciale dell'Arma dei Carabinieri.",
+            "Il Questore e il Prefetto in concorso di poteri."
+        ],
+        "answer": "Il Prefetto, in quanto Autorità politico-amministrativa.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_4",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è una delle finalità dell'operato dell'Autorità di P.S.?",
+        "options": [
+            "Garantire le condizioni di pace sociale.",
+            "Emanare direttive per la tutela dei beni demaniali.",
+            "Emanare leggi e regolamenti in materia di sicurezza pubblica.",
+            "Provvedere all'annullamento delle ordinanze del Sindaco."
+        ],
+        "answer": "Garantire le condizioni di pace sociale.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_5",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il significato giurisprudenziale dell'espressione 'ordine e sicurezza pubblica'?",
+        "options": [
+            "Due concetti distinti che si completano a vicenda (un'endiadi).",
+            "Un unico concetto espresso con due termini (un'endiadi).",
+            "Unicamente la prevenzione dei reati, a tutela della tranquillità sociale.",
+            "Il complesso dei beni giuridici fondamentali e degli interessi pubblici primari (definizione normativa)."
+        ],
+        "answer": "Un unico concetto espresso con due termini (un'endiadi).",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_6",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale tipo di provvedimento di polizia è caratterizzato dall'**Autoritatività** e dall'**Esecutorietà**?",
+        "options": [
+            "Provvedimenti Espansivi (Autorizzazioni, Licenze).",
+            "Provvedimenti Amministrativi di polizia.",
+            "Provvedimenti di polizia di sicurezza (solo preventivi).",
+            "Provvedimenti Reali (che incidono su cose)."
+        ],
+        "answer": "Provvedimenti Amministrativi di polizia.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_7",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Cosa si intende per **Ordinanze di Necessità e d'Urgenza**?",
+        "options": [
+            "Provvedimenti tipici, il cui contenuto è indicato dalla legge.",
+            "Rimedi straordinari adottati in situazioni non previste dalle norme per la cura di un interesse pubblico.",
+            "Ordini emanati dal Prefetto o dal Questore solo per reati di grave entità.",
+            "Provvedimenti di polizia sempre impugnabili al T.A.R. entro 30 giorni."
+        ],
+        "answer": "Rimedi straordinari adottati in situazioni non previste dalle norme per la cura di un interesse pubblico.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_8",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale conseguenza comporta l'inosservanza di un **Ordine** di polizia in caso di prestazione **infungibile** (necessaria collaborazione)?",
+        "options": [
+            "Esecuzione d'ufficio, con la P.A. che si sostituisce all'interessato.",
+            "Impiego della forza pubblica per costringere un soggetto a un determinato comportamento.",
+            "Arresto fino a tre mesi o ammenda fino a euro 206 (Art. 17 T.U.L.P.S.).",
+            "Revoca immediata dell'autorizzazione amministrativa."
+        ],
+        "answer": "Impiego della forza pubblica per costringere un soggetto a un determinato comportamento.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_9",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Cosa implica la **natura atipica** delle ordinanze di necessità e d'urgenza?",
+        "options": [
+            "Non possono contrastare con le leggi ordinarie.",
+            "Il loro contenuto è libero e non è specificato dalla legge.",
+            "Sono sempre ammesse in deroga alla Costituzione.",
+            "Sono sempre impugnabili solo per vizi di merito."
+        ],
+        "answer": "Il loro contenuto è libero e non è specificato dalla legge.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_10",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è la sanzione penale prevista dall'Art. 650 c.p. per l'inosservanza di un provvedimento legalmente dato per ragione di sicurezza pubblica?",
+        "options": [
+            "Multa amministrativa.",
+            "Arresto o ammenda.",
+            "Reclusione da sei mesi a due anni.",
+            "Arresto fino a 3 mesi."
+        ],
+        "answer": "Arresto o ammenda.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_11",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento amministrativo espansivo rimuove un limite all'esercizio di un **diritto preesistente**?",
+        "options": [
+            "Concessione",
+            "Ordine",
+            "Autorizzazione",
+            "Nulla-osta"
+        ],
+        "answer": "Autorizzazione",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_12",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Cosa accade se un cittadino sottoposto a un ordine di P.S. (Art. 4 T.U.L.P.S.) non esibisce la carta d'identità alla richiesta degli operatori?",
+        "options": [
+            "Commette reato contravvenzionale (Art. 650 c.p.).",
+            "Commette solo un illecito amministrativo (Art. 15 T.U.L.P.S.).",
+            "La Polizia può procedere solo a rilievi segnaletici non invasivi.",
+            "Deve essere accompagnato in ufficio per l'identificazione (Art. 11 L. 191/78)."
+        ],
+        "answer": "Commette reato contravvenzionale (Art. 650 c.p.).",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_13",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale Autorità è competente allo **Scioglimento** di una riunione in itinere (in presenza di manifestazioni sediziose), in assenza di un Funzionario di P.S.?",
+        "options": [
+            "Il Questore (Autorità tecnica).",
+            "Il Sindaco (Autorità locale di P.S.).",
+            "Qualsiasi Ufficiale o Sottufficiale dei Carabinieri.",
+            "Il Prefetto (Autorità politico-amministrativa)."
+        ],
+        "answer": "Il Questore (Autorità tecnica).",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_14",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale misura di prevenzione personale è applicata dall'**Autorità Giudiziaria** (A.G.)?",
+        "options": [
+            "Avviso orale",
+            "DASPO",
+            "Foglio di via obbligatorio",
+            "Sorveglianza speciale di P.S."
+        ],
+        "answer": "Sorveglianza speciale di P.S.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_15",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale misura di prevenzione **patrimoniale** è applicata dall'Autorità Giudiziaria?",
+        "options": [
+            "Confisca dei beni",
+            "DASPO",
+            "Avviso orale",
+            "Obbligo di soggiorno"
+        ],
+        "answer": "Confisca dei beni",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_16",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è una delle finalità della **perquisizione preventiva** per la ricerca di armi (Art. 41 T.U.L.P.S.)?",
+        "options": [
+            "Ricerca di sostanze stupefacenti.",
+            "Ricerca di armi, munizioni o materie esplodenti non denunziate.",
+            "Identificazione di persone informate sui fatti (Art. 349 c.p.p.).",
+            "Perquisizione domiciliare in flagranza di reato."
+        ],
+        "answer": "Ricerca di armi, munizioni o materie esplodenti non denunziate.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_17",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Perché la **perquisizione preventiva** sul posto (Art. 4 L. 152/75) **non** è permessa in ufficio, anche se su richiesta dell'interessato?",
+        "options": [
+            "Perché lo $\\texttt{stack overflow}$ lo impedisce.",
+            "Perché si trasformerebbe in fermo di polizia (vietato) e non avverrebbe 'sul posto'.",
+            "Perché l'uso della forza pubblica è vietato in ufficio.",
+            "Perché il verbale non può essere trasmesso al P.M. entro 48 ore."
+        ],
+        "answer": "Perché si trasformerebbe in fermo di polizia (vietato) e non avverrebbe 'sul posto'.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_18",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale Autorità rilascia l'**approvazione della nomina a guardia particolare giurata**?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "Il Ministro dell'Interno"
+        ],
+        "answer": "Il Prefetto",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_19",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il limite di validità delle **Autorizzazioni di polizia** in Categoria C?",
+        "options": [
+            "Durata di 1 anno.",
+            "Durata di 3 anni.",
+            "Durata illimitata, se non revocate.",
+            "Durata di 10 anni (come la carta d'identità)."
+        ],
+        "answer": "Durata di 3 anni.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_20",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale mezzo di impugnazione è ammesso contro i provvedimenti del Questore (non definitivi)?",
+        "options": [
+            "Ricorso straordinario al Capo dello Stato.",
+            "Ricorso giurisdizionale al TAR entro 60 giorni.",
+            "Ricorso gerarchico al Prefetto.",
+            "Ricorso gerarchico al Ministro dell'Interno."
+        ],
+        "answer": "Ricorso gerarchico al Prefetto.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_21",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quando è previsto l'obbligo d'informazione tempestiva al Questore per le licenze rilasciate dal Sindaco?",
+        "options": [
+            "Solo per le licenze relative al commercio ambulante.",
+            "È previsto in molti casi, a tutela dell'interesse statale generale per la sicurezza e l'ordine pubblico.",
+            "Mai, dopo il decentramento amministrativo.",
+            "Solo in caso di somministrazione di bevande alcoliche in circoli privati."
+        ],
+        "answer": "È previsto in molti casi, a tutela dell'interesse statale generale per la sicurezza e l'ordine pubblico.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_22",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il presupposto di fondo per l'applicazione delle **Misure di Prevenzione** (personali e patrimoniali)?",
+        "options": [
+            "Una condanna definitiva per delitto non colposo.",
+            "La capacità a delinquere (pericolosità sociale) attuale e concreta.",
+            "Una reiterazione delle infrazioni disciplinari.",
+            "La mancanza di un documento di identità."
+        ],
+        "answer": "La capacità a delinquere (pericolosità sociale) attuale e concreta.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_23",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento rientra tra gli **Ordini** di polizia restrittivi personali?",
+        "options": [
+            "Passaporto",
+            "Licenza di porto d'armi",
+            "Foglio di via obbligatorio",
+            "Permesso di soggiorno"
+        ],
+        "answer": "Foglio di via obbligatorio",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_24",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il limite al potere del Questore di sospendere una licenza (Art. 100 T.U.L.P.S.)?",
+        "options": [
+            "La sospensione non può durare più di 5 giorni.",
+            "Può sospendere, ma la revoca spetta sempre al Sindaco.",
+            "Deve essere notificata solo dopo che il Questore ha accertato la colpa del titolare.",
+            "Può essere applicata solo agli esercizi di vicinato."
+        ],
+        "answer": "Può sospendere, ma la revoca spetta sempre al Sindaco.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_25",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il ruolo principale degli **Ufficiali e Agenti di P.S.** in relazione al $\\texttt{Sindaco-Autorità locale di P.S.}$?",
+        "options": [
+            "Emanare le ordinanze di necessità e d'urgenza (Art. 2 T.U.L.P.S.).",
+            "Esercitare il potere di controllo nei locali soggetti ad autorizzazione del Sindaco.",
+            "Avvisare il Questore delle infrazioni commesse dal Sindaco.",
+            "Sostituire il Sindaco in caso di sua assenza dal comune."
+        ],
+        "answer": "Esercitare il potere di controllo nei locali soggetti ad autorizzazione del Sindaco.",
+        "difficulty": 3
     }
 ]

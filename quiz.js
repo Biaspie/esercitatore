@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Mapping subject params to DB categories
-    // Mapping subject params to DB categories
     const categoryMap = {
         "ps": "Legislazione di Pubblica Sicurezza",
         "costituzionale": "Diritto Costituzionale",
@@ -43,11 +42,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const subjectParam = urlParams.get('subject') || 'ps';
     const countParam = urlParams.get('count') || '20';
+    const difficultyParam = urlParams.get('difficulty') || 'mixed';
 
     // Initialize Quiz
-    startQuiz(subjectParam, countParam);
+    startQuiz(subjectParam, countParam, difficultyParam);
 
-    async function startQuiz(subject, countSetting) {
+    async function startQuiz(subject, countSetting, difficulty) {
         try {
             // Fetch all questions from the static JSON file
             const response = await fetch('questions.json');
@@ -93,7 +93,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     categories.forEach(catPrefix => {
                         // Get all questions for this category (using prefix match)
-                        const catQuestions = allQuestions.filter(q => q.category.startsWith(catPrefix));
+                        let catQuestions = allQuestions.filter(q => q.category.startsWith(catPrefix));
+
+                        // Filter by difficulty if specified
+                        if (difficulty !== 'mixed') {
+                            catQuestions = catQuestions.filter(q => q.difficulty == difficulty);
+                        }
 
                         // Shuffle them
                         catQuestions.sort(() => Math.random() - 0.5);
@@ -120,6 +125,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     filteredQuestions = allQuestions;
                 }
 
+                // Filter by difficulty if specified
+                if (difficulty !== 'mixed') {
+                    filteredQuestions = filteredQuestions.filter(q => q.difficulty == difficulty);
+                }
+
                 // Limit for specific subject
                 let limit = parseInt(countSetting);
                 if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
@@ -144,7 +154,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         } catch (error) {
             console.error("Error fetching questions:", error);
-            alert("Errore nel caricamento delle domande. Assicurati che il file questions.json esista.");
+            alert(`Errore nel caricamento delle domande: ${error.message}\n\nAssicurati che il file questions.json esista e che tu stia usando un server locale (http://localhost...).`);
         }
     }
 
