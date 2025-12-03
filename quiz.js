@@ -21,6 +21,68 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentQuestionIndex = 0;
     let score = 0;
 
+    // Speed Mode Variables
+    let isSpeedMode = false;
+    let timerInterval;
+    let timeLeft = 10;
+    let autoAdvanceTimeout;
+    const timerContainer = document.getElementById('timer-container');
+    const timerSeconds = document.getElementById('timer-seconds');
+    const liveScoreContainer = document.getElementById('live-score-container');
+    const liveScoreDisplay = document.getElementById('live-score');
+
+    // Audio Context
+    let audioContext = null;
+
+    function initAudio() {
+        if (!audioContext) {
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioContext.state === 'suspended') {
+            audioContext.resume();
+        }
+    }
+
+    function playSound(type) {
+        if (!audioContext) return;
+
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        if (type === 'correct') {
+            // Ding sound (Sine wave, high pitch)
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(600, audioContext.currentTime);
+            oscillator.frequency.exponentialRampToValueAtTime(1200, audioContext.currentTime + 0.1);
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+            oscillator.start();
+            oscillator.stop(audioContext.currentTime + 0.5);
+        } else if (type === 'wrong') {
+            // Buzz sound (Sawtooth wave, low pitch)
+            oscillator.type = 'sawtooth';
+            oscillator.frequency.setValueAtTime(150, audioContext.currentTime);
+            oscillator.frequency.linearRampToValueAtTime(100, audioContext.currentTime + 0.3);
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+            oscillator.start();
+            oscillator.stop(audioContext.currentTime + 0.3);
+        }
+    }
+
+    function triggerHaptic(type) {
+        if (!navigator.vibrate) return;
+
+        if (type === 'correct') {
+            navigator.vibrate(50); // Short tap
+        } else if (type === 'wrong') {
+            navigator.vibrate([100, 50, 100]); // Double tap
+        }
+    }
+
     // Check Protocol
     if (window.location.protocol === 'file:') {
         alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
@@ -48,6 +110,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     startQuiz(subjectParam, countParam, difficultyParam);
 
     async function startQuiz(subject, countSetting, difficulty) {
+        initAudio(); // Initialize Audio Context on user interaction
+
         try {
             // Fetch all questions from the static JSON file
             const response = await fetch('questions.json');
@@ -78,7 +142,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Filter by category
             let filteredQuestions = [];
 
-            if (subject === 'all') {
+            if (subject === 'speed') {
+                isSpeedMode = true;
+                timerContainer.classList.remove('hidden');
+                liveScoreContainer.classList.remove('hidden');
+                // Speed Mode: 50 random questions from ALL categories
+                filteredQuestions = allQuestions;
+                // Shuffle immediately to get random selection
+                filteredQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 50);
+            } else if (subject === 'all') {
                 // Stratified Sampling for "All Subjects"
                 const categories = Object.values(categoryMap);
                 const limit = parseInt(countSetting) || 20;
@@ -194,6 +266,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function loadQuestion() {
+        clearTimeout(autoAdvanceTimeout);
         const question = currentQuestions[currentQuestionIndex];
 
         updateQuestionNav();
@@ -292,13 +365,43 @@ document.addEventListener('DOMContentLoaded', async () => {
                 feedbackDisplay.style.color = "#ef4444";
             }
         }
+
+        if (!question.userAnswer) {
+            startTimer();
+        } else {
+            stopTimer();
+        }
     }
 
     function selectOption(selectedButton, selectedOption, correctAnswer) {
+        stopTimer();
+
         currentQuestions[currentQuestionIndex].userAnswer = selectedOption;
-        if (selectedOption === correctAnswer) {
-            score++;
+        const isCorrect = selectedOption === correctAnswer;
+        currentQuestions[currentQuestionIndex].isCorrect = isCorrect;
+
+        if (isCorrect) {
+            playSound('correct');
+            triggerHaptic('correct');
+            if (isSpeedMode) {
+                const diff = currentQuestions[currentQuestionIndex].difficulty || 1;
+                score += (10 * diff);
+            } else {
+                score++;
+            }
+        } else {
+            playSound('wrong');
+            triggerHaptic('wrong');
+            if (isSpeedMode) {
+                const diff = currentQuestions[currentQuestionIndex].difficulty || 1;
+                score -= (5 * diff);
+            }
         }
+
+        if (isSpeedMode) {
+            liveScoreDisplay.textContent = score;
+        }
+
         updateQuestionNav();
         loadQuestion();
     }
@@ -333,6 +436,41 @@ document.addEventListener('DOMContentLoaded', async () => {
             resultMessage.textContent = "Buono, ma puoi migliorare.";
         } else {
             resultMessage.textContent = "Devi studiare di più!";
+        }
+
+        // Show Save Score Form if Speed Mode
+        const saveScoreContainer = document.getElementById('save-score-container');
+        const playerNameInput = document.getElementById('player-name');
+        const saveScoreBtn = document.getElementById('save-score-btn');
+
+        if (isSpeedMode && saveScoreContainer) {
+            saveScoreContainer.classList.remove('hidden');
+
+            saveScoreBtn.onclick = async () => {
+                const name = playerNameInput.value.trim();
+                if (!name) {
+                    alert("Inserisci un nome!");
+                    return;
+                }
+
+                if (window.Leaderboard) {
+                    saveScoreBtn.disabled = true;
+                    saveScoreBtn.textContent = "Salvataggio...";
+
+                    const success = await window.Leaderboard.saveScore(name, score);
+
+                    if (success) {
+                        alert("Punteggio salvato!");
+                        window.location.href = "index.html"; // Go to home
+                    } else {
+                        alert("Errore nel salvataggio. Riprova.");
+                        saveScoreBtn.disabled = false;
+                        saveScoreBtn.textContent = "Salva";
+                    }
+                } else {
+                    alert("Modulo classifica non caricato.");
+                }
+            };
         }
 
         // Generate Summary
@@ -417,4 +555,79 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
     });
+
+    // Speed Mode Timer Functions
+    function startTimer() {
+        if (!isSpeedMode) return;
+
+        clearInterval(timerInterval);
+        timeLeft = 10;
+        timerSeconds.textContent = timeLeft;
+        timerContainer.classList.remove('warning', 'danger');
+
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            timerSeconds.textContent = timeLeft;
+
+            if (timeLeft <= 5) {
+                timerContainer.classList.add('warning');
+            }
+            if (timeLeft <= 3) {
+                timerContainer.classList.add('danger');
+            }
+
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                handleTimeout();
+            }
+        }, 1000);
+    }
+
+    function stopTimer() {
+        if (!isSpeedMode) return;
+        clearInterval(timerInterval);
+    }
+
+    function handleTimeout() {
+        // Treat as wrong answer
+        const currentQ = currentQuestions[currentQuestionIndex];
+
+        // Disable all options
+        const options = optionsContainer.querySelectorAll('.option-btn');
+        options.forEach(btn => {
+            btn.disabled = true;
+            if (btn.textContent === currentQ.answer) {
+                btn.classList.add('correct');
+            }
+        });
+
+        // Show feedback
+        feedbackDisplay.textContent = "Tempo Scaduto! ⏳";
+        feedbackDisplay.className = 'feedback incorrect';
+
+        playSound('wrong');
+        triggerHaptic('wrong');
+
+        // Calculate Score (Penalty)
+        const difficulty = currentQ.difficulty || 1;
+        const penalty = 5 * difficulty;
+        score -= penalty;
+        scoreDisplay.textContent = score;
+        if (isSpeedMode) {
+            liveScoreDisplay.textContent = score;
+        }
+
+        // Mark as answered (incorrectly)
+        currentQ.userAnswer = "TIMEOUT";
+        currentQ.isCorrect = false;
+
+        // Show Next Button
+        nextBtn.classList.remove('hidden');
+
+        // Auto-advance after short delay? Or wait for user?
+        // User request says "si passa alla successiva", implying auto-advance.
+        autoAdvanceTimeout = setTimeout(() => {
+            nextQuestion();
+        }, 2000);
+    }
 });

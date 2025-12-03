@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz in Corso</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -39,6 +39,14 @@
                         <span id="difficulty-label">Difficoltà:</span>
                         <span id="difficulty-stars"></span>
                     </span>
+                    <div id="timer-container" class="timer-container hidden">
+                        <span id="timer-icon">⏱️</span>
+                        <span id="timer-seconds">10</span>s
+                    </div>
+                    <div id="live-score-container" class="live-score-container hidden">
+                        <span id="score-icon">🏆</span>
+                        <span id="live-score">0</span>
+                    </div>
                 </div>
 
                 <div id="question-nav" class="question-nav">
@@ -76,6 +84,13 @@
                 <div id="summary-container" class="summary-container">
                     <!-- Summary items -->
                 </div>
+                <div id="save-score-container" class="hidden" style="margin-top: 2rem;">
+                    <h3 style="color: #FFD700;">Salva il tuo Punteggio!</h3>
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-top: 1rem;">
+                        <input type="text" id="player-name" placeholder="Il tuo nome" maxlength="15" style="padding: 10px; border-radius: 10px; border: none; font-family: 'Inter', sans-serif;">
+                        <button id="save-score-btn" class="btn primary-btn" style="padding: 10px 20px;">Salva</button>
+                    </div>
+                </div>
 
                 <div class="navigation-buttons">
                     <button id="home-result-btn" class="btn secondary-btn">Home</button>
@@ -85,7 +100,8 @@
         </main>
     </div>
 
-    <script src="quiz.js"></script>
+    <script type="module" src="leaderboard.js"></script>
+    <script src="quiz.js?v=1"></script>
 </body>
 
 </html>

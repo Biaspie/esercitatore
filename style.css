@@ -717,3 +717,124 @@ h2 {
     border-color: rgba(239, 68, 68, 0.3);
     background: rgba(239, 68, 68, 0.1);
 }
+/* Speed Mode Styles */
+.speed-mode-btn {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.speed-mode-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 75, 43, 0.4);
+}
+
+/* Timer Styles */
+.timer-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.timer-container.warning {
+    background: rgba(255, 193, 7, 0.2);
+    border-color: rgba(255, 193, 7, 0.5);
+    color: #ffc107;
+}
+
+.timer-container.danger {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.5);
+    color: #ef4444;
+    animation: pulse-red 1s infinite;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* Live Score Styles */
+.live-score-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 0.5rem;
+    color: #FFD700;
+}
+
+/* Leaderboard Styles */
+.leaderboard-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem 0;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+#leaderboard-table th, #leaderboard-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#leaderboard-table th {
+    background: rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    color: #FFD700;
+}
+
+#leaderboard-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#leaderboard-table td:first-child {
+    font-weight: bold;
+    color: #FFD700;
+    width: 50px;
+}
+
+/* Scrollbar for leaderboard */
+.leaderboard-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.leaderboard-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.leaderboard-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.leaderboard-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+

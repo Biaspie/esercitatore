@@ -27,56 +27,54 @@
         </header>
 
         <main style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
-            <!-- Subject Selection Screen -->
+                        <!-- Subject Selection Screen -->
             <div id="subject-selection-screen" class="screen active">
-                <h2>Scegli la Materia</h2>
+                <h2 style="margin-bottom: 1rem; font-size: 1.5rem;">Scegli la Materia</h2>
 
-                <div class="subjects-scroll-container">
+                <div class="subjects-scroll-container" style="gap: 1.5rem;">
+                    
+                    <!-- Quick Actions Section -->
                     <div class="category-section">
-                        <h3 class="category-title">Area Giuridica</h3>
-                        <div class="subject-grid">
-                            <button class="btn subject-btn" data-subject="ps">
-                                Legislazione P.S.
+                        <h3 class="category-title" style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8; border-left-color: #FFD700;">Azioni Rapide</h3>
+                        <div class="subject-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.8rem;">
+                            <button class="btn subject-btn speed-mode-btn" data-subject="speed" 
+                                style="background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%); border: none; font-size: 0.9rem; height: 80px;">
+                                ⚡ Speed Mode
                             </button>
-                            <button class="btn subject-btn" data-subject="costituzionale">
-                                Diritto Costituzionale
+                            <button id="leaderboard-btn" class="btn secondary-btn" 
+                                style="background: rgba(255, 215, 0, 0.1); border: 1px solid #FFD700; color: #FFD700; font-size: 0.9rem; height: 80px; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem;">
+                                🏆 Classifica
                             </button>
-                            <button class="btn subject-btn" data-subject="penale">
-                                Diritto Penale
+                            <button class="btn subject-btn primary-btn" data-subject="all" style="font-size: 0.9rem; height: 80px;">
+                                📚 Tutte le materie
                             </button>
-                            <button class="btn subject-btn" data-subject="procedura_penale">
-                                Procedura Penale
-                            </button>
-                            <button class="btn subject-btn" data-subject="normativa">
-                                Normativa Disciplinare
-                            </button>
+                            <a href="manuals.html" class="btn secondary-btn" 
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.9rem; text-decoration: none; height: 80px; gap: 0.5rem;">
+                                📖 Manuali
+                            </a>
                         </div>
                     </div>
 
+                    <!-- Area Giuridica -->
                     <div class="category-section">
-                        <h3 class="category-title">Area Tecnica</h3>
-                        <div class="subject-grid">
-                            <button class="btn subject-btn" data-subject="informatica">
-                                Informatica
-                            </button>
+                        <h3 class="category-title" style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Area Giuridica</h3>
+                        <div class="subject-grid" style="gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <button class="btn subject-btn" data-subject="ps" style="height: 80px; font-size: 0.9rem;">Legislazione P.S.</button>
+                            <button class="btn subject-btn" data-subject="costituzionale" style="height: 80px; font-size: 0.9rem;">Diritto Costituzionale</button>
+                            <button class="btn subject-btn" data-subject="penale" style="height: 80px; font-size: 0.9rem;">Diritto Penale</button>
+                            <button class="btn subject-btn" data-subject="procedura_penale" style="height: 80px; font-size: 0.9rem;">Procedura Penale</button>
+                            <button class="btn subject-btn" data-subject="normativa" style="height: 80px; font-size: 0.9rem;">Normativa Disciplinare</button>
                         </div>
                     </div>
 
+                    <!-- Area Tecnica -->
                     <div class="category-section">
-                        <div class="subject-grid">
-                            <button class="btn subject-btn primary-btn" data-subject="all" style="grid-column: 1 / -1;">
-                                Tutti gli Argomenti
-                            </button>
+                        <h3 class="category-title" style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Area Tecnica</h3>
+                        <div class="subject-grid" style="gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <button class="btn subject-btn" data-subject="informatica" style="height: 80px; font-size: 0.9rem;">Informatica</button>
                         </div>
                     </div>
-                </div>
 
-                <!-- Manuals Button -->
-                <div style="text-align: center; margin-top: 1rem;">
-                    <a href="manuals.html" class="btn secondary-btn"
-                        style="display: inline-block; width: auto; padding: 0.8rem 2rem;">
-                        📖 Leggi i Manuali
-                    </a>
                 </div>
             </div>
 
@@ -121,10 +119,33 @@
                     </button>
                 </div>
             </div>
+        
+            <!-- Leaderboard Screen -->
+            <div id="leaderboard-screen" class="screen">
+                <h2 style="color: #FFD700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);">🏆 Classifica Globale</h2>
+                <div class="leaderboard-container">
+                    <table id="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>Punteggio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <tr><td colspan="3">Caricamento...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="navigation-buttons">
+                    <button id="back-from-leaderboard-btn" class="btn secondary-btn">Indietro</button>
+                </div>
+            </div>
         </main>
     </div>
 
-    <script src="home.js"></script>
+    <script type="module" src="leaderboard.js"></script>
+    <script src="home.js?v=1"></script>
 </body>
 
 </html>

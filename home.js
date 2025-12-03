@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'informatica': 'Informatica',
         'amministrativo': 'Diritto Amministrativo',
         'civile': 'Diritto Civile',
-        'all': 'Tutti gli Argomenti'
+        'all': 'Tutti gli Argomenti',
+        'speed': 'Speed Mode ⚡'
     };
 
     // Initialize: Show Subject Selection
@@ -34,7 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     subjectButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const subject = btn.getAttribute('data-subject');
-            selectSubject(subject);
+            if (subject === 'speed') {
+                // Speed Mode: Direct start with fixed settings
+                window.location.href = `quiz.html?subject=speed&count=50&difficulty=mixed`;
+            } else {
+                selectSubject(subject);
+            }
         });
     });
 
@@ -64,6 +70,55 @@ document.addEventListener('DOMContentLoaded', () => {
     if (backToSubjectsBtn) {
         backToSubjectsBtn.addEventListener('click', () => {
             showScreen(subjectSelectionScreen);
+        });
+    }
+
+    // Leaderboard Logic
+    const leaderboardBtn = document.getElementById('leaderboard-btn');
+    const leaderboardScreen = document.getElementById('leaderboard-screen');
+    const backFromLeaderboardBtn = document.getElementById('back-from-leaderboard-btn');
+    const leaderboardBody = document.getElementById('leaderboard-body');
+
+    if (leaderboardBtn) {
+        leaderboardBtn.addEventListener('click', async () => {
+            showScreen(leaderboardScreen);
+            leaderboardBody.innerHTML = '<tr><td colspan="3">Caricamento...</td></tr>';
+
+            if (window.Leaderboard) {
+                const scores = await window.Leaderboard.getLeaderboard();
+                renderLeaderboard(scores);
+            } else {
+                leaderboardBody.innerHTML = '<tr><td colspan="3">Errore caricamento modulo</td></tr>';
+            }
+        });
+    }
+
+    if (backFromLeaderboardBtn) {
+        backFromLeaderboardBtn.addEventListener('click', () => {
+            showScreen(subjectSelectionScreen);
+        });
+    }
+
+    function renderLeaderboard(scores) {
+        leaderboardBody.innerHTML = '';
+        if (scores.length === 0) {
+            leaderboardBody.innerHTML = '<tr><td colspan="3">Nessun punteggio ancora!</td></tr>';
+            return;
+        }
+
+        scores.forEach((entry, index) => {
+            const row = document.createElement('tr');
+            let medal = '';
+            if (index === 0) medal = '🥇 ';
+            if (index === 1) medal = '🥈 ';
+            if (index === 2) medal = '🥉 ';
+
+            row.innerHTML = `
+                <td>${medal}${index + 1}</td>
+                <td>${entry.name}</td>
+                <td>${entry.score}</td>
+            `;
+            leaderboardBody.appendChild(row);
         });
     }
 });
