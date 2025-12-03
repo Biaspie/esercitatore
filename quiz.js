@@ -56,6 +56,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             let allQuestions = await response.json();
 
+            // Normalize questions (handle Object options vs Array options)
+            allQuestions = allQuestions.map(q => {
+                if (Array.isArray(q.options)) {
+                    return q;
+                } else {
+                    // Convert Object options to Array options and update Answer to be the text
+                    // Assumes options are like { "A": "Text", "B": "Text" } and answer is "A"
+                    const optionsArray = Object.values(q.options);
+                    const answerKey = q.answer;
+                    const answerText = q.options[answerKey];
+
+                    return {
+                        ...q,
+                        options: optionsArray,
+                        answer: answerText
+                    };
+                }
+            });
+
             // Filter by category
             let filteredQuestions = [];
 
