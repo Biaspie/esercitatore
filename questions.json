@@ -1573,16 +1573,6 @@
         "difficulty": 1
     },
     {
-        "id": "bd_3564",
-        "category": "Diritto Penale",
-        "question": "L'art. 17 della legge n. 121/1981 stabilisce che:",
-        "options": [
-            "Le funzioni di polizia giudiziaria sono svolte alla dipendenza e sotto la direzione dell'autorità giudiziaria, in conformità a quanto stabilito dal codice di procedura penale. A tal fine, il dipartimento della pubblica sicurezza provvede, nei contingenti necessari, determinati dal Ministro dell'interno, di concerto con il Ministro di grazia e giustizia, all'istituzione e all'organizzazione dei servizi di polizia giudiziaria anche in base alle direttive impartite dal Ministro dell'interno nell'esercizio delle sue attribuzioni di coordinamento. Articolo"
-        ],
-        "answer": "Le funzioni di polizia giudiziaria sono svolte alla dipendenza e sotto la direzione dell'autorità giudiziaria, in conformità a quanto stabilito dal codice di procedura penale. A tal fine, il dipartimento della pubblica sicurezza provvede, nei contingenti necessari, determinati dal Ministro dell'interno, di concerto con il Ministro di grazia e giustizia, all'istituzione e all'organizzazione dei servizi di polizia giudiziaria anche in base alle direttive impartite dal Ministro dell'interno nell'esercizio delle sue attribuzioni di coordinamento. Articolo",
-        "difficulty": 3
-    },
-    {
         "id": 19,
         "category": "Informatica",
         "question": "Quale termine definisce una procedura che risolve un problema su ogni possibile insieme di dati?",
@@ -4831,5 +4821,655 @@
         ],
         "answer": "Esercitare il potere di controllo nei locali soggetti ad autorizzazione del Sindaco.",
         "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_1",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il termine per proporre **Ricorso Straordinario al Presidente della Repubblica** contro un provvedimento amministrativo definitivo?",
+        "options": [
+            "30 giorni",
+            "60 giorni",
+            "120 giorni",
+            "90 giorni"
+        ],
+        "answer": "120 giorni",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_2",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Cosa si intende per **Perquisizione Amministrativa** (Art. 13 L. 689/81)?",
+        "options": [
+            "Perquisizione in flagranza di reato.",
+            "Perquisizione d'iniziativa alla ricerca di armi (Art. 41 T.U.L.P.S.).",
+            "Perquisizione con decreto motivato dell'A.G. (tranne che in privata dimora).",
+            "Perquisizione su iniziativa del Questore."
+        ],
+        "answer": "Perquisizione con decreto motivato dell'A.G. (tranne che in privata dimora).",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_3",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento è un esempio di **Ordine** di polizia restrittivo personale?",
+        "options": [
+            "Licenza di esercizio pubblico",
+            "Divieto di accesso nei luoghi di manifestazioni sportive (DASPO)",
+            "Permesso di soggiorno",
+            "Nulla-osta per l'acquisto di armi"
+        ],
+        "answer": "Divieto di accesso nei luoghi di manifestazioni sportive (DASPO)",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_4",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il limite di durata di tre anni per le **Autorizzazioni di polizia** (se non disposto diversamente)?",
+        "options": [
+            "1 anno",
+            "3 anni",
+            "5 anni",
+            "Illimitata"
+        ],
+        "answer": "3 anni",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_5",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Per quale motivo il **Sindaco-Autorità locale di P.S.** si limita ad espletare compiti burocratici in materia di ordine pubblico?",
+        "options": [
+            "Non è in grado di provare la propria identità.",
+            "Non ha la qualifica di Ufficiale di P.S. (Autorità politica).",
+            "La linea operativa d'azione è definita dal Prefetto e dal Questore.",
+            "Il suo potere è sospeso dal Questore in caso di emergenza."
+        ],
+        "answer": "La linea operativa d'azione è definita dal Prefetto e dal Questore.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_6",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale reato è commesso da chiunque **rifiuti** di fornire le proprie generalità alla richiesta della Polizia?",
+        "options": [
+            "Rifiuto di dare indicazioni sulla propria identità (Art. 651 c.p.).",
+            "Resistenza a pubblico ufficiale (Art. 337 c.p.).",
+            "Falsa attestazione o dichiarazione (Art. 495 c.p.).",
+            "Inosservanza di provvedimenti dell'Autorità (Art. 650 c.p.)."
+        ],
+        "answer": "Rifiuto di dare indicazioni sulla propria identità (Art. 651 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_7",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il limite di durata di tre anni per le **Autorizzazioni di polizia** (se non disposto diversamente)?",
+        "options": [
+            "1 anno",
+            "3 anni",
+            "5 anni",
+            "10 anni"
+        ],
+        "answer": "3 anni",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_8",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quando è previsto l'obbligo d'informazione tempestiva al Questore per le licenze rilasciate dal Sindaco?",
+        "options": [
+            "Solo per le licenze per la somministrazione di bevande alcoliche in circoli privati.",
+            "È previsto in molti casi, a tutela della sicurezza e dell'ordine pubblico.",
+            "Mai, dopo il decentramento amministrativo.",
+            "Solo se la licenza supera i tre anni di validità."
+        ],
+        "answer": "È previsto in molti casi, a tutela della sicurezza e dell'ordine pubblico.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_9",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il ruolo principale degli **Ufficiali e Agenti di P.S.** in relazione al $\\texttt{Sindaco-Autorità locale di P.S.}$?",
+        "options": [
+            "Emanare le ordinanze di necessità e d'urgenza (Art. 2 T.U.L.P.S.).",
+            "Esercitare il potere di controllo nei locali soggetti ad autorizzazione del Sindaco.",
+            "Avvisare il Questore delle infrazioni commesse dal Sindaco.",
+            "Sostituire il Sindaco in caso di sua assenza dal comune."
+        ],
+        "answer": "Esercitare il potere di controllo nei locali soggetti ad autorizzazione del Sindaco.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_10",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale dei seguenti poteri **non** spetta agli **Ufficiali di P.S.** in quanto tali?",
+        "options": [
+            "Emanare provvedimenti amministrativi.",
+            "Dirigere i servizi di ordine pubblico.",
+            "Assicurare l'esecuzione delle disposizioni dell'Autorità di P.S..",
+            "Provvedere alla bonaria composizione dei dissidi privati."
+        ],
+        "answer": "Emanare provvedimenti amministrativi.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_11",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento è un esempio di **Autorizzazione Implicita** in materia di polizia?",
+        "options": [
+            "Licenza",
+            "Visto",
+            "Decreto di approvazione",
+            "Nulla-osta"
+        ],
+        "answer": "Visto",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_12",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Perché un cittadino **non** sospetto né pericoloso **non** ha l'obbligo di essere munito di documento di identità?",
+        "options": [
+            "L'obbligo di munirsi del documento sussiste solo se ordinato dall'Autorità di P.S. (Art. 4 T.U.L.P.S.).",
+            "Il documento di identità è una concessione, non un obbligo.",
+            "L'obbligo è solo per gli extracomunitari, non per i cittadini italiani.",
+            "La Polizia può sempre identificarlo con il solo fotosegnalamento."
+        ],
+        "answer": "L'obbligo di munirsi del documento sussiste solo se ordinato dall'Autorità di P.S. (Art. 4 T.U.L.P.S.).",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_13",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento è **revocato dal Prefetto** al sorvegliato speciale di P.S.?",
+        "options": [
+            "La patente di guida automobilistica.",
+            "La licenza di porto d'armi corte.",
+            "Il passaporto.",
+            "Il permesso di soggiorno."
+        ],
+        "answer": "La patente di guida automobilistica.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_14",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento è un esempio di **Ordine** di polizia restrittivo personale?",
+        "options": [
+            "Foglio di via obbligatorio",
+            "Passaporto",
+            "Licenza di porto d'armi",
+            "Permesso di soggiorno"
+        ],
+        "answer": "Foglio di via obbligatorio",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_15",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "La revoca di un'Autorizzazione di polizia per **abuso** (Art. 10 T.U.L.P.S.) si differenzia dalla revoca per **mancanza di condizioni** (Art. 11 T.U.L.P.S.) perché la prima:",
+        "options": [
+            "È un atto obbligatorio, la seconda è sempre facoltativa.",
+            "È punitiva e legata a un comportamento illecito, la seconda è preventiva e oggettiva.",
+            "Può essere disposta solo dal Prefetto, la seconda solo dal Questore.",
+            "Richiede sempre una sentenza passata in giudicato."
+        ],
+        "answer": "È punitiva e legata a un comportamento illecito, la seconda è preventiva e oggettiva.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_16",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il termine per proporre **Ricorso Gerarchico** (Art. 6 T.U.L.P.S.) contro un provvedimento di P.S.?",
+        "options": [
+            "120 giorni",
+            "30 giorni",
+            "60 giorni",
+            "90 giorni"
+        ],
+        "answer": "30 giorni",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_17",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il ruolo principale degli **Agente di P.S.** nell'ambito dell'attività di prevenzione?",
+        "options": [
+            "Dirigere i servizi di ordine pubblico.",
+            "Svolgere compiti esecutivi alle dipendenze degli Ufficiali di P.S..",
+            "Emanare provvedimenti amministrativi restrittivi.",
+            "Comporre bonariamente i privati dissidi."
+        ],
+        "answer": "Svolgere compiti esecutivi alle dipendenze degli Ufficiali di P.S..",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_18",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è l'implicazione derivante dalla clausola 'salvo che il fatto costituisca reato' nell'Art. 15 T.U.L.P.S. (Invito a comparire)?",
+        "options": [
+            "Esclude l'applicazione del principio di specialità, consentendo l'applicazione prevalente dell'Art. 650 c.p. per ragioni di sicurezza.",
+            "Rende sempre applicabile la sanzione amministrativa (Art. 15 T.U.L.P.S.).",
+            "Consente l'accompagnamento coattivo solo dopo l'accertamento del reato.",
+            "Impone la sospensione dell'azione amministrativa."
+        ],
+        "answer": "Esclude l'applicazione del principio di specialità, consentendo l'applicazione prevalente dell'Art. 650 c.p. per ragioni di sicurezza.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_19",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale reato è commesso da chi non osserva l'ordine di esibizione del documento di identificazione se extracomunitario?",
+        "options": [
+            "Inosservanza di provvedimenti dell'Autorità (Art. 650 c.p.).",
+            "Omessa esibizione del documento, punito con arresto fino a un anno e ammenda fino a € 2.000.",
+            "Illecito amministrativo (Art. 15 T.U.L.P.S.).",
+            "Rifiuto di dare indicazioni sulla propria identità (Art. 651 c.p.)."
+        ],
+        "answer": "Omessa esibizione del documento, punito con arresto fino a un anno e ammenda fino a € 2.000.",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_20",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale Autorità rilascia l'**approvazione della nomina a guardia particolare giurata**?",
+        "options": [
+            "Il Questore",
+            "Il Prefetto",
+            "Il Sindaco",
+            "Il Ministro dell'Interno"
+        ],
+        "answer": "Il Prefetto",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_21",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il limite al potere del Questore di sospendere una licenza (Art. 100 T.U.L.P.S.)?",
+        "options": [
+            "La sospensione non può durare più di 5 giorni.",
+            "Può sospendere, ma la revoca spetta sempre al Sindaco.",
+            "È un potere discrezionale che prescinde dalla colpa del titolare.",
+            "Può essere applicata solo agli esercizi di vicinato."
+        ],
+        "answer": "È un potere discrezionale che prescinde dalla colpa del titolare.",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_22",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "L'efficacia del **DASPO** (divieto d'accesso) decorre da quale momento?",
+        "options": [
+            "Dall'emissione del provvedimento del Questore.",
+            "Dalla notifica del provvedimento all'interessato.",
+            "Dalla convalida del G.I.P. (in caso di prescrizioni).",
+            "Dall'avvio della manifestazione sportiva."
+        ],
+        "answer": "Dalla notifica del provvedimento all'interessato.",
+        "difficulty": 3
+    },
+    {
+        "id": "ls_ps_p3_23",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Qual è il termine massimo di trattenimento in ufficio per l'**Accompagnamento per Identificazione** (Art. 11 L. 191/78)?",
+        "options": [
+            "12 ore",
+            "48 ore",
+            "24 ore",
+            "5 giorni"
+        ],
+        "answer": "24 ore",
+        "difficulty": 1
+    },
+    {
+        "id": "ls_ps_p3_24",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Quale provvedimento è un esempio di **Ordine** di polizia restrittivo personale?",
+        "options": [
+            "Foglio di via obbligatorio",
+            "Permesso di soggiorno",
+            "Licenza di porto d'armi",
+            "Passaporto"
+        ],
+        "answer": "Foglio di via obbligatorio",
+        "difficulty": 2
+    },
+    {
+        "id": "ls_ps_p3_25",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Per quale motivo un array $\\texttt{bidimensionale}$ è memorizzato come una sequenza $\\texttt{unidimensionale}$ di porzioni di memoria **una riga alla volta**?",
+        "options": [
+            "Perché la memoria centrale non è lineare.",
+            "Per semplificare il calcolo dell'indirizzo di memoria degli elementi successivi.",
+            "Perché il $\\texttt{C}$ non supporta gli array $\\texttt{bidimensionali}$ nativamente.",
+            "Per minimizzare il rischio di $\\texttt{stack overflow}$ durante l'accesso."
+        ],
+        "answer": "Per semplificare il calcolo dell'indirizzo di memoria degli elementi successivi.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_1",
+        "category": "Diritto Penale",
+        "question": "Quale principio stabilisce che un fatto, per essere reato, deve essere previsto da una legge entrata in vigore prima del fatto stesso?",
+        "options": [
+            "Principio di tassatività",
+            "Principio di irretroattività",
+            "Principio di materialità",
+            "Principio di offensività"
+        ],
+        "answer": "Principio di irretroattività",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_2",
+        "category": "Diritto Penale",
+        "question": "Quale tra questi elementi **non** è una fonte del diritto penale secondo il principio della riserva di legge?",
+        "options": [
+            "Decreto Legge",
+            "Regolamenti governativi",
+            "Decreto Legislativo",
+            "Leggi statali"
+        ],
+        "answer": "Regolamenti governativi",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_3",
+        "category": "Diritto Penale",
+        "question": "Quando si applica il **principio di retroattività della legge penale più favorevole** (favor rei)?",
+        "options": [
+            "Solo ai reati ancora in fase di indagine preliminare.",
+            "Sempre, tranne se è stata pronunciata sentenza irrevocabile.",
+            "Solo in caso di abrogazione totale del reato (abolitio criminis).",
+            "Mai, prevale l'irretroattività (Art. 25 Cost.)."
+        ],
+        "answer": "Sempre, tranne se è stata pronunciata sentenza irrevocabile.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_4",
+        "category": "Diritto Penale",
+        "question": "Qual è il principale effetto del **principio di tassatività**?",
+        "options": [
+            "Consente al giudice di usare l'analogia a favore del reo.",
+            "Impedisce al giudice di decidere la pena arbitrariamente.",
+            "Impone al legislatore una chiara e precisa descrizione del fatto da punire.",
+            "Rende incostituzionali tutte le norme penali in bianco."
+        ],
+        "answer": "Impone al legislatore una chiara e precisa descrizione del fatto da punire.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_5",
+        "category": "Diritto Penale",
+        "question": "Qual è il criterio di distinzione formale tra **delitti** e **contravvenzioni**?",
+        "options": [
+            "La diversa gravità del fatto commesso.",
+            "La diversa specie delle pene per essi stabilite dal codice penale.",
+            "La possibilità di applicare l'oblazione.",
+            "L'obbligo di procedibilità d'ufficio o a querela."
+        ],
+        "answer": "La diversa specie delle pene per essi stabilite dal codice penale.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_6",
+        "category": "Diritto Penale",
+        "question": "Cosa caratterizza i **reati di pericolo astratto**?",
+        "options": [
+            "La sussistenza del pericolo deve essere accertata dal giudice nel caso concreto.",
+            "La condotta si presume pericolosa di per sé dal legislatore (giudizio a base parziale).",
+            "Costituiscono il modello del tentativo (atti idonei e univoci).",
+            "Rappresentano un tentativo del tentativo (vietato)."
+        ],
+        "answer": "La condotta si presume pericolosa di per sé dal legislatore (giudizio a base parziale).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_7",
+        "category": "Diritto Penale",
+        "question": "Quali sono i tre elementi costitutivi del reato secondo la **teoria della tripartizione**?",
+        "options": [
+            "Condotta, Evento e Causalità.",
+            "Fatto tipico, Antigiuridicità e Colpevolezza.",
+            "Elemento Oggettivo e Elemento Soggettivo.",
+            "Dolo, Colpa e Preterintenzione."
+        ],
+        "answer": "Fatto tipico, Antigiuridicità e Colpevolezza.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_8",
+        "category": "Diritto Penale",
+        "question": "In base alla condotta, i **reati a forma vincolata** sono quelli in cui:",
+        "options": [
+            "La norma non specifica particolari modalità della condotta (es. omicidio).",
+            "La norma specifica le particolari modalità della condotta (es. furto, truffa).",
+            "Il reato può essere convertito da commissivo in omissivo improprio.",
+            "L'evento non è necessario per la loro sussistenza."
+        ],
+        "answer": "La norma specifica le particolari modalità della condotta (es. furto, truffa).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_9",
+        "category": "Diritto Penale",
+        "question": "Qual è il criterio di imputazione per i **delitti**, salvo i casi espressamente previsti dalla legge?",
+        "options": [
+            "La Colpa (negligenza, imprudenza).",
+            "Il Dolo (previsione e volontà del fatto di reato).",
+            "La Preterintenzione (evento più grave di quello voluto).",
+            "La Tendenza a delinquere (pericolosità sociale)."
+        ],
+        "answer": "Il Dolo (previsione e volontà del fatto di reato).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_10",
+        "category": "Diritto Penale",
+        "question": "In cosa consiste la **differenza** tra **dolo eventuale** e **colpa cosciente**?",
+        "options": [
+            "Nella colpa cosciente l'evento è voluto, nel dolo eventuale no.",
+            "Nel dolo eventuale l'agente accetta il rischio dell'evento, nella colpa cosciente l'agente confida che non si verificherà.",
+            "Il dolo eventuale si applica ai delitti, la colpa cosciente alle contravvenzioni.",
+            "La colpa cosciente richiede l'inosservanza di leggi (colpa specifica)."
+        ],
+        "answer": "Nel dolo eventuale l'agente accetta il rischio dell'evento, nella colpa cosciente l'agente confida che non si verificherà.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_11",
+        "category": "Diritto Penale",
+        "question": "Quale elemento costitutivo del reato è escluso dall'esistenza di una **causa di giustificazione** (scriminante)?",
+        "options": [
+            "Il Fatto Tipico.",
+            "La Colpevolezza.",
+            "L'Antigiuridicità.",
+            "Il Rapporto di Causalità."
+        ],
+        "answer": "L'Antigiuridicità.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_12",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Dolo Specifico** (es. furto)?",
+        "options": [
+            "La volontà di realizzare un fatto di reato, senza che rilevi il fine.",
+            "Il soggetto agisce per raggiungere un determinato fine, la cui realizzazione non è necessaria per il reato.",
+            "Il reato è preveduto e voluto come conseguenza diretta.",
+            "L'agente accetta il rischio che si verifichi un evento non voluto."
+        ],
+        "answer": "Il soggetto agisce per raggiungere un determinato fine, la cui realizzazione non è necessaria per il reato.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_13",
+        "category": "Diritto Penale",
+        "question": "Quale causa di giustificazione è propria e può essere invocata solo da alcuni soggetti (es. pubblico ufficiale)?",
+        "options": [
+            "Legittima Difesa (Art. 52 c.p.).",
+            "Stato di Necessità (Art. 54 c.p.).",
+            "Uso Legittimo delle Armi (Art. 53 c.p.).",
+            "Consenso dell'Avente Diritto (Art. 50 c.p.)."
+        ],
+        "answer": "Uso Legittimo delle Armi (Art. 53 c.p.).",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_14",
+        "category": "Diritto Penale",
+        "question": "Quale dei seguenti non è un elemento del **fatto tipico**?",
+        "options": [
+            "La Colpevolezza.",
+            "La Condotta.",
+            "L'Evento.",
+            "Il Rapporto di Causalità."
+        ],
+        "answer": "La Colpevolezza.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_15",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Errore di Diritto sul Fatto**?",
+        "options": [
+            "Falsa interpretazione di una norma penale (inescusabile).",
+            "Erronea interpretazione di una norma **extra-penale** che ricade sul fatto di reato.",
+            "Falsa rappresentazione della realtà materiale (es. cinghiale/uomo).",
+            "Inesatta conoscenza della vigenza di una legge (scusabile)."
+        ],
+        "answer": "Erronea interpretazione di una norma **extra-penale** che ricade sul fatto di reato.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_16",
+        "category": "Diritto Penale",
+        "question": "Quale reato è commesso dal pubblico ufficiale o incaricato di pubblico servizio che si appropria di denaro o cosa mobile altrui avendone il possesso per ragione d'ufficio?",
+        "options": [
+            "Appropriazione indebita (Art. 646 c.p.).",
+            "Peculato (Art. 314 c.p.).",
+            "Concussione (Art. 317 c.p.).",
+            "Abuso d'ufficio (Art. 323 c.p.)."
+        ],
+        "answer": "Peculato (Art. 314 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_17",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **tentativo compiuto** di un delitto?",
+        "options": [
+            "La condotta criminosa non è stata portata al suo totale compimento.",
+            "L'agente interrompe volontariamente l'attività criminosa (desistenza).",
+            "La condotta è stata interamente portata a compimento, ma non ha ottenuto il risultato sperato.",
+            "L'agente impedisce l'evento dopo aver posto in essere tutti gli atti idonei (recesso attivo)."
+        ],
+        "answer": "La condotta è stata interamente portata a compimento, ma non ha ottenuto il risultato sperato.",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_18",
+        "category": "Diritto Penale",
+        "question": "Quale condizione permette l'esercizio del **diritto di cronaca** (causa di giustificazione) nel limite della Legge?",
+        "options": [
+            "Il fatto divulgato deve essere di interesse per l'opinione pubblica (pertinenza) e senza l'uso di espressioni corrette (continenza).",
+            "Il fatto deve essere vero, pertinente e caratterizzato dalla continenza.",
+            "Il fatto può essere falso, ma non deve ledere l'onore di una persona.",
+            "Il fatto deve essere pertinente alla vita privata della persona, anche se non noto."
+        ],
+        "answer": "Il fatto deve essere vero, pertinente e caratterizzato dalla continenza.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_19",
+        "category": "Diritto Penale",
+        "question": "In caso di **Concorso Formale** di reati (una sola azione, più violazioni), qual è il regime sanzionatorio applicato?",
+        "options": [
+            "Cumulo materiale: si applicano tante pene quanti sono i reati commessi.",
+            "Assorbimento: si applica solo la pena prevista per il reato più grave.",
+            "Cumulo giuridico: si applica la pena prevista per il reato più grave aumentata fino al triplo.",
+            "Cumulo giuridico: si applica la pena prevista per il reato più grave aumentata fino alla metà."
+        ],
+        "answer": "Cumulo giuridico: si applica la pena prevista per il reato più grave aumentata fino al triplo.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_20",
+        "category": "Diritto Penale",
+        "question": "Quale reato si configura con l'omissione o il ritardo della denuncia di reato da parte di un pubblico ufficiale?",
+        "options": [
+            "Omissione di soccorso (Art. 593 c.p.).",
+            "Omessa denuncia di reato da parte del pubblico ufficiale (Art. 361 c.p.).",
+            "Favoreggiamento personale (Art. 378 c.p.).",
+            "Omissione di referto (Art. 365 c.p.)."
+        ],
+        "answer": "Omessa denuncia di reato da parte del pubblico ufficiale (Art. 361 c.p.).",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_21",
+        "category": "Diritto Penale",
+        "question": "Quando l'esecuzione di un ordine illegittimo da parte dell'inferiore costituisce reato, di chi è la responsabilità penale (salvo due eccezioni)?",
+        "options": [
+            "Solo del superiore gerarchico che ha impartito l'ordine.",
+            "Solo dell'inferiore che ha eseguito l'ordine.",
+            "Sia del superiore sia dell'inferiore che ha eseguito l'ordine.",
+            "Nessuno dei due (causa di giustificazione)."
+        ],
+        "answer": "Sia del superiore sia dell'inferiore che ha eseguito l'ordine.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_22",
+        "category": "Diritto Penale",
+        "question": "Quale causa di estinzione del reato consiste nel pagamento di una somma di denaro per una contravvenzione punita con la sola ammenda?",
+        "options": [
+            "Amnistia",
+            "Grazia",
+            "Oblazione",
+            "Indulto"
+        ],
+        "answer": "Oblazione",
+        "difficulty": 1
+    },
+    {
+        "id": "dp_gen_23",
+        "category": "Diritto Penale",
+        "question": "Qual è la differenza fondamentale tra **Favoreggiamento Personale** e **Favoreggiamento Reale**?",
+        "options": [
+            "Il Personale aiuta ad assicurare il profitto del reato, il Reale ad eludere le investigazioni.",
+            "Il Personale aiuta ad eludere le investigazioni, il Reale aiuta ad assicurare il profitto o i benefici del reato.",
+            "Il Personale è un reato di danno, il Reale è un reato di pericolo.",
+            "Il Favoreggiamento Personale richiede il dolo specifico, il Reale il dolo generico."
+        ],
+        "answer": "Il Personale aiuta ad eludere le investigazioni, il Reale aiuta ad assicurare il profitto o i benefici del reato.",
+        "difficulty": 2
+    },
+    {
+        "id": "dp_gen_24",
+        "category": "Diritto Penale",
+        "question": "Cosa si intende per **Errore Inescusabile** nel diritto penale?",
+        "options": [
+            "L'errore di fatto dovuto a caso fortuito (esclude la punibilità).",
+            "L'ignoranza inevitabile della legge penale.",
+            "L'errore dovuto a colpa (negligenza, imprudenza) che può comportare responsabilità colposa.",
+            "La falsa interpretazione di una norma extra-penale."
+        ],
+        "answer": "L'errore dovuto a colpa (negligenza, imprudenza) che può comportare responsabilità colposa.",
+        "difficulty": 3
+    },
+    {
+        "id": "dp_gen_25",
+        "category": "Diritto Penale",
+        "question": "Quale tra queste è una causa di estinzione della **Pena**?",
+        "options": [
+            "Prescrizione del reato",
+            "Amnistia",
+            "Grazia",
+            "Remissione della querela"
+        ],
+        "answer": "Grazia",
+        "difficulty": 1
     }
 ]
