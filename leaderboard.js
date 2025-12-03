@@ -23,15 +23,25 @@ const LEADERBOARD_COLLECTION = 'leaderboard';
 window.Leaderboard = {
     saveScore: async (name, score) => {
         try {
-            const docRef = await addDoc(collection(db, LEADERBOARD_COLLECTION), {
-                name: name,
-                score: score,
-                date: new Date().toISOString()
-            });
+            // Create a timeout promise
+            const timeout = new Promise((_, reject) =>
+                setTimeout(() => reject(new Error("Timeout connection")), 5000)
+            );
+
+            const docRef = await Promise.race([
+                addDoc(collection(db, LEADERBOARD_COLLECTION), {
+                    name: name,
+                    score: score,
+                    date: new Date().toISOString()
+                }),
+                timeout
+            ]);
+
             console.log("Document written with ID: ", docRef.id);
             return true;
         } catch (e) {
             console.error("Error adding document: ", e);
+            alert("Errore Firebase: " + e.message); // Show specific error to user
             return false;
         }
     },
