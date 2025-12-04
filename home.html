@@ -50,6 +50,16 @@
                                 style="background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%); border: none; font-size: 0.9rem; height: 80px;">
                                 ⚡ Speed Mode
                             </button>
+                            <a href="quiz.html?mode=favorites" class="btn subject-btn"
+                                style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border: none; font-size: 0.9rem; height: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+                                <span style="font-size: 1.5rem; margin-bottom: 0.2rem;">⭐</span>
+                                Preferiti
+                            </a>
+                            <a href="quiz.html?mode=errors" class="btn subject-btn"
+                                style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); border: none; font-size: 0.9rem; height: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+                                <span style="font-size: 1.5rem; margin-bottom: 0.2rem;">❌</span>
+                                Errori
+                            </a>
                             <button id="leaderboard-btn" class="btn secondary-btn"
                                 style="background: rgba(255, 215, 0, 0.1); border: 1px solid #FFD700; color: #FFD700; font-size: 0.9rem; height: 80px; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem;">
                                 🏆 Classifica
@@ -62,6 +72,18 @@
                                 style="display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.9rem; text-decoration: none; height: 80px; gap: 0.5rem;">
                                 📖 Manuali
                             </a>
+                        </div>
+                    </div>
+
+                    <!-- Test History Section -->
+                    <div class="category-section">
+                        <h3 class="category-title"
+                            style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8; border-left-color: #3b82f6;">
+                            Cronologia Recente</h3>
+                        <div id="history-container" class="subject-grid"
+                            style="grid-template-columns: 1fr; gap: 0.8rem;">
+                            <div style="text-align: center; color: var(--text-muted); padding: 1rem;">Caricamento
+                                cronologia...</div>
                         </div>
                     </div>
 
@@ -187,6 +209,45 @@
             logoutBtn.addEventListener('click', () => {
                 localStorage.removeItem('quizUser');
                 window.location.href = 'index.html';
+            });
+
+            // Load History
+            import('./user-data.js').then(async ({ UserData }) => {
+                const historyContainer = document.getElementById('history-container');
+                const history = await UserData.getRecentHistory(3);
+
+                if (history.length === 0) {
+                    historyContainer.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 1rem; font-size: 0.9rem;">Nessun test recente.</div>';
+                    return;
+                }
+
+                historyContainer.innerHTML = '';
+                history.forEach(test => {
+                    const date = new Date(test.timestamp).toLocaleDateString('it-IT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+                    const scoreClass = (test.score / test.totalQuestions) >= 0.6 ? '#10b981' : '#ef4444';
+
+                    const card = document.createElement('a');
+                    card.href = `quiz.html?mode=history&id=${test.id}`;
+                    card.className = 'btn secondary-btn';
+                    card.style.display = 'flex';
+                    card.style.justifyContent = 'space-between';
+                    card.style.alignItems = 'center';
+                    card.style.textDecoration = 'none';
+                    card.style.padding = '1rem';
+                    card.style.height = 'auto';
+
+                    card.innerHTML = `
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <span style="font-weight: 600; font-size: 0.95rem; color: var(--text-color);">${test.subject === 'speed' ? '⚡ Speed Mode' : (test.subject === 'all' ? '📚 Tutte le materie' : test.subject)}</span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">${date}</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="font-weight: 700; font-size: 1.1rem; color: ${scoreClass};">${test.score}/${test.totalQuestions}</span>
+                            <div style="font-size: 0.7rem; color: var(--text-muted);">Punti</div>
+                        </div>
+                    `;
+                    historyContainer.appendChild(card);
+                });
             });
         });
     </script>

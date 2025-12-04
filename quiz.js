@@ -452,38 +452,47 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Show Save Score Form if Speed Mode
-        const saveScoreContainer = document.getElementById('save-score-container');
-        const playerNameInput = document.getElementById('player-name');
-        const saveScoreBtn = document.getElementById('save-score-btn');
-
-        if (isSpeedMode && saveScoreContainer) {
-            saveScoreContainer.classList.remove('hidden');
-
-            saveScoreBtn.onclick = async () => {
-                const name = playerNameInput.value.trim();
-                if (!name) {
-                    alert("Inserisci un nome!");
-                    return;
-                }
-
-                if (window.Leaderboard) {
-                    saveScoreBtn.disabled = true;
-                    saveScoreBtn.textContent = "Salvataggio...";
-
-                    const success = await window.Leaderboard.saveScore(name, score);
-
-                    if (success) {
-                        alert("Punteggio salvato!");
-                        window.location.href = "home.html"; // Go to home
-                    } else {
-                        alert("Errore nel salvataggio. Riprova.");
-                        saveScoreBtn.disabled = false;
-                        saveScoreBtn.textContent = "Salva";
-                    }
-                } else {
-                    alert("Modulo classifica non caricato.");
-                }
+        // Save Quiz Result to History (if not review mode)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('mode') !== 'history') {
+            const quizData = {
+                subject: urlParams.get('subject') || 'Misto',
+                score: score,
+                totalQuestions: currentQuestions.length,
+                questions: currentQuestions.map(q => ({
+                    id: q.id,
+                    question: q.question,
+                    options: q.options,
+                    answer: q.answer,
+                    userAnswer: q.userAnswer,
+                    isCorrect: q.isCorrect,
+                    difficulty: q.difficulty
+                }))
             };
+            UserData.saveQuizResult(quizData);
+        }
+
+        // Auto-Save Score if Speed Mode
+        if (isSpeedMode) {
+            const savedUser = localStorage.getItem('quizUser');
+
+            if (savedUser && window.Leaderboard) {
+                // Show saving status
+                resultMessage.textContent += " Salvataggio punteggio in corso...";
+
+                // Auto-save
+                window.Leaderboard.saveScore(savedUser, score).then(success => {
+                    if (success) {
+                        alert(`Partita conclusa! Punteggio salvato per ${savedUser}: ${score}`);
+                        window.location.href = "home.html";
+                    } else {
+                        alert("Errore nel salvataggio del punteggio.");
+                    }
+                });
+            } else {
+                // Fallback if something is wrong (no user or no leaderboard)
+                console.warn("Auto-save failed: No user or Leaderboard module missing.");
+            }
         }
 
         // Generate Summary

@@ -52,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const username = usernameInput.value.trim().replace(/\s/g, ''); // Remove spaces
         const password = passwordInput.value;
 
+        // Check for 'admin' in username
+        if (!isLogin && username.toLowerCase().includes('admin')) {
+            alert("Il nome utente non può contenere la parola 'admin'.");
+            return;
+        }
+
         // Create a fake email for Firebase
         const email = `${username}@quizapp.com`;
 
