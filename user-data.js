@@ -135,5 +135,24 @@ export const UserData = {
             console.error("Error fetching history detail:", e);
             return null;
         }
+    },
+
+    async getAllHistory() {
+        const user = auth.currentUser;
+        if (!user) return [];
+
+        const historyCollection = collection(db, COLLECTION_NAME, user.uid, "history");
+        const q = query(historyCollection, orderBy("timestamp", "desc")); // No limit
+
+        try {
+            const querySnapshot = await getDocs(q);
+            return querySnapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data()
+            }));
+        } catch (e) {
+            console.error("Error fetching all history:", e);
+            return [];
+        }
     }
 };

@@ -1,0 +1,150 @@
+import { UserData } from './user-data.js';
+import { auth } from './firebase-config.js';
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+document.addEventListener('DOMContentLoaded', () => {
+    onAuthStateChanged(auth, async (user) => {
+        if (user) {
+            loadStats();
+        } else {
+            alert("Devi essere loggato per vedere le statistiche.");
+            window.location.href = 'index.html';
+        }
+    });
+});
+
+async function loadStats() {
+    try {
+        const history = await UserData.getAllHistory();
+
+        if (history.length === 0) {
+            // Handle empty state
+            document.getElementById('total-tests').textContent = "0";
+            return;
+        }
+
+        // Calculate Summary Stats
+        const totalTests = history.length;
+        let totalQuestions = 0;
+        let totalCorrect = 0;
+        let totalScorePercentage = 0;
+
+        // For Activity Chart
+        const activityMap = {}; // "YYYY-MM-DD": count
+
+        history.forEach(test => {
+            totalQuestions += test.totalQuestions;
+
+            // Calculate correct answers from score (assuming score is number of correct answers)
+            // Note: In speed mode score can be different, but for general stats we might need exact correct count.
+            // If score is just points, we might need to iterate questions if available.
+            // Let's assume for now score ~= correct answers for standard modes, 
+            // but for speed mode it might be higher.
+            // Better approach: Iterate questions if available to count true correct answers.
+
+            let testCorrect = 0;
+            if (test.questions && Array.isArray(test.questions)) {
+                testCorrect = test.questions.filter(q => q.isCorrect).length;
+            } else {
+                // Fallback if questions not saved (legacy?)
+                testCorrect = test.score;
+            }
+            totalCorrect += testCorrect;
+
+            totalScorePercentage += (test.score / test.totalQuestions);
+
+            // Activity
+            const date = new Date(test.timestamp).toISOString().split('T')[0];
+            activityMap[date] = (activityMap[date] || 0) + test.totalQuestions;
+        });
+
+        const avgScore = Math.round((totalScorePercentage / totalTests) * 100);
+        const totalWrong = totalQuestions - totalCorrect;
+
+        // Update DOM
+        document.getElementById('total-tests').textContent = totalTests;
+        document.getElementById('total-questions').textContent = totalQuestions;
+        document.getElementById('average-score').textContent = `${avgScore}%`;
+
+        // Render Charts
+        renderAccuracyChart(totalCorrect, totalWrong);
+        renderActivityChart(activityMap);
+
+    } catch (error) {
+        console.error("Error loading stats:", error);
+    }
+}
+
+function renderAccuracyChart(correct, wrong) {
+    const ctx = document.getElementById('accuracyChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Corrette', 'Errate'],
+            datasets: [{
+                data: [correct, wrong],
+                backgroundColor: ['#10b981', '#ef4444'],
+                borderWidth: 0,
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: { color: '#94a3b8' }
+                }
+            }
+        }
+    });
+}
+
+function renderActivityChart(activityMap) {
+    // Generate last 7 days labels
+    const labels = [];
+    const data = [];
+
+    for (let i = 6; i >= 0; i--) {
+        const d = new Date();
+        d.setDate(d.getDate() - i);
+        const dateStr = d.toISOString().split('T')[0];
+        const labelStr = d.toLocaleDateString('it-IT', { day: 'numeric', month: 'short' });
+
+        labels.push(labelStr);
+        data.push(activityMap[dateStr] || 0);
+    }
+
+    const ctx = document.getElementById('activityChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Domande Svolte',
+                data: data,
+                backgroundColor: '#3b82f6',
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    ticks: { color: '#94a3b8' }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { color: '#94a3b8' }
+                }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+}
