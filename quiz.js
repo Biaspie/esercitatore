@@ -149,7 +149,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Speed Mode: 50 random questions from ALL categories
                 filteredQuestions = allQuestions;
                 // Shuffle immediately to get random selection
-                filteredQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 30);
+                // Fisher-Yates Shuffle
+                for (let i = filteredQuestions.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [filteredQuestions[i], filteredQuestions[j]] = [filteredQuestions[j], filteredQuestions[i]];
+                }
+                filteredQuestions = filteredQuestions.slice(0, 30);
             } else if (subject === 'all') {
                 // Stratified Sampling for "All Subjects"
                 const categories = Object.values(categoryMap);
@@ -173,7 +178,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                         }
 
                         // Shuffle them
-                        catQuestions.sort(() => Math.random() - 0.5);
+                        // Fisher-Yates Shuffle
+                        for (let i = catQuestions.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [catQuestions[i], catQuestions[j]] = [catQuestions[j], catQuestions[i]];
+                        }
 
                         // Determine count for this category
                         let count = baseCount;
@@ -206,7 +215,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let limit = parseInt(countSetting);
                 if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
                     // Shuffle first then slice
-                    filteredQuestions.sort(() => Math.random() - 0.5);
+                    // Fisher-Yates Shuffle
+                    for (let i = filteredQuestions.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [filteredQuestions[i], filteredQuestions[j]] = [filteredQuestions[j], filteredQuestions[i]];
+                    }
                     filteredQuestions = filteredQuestions.slice(0, limit);
                 }
             }
