@@ -106,6 +106,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'auth/network-request-failed':
                     errorMessage = "Errore di connessione. Controlla la tua rete.";
                     break;
+                case 'auth/configuration-not-found':
+                case 'auth/operation-not-allowed':
+                    errorMessage = "ERRORE CONFIGURAZIONE: Devi attivare 'Email/Password' nella Console di Firebase (Authentication > Sign-in method).";
+                    break;
                 default:
                     errorMessage = error.message;
             }
