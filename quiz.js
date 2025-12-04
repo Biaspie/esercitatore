@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
+    let userData = { favorites: [], errors: [] };
 
     // Speed Mode Variables
     let isSpeedMode = false;
@@ -121,7 +122,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function startQuiz(subject, countSetting, difficulty, mode, historyId) {
         initAudio(); // Initialize Audio Context on user interaction
 
-        let userData = { favorites: [], errors: [] };
+        userData = { favorites: [], errors: [] };
         if (auth.currentUser) {
             try {
                 userData = await UserData.getUserData();
