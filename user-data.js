@@ -178,6 +178,17 @@ export const UserData = {
         }
     },
 
+    async updateUserProfile(uid, data) {
+        const docRef = doc(db, COLLECTION_NAME, uid);
+        try {
+            await setDoc(docRef, data, { merge: true });
+            return true;
+        } catch (e) {
+            console.error("Error updating user profile:", e);
+            return false;
+        }
+    },
+
     async recordLogin() {
         const date = new Date().toISOString().split('T')[0];
         const statsRef = doc(db, "stats", date);

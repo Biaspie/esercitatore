@@ -128,6 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Record Login Stat
                 await UserData.recordLogin();
 
+                // Sync username to Firestore (fixes missing username issue)
+                await UserData.updateUserProfile(user.uid, { username: username, email: email });
+
                 // Force Admin Role if username is 'admin'
                 if (username === 'admin') {
                     await UserData.updateUserRole(user.uid, 'admin');
