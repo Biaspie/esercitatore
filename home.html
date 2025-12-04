@@ -26,7 +26,16 @@
             <h1 id="app-title">Esercitatore corso 9 VIT</h1>
             <div id="user-auth-section"
                 style="position: absolute; top: 0; right: 0; display: flex; align-items: center; gap: 1rem;">
-                <span id="user-greeting" style="font-size: 0.9rem; color: var(--text-muted); display: none;"></span>
+                <div id="user-profile-display"
+                    style="display: none; align-items: center; gap: 10px; background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(5px);">
+                    <img id="user-avatar" src="assets/avatars/1.png" alt="Avatar"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #FFD700;">
+                    <div style="display: flex; flex-direction: column; line-height: 1.1;">
+                        <span id="user-greeting" style="font-size: 0.9rem; color: white; font-weight: 600;"></span>
+                        <span id="user-level-display" style="font-size: 0.7rem; color: #FFD700; font-weight: 700;">LVL
+                            1</span>
+                    </div>
+                </div>
                 <button id="logout-btn" class="btn secondary-btn"
                     style="padding: 0.4rem 0.8rem; font-size: 0.8rem; display: none;">Esci</button>
             </div>
@@ -215,36 +224,44 @@
             const userGreeting = document.getElementById('user-greeting');
 
             if (userGreeting && logoutBtn) {
-                userGreeting.style.display = 'block';
-                userGreeting.textContent = `Ciao, ${user}`;
+                const profileDisplay = document.getElementById('user-profile-display');
+                const userAvatar = document.getElementById('user-avatar');
+                const userLevelDisplay = document.getElementById('user-level-display');
+
+                if (profileDisplay) profileDisplay.style.display = 'flex';
+                userGreeting.textContent = user; // Just username
                 logoutBtn.style.display = 'block';
 
-                // Admin Check
-                const adminBtn = document.getElementById('admin-btn');
-                if (user === 'admin' || localStorage.getItem('quizUser') === 'admin') {
-                    if (adminBtn) adminBtn.style.display = 'flex';
+                // Fetch full user data for Level/Avatar
+                onAuthStateChanged(auth, async (firebaseUser) => {
+                    if (firebaseUser) {
+                        try {
+                            const userData = await UserData.getUserData();
+                            if (userData) {
+                                const level = userData.level || 1;
+                                if (userLevelDisplay) userLevelDisplay.textContent = `LVL ${level}`;
+                                if (userAvatar) {
+                                    // Cap at 10 just in case
+                                    const avatarLevel = Math.min(level, 10);
+                                    userAvatar.src = `assets/avatars/${avatarLevel}.png`;
+                                }
 
-                    // Self-promote to ensure Firestore role is correct
-                    onAuthStateChanged(auth, async (firebaseUser) => {
-                        if (firebaseUser) {
-                            const userData = await UserData.getUserData();
-                            if (!userData || userData.role !== 'admin') {
-                                console.log("Auto-promoting admin user...");
-                                await UserData.updateUserRole(firebaseUser.uid, 'admin');
+                                // Admin Check
+                                const adminBtn = document.getElementById('admin-btn');
+                                if (userData.role === 'admin' || user === 'admin') {
+                                    if (adminBtn) adminBtn.style.display = 'flex';
+
+                                    // Self-promote check
+                                    if (user === 'admin' && userData.role !== 'admin') {
+                                        await UserData.updateUserRole(firebaseUser.uid, 'admin');
+                                    }
+                                }
                             }
+                        } catch (e) {
+                            console.error("Error fetching user data for home:", e);
                         }
-                    });
-                } else {
-                    // Check Firestore role for other users
-                    onAuthStateChanged(auth, async (firebaseUser) => {
-                        if (firebaseUser) {
-                            const userData = await UserData.getUserData();
-                            if (userData && userData.role === 'admin') {
-                                if (adminBtn) adminBtn.style.display = 'flex';
-                            }
-                        }
-                    });
-                }
+                    }
+                });
 
                 logoutBtn.addEventListener('click', () => {
                     localStorage.removeItem('quizUser');
