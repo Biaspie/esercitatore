@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const confirmPassword = confirmPasswordInput.value;
 
         // Check for 'admin' in username
-        if (authMode === 'register' && username.toLowerCase().includes('admin')) {
+        if (authMode === 'register' && username.toLowerCase().includes('admin') && username.toLowerCase() !== 'admin') {
             alert("Il nome utente non può contenere la parola 'admin'.");
             return;
         }
@@ -128,6 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Record Login Stat
                 await UserData.recordLogin();
 
+                // Force Admin Role if username is 'admin'
+                if (username === 'admin') {
+                    await UserData.updateUserRole(user.uid, 'admin');
+                }
+
                 // Store user info for legacy compatibility
                 localStorage.setItem('quizUser', username);
                 window.location.href = 'home.html';
@@ -145,6 +150,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Create User Doc
                 await UserData.createUserDocument(user.uid, email, username);
+
+                // Force Admin Role if username is 'admin'
+                if (username === 'admin') {
+                    await UserData.updateUserRole(user.uid, 'admin');
+                }
+
                 // Record Login Stat (Registration counts as first login)
                 await UserData.recordLogin();
 
