@@ -1,3 +1,7 @@
+import { UserData } from './user-data.js';
+import { auth } from './firebase-config.js';
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 document.addEventListener('DOMContentLoaded', async () => {
     const quizScreen = document.getElementById('quiz-screen');
     const resultScreen = document.getElementById('result-screen');
@@ -105,12 +109,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const subjectParam = urlParams.get('subject') || 'ps';
     const countParam = urlParams.get('count') || '20';
     const difficultyParam = urlParams.get('difficulty') || 'mixed';
+    const modeParam = urlParams.get('mode'); // 'favorites', 'errors', 'history'
+    const historyIdParam = urlParams.get('id');
 
     // Initialize Quiz
-    startQuiz(subjectParam, countParam, difficultyParam);
+    // Wait for Auth to be ready to ensure UserData works
+    onAuthStateChanged(auth, (user) => {
+        startQuiz(subjectParam, countParam, difficultyParam, modeParam, historyIdParam);
+    });
 
-    async function startQuiz(subject, countSetting, difficulty) {
+    async function startQuiz(subject, countSetting, difficulty, mode, historyId) {
         initAudio(); // Initialize Audio Context on user interaction
+
+        let userData = { favorites: [], errors: [] };
+        if (auth.currentUser) {
+            try {
+                userData = await UserData.getUserData();
+            } catch (e) {
+                console.warn("Failed to load user data:", e);
+            }
+        }
 
         try {
             // Fetch all questions from the static JSON file
@@ -142,7 +160,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Filter by category
             let filteredQuestions = [];
 
-            if (subject === 'speed') {
+            if (mode === 'history' && historyId) {
+                // Load specific history test
+                try {
+                    const historyTest = await UserData.getHistoryDetail(historyId);
+                    if (historyTest) {
+                        filteredQuestions = historyTest.questions; // These already have userAnswer, isCorrect, etc.
+                        // Disable shuffling for history review to keep original order? Or maybe it's already saved in order.
+                        // The saved questions array should be used as is.
+                        currentQuestions = filteredQuestions;
+                        // Set review mode flag if needed, or just rely on userAnswer being present
+                    } else {
+                        alert("Test non trovato.");
+                        window.location.href = 'home.html';
+                        return;
+                    }
+                } catch (e) {
+                    console.error("Error loading history:", e);
+                    alert("Errore nel caricamento della cronologia.");
+                    window.location.href = 'home.html';
+                    return;
+                }
+            } else if (mode === 'favorites') {
+                if (!userData.favorites || userData.favorites.length === 0) {
+                    alert("Non hai ancora aggiunto domande ai preferiti!");
+                    window.location.href = 'home.html';
+                    return;
+                }
+                filteredQuestions = allQuestions.filter(q => userData.favorites.includes(q.id));
+            } else if (mode === 'errors') {
+                if (!userData.errors || userData.errors.length === 0) {
+                    alert("Non hai errori salvati! Ottimo lavoro!");
+                    window.location.href = 'home.html';
+                    return;
+                }
+                filteredQuestions = allQuestions.filter(q => userData.errors.includes(q.id));
+            } else if (subject === 'speed') {
                 isSpeedMode = true;
                 timerContainer.classList.remove('hidden');
                 liveScoreContainer.classList.remove('hidden');
@@ -289,7 +342,46 @@ document.addEventListener('DOMContentLoaded', async () => {
         void questionText.offsetWidth; // Force reflow
         questionText.classList.add('slide-in');
 
-        questionText.textContent = question.question;
+        // questionText.textContent = question.question;
+        questionText.innerHTML = '';
+        const textNode = document.createTextNode(question.question);
+        questionText.appendChild(textNode);
+
+        // Add Favorite Star
+        const starSpan = document.createElement('span');
+        starSpan.style.cursor = 'pointer';
+        starSpan.style.marginLeft = '10px';
+        starSpan.style.fontSize = '1.5rem';
+        starSpan.style.verticalAlign = 'middle';
+
+        const isFav = userData.favorites && userData.favorites.includes(question.id);
+        starSpan.textContent = isFav ? '★' : '☆';
+        starSpan.style.color = isFav ? '#FFD700' : 'var(--text-muted)';
+
+        starSpan.addEventListener('click', async (e) => {
+            e.stopPropagation();
+            if (!auth.currentUser) {
+                alert("Devi essere loggato per salvare i preferiti.");
+                return;
+            }
+
+            try {
+                await UserData.toggleFavorite(question.id);
+                // Update local state
+                if (userData.favorites.includes(question.id)) {
+                    userData.favorites = userData.favorites.filter(id => id !== question.id);
+                    starSpan.textContent = '☆';
+                    starSpan.style.color = 'var(--text-muted)';
+                } else {
+                    userData.favorites.push(question.id);
+                    starSpan.textContent = '★';
+                    starSpan.style.color = '#FFD700';
+                }
+            } catch (err) {
+                console.error("Error toggling favorite:", err);
+            }
+        });
+        questionText.appendChild(starSpan);
         questionNumberDisplay.textContent = `Domanda ${currentQuestionIndex + 1}/${currentQuestions.length}`;
 
         const progress = ((currentQuestionIndex) / currentQuestions.length) * 100;
@@ -402,12 +494,24 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else {
                 score++;
             }
+
+            // Remove from errors if present (Auto-cleanup)
+            if (auth.currentUser && userData.errors.includes(currentQuestions[currentQuestionIndex].id)) {
+                UserData.removeError(currentQuestions[currentQuestionIndex].id);
+                userData.errors = userData.errors.filter(id => id !== currentQuestions[currentQuestionIndex].id);
+            }
         } else {
             playSound('wrong');
             triggerHaptic('wrong');
             if (isSpeedMode) {
                 const diff = currentQuestions[currentQuestionIndex].difficulty || 1;
                 score -= (5 * diff);
+            }
+
+            // Log Error
+            if (auth.currentUser && !userData.errors.includes(currentQuestions[currentQuestionIndex].id)) {
+                UserData.logError(currentQuestions[currentQuestionIndex].id);
+                userData.errors.push(currentQuestions[currentQuestionIndex].id);
             }
         }
 
@@ -435,7 +539,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    function showResults() {
+    async function showResults() {
         showScreen(resultScreen);
         scoreDisplay.textContent = score;
         totalQuestionsDisplay.textContent = currentQuestions.length;
@@ -469,7 +573,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                     difficulty: q.difficulty
                 }))
             };
-            UserData.saveQuizResult(quizData);
+
+            try {
+                console.log("Saving quiz result...", quizData);
+                const saved = await UserData.saveQuizResult(quizData);
+                if (saved) {
+                    console.log("Quiz result saved successfully.");
+                } else {
+                    console.error("Failed to save quiz result.");
+                }
+            } catch (e) {
+                console.error("Error calling saveQuizResult:", e);
+            }
         }
 
         // Auto-Save Score if Speed Mode
@@ -639,6 +754,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         scoreDisplay.textContent = score;
         if (isSpeedMode) {
             liveScoreDisplay.textContent = score;
+        }
+
+        // Log Error on Timeout
+        if (auth.currentUser && !userData.errors.includes(currentQ.id)) {
+            UserData.logError(currentQ.id);
+            userData.errors.push(currentQ.id);
         }
 
         // Mark as answered (incorrectly)
