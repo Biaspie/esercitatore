@@ -786,19 +786,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             if (comment && comment.trim() !== "") {
                 try {
-                    const response = await fetch('/api/reports', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            questionId: currentQ.id || 'unknown',
-                            question: currentQ.question,
-                            comment: comment.trim()
-                        })
-                    });
+                    const reportData = {
+                        questionId: currentQ.id || 'unknown',
+                        question: currentQ.question,
+                        comment: comment.trim(),
+                        userId: auth.currentUser ? auth.currentUser.uid : 'anonymous',
+                        username: auth.currentUser ? (auth.currentUser.displayName || 'Utente') : 'Anonimo'
+                    };
 
-                    if (response.ok) {
+                    const success = await UserData.submitReport(reportData);
+
+                    if (success) {
                         alert("Segnalazione inviata con successo! Grazie per il tuo contributo.");
                     } else {
                         alert("Errore nell'invio della segnalazione.");

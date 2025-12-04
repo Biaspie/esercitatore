@@ -257,5 +257,45 @@ export const UserData = {
             console.error("Error getting global stats:", e);
             return [];
         }
+    },
+
+    // --- Reports Functions ---
+
+    async submitReport(reportData) {
+        const reportsCol = collection(db, "reports");
+        try {
+            await addDoc(reportsCol, {
+                ...reportData,
+                timestamp: Date.now(),
+                status: 'open'
+            });
+            return true;
+        } catch (e) {
+            console.error("Error submitting report:", e);
+            return false;
+        }
+    },
+
+    async getReports() {
+        const reportsCol = collection(db, "reports");
+        const q = query(reportsCol, orderBy("timestamp", "desc"));
+        try {
+            const snapshot = await getDocs(q);
+            return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        } catch (e) {
+            console.error("Error getting reports:", e);
+            return [];
+        }
+    },
+
+    async deleteReport(reportId) {
+        const docRef = doc(db, "reports", reportId);
+        try {
+            await deleteDoc(docRef);
+            return true;
+        } catch (e) {
+            console.error("Error deleting report:", e);
+            return false;
+        }
     }
 };

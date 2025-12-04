@@ -33,6 +33,10 @@ async function loadAdminDashboard() {
     // Load Users
     const users = await UserData.getAllUsers();
     renderUserTable(users);
+
+    // Load Reports
+    const reports = await UserData.getReports();
+    renderReports(reports);
 }
 
 function renderStatsCharts(stats) {
@@ -133,9 +137,12 @@ function renderUserTable(users) {
     const tbody = document.getElementById('users-table-body');
     tbody.innerHTML = '';
 
+    const currentUserId = auth.currentUser ? auth.currentUser.uid : null;
+
     users.forEach(user => {
         const tr = document.createElement('tr');
         const isAdmin = user.role === 'admin';
+        const isCurrentUser = user.id === currentUserId;
 
         tr.innerHTML = `
             <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">${user.username || 'N/A'}</td>
@@ -146,10 +153,14 @@ function renderUserTable(users) {
                 </span>
             </td>
             <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: right;">
-                ${!isAdmin ? `
-                    <button class="btn-promote" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Promuovi Admin</button>
+                ${!isCurrentUser ? `
+                    ${!isAdmin ? `
+                        <button class="btn-promote" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Promuovi Admin</button>
+                    ` : `
+                        <button class="btn-demote" data-uid="${user.id}" style="background: #f59e0b; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Rimuovi Admin</button>
+                    `}
                     <button class="btn-delete" data-uid="${user.id}" style="background: #ef4444; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Elimina</button>
-                ` : ''}
+                ` : '<span style="color: var(--text-muted); font-size: 0.8rem;">(Tu)</span>'}
             </td>
         `;
         tbody.appendChild(tr);
@@ -172,6 +183,22 @@ function renderUserTable(users) {
         });
     });
 
+    // Demote
+    document.querySelectorAll('.btn-demote').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const uid = e.target.dataset.uid;
+            if (confirm("Sei sicuro di voler rimuovere i privilegi di Admin da questo utente?")) {
+                const success = await UserData.updateUserRole(uid, 'user');
+                if (success) {
+                    alert("Privilegi rimossi con successo!");
+                    loadAdminDashboard(); // Reload
+                } else {
+                    alert("Errore durante l'aggiornamento.");
+                }
+            }
+        });
+    });
+
     // Delete
     document.querySelectorAll('.btn-delete').forEach(btn => {
         btn.addEventListener('click', async (e) => {
@@ -181,6 +208,66 @@ function renderUserTable(users) {
                 if (success) {
                     alert("Utente eliminato con successo!");
                     loadAdminDashboard(); // Reload
+                } else {
+                    alert("Errore durante l'eliminazione.");
+                }
+            }
+        });
+    });
+}
+
+function renderReports(reports) {
+    const container = document.getElementById('reports-list');
+    container.innerHTML = '';
+
+    if (!reports || reports.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 1rem;">Nessuna segnalazione presente.</div>';
+        return;
+    }
+
+    reports.forEach(report => {
+        const item = document.createElement('div');
+        item.style.background = 'rgba(0, 0, 0, 0.2)';
+        item.style.border = '1px solid rgba(255, 255, 255, 0.05)';
+        item.style.borderRadius = '12px';
+        item.style.padding = '1rem';
+        item.style.marginBottom = '1rem';
+        item.style.display = 'flex';
+        item.style.justifyContent = 'space-between';
+        item.style.alignItems = 'flex-start';
+
+        const date = new Date(report.timestamp).toLocaleDateString('it-IT');
+
+        item.innerHTML = `
+            <div>
+                <div style="color: #f59e0b; font-weight: 600; margin-bottom: 0.5rem;">Domanda ID: ${report.questionId}</div>
+                <div style="margin-bottom: 0.5rem; font-size: 0.9rem;">"${report.question}"</div>
+                <div style="color: var(--text-muted); font-size: 0.9rem;">
+                    <strong>Segnalazione:</strong> ${report.comment}
+                </div>
+                <div style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">
+                    Da: ${report.username || 'Anonimo'} • ${date}
+                </div>
+            </div>
+            <button class="btn-resolve" data-rid="${report.id}" style="background: #10b981; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; white-space: nowrap; margin-left: 1rem;">
+                Risolvi
+            </button>
+        `;
+
+        container.appendChild(item);
+    });
+
+    // Resolve (Delete) Report
+    document.querySelectorAll('.btn-resolve').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const rid = e.target.dataset.rid;
+            if (confirm("Segnare come risolta (eliminare) questa segnalazione?")) {
+                const success = await UserData.deleteReport(rid);
+                if (success) {
+                    // Remove from DOM immediately for better UX
+                    e.target.closest('div').remove();
+                    // Or reload
+                    // loadAdminDashboard();
                 } else {
                     alert("Errore durante l'eliminazione.");
                 }
