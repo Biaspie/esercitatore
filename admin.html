@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Segnalazioni</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .admin-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: white;
+        }
+
+        .report-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .report-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .report-id {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .report-time {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .report-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #e2e8f0;
+        }
+
+        .report-comment {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 3px solid #ef4444;
+            padding: 1rem;
+            margin: 1rem 0;
+            color: #fca5a5;
+        }
+
+        .btn-delete {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-delete:hover {
+            background: #dc2626;
+        }
+
+        .login-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 1rem;
+        }
+
+        .login-input {
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <div id="login-screen" class="login-screen">
+        <h2>Admin Login</h2>
+        <input type="password" id="password-input" class="login-input" placeholder="Password">
+        <button id="login-btn" class="btn primary-btn">Accedi</button>
+    </div>
+
+    <div id="dashboard" class="admin-container hidden">
+        <header style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+            <button onclick="window.location.href='index.html'" class="btn secondary-btn"
+                style="padding: 0.5rem 1rem;">←</button>
+            <h1>Segnalazioni Errori</h1>
+        </header>
+
+        <div id="reports-list">
+            <!-- Reports will be loaded here -->
+            <div style="text-align: center; color: #94a3b8;">Caricamento...</div>
+        </div>
+    </div>
+
+    <script>
+        const PASSWORD = "C@ps_2025"; // Simple client-side password for demonstration
+
+        const loginScreen = document.getElementById('login-screen');
+        const dashboard = document.getElementById('dashboard');
+        const passwordInput = document.getElementById('password-input');
+        const loginBtn = document.getElementById('login-btn');
+        const reportsList = document.getElementById('reports-list');
+
+        // Check if already logged in (session storage)
+        if (sessionStorage.getItem('admin_auth') === 'true') {
+            showDashboard();
+        }
+
+        loginBtn.addEventListener('click', () => {
+            if (passwordInput.value === PASSWORD) {
+                sessionStorage.setItem('admin_auth', 'true');
+                showDashboard();
+            } else {
+                alert("Password errata!");
+            }
+        });
+
+        function showDashboard() {
+            loginScreen.classList.add('hidden');
+            dashboard.classList.remove('hidden');
+            loadReports();
+        }
+
+        async function loadReports() {
+            try {
+                const response = await fetch('/api/reports');
+                const reports = await response.json();
+
+                reportsList.innerHTML = '';
+
+                if (reports.length === 0) {
+                    reportsList.innerHTML = `
+                        <div style="text-align: center; color: #94a3b8; margin-top: 3rem;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+                            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Nessuna segnalazione presente.</p>
+                            <button onclick="window.location.href='index.html'" class="btn primary-btn" style="margin: 0 auto;">Torna al Quiz</button>
+                        </div>
+                    `;
+                    return;
+                }
+
+                reports.forEach(report => {
+                    const card = document.createElement('div');
+                    card.className = 'report-card';
+                    card.innerHTML = `
+                        <div class="report-header">
+                            <span class="report-id">ID: ${report.id}</span>
+                            <span class="report-time">${new Date(report.timestamp).toLocaleString()}</span>
+                        </div>
+                        <div class="report-question">
+                            Domanda: ${report.question}
+                        </div>
+                        <div class="report-comment">
+                            <strong>Segnalazione Utente:</strong><br>
+                            ${report.comment}
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="btn-delete" onclick="deleteReport('${report.id}')">Risolto / Elimina</button>
+                        </div>
+                    `;
+                    reportsList.appendChild(card);
+                });
+            } catch (error) {
+                console.error("Error loading reports:", error);
+                reportsList.innerHTML = '<div style="color: #ef4444; text-align: center;">Errore nel caricamento delle segnalazioni.</div>';
+            }
+        }
+
+        window.deleteReport = async (id) => {
+            if (!confirm("Sei sicuro di voler eliminare questa segnalazione?")) return;
+
+            try {
+                const response = await fetch(`/api/reports/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    loadReports();
+                } else {
+                    alert("Errore durante l'eliminazione.");
+                }
+            } catch (error) {
+                console.error("Error deleting report:", error);
+                alert("Errore di connessione.");
+            }
+        };
+    </script>
+</body>
+
+</html>

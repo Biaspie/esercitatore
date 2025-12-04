@@ -519,7 +519,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     prevBtn.addEventListener('click', prevQuestion);
 
     homeBtn.addEventListener('click', () => {
-        window.location.href = 'index.html';
+        if (confirm("Sei sicuro di voler uscire? I progressi andranno persi.")) {
+            window.location.href = 'index.html';
+        }
     });
 
     homeResultBtn.addEventListener('click', () => {
@@ -629,5 +631,39 @@ document.addEventListener('DOMContentLoaded', async () => {
         autoAdvanceTimeout = setTimeout(() => {
             nextQuestion();
         }, 2000);
+    }
+
+    // Report Button Logic
+    const reportBtn = document.getElementById('report-btn');
+    if (reportBtn) {
+        reportBtn.addEventListener('click', async () => {
+            const currentQ = currentQuestions[currentQuestionIndex];
+            const comment = prompt("Descrivi l'errore trovato in questa domanda:");
+
+            if (comment && comment.trim() !== "") {
+                try {
+                    const response = await fetch('/api/reports', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            questionId: currentQ.id || 'unknown',
+                            question: currentQ.question,
+                            comment: comment.trim()
+                        })
+                    });
+
+                    if (response.ok) {
+                        alert("Segnalazione inviata con successo! Grazie per il tuo contributo.");
+                    } else {
+                        alert("Errore nell'invio della segnalazione.");
+                    }
+                } catch (error) {
+                    console.error("Error reporting question:", error);
+                    alert("Errore di connessione. Impossibile inviare la segnalazione.");
+                }
+            }
+        });
     }
 });

@@ -717,13 +717,14 @@ h2 {
     border-color: rgba(239, 68, 68, 0.3);
     background: rgba(239, 68, 68, 0.1);
 }
+
 /* Speed Mode Styles */
 .speed-mode-btn {
     font-weight: 800;
     letter-spacing: 0.5px;
     transition: transform 0.2s, box-shadow 0.2s;
     color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .speed-mode-btn:hover {
@@ -759,9 +760,17 @@ h2 {
 }
 
 @keyframes pulse-red {
-    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
-    70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
 }
 
 /* Live Score Styles */
@@ -797,7 +806,8 @@ h2 {
     color: white;
 }
 
-#leaderboard-table th, #leaderboard-table td {
+#leaderboard-table th,
+#leaderboard-table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -838,3 +848,22 @@ h2 {
     background: rgba(255, 255, 255, 0.3);
 }
 
+/* Report Button */
+.report-btn {
+    background: none;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    transition: all 0.2s;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.report-btn:hover {
+    background: #ef4444;
+    color: white;
+}

@@ -104,6 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadManual(title, filePath) {
         manualTitle.textContent = title;
+
+        // Update Open in New Tab button
+        const openBtn = document.getElementById('open-new-tab-btn');
+        if (openBtn) {
+            openBtn.href = filePath;
+            openBtn.classList.remove('hidden');
+        }
+
         // Use an iframe to display the PDF
         manualViewer.innerHTML = `
             <iframe 
