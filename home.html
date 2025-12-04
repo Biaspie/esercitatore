@@ -213,40 +213,47 @@
 
             // Load History
             import('./user-data.js').then(async ({ UserData }) => {
-                const historyContainer = document.getElementById('history-container');
-                const history = await UserData.getRecentHistory(3);
+                const { auth } = await import('./firebase-config.js');
+                const { onAuthStateChanged } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js");
 
-                if (history.length === 0) {
-                    historyContainer.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 1rem; font-size: 0.9rem;">Nessun test recente.</div>';
-                    return;
-                }
+                onAuthStateChanged(auth, async (user) => {
+                    if (user) {
+                        const historyContainer = document.getElementById('history-container');
+                        const history = await UserData.getRecentHistory(3);
 
-                historyContainer.innerHTML = '';
-                history.forEach(test => {
-                    const date = new Date(test.timestamp).toLocaleDateString('it-IT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
-                    const scoreClass = (test.score / test.totalQuestions) >= 0.6 ? '#10b981' : '#ef4444';
+                        if (history.length === 0) {
+                            historyContainer.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 1rem; font-size: 0.9rem;">Nessun test recente.</div>';
+                            return;
+                        }
 
-                    const card = document.createElement('a');
-                    card.href = `quiz.html?mode=history&id=${test.id}`;
-                    card.className = 'btn secondary-btn';
-                    card.style.display = 'flex';
-                    card.style.justifyContent = 'space-between';
-                    card.style.alignItems = 'center';
-                    card.style.textDecoration = 'none';
-                    card.style.padding = '1rem';
-                    card.style.height = 'auto';
+                        historyContainer.innerHTML = '';
+                        history.forEach(test => {
+                            const date = new Date(test.timestamp).toLocaleDateString('it-IT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+                            const scoreClass = (test.score / test.totalQuestions) >= 0.6 ? '#10b981' : '#ef4444';
 
-                    card.innerHTML = `
-                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                            <span style="font-weight: 600; font-size: 0.95rem; color: var(--text-color);">${test.subject === 'speed' ? '⚡ Speed Mode' : (test.subject === 'all' ? '📚 Tutte le materie' : test.subject)}</span>
-                            <span style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">${date}</span>
-                        </div>
-                        <div style="text-align: right;">
-                            <span style="font-weight: 700; font-size: 1.1rem; color: ${scoreClass};">${test.score}/${test.totalQuestions}</span>
-                            <div style="font-size: 0.7rem; color: var(--text-muted);">Punti</div>
-                        </div>
-                    `;
-                    historyContainer.appendChild(card);
+                            const card = document.createElement('a');
+                            card.href = `quiz.html?mode=history&id=${test.id}`;
+                            card.className = 'btn secondary-btn';
+                            card.style.display = 'flex';
+                            card.style.justifyContent = 'space-between';
+                            card.style.alignItems = 'center';
+                            card.style.textDecoration = 'none';
+                            card.style.padding = '1rem';
+                            card.style.height = 'auto';
+
+                            card.innerHTML = `
+                                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                    <span style="font-weight: 600; font-size: 0.95rem; color: var(--text-color);">${test.subject === 'speed' ? '⚡ Speed Mode' : (test.subject === 'all' ? '📚 Tutte le materie' : test.subject)}</span>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">${date}</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span style="font-weight: 700; font-size: 1.1rem; color: ${scoreClass};">${test.score}/${test.totalQuestions}</span>
+                                    <div style="font-size: 0.7rem; color: var(--text-muted);">Punti</div>
+                                </div>
+                            `;
+                            historyContainer.appendChild(card);
+                        });
+                    }
                 });
             });
         });
