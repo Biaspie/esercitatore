@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove, collection, addDoc, query, orderBy, limit, getDocs, increment } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js";
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove, collection, addDoc, query, orderBy, limit, getDocs, increment, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js";
 import { db, auth } from "./firebase-config.js";
 
 const COLLECTION_NAME = "users";
@@ -233,6 +233,17 @@ export const UserData = {
             return true;
         } catch (e) {
             console.error("Error updating user role:", e);
+            return false;
+        }
+    },
+
+    async deleteUser(uid) {
+        const docRef = doc(db, COLLECTION_NAME, uid);
+        try {
+            await deleteDoc(docRef);
+            return true;
+        } catch (e) {
+            console.error("Error deleting user:", e);
             return false;
         }
     },

@@ -146,13 +146,17 @@ function renderUserTable(users) {
                 </span>
             </td>
             <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: right;">
-                ${!isAdmin ? `<button class="btn-promote" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Promuovi Admin</button>` : ''}
+                ${!isAdmin ? `
+                    <button class="btn-promote" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Promuovi Admin</button>
+                    <button class="btn-delete" data-uid="${user.id}" style="background: #ef4444; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Elimina</button>
+                ` : ''}
             </td>
         `;
         tbody.appendChild(tr);
     });
 
     // Add Event Listeners
+    // Promote
     document.querySelectorAll('.btn-promote').forEach(btn => {
         btn.addEventListener('click', async (e) => {
             const uid = e.target.dataset.uid;
@@ -163,6 +167,22 @@ function renderUserTable(users) {
                     loadAdminDashboard(); // Reload
                 } else {
                     alert("Errore durante l'aggiornamento.");
+                }
+            }
+        });
+    });
+
+    // Delete
+    document.querySelectorAll('.btn-delete').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const uid = e.target.dataset.uid;
+            if (confirm("Sei sicuro di voler ELIMINARE questo utente? L'azione è irreversibile.")) {
+                const success = await UserData.deleteUser(uid);
+                if (success) {
+                    alert("Utente eliminato con successo!");
+                    loadAdminDashboard(); // Reload
+                } else {
+                    alert("Errore durante l'eliminazione.");
                 }
             }
         });
