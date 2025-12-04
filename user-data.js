@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove, collection, addDoc, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js";
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove, collection, addDoc, query, orderBy, limit, getDocs, increment } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js";
 import { db, auth } from "./firebase-config.js";
 
 const COLLECTION_NAME = "users";
@@ -93,6 +93,10 @@ export const UserData = {
                 ...quizData,
                 timestamp: Date.now()
             });
+
+            // Record global stat
+            this.recordQuizCompletion();
+
             return true;
         } catch (e) {
             console.error("Error saving quiz result:", e);
@@ -152,6 +156,83 @@ export const UserData = {
             }));
         } catch (e) {
             console.error("Error fetching all history:", e);
+            return [];
+        }
+    },
+
+    // --- Admin & Stats Functions ---
+
+    async createUserDocument(uid, email, username) {
+        const docRef = doc(db, COLLECTION_NAME, uid);
+        try {
+            await setDoc(docRef, {
+                username: username,
+                email: email,
+                role: 'user', // Default role
+                createdAt: Date.now(),
+                favorites: [],
+                errors: []
+            }, { merge: true });
+        } catch (e) {
+            console.error("Error creating user doc:", e);
+        }
+    },
+
+    async recordLogin() {
+        const date = new Date().toISOString().split('T')[0];
+        const statsRef = doc(db, "stats", date);
+        try {
+            await setDoc(statsRef, {
+                accesses: increment(1)
+            }, { merge: true });
+        } catch (e) {
+            console.error("Error recording login:", e);
+        }
+    },
+
+    async recordQuizCompletion() {
+        const date = new Date().toISOString().split('T')[0];
+        const statsRef = doc(db, "stats", date);
+        try {
+            await setDoc(statsRef, {
+                quizzes: increment(1)
+            }, { merge: true });
+        } catch (e) {
+            console.error("Error recording quiz completion:", e);
+        }
+    },
+
+    async getAllUsers() {
+        // Note: In a real app, this should be paginated and secured via rules/Admin SDK.
+        // Here we assume client has permission (e.g., is admin)
+        const usersCol = collection(db, COLLECTION_NAME);
+        try {
+            const snapshot = await getDocs(usersCol);
+            return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        } catch (e) {
+            console.error("Error getting all users:", e);
+            return [];
+        }
+    },
+
+    async updateUserRole(uid, newRole) {
+        const docRef = doc(db, COLLECTION_NAME, uid);
+        try {
+            await updateDoc(docRef, { role: newRole });
+            return true;
+        } catch (e) {
+            console.error("Error updating user role:", e);
+            return false;
+        }
+    },
+
+    async getGlobalStats() {
+        const statsCol = collection(db, "stats");
+        try {
+            const snapshot = await getDocs(statsCol);
+            return snapshot.docs.map(doc => ({ date: doc.id, ...doc.data() }));
+        } catch (e) {
+            console.error("Error getting global stats:", e);
             return [];
         }
     }

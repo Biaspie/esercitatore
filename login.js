@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { auth } from "./firebase-config.js";
+import { UserData } from "./user-data.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const authForm = document.getElementById('auth-form');
@@ -124,6 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
 
+                // Record Login Stat
+                await UserData.recordLogin();
+
                 // Store user info for legacy compatibility
                 localStorage.setItem('quizUser', username);
                 window.location.href = 'home.html';
@@ -138,6 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const userCredential = await createUserWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
+
+                // Create User Doc
+                await UserData.createUserDocument(user.uid, email, username);
+                // Record Login Stat (Registration counts as first login)
+                await UserData.recordLogin();
 
                 alert("Registrazione completata! Ora verrai reindirizzato.");
                 localStorage.setItem('quizUser', username);
