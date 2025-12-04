@@ -23,9 +23,11 @@ const LEADERBOARD_COLLECTION = 'leaderboard';
 window.Leaderboard = {
     saveScore: async (name, score) => {
         try {
-            // Create a timeout promise
+            console.log("Attempting to save score...", { name, score });
+
+            // Create a timeout promise (15 seconds)
             const timeout = new Promise((_, reject) =>
-                setTimeout(() => reject(new Error("Timeout connection")), 5000)
+                setTimeout(() => reject(new Error("Timeout connection (15s)")), 15000)
             );
 
             const docRef = await Promise.race([
@@ -41,7 +43,7 @@ window.Leaderboard = {
             return true;
         } catch (e) {
             console.error("Error adding document: ", e);
-            alert("Errore Firebase: " + e.message); // Show specific error to user
+            alert("Errore: " + e.message + "\n\nControlla la Console (F12) per dettagli.");
             return false;
         }
     },

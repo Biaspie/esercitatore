@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Speed Mode Variables
     let isSpeedMode = false;
     let timerInterval;
-    let timeLeft = 10;
+    let timeLeft = 20;
     let autoAdvanceTimeout;
     const timerContainer = document.getElementById('timer-container');
     const timerSeconds = document.getElementById('timer-seconds');
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Speed Mode: 50 random questions from ALL categories
                 filteredQuestions = allQuestions;
                 // Shuffle immediately to get random selection
-                filteredQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 50);
+                filteredQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 30);
             } else if (subject === 'all') {
                 // Stratified Sampling for "All Subjects"
                 const categories = Object.values(categoryMap);
@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!isSpeedMode) return;
 
         clearInterval(timerInterval);
-        timeLeft = 10;
+        timeLeft = 20;
         timerSeconds.textContent = timeLeft;
         timerContainer.classList.remove('warning', 'danger');
 
