@@ -89,6 +89,14 @@
 </head>
 
 <body>
+    <script>
+        // Security Check: Only 'admin' can access this page
+        const currentUser = localStorage.getItem('quizUser');
+        if (currentUser !== 'admin') {
+            alert("Accesso negato! Solo l'amministratore può accedere a questa pagina.");
+            window.location.href = 'home.html';
+        }
+    </script>
     <div class="background-shapes">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>

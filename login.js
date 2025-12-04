@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { auth } from "./firebase-config.js";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,51 +9,105 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = authForm.querySelector('button[type="submit"]');
     const usernameInput = document.getElementById('username');
     const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+    const confirmPasswordGroup = document.getElementById('confirm-password-group');
+    const passwordGroup = document.getElementById('password-group');
+    const forgotPasswordLink = document.getElementById('forgot-password');
 
     // Change placeholder to Username
     usernameInput.placeholder = "Username";
     usernameInput.type = "text";
     document.querySelector('label[for="username"]').textContent = "Username";
 
-    let isLogin = true;
+    let authMode = 'login'; // 'login', 'register', 'reset'
 
     // Check Protocol
     if (window.location.protocol === 'file:') {
         alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
     }
 
-    toggleAuth.addEventListener('click', (e) => {
-        e.preventDefault();
-        isLogin = !isLogin;
-
-        if (isLogin) {
+    function updateUI() {
+        if (authMode === 'login') {
             document.title = "Accedi - Esercitatore corso 9 VIT";
             document.querySelector('h1').textContent = "Benvenuto";
             authSubtitle.textContent = "Accedi per salvare i tuoi progressi";
             submitBtn.textContent = "Accedi";
             toggleText.innerHTML = 'Non hai un account? <a href="#" id="toggle-auth" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Registrati</a>';
-        } else {
+
+            confirmPasswordGroup.classList.add('hidden');
+            passwordGroup.classList.remove('hidden');
+            forgotPasswordLink.classList.remove('hidden');
+
+            passwordInput.required = true;
+            confirmPasswordInput.required = false;
+        } else if (authMode === 'register') {
             document.title = "Registrati - Esercitatore corso 9 VIT";
             document.querySelector('h1').textContent = "Crea Account";
             authSubtitle.textContent = "Registrati per iniziare a salvare i tuoi punteggi";
             submitBtn.textContent = "Registrati";
             toggleText.innerHTML = 'Hai già un account? <a href="#" id="toggle-auth" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Accedi</a>';
+
+            confirmPasswordGroup.classList.remove('hidden');
+            passwordGroup.classList.remove('hidden');
+            forgotPasswordLink.classList.add('hidden');
+
+            passwordInput.required = true;
+            confirmPasswordInput.required = true;
+        } else if (authMode === 'reset') {
+            document.title = "Reset Password - Esercitatore corso 9 VIT";
+            document.querySelector('h1').textContent = "Reset Password";
+            authSubtitle.textContent = "Inserisci il tuo username per resettare la password";
+            submitBtn.textContent = "Invia Email di Reset";
+            toggleText.innerHTML = '<a href="#" id="back-to-login" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Torna al Login</a>';
+
+            confirmPasswordGroup.classList.add('hidden');
+            passwordGroup.classList.add('hidden');
+            forgotPasswordLink.classList.add('hidden');
+
+            passwordInput.required = false;
+            confirmPasswordInput.required = false;
         }
 
-        // Re-attach event listener to new element
-        document.getElementById('toggle-auth').addEventListener('click', (e) => {
-            // Trigger the original toggle logic
-            toggleAuth.click();
-        });
+        // Re-attach event listeners for dynamic links
+        const newToggleAuth = document.getElementById('toggle-auth');
+        if (newToggleAuth) {
+            newToggleAuth.addEventListener('click', (e) => {
+                e.preventDefault();
+                authMode = authMode === 'login' ? 'register' : 'login';
+                updateUI();
+            });
+        }
+
+        const backToLogin = document.getElementById('back-to-login');
+        if (backToLogin) {
+            backToLogin.addEventListener('click', (e) => {
+                e.preventDefault();
+                authMode = 'login';
+                updateUI();
+            });
+        }
+    }
+
+    toggleAuth.addEventListener('click', (e) => {
+        e.preventDefault();
+        authMode = 'register';
+        updateUI();
+    });
+
+    forgotPasswordLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        authMode = 'reset';
+        updateUI();
     });
 
     authForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const username = usernameInput.value.trim().replace(/\s/g, ''); // Remove spaces
         const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
 
         // Check for 'admin' in username
-        if (!isLogin && username.toLowerCase().includes('admin')) {
+        if (authMode === 'register' && username.toLowerCase().includes('admin')) {
             alert("Il nome utente non può contenere la parola 'admin'.");
             return;
         }
@@ -65,24 +119,37 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
             submitBtn.textContent = "Caricamento...";
 
-            let userCredential;
-
-            if (isLogin) {
+            if (authMode === 'login') {
                 // Login
-                userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
 
                 // Store user info for legacy compatibility
                 localStorage.setItem('quizUser', username);
                 window.location.href = 'home.html';
-            } else {
+            } else if (authMode === 'register') {
                 // Register
-                userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                if (password !== confirmPassword) {
+                    alert("Le password non coincidono!");
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Registrati";
+                    return;
+                }
+
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
 
                 alert("Registrazione completata! Ora verrai reindirizzato.");
                 localStorage.setItem('quizUser', username);
                 window.location.href = 'home.html';
+            } else if (authMode === 'reset') {
+                // Reset Password
+                // Note: This sends an email to the fake address. Since it's fake, user won't receive it.
+                // But we simulate the flow.
+                await sendPasswordResetEmail(auth, email);
+                alert(`Email di reset inviata a ${email} (Simulazione: Contatta l'amministratore se non hai accesso a questa email).`);
+                authMode = 'login';
+                updateUI();
             }
 
         } catch (error) {
@@ -123,7 +190,9 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(errorMessage);
         } finally {
             submitBtn.disabled = false;
-            submitBtn.textContent = isLogin ? "Accedi" : "Registrati";
+            if (authMode === 'login') submitBtn.textContent = "Accedi";
+            else if (authMode === 'register') submitBtn.textContent = "Registrati";
+            else submitBtn.textContent = "Invia Email di Reset";
         }
     });
 });
