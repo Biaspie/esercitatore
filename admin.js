@@ -36,17 +36,32 @@ async function loadAdminDashboard() {
 }
 
 function renderStatsCharts(stats) {
+    console.log("Rendering stats:", stats); // Debug log
+
+    if (!stats || stats.length === 0) {
+        console.warn("No stats data available.");
+        // Optional: Show a message on the canvas or container
+        return;
+    }
+
     // Sort by date
     stats.sort((a, b) => new Date(a.date) - new Date(b.date));
 
     // Prepare data
-    const labels = stats.map(s => new Date(s.date).toLocaleDateString('it-IT', { day: 'numeric', month: 'short' }));
+    const labels = stats.map(s => {
+        const d = new Date(s.date);
+        return d.toLocaleDateString('it-IT', { day: 'numeric', month: 'short' });
+    });
     const accessesData = stats.map(s => s.accesses || 0);
     const quizzesData = stats.map(s => s.quizzes || 0);
 
     // Accesses Chart
     const ctxAccesses = document.getElementById('accessesChart').getContext('2d');
-    new Chart(ctxAccesses, {
+
+    // Destroy existing chart if any (to prevent duplicates on reload)
+    if (window.accessesChartInstance) window.accessesChartInstance.destroy();
+
+    window.accessesChartInstance = new Chart(ctxAccesses, {
         type: 'line',
         data: {
             labels: labels,
@@ -63,7 +78,15 @@ function renderStatsCharts(stats) {
             responsive: true,
             maintainAspectRatio: false,
             scales: {
-                y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(255,255,255,0.05)' },
+                    ticks: {
+                        color: '#94a3b8',
+                        stepSize: 1,
+                        precision: 0
+                    }
+                },
                 x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
             },
             plugins: { legend: { display: false } }
@@ -72,7 +95,10 @@ function renderStatsCharts(stats) {
 
     // Quizzes Chart
     const ctxQuizzes = document.getElementById('quizzesChart').getContext('2d');
-    new Chart(ctxQuizzes, {
+
+    if (window.quizzesChartInstance) window.quizzesChartInstance.destroy();
+
+    window.quizzesChartInstance = new Chart(ctxQuizzes, {
         type: 'bar',
         data: {
             labels: labels,
@@ -87,7 +113,15 @@ function renderStatsCharts(stats) {
             responsive: true,
             maintainAspectRatio: false,
             scales: {
-                y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(255,255,255,0.05)' },
+                    ticks: {
+                        color: '#94a3b8',
+                        stepSize: 1,
+                        precision: 0
+                    }
+                },
                 x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
             },
             plugins: { legend: { display: false } }
