@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitatore corso 9 VIT</title>
+    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <!-- Dynamic Background -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Glass Container -->
+    <div class="container">
+        <header style="position: relative;">
+            <h1 id="app-title">Esercitatore corso 9 VIT</h1>
+            <div id="user-auth-section"
+                style="position: absolute; top: 0; right: 0; display: flex; align-items: center; gap: 1rem;">
+                <span id="user-greeting" style="font-size: 0.9rem; color: var(--text-muted); display: none;"></span>
+                <button id="logout-btn" class="btn secondary-btn"
+                    style="padding: 0.4rem 0.8rem; font-size: 0.8rem; display: none;">Esci</button>
+            </div>
+        </header>
+
+        <main style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+            <!-- Subject Selection Screen -->
+            <div id="subject-selection-screen" class="screen active">
+                <h2 style="margin-bottom: 1rem; font-size: 1.5rem;">Scegli la Materia</h2>
+
+                <div class="subjects-scroll-container" style="gap: 1.5rem;">
+
+                    <!-- Quick Actions Section -->
+                    <div class="category-section">
+                        <h3 class="category-title"
+                            style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8; border-left-color: #FFD700;">
+                            Azioni Rapide</h3>
+                        <div class="subject-grid"
+                            style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.8rem;">
+                            <button class="btn subject-btn speed-mode-btn" data-subject="speed"
+                                style="background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%); border: none; font-size: 0.9rem; height: 80px;">
+                                ⚡ Speed Mode
+                            </button>
+                            <button id="leaderboard-btn" class="btn secondary-btn"
+                                style="background: rgba(255, 215, 0, 0.1); border: 1px solid #FFD700; color: #FFD700; font-size: 0.9rem; height: 80px; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem;">
+                                🏆 Classifica
+                            </button>
+                            <button class="btn subject-btn primary-btn" data-subject="all"
+                                style="font-size: 0.9rem; height: 80px;">
+                                📚 Tutte le materie
+                            </button>
+                            <a href="manuals.html" class="btn secondary-btn"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.9rem; text-decoration: none; height: 80px; gap: 0.5rem;">
+                                📖 Manuali
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Area Giuridica -->
+                    <div class="category-section">
+                        <h3 class="category-title" style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Area
+                            Giuridica</h3>
+                        <div class="subject-grid"
+                            style="gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <button class="btn subject-btn" data-subject="ps"
+                                style="height: 80px; font-size: 0.9rem;">Legislazione P.S.</button>
+                            <button class="btn subject-btn" data-subject="costituzionale"
+                                style="height: 80px; font-size: 0.9rem;">Diritto Costituzionale</button>
+                            <button class="btn subject-btn" data-subject="penale"
+                                style="height: 80px; font-size: 0.9rem;">Diritto Penale</button>
+                            <button class="btn subject-btn" data-subject="procedura_penale"
+                                style="height: 80px; font-size: 0.9rem;">Procedura Penale</button>
+                            <button class="btn subject-btn" data-subject="normativa"
+                                style="height: 80px; font-size: 0.9rem;">Normativa Disciplinare</button>
+                        </div>
+                    </div>
+
+                    <!-- Area Tecnica -->
+                    <div class="category-section">
+                        <h3 class="category-title" style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Area
+                            Tecnica</h3>
+                        <div class="subject-grid"
+                            style="gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <button class="btn subject-btn" data-subject="informatica"
+                                style="height: 80px; font-size: 0.9rem;">Informatica</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Start Screen -->
+            <div id="start-screen" class="screen">
+                <h2 id="subject-title">Benvenuto al Quiz</h2>
+
+                <div class="settings-container"
+                    style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 16px; margin: 2rem 0;">
+                    <label for="question-count"
+                        style="display: block; margin-bottom: 1rem; color: var(--text-muted); font-weight: 500;">
+                        Numero di domande:
+                    </label>
+                    <select id="question-count" class="settings-select"
+                        style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2); color: var(--text-color); font-size: 1rem; outline: none; cursor: pointer;">
+                        <option value="10">10 Domande</option>
+                        <option value="20" selected>20 Domande</option>
+                        <option value="50">50 Domande</option>
+                        <option value="100">100 Domande</option>
+                        <option value="all">Tutte le Domande</option>
+                    </select>
+
+                    <label for="difficulty-select"
+                        style="display: block; margin-top: 1rem; margin-bottom: 1rem; color: var(--text-muted); font-weight: 500;">
+                        Livello di Difficoltà:
+                    </label>
+                    <select id="difficulty-select" class="settings-select"
+                        style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2); color: var(--text-color); font-size: 1rem; outline: none; cursor: pointer;">
+                        <option value="mixed" selected>Mista (Tutte le difficoltà)</option>
+                        <option value="1">Facile (★☆☆)</option>
+                        <option value="2">Media (★★☆)</option>
+                        <option value="3">Difficile (★★★)</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
+                    <button id="start-btn" class="btn primary-btn" style="width: 100%; font-size: 1.1rem;">
+                        Avvia Quiz
+                    </button>
+                    <button id="back-to-subjects-btn" class="btn secondary-btn" style="width: 100%;">
+                        Torna alle Materie
+                    </button>
+                </div>
+            </div>
+
+            <!-- Leaderboard Screen -->
+            <div id="leaderboard-screen" class="screen">
+                <h2 style="color: #FFD700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);">🏆 Classifica Globale</h2>
+                <div class="leaderboard-container">
+                    <table id="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>Punteggio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <tr>
+                                <td colspan="3">Caricamento...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="navigation-buttons">
+                    <button id="back-from-leaderboard-btn" class="btn secondary-btn">Indietro</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="leaderboard.js"></script>
+    <script src="home.js?v=1"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const user = localStorage.getItem('quizUser');
+
+            if (!user) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const logoutBtn = document.getElementById('logout-btn');
+            const userGreeting = document.getElementById('user-greeting');
+
+            userGreeting.style.display = 'block';
+            userGreeting.textContent = `Ciao, ${user}`;
+            logoutBtn.style.display = 'block';
+
+            logoutBtn.addEventListener('click', () => {
+                localStorage.removeItem('quizUser');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

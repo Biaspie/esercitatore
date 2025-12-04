@@ -20,6 +20,97 @@ if (!fs.existsSync(REPORTS_FILE)) {
 
 // API Routes
 
+const crypto = require('crypto');
+
+// File to store users
+const USERS_FILE = path.join(__dirname, 'users.json');
+
+// Ensure users file exists
+if (!fs.existsSync(USERS_FILE)) {
+    fs.writeFileSync(USERS_FILE, JSON.stringify([]));
+}
+
+// Helper to hash password
+function hashPassword(password) {
+    return crypto.createHash('sha256').update(password).digest('hex');
+}
+
+// API Routes
+
+// Register User
+app.post('/api/register', (req, res) => {
+    const { username, password } = req.body;
+
+    if (!username || !password) {
+        return res.status(400).json({ error: 'Username e password richiesti' });
+    }
+
+    fs.readFile(USERS_FILE, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading users file:", err);
+            return res.status(500).json({ error: 'Errore server' });
+        }
+
+        try {
+            const users = JSON.parse(data);
+
+            if (users.find(u => u.username === username)) {
+                return res.status(400).json({ error: 'Username già esistente' });
+            }
+
+            const newUser = {
+                id: Date.now().toString(),
+                username,
+                password: hashPassword(password),
+                createdAt: new Date().toISOString()
+            };
+
+            users.push(newUser);
+
+            fs.writeFile(USERS_FILE, JSON.stringify(users, null, 2), (err) => {
+                if (err) {
+                    console.error("Error writing users file:", err);
+                    return res.status(500).json({ error: 'Errore nel salvataggio' });
+                }
+                res.json({ success: true, message: 'Registrazione avvenuta con successo' });
+            });
+        } catch (parseError) {
+            console.error("Error parsing users JSON:", parseError);
+            return res.status(500).json({ error: 'Errore interno del server (Database corrotto)' });
+        }
+    });
+});
+
+// Login User
+app.post('/api/login', (req, res) => {
+    const { username, password } = req.body;
+
+    if (!username || !password) {
+        return res.status(400).json({ error: 'Username e password richiesti' });
+    }
+
+    fs.readFile(USERS_FILE, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading users file:", err);
+            return res.status(500).json({ error: 'Errore server' });
+        }
+
+        try {
+            const users = JSON.parse(data);
+            const user = users.find(u => u.username === username && u.password === hashPassword(password));
+
+            if (user) {
+                res.json({ success: true, username: user.username, message: 'Login effettuato' });
+            } else {
+                res.status(401).json({ error: 'Credenziali non valide' });
+            }
+        } catch (parseError) {
+            console.error("Error parsing users JSON:", parseError);
+            return res.status(500).json({ error: 'Errore interno del server (Database corrotto)' });
+        }
+    });
+});
+
 // Get all reports (Admin only - simplified protection)
 app.get('/api/reports', (req, res) => {
     // In a real app, check session/token here. 

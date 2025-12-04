@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     if (success) {
                         alert("Punteggio salvato!");
-                        window.location.href = "index.html"; // Go to home
+                        window.location.href = "home.html"; // Go to home
                     } else {
                         alert("Errore nel salvataggio. Riprova.");
                         saveScoreBtn.disabled = false;
@@ -533,12 +533,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     homeBtn.addEventListener('click', () => {
         if (confirm("Sei sicuro di voler uscire? I progressi andranno persi.")) {
-            window.location.href = 'index.html';
+            window.location.href = 'home.html';
         }
     });
 
     homeResultBtn.addEventListener('click', () => {
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     });
 
     restartBtn.addEventListener('click', () => {
