@@ -126,6 +126,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (auth.currentUser) {
             try {
                 userData = await UserData.getUserData();
+                // Initialize EXP UI
+                updateExpUI(userData.exp || 0, userData.level || 1);
             } catch (e) {
                 console.warn("Failed to load user data:", e);
             }
@@ -501,6 +503,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                 UserData.removeError(currentQuestions[currentQuestionIndex].id);
                 userData.errors = userData.errors.filter(id => id !== currentQuestions[currentQuestionIndex].id);
             }
+
+            // Award EXP
+            if (auth.currentUser) {
+                UserData.addExp(10).then(result => {
+                    if (result) {
+                        updateExpUI(result.newExp, result.newLevel);
+                        if (result.leveledUp) {
+                            showLevelUpNotification(result.newLevel);
+                        }
+                    }
+                });
+            }
         } else {
             playSound('wrong');
             triggerHaptic('wrong');
@@ -801,11 +815,71 @@ document.addEventListener('DOMContentLoaded', async () => {
                     } else {
                         alert("Errore nell'invio della segnalazione.");
                     }
-                } catch (error) {
-                    console.error("Error reporting question:", error);
-                    alert("Errore di connessione. Impossibile inviare la segnalazione.");
+                } catch (e) {
+                    console.error("Error submitting report:", e);
+                    alert("Errore durante l'invio.");
                 }
             }
         });
     }
+
+    // EXP UI Functions
+    function updateExpUI(exp, level) {
+        const userLevelDisplay = document.getElementById('user-level');
+        const expFill = document.getElementById('exp-fill');
+        const expText = document.getElementById('exp-text');
+
+        if (!userLevelDisplay || !expFill || !expText) return;
+
+        userLevelDisplay.textContent = level;
+
+        const thresholds = UserData.getLevelThresholds();
+        const currentLevelThreshold = thresholds[level - 1] || 0; // Start of current level
+        const nextLevelThreshold = thresholds[level] || (currentLevelThreshold + 500); // End of current level (approx)
+
+        const expInLevel = exp - currentLevelThreshold;
+        const levelRange = nextLevelThreshold - currentLevelThreshold;
+
+        let percentage = (expInLevel / levelRange) * 100;
+        percentage = Math.max(0, Math.min(100, percentage)); // Clamp 0-100
+
+        expFill.style.width = `${percentage}%`;
+        expText.textContent = `${Math.floor(expInLevel)} / ${levelRange}`;
+    }
+
+    function showLevelUpNotification(newLevel) {
+        const notif = document.createElement('div');
+        notif.textContent = `LEVEL UP! ${newLevel}`;
+        notif.style.position = 'fixed';
+        notif.style.top = '50%';
+        notif.style.left = '50%';
+        notif.style.transform = 'translate(-50%, -50%) scale(0)';
+        notif.style.background = 'linear-gradient(135deg, #FFD700, #FFA500)';
+        notif.style.color = '#000';
+        notif.style.padding = '20px 40px';
+        notif.style.borderRadius = '20px';
+        notif.style.fontSize = '2rem';
+        notif.style.fontWeight = '800';
+        notif.style.zIndex = '1000';
+        notif.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+        notif.style.transition = 'transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+
+        document.body.appendChild(notif);
+
+        // Animate in
+        requestAnimationFrame(() => {
+            notif.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+
+        playSound('correct'); // Or a special level up sound
+
+        // Remove after 2s
+        setTimeout(() => {
+            notif.style.transform = 'translate(-50%, -50%) scale(0)';
+            setTimeout(() => {
+                notif.remove();
+            }, 500);
+        }, 2000);
+    }
+
 });

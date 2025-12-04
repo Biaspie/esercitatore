@@ -171,7 +171,9 @@ export const UserData = {
                 role: 'user', // Default role
                 createdAt: Date.now(),
                 favorites: [],
-                errors: []
+                errors: [],
+                exp: 0,
+                level: 1
             }, { merge: true });
         } catch (e) {
             console.error("Error creating user doc:", e);
@@ -297,5 +299,80 @@ export const UserData = {
             console.error("Error deleting report:", e);
             return false;
         }
+    },
+
+    // --- EXP & Level System ---
+
+    async addExp(amount) {
+        const user = auth.currentUser;
+        if (!user) return null;
+
+        const docRef = doc(db, COLLECTION_NAME, user.uid);
+
+        try {
+            const docSnap = await getDoc(docRef);
+            if (!docSnap.exists()) return null;
+
+            const data = docSnap.data();
+            let currentExp = data.exp || 0;
+            let currentLevel = data.level || 1;
+
+            let newExp = currentExp + amount;
+            let newLevel = currentLevel;
+
+            // Level Thresholds (Simple exponential-ish curve or fixed steps)
+            // Level 1: 0-99 (100)
+            // Level 2: 100-249 (150)
+            // Level 3: 250-449 (200)
+            // Level 4: 450-699 (250)
+            // Level 5: 700-999 (300)
+            // Level 6: 1000-1349 (350)
+            // Level 7: 1350-1749 (400)
+            // Level 8: 1750-2199 (450)
+            // Level 9: 2200-2699 (500)
+            // Level 10: 2700+ (Max)
+
+            const getLevelThreshold = (lvl) => {
+                if (lvl >= 10) return Infinity;
+                // Base 100, +50 increment per level
+                // L1->L2: 100
+                // L2->L3: 100 + 150 = 250
+                // L3->L4: 250 + 200 = 450
+                // Formula: Threshold = PreviousThreshold + (100 + (lvl-1)*50)
+
+                // Let's use a pre-calculated array for simplicity and performance
+                const thresholds = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700];
+                return thresholds[lvl] || Infinity;
+            };
+
+            let leveledUp = false;
+
+            // Check for level up
+            // While loop in case they gain enough EXP to skip a level (unlikely with +10 but possible with bonuses)
+            while (newLevel < 10 && newExp >= getLevelThreshold(newLevel)) {
+                newLevel++;
+                leveledUp = true;
+            }
+
+            await updateDoc(docRef, {
+                exp: newExp,
+                level: newLevel
+            });
+
+            return {
+                newExp,
+                newLevel,
+                leveledUp,
+                nextLevelThreshold: getLevelThreshold(newLevel)
+            };
+
+        } catch (e) {
+            console.error("Error adding EXP:", e);
+            return null;
+        }
+    },
+
+    getLevelThresholds() {
+        return [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700];
     }
 };
