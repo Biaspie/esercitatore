@@ -506,7 +506,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             // Award EXP
             if (auth.currentUser) {
-                UserData.addExp(10).then(result => {
+                const difficulty = currentQuestions[currentQuestionIndex].difficulty || 1;
+                let expAmount = 2; // Default / Easy
+                if (difficulty == 2) expAmount = 5; // Medium
+                if (difficulty == 3) expAmount = 7; // Hard
+
+                UserData.addExp(expAmount).then(result => {
                     if (result) {
                         updateExpUI(result.newExp, result.newLevel);
                         if (result.leveledUp) {
