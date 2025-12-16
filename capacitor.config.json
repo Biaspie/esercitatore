@@ -1,0 +1,6 @@
+{
+  "appId": "io.quiz.app",
+  "appName": "QuizApp",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

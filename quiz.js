@@ -4,6 +4,35 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/fi
 
 document.addEventListener('DOMContentLoaded', async () => {
     const quizScreen = document.getElementById('quiz-screen');
+
+    // Offline Indicator
+    const offlineMsg = document.createElement('div');
+    offlineMsg.classList.add('offline-msg');
+    offlineMsg.textContent = 'Sei offline. Funzionalità limitate.';
+    document.body.appendChild(offlineMsg);
+
+    function updateOnlineStatus() {
+        if (navigator.onLine) {
+            offlineMsg.textContent = 'Tornato online!';
+            offlineMsg.classList.add('online');
+            setTimeout(() => {
+                offlineMsg.classList.remove('visible');
+                offlineMsg.classList.remove('online');
+            }, 3000);
+        } else {
+            offlineMsg.textContent = 'Sei offline. I risultati verranno salvati localmente.';
+            offlineMsg.classList.remove('online');
+            offlineMsg.classList.add('visible');
+        }
+    }
+
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    // Check initial status
+    if (!navigator.onLine) {
+        updateOnlineStatus();
+    }
+
     const resultScreen = document.getElementById('result-screen');
 
     const questionText = document.getElementById('question-text');
@@ -308,6 +337,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             btn.classList.add('nav-btn');
             btn.textContent = index + 1;
             btn.addEventListener('click', () => {
+                if (isSpeedMode) return; // Disable direct navigation in Speed Mode
                 currentQuestionIndex = index;
                 loadQuestion();
             });
@@ -424,7 +454,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         feedbackDisplay.classList.remove('visible'); // Hide feedback initially
 
         // Previous Button Logic
-        if (currentQuestionIndex > 0) {
+        if (currentQuestionIndex > 0 && !isSpeedMode) {
             prevBtn.classList.remove('hidden');
         } else {
             prevBtn.classList.add('hidden');

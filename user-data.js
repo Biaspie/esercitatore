@@ -97,6 +97,11 @@ export const UserData = {
             // Record global stat
             this.recordQuizCompletion();
 
+            // Award EXP based on score
+            if (quizData.score && quizData.score > 0) {
+                await this.addExp(quizData.score);
+            }
+
             return true;
         } catch (e) {
             console.error("Error saving quiz result:", e);
@@ -341,7 +346,7 @@ export const UserData = {
                 // Formula: Threshold = PreviousThreshold + (100 + (lvl-1)*50)
 
                 // Let's use a pre-calculated array for simplicity and performance
-                const thresholds = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700];
+                const thresholds = [0, 200, 500, 900, 1400, 2000, 2700, 3500, 4400, 5400];
                 return thresholds[lvl] || Infinity;
             };
 
@@ -373,6 +378,6 @@ export const UserData = {
     },
 
     getLevelThresholds() {
-        return [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700];
+        return [0, 200, 500, 900, 1400, 2000, 2700, 3500, 4400, 5400];
     }
 };
