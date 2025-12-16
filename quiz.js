@@ -5,55 +5,7 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/fi
 document.addEventListener('DOMContentLoaded', async () => {
     const quizScreen = document.getElementById('quiz-screen');
 
-    // Offline Indicator
-    const offlineMsg = document.createElement('div');
-    offlineMsg.classList.add('offline-msg');
-
-    // Create text span
-    const msgText = document.createElement('span');
-    msgText.textContent = 'Sei offline. Funzionalità limitate.';
-    offlineMsg.appendChild(msgText);
-
-    // Create dismiss button
-    const dismissBtn = document.createElement('button');
-    dismissBtn.textContent = '✖';
-    dismissBtn.style.marginLeft = '10px';
-    dismissBtn.style.background = 'transparent';
-    dismissBtn.style.border = 'none';
-    dismissBtn.style.color = '#fff';
-    dismissBtn.style.cursor = 'pointer';
-    dismissBtn.onclick = () => {
-        offlineMsg.classList.remove('visible');
-    };
-    offlineMsg.appendChild(dismissBtn);
-
-    document.body.appendChild(offlineMsg);
-
-    function updateOnlineStatus() {
-        if (navigator.onLine) {
-            msgText.textContent = 'Tornato online!';
-            offlineMsg.classList.add('online');
-            setTimeout(() => {
-                offlineMsg.classList.remove('visible');
-                offlineMsg.classList.remove('online');
-            }, 3000);
-        } else {
-            msgText.textContent = 'Sei offline. Funzionalità limitate.';
-            offlineMsg.classList.remove('online');
-            offlineMsg.classList.add('visible');
-        }
-    }
-
-    window.addEventListener('online', updateOnlineStatus);
-    window.addEventListener('offline', updateOnlineStatus);
-
-    // Check initial status logic corrected
-    if (!navigator.onLine) {
-        updateOnlineStatus();
-    } else {
-        // Ensure it's hidden if online
-        offlineMsg.classList.remove('visible');
-    }
+    // Offline Indicator Removed per user request
 
     const resultScreen = document.getElementById('result-screen');
 
