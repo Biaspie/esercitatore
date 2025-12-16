@@ -29,6 +29,11 @@
         <main style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
             <div id="quiz-screen" class="screen active"
                 style="flex: 1; display: flex; flex-direction: column; overflow: hidden;">
+                <div style="width: 100%; height: 4px; background: rgba(255,255,255,0.1); margin-bottom: 1rem;">
+                    <div id="progress-bar"
+                        style="height: 100%; background: var(--primary-color); width: 0%; transition: width 0.3s;">
+                    </div>
+                </div>
                 <div id="exp-fill" class="exp-fill" style="width: 0%;"></div>
                 <span id="exp-text" class="exp-text">0 / 100</span>
 
@@ -50,6 +55,11 @@
                 </div>
 
                 <div class="question-content">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <span id="question-number" style="font-size: 0.9rem; color: var(--text-muted);">Domanda
+                            1/20</span>
+                    </div>
                     <div id="question-text" class="question-text">
                         Caricamento domanda...
                     </div>
