@@ -13,6 +13,37 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
     }
 
+    // PWA Install Logic
+    let deferredPrompt;
+    const installBtn = document.getElementById('install-app-btn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        // Update UI to notify the user they can add to home screen
+        if (installBtn) {
+            installBtn.style.display = 'flex';
+
+            installBtn.addEventListener('click', () => {
+                // Hide the app provided install promotion
+                installBtn.style.display = 'none';
+                // Show the install prompt
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        }
+    });
+
     let currentCategory = "ps";
 
     const subjectMap = {
@@ -115,8 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             row.innerHTML = `
                 <td>${medal}${index + 1}</td>
-                <td>${entry.name}</td>
-                <td>${entry.score}</td>
+                <td>${entry.name} <span style="font-size: 0.7rem; color: #FFD700; margin-left: 5px;">(Lvl ${entry.level})</span></td>
+                <td><span style="font-weight: bold; color: var(--primary-color);">${entry.score}</span> XP</td>
             `;
             leaderboardBody.appendChild(row);
         });

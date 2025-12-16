@@ -6,43 +6,31 @@ const LEADERBOARD_COLLECTION = 'leaderboard';
 // Expose functions globally
 window.Leaderboard = {
     saveScore: async (name, score) => {
-        try {
-            console.log("Attempting to save score...", { name, score });
-
-            // Create a timeout promise (15 seconds)
-            const timeout = new Promise((_, reject) =>
-                setTimeout(() => reject(new Error("Timeout connection (15s)")), 15000)
-            );
-
-            const docRef = await Promise.race([
-                addDoc(collection(db, LEADERBOARD_COLLECTION), {
-                    name: name,
-                    score: score,
-                    date: new Date().toISOString()
-                }),
-                timeout
-            ]);
-
-            console.log("Document written with ID: ", docRef.id);
-            return true;
-        } catch (e) {
-            console.error("Error adding document: ", e);
-            alert("Errore: " + e.message + "\n\nControlla la Console (F12) per dettagli.");
-            return false;
-        }
+        // Deprecated: Scores are now tracked via UserData EXP
+        console.warn("Leaderboard.saveScore is deprecated. Use UserData.addExp instead.");
+        return true;
     },
 
     getLeaderboard: async () => {
         try {
-            const q = query(collection(db, LEADERBOARD_COLLECTION), orderBy("score", "desc"), limit(10));
+            // Query 'users' collection directly, ordered by EXP
+            const q = query(collection(db, 'users'), orderBy("exp", "desc"), limit(10));
             const querySnapshot = await getDocs(q);
             const scores = [];
             querySnapshot.forEach((doc) => {
-                scores.push(doc.data());
+                const data = doc.data();
+                // Only include users who have a username (registered)
+                if (data.username) {
+                    scores.push({
+                        name: data.username,
+                        score: data.exp || 0, // Display EXP as score
+                        level: data.level || 1
+                    });
+                }
             });
             return scores;
         } catch (e) {
-            console.error("Error getting documents: ", e);
+            console.error("Error getting leaderboard: ", e);
             return [];
         }
     }
