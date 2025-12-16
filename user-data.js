@@ -12,7 +12,9 @@ export const UserData = {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-            return docSnap.data();
+            const data = docSnap.data();
+            // Auto-fix inconsistent level/exp
+            return await this.verifyAndFixLevel(user.uid, data);
         } else {
             return { favorites: [], errors: [] };
         }
@@ -97,10 +99,8 @@ export const UserData = {
             // Record global stat
             this.recordQuizCompletion();
 
-            // Award EXP based on score
-            if (quizData.score && quizData.score > 0) {
-                await this.addExp(quizData.score);
-            }
+            // EXP is now awarded incrementally during the quiz (in quiz.js)
+            // so we don't add it here to avoid double counting.
 
             return true;
         } catch (e) {
@@ -379,5 +379,43 @@ export const UserData = {
 
     getLevelThresholds() {
         return [0, 200, 500, 900, 1400, 2000, 2700, 3500, 4400, 5400];
+    },
+
+    async verifyAndFixLevel(uid, data) {
+        const currentExp = data.exp || 0;
+        const currentLevel = data.level || 1;
+
+        const thresholds = this.getLevelThresholds();
+        let correctLevel = 1;
+
+        // Calculate correct level based on EXP
+        // Thresholds: [0, 200, 500...]
+        // If exp is 250, it's >= 200 (index 1), so Level is 2 (index + 1)
+        for (let i = thresholds.length - 1; i >= 0; i--) {
+            if (currentExp >= thresholds[i]) {
+                correctLevel = i + 1;
+                break;
+            }
+        }
+
+        // Cap at 10
+        if (correctLevel > 10) correctLevel = 10;
+
+        if (correctLevel !== currentLevel) {
+            console.log(`Fixing User Level: Was ${currentLevel}, Should be ${correctLevel} (EXP: ${currentExp})`);
+
+            const docRef = doc(db, COLLECTION_NAME, uid);
+            try {
+                await updateDoc(docRef, {
+                    level: correctLevel
+                });
+                return { ...data, level: correctLevel };
+            } catch (e) {
+                console.error("Error fixing user level:", e);
+                return data;
+            }
+        }
+
+        return data;
     }
 };
