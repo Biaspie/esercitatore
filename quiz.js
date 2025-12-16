@@ -8,19 +8,37 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Offline Indicator
     const offlineMsg = document.createElement('div');
     offlineMsg.classList.add('offline-msg');
-    offlineMsg.textContent = 'Sei offline. Funzionalità limitate.';
+
+    // Create text span
+    const msgText = document.createElement('span');
+    msgText.textContent = 'Sei offline. Funzionalità limitate.';
+    offlineMsg.appendChild(msgText);
+
+    // Create dismiss button
+    const dismissBtn = document.createElement('button');
+    dismissBtn.textContent = '✖';
+    dismissBtn.style.marginLeft = '10px';
+    dismissBtn.style.background = 'transparent';
+    dismissBtn.style.border = 'none';
+    dismissBtn.style.color = '#fff';
+    dismissBtn.style.cursor = 'pointer';
+    dismissBtn.onclick = () => {
+        offlineMsg.classList.remove('visible');
+    };
+    offlineMsg.appendChild(dismissBtn);
+
     document.body.appendChild(offlineMsg);
 
     function updateOnlineStatus() {
         if (navigator.onLine) {
-            offlineMsg.textContent = 'Tornato online!';
+            msgText.textContent = 'Tornato online!';
             offlineMsg.classList.add('online');
             setTimeout(() => {
                 offlineMsg.classList.remove('visible');
                 offlineMsg.classList.remove('online');
             }, 3000);
         } else {
-            offlineMsg.textContent = 'Sei offline. I risultati verranno salvati localmente.';
+            msgText.textContent = 'Sei offline. Funzionalità limitate.';
             offlineMsg.classList.remove('online');
             offlineMsg.classList.add('visible');
         }
@@ -28,9 +46,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     window.addEventListener('online', updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
-    // Check initial status
+
+    // Check initial status logic corrected
     if (!navigator.onLine) {
         updateOnlineStatus();
+    } else {
+        // Ensure it's hidden if online
+        offlineMsg.classList.remove('visible');
     }
 
     const resultScreen = document.getElementById('result-screen');
