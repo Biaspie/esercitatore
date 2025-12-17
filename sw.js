@@ -4,7 +4,7 @@ const ASSETS_TO_CACHE = [
     './index.html',
     './home.html',
     './quiz.html',
-    './manuals.html',
+
     './stats.html',
     './login.html',
     './style.css',
@@ -15,7 +15,7 @@ const ASSETS_TO_CACHE = [
     './firebase-config.js',
     './questions.json',
     './favicon.svg',
-    './manuals.js',
+
     './stats.js',
     './leaderboard.js',
     // Firebase SDKs are loaded from CDN. Caching them might be tricky due to updates,
