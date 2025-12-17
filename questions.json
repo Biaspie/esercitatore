@@ -1308,7 +1308,7 @@
             "Il Sindaco",
             "Il Presidente della Provincia"
         ],
-        "answer": "Il Questore",
+        "answer": "Il Prefetto",
         "difficulty": 1,
         "id": 1
     },
@@ -6236,7 +6236,7 @@
             "Se la querela non è proposta oralmente all'ufficiale di P.G.",
             "Se la querela non viene presentata entro 24 ore dall'arresto."
         ],
-        "answer": "Se la persona offesa dichiara di rimettere la querela, anche se l'arrestato rifiuta.",
+        "answer": "Se la querela è assente.",
         "difficulty": 2
     },
     {
@@ -6444,7 +6444,7 @@
             "Misura che riguarda una $\\texttt{res}$ (cosa) (es. sequestro conservativo).",
             "Misura che può essere applicata solo dal P.M."
         ],
-        "answer": "Misura che riguarda una $\\texttt{res}$ (cosa) (es. sequestro conservativo).",
+        "answer": "È una misura che sottrae la disponibilità di beni materiali (res) per garantire le esigenze processuali (es. sequestro conservativo).",
         "difficulty": 1
     },
     {

@@ -1,4 +1,4 @@
-import { collection, addDoc, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js";
+import { collection, addDoc, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { db } from "./firebase-config.js";
 
 const LEADERBOARD_COLLECTION = 'leaderboard';
@@ -31,6 +31,7 @@ window.Leaderboard = {
             return scores;
         } catch (e) {
             console.error("Error getting leaderboard: ", e);
+            alert("Errore nel caricamento della classifica: " + e.message);
             return [];
         }
     }
