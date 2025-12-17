@@ -126,11 +126,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         initAudio(); // Initialize Audio Context on user interaction
 
         userData = { favorites: [], errors: [] };
+        let recentQuestionIds = [];
+
         if (auth.currentUser) {
             try {
                 userData = await UserData.getUserData();
                 // Initialize EXP UI
                 updateExpUI(userData.exp || 0, userData.level || 1);
+
+                // Fetch recent questions to avoid repetition
+                if (mode !== 'history' && mode !== 'favorites' && mode !== 'errors') {
+                    recentQuestionIds = await UserData.getRecentQuestionIds(10); // Check last 10 quizzes
+                }
             } catch (e) {
                 console.warn("Failed to load user data:", e);
             }
@@ -273,12 +280,28 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Limit for specific subject
                 let limit = parseInt(countSetting);
                 if (!isNaN(limit) && countSetting !== 'all' && limit > 0) {
-                    // Shuffle first then slice
-                    // Fisher-Yates Shuffle
-                    for (let i = filteredQuestions.length - 1; i > 0; i--) {
+
+                    // SPLIT: Unseen vs Seen
+                    let unseenQuestions = filteredQuestions.filter(q => !recentQuestionIds.includes(q.id));
+                    let seenQuestions = filteredQuestions.filter(q => recentQuestionIds.includes(q.id));
+
+                    // Shuffle separately
+                    // Fisher-Yates Shuffle for Unseen
+                    for (let i = unseenQuestions.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
-                        [filteredQuestions[i], filteredQuestions[j]] = [filteredQuestions[j], filteredQuestions[i]];
+                        [unseenQuestions[i], unseenQuestions[j]] = [unseenQuestions[j], unseenQuestions[i]];
                     }
+
+                    // Fisher-Yates Shuffle for Seen
+                    for (let i = seenQuestions.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [seenQuestions[i], seenQuestions[j]] = [seenQuestions[j], seenQuestions[i]];
+                    }
+
+                    // Combine: Unseen first, then Seen (as fallback)
+                    filteredQuestions = unseenQuestions.concat(seenQuestions);
+
+                    // Finally slice
                     filteredQuestions = filteredQuestions.slice(0, limit);
                 }
             }

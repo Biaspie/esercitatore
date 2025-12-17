@@ -146,6 +146,31 @@ export const UserData = {
         }
     },
 
+    async getRecentQuestionIds(limitCount = 10) {
+        const user = auth.currentUser;
+        if (!user) return [];
+
+        const historyCollection = collection(db, COLLECTION_NAME, user.uid, "history");
+        const q = query(historyCollection, orderBy("timestamp", "desc"), limit(limitCount));
+
+        try {
+            const querySnapshot = await getDocs(q);
+            const recentIds = new Set();
+            querySnapshot.docs.forEach(doc => {
+                const data = doc.data();
+                if (data.questions && Array.isArray(data.questions)) {
+                    data.questions.forEach(q => {
+                        if (q.id) recentIds.add(q.id);
+                    });
+                }
+            });
+            return Array.from(recentIds);
+        } catch (e) {
+            console.error("Error fetching recent question IDs:", e);
+            return [];
+        }
+    },
+
     async getAllHistory() {
         const user = auth.currentUser;
         if (!user) return [];

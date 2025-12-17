@@ -2730,19 +2730,6 @@
         "difficulty": 2
     },
     {
-        "id": 111,
-        "category": "Informatica",
-        "question": "Secondo le Leggi di De Morgan, a cosa equivale l'espressione $\\\\texttt{!(A \\\\|\\\\| B)}$?",
-        "options": [
-            "$\\\\texttt{!A \\\\|\\\\| !B}$",
-            "$\\\\texttt{!A \\\\&\\\\& !B}$",
-            "$\\\\texttt{A \\\\&\\\\& B}$",
-            "Dipende dalla precedenza degli operatori."
-        ],
-        "answer": "$\\\\texttt{!A \\\\&\\\\& !B}$",
-        "difficulty": 3
-    },
-    {
         "id": 112,
         "category": "Informatica",
         "question": "Cosa si intende per Gerarchia nel File System (dal punto di vista utente)?",
@@ -5816,11 +5803,11 @@
         "question": "Qual è la differenza fondamentale tra Riciclaggio e Favoreggiamento Reale?",
         "options": [
             "Il Riciclaggio è per delitti non colposi, il Favoreggiamento Reale per qualsiasi reato.",
-            "Il Riciclaggio richiede un'operazione per ostacolare l'identificazione della provenienza delittuosa, non richiesta nel Favoreggiamento Reale.",
+            "Il Riciclaggio è volto a ostacolare l'identificazione della provenienza illecita, il Favoreggiamento Reale ad assicurare il profitto del reato.",
             "Il Favoreggiamento Reale richiede un profitto, il Riciclaggio no.",
             "Il Riciclaggio è reato proprio, il Favoreggiamento Reale è reato comune."
         ],
-        "answer": "Il Riciclaggio richiede un'operazione per ostacolare l'identificazione della provenienza delittuosa, non richiesta nel Favoreggiamento Reale.",
+        "answer": "Il Riciclaggio è volto a ostacolare l'identificazione della provenienza illecita, il Favoreggiamento Reale ad assicurare il profitto del reato.",
         "difficulty": 3
     },
     {
@@ -6249,7 +6236,7 @@
             "Se la querela non è proposta oralmente all'ufficiale di P.G.",
             "Se la querela non viene presentata entro 24 ore dall'arresto."
         ],
-        "answer": "",
+        "answer": "Se la persona offesa dichiara di rimettere la querela, anche se l'arrestato rifiuta.",
         "difficulty": 2
     },
     {
