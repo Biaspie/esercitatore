@@ -365,12 +365,32 @@ document.addEventListener('DOMContentLoaded', async () => {
         clearTimeout(autoAdvanceTimeout);
         const question = currentQuestions[currentQuestionIndex];
 
+        // querySelector might be safer if I added it inside a specific container, but ID is fine
+        const questionSubjectDisplay = document.getElementById('question-subject');
+
         updateQuestionNav();
 
         // Trigger Animation
         questionText.classList.remove('slide-in');
         void questionText.offsetWidth; // Force reflow
         questionText.classList.add('slide-in');
+
+        // Update Subject
+        if (questionSubjectDisplay) {
+            // Check if category exists - for some questions it might be undefined or just a key
+            // The questions in 'currentQuestions' should have the full 'category' name if they came from 'allQuestions' which we fixed in startQuiz?
+            // Wait, in startQuiz we filter by category but we don't necessarily modify the category field of the question object itself.
+            // But the 'category' field in questions.json contains the key (like "ps_001").
+            // Actually, the json usually has "category": "Legislazione di Pubblica Sicurezza" or similar?
+            // Let me check questions.json structure. 
+            // Looking at previous context, we mapped subject params to DB categories.
+            // Let's assume question.category holds the display name or we need to look it up.
+            // Usually in this app, questions.json has "category": "Legislazione..." directly.
+
+            questionSubjectDisplay.textContent = question.category || "";
+            // Optional: Add tooltip for long names
+            questionSubjectDisplay.title = question.category || "";
+        }
 
         // questionText.textContent = question.question;
         questionText.innerHTML = '';
@@ -858,10 +878,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // EXP UI Functions
     function updateExpUI(exp, level) {
         const userLevelDisplay = document.getElementById('user-level');
-        const expFill = document.getElementById('exp-fill');
         const expText = document.getElementById('exp-text');
 
-        if (!userLevelDisplay || !expFill || !expText) return;
+        if (!userLevelDisplay || !expText) return;
 
         userLevelDisplay.textContent = level;
 
@@ -872,10 +891,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const expInLevel = exp - currentLevelThreshold;
         const levelRange = nextLevelThreshold - currentLevelThreshold;
 
-        let percentage = (expInLevel / levelRange) * 100;
-        percentage = Math.max(0, Math.min(100, percentage)); // Clamp 0-100
-
-        expFill.style.width = `${percentage}%`;
         expText.textContent = `${Math.floor(expInLevel)} / ${levelRange}`;
     }
 
