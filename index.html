@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html lang="it">
+<html class="dark" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accedi - Esercitatore corso 9 VIT</title>
-    <link rel="stylesheet" href="style.css?v=7">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Quiz Quest - Welcome</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1313ec",
+                        "primary-dark": "#0b0b8a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                        "retro-accent": "#ffcc00",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    boxShadow: {
+                        "retro": "0 4px 0 0 #0b0b8a",
+                        "retro-active": "0 0 0 0 transparent",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for retro feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #101022;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333344;
+            border-radius: 2px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1313ec;
+        }
+
+        .pixel-corners {
+            clip-path: polygon(0px 4px,
+                    4px 4px,
+                    4px 0px,
+                    calc(100% - 4px) 0px,
+                    calc(100% - 4px) 4px,
+                    100% 4px,
+                    100% calc(100% - 4px),
+                    calc(100% - 4px) calc(100% - 4px),
+                    calc(100% - 4px) 100%,
+                    4px 100%,
+                    4px calc(100% - 4px),
+                    0px calc(100% - 4px));
+        }
+
+        /* Utility for login.js */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -22,61 +97,142 @@
     </script>
 </head>
 
-<body>
-    <!-- Dynamic Background -->
-    <div class="background-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
-
-    <!-- Glass Container -->
-    <div class="container" style="max-width: 400px; height: auto; min-height: 500px; justify-content: center;">
-        <header>
-            <h1>Benvenuto</h1>
-            <p id="auth-subtitle" style="color: var(--text-muted);">Accedi per salvare i tuoi progressi</p>
-        </header>
-
-        <main style="flex: 1; display: flex; flex-direction: column; gap: 1.5rem; padding: 1rem;">
-            <!-- Login Form -->
-            <form id="auth-form" style="display: flex; flex-direction: column; gap: 1rem;">
-                <div class="input-group">
-                    <label for="username"
-                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Username</label>
-                    <input type="text" id="username" required placeholder="Inserisci il tuo username"
-                        style="width: 100%; padding: 0.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; outline: none;">
-                </div>
-
-                <div class="input-group" id="password-group">
-                    <label for="password"
-                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Password</label>
-                    <input type="password" id="password" required placeholder="Inserisci la tua password"
-                        style="width: 100%; padding: 0.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; outline: none;">
-                </div>
-
-                <div class="input-group hidden" id="confirm-password-group">
-                    <label for="confirm-password"
-                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Conferma
-                        Password</label>
-                    <input type="password" id="confirm-password" placeholder="Ripeti la password"
-                        style="width: 100%; padding: 0.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; outline: none;">
-                </div>
-
-                <div style="text-align: right;">
-                    <a href="#" id="forgot-password"
-                        style="font-size: 0.8rem; color: var(--text-muted); text-decoration: none;">Password
-                        dimenticata?</a>
-                </div>
-
-                <button type="submit" class="btn primary-btn" style="margin-top: 0.5rem; width: 100%;">Accedi</button>
-            </form>
-
-            <div style="text-align: center; margin-top: 1rem;">
-                <p id="toggle-text" style="font-size: 0.9rem; color: var(--text-muted);">Non hai un account? <a href="#"
-                        id="toggle-auth"
-                        style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Registrati</a></p>
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-white">
+    <div
+        class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto border-x border-white/5 shadow-2xl">
+        <!-- Top Bar -->
+        <div
+            class="sticky top-0 z-50 flex items-center bg-background-dark/95 backdrop-blur-sm p-4 border-b-2 border-white/10 justify-between">
+            <div class="text-primary flex items-center justify-center bg-white/5 p-1 rounded">
+                <span class="material-symbols-outlined text-[24px]">sports_esports</span>
             </div>
-        </main>
+            <h2
+                class="text-white text-lg font-black tracking-widest flex-1 text-center uppercase drop-shadow-[2px_2px_0_rgba(19,19,236,0.5)]">
+                Quiz Quest</h2>
+            <div class="flex items-center justify-end">
+                <button class="text-white/70 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[24px]">settings</span>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col items-center justify-start pt-6 pb-8 px-4 w-full">
+            <!-- Hero Image -->
+            <div class="w-full relative mb-8 group">
+                <!-- Decorative Border -->
+                <div class="absolute -inset-1 bg-gradient-to-b from-white/20 to-transparent rounded-lg opacity-50">
+                </div>
+                <div
+                    class="relative w-full aspect-square bg-black/40 rounded-lg overflow-hidden border-4 border-white/10 shadow-[0_0_20px_rgba(19,19,236,0.3)]">
+                    <div class="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out"
+                        data-alt="Pixel art illustration of a retro wizard character standing on a cliff looking at a castle"
+                        style='background-image: url("assets/retro-hero.png"); image-rendering: pixelated;'>
+                    </div>
+                    <!-- Overlay Gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute top-4 right-4 bg-black/60 backdrop-blur border border-white/20 px-3 py-1 rounded text-xs font-bold text-white tracking-wider flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px] text-yellow-400">bolt</span>
+                        LVL 1
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auth Form Container -->
+            <div class="flex flex-col items-center gap-4 mb-8 w-full">
+                <div class="flex flex-col items-center w-full">
+                    <span class="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-2 animate-pulse">Ready
+                        Player One?</span>
+                    <h1
+                        class="text-white text-3xl font-black leading-none text-center uppercase tracking-tight drop-shadow-[4px_4px_0_#1313ec] mb-2">
+                        Benvenuto
+                    </h1>
+                    <p id="auth-subtitle"
+                        class="text-slate-400 text-sm font-medium leading-relaxed text-center max-w-[280px] mb-6">
+                        Accedi per salvare i tuoi progressi
+                    </p>
+
+                    <!-- Login Form -->
+                    <form id="auth-form" class="w-full flex flex-col gap-4">
+                        <div class="w-full">
+                            <label for="username" class="sr-only">Username</label>
+                            <div class="relative">
+                                <span
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-white/50 text-[20px]">person</span>
+                                <input type="text" id="username" required placeholder="Inserisci il tuo username"
+                                    class="w-full h-12 bg-white/5 border-2 border-white/10 rounded px-12 text-white placeholder:text-white/30 focus:border-primary focus:ring-0 focus:bg-white/10 transition-all outline-none font-medium">
+                            </div>
+                        </div>
+
+                        <div class="w-full" id="password-group">
+                            <label for="password" class="sr-only">Password</label>
+                            <div class="relative">
+                                <span
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-white/50 text-[20px]">key</span>
+                                <input type="password" id="password" required placeholder="Inserisci la tua password"
+                                    class="w-full h-12 bg-white/5 border-2 border-white/10 rounded px-12 text-white placeholder:text-white/30 focus:border-primary focus:ring-0 focus:bg-white/10 transition-all outline-none font-medium">
+                            </div>
+                        </div>
+
+                        <div class="w-full hidden" id="confirm-password-group">
+                            <label for="confirm-password" class="sr-only">Conferma Password</label>
+                            <div class="relative">
+                                <span
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-white/50 text-[20px]">lock_reset</span>
+                                <input type="password" id="confirm-password" placeholder="Ripeti la password"
+                                    class="w-full h-12 bg-white/5 border-2 border-white/10 rounded px-12 text-white placeholder:text-white/30 focus:border-primary focus:ring-0 focus:bg-white/10 transition-all outline-none font-medium">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end w-full">
+                            <a href="#" id="forgot-password"
+                                class="text-xs text-white/50 hover:text-white transition-colors uppercase tracking-wider font-bold">Password
+                                dimenticata?</a>
+                        </div>
+
+                        <!-- Main Actions (Submit) -->
+                        <div class="w-full flex flex-col gap-4 mt-2">
+                            <button type="submit"
+                                class="group relative w-full flex items-center justify-center h-14 bg-primary text-white text-lg font-black tracking-widest uppercase rounded shadow-retro hover:brightness-110 active:shadow-retro-active active:translate-y-1 transition-all duration-75 overflow-hidden">
+                                <div
+                                    class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/pixel-weave.png')] opacity-10">
+                                </div>
+                                <span
+                                    class="material-symbols-outlined mr-2 group-hover:animate-bounce">play_circle</span>
+                                <span class="relative z-10">Accedi</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Actions -->
+            <div class="flex items-center justify-between px-2 gap-4 w-full">
+                <!-- Toggle Auth Button (mapped to "New Player" style) -->
+                <div class="text-center w-full">
+                    <p id="toggle-text" class="text-xs text-slate-400 font-medium mb-2 hidden">Non hai un account?</p>
+                    <!-- Hiding original text logic to use custom button -->
+
+                    <button id="toggle-auth"
+                        class="w-full py-3 px-4 rounded border-2 border-white/10 bg-transparent text-white/80 text-xs font-bold uppercase tracking-wider hover:bg-white/5 hover:border-white/30 transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-[16px]">person_add</span>
+                        Crea Nuovo Account
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Decor -->
+        <div class="p-4 border-t border-white/5 bg-[#0a0a16] mt-auto">
+            <div
+                class="flex justify-between items-center text-[10px] text-white/30 font-mono uppercase tracking-widest">
+                <span>Ver 1.0.4</span>
+                <span class="animate-pulse">● Online</span>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="login.js"></script>

@@ -1,155 +1,184 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const subjectSelectionScreen = document.getElementById('subject-selection-screen');
-    const startScreen = document.getElementById('start-screen');
+    // Selectors
+    const modalStart = document.getElementById('start-screen');
+    const modalLeaderboard = document.getElementById('leaderboard-screen');
+
+    // Buttons
     const subjectButtons = document.querySelectorAll('.subject-btn');
     const startBtn = document.getElementById('start-btn');
+    const closeStartBtn = document.getElementById('close-modal-btn');
+    const closeRankBtn = document.getElementById('back-from-leaderboard-btn');
+    const leaderboardBtn = document.getElementById('leaderboard-btn');
+    const navRankBtn = document.getElementById('nav-rank-btn');
+
+    // Settings Inputs
     const questionCountSelect = document.getElementById('question-count');
+    const difficultySelect = document.getElementById('difficulty-select');
     const subjectTitle = document.getElementById('subject-title');
-    const appTitle = document.getElementById('app-title');
-    const backToSubjectsBtn = document.getElementById('back-to-subjects-btn');
 
     // Check Protocol
     if (window.location.protocol === 'file:') {
-        alert("ATTENZIONE: Stai aprendo il file direttamente. Devi usare il server locale!\n\nVai su: http://localhost:3000");
+        alert("ATTENZIONE: Devi usare il server locale (http://localhost:3000)");
     }
 
-    // PWA Install Logic
+    // --- PWA Logic ---
     let deferredPrompt;
     const installBtn = document.getElementById('install-app-btn');
 
     window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent Chrome 67 and earlier from automatically showing the prompt
         e.preventDefault();
-        // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        // Update UI to notify the user they can add to home screen
         if (installBtn) {
-            installBtn.style.display = 'flex';
+            installBtn.classList.remove('hidden');
+            installBtn.style.display = 'flex'; // Ensure flex layout
 
             installBtn.addEventListener('click', () => {
-                // Hide the app provided install promotion
                 installBtn.style.display = 'none';
-                // Show the install prompt
                 deferredPrompt.prompt();
-                // Wait for the user to respond to the prompt
                 deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the A2HS prompt');
-                    } else {
-                        console.log('User dismissed the A2HS prompt');
-                    }
                     deferredPrompt = null;
                 });
             });
         }
     });
 
+    // --- State ---
     let currentCategory = "ps";
-
     const subjectMap = {
-        'ps': 'Legislazione di Pubblica Sicurezza',
-        'costituzionale': 'Diritto Costituzionale',
+        'ps': 'Legislazione P.S.',
+        'costituzionale': 'Dir. Costituzionale',
         'penale': 'Diritto Penale',
         'procedura_penale': 'Procedura Penale',
-        'normativa': 'Normativa Disciplinare',
+        'normativa': 'Normativa Disc.',
         'informatica': 'Informatica',
-        'amministrativo': 'Diritto Amministrativo',
+        'amministrativo': 'Dir. Amministrativo',
         'civile': 'Diritto Civile',
         'all': 'Tutti gli Argomenti',
         'speed': 'Speed Mode ⚡'
     };
 
-    // Initialize: Show Subject Selection
-    showScreen(subjectSelectionScreen);
+    // --- Modal Functions ---
+    function openModal(modal) {
+        modal.classList.remove('hidden');
+        // Slight delay to allow display:block to apply before opacity transition
+        requestAnimationFrame(() => {
+            modal.classList.remove('opacity-0');
+            const card = modal.querySelector('div'); // The inner card
+            if (card) {
+                card.classList.remove('scale-95');
+                card.classList.add('scale-100');
+            }
+        });
+    }
 
-    // Event Listeners for Subject Selection
+    function closeModal(modal) {
+        modal.classList.add('opacity-0');
+        const card = modal.querySelector('div');
+        if (card) {
+            card.classList.remove('scale-100');
+            card.classList.add('scale-95');
+        }
+        setTimeout(() => {
+            modal.classList.add('hidden');
+        }, 300); // Match transition duration
+    }
+
+    // --- Event Listeners ---
+
+    // Subject Selection
     subjectButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            // Prevent bubbling if inside another clickable
+            e.stopPropagation();
+
             const subject = btn.getAttribute('data-subject');
+
             if (subject === 'speed') {
-                // Speed Mode: Direct start with fixed settings
+                // Speed Mode: Direct Launch
                 window.location.href = `quiz.html?subject=speed&count=50&difficulty=mixed`;
-            } else {
-                selectSubject(subject);
+                return;
             }
+
+            // Open Mission Briefing (Start Modal)
+            currentCategory = subject;
+            const displayTitle = subjectMap[subject] || "Unknown Subject";
+            if (subjectTitle) subjectTitle.textContent = displayTitle;
+
+            openModal(modalStart);
         });
     });
 
-    function selectSubject(subject) {
-        currentCategory = subject;
-        const title = subjectMap[subject] || "Quiz";
-
-        subjectTitle.textContent = `Quiz ${title}`;
-        appTitle.textContent = title;
-
-        showScreen(startScreen);
+    // Start Quiz
+    if (startBtn) {
+        startBtn.addEventListener('click', () => {
+            const count = questionCountSelect.value;
+            const difficulty = difficultySelect.value;
+            window.location.href = `quiz.html?subject=${currentCategory}&count=${count}&difficulty=${difficulty}`;
+        });
     }
 
-    function showScreen(screen) {
-        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-        screen.classList.add('active');
+    // Close Modals
+    if (closeStartBtn) {
+        closeStartBtn.addEventListener('click', () => closeModal(modalStart));
     }
 
-    // Start Quiz - Navigate to quiz.html
-    startBtn.addEventListener('click', () => {
-        const count = questionCountSelect.value;
-        const difficulty = document.getElementById('difficulty-select').value;
-        // Redirect to quiz page with parameters
-        window.location.href = `quiz.html?subject=${currentCategory}&count=${count}&difficulty=${difficulty}`;
+    // Close on background click
+    [modalStart, modalLeaderboard].forEach(modal => {
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal(modal);
+            });
+        }
     });
 
-    if (backToSubjectsBtn) {
-        backToSubjectsBtn.addEventListener('click', () => {
-            showScreen(subjectSelectionScreen);
-        });
-    }
+    // --- Leaderboard ---
+    const handleLeaderboardOpen = async () => {
+        openModal(modalLeaderboard);
+        const body = document.getElementById('leaderboard-body');
+        body.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-white/50">Loading data...</td></tr>';
 
-    // Leaderboard Logic
-    const leaderboardBtn = document.getElementById('leaderboard-btn');
-    const leaderboardScreen = document.getElementById('leaderboard-screen');
-    const backFromLeaderboardBtn = document.getElementById('back-from-leaderboard-btn');
-    const leaderboardBody = document.getElementById('leaderboard-body');
+        if (window.Leaderboard) {
+            const scores = await window.Leaderboard.getLeaderboard();
+            renderLeaderboard(scores);
+        } else {
+            body.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-danger">Error loading module</td></tr>';
+        }
+    };
 
-    if (leaderboardBtn) {
-        leaderboardBtn.addEventListener('click', async () => {
-            showScreen(leaderboardScreen);
-            leaderboardBody.innerHTML = '<tr><td colspan="3">Caricamento...</td></tr>';
+    if (leaderboardBtn) leaderboardBtn.addEventListener('click', handleLeaderboardOpen);
+    if (navRankBtn) navRankBtn.addEventListener('click', handleLeaderboardOpen);
 
-            if (window.Leaderboard) {
-                const scores = await window.Leaderboard.getLeaderboard();
-                renderLeaderboard(scores);
-            } else {
-                leaderboardBody.innerHTML = '<tr><td colspan="3">Errore caricamento modulo</td></tr>';
-            }
-        });
-    }
-
-    if (backFromLeaderboardBtn) {
-        backFromLeaderboardBtn.addEventListener('click', () => {
-            showScreen(subjectSelectionScreen);
-        });
+    if (closeRankBtn) {
+        closeRankBtn.addEventListener('click', () => closeModal(modalLeaderboard));
     }
 
     function renderLeaderboard(scores) {
-        leaderboardBody.innerHTML = '';
+        const body = document.getElementById('leaderboard-body');
+        body.innerHTML = '';
+
         if (scores.length === 0) {
-            leaderboardBody.innerHTML = '<tr><td colspan="3">Nessun punteggio ancora!</td></tr>';
+            body.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-white/50">No scores yet!</td></tr>';
             return;
         }
 
         scores.forEach((entry, index) => {
             const row = document.createElement('tr');
-            let medal = '';
-            if (index === 0) medal = '🥇 ';
-            if (index === 1) medal = '🥈 ';
-            if (index === 2) medal = '🥉 ';
+            row.className = 'border-b border-white/5 hover:bg-white/5 transition-colors';
+
+            let rankDisplay = `<span class="font-mono text-white/50">#${index + 1}</span>`;
+            if (index === 0) rankDisplay = '🥇';
+            if (index === 1) rankDisplay = '🥈';
+            if (index === 2) rankDisplay = '🥉';
 
             row.innerHTML = `
-                <td>${medal}${index + 1}</td>
-                <td>${entry.name} <span style="font-size: 0.7rem; color: #FFD700; margin-left: 5px;">(Lvl ${entry.level})</span></td>
-                <td><span style="font-weight: bold; color: var(--primary-color);">${entry.score}</span> XP</td>
+                <td class="p-3">${rankDisplay}</td>
+                <td class="p-3 font-bold text-white">
+                    ${entry.name} 
+                    <span class="text-[10px] text-yellow-500 ml-1 font-mono uppercase">Lvl ${entry.level || 1}</span>
+                </td>
+                <td class="p-3 text-right font-mono text-primary font-bold">${entry.score}</td>
             `;
-            leaderboardBody.appendChild(row);
+            body.appendChild(row);
         });
     }
 });
