@@ -143,6 +143,8 @@ function renderUserTable(users) {
         const tr = document.createElement('tr');
         const isAdmin = user.role === 'admin';
         const isCurrentUser = user.id === currentUserId;
+        // Default to true if undefined (legacy users), explicit false is pending
+        const isApproved = user.isApproved !== false;
 
         tr.innerHTML = `
             <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">${user.username || 'N/A'}</td>
@@ -152,8 +154,18 @@ function renderUserTable(users) {
                     ${user.role || 'user'}
                 </span>
             </td>
+            <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <span style="padding: 0.2rem 0.6rem; border-radius: 4px; background: ${isApproved ? 'rgba(16, 185, 129, 0.2)' : 'rgba(239, 68, 68, 0.2)'}; color: ${isApproved ? '#10b981' : '#ef4444'}; font-size: 0.8rem;">
+                    ${isApproved ? 'Active' : 'Pending'}
+                </span>
+            </td>
             <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: right;">
                 ${!isCurrentUser ? `
+                    ${!isApproved ? `
+                        <button class="btn-approve" data-uid="${user.id}" style="background: #10b981; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">APPROVA</button>
+                    ` : `
+                        <button class="btn-revoke" data-uid="${user.id}" style="background: #6b7280; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Blocca</button>
+                    `}
                     ${!isAdmin ? `
                         <button class="btn-promote" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Promuovi Admin</button>
                     ` : `
@@ -179,6 +191,34 @@ function renderUserTable(users) {
                 } else {
                     alert("Errore durante l'aggiornamento.");
                 }
+            }
+        });
+    });
+
+    // Approve
+    document.querySelectorAll('.btn-approve').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const uid = e.target.dataset.uid;
+            if (confirm("Attivare questo account? L'utente potrà accedere.")) {
+                const success = await UserData.toggleUserApproval(uid, true);
+                if (success) {
+                    alert("Account attivato!");
+                    loadAdminDashboard();
+                } else alert("Errore.");
+            }
+        });
+    });
+
+    // Revoke
+    document.querySelectorAll('.btn-revoke').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const uid = e.target.dataset.uid;
+            if (confirm("Bloccare questo account? L'utente NON potrà più accedere.")) {
+                const success = await UserData.toggleUserApproval(uid, false);
+                if (success) {
+                    alert("Account bloccato.");
+                    loadAdminDashboard();
+                } else alert("Errore.");
             }
         });
     });

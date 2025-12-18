@@ -321,8 +321,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             mistakes++;
             updateLivesVisual();
             playSound('wrong');
-            // Check for game over in speed mode?
-            // For now, continue.
+
+            // Survival Mode Game Over Check
+            if (isSpeedMode && mistakes >= 3) {
+                // Game Over
+                setTimeout(() => {
+                    alert("GAME OVER! You ran out of lives.");
+                    showResults();
+                }, 500);
+                return; // Stop processing
+            }
+
             if (auth.currentUser) UserData.logError(q.id);
         }
 
@@ -337,7 +346,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             currentQuestionIndex++;
             loadQuestion();
         } else {
-            showResults();
+            // End of list reached
+            if (isSpeedMode) {
+                // Survival Mode: Infinite Loop - Add more questions!
+                // We'll just reshuffle the existing ones (or ideally fetch more, but we have all in memory)
+                // To simulate 'infinite', let's append the same questions but shuffled again
+                const moreQuestions = currentQuestions.map(q => ({ ...q, userAnswer: null, shuffledOptions: null })).sort(() => 0.5 - Math.random());
+                currentQuestions = currentQuestions.concat(moreQuestions);
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
         }
     });
 
@@ -346,10 +366,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         resultScreen.classList.remove('hidden');
 
         finalScore.textContent = score;
-        finalScoreFraction.textContent = `${score / (currentQuestions.length * 100) * 100 | 0}%`; // Approx
+        // In survival, total questions is dynamic, so fraction might be weird. Show just "Infinite" or count
+        finalScoreFraction.textContent = isSpeedMode ? `${currentQuestionIndex + 1} Questions` : `${score / (currentQuestions.length * 100) * 100 | 0}%`;
 
         const correctCount = currentQuestions.filter(q => q.isCorrect).length;
-        const accuracy = Math.round((correctCount / currentQuestions.length) * 100);
+        const totalAnswered = currentQuestionIndex + 1; // Approx
+        const accuracy = Math.round((correctCount / totalAnswered) * 100) || 0;
         accuracyDisplay.textContent = `${accuracy}%`;
 
         // XP Calculation
@@ -370,10 +392,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Save Score Logic
         if (isSpeedMode) {
             saveScoreContainer.classList.remove('hidden');
-            saveScoreBtn.onclick = () => {
+            saveScoreBtn.onclick = async () => {
                 const name = playerNameInput.value || "UNK";
                 // Leaderboard save logic here
-                alert("Score Saved: " + name);
+                // Note: We need to import Leaderboard or use UserData to save high score if we want global ranking
+                // For now, simple alert as placeholder was in original code
+                if (window.Leaderboard) {
+                    await window.Leaderboard.saveScore(name, score);
+                    alert("Punteggio salvato in classifica!");
+                    window.location.href = 'home.html';
+                } else {
+                    alert("Score Saved Locally: " + name);
+                    window.location.href = 'home.html';
+                }
             };
         }
     }

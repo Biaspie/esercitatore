@@ -1,170 +1,165 @@
 <!DOCTYPE html>
-<html lang="it">
+<html class="dark" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Esercitatore</title>
-    <link rel="stylesheet" href="style.css?v=7">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Quiz Quest - Admin Link</title> <!-- Renamed Title as pun -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1313ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                        "retro-dark": "#05051a",
+                        "retro-green": "#00ff00",
+                        "retro-red": "#ff0000",
+                        "retro-yellow": "#ffff00",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "retro": ['"VT323"', "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    backgroundImage: {
+                        'scanlines': 'linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2))',
+                    },
+                    boxShadow: {
+                        'retro': '4px 4px 0px 0px rgba(0,0,0,0.5)',
+                        'retro-sm': '2px 2px 0px 0px rgba(0,0,0,0.5)',
+                    }
+                },
+            },
+        }
+    </script>
     <style>
-        .admin-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            color: white;
+        ::-webkit-scrollbar {
+            width: 8px;
         }
 
-        /* Override global body styles for scrolling */
-        body {
-            overflow-y: auto !important;
-            height: auto !important;
-            display: block !important;
+        ::-webkit-scrollbar-track {
+            background: #101022;
         }
 
-        .section-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--text-muted);
-            border-left: 3px solid var(--primary-color);
-            padding-left: 0.8rem;
+        ::-webkit-scrollbar-thumb {
+            background: #323267;
         }
 
-        .charts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1313ec;
         }
 
-        .chart-card {
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 1.5rem;
-            height: 350px;
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
-        .users-table-container {
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            overflow: hidden;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th {
-            text-align: left;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text-muted);
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        /* Login Screen Styles */
-        .login-screen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            gap: 1rem;
-        }
-
-        .login-input {
-            padding: 0.8rem;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: rgba(0, 0, 0, 0.3);
-            color: white;
-            width: 300px;
+        /* Custom Table Scrollbar */
+        .table-container {
+            scrollbar-color: #323267 #18182f;
+            scrollbar-width: thin;
         }
     </style>
 </head>
 
-<body>
-    <div class="background-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
+<body
+    class="bg-background-light dark:bg-background-dark font-display antialiased selection:bg-primary selection:text-white overflow-hidden">
+
+    <div class="flex items-center justify-center min-h-screen w-full bg-[#050510] p-4">
+        <div
+            class="relative w-full max-w-4xl bg-background-dark flex flex-col overflow-hidden border-2 border-[#323267] shadow-[0_0_50px_rgba(0,0,0,0.5)] rounded-lg h-[800px] max-h-[90vh]">
+            <!-- CRT Overlay -->
+            <div class="absolute inset-0 z-50 pointer-events-none bg-scanlines bg-[length:100%_4px] opacity-10"></div>
+
+            <!-- Header -->
+            <header
+                class="relative z-10 flex items-center justify-between bg-[#111122]/90 p-4 border-b-2 border-[#323267] backdrop-blur-sm shrink-0">
+                <div class="flex items-center gap-3">
+                    <button onclick="window.location.href='home.html'"
+                        class="p-2 -ml-2 hover:bg-white/5 rounded-full transition-colors group">
+                        <span class="material-symbols-outlined text-white/50 group-hover:text-white">arrow_back</span>
+                    </button>
+                    <div class="flex flex-col">
+                        <h1 class="text-white text-lg font-bold tracking-tight uppercase">Admin Console</h1>
+                        <span class="text-xs text-[#9292c9] font-mono tracking-widest">ROOT ACCESS</span>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined text-retro-red animate-pulse">lock_open</span>
+            </header>
+
+            <!-- Main Content -->
+            <div id="dashboard" class="flex-1 overflow-y-auto p-4 flex flex-col gap-6 relative z-10 scrollbar-hide">
+
+                <!-- Analytics Section -->
+                <div>
+                    <h2
+                        class="text-[#9292c9] text-xs font-bold tracking-widest uppercase mb-2 border-l-4 border-primary pl-2">
+                        System Analytics</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-[#18182f] p-4 rounded border border-[#323267] shadow-retro-sm">
+                            <h3 class="text-white/50 text-xs uppercase mb-2">Daily Access</h3>
+                            <div class="h-48 relative"><canvas id="accessesChart"></canvas></div>
+                        </div>
+                        <div class="bg-[#18182f] p-4 rounded border border-[#323267] shadow-retro-sm">
+                            <h3 class="text-white/50 text-xs uppercase mb-2">Quizzes Completed</h3>
+                            <div class="h-48 relative"><canvas id="quizzesChart"></canvas></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Users Section -->
+                <div class="flex-1 min-h-[300px] flex flex-col">
+                    <h2
+                        class="text-[#9292c9] text-xs font-bold tracking-widest uppercase mb-2 border-l-4 border-primary pl-2">
+                        User Database</h2>
+                    <div
+                        class="flex-1 bg-[#18182f] border border-[#323267] rounded shadow-retro-sm overflow-hidden flex flex-col">
+                        <div class="overflow-x-auto overflow-y-auto flex-1 table-container">
+                            <table class="w-full text-left font-mono text-sm">
+                                <thead class="bg-[#232348] text-[#9292c9] uppercase tracking-wider sticky top-0">
+                                    <tr>
+                                        <th class="p-3 font-semibold">Username</th>
+                                        <th class="p-3 font-semibold">Email</th>
+                                        <th class="p-3 font-semibold">Role</th>
+                                        <th class="p-3 font-semibold">Status</th>
+                                        <th class="p-3 font-semibold text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="users-table-body" class="divide-y divide-[#323267] text-white/80">
+                                    <tr>
+                                        <td colspan="4" class="p-8 text-center text-white/30 italic">Initializing
+                                            Uplink...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reports Placeholder -->
+                <div id="reports-list" class="hidden"></div>
+
+            </div>
+        </div>
     </div>
 
-    <!-- Legacy Password Protection (Optional fallback) -->
-    <!-- We will rely on Firebase Auth + Role check in admin.js, but keep this hidden/removed or simplified -->
-
-    <div id="dashboard" class="admin-container">
-        <header style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
-            <div style="display: flex; align-items: center; gap: 1rem;">
-                <button onclick="window.location.href='home.html'" class="btn secondary-btn"
-                    style="padding: 0.5rem 1rem;">←</button>
-                <h1>Admin Dashboard</h1>
-            </div>
-            <div style="font-size: 0.9rem; color: var(--text-muted);">
-                Area Riservata
-            </div>
-        </header>
-
-        <!-- Analytics Section -->
-        <section>
-            <h2 class="section-title">Analisi Sito</h2>
-            <div class="charts-grid">
-                <div class="chart-card">
-                    <h3 style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted);">Accessi Giornalieri</h3>
-                    <canvas id="accessesChart"></canvas>
-                </div>
-                <div class="chart-card">
-                    <h3 style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted);">Quiz Completati</h3>
-                    <canvas id="quizzesChart"></canvas>
-                </div>
-            </div>
-        </section>
-
-        <!-- User Management Section -->
-        <section>
-            <h2 class="section-title">Gestione Utenti</h2>
-            <div class="users-table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Ruolo</th>
-                            <th style="text-align: right;">Azioni</th>
-                        </tr>
-                    </thead>
-                    <tbody id="users-table-body">
-                        <tr>
-                            <td colspan="4" style="padding: 2rem; text-align: center; color: var(--text-muted);">
-                                Caricamento utenti...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Reports Section (Existing) -->
-        <section style="margin-top: 3rem;">
-            <h2 class="section-title">Segnalazioni Errori</h2>
-            <div id="reports-list">
-                <!-- Reports will be loaded here via admin.js (if we merge logic) or we can keep the old logic -->
-                <!-- For now, admin.js handles stats/users. We might need to migrate reports logic to admin.js or keep it here. -->
-                <!-- Let's keep the old reports logic inline or move it. Ideally move to admin.js but for now let's leave a placeholder or integrate. -->
-                <!-- Since the user asked for specific features, I'll focus on those. The old reports logic was in the previous admin.html script. -->
-                <!-- I should probably preserve it or re-implement it. I'll re-implement fetching reports in admin.js if needed, or just leave this section empty for now as the user didn't explicitly ask to keep it, but it's good practice. -->
-                <!-- Actually, I'll leave the container. The previous script for reports is gone because I overwrote the file. -->
-                <!-- I will add a TODO or basic message. -->
-                <div style="text-align: center; color: var(--text-muted); padding: 1rem;">
-                    (Funzionalità segnalazioni in manutenzione - Focus su Statistiche e Utenti)
-                </div>
-            </div>
-        </section>
-    </div>
-
+    <!-- Logic -->
     <script type="module" src="admin.js?v=2"></script>
 </body>
 

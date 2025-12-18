@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         confirmPasswordGroup.classList.add('hidden');
         passwordGroup.classList.remove('hidden');
         forgotPasswordLink.classList.remove('hidden');
-        
+
         // Reset Input requirements
         passwordInput.required = true;
         confirmPasswordInput.required = false;
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const setToggleBtn = (icon, text) => {
-             toggleAuth.innerHTML = `<span class="material-symbols-outlined text-[16px]">${icon}</span>${text}`;
+            toggleAuth.innerHTML = `<span class="material-symbols-outlined text-[16px]">${icon}</span>${text}`;
         };
 
         if (authMode === 'login') {
@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('h1').textContent = "Benvenuto";
             authSubtitle.textContent = "Accedi per salvare i tuoi progressi";
             setSubmitText("Accedi");
-            
+
             // Toggle Button -> "Create Account"
             setToggleBtn('person_add', 'Crea Nuovo Account');
-            if(toggleText) toggleText.textContent = "Non hai un account?";
-            
+            if (toggleText) toggleText.textContent = "Non hai un account?";
+
             // Visibility
             confirmPasswordGroup.classList.add('hidden');
             passwordGroup.classList.remove('hidden');
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Toggle Button -> "Back to Login"
             setToggleBtn('login', 'Accedi al Gioco');
-            if(toggleText) toggleText.textContent = "Hai già un account?";
+            if (toggleText) toggleText.textContent = "Hai già un account?";
 
             // Visibility
             confirmPasswordGroup.classList.remove('hidden');
             passwordGroup.classList.remove('hidden');
             forgotPasswordLink.classList.add('hidden');
-            
+
             confirmPasswordInput.required = true;
 
         } else if (authMode === 'reset') {
@@ -82,13 +82,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Toggle Button -> "Back to Login"
             setToggleBtn('arrow_back', 'Torna al Login');
-            if(toggleText) toggleText.textContent = "";
+            if (toggleText) toggleText.textContent = "";
 
             // Visibility
             confirmPasswordGroup.classList.add('hidden');
             passwordGroup.classList.add('hidden');
             forgotPasswordLink.classList.add('hidden');
-            
+
             passwordInput.required = false;
         }
     }
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             submitBtn.disabled = true;
             if (submitBtnTextSpan) submitBtnTextSpan.textContent = "Caricamento...";
-            
+
             if (authMode === 'login') {
                 // Login
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
@@ -138,8 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Record Login Stat
                 await UserData.recordLogin();
 
-                // Sync username to Firestore
+                // Sync username to Firestore (and get latest data)
                 await UserData.updateUserProfile(user.uid, { username: username, email: email });
+
+                // Check Approval Status
+                const userData = await UserData.getUserData();
+                if (userData && userData.role !== 'admin' && userData.isApproved === false) {
+                    await auth.signOut();
+                    alert("ACCOUNT NON ATTIVO\n\nIl tuo account è in attesa di approvazione da parte di un amministratore.");
+                    // Reset UI
+                    submitBtn.disabled = false;
+                    updateUI();
+                    return;
+                }
 
                 // Force Admin Role if username is 'admin'
                 if (username === 'admin') {
@@ -169,9 +180,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 await UserData.recordLogin();
 
-                alert("Registrazione completata! Ora verrai reindirizzato.");
-                localStorage.setItem('quizUser', username);
-                window.location.href = 'home.html';
+                alert("Registrazione completata!\n\nIl tuo account deve essere APPROVATO da un amministratore prima di poter accedere.\nAttendi l'attivazione.");
+                // We keep them on login page instead of redirecting because they can't login yet
+                authMode = 'login';
+                updateUI();
 
             } else if (authMode === 'reset') {
                 await sendPasswordResetEmail(auth, email);
@@ -183,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error("Auth error:", error);
             let errorMessage = "Errore durante l'operazione.";
-            
+
             // Map Firebase errors to Italian
             switch (error.code) {
                 case 'auth/invalid-email': errorMessage = "Username non valido (usa solo lettere e numeri)."; break;

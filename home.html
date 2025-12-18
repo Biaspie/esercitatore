@@ -163,12 +163,24 @@
                 <!-- Mini Grid -->
                 <div class="grid grid-cols-2 gap-4">
                     <!-- Leaderboard -->
-                    <button id="leaderboard-btn"
-                        class="bg-surface-dark p-4 rounded border border-white/10 flex flex-col gap-1 hover:border-yellow-500/50 transition-colors text-left group">
+                    <button
+                        class="subject-btn group relative flex items-center justify-between p-4 bg-gradient-to-r from-retro-red/20 to-retro-red/10 border-2 border-retro-red rounded-lg hover:bg-retro-red/30 transition-all active:scale-[0.98] overflow-hidden"
+                        data-subject="survival">
+                        <div class="flex items-center gap-4 relative z-10">
+                            <div
+                                class="w-10 h-10 rounded bg-[#101022] border-2 border-retro-red flex items-center justify-center text-retro-red group-hover:text-white group-hover:bg-retro-red transition-colors shadow-[0_0_10px_rgba(255,0,0,0.4)]">
+                                <span class="material-symbols-outlined">health_and_safety</span>
+                            </div>
+                            <div class="text-left">
+                                <h3
+                                    class="text-white font-bold uppercase tracking-wider text-sm group-hover:text-retro-red transition-colors">
+                                    Survival Mode</h3>
+                                <p class="text-[10px] text-white/50 font-mono uppercase tracking-widest">3 Lives •
+                                    Infinite</p>
+                            </div>
+                        </div>
                         <span
-                            class="material-symbols-outlined text-yellow-500 mb-2 group-hover:scale-110 transition-transform">emoji_events</span>
-                        <span class="text-xs text-white/60 font-mono uppercase">Rankings</span>
-                        <span class="text-lg font-bold text-white">Global</span>
+                            class="material-symbols-outlined text-retro-red/50 group-hover:translate-x-1 transition-transform">chevron_right</span>
                     </button>
                     <!-- Stats -->
                     <a href="stats.html"

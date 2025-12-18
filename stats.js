@@ -83,8 +83,9 @@ function renderAccuracyChart(correct, wrong) {
             labels: ['Corrette', 'Errate'],
             datasets: [{
                 data: [correct, wrong],
-                backgroundColor: ['#10b981', '#ef4444'],
-                borderWidth: 0,
+                backgroundColor: ['#00ff00', '#ff0000'], // Retro Green, Retro Red
+                borderWidth: 2,
+                borderColor: '#101022', // Background dark color for separation
                 hoverOffset: 4
             }]
         },
@@ -94,7 +95,10 @@ function renderAccuracyChart(correct, wrong) {
             plugins: {
                 legend: {
                     position: 'bottom',
-                    labels: { color: '#94a3b8' }
+                    labels: {
+                        color: '#9292c9', // Text muted color
+                        font: { family: '"VT323", monospace', size: 14 }
+                    }
                 }
             }
         }
@@ -124,8 +128,10 @@ function renderActivityChart(activityMap) {
             datasets: [{
                 label: 'Domande Svolte',
                 data: data,
-                backgroundColor: '#3b82f6',
-                borderRadius: 4
+                backgroundColor: '#1313ec', // ID Primary
+                borderRadius: 2,
+                borderWidth: 1,
+                borderColor: '#323267'
             }]
         },
         options: {
@@ -134,16 +140,31 @@ function renderActivityChart(activityMap) {
             scales: {
                 y: {
                     beginAtZero: true,
-                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                    ticks: { color: '#94a3b8' }
+                    grid: { color: 'rgba(50, 50, 103, 0.3)' },
+                    ticks: {
+                        color: '#9292c9',
+                        font: { family: '"VT323", monospace' }
+                    }
                 },
                 x: {
                     grid: { display: false },
-                    ticks: { color: '#94a3b8' }
+                    ticks: {
+                        color: '#9292c9',
+                        font: { family: '"VT323", monospace' }
+                    }
                 }
             },
             plugins: {
-                legend: { display: false }
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#18182f',
+                    titleColor: '#fff',
+                    bodyColor: '#fff',
+                    borderColor: '#323267',
+                    borderWidth: 1,
+                    titleFont: { family: '"VT323", monospace' },
+                    bodyFont: { family: '"VT323", monospace' }
+                }
             }
         }
     });

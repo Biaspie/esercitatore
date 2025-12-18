@@ -93,9 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const subject = btn.getAttribute('data-subject');
 
-            if (subject === 'speed') {
-                // Speed Mode: Direct Launch
-                window.location.href = `quiz.html?subject=speed&count=50&difficulty=mixed`;
+            if (subject === 'survival') {
+                // Survival Mode: Direct Launch
+                window.location.href = `quiz.html?mode=survival&subject=all`;
                 return;
             }
 

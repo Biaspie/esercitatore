@@ -199,6 +199,7 @@ export const UserData = {
                 username: username,
                 email: email,
                 role: 'user', // Default role
+                isApproved: false, // Default: LOCKED until admin approves
                 createdAt: Date.now(),
                 favorites: [],
                 errors: [],
@@ -207,6 +208,17 @@ export const UserData = {
             }, { merge: true });
         } catch (e) {
             console.error("Error creating user doc:", e);
+        }
+    },
+
+    async toggleUserApproval(uid, shouldApprove) {
+        const docRef = doc(db, COLLECTION_NAME, uid);
+        try {
+            await updateDoc(docRef, { isApproved: shouldApprove });
+            return true;
+        } catch (e) {
+            console.error("Error toggling approval:", e);
+            return false;
         }
     },
 
