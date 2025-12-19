@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="dark" lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Laboratorio C - Quiz Quest</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "var(--primary-color)",
+                        "secondary": "var(--secondary-color)",
+                        "success": "#10b981",
+                        "danger": "#ff0055",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                        "surface-dark": "#232348",
+                        "terminal-bg": "#0f0f1a",
+                    },
+                    fontFamily: {
+                        "display": ['"VT323"', "monospace"],
+                        "mono": ["monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                    },
+                    boxShadow: {
+                        'retro': '4px 4px 0px 0px rgba(0,0,0,0.5)',
+                    }
+                },
+            },
+        }
+    </script>
+    <script>
+        // Theme variables injection
+        const root = document.documentElement;
+        const theme = localStorage.getItem('theme-color') || 'blue';
+        const colors = {
+            blue: { primary: '#3b82f6', secondary: '#60a5fa' },
+            green: { primary: '#10b981', secondary: '#34d399' },
+            purple: { primary: '#8b5cf6', secondary: '#a78bfa' },
+            orange: { primary: '#f59e0b', secondary: '#fbbf24' },
+            pink: { primary: '#ec4899', secondary: '#f472b6' },
+        };
+        root.style.setProperty('--primary-color', colors[theme].primary);
+        root.style.setProperty('--primary-dark', colors[theme].primary);
+        root.style.setProperty('--secondary-color', colors[theme].secondary);
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-hidden h-screen flex flex-col selection:bg-success selection:text-black">
+
+    <!-- Header -->
+    <header class="h-14 bg-background-dark border-b border-white/10 flex items-center justify-between px-4 shrink-0">
+        <div class="flex items-center gap-4">
+            <a href="home.html" class="flex items-center text-white/50 hover:text-white transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </a>
+            <h1 class="text-xl font-bold text-success uppercase tracking-widest flex items-center gap-2">
+                <span class="material-symbols-outlined">terminal</span>
+                Laboratorio C
+            </h1>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 bg-surface-dark px-3 py-1 rounded border border-white/10">
+                <span class="text-xs text-white/50 uppercase">Level</span>
+                <span class="text-lg font-bold text-white" id="current-level-display">1</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="flex-1 flex overflow-hidden">
+
+        <!-- Sidebar: Level Map -->
+        <aside class="w-64 bg-surface-dark border-r border-white/10 flex flex-col shrink-0">
+            <div class="p-4 border-b border-white/10">
+                <h2 class="text-xs font-bold uppercase text-white/50 tracking-widest mb-1">Mission Control</h2>
+            </div>
+            <div class="flex-1 overflow-y-auto p-4 space-y-2" id="level-list">
+                <!-- Injected via JS -->
+            </div>
+        </aside>
+
+        <!-- Editor Area -->
+        <section class="flex-1 flex flex-col min-w-0 bg-[#0c0c16]">
+            <!-- Instructions and Objective -->
+            <div class="h-1/3 border-b border-white/10 p-6 overflow-y-auto bg-surface-dark/50">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-2xl font-bold text-white mb-2" id="mission-title">Loading...</h2>
+                    <p class="text-white/70 font-sans leading-relaxed mb-4" id="mission-desc">...</p>
+
+                    <div class="bg-black/30 p-4 rounded border border-white/10">
+                        <h3 class="text-xs font-bold text-success uppercase mb-2">Obiettivo</h3>
+                        <p class="text-sm font-mono text-white/90" id="mission-goal">...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Editor & Console Split -->
+            <div class="flex-1 flex flex-row overflow-hidden">
+                <!-- Editor -->
+                <div class="flex-1 flex flex-col border-r border-white/10 relative">
+                    <div
+                        class="bg-[#1a1a2e] px-4 py-2 flex justify-between items-center text-xs text-white/50 font-mono border-b border-white/5">
+                        <span>main.c</span>
+                        <div class="flex gap-2">
+                            <button id="reset-btn" class="hover:text-white transition-colors">Reset</button>
+                        </div>
+                    </div>
+                    <textarea id="code-editor"
+                        class="flex-1 bg-transparent text-white font-mono p-4 resize-none outline-none leading-relaxed text-sm w-full h-full spellcheck-false"
+                        spellcheck="false"></textarea>
+
+                    <!-- Run Button Floating -->
+                    <button id="run-btn"
+                        class="absolute bottom-6 right-6 bg-success hover:bg-emerald-400 text-black font-bold px-6 py-3 rounded shadow-retro hover:shadow-none hover:translate-y-[2px] transition-all flex items-center gap-2">
+                        <span class="material-symbols-outlined">play_arrow</span>
+                        COMPILA & ESEGUI
+                    </button>
+                </div>
+
+                <!-- Console Output -->
+                <div class="w-2/5 bg-terminal-bg flex flex-col font-mono text-sm border-l border-white/10">
+                    <div
+                        class="bg-black/20 px-4 py-2 text-xs text-white/30 uppercase tracking-wider border-b border-white/5">
+                        Terminale Output
+                    </div>
+                    <div id="console-output" class="flex-1 p-4 overflow-y-auto space-y-1 text-gray-300">
+                        <div class="text-white/20 italic">In attesa di compilazione...</div>
+                    </div>
+                    <!-- Input Area (Hidden initially) -->
+                    <div id="input-area" class="p-2 border-t border-white/10 hidden bg-surface-dark">
+                        <input type="text" id="console-input"
+                            class="w-full bg-transparent border-none text-white focus:ring-0 placeholder-white/20"
+                            placeholder="Inserisci valore e premi invio..." autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="success-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 hidden opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-surface-dark border-2 border-success p-8 rounded-lg shadow-2xl max-w-md w-full text-center transform scale-90 transition-transform">
+            <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="material-symbols-outlined text-4xl text-success">check_circle</span>
+            </div>
+            <h2 class="text-2xl font-bold text-white mb-2">Compilazione Riuscita!</h2>
+            <p class="text-white/60 mb-6 font-mono">Output corretto. Livello completato.</p>
+            <div class="flex gap-4 justify-center">
+                <button id="next-level-btn"
+                    class="bg-success text-black font-bold px-6 py-2 rounded hover:bg-emerald-300 transition-colors">
+                    PROSSIMO LIVELLO
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal (Optional, usually just console output is enough but good for major syntax errors) -->
+
+    <script type="module" src="laboratorio.js"></script>
+</body>
+
+</html>

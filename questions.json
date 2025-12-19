@@ -8591,7 +8591,7 @@
             "Quando viene emessa la sentenza di condanna di primo grado.",
             "Quando viene sottoposto a misura cautelare."
         ],
-        "answer": "Quando il Pubblico Ministero esercita l'azione penale (es. richiesta di rinvio a giudizio).",
+        "answer": "Quando il Pubblico Ministero esercita l'azione penale.",
         "difficulty": 1,
         "explanation": "L'indagato diventa imputato nel momento in cui il P.M. esercita l'azione penale, abbandonando la fase delle indagini preliminari.\n\n⚖️ Riferimento: Codice di Procedura Penale"
     },
@@ -8605,7 +8605,7 @@
             "Obbligatoria solo se si è testimoni oculari.",
             "Facoltativa solo se non si conosce l'autore del reato."
         ],
-        "answer": "Facoltativa, salvo casi specifici previsti dalla legge (es. delitti contro la personalità dello Stato).",
+        "answer": "Facoltativa, salvo casi specifici previsti dalla legge.",
         "difficulty": 1,
         "explanation": "La denuncia per i privati è facoltativa, tranne in casi eccezionali come reati contro la personalità dello Stato o sequestro di persona a scopo di estorsione.\n\n⚖️ Riferimento: Codice di Procedura Penale"
     },
@@ -8647,7 +8647,7 @@
             "L'annotazione è fatta dall'Agente, il verbale solo dall'Ufficiale.",
             "Il verbale deve essere trasmesso al P.M., l'annotazione resta agli atti interni."
         ],
-        "answer": "L'annotazione è un atto più semplice per attività atipiche o di iniziativa; il verbale ha uno schema prefissato ed è obbligatorio per atti garantiti o delegati.",
+        "answer": "L'annotazione è per attività ordinarie; il verbale è obbligatorio per atti garantiti.",
         "difficulty": 2,
         "explanation": "Il verbale è richiesto per atti che incidono su diritti fondamentali (perquisizioni, arresti) o delegati; l'annotazione è per l'attività ordinaria d'indagine.\n\n⚖️ Riferimento: Codice di Procedura Penale"
     },
@@ -8675,7 +8675,7 @@
             "Solo se la P.G. richiede l'autorizzazione al Questore.",
             "Mai, resta sempre un atto amministrativo interno non utilizzabile."
         ],
-        "answer": "Quando contiene una notizia di reato o documenta un'attività di indagine specifica, potendo essere usata per le contestazioni in dibattimento.",
+        "answer": "Quando documenta indagini specifiche o notizie di reato.",
         "difficulty": 3,
         "explanation": "Se contiene notizie di reato o atti di indagine, la relazione perde la sua natura puramente interna e diventa atto del procedimento utilizzabile per contestazioni.\n\n⚖️ Riferimento: Prassi di Polizia / Giurisprudenza"
     },
@@ -8689,7 +8689,7 @@
             "Trasformare l'atto in interrogatorio e procedere immediatamente all'arresto.",
             "Far firmare una dichiarazione di colpevolezza e chiudere il verbale."
         ],
-        "answer": "Deve interrompere l'esame, avvisare la persona che potranno essere svolte indagini nei suoi confronti e invitarla a nominare un difensore.",
+        "answer": "Interrompe l'esame e invita a nominare un difensore.",
         "difficulty": 3,
         "explanation": "È il principio di garanzia (art. 63 c.p.p.): chi è sostanzialmente indagato non può essere sentito come testimone.\n\n⚖️ Riferimento: Art. 63 c.p.p."
     },
@@ -8703,8 +8703,1282 @@
             "Quando sono confermate da una fonte confidenziale.",
             "Quando il reato è di particolare gravità sociale."
         ],
-        "answer": "Quando costituiscono esse stesse il 'corpo del reato' (es. lettera calunniosa) o provengono dall'imputato.",
+        "answer": "Quando costituiscono corpo del reato o provengono dall'imputato.",
         "difficulty": 3,
         "explanation": "L'anonimo non è utilizzabile come notizia di reato vera e propria, salvo che sia esso stesso la prova del reato (es. minacce o calunnie scritte).\n\n⚖️ Riferimento: Art. 240 c.p.p."
+    },
+    {
+        "id": "pp_appr_10",
+        "category": "Procedura Penale - Principi",
+        "question": "Il principio dell'obbligatorietà dell'azione penale (art. 112 Cost.) comporta che il Pubblico Ministero:",
+        "options": [
+            "Deve avviare l'azione penale solo per i reati gravi.",
+            "Deve avviare l'azione penale per ogni notizia di reato fondata, senza discrezionalità politica.",
+            "Può decidere discrezionalmente se esercitare l'azione in base all'allarme sociale.",
+            "Deve chiedere l'autorizzazione al Ministro della Giustizia."
+        ],
+        "answer": "Deve avviare l'azione penale per ogni notizia fondata.",
+        "difficulty": 1,
+        "explanation": "L'esercizio dell'azione penale è sempre obbligatorio per garantire l'uguaglianza dei cittadini davanti alla legge.\n\n⚖️ Riferimento: Art. 112 Cost."
+    },
+    {
+        "id": "pp_appr_11",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Qual è la finalità principale della fase delle 'indagini preliminari'?",
+        "options": [
+            "Formare la prova da utilizzare in dibattimento.",
+            "Individuare ed assicurare le fonti di prova per permettere al P.M. di decidere se esercitare l'azione penale.",
+            "Emettere direttamente la sentenza di condanna.",
+            "Decidere sulla colpevolezza dell'imputato."
+        ],
+        "answer": "Individuare le fonti di prova per le determinazioni del P.M.",
+        "difficulty": 1,
+        "explanation": "Le indagini servono al P.M. per le determinazioni inerenti l'esercizio dell'azione penale, non per formare la prova (che si forma in dibattimento).\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_12",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Prima di richiedere il rinvio a giudizio, quale atto deve essere obbligatoriamente notificato all'indagato?",
+        "options": [
+            "L'avviso di conclusione delle indagini preliminari (art. 415 bis c.p.p.).",
+            "Il decreto di citazione a giudizio.",
+            "L'ordine di carcerazione.",
+            "L'invito a presentarsi per rendere interrogatorio."
+        ],
+        "answer": "L'avviso di conclusione delle indagini preliminari (art. 415 bis c.p.p.).",
+        "difficulty": 2,
+        "explanation": "È un atto di garanzia fondamentale che consente all'indagato di venire a conoscenza degli atti e difendersi prima del processo.\n\n⚖️ Riferimento: Art. 415 bis c.p.p."
+    },
+    {
+        "id": "pp_appr_13",
+        "category": "Procedura Penale - Fase Processuale",
+        "question": "L'udienza preliminare viene definita udienza 'filtro' perché:",
+        "options": [
+            "Filtra il pubblico che può assistere al processo.",
+            "Filtra le prove inutilizzabili.",
+            "Filtra i processi, bloccando quelli con quadro accusatorio non chiaro o insufficiente (evitando dibattimenti inutili).",
+            "Filtra i testimoni non attendibili."
+        ],
+        "answer": "Filtra i processi con quadro accusatorio insufficiente.",
+        "difficulty": 2,
+        "explanation": "Serve a evitare il dibattimento per accuse infondate o azzardate, emettendo sentenza di non luogo a procedere.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_14",
+        "category": "Procedura Penale - Fase Processuale",
+        "question": "Il decreto che dispone il giudizio emesso dal G.U.P. è nullo se manca:",
+        "options": [
+            "L'indicazione dei testimoni a difesa.",
+            "L'indicazione dell'esatta circostanza del luogo e del tempo in cui l'imputato dovrà presentarsi.",
+            "La firma del cancelliere.",
+            "Il consenso dell'imputato."
+        ],
+        "answer": "L'indicazione dell'esatta circostanza del luogo e del tempo in cui l'imputato dovrà presentarsi.",
+        "difficulty": 3,
+        "explanation": "La mancata indicazione di luogo e tempo della comparizione rende nullo il decreto in quanto impedisce il regolare instaurarsi del contraddittorio.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_15",
+        "category": "Procedura Penale - Fase Processuale",
+        "question": "Quando si forma il 'fascicolo per il dibattimento'?",
+        "options": [
+            "Durante la prima udienza dibattimentale.",
+            "Dopo l'emissione del decreto che dispone il giudizio, nel contraddittorio delle parti.",
+            "Al termine della requisitoria del P.M.",
+            "Solo in Corte di Cassazione."
+        ],
+        "answer": "Dopo l'emissione del decreto che dispone il giudizio, nel contraddittorio delle parti.",
+        "difficulty": 2,
+        "explanation": "Si forma subito dopo l'udienza preliminare (o atti equipollenti) per raccogliere gli atti originariamente irripetibili o urgenti.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_16",
+        "category": "Procedura Penale - Fase Processuale",
+        "question": "Cosa confluisce nel 'fascicolo del P.M.' (e non in quello del dibattimento)?",
+        "options": [
+            "Tutti gli atti di indagine compiuti dal P.M. e dalla P.G., inclusi quelli del difensore.",
+            "Solo le sentenze passate in giudicato.",
+            "Solo gli atti irripetibili.",
+            "I verbali di udienza."
+        ],
+        "answer": "Tutti gli atti di indagine compiuti dal P.M. e dalla P.G., inclusi quelli del difensore.",
+        "difficulty": 2,
+        "explanation": "Gli atti d'indagine 'pura' (ripetibili) restano nel fascicolo del P.M. e non sono conoscibili dal giudice del dibattimento se non tramite esame testimoniale.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_17",
+        "category": "Procedura Penale - Dibattimento",
+        "question": "In circostanze particolari, come la presenza di minorenni, il dibattimento può svolgersi:",
+        "options": [
+            "Per iscritto.",
+            "A porte chiuse (senza pubblico).",
+            "In videoconferenza obbligatoria.",
+            "Senza la presenza del giudice."
+        ],
+        "answer": "A porte chiuse (senza pubblico).",
+        "difficulty": 1,
+        "explanation": "La pubblicità del dibattimento è la regola, ma può essere limitata per tutelare minori, morale o sicurezza.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_18",
+        "category": "Procedura Penale - Dibattimento",
+        "question": "Come si chiama la fase del dibattimento in cui il P.M. pone direttamente le domande al proprio testimone?",
+        "options": [
+            "Controesame.",
+            "Esame diretto.",
+            "Riesame.",
+            "Arringa."
+        ],
+        "answer": "Esame diretto.",
+        "difficulty": 1,
+        "explanation": "L'esame diretto è condotto dalla parte che ha richiesto il teste per dimostrare la propria tesi.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_19",
+        "category": "Procedura Penale - Dibattimento",
+        "question": "Qual è la funzione del 'controesame'?",
+        "options": [
+            "Confermare quanto detto nell'esame diretto.",
+            "Mettere in dubbio la credibilità del teste o far emergere contraddizioni (a cura della parte avversa).",
+            "Permettere al giudice di fare domande.",
+            "Concludere la testimonianza con un riassunto."
+        ],
+        "answer": "Mettere in dubbio la credibilità o far emergere contraddizioni.",
+        "difficulty": 3,
+        "explanation": "Il controesame è lo strumento principe del contraddittorio per saggiare l'attendibilità della prova dichiarativa.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_20",
+        "category": "Procedura Penale - Dibattimento",
+        "question": "Il 'riesame' nel dibattimento è una fase:",
+        "options": [
+            "Necessaria sempre.",
+            "Doppiamente eventuale (solo se c'è stato controesame e se la parte lo ritiene opportuno).",
+            "Obbligatoria per i reati gravi.",
+            "Vietata se il teste è un ufficiale di P.G."
+        ],
+        "answer": "Doppiamente eventuale (solo se c'è stato controesame e se la parte lo ritiene opportuno).",
+        "difficulty": 3,
+        "explanation": "Serve al 'recupero' del teste dopo il controesame, ma non è obbligatorio.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_21",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "I Sovrintendenti della Polizia di Stato rivestono la qualifica di:",
+        "options": [
+            "Agenti di Polizia Giudiziaria.",
+            "Ufficiali di Polizia Giudiziaria.",
+            "Ausiliari di Polizia Giudiziaria.",
+            "Ufficiali di Pubblica Sicurezza ma Agenti di P.G."
+        ],
+        "answer": "Ufficiali di Polizia Giudiziaria.",
+        "difficulty": 1,
+        "explanation": "I Sovrintendenti (e ruoli superiori) sono Ufficiali di P.G.; agenti e assistenti sono Agenti di P.G.\n\n⚖️ Riferimento: Art. 57 c.p.p."
+    },
+    {
+        "id": "pp_appr_22",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Le 'attività di iniziativa' della P.G. devono essere caratterizzate da:",
+        "options": [
+            "Assoluta discrezionalità.",
+            "Necessità e urgenza (per assicurare le fonti di prova prima dell'intervento del P.M.).",
+            "Autorizzazione preventiva del Questore.",
+            "Consenso dell'indagato."
+        ],
+        "answer": "Necessità e urgenza di assicurare le fonti di prova.",
+        "difficulty": 2,
+        "explanation": "La P.G. agisce d'iniziativa per 'congelare' la scena o le prove quando attendere il P.M. pregiudicherebbe il risultato.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_23",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Cosa si intende per 'atti atipici' della P.G.?",
+        "options": [
+            "Atti vietati dalla legge.",
+            "Atti privi di una specifica disciplina formale nel codice (es. pedinamenti, appostamenti).",
+            "Atti compiuti da personale in borghese.",
+            "Atti che non richiedono il verbale."
+        ],
+        "answer": "Atti privi di una specifica disciplina formale nel codice.",
+        "difficulty": 2,
+        "explanation": "I pedinamenti non hanno una norma 'ad hoc' come le perquisizioni (atti tipici), ma rientrano nei poteri investigativi generali.\n\n⚖️ Riferimento: Dottrina / Prassi"
+    },
+    {
+        "id": "pp_appr_24",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Il P.M. può delegare alla P.G. l'interrogatorio dell'indagato?",
+        "options": [
+            "Mai, è un atto personalissimo del P.M.",
+            "Sì, ma solo se l'indagato si trova in stato di libertà.",
+            "Sì, sempre, anche se detenuto.",
+            "Solo se è presente il difensore d'ufficio."
+        ],
+        "answer": "Sì, ma solo se l'indagato si trova in stato di libertà.",
+        "difficulty": 3,
+        "explanation": "Se l'indagato è detenuto, l'interrogatorio deve essere svolto personalmente dal P.M. (o G.I.P.), non delegabile alla P.G.\n\n⚖️ Riferimento: Art. 370 c.p.p."
+    },
+    {
+        "id": "pp_appr_25",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Quale tra i seguenti è un atto 'coercitivo' della P.G.?",
+        "options": [
+            "Ricezione di querela.",
+            "Arresto in flagranza.",
+            "Assunzione di sommarie informazioni.",
+            "Identificazione."
+        ],
+        "answer": "Arresto in flagranza.",
+        "difficulty": 1,
+        "explanation": "L'arresto priva la persona della libertà fisica, quindi è coercitivo.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_26",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "La 'annotazione' di P.G. deve essere indirizzata:",
+        "options": [
+            "Al Sindaco.",
+            "Al P.M. o al responsabile del servizio di P.G.",
+            "Al Giudice di Pace.",
+            "Alla stampa."
+        ],
+        "answer": "Al P.M. o al responsabile del servizio.",
+        "difficulty": 2,
+        "explanation": "È il documento base per riferire l'attività svolta all'autorità giudiziaria o ai superiori.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_27",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Se un atto di P.G. che richiede il verbale viene invece documentato con semplice annotazione:",
+        "options": [
+            "L'atto è sempre nullo e inesistente.",
+            "Non è nullo se l'annotazione contiene comunque gli elementi essenziali per individuare la fonte e l'atto.",
+            "È valido solo se controfirmato dal Questore.",
+            "Comporta l'arresto dell'operatore."
+        ],
+        "answer": "Non è nullo se contiene gli elementi essenziali.",
+        "difficulty": 3,
+        "explanation": "Prevale la sostanza sulla forma: se l'atto è ricostruibile e garantito, l'errore formale non sempre vizia l'atto (irregolarità).\n\n⚖️ Riferimento: Giurisprudenza"
+    },
+    {
+        "id": "pp_appr_28",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Il verbale di un atto di P.G. costituisce 'piena prova' dei fatti accertati:",
+        "options": [
+            "Sempre e comunque.",
+            "Fino a querela di falso (fede privilegiata) per quanto compiuto o constatato dal pubblico ufficiale.",
+            "Solo se confermato in dibattimento dal verbalizzante.",
+            "Mai, è solo un indizio."
+        ],
+        "answer": "Fino a querela di falso per i fatti compiuti o constatati.",
+        "difficulty": 3,
+        "explanation": "Ciò che il P.U. attesta di aver fatto o visto (estrinseco) è vero fino a prova contraria rafforzata (querela di falso).\n\n⚖️ Riferimento: Codice Civile / Procedura"
+    },
+    {
+        "id": "pp_appr_29",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Qual è la conseguenza se un verbale manca della sottoscrizione (firma) del Pubblico Ufficiale che lo ha redatto?",
+        "options": [
+            "Nullità dell'atto.",
+            "Semplice irregolarità sanabile.",
+            "Multa per il P.U.",
+            "L'atto diventa una annotazione."
+        ],
+        "answer": "Nullità dell'atto.",
+        "difficulty": 2,
+        "explanation": "La firma è requisito essenziale per l'esistenza giuridica e la paternità dell'atto; la sua mancanza provoca nullità.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_30",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Il 'corpo' del verbale di P.G. deve contenere:",
+        "options": [
+            "Solo le domande fatte dall'operatore.",
+            "La descrizione di ciò che è stato fatto o constatato e le dichiarazioni ricevute.",
+            "Le opinioni personali dell'operatore.",
+            "Solo la firma dell'indagato."
+        ],
+        "answer": "La descrizione di ciò che è stato fatto o constatato e le dichiarazioni ricevute.",
+        "difficulty": 1,
+        "explanation": "È la parte narrativa in cui si descrivono le operazioni compiute e i fatti rilevati.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_31",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Se durante la redazione di un verbale una persona informata sui fatti rende dichiarazioni auto-indizianti (indizi di reità):",
+        "options": [
+            "Il verbale prosegue ma le dichiarazioni non sono utilizzabili.",
+            "Il verbale deve essere interrotto e la persona deve essere avvisata e invitata a nominare un difensore.",
+            "La persona viene subito arrestata.",
+            "L'operatore deve cancellare le dichiarazioni dal verbale."
+        ],
+        "answer": "Interrompe il verbale e invita a nominare un difensore.",
+        "difficulty": 3,
+        "explanation": "Scatta la garanzia dell'art. 63 c.p.p.: la 'testimonianza' si ferma perché il soggetto è diventato indagato.\n\n⚖️ Riferimento: Art. 63 c.p.p."
+    },
+    {
+        "id": "pp_appr_32",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Quale tra i seguenti vizi rende nullo il verbale?",
+        "options": [
+            "Mancata indicazione dell'ora di chiusura.",
+            "Errore nell'indicazione del luogo.",
+            "Incertezza assoluta sulle persone intervenute.",
+            "Scrittura a mano poco leggibile."
+        ],
+        "answer": "Incertezza assoluta sulle persone intervenute.",
+        "difficulty": 2,
+        "explanation": "Se non si capisce chi ha partecipato all'atto, viene meno la certezza della sua provenienza e garanzia.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_33",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "La documentazione degli atti di Polizia Giudiziaria (es. informative) può essere utilizzata come prova in dibattimento?",
+        "options": [
+            "Sì, sempre.",
+            "No, di regola, perché la prova si deve formare nel contraddittorio (dibattimento).",
+            "Sì, se il P.M. lo autorizza.",
+            "Sì, per i reati minori."
+        ],
+        "answer": "No, di regola, perché la prova si deve formare nel contraddittorio (dibattimento).",
+        "difficulty": 2,
+        "explanation": "Vige il principio di separazione delle fasi: gli atti d'indagine servono per le indagini, non per la sentenza, salvo eccezioni (irripetibilità).\n\n⚖️ Riferimento: Art. 111 Cost. / c.p.p."
+    },
+    {
+        "id": "pp_appr_34",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Quale tra questi atti della P.G. è considerato 'irripetibile' e quindi confluisce nel fascicolo per il dibattimento?",
+        "options": [
+            "L'assunzione di sommarie informazioni da testimoni.",
+            "Il verbale di perquisizione e sequestro.",
+            "La relazione di servizio.",
+            "Il pedinamento."
+        ],
+        "answer": "Il verbale di perquisizione e sequestro.",
+        "difficulty": 2,
+        "explanation": "È un atto a sorpresa che non può essere rifatto in udienza, quindi la sua documentazione diventa prova.\n\n⚖️ Riferimento: Art. 431 c.p.p."
+    },
+    {
+        "id": "pp_appr_35",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "La 'relazione di servizio' si differenzia dal verbale perché:",
+        "options": [
+            "È un atto tipico disciplinato dal codice.",
+            "È un atto interno atipico, a forma libera, indirizzato al dirigente.",
+            "È un atto che ha fede privilegiata.",
+            "Deve essere sempre scritta a mano."
+        ],
+        "answer": "È un atto interno atipico, a forma libera, indirizzato al dirigente.",
+        "difficulty": 1,
+        "explanation": "Nasce come atto amministrativo/gestionale interno, pur potendo assumere rilevanza esterna.\n\n⚖️ Riferimento: Prassi di Polizia"
+    },
+    {
+        "id": "pp_appr_36",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La denuncia di reato presentata da un pubblico ufficiale è:",
+        "options": [
+            "Sempre facoltativa.",
+            "Obbligatoria per i reati perseguibili d'ufficio di cui ha avuto notizia nell'esercizio delle funzioni.",
+            "Obbligatoria solo per i reati contro la P.A.",
+            "Facoltativa se il reato è commesso da un collega."
+        ],
+        "answer": "Obbligatoria per i reati perseguibili d'ufficio di cui ha avuto notizia nell'esercizio delle funzioni.",
+        "difficulty": 1,
+        "explanation": "Il P.U. ha l'obbligo di denuncia (art. 361 c.p.) per i reati non a querela conosciuti per servizio.\n\n⚖️ Riferimento: Art. 361 c.p. / 331 c.p.p."
+    },
+    {
+        "id": "pp_appr_37",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Entro quanto tempo la P.G. deve trasmettere la notizia di reato al P.M. in caso di compimento di atti garantiti (es. sequestro)?",
+        "options": [
+            "Entro 10 giorni.",
+            "Entro 48 ore.",
+            "Senza ritardo (termine generico).",
+            "Immediatamente."
+        ],
+        "answer": "Entro 48 ore.",
+        "difficulty": 3,
+        "explanation": "Quando si compiono atti che richiedono la presenza del difensore o incidono su diritti, il termine è stringente (48h).\n\n⚖️ Riferimento: Art. 347 c.p.p."
+    },
+    {
+        "id": "pp_appr_38",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La querela può essere rimessa (ritirata) dal querelante:",
+        "options": [
+            "Sempre, senza condizioni.",
+            "Solo se il querelato accetta la remissione (salvo che la legge non preveda l'irrevocabilità).",
+            "Mai, una volta fatta è definitiva.",
+            "Solo davanti al Giudice di Pace."
+        ],
+        "answer": "Solo se il querelato accetta la remissione.",
+        "difficulty": 2,
+        "explanation": "La remissione estingue il reato solo se accettata, perché l'imputato potrebbe aver interesse a essere assolto nel merito.\n\n⚖️ Riferimento: Art. 152 c.p."
+    },
+    {
+        "id": "pp_appr_39",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Per i reati sessuali (violenza sessuale), la querela è:",
+        "options": [
+            "Sempre revocabile.",
+            "Irrevocabile.",
+            "Revocabile solo in dibattimento.",
+            "Non necessaria (sempre d'ufficio)."
+        ],
+        "answer": "Irrevocabile.",
+        "difficulty": 2,
+        "explanation": "Per evitare ripensamenti indotti da pressioni sulla vittima, la querela per violenza sessuale non può essere ritirata.\n\n⚖️ Riferimento: Art. 609 septies c.p."
+    },
+    {
+        "id": "pp_appr_40",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il termine di 3 mesi per la querela decorre:",
+        "options": [
+            "Dalla data del fatto reato.",
+            "Dal giorno in cui la persona offesa ha avuto notizia del fatto reato.",
+            "Dalla data di identificazione del colpevole.",
+            "Dalla data del referto medico."
+        ],
+        "answer": "Dal giorno in cui la persona offesa ha avuto notizia del fatto reato.",
+        "difficulty": 2,
+        "explanation": "È un termine di decadenza soggettivo (conoscenza del fatto), non oggettivo (data del fatto).\n\n⚖️ Riferimento: Art. 124 c.p."
+    },
+    {
+        "id": "pp_appr_41",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Le 'notizie di reato' possono essere acquisite dalla P.G.:",
+        "options": [
+            "Solo su delega del P.M.",
+            "Sia di iniziativa (funzione attiva) che ricevute dall'esterno ex art. 333 c.p.p. (funzione passiva).",
+            "Solo tramite denuncia formale.",
+            "Solo tramite i servizi segreti."
+        ],
+        "answer": "Sia di iniziativa (funzione attiva) che ricevute dall'esterno ex art. 333 c.p.p. (funzione passiva).",
+        "difficulty": 2,
+        "explanation": "La P.G. ha il dovere di ricercare le notizie di reato (art. 55 c.p.p.) oltre che di riceverle.\n\n⚖️ Riferimento: Art. 330 c.p.p."
+    },
+    {
+        "id": "pp_appr_42",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Qual è il termine ordinario di durata delle indagini preliminari contro ignoti?",
+        "options": [
+            "3 mesi.",
+            "6 mesi.",
+            "1 anno.",
+            "Non c'è termine."
+        ],
+        "answer": "6 mesi.",
+        "difficulty": 3,
+        "explanation": "Dopo 6 mesi, il P.M. deve chiedere l'archiviazione o l'autorizzazione a proseguire le indagini.\n\n⚖️ Riferimento: Art. 405 c.p.p."
+    },
+    {
+        "id": "pp_appr_43",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se la P.G. non trasmette la notizia di reato 'senza ritardo':",
+        "options": [
+            "Gli atti compiuti sono nulli.",
+            "Si configura una responsabilità disciplinare (e penale per omissione), ma gli atti restano validi.",
+            "Il reato si estingue.",
+            "Il P.M. deve archiviare."
+        ],
+        "answer": "Si configura una responsabilità disciplinare (e penale per omissione), ma gli atti restano validi.",
+        "difficulty": 3,
+        "explanation": "Il ritardo non vizia processualmente gli atti ma espone l'operatore a sanzioni.\n\n⚖️ Riferimento: Giurisprudenza"
+    },
+    {
+        "id": "pp_appr_44",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il difensore ha l'obbligo di denuncia per i reati conosciuti durante le investigazioni difensive?",
+        "options": [
+            "Sì, sempre.",
+            "No, è esonerato dall'obbligo di denuncia.",
+            "Solo per i reati gravi.",
+            "Solo se il cliente lo autorizza."
+        ],
+        "answer": "No, è esonerato dall'obbligo di denuncia.",
+        "difficulty": 2,
+        "explanation": "Per garantire il diritto di difesa e il segreto professionale, il difensore non deve denunciare ciò che apprende.\n\n⚖️ Riferimento: Art. 334 bis c.p.p."
+    },
+    {
+        "id": "pp_appr_45",
+        "category": "Procedura Penale - Misure Cautelari e Pre-cautelari",
+        "question": "L'arresto in flagranza è 'facoltativo' (art. 381 c.p.p.) quando:",
+        "options": [
+            "La pena è superiore a 20 anni.",
+            "La pena edittale è superiore nel massimo a 3 anni (delitto non colposo) o è un delitto colposo specifico.",
+            "Il soggetto è minorenne.",
+            "Sempre."
+        ],
+        "answer": "La pena edittale è superiore nel massimo a 3 anni (delitto non colposo) o è un delitto colposo specifico.",
+        "difficulty": 3,
+        "explanation": "La soglia per l'arresto facoltativo è più bassa di quello obbligatorio, rimessa alla valutazione della gravità del fatto e personalità.\n\n⚖️ Riferimento: Art. 381 c.p.p."
+    },
+    {
+        "id": "pp_appr_46",
+        "category": "Procedura Penale - Misure Cautelari e Pre-cautelari",
+        "question": "Il 'fermo di indiziato di delitto' (art. 384 c.p.p.) può essere disposto dalla P.G.:",
+        "options": [
+            "Sempre, se c'è flagranza.",
+            "Solo se c'è pericolo di fuga e gravi indizi di colpevolezza per specifici reati gravi (anche fuori flagranza).",
+            "Solo se l'indagato confessa.",
+            "Su ordine del Sindaco."
+        ],
+        "answer": "Solo se c'è pericolo di fuga e gravi indizi di colpevolezza per specifici reati gravi (anche fuori flagranza).",
+        "difficulty": 2,
+        "explanation": "Il fermo è la misura pre-cautelare tipica per il pericolo di fuga, utilizzabile quando non c'è flagranza.\n\n⚖️ Riferimento: Art. 384 c.p.p."
+    },
+    {
+        "id": "ls_appr_47",
+        "category": "Legislazione di Pubblica Sicurezza",
+        "question": "Il 'potere autoritativo' della P.A. (e delle forze dell'ordine) consiste:",
+        "options": [
+            "Nel chiedere il consenso al cittadino.",
+            "Nell'incidere unilateralmente sulla sfera giuridica del destinatario (es. ordine, arresto) anche contro la sua volontà.",
+            "Nel redigere certificati.",
+            "Nel dare consigli."
+        ],
+        "answer": "Nell'incidere unilateralmente sulla sfera giuridica del destinatario (es. ordine, arresto) anche contro la sua volontà.",
+        "difficulty": 2,
+        "explanation": "È la caratteristica del potere pubblico di imporsi per il perseguimento dell'interesse generale.\n\n⚖️ Riferimento: Diritto Amministrativo"
+    },
+    {
+        "id": "pp_appr_48",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La 'fonte confidenziale' (informatore) che non vuole apparire:",
+        "options": [
+            "Deve essere obbligatoriamente rivelata al P.M.",
+            "Non può essere utilizzata processualmente e l'identità è tutelata dal segreto (non può essere obbligata a rivelarla neanche dal Giudice).",
+            "Viene iscritta nel registro indagati.",
+            "Non esiste nel nostro ordinamento."
+        ],
+        "answer": "Non può essere utilizzata processualmente e l'identità è tutelata dal segreto (non può essere obbligata a rivelarla neanche dal Giudice).",
+        "difficulty": 3,
+        "explanation": "L'anonimato del confidente è strettamente protetto (art. 203 c.p.p.), ma le sue info non sono prova.\n\n⚖️ Riferimento: Art. 203 c.p.p."
+    },
+    {
+        "id": "pp_appr_49",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se la P.G. acquisisce una notizia di reato 'qualificata' (es. denuncia), deve svolgere accertamenti preliminari sulla fondatezza?",
+        "options": [
+            "Sì, sempre.",
+            "No, deve trasmetterla subito. La verifica di attendibilità è richiesta per le notizie 'non qualificate' (anonimi, confidenze).",
+            "Solo se la denuncia è anonima.",
+            "Sì, per decidere se archiviare."
+        ],
+        "answer": "No, deve trasmetterla subito. La verifica di attendibilità è richiesta per le notizie 'non qualificate' (anonimi, confidenze).",
+        "difficulty": 3,
+        "explanation": "Le notizie qualificate sono già atti formali e vanno trasmesse; quelle informali richiedono verifica prima di diventare 'notizia di reato'.\n\n⚖️ Riferimento: Prassi"
+    },
+    {
+        "id": "dc_appr_50",
+        "category": "Diritto Costituzionale - Organi",
+        "question": "Il 'potere certificativo' della P.A. (es. notai, cancellieri) serve a:",
+        "options": [
+            "Arrestare i colpevoli.",
+            "Attestare e dare pubblica fede a stati, fatti o qualità (es. verbale, rogito).",
+            "Emettere sentenze.",
+            "Gestire il bilancio."
+        ],
+        "answer": "Attestare e dare pubblica fede a stati, fatti o qualità (es. verbale, rogito).",
+        "difficulty": 2,
+        "explanation": "Consiste nel dare certezza legale a fatti o atti giuridici.\n\n⚖️ Riferimento: Diritto Amministrativo"
+    },
+    {
+        "id": "pp_appr_51",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Cosa si intende per 'acquisizione concordata' al fascicolo per il dibattimento?",
+        "options": [
+            "L'accordo tra P.M. e Difesa per inserire nel fascicolo dibattimentale atti di indagine (che altrimenti resterebbero fuori).",
+            "L'accordo sulla pena (patteggiamento).",
+            "L'accordo per rinviare l'udienza.",
+            "L'acquisizione di prove illecite."
+        ],
+        "answer": "L'accordo tra P.M. e Difesa per inserire nel fascicolo dibattimentale atti di indagine (che altrimenti resterebbero fuori).",
+        "difficulty": 2,
+        "explanation": "Le parti possono rinunciare al contraddittorio e far entrare le carte delle indagini direttamente nel processo.\n\n⚖️ Riferimento: Art. 431 c.p.p."
+    },
+    {
+        "id": "pp_appr_52",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "L'arresto in flagranza, una volta eseguito, deve essere posto a disposizione del P.M. entro:",
+        "options": [
+            "24 ore (messa a disposizione fisica e verbale).",
+            "48 ore.",
+            "72 ore.",
+            "5 giorni."
+        ],
+        "answer": "24 ore (messa a disposizione fisica e verbale).",
+        "difficulty": 2,
+        "explanation": "L'arrestato deve essere 'consegnato' al P.M. (in carcere o domiciliari) al più presto, massimo 24 ore.\n\n⚖️ Riferimento: Art. 386 c.p.p."
+    },
+    {
+        "id": "pp_appr_53",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Qual è il giudice competente per la convalida dell'arresto?",
+        "options": [
+            "Il P.M.",
+            "Il G.I.P. (Giudice per le Indagini Preliminari).",
+            "Il G.U.P.",
+            "La Corte d'Assise."
+        ],
+        "answer": "Il G.I.P. (Giudice per le Indagini Preliminari).",
+        "difficulty": 1,
+        "explanation": "Essendo una misura limitativa della libertà, la convalida spetta al giudice (riserva di giurisdizione), non al P.M.\n\n⚖️ Riferimento: Art. 391 c.p.p."
+    },
+    {
+        "id": "pp_appr_54",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La 'denuncia anonima' deve essere:",
+        "options": [
+            "Immediatamente cestinata e distrutta.",
+            "Iscritta in apposito registro e conservata per 5 anni (per eventuali riscontri o uso se corpo del reato).",
+            "Pubblicata sui giornali.",
+            "Usata come prova piena."
+        ],
+        "answer": "Iscritta e conservata per 5 anni in apposito registro.",
+        "difficulty": 3,
+        "explanation": "Non si butta via subito, ma si conserva in un registro speciale (Mod. 46) per un tempo limitato.\n\n⚖️ Riferimento: Art. 107 att. c.p.p."
+    },
+    {
+        "id": "pp_appr_55",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il pubblico ministero iscrive la notizia di reato nell'apposito registro:",
+        "options": [
+            "Immediatamente, appena ricevuta la notizia.",
+            "Dopo aver svolto le prime indagini per verificare se è fondata.",
+            "Solo dopo aver individuato il colpevole.",
+            "Solo su ordine del G.I.P."
+        ],
+        "answer": "Immediatamente.",
+        "difficulty": 1,
+        "explanation": "L'iscrizione deve essere tempestiva per far decorrere i termini delle indagini.\n\n⚖️ Riferimento: Art. 335 c.p.p."
+    },
+    {
+        "id": "pp_appr_56",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se al momento della ricezione della notizia di reato l'autore è ignoto:",
+        "options": [
+            "Il P.M. non iscrive nulla finché non lo trova.",
+            "Il P.M. iscrive la notizia nel registro 'contro ignoti'.",
+            "La P.G. archivia la pratica.",
+            "Si apre un fascicolo amministrativo."
+        ],
+        "answer": "Il P.M. iscrive la notizia nel registro 'contro ignoti'.",
+        "difficulty": 1,
+        "explanation": "Esiste un registro apposito (Mod. 44) per i fatti costituenti reato di cui non si conosce ancora l'autore.\n\n⚖️ Riferimento: Art. 335 c.p.p."
+    },
+    {
+        "id": "pp_appr_57",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La 'retrodatazione' dell'iscrizione nel registro degli indagati:",
+        "options": [
+            "È vietata in assoluto.",
+            "Può essere disposta dal P.M. se emerge che il nome dell'indagato era noto già da prima, per calcolare correttamente i termini.",
+            "Serve a prolungare le indagini.",
+            "È decisa dalla P.G."
+        ],
+        "answer": "Possibile se il nome era già noto, per il calcolo termini.",
+        "difficulty": 3,
+        "explanation": "Serve a evitare che il P.M. ritardi l'iscrizione per guadagnare tempo indebitamente.\n\n⚖️ Riferimento: Art. 335 c.p.p."
+    },
+    {
+        "id": "pp_appr_58",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se il G.I.P. ritiene che un reato debba essere attribuito a una persona non ancora iscritta:",
+        "options": [
+            "Ordina al P.M. di provvedere all'iscrizione.",
+            "Iscrive lui stesso la persona nel registro.",
+            "Archivia il procedimento.",
+            "Assolve l'indagato."
+        ],
+        "answer": "Ordina al P.M. di provvedere all'iscrizione.",
+        "difficulty": 3,
+        "explanation": "Il G.I.P. ha poteri di controllo sull'iscrizione (anche coatta) per garantire i diritti dell'indagato.\n\n⚖️ Riferimento: Art. 409 c.p.p."
+    },
+    {
+        "id": "pp_appr_59",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Da quale momento decorre il termine di durata delle indagini preliminari?",
+        "options": [
+            "Dalla commissione del reato.",
+            "Dalla data in cui il nome dell'indagato è iscritto nel registro delle notizie di reato.",
+            "Dalla data della prima perquisizione.",
+            "Dalla data dell'arresto."
+        ],
+        "answer": "Dalla data in cui il nome dell'indagato è iscritto nel registro delle notizie di reato.",
+        "difficulty": 2,
+        "explanation": "È il momento formale che fa scattare il 'cronometro' delle indagini (art. 405 c.p.p.).\n\n⚖️ Riferimento: Art. 335 c.p.p."
+    },
+    {
+        "id": "pp_appr_60",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il P.M. deve esercitare l'azione penale o chiedere l'archiviazione entro:",
+        "options": [
+            "1 anno dalla fine delle indagini.",
+            "3 mesi dalla scadenza del termine massimo delle indagini (o dall'avviso di conclusione).",
+            "10 giorni.",
+            "Non ha termini perentori."
+        ],
+        "answer": "3 mesi dalla scadenza delle indagini.",
+        "difficulty": 3,
+        "explanation": "È il periodo di 'riflessione' concesso al P.M. per decidere cosa fare dopo le indagini (9 mesi per reati gravi).\n\n⚖️ Riferimento: Art. 407 bis c.p.p."
+    },
+    {
+        "id": "pp_appr_61",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il P.M. richiede l'archiviazione quando:",
+        "options": [
+            "Gli elementi acquisiti non consentono di formulare una ragionevole previsione di condanna.",
+            "L'indagato si dichiara innocente.",
+            "Il reato è grave ma difficile da provare.",
+            "La P.G. non ha lavorato bene."
+        ],
+        "answer": "Quando non c'è una ragionevole previsione di condanna.",
+        "difficulty": 2,
+        "explanation": "La riforma Cartabia ha introdotto il criterio della 'ragionevole previsione di condanna' rispetto alla 'infondatezza della notizia'.\n\n⚖️ Riferimento: Art. 408 c.p.p."
+    },
+    {
+        "id": "pp_appr_62",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La 'comunicazione della notizia di reato' (CNR) da parte della P.G. a cosa serve?",
+        "options": [
+            "A informare la stampa.",
+            "A informare il P.M. degli elementi essenziali del fatto e delle fonti di prova raccolte.",
+            "A chiedere il rinvio a giudizio.",
+            "A chiudere le indagini."
+        ],
+        "answer": "A informare il P.M. degli elementi essenziali e delle prove.",
+        "difficulty": 1,
+        "explanation": "È l'atto con cui la P.G. trasferisce la 'conoscenza' del reato al dominus delle indagini (P.M.).\n\n⚖️ Riferimento: Art. 347 c.p.p."
+    },
+    {
+        "id": "pp_appr_63",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La forma ordinaria della comunicazione della notizia di reato è:",
+        "options": [
+            "Orale.",
+            "Scritta.",
+            "Telefonica.",
+            "Via WhatsApp."
+        ],
+        "answer": "Scritta.",
+        "difficulty": 1,
+        "explanation": "Deve essere di regola scritta; quella orale è riservata ai casi di urgenza ma va seguita da quella scritta.\n\n⚖️ Riferimento: Art. 347 c.p.p."
+    },
+    {
+        "id": "pp_appr_64",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "In caso di reati gravi o criminalità organizzata, la comunicazione della notizia di reato:",
+        "options": [
+            "Può essere data oralmente, seguita subito dalla forma scritta.",
+            "Deve attendere 48 ore.",
+            "Va fatta solo al Prefetto.",
+            "Non è necessaria."
+        ],
+        "answer": "Oralmente, seguita subito da forma scritta.",
+        "difficulty": 2,
+        "explanation": "L'urgenza impone la comunicazione immediata (anche a voce), poi formalizzata.\n\n⚖️ Riferimento: Art. 347 c.p.p."
+    },
+    {
+        "id": "pp_appr_65",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Cosa sono i 'seguiti' della notizia di reato?",
+        "options": [
+            "Le conseguenze del reato sulla vittima.",
+            "Le informative successive alla prima, che aggiornano il P.M. sulle indagini.",
+            "I pedinamenti.",
+            "Gli articoli di giornale sul caso."
+        ],
+        "answer": "Le informative successive alla prima, che aggiornano il P.M. sulle indagini.",
+        "difficulty": 2,
+        "explanation": "L'indagine è dinamica: alla prima CNR seguono aggiornamenti e esiti di deleghe.\n\n⚖️ Riferimento: Prassi"
+    },
+    {
+        "id": "pp_appr_66",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La P.G. può avanzare richieste istruttorie (es. intercettazioni) al P.M.?",
+        "options": [
+            "No, decide solo il P.M.",
+            "Sì, se ha elementi per sostenerle, per proseguire le indagini.",
+            "Solo se lo chiede l'indagato.",
+            "Solo per reati di mafia."
+        ],
+        "answer": "Sì, se ha elementi per sostenerle, per proseguire le indagini.",
+        "difficulty": 2,
+        "explanation": "La P.G. suggerisce e propone, il P.M. dispone.\n\n⚖️ Riferimento: Prassi"
+    },
+    {
+        "id": "pp_appr_67",
+        "category": "Ordinamento Giudiziario",
+        "question": "Quale giudice è competente per i reati di 'minore gravità' (es. percosse, ingiurie depenalizzate/lievi)?",
+        "options": [
+            "Corte d'Assise.",
+            "Tribunale Collegiale.",
+            "Giudice di Pace.",
+            "Tribunale per i Minorenni."
+        ],
+        "answer": "Giudice di Pace.",
+        "difficulty": 1,
+        "explanation": "Il Giudice di Pace ha una competenza penale limitata ai reati di microconflittualità individuale.\n\n⚖️ Riferimento: D.Lgs. 274/2000"
+    },
+    {
+        "id": "pp_appr_68",
+        "category": "Ordinamento Giudiziario",
+        "question": "La Corte d'Assise è competente per:",
+        "options": [
+            "Tutti i reati.",
+            "I crimini particolarmente gravi ed efferati (es. omicidio).",
+            "Solo i reati fiscali.",
+            "I reati commessi da pubblici ufficiali."
+        ],
+        "answer": "I crimini particolarmente gravi ed efferati (es. omicidio).",
+        "difficulty": 2,
+        "explanation": "Composta da giudici popolari e togati, giudica i reati di sangue più gravi (ergastolo o pene elevate).\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_69",
+        "category": "Procedura Penale - Competenza",
+        "question": "Il criterio della competenza per territorio si basa normalmente su:",
+        "options": [
+            "Luogo di residenza dell'imputato.",
+            "Luogo in cui si è verificato il fatto di reato (consumazione).",
+            "Luogo dove si trova la stazione dei Carabinieri.",
+            "Luogo di nascita della vittima."
+        ],
+        "answer": "Luogo in cui si è verificato il fatto di reato (consumazione).",
+        "difficulty": 1,
+        "explanation": "Il princpio del 'locus commissi delicti' radica la competenza nel luogo dove il reato è avvenuto.\n\n⚖️ Riferimento: Art. 8 c.p.p."
+    },
+    {
+        "id": "dc_appr_70",
+        "category": "Diritto Penale - Pubblica Amministrazione",
+        "question": "Ai sensi del codice penale, sono 'Pubblici Ufficiali' coloro che esercitano:",
+        "options": [
+            "Una funzione legislativa, giudiziaria o amministrativa.",
+            "Qualsiasi lavoro statale.",
+            "Solo funzioni di polizia.",
+            "Funzioni di servizio pubblico ma senza poteri autoritativi."
+        ],
+        "answer": "Una funzione legislativa, giudiziaria o amministrativa.",
+        "difficulty": 2,
+        "explanation": "La qualifica dipende dall'esercizio di funzioni pubbliche con poteri deliberativi, autoritativi o certificativi.\n\n⚖️ Riferimento: Art. 357 c.p."
+    },
+    {
+        "id": "dc_appr_71",
+        "category": "Diritto Penale - Pubblica Amministrazione",
+        "question": "Chi è l''incaricato di un pubblico servizio'?",
+        "options": [
+            "Chi esercita un servizio pubblico ma senza i poteri tipici del pubblico ufficiale (niente poteri autoritativi o certificativi).",
+            "Il Sindaco.",
+            "Il Giudice.",
+            "Chi lavora in un bar."
+        ],
+        "answer": "Chi esercita un servizio pubblico senza poteri autoritativi.",
+        "difficulty": 2,
+        "explanation": "Svolge un'attività disciplinata da norme pubbliche ma manca dei poteri 'di imperio' del P.U.\n\n⚖️ Riferimento: Art. 358 c.p."
+    },
+    {
+        "id": "dc_appr_72",
+        "category": "Diritto Amministrativo",
+        "question": "Il 'potere deliberativo' del Pubblico Ufficiale consiste:",
+        "options": [
+            "Nell'assumere atti e manifestazioni di volontà per la P.A.",
+            "Nel fare multe.",
+            "Nel guidare l'auto di servizio.",
+            "Nel timbrare il cartellino."
+        ],
+        "answer": "Nell'assumere atti e manifestazioni di volontà per la P.A.",
+        "difficulty": 2,
+        "explanation": "È la capacità di formare e manifestare la volontà dell'ente pubblico.\n\n⚖️ Riferimento: Diritto Amministrativo"
+    },
+    {
+        "id": "pp_appr_73",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il 'referto' è l'atto con cui:",
+        "options": [
+            "Il medico segnala all'A.G. i casi di lesioni o reati di cui ha prestato assistenza (se perseguibili d'ufficio).",
+            "La P.G. riferisce al questore.",
+            "Il cittadino denuncia un furto.",
+            "Il giudice motiva la sentenza."
+        ],
+        "answer": "Il medico segnala i reati assistiti procedibili d'ufficio.",
+        "difficulty": 2,
+        "explanation": "Obbligo specifico per gli esercenti professioni sanitarie.\n\n⚖️ Riferimento: Art. 365 c.p."
+    },
+    {
+        "id": "pp_appr_74",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "L'omissione di referto è reato se:",
+        "options": [
+            "Il fatto presenta i caratteri di un delitto perseguibile d'ufficio.",
+            "Sempre, per qualsiasi lesione anche lievissima.",
+            "Solo se il paziente muore.",
+            "Solo se il medico è pubblico ufficiale."
+        ],
+        "answer": "Il fatto presenta i caratteri di un delitto perseguibile d'ufficio.",
+        "difficulty": 3,
+        "explanation": "Se il reato è perseguibile a querela, il medico non ha obbligo di referto (per non costringere la vittima a denunciarsi o rinunciare alle cure).\n\n⚖️ Riferimento: Art. 365 c.p."
+    },
+    {
+        "id": "pp_appr_75",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La denuncia da parte di privati diventa obbligatoria:",
+        "options": [
+            "Mai.",
+            "Quando si ha notizia di un delitto contro la personalità dello Stato o punito con l'ergastolo.",
+            "Per tutti i reati contro la persona.",
+            "Se si è subito un danno economico."
+        ],
+        "answer": "Quando si ha notizia di un delitto contro la personalità dello Stato o punito con l'ergastolo.",
+        "difficulty": 2,
+        "explanation": "L'obbligo di denuncia per il cittadino è l'eccezione, prevista solo per reati gravissimi.\n\n⚖️ Riferimento: Art. 364 c.p."
+    },
+    {
+        "id": "pp_appr_76",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se un Pubblico Ufficiale omette di denunciare un reato di cui ha avuto notizia nell'esercizio delle funzioni:",
+        "options": [
+            "Commette il reato di omessa denuncia (art. 361 c.p.).",
+            "Non succede nulla.",
+            "Viene solo trasferito.",
+            "Paga una multa amministrativa."
+        ],
+        "answer": "Commette il reato di omessa denuncia (art. 361 c.p.).",
+        "difficulty": 2,
+        "explanation": "L'obbligo è sanzionato penalmente per i P.U.\n\n⚖️ Riferimento: Art. 361 c.p."
+    },
+    {
+        "id": "pp_appr_77",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Cosa accade se la trasmissione della notizia di reato avviene oltre i termini (ritardo)?",
+        "options": [
+            "Configura responsabilità disciplinare ma gli atti restano validi.",
+            "Tutti gli atti compiuti sono nulli.",
+            "Il processo non può iniziare.",
+            "Il reato si prescrive subito."
+        ],
+        "answer": "Configura responsabilità disciplinare ma gli atti restano validi.",
+        "difficulty": 2,
+        "explanation": "La validità processuale è salva, ma l'operatore ne risponde disciplinarmente.\n\n⚖️ Riferimento: Giurisprudenza"
+    },
+    {
+        "id": "pp_appr_78",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Le domande nel verbale devono essere riportate?",
+        "options": [
+            "Sì, se la dichiarazione è resa su domanda.",
+            "No, basta la risposta.",
+            "Solo se la risposta è negativa.",
+            "No, per risparmiare carta."
+        ],
+        "answer": "Sì, se la dichiarazione è resa su domanda.",
+        "difficulty": 2,
+        "explanation": "Per valutare la genuinità della risposta, bisogna conoscere la domanda (se suggestiva o nociva).\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_79",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "In caso di arresto obbligatorio o facoltativo, la redazione del verbale è:",
+        "options": [
+            "Obbligatoria.",
+            "Facoltativa (basta annotazione).",
+            "Obbligatoria solo se l'arrestato non parla.",
+            "Discrezionale."
+        ],
+        "answer": "Obbligatoria.",
+        "difficulty": 1,
+        "explanation": "Gli atti restrittivi della libertà personale richiedono la massima garanzia documentale (verbale).\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_80",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Chi valuta i presupposti di legittimità, necessità e urgenza degli atti delegati alla P.G.?",
+        "options": [
+            "L'Autorità Giudiziaria (P.M.) che ordina l'atto.",
+            "La P.G. stessa.",
+            "L'avvocato.",
+            "Il testimone."
+        ],
+        "answer": "L'Autorità Giudiziaria (P.M.) che ordina l'atto.",
+        "difficulty": 3,
+        "explanation": "La P.G. esegue, ma la responsabilità della valutazione dei presupposti nell'atto delegato è del mandante (A.G.).\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_81",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Gli atti 'informativi' della Polizia Giudiziaria sono diretti a:",
+        "options": [
+            "Arrestare i colpevoli.",
+            "Acquisire la notizia di reato (es. ricevere denunce, querele).",
+            "Effettuare perquisizioni.",
+            "Interrogare l'indagato."
+        ],
+        "answer": "Acquisire la notizia di reato.",
+        "difficulty": 1,
+        "explanation": "Costituiscono il primo passo dell'attività di P.G., raccogliendo l'input per le indagini.\n\n⚖️ Riferimento: Prassi di Polizia"
+    },
+    {
+        "id": "pp_appr_82",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Quale tra i seguenti è un atto 'investigativo' per l'acquisizione delle fonti di prova?",
+        "options": [
+            "L'arresto in flagranza.",
+            "La ricezione della denuncia.",
+            "L'assunzione di sommarie informazioni da persone informate sui fatti.",
+            "La notifica di un atto."
+        ],
+        "answer": "Assunzione di sommarie informazioni.",
+        "difficulty": 2,
+        "explanation": "Serve a raccogliere elementi conoscitivi utili per la ricostruzione dei fatti.\n\n⚖️ Riferimento: Art. 351 c.p.p."
+    },
+    {
+        "id": "pp_appr_83",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "L'acquisizione di plichi o corrispondenza da parte della P.G.:",
+        "options": [
+            "È sempre libera.",
+            "Richiede che ci sia urgenza e che il P.M. non possa intervenire tempestivamente (con successiva convalida).",
+            "È vietata.",
+            "Può essere fatta solo dall'Ufficiale Postale."
+        ],
+        "answer": "Solo se urgente e con convalida del P.M.",
+        "difficulty": 3,
+        "explanation": "La corrispondenza è tutelata costituzionalmente; il sequestro è atto tipico del P.M., la P.G. interviene solo d'urgenza.\n\n⚖️ Riferimento: Art. 353 c.p.p."
+    },
+    {
+        "id": "pp_appr_84",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Gli 'accertamenti urgenti' su luoghi, cose e persone (art. 354 c.p.p.) servono a:",
+        "options": [
+            "Punire il colpevole.",
+            "Assicurare le tracce e le cose pertinenti al reato affinché non vadano disperse o modificate.",
+            "Interrogare i testimoni.",
+            "Fare fotografie per la stampa."
+        ],
+        "answer": "Assicurare tracce e cose pertinenti al reato.",
+        "difficulty": 2,
+        "explanation": "È la tipica attività di sopralluogo giudiziario per cristallizzare la scena del crimine.\n\n⚖️ Riferimento: Art. 354 c.p.p."
+    },
+    {
+        "id": "pp_appr_85",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La denuncia deve contenere l'indicazione delle fonti di prova già note?",
+        "options": [
+            "Sì, quando è possibile.",
+            "No, mai.",
+            "Solo se ci sono testimoni oculari.",
+            "Facoltativamente."
+        ],
+        "answer": "Sì, quando è possibile.",
+        "difficulty": 1,
+        "explanation": "Per essere utile alle indagini, la denuncia deve fornire elementi concreti di riscontro.\n\n⚖️ Riferimento: Art. 332 c.p.p."
+    },
+    {
+        "id": "pp_appr_86",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Nella denuncia è necessario indicare il difensore di fiducia?",
+        "options": [
+            "Sì, è obbligatorio.",
+            "No, la nomina del difensore riguarda l'indagato, non il denunciante (salvo che voglia costituirsi parte civile e farsi assistere).",
+            "Sì, altrimenti la denuncia è nulla.",
+            "Solo per i reati gravi."
+        ],
+        "answer": "No, riguarda solo l'indagato.",
+        "difficulty": 2,
+        "explanation": "La denuncia è un atto informativo, non richiede necessariamente l'assistenza tecnica immediata per il denunciante.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_87",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La querela ha effetto anche per i correi (complici) che non sono stati nominati nell'atto?",
+        "options": [
+            "No, vale solo per i nominati.",
+            "Sì, per il principio di estensione o indivisibilità della querela.",
+            "Solo se il P.M. lo decide.",
+            "Solo se sono parenti."
+        ],
+        "answer": "Sì, per il principio di indivisibilità.",
+        "difficulty": 3,
+        "explanation": "Se si vuole punire il fatto reato, la querela si estende a tutti coloro che l'hanno commesso, per evitare selezioni arbitrarie.\n\n⚖️ Riferimento: Art. 123 c.p."
+    },
+    {
+        "id": "pp_appr_88",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La 'rinuncia' alla querela è:",
+        "options": [
+            "L'atto con cui la persona offesa dichiara di non voler presentare querela (prima di averla fatta).",
+            "Il ritiro della querela già presentata.",
+            "L'atto del giudice che archivia.",
+            "L'atto dell'indagato che rifiuta il perdono."
+        ],
+        "answer": "Dichiarazione preventiva di non voler querelare.",
+        "difficulty": 2,
+        "explanation": "La rinuncia è preventiva (rinuncio al diritto di querelare); la remissione è successiva (ritiro querela già fatta).\n\n⚖️ Riferimento: Art. 124 c.p."
+    },
+    {
+        "id": "pp_appr_89",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Perché la 'remissione' della querela produca l'estinzione del reato, è necessario che:",
+        "options": [
+            "Sia fatta per iscritto.",
+            "Il querelato (imputato) la accetti.",
+            "Il P.M. dia il consenso.",
+            "La vittima venga risarcita."
+        ],
+        "answer": "Il querelato (imputato) la accetti.",
+        "difficulty": 1,
+        "explanation": "L'imputato deve accettare la remissione, altrimenti ha diritto a un processo per dimostrare la sua innocenza nel merito.\n\n⚖️ Riferimento: Art. 155 c.p."
+    },
+    {
+        "id": "pp_appr_90",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Per il reato di 'atti persecutori' (stalking), la remissione della querela:",
+        "options": [
+            "Può essere fatta liberamente in caserma.",
+            "Può essere fatta solo processualmente (davanti al giudice o P.G. delegata), per garantire la libertà della scelta.",
+            "È vietata.",
+            "Non serve l'accettazione."
+        ],
+        "answer": "Solo in sede processuale.",
+        "difficulty": 3,
+        "explanation": "È una cautela per accertare che la vittima non sia costretta o minacciata a ritirare la querela.\n\n⚖️ Riferimento: Art. 612 bis c.p."
+    },
+    {
+        "id": "pp_appr_91",
+        "category": "Procedura Penale - Competenza",
+        "question": "La competenza 'per connessione' opera quando:",
+        "options": [
+            "I reati sono commessi in province diverse.",
+            "Vi è un legame tra procedimenti (es. concorso di persone nel reato, reato continuato) che consiglia la trattazione unitaria.",
+            "L'imputato è straniero.",
+            "Il giudice è amico dell'avvocato."
+        ],
+        "answer": "Vi è un legame tra procedimenti.",
+        "difficulty": 2,
+        "explanation": "Serve a evitare giudicati contrastanti e per economia processuale.\n\n⚖️ Riferimento: Art. 12 c.p.p."
+    },
+    {
+        "id": "pp_appr_92",
+        "category": "Ordinamento Giudiziario",
+        "question": "Il Tribunale per i Minorenni è competente:",
+        "options": [
+            "Per tutti i reati commessi da minori degli anni 18 al momento del fatto.",
+            "Solo per i reati meno gravi commessi da minori.",
+            "Anche per i reati commessi da maggiorenni ai danni di minori.",
+            "Solo per le cause civili."
+        ],
+        "answer": "Per tutti i reati commessi da minori.",
+        "difficulty": 1,
+        "explanation": "È un giudice specializzato con competenza funzionale esclusiva per i reati commessi da infradiciottenni.\n\n⚖️ Riferimento: D.P.R. 448/1988"
+    },
+    {
+        "id": "pp_appr_93",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Nella comunicazione della notizia di reato, la P.G. deve indicare l'attività compiuta?",
+        "options": [
+            "No, basta la notizia.",
+            "Sì, deve indicare quale attività è stata svolta ed allegare la documentazione.",
+            "Solo se ha fatto arresti.",
+            "No, decide il P.M."
+        ],
+        "answer": "Sì, con documentazione allegata.",
+        "difficulty": 2,
+        "explanation": "Il P.M. deve avere un quadro completo non solo del fatto, ma anche di ciò che è stato già fatto dalla P.G.\n\n⚖️ Riferimento: Art. 347 c.p.p."
+    },
+    {
+        "id": "pp_appr_94",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Dopo aver comunicato la notizia di reato, la P.G.:",
+        "options": [
+            "Smette di indagare.",
+            "Continua a svolgere le sue funzioni, sia di propria iniziativa che su delega del P.M.",
+            "Deve chiedere il permesso per ogni mossa.",
+            "Passa il fascicolo ai Carabinieri."
+        ],
+        "answer": "Continua le indagini (iniziativa o delega).",
+        "difficulty": 3,
+        "explanation": "L'intervento del P.M. non paralizza l'iniziativa della P.G., che deve comunque assicurare nuove fonti di prova (art. 55/348 c.p.p.).\n\n⚖️ Riferimento: Art. 348 c.p.p."
+    },
+    {
+        "id": "pp_appr_95",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Qual è il valore probatorio degli atti 'irripetibili' compiuti dalla P.G. (es. sequestro)?",
+        "options": [
+            "Nullo.",
+            "Sono utilizzabili in dibattimento come prova, mediante lettura del verbale.",
+            "Servono solo per le indagini.",
+            "Valgono come indizio."
+        ],
+        "answer": "Utilizzabili in dibattimento.",
+        "difficulty": 2,
+        "explanation": "L'irripetibilità giustifica l'eccezione al contraddittorio: l'atto entra nel fascicolo del dibattimento.\n\n⚖️ Riferimento: Art. 431/511 c.p.p."
+    },
+    {
+        "id": "pp_appr_96",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "L'accompagnamento coattivo dell'indagato per identificazione (fermo di identificazione):",
+        "options": [
+            "Può durare al massimo 12 ore (o 24 in casi complessi), previo avviso al P.M.",
+            "Non ha limiti di tempo.",
+            "Può durare fino a 3 giorni.",
+            "Serve per interrogarlo."
+        ],
+        "answer": "Massimo 12 ore (24 se complesso).",
+        "difficulty": 3,
+        "explanation": "È una misura temporanea per la sola identificazione, non un arresto, con termini strettissimi.\n\n⚖️ Riferimento: Art. 349 c.p.p."
+    },
+    {
+        "id": "pp_appr_97",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se la P.G. ha compiuto un atto non convalidato (quando previsto, es. sequestro o arresto):",
+        "options": [
+            "L'atto perde efficacia.",
+            "L'atto resta valido.",
+            "Il P.M. viene sanzionato.",
+            "Si ripete l'atto."
+        ],
+        "answer": "L'atto perde efficacia.",
+        "difficulty": 2,
+        "explanation": "La mancata convalida entro i termini (48+48 ore) rende la misura precautelare inefficace fin dall'inizio (caducazione).\n\n⚖️ Riferimento: Art. 391 c.p.p."
+    },
+    {
+        "id": "dc_appr_98",
+        "category": "Diritto Costituzionale - Principi",
+        "question": "La responsabilità disciplinare per il ritardo nella trasmissione della notizia di reato colpisce:",
+        "options": [
+            "L'imputato.",
+            "L'Ufficiale o Agente di P.G. responsabile del ritardo.",
+            "Il Giudice.",
+            "La persona offesa."
+        ],
+        "answer": "L'Ufficiale o Agente di P.G. responsabile del ritardo.",
+        "difficulty": 1,
+        "explanation": "È una sanzione interna all'amministrazione di appartenenza per negligenza.\n\n⚖️ Riferimento: Norme disciplinari"
+    },
+    {
+        "id": "pp_appr_99",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "La querela presentata da un minorenne infradicquattordicenne:",
+        "options": [
+            "È nulla.",
+            "Deve essere presentata dal genitore o tutore.",
+            "Vale come denuncia.",
+            "Può farla da solo."
+        ],
+        "answer": "Deve essere presentata dal genitore o tutore.",
+        "difficulty": 2,
+        "explanation": "Il minore di 14 anni non ha l'esercizio del diritto di querela, che spetta al genitore.\n\n⚖️ Riferimento: Art. 120 c.p."
+    },
+    {
+        "id": "pp_appr_100",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Il verbale 'riassuntivo' deve essere integrato da:",
+        "options": [
+            "Riproduzione fonografica (audio).",
+            "Disegni.",
+            "Appunti sparsi.",
+            "Nulla."
+        ],
+        "answer": "Riproduzione fonografica (audio).",
+        "difficulty": 2,
+        "explanation": "Se il verbale non è integrale, si deve registrare l'atto per garantirne la fedele documentazione.\n\n⚖️ Riferimento: Art. 134 c.p.p."
     }
 ]
