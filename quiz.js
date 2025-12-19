@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 filteredQuestions = allQuestions.filter(q => userData.favorites.includes(q.id));
             } else if (modeParam === 'errors') {
                 filteredQuestions = allQuestions.filter(q => userData.errors.includes(q.id));
-            } else if (subjectParam === 'speed') {
+            } else if (subjectParam === 'speed' || modeParam === 'survival') {
                 isSpeedMode = true;
                 filteredQuestions = allQuestions.sort(() => 0.5 - Math.random());
             } else if (subjectParam === 'all') {
