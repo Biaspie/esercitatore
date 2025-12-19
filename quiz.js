@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // HUD Elements
     const subjectLabel = document.getElementById('subject-label');
+    const difficultyBadge = document.getElementById('difficulty-badge'); // NEW
     const questionCounter = document.getElementById('question-counter'); // 1-1 style
     const livesContainer = document.getElementById('lives-container');
     const timerDisplay = document.getElementById('timer-display');
@@ -277,6 +278,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         clearInterval(timerInterval);
         const question = currentQuestions[currentQuestionIndex];
 
+        // Difficulty Badge
+        if (difficultyBadge) {
+            difficultyBadge.classList.remove('hidden', 'bg-green-500/20', 'text-green-400', 'bg-yellow-500/20', 'text-yellow-400', 'bg-red-500/20', 'text-red-400', 'bg-gray-700', 'text-gray-300');
+
+            const diff = question.difficulty || 1;
+            let diffText = "EASY";
+            let diffClasses = ['bg-green-500/20', 'text-green-400'];
+
+            if (diff == 2) {
+                diffText = "NORMAL";
+                diffClasses = ['bg-yellow-500/20', 'text-yellow-400'];
+            } else if (diff >= 3) {
+                diffText = "HARD";
+                diffClasses = ['bg-red-500/20', 'text-red-400'];
+            }
+
+            difficultyBadge.textContent = diffText;
+            difficultyBadge.classList.add(...diffClasses);
+            difficultyBadge.classList.remove('hidden');
+        }
+
         // Counter
         questionCounter.textContent = `${currentQuestionIndex + 1}-${currentQuestions.length}`;
 
@@ -350,7 +372,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Help/Explanation Btn Management
-        if (helpBtn) { // Check if helpBtn exists
+        if (helpBtn) {
             if (question.userAnswer) {
                 helpBtn.classList.remove('opacity-50', 'cursor-not-allowed');
                 helpBtn.classList.add('animate-pulse'); // Hint to user
@@ -447,7 +469,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         scoreDisplay.textContent = score.toString().padStart(5, '0');
-        loadQuestion(); // Re-render to update UI (show next btn, enable help btn)
+        loadQuestion();
     }
 
     // Listeners
@@ -522,7 +544,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         accuracyDisplay.textContent = `${accuracy}%`;
 
         // XP Calculation
-        const xp = correctCount * 5;
+        // Base: Diff 1 = 5XP, Diff 2 = 10XP, Diff 3 = 15XP
+        const xp = currentQuestions.reduce((acc, q) => {
+            if (!q.isCorrect) return acc;
+            const diff = q.difficulty || 1;
+            return acc + (diff * 5); // 5, 10, 15
+        }, 0);
+
         xpEarnedDisplay.textContent = `+${xp}`;
         if (auth.currentUser) UserData.addExp(xp);
 
