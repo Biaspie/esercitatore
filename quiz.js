@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let timerInterval;
     let timeLeft = 20; // Default
     let isSpeedMode = false;
+    let isSurvivalMode = false;
 
     // Params
     const urlParams = new URLSearchParams(window.location.search);
@@ -111,11 +112,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const response = await fetch('questions.json');
             let allQuestions = await response.json();
 
-            // Filter logic same as home.js...
-            // Simplified for brevity in this rewrite, assuming similar logic or direct fetch
-            // Need to replicate the complex filtering logic from original quiz.js? 
-            // Yes, user expects it to work. I will copy the core filtering logic.
-
             // Normalize questions
             allQuestions = allQuestions.map(q => {
                 if (Array.isArray(q.options)) return q;
@@ -125,7 +121,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return { ...q, options: optionsArray, answer: answerText };
             });
 
-            // Filter (Copying core logic)
+            // Filter
             const countParam = urlParams.get('count') || '20';
             const difficultyParam = urlParams.get('difficulty') || 'mixed';
             const modeParam = urlParams.get('mode');
@@ -137,9 +133,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 filteredQuestions = allQuestions.filter(q => userData.favorites.includes(q.id));
             } else if (modeParam === 'errors') {
                 filteredQuestions = allQuestions.filter(q => userData.errors.includes(q.id));
-            } else if (subjectParam === 'speed' || modeParam === 'survival') {
-                isSpeedMode = true;
+            } else if (modeParam === 'survival') {
+                isSurvivalMode = true;
+                // Survival: All questions, infinite loop handled in nextBtn, 3 hearts
                 filteredQuestions = allQuestions.sort(() => 0.5 - Math.random());
+            } else if (subjectParam === 'speed') {
+                isSpeedMode = true;
+                // Speed: 50 questions, fast timer, NO hearts
+                filteredQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 50);
             } else if (subjectParam === 'all') {
                 filteredQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, parseInt(countParam) || 20);
             } else {
@@ -183,7 +184,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             renderLives();
 
             // Update Subject Label
-            if (subjectLabel) subjectLabel.textContent = subjectParam.toUpperCase();
+            if (isSurvivalMode) {
+                if (subjectLabel) subjectLabel.textContent = "SURVIVAL MODE";
+            } else if (isSpeedMode) {
+                if (subjectLabel) subjectLabel.textContent = "SPEED MODE";
+            } else {
+                if (subjectLabel) subjectLabel.textContent = subjectParam.toUpperCase();
+            }
 
             loadQuestion();
 
@@ -194,12 +201,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function renderLives() {
-        // Reset hearts
         livesContainer.innerHTML = '';
+        if (!isSurvivalMode) return; // ONLY SHOW HEARTS IN SURVIVAL MODE
+
         const maxLives = 3;
-        // If speed mode or errors mode, logic might differ?
-        // Let's just show hearts as "Lives Left" visually, or purely decorative.
-        // For now: Always 3 hearts. Break them on mistake.
         for (let i = 0; i < maxLives; i++) {
             const heart = document.createElement('span');
             heart.className = "material-symbols-outlined text-red-500 text-[20px]";
@@ -210,6 +215,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function updateLivesVisual() {
+        if (!isSurvivalMode) return;
+
         const hearts = livesContainer.children;
         if (mistakes <= hearts.length) {
             const lostIndex = Math.max(0, hearts.length - mistakes);
@@ -287,8 +294,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function startTimer() {
-        timeLeft = 20; // Or from settings
-        if (isSpeedMode) timeLeft = 10;
+        timeLeft = 20;
+        if (isSpeedMode || isSurvivalMode) timeLeft = 10; // Fast timer for both special modes
 
         timerDisplay.textContent = timeLeft + "s";
         timerBar.style.width = "100%";
@@ -297,7 +304,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             timeLeft--;
             timerDisplay.textContent = Math.max(0, timeLeft) + "s";
 
-            const pct = (timeLeft / (isSpeedMode ? 10 : 20)) * 100;
+            // Bar calculation
+            const maxTime = (isSpeedMode || isSurvivalMode) ? 10 : 20;
+            const pct = (timeLeft / maxTime) * 100;
             timerBar.style.width = `${pct}%`;
 
             if (timeLeft <= 0) {
@@ -314,19 +323,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         q.isCorrect = (selected === correct);
 
         if (q.isCorrect) {
-            score += 100; // Retro scoring
-            if (isSpeedMode) score += (Math.max(0, timeLeft) * 10);
+            score += 100;
+            // Bonus points for speed in special modes
+            if (isSpeedMode || isSurvivalMode) score += (Math.max(0, timeLeft) * 10);
             playSound('correct');
         } else {
-            mistakes++;
-            updateLivesVisual();
+            if (isSurvivalMode) {
+                mistakes++;
+                updateLivesVisual();
+            }
             playSound('wrong');
 
             // Survival Mode Game Over Check
-            if (isSpeedMode && mistakes >= 3) {
+            if (isSurvivalMode && mistakes >= 3) {
                 // Game Over
                 setTimeout(() => {
-                    alert("GAME OVER! You ran out of lives.");
+                    alert("GAME OVER! Hai finito le vite.");
                     showResults();
                 }, 500);
                 return; // Stop processing
@@ -336,9 +348,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         scoreDisplay.textContent = score.toString().padStart(5, '0');
-        loadQuestion(); // Reload to show state
-
-        // Auto advance after short delay? No, user wants to review.
+        loadQuestion();
     }
 
     nextBtn.addEventListener('click', () => {
@@ -347,15 +357,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             loadQuestion();
         } else {
             // End of list reached
-            if (isSpeedMode) {
+            if (isSurvivalMode) {
                 // Survival Mode: Infinite Loop - Add more questions!
-                // We'll just reshuffle the existing ones (or ideally fetch more, but we have all in memory)
-                // To simulate 'infinite', let's append the same questions but shuffled again
                 const moreQuestions = currentQuestions.map(q => ({ ...q, userAnswer: null, shuffledOptions: null })).sort(() => 0.5 - Math.random());
                 currentQuestions = currentQuestions.concat(moreQuestions);
                 currentQuestionIndex++;
                 loadQuestion();
             } else {
+                // Speed Mode (50 Qs) or Normal Mode -> End
                 showResults();
             }
         }
@@ -366,11 +375,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         resultScreen.classList.remove('hidden');
 
         finalScore.textContent = score;
-        // In survival, total questions is dynamic, so fraction might be weird. Show just "Infinite" or count
-        finalScoreFraction.textContent = isSpeedMode ? `${currentQuestionIndex + 1} Questions` : `${score / (currentQuestions.length * 100) * 100 | 0}%`;
+
+        let fractionText = `${score / (currentQuestions.length * 100) * 100 | 0}%`;
+        if (isSurvivalMode) fractionText = `${currentQuestionIndex + 1} Domande`;
+        if (isSpeedMode) fractionText = `${score} Pti`;
+
+        finalScoreFraction.textContent = fractionText;
 
         const correctCount = currentQuestions.filter(q => q.isCorrect).length;
-        const totalAnswered = currentQuestionIndex + 1; // Approx
+        const totalAnswered = currentQuestionIndex + 1;
         const accuracy = Math.round((correctCount / totalAnswered) * 100) || 0;
         accuracyDisplay.textContent = `${accuracy}%`;
 
@@ -390,13 +403,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Save Score Logic
-        if (isSpeedMode) {
+        if (isSpeedMode || isSurvivalMode) {
             saveScoreContainer.classList.remove('hidden');
             saveScoreBtn.onclick = async () => {
                 const name = playerNameInput.value || "UNK";
-                // Leaderboard save logic here
-                // Note: We need to import Leaderboard or use UserData to save high score if we want global ranking
-                // For now, simple alert as placeholder was in original code
                 if (window.Leaderboard) {
                     await window.Leaderboard.saveScore(name, score);
                     alert("Punteggio salvato in classifica!");
