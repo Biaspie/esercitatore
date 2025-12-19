@@ -172,18 +172,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Leaderboard ---
-    const handleLeaderboardOpen = async () => {
-        openModal(modalLeaderboard);
-        const body = document.getElementById('leaderboard-body');
-        body.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-white/50">Loading data...</td></tr>';
+    const leaderboardScreen = document.getElementById('leaderboard-screen');
+    const leaderboardBody = document.getElementById('leaderboard-body');
+    const leaderboardTabs = document.querySelectorAll('.leaderboard-tab');
+
+    // Tab Logic
+    leaderboardTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const mode = tab.getAttribute('data-tab');
+            openLeaderboard(mode);
+        });
+    });
+
+    async function openLeaderboard(mode = 'total') {
+        openModal(leaderboardScreen);
+
+        // Update Tabs UI
+        leaderboardTabs.forEach(t => {
+            if (t.getAttribute('data-tab') === mode) {
+                t.className = "flex-1 py-3 text-xs font-bold uppercase tracking-wider text-yellow-500 border-b-2 border-yellow-500 bg-yellow-500/10 transition-colors leaderboard-tab";
+            } else {
+                t.className = "flex-1 py-3 text-xs font-bold uppercase tracking-wider text-white/50 hover:text-white transition-colors leaderboard-tab";
+            }
+        });
+
+        // Loading
+        leaderboardBody.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-white/50 italic">Loading...</td></tr>';
 
         if (window.Leaderboard) {
-            const scores = await window.Leaderboard.getLeaderboard();
-            renderLeaderboard(scores);
+            const scores = await window.Leaderboard.getLeaderboard(mode);
+            renderLeaderboard(scores, mode);
         } else {
-            body.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-danger">Error loading module</td></tr>';
+            leaderboardBody.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-danger">Error loading module</td></tr>';
         }
-    };
+    }
+
+    // Open Buttons (Default to Total)
+    const handleLeaderboardOpen = () => openLeaderboard('total');
 
     if (leaderboardBtn) leaderboardBtn.addEventListener('click', handleLeaderboardOpen);
     if (navRankBtn) navRankBtn.addEventListener('click', handleLeaderboardOpen);
@@ -192,12 +217,11 @@ document.addEventListener('DOMContentLoaded', () => {
         closeRankBtn.addEventListener('click', () => closeModal(modalLeaderboard));
     }
 
-    function renderLeaderboard(scores) {
-        const body = document.getElementById('leaderboard-body');
-        body.innerHTML = '';
+    function renderLeaderboard(scores, mode) {
+        leaderboardBody.innerHTML = '';
 
         if (scores.length === 0) {
-            body.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-white/50">No scores yet!</td></tr>';
+            leaderboardBody.innerHTML = '<tr><td colspan="3" class="p-4 text-center text-white/30 italic">Nessun punteggio ancora.</td></tr>';
             return;
         }
 
@@ -210,15 +234,25 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index === 1) rankDisplay = '🥈';
             if (index === 2) rankDisplay = '🥉';
 
+            let scoreSuffix = "";
+            if (mode === 'total') scoreSuffix = " XP";
+            if (mode === 'speed') scoreSuffix = " Pts";
+
+            // Level Badge only for Total (XP)
+            let levelBadge = "";
+            if (entry.level) {
+                levelBadge = `<span class="text-[10px] text-yellow-500 ml-1 font-mono uppercase">Lvl ${entry.level}</span>`;
+            }
+
             row.innerHTML = `
                 <td class="p-3">${rankDisplay}</td>
                 <td class="p-3 font-bold text-white">
                     ${entry.name} 
-                    <span class="text-[10px] text-yellow-500 ml-1 font-mono uppercase">Lvl ${entry.level || 1}</span>
+                    ${levelBadge}
                 </td>
-                <td class="p-3 text-right font-mono text-primary font-bold">${entry.score}</td>
+                <td class="p-3 text-right font-mono text-primary font-bold">${entry.score}${scoreSuffix}</td>
             `;
-            body.appendChild(row);
+            leaderboardBody.appendChild(row);
         });
     }
 });
