@@ -4,8 +4,14 @@
     --card-bg: rgba(15, 23, 42, 0.6);
     --border-color: rgba(255, 255, 255, 0.08);
 
-    --primary-color: #3b82f6;
-    --primary-glow: rgba(59, 130, 246, 0.5);
+    --primary-color: #1313ec;
+    --primary-dark: #0b0b8a;
+    --primary-rgb: 19, 19, 236;
+    /* For RGBA helpers */
+
+    --secondary-color: #0bda68;
+
+    --primary-glow: rgba(var(--primary-rgb), 0.5);
 
     --text-color: #f1f5f9;
     --text-muted: #94a3b8;

@@ -1,8 +1,28 @@
 import { UserData } from './user-data.js';
 import { auth } from './firebase-config.js';
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { Theme } from './theme.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Theme Selector Logic
+    const themeBtns = document.querySelectorAll('.theme-btn');
+    themeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme');
+            Theme.setTheme(theme);
+
+            // Visual feedback
+            themeBtns.forEach(b => b.classList.remove('ring-2', 'ring-white'));
+            btn.classList.add('ring-2', 'ring-white');
+        });
+    });
+
+    // Check current theme to highlight button
+    const currentTheme = localStorage.getItem('quizTheme') || 'blue';
+    const activeBtn = document.querySelector(`.theme-btn[data-theme="${currentTheme}"]`);
+    if (activeBtn) activeBtn.classList.add('ring-2', 'ring-white');
+
     onAuthStateChanged(auth, async (user) => {
         if (user) {
             loadStats();

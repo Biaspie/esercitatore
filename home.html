@@ -20,9 +20,9 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1313ec",
-                        "primary-dark": "#0b0b8a",
-                        "secondary": "#0bda68",
+                        "primary": "var(--primary-color)",
+                        "primary-dark": "var(--primary-dark)",
+                        "secondary": "var(--secondary-color)",
                         "danger": "#ff0055",
                         "background-light": "#f6f6f8",
                         "background-dark": "#101022",
@@ -562,6 +562,8 @@
 
     <!-- Logic -->
     <script type="module" src="leaderboard.js"></script>
+    <script type="module" src="leaderboard.js"></script>
+    <script type="module" src="theme.js"></script>
     <script src="home.js?v=2"></script>
     <script type="module">
         import { UserData } from './user-data.js';
