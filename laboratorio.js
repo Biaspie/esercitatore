@@ -1,4 +1,6 @@
 import { UserData } from './user-data.js';
+import { auth } from './firebase-config.js';
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 // --- SimpleC Mock Compiler Engine ---
 class SimpleC {
@@ -12,39 +14,30 @@ class SimpleC {
     transpile(cCode) {
         let jsCode = cCode;
 
-        // 1. Remove standard includes (we don't need them in JS mok)
+        // 1. Remove standard includes
         jsCode = jsCode.replace(/#include\s+<.*?>/g, '');
 
         // 2. Handle main function wrapper
-        // We want the content of main() to execute. 
-        // Simple regex to extract content inside main() { ... }
         const mainMatch = jsCode.match(/int\s+main\s*\(\s*(void)?\s*\)\s*\{([\s\S]*)\}/);
         if (mainMatch && mainMatch[2]) {
             jsCode = mainMatch[2];
         }
 
-        // 3. printf("text", ...args) -> print("text", ...args)
-        // We'll map printf to a custom function 'localPrint'
-        // Handle format specifiers vaguely: printf("%d", x) -> localPrint(x)
-        // This is tricky. Let's do a basic replacing strategy.
-
-        // Replace 'printf' with 'await this.print'
+        // 3. printf -> await this.print
         jsCode = jsCode.replace(/\bprintf\b/g, 'await this.print');
 
-        // 4. scanf("%d", &x) -> x = await this.scan();
-        // Regex to find scanf matches
-        // scanf("%d", &x); -> x = parseInt(await this.scan());
+        // 4. scanf -> await this.scan
         jsCode = jsCode.replace(/scanf\s*\(\s*"%d"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = parseInt(await this.scan());');
         jsCode = jsCode.replace(/scanf\s*\(\s*"%f"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = parseFloat(await this.scan());');
         jsCode = jsCode.replace(/scanf\s*\(\s*"%s"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = await this.scan();');
 
-        // 5. Types: int x = 5; -> let x = 5;
+        // 5. Types -> let
         jsCode = jsCode.replace(/\b(int|float|double|char|long)\s+/g, 'let ');
 
-        // 6. Return 0; -> return; (or just remove it)
+        // 6. Return 0 -> return
         jsCode = jsCode.replace(/return\s+0\s*;/g, 'return;');
 
-        // Wrap in an async function to allow await logic for input
+        // Wrap in async IIFE
         return `(async () => { 
             try {
                 ${jsCode}
@@ -55,23 +48,17 @@ class SimpleC {
     }
 
     async print(...args) {
-        // Handle C-style format strings vaguely: 
-        // If first arg is string with %, we try to format.
-        // For this simple lab, we might just join args or handle basic substitution.
         let output = "";
 
         if (typeof args[0] === 'string' && args[0].includes('%')) {
             let format = args[0];
             let argIndex = 1;
-            // Naive replacement for %d, %s, %f
             output = format.replace(/%[dsf]/g, (match) => {
                 let val = args[argIndex++];
                 return val !== undefined ? val : match;
             });
-            // Handle newline
             output = output.replace(/\\n/g, '<br>');
         } else {
-            // Check for explicit \n in simple strings
             if (typeof args[0] === 'string') {
                 output = args[0].replace(/\\n/g, '<br>');
             } else {
@@ -88,16 +75,14 @@ class SimpleC {
 
     error(e) {
         this.outputCallback(`<span class="text-danger">Runtime Error: ${e.message}</span>`);
-        throw e; // Stop execution
+        throw e;
     }
 
     async run(cCode) {
         const jsSource = this.transpile(cCode);
-        console.log("Transpiled JS:", jsSource); // Debug
+        console.log("Transpiled JS:", jsSource);
         try {
-            // Create a function with 'this' bound to the Compiler instance
             const func = eval(jsSource);
-            // It's an IIFE that returns a promise
             await func;
         } catch (e) {
             this.outputCallback(`<span class="text-danger">Syntax/Compiler Error: ${e.message}</span>`);
@@ -119,7 +104,7 @@ int main() {
     
     return 0;
 }`,
-        check: (output, inputs) => output.includes("Hello World"),
+        check: (output) => output.includes("Hello World"),
         expectedDesc: "Stampa 'Hello World'"
     },
     {
@@ -198,17 +183,13 @@ int main() {
     
     return 0;
 }`,
-        inputSequence: ['15', '5'],
-        // We will run verify logic specially for inputs
         manualCheck: async (runner) => {
-            // Test 1
             let out1 = "";
             runner.outputCallback = (t) => out1 += t;
             runner.inputCallback = async () => '15';
             await runner.run(runner.lastCode);
             if (!out1.includes("Maggiore")) return false;
 
-            // Test 2
             let out2 = "";
             runner.outputCallback = (t) => out2 += t;
             runner.inputCallback = async () => '5';
@@ -240,7 +221,7 @@ int main() {
             await runner.run(runner.lastCode);
 
             let out2 = "";
-            runner.outputCallback = (t) => out2 += t; // Reset output capture
+            runner.outputCallback = (t) => out2 += t;
             runner.inputCallback = async () => '7';
             await runner.run(runner.lastCode);
 
@@ -261,7 +242,6 @@ int main() {
     return 0;
 }`,
         check: (output) => {
-            // Flexible check logic
             return output.includes("1") && output.includes("2") && output.includes("3") && output.includes("4") && output.includes("5");
         }
     },
@@ -315,7 +295,6 @@ int main() {
     return 0;
 }`,
         manualCheck: async (runner) => {
-            // Test with 5 (sum 15)
             let out1 = "";
             runner.outputCallback = (t) => out1 += t;
             runner.inputCallback = async () => '5';
@@ -324,11 +303,225 @@ int main() {
 
             return true;
         }
+    },
+    // --- Levels 11-20 (Expansion) ---
+    {
+        id: 11,
+        title: "Numeri Decimali",
+        desc: "Non esistono solo interi. I numeri con la virgola in C si chiamano <code>float</code> o <code>double</code>.",
+        goal: "Dichiara un <code>float</code> chiamato <code>pigreco</code> con valore <code>3.14</code> e stampalo.",
+        template: `#include <stdio.h>
+
+int main() {
+    // Dichiara float
+    
+    // Stampa pigreco
+    
+    return 0;
+}`,
+        check: (output) => output.includes("3.14"),
+        expectedDesc: "Stampa 3.14"
+    },
+    {
+        id: 12,
+        title: "Media Aritmetica",
+        desc: "Calcoliamo la media di due numeri. Attenzione: dividere due interi dà un intero!",
+        goal: "Dichiara due float <code>a = 5.0</code> e <code>b = 2.0</code>. Calcola la media (somma diviso 2) e stampala.",
+        template: `#include <stdio.h>
+
+int main() {
+    float a = 5.0;
+    float b = 2.0;
+    float media;
+    
+    // Calcola media
+    
+    // Stampa
+    
+    return 0;
+}`,
+        check: (output) => output.includes("3.5") || output.includes("3,5")
+    },
+    {
+        id: 13,
+        title: "Il Massimo",
+        desc: "L'algoritmo per trovare il massimo è fondamentale.",
+        goal: "Leggi due numeri interi dall'utente. Usa <code>if</code> per stampare solo il più grande dei due.",
+        template: `#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Inserisci due numeri: ");
+    scanf("%d", &a);
+    scanf("%d", &b);
+    
+    // Stampa il maggiore
+    
+    return 0;
+}`,
+        manualCheck: async (runner) => {
+            let out1 = "";
+            let inputs = ['10', '20'];
+            let idx = 0;
+            const originalInput = runner.inputCallback;
+            runner.outputCallback = (t) => out1 += t;
+            // Mock sequential input
+            runner.inputCallback = async () => inputs[idx++] || '0';
+
+            await runner.run(runner.lastCode);
+            if (!out1.includes("20")) return false;
+
+            idx = 0;
+            inputs = ['99', '5'];
+            let out2 = "";
+            runner.outputCallback = (t) => out2 += t;
+            await runner.run(runner.lastCode);
+            if (!out2.includes("99")) return false;
+
+            return true;
+        }
+    },
+    {
+        id: 14,
+        title: "Conto alla Rovescia",
+        desc: "Usiamo il ciclo for andando all'indietro.",
+        goal: "Stampa i numeri da 10 a 0 (compreso) usando un ciclo for decrementale (<code>i--</code>).",
+        template: `#include <stdio.h>
+
+int main() {
+    int i;
+    // Ciclo da 10 a 0
+    
+    return 0;
+}`,
+        check: (output) => output.includes("10") && output.includes("0") && output.indexOf("10") < output.indexOf("0")
+    },
+    {
+        id: 15,
+        title: "Tabellina del 2",
+        desc: "I cicli sono perfetti per le tabelline.",
+        goal: "Stampa i primi 10 multipli di 2 (2, 4, 6... 20).",
+        template: `#include <stdio.h>
+
+int main() {
+    int i;
+    // Stampa tabellina
+    
+    return 0;
+}`,
+        check: (output) => output.includes("2") && output.includes("4") && output.includes("20")
+    },
+    {
+        id: 16,
+        title: "Trova il numero",
+        desc: "Ricerca lineare: scorri un array per vedere se esiste un numero.",
+        goal: "Dato l'array preimpostato, controlla se contiene il numero 7. Se c'è, stampa <code>Trovato</code>.",
+        template: `#include <stdio.h>
+
+int main() {
+    int numeri[] = {1, 3, 5, 7, 9};
+    int i;
+    int target = 7;
+    
+    // Cerca target nell'array
+    
+    return 0;
+}`,
+        check: (output) => output.includes("Trovato")
+    },
+    {
+        id: 17,
+        title: "Fattoriale",
+        desc: "Il fattoriale di N (N!) è il prodotto 1*2*3...*N.",
+        goal: "Calcola il fattoriale di 5 (che è 120) usando un ciclo e stampalo.",
+        template: `#include <stdio.h>
+
+int main() {
+    int n = 5;
+    int fact = 1;
+    int i;
+    
+    // Calcola fattoriale
+    
+    // Stampa result
+    
+    return 0;
+}`,
+        check: (output) => output.includes("120")
+    },
+    {
+        id: 18,
+        title: "Stringhe Semplici",
+        desc: "In C le stringhe sono array di caratteri (char[]).",
+        goal: "Dichiara una stringa <code>char nome[] = \"Mario\";</code> e stampala con <code>printf(\"%s\", nome);</code>.",
+        template: `#include <stdio.h>
+
+int main() {
+    // Dichiara stringa
+    
+    // Stampa stringa
+    
+    return 0;
+}`,
+        check: (output) => output.includes("Mario")
+    },
+    {
+        id: 19,
+        title: "Accesso Sicuro",
+        desc: "Un semplice sistema di login numerico.",
+        goal: "Leggi un numero (Password). Se è <code>1234</code> stampa <code>Accesso Consentito</code>, altrimenti <code>Accesso Negato</code>.",
+        template: `#include <stdio.h>
+
+int main() {
+    int pass;
+    printf("Inserisci PIN: ");
+    scanf("%d", &pass);
+    
+    // Verifica PIN
+    
+    return 0;
+}`,
+        manualCheck: async (runner) => {
+            let out1 = "";
+            runner.outputCallback = (t) => out1 += t;
+            runner.inputCallback = async () => '1234';
+            await runner.run(runner.lastCode);
+            if (!out1.includes("Consentito")) return false;
+
+            let out2 = "";
+            runner.outputCallback = (t) => out2 += t;
+            runner.inputCallback = async () => '0000';
+            await runner.run(runner.lastCode);
+            if (!out2.includes("Negato")) return false;
+
+            return true;
+        }
+    },
+    {
+        id: 20,
+        title: "Bubble Sort (Mini)",
+        desc: "Ordiniamo 3 numeri. È la base degli algoritmi di ordinamento.",
+        goal: "Hai un array <code>{5, 1, 3}</code>. Scrivi codice per scambiare i valori finché non sono in ordine <code>1, 3, 5</code> e stampali.",
+        template: `#include <stdio.h>
+
+int main() {
+    int arr[] = {5, 1, 3};
+    // Ordina l'array (puoi usare if e variabili temporanee)
+    
+    // Stampa array ordinato
+    
+    return 0;
+}`,
+        check: (output) => {
+            const nums = output.match(/\d+/g);
+            if (!nums || nums.length < 3) return false;
+            // Simplified check: strict 1,3,5 sequence or ordered appearance
+            return nums.join(',').includes("1,3,5") || (output.indexOf("1") < output.indexOf("3") && output.indexOf("3") < output.indexOf("5"));
+        }
     }
 ];
 
 // --- Application Logic ---
-
 let currentLevel = 1;
 let maxUnlockedLevel = 1;
 const editor = document.getElementById('code-editor');
@@ -336,7 +529,6 @@ const outputDiv = document.getElementById('console-output');
 const inputArea = document.getElementById('input-area');
 const inputField = document.getElementById('console-input');
 
-// Input Promise Resolver
 let inputResolver = null;
 
 function appendOutput(html) {
@@ -346,40 +538,31 @@ function appendOutput(html) {
     outputDiv.scrollTop = outputDiv.scrollHeight;
 }
 
-// Request Input function for Compiler
 async function requestInput() {
     inputArea.classList.remove('hidden');
     inputField.focus();
-
     return new Promise((resolve) => {
         inputResolver = resolve;
     });
 }
 
-// Initial State
-// Initial State
-import { auth } from './firebase-config.js';
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
 async function init() {
-    // 1. Try Loading from LocalStorage first (instant)
+    // 1. LocalStorage
     const savedLevel = localStorage.getItem('lab_level');
     if (savedLevel) {
         maxUnlockedLevel = parseInt(savedLevel);
     }
 
-    // 2. Try Loading from Cloud (if logged in)
+    // 2. Cloud Sync
     onAuthStateChanged(auth, async (user) => {
         if (user) {
             try {
                 const data = await UserData.getUserData();
                 if (data && data.labLevel) {
-                    // Sync: Take the highest
                     if (data.labLevel > maxUnlockedLevel) {
                         maxUnlockedLevel = data.labLevel;
                         localStorage.setItem('lab_level', maxUnlockedLevel);
                     } else if (maxUnlockedLevel > data.labLevel) {
-                        // Local is ahead? Sync to cloud
                         UserData.updateLabLevel(maxUnlockedLevel);
                     }
                 }
@@ -388,29 +571,25 @@ async function init() {
             }
         }
 
-        // Ensure constraints
-        currentLevel = maxUnlockedLevel > 10 ? 10 : maxUnlockedLevel;
+        currentLevel = maxUnlockedLevel > 20 ? 20 : maxUnlockedLevel;
         renderLevelList();
         loadLevel(currentLevel);
     });
 
-    // Initial render (might be updated after auth)
-    currentLevel = maxUnlockedLevel > 10 ? 10 : maxUnlockedLevel;
+    currentLevel = maxUnlockedLevel > 20 ? 20 : maxUnlockedLevel;
     renderLevelList();
     loadLevel(currentLevel);
 
-    // Event Listeners
     document.getElementById('run-btn').addEventListener('click', runCode);
     document.getElementById('reset-btn').addEventListener('click', () => loadLevel(currentLevel));
     document.getElementById('next-level-btn').addEventListener('click', nextLevel);
 
-    // Input handling
     inputField.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             const val = inputField.value;
             inputField.value = '';
             inputArea.classList.add('hidden');
-            appendOutput(`<span class="text-secondary">> ${val}</span>`); // Echo input
+            appendOutput(`<span class="text-secondary">> ${val}</span>`);
             if (inputResolver) {
                 inputResolver(val);
                 inputResolver = null;
@@ -454,13 +633,7 @@ function loadLevel(id) {
     document.getElementById('mission-title').textContent = ex.title;
     document.getElementById('mission-desc').innerHTML = ex.desc;
     document.getElementById('mission-goal').innerHTML = ex.goal;
-
-    // Load template into editor
-    // Only verify if we are not resetting, maybe keep implementation? 
-    // For now simple reset
     editor.value = ex.template;
-
-    // Clear console
     outputDiv.innerHTML = '<div class="text-white/20 italic">Pronto. Premi Esegui.</div>';
 
     renderLevelList();
@@ -470,29 +643,22 @@ async function runCode() {
     const code = editor.value;
     const ex = EXERCISES.find(e => e.id === currentLevel);
 
-    outputDiv.innerHTML = ''; // Clear previous run
+    outputDiv.innerHTML = '';
     appendOutput('<span class="text-secondary">--- Compilazione avviata ---</span>');
 
     const runner = new SimpleC(appendOutput, requestInput);
-    runner.lastCode = code; // Store for manual checks that re-run
+    runner.lastCode = code;
 
     try {
         await runner.run(code);
 
-        // Validation Phase
         let success = false;
 
-        // Logic 1: Manual Check function (for multiple runs/inputs)
         if (ex.manualCheck) {
-            // Note: we pass a fresh runner or reuse? 
-            // The manualCheck often runs multiple times.
-            // We create a silent runner for validation to not spam UI
-            const silentRunner = new SimpleC(() => { }, () => { }); // No-op output by default overridden in check
+            const silentRunner = new SimpleC(() => { }, () => { });
             silentRunner.lastCode = code;
             success = await ex.manualCheck(silentRunner);
-        }
-        // Logic 2: Output check (simple string match on current run)
-        else if (ex.check) {
+        } else if (ex.check) {
             const currentOutput = outputDiv.innerText;
             success = ex.check(currentOutput);
         }
@@ -504,12 +670,9 @@ async function runCode() {
                 setTimeout(() => modal.classList.remove('opacity-0'), 10);
             }, 500);
 
-            // Save progress
-            if (currentLevel === maxUnlockedLevel && currentLevel < 10) {
+            if (currentLevel === maxUnlockedLevel && currentLevel < 20) {
                 maxUnlockedLevel++;
                 localStorage.setItem('lab_level', maxUnlockedLevel);
-
-                // Sync to Cloud
                 if (auth.currentUser) {
                     UserData.updateLabLevel(maxUnlockedLevel);
                 }
@@ -519,7 +682,7 @@ async function runCode() {
         }
 
     } catch (e) {
-        // Errors handled in run
+        // Checked
     }
 }
 
@@ -528,10 +691,10 @@ function nextLevel() {
     modal.classList.add('opacity-0');
     setTimeout(() => {
         modal.classList.add('hidden');
-        if (currentLevel < 10) {
+        if (currentLevel < 20) {
             loadLevel(currentLevel + 1);
         } else {
-            alert("Hai completato tutto il laboratorio! Sei un Hacker!");
+            alert("Complimenti! Hai completato tutti i 20 livelli del corso base!");
         }
     }, 300);
 }
