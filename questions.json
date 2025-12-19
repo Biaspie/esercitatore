@@ -8580,5 +8580,131 @@
         "answer": "L'automatica recezione di tali norme nell'ordinamento italiano (trasformatore permanente).",
         "difficulty": 2,
         "explanation": "L'automatica recezione di tali norme nell'ordinamento italiano (trasformatore permanente).\n\n⚖️ Riferimento: Art. 10"
+    },
+    {
+        "id": "pp_appr_01",
+        "category": "Procedura Penale - Soggetti e Principi",
+        "question": "In quale momento il soggetto indagato assume la qualifica di imputato?",
+        "options": [
+            "Quando viene iscritta la notizia di reato nel registro.",
+            "Quando il Pubblico Ministero esercita l'azione penale (es. richiesta di rinvio a giudizio).",
+            "Quando viene emessa la sentenza di condanna di primo grado.",
+            "Quando viene sottoposto a misura cautelare."
+        ],
+        "answer": "Quando il Pubblico Ministero esercita l'azione penale (es. richiesta di rinvio a giudizio).",
+        "difficulty": 1,
+        "explanation": "L'indagato diventa imputato nel momento in cui il P.M. esercita l'azione penale, abbandonando la fase delle indagini preliminari.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_02",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Per il privato cittadino, la denuncia di un reato è generalmente:",
+        "options": [
+            "Obbligatoria per tutti i reati procedibili d'ufficio.",
+            "Facoltativa, salvo casi specifici previsti dalla legge (es. delitti contro la personalità dello Stato).",
+            "Obbligatoria solo se si è testimoni oculari.",
+            "Facoltativa solo se non si conosce l'autore del reato."
+        ],
+        "answer": "Facoltativa, salvo casi specifici previsti dalla legge (es. delitti contro la personalità dello Stato).",
+        "difficulty": 1,
+        "explanation": "La denuncia per i privati è facoltativa, tranne in casi eccezionali come reati contro la personalità dello Stato o sequestro di persona a scopo di estorsione.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_03",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Qual è il termine ordinario per la proposizione della querela da parte della persona offesa?",
+        "options": [
+            "Tre mesi dal giorno in cui la persona offesa ha avuto notizia del fatto che costituisce reato.",
+            "Novanta giorni dalla commissione del reato.",
+            "Sei mesi per tutti i reati.",
+            "Un anno se il colpevole è ignoto."
+        ],
+        "answer": "Tre mesi dal giorno in cui la persona offesa ha avuto notizia del fatto che costituisce reato.",
+        "difficulty": 1,
+        "explanation": "Il diritto di querela va esercitato entro tre mesi dalla notizia del fatto reato (salvo termini diversi per reati specifici come atti sessuali o persecutori).\n\n⚖️ Riferimento: Codice Penale"
+    },
+    {
+        "id": "pp_appr_04",
+        "category": "Procedura Penale - Fase Processuale",
+        "question": "Perché, di regola, il Giudice dell'Udienza Preliminare (G.U.P.) deve essere una persona fisica diversa dal Giudice per le Indagini Preliminari (G.I.P.)?",
+        "options": [
+            "Perché il G.I.P. è un giudice monocratico e il G.U.P. è collegiale.",
+            "Perché il G.I.P., avendo conosciuto gli atti durante le indagini, potrebbe non garantire l'imparzialità necessaria per la decisione dell'udienza preliminare.",
+            "Perché il G.U.P. deve essere gerarchicamente superiore al G.I.P.",
+            "Non c'è divieto, possono coincidere se autorizzati dal Presidente del Tribunale."
+        ],
+        "answer": "Perché il G.I.P., avendo conosciuto gli atti durante le indagini, potrebbe non garantire l'imparzialità necessaria per la decisione dell'udienza preliminare.",
+        "difficulty": 2,
+        "explanation": "Il G.I.P. ha già valutato atti delle indagini (es. misure cautelari); per garantire terzietà, il G.U.P. deve essere un giudice diverso.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_05",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Qual è la differenza formale principale tra 'annotazione' e 'verbale' nell'attività di Polizia Giudiziaria?",
+        "options": [
+            "L'annotazione non ha valore probatorio, il verbale sì.",
+            "L'annotazione è un atto più semplice per attività atipiche o di iniziativa; il verbale ha uno schema prefissato ed è obbligatorio per atti garantiti o delegati.",
+            "L'annotazione è fatta dall'Agente, il verbale solo dall'Ufficiale.",
+            "Il verbale deve essere trasmesso al P.M., l'annotazione resta agli atti interni."
+        ],
+        "answer": "L'annotazione è un atto più semplice per attività atipiche o di iniziativa; il verbale ha uno schema prefissato ed è obbligatorio per atti garantiti o delegati.",
+        "difficulty": 2,
+        "explanation": "Il verbale è richiesto per atti che incidono su diritti fondamentali (perquisizioni, arresti) o delegati; l'annotazione è per l'attività ordinaria d'indagine.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_06",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Per quale dei seguenti atti di iniziativa della P.G. è obbligatoria la redazione del verbale (e non della semplice annotazione)?",
+        "options": [
+            "L'assunzione di sommarie informazioni da informatori confidenziali.",
+            "L'arresto in flagranza di reato o il fermo di indiziato di delitto.",
+            "Il pedinamento dell'indagato.",
+            "L'identificazione di persone nei cui confronti non vengono svolte indagini."
+        ],
+        "answer": "L'arresto in flagranza di reato o il fermo di indiziato di delitto.",
+        "difficulty": 2,
+        "explanation": "Gli atti limitativi della libertà personale come arresto e fermo richiedono sempre la forma garantita del verbale.\n\n⚖️ Riferimento: Codice di Procedura Penale"
+    },
+    {
+        "id": "pp_appr_07",
+        "category": "Atti di Polizia Giudiziaria",
+        "question": "Sebbene la 'relazione di servizio' sia un atto interno, quando assume rilevanza processuale esterna e confluisce nel fascicolo del P.M.?",
+        "options": [
+            "Quando viene vidimata dal Dirigente dell'Ufficio.",
+            "Quando contiene una notizia di reato o documenta un'attività di indagine specifica, potendo essere usata per le contestazioni in dibattimento.",
+            "Solo se la P.G. richiede l'autorizzazione al Questore.",
+            "Mai, resta sempre un atto amministrativo interno non utilizzabile."
+        ],
+        "answer": "Quando contiene una notizia di reato o documenta un'attività di indagine specifica, potendo essere usata per le contestazioni in dibattimento.",
+        "difficulty": 3,
+        "explanation": "Se contiene notizie di reato o atti di indagine, la relazione perde la sua natura puramente interna e diventa atto del procedimento utilizzabile per contestazioni.\n\n⚖️ Riferimento: Prassi di Polizia / Giurisprudenza"
+    },
+    {
+        "id": "pp_appr_08",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "Se durante l'assunzione di sommarie informazioni da una persona informata sui fatti emergono indizi di reità a suo carico, come deve procedere la P.G.?",
+        "options": [
+            "Continuare l'esame per raccogliere più prove possibili prima di iscriverla nel registro indagati.",
+            "Deve interrompere l'esame, avvisare la persona che potranno essere svolte indagini nei suoi confronti e invitarla a nominare un difensore.",
+            "Trasformare l'atto in interrogatorio e procedere immediatamente all'arresto.",
+            "Far firmare una dichiarazione di colpevolezza e chiudere il verbale."
+        ],
+        "answer": "Deve interrompere l'esame, avvisare la persona che potranno essere svolte indagini nei suoi confronti e invitarla a nominare un difensore.",
+        "difficulty": 3,
+        "explanation": "È il principio di garanzia (art. 63 c.p.p.): chi è sostanzialmente indagato non può essere sentito come testimone.\n\n⚖️ Riferimento: Art. 63 c.p.p."
+    },
+    {
+        "id": "pp_appr_09",
+        "category": "Procedura Penale - Indagini e Mezzi di Prova",
+        "question": "In quale unico caso le 'denunce anonime' possono essere utilizzate processualmente, in deroga al divieto generale?",
+        "options": [
+            "Quando contengono dettagli molto precisi sul reato.",
+            "Quando costituiscono esse stesse il 'corpo del reato' (es. lettera calunniosa) o provengono dall'imputato.",
+            "Quando sono confermate da una fonte confidenziale.",
+            "Quando il reato è di particolare gravità sociale."
+        ],
+        "answer": "Quando costituiscono esse stesse il 'corpo del reato' (es. lettera calunniosa) o provengono dall'imputato.",
+        "difficulty": 3,
+        "explanation": "L'anonimo non è utilizzabile come notizia di reato vera e propria, salvo che sia esso stesso la prova del reato (es. minacce o calunnie scritte).\n\n⚖️ Riferimento: Art. 240 c.p.p."
     }
 ]
