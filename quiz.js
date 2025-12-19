@@ -434,6 +434,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (e.key === 'ArrowLeft' && !prevBtn.classList.contains('hidden') && !prevBtn.disabled) {
                 prevBtn.click();
             }
+
+            // 'H' for Help/Explanation
+            if ((e.key === 'h' || e.key === 'H') && helpBtn && !helpBtn.classList.contains('opacity-50')) {
+                helpBtn.click();
+            }
         }
     });
 
