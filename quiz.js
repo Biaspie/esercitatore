@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             btn.innerHTML = `
                 <div class="flex items-center min-h-[3.5rem] py-2 px-4 rounded ${innerBg} group-hover:bg-[#25254d] transition-colors">
-                    <span class="flex items-center justify-center w-8 h-8 rounded bg-[#101022] ${letterColor} font-bold font-mono mr-4 border ${letterBorder} group-hover:text-white group-hover:border-primary group-hover:bg-primary group-hover:shadow-[0_0_10px_rgba(19,19,236,0.5)] transition-all flex-shrink-0">${letter}</span>
+                    <span class="flex items-center justify-center w-8 h-8 rounded bg-[#101022] ${letterColor} font-bold font-mono mr-4 border ${letterBorder} group-hover:text-white group-hover:border-primary group-hover:bg-primary group-hover:shadow-[0_0_15px_var(--primary-color)] transition-all flex-shrink-0">${letter}</span>
                     <span class="text-white text-lg font-bold tracking-wide break-words w-full text-left leading-tight">${opt}</span>
                 </div>
             `;

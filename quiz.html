@@ -19,7 +19,7 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1313ec",
+                        "primary": "var(--primary-color)",
                         "background-light": "#f6f6f8",
                         "background-dark": "#101022",
                         "retro-dark": "#05051a",
@@ -64,7 +64,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #1313ec;
+            background: var(--primary-color);
         }
 
         .hidden {
@@ -179,7 +179,7 @@
                             id="score-container-ui">
                             <span class="text-[#9292c9] text-xs font-bold tracking-widest">SCORE</span>
                             <span
-                                class="text-primary text-2xl font-mono font-bold tracking-widest drop-shadow-[0_0_8px_rgba(19,19,236,0.6)]"
+                                class="text-primary text-2xl font-mono font-bold tracking-widest drop-shadow-[0_0_8px_var(--primary-color)]"
                                 id="score-display">00000</span>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                     <!-- Question Card -->
                     <div class="flex-1 flex flex-col justify-center min-h-[160px]">
                         <div
-                            class="relative bg-primary/10 border-2 border-primary p-6 rounded-lg shadow-[0_0_15px_rgba(19,19,236,0.2)] md:h-full md:flex md:items-center md:justify-center">
+                            class="relative bg-primary/10 border-2 border-primary p-6 rounded-lg shadow-[0_0_15px_var(--primary-color)] md:h-full md:flex md:items-center md:justify-center">
                             <!-- Corner decorations -->
                             <div class="absolute -top-1 -left-1 w-2 h-2 bg-primary"></div>
                             <div class="absolute -top-1 -right-1 w-2 h-2 bg-primary"></div>
