@@ -141,37 +141,47 @@ function renderUserTable(users) {
 
     users.forEach(user => {
         const tr = document.createElement('tr');
+        // Mobile: Flex column, Desktop: Table row
+        tr.className = "flex flex-col md:table-row bg-white/5 md:bg-transparent mb-4 md:mb-0 rounded md:rounded-none border border-white/10 md:border-none p-4 md:p-0";
+
         const isAdmin = user.role === 'admin';
         const isCurrentUser = user.id === currentUserId;
-        // Default to true if undefined (legacy users), explicit false is pending
         const isApproved = user.isApproved !== false;
 
         tr.innerHTML = `
-            <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">${user.username || 'N/A'}</td>
-            <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">${user.email}</td>
-            <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td class="p-2 md:p-4 border-b border-white/5 md:border-b-white/10 flex justify-between md:table-cell items-center">
+                <span class="md:hidden text-xs text-white/50 uppercase font-bold">User</span>
+                <span>${user.username || 'N/A'}</span>
+            </td>
+            <td class="p-2 md:p-4 border-b border-white/5 md:border-b-white/10 flex justify-between md:table-cell items-center">
+                <span class="md:hidden text-xs text-white/50 uppercase font-bold">Email</span>
+                <span class="text-white/70 text-xs md:text-sm break-all">${user.email}</span>
+            </td>
+            <td class="p-2 md:p-4 border-b border-white/5 md:border-b-white/10 flex justify-between md:table-cell items-center">
+                <span class="md:hidden text-xs text-white/50 uppercase font-bold">Role</span>
                 <span style="padding: 0.2rem 0.6rem; border-radius: 4px; background: ${isAdmin ? 'rgba(255, 215, 0, 0.2)' : 'rgba(255,255,255,0.1)'}; color: ${isAdmin ? '#FFD700' : 'white'}; font-size: 0.8rem;">
                     ${user.role || 'user'}
                 </span>
             </td>
-            <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td class="p-2 md:p-4 border-b border-white/5 md:border-b-white/10 flex justify-between md:table-cell items-center">
+                <span class="md:hidden text-xs text-white/50 uppercase font-bold">Status</span>
                 <span style="padding: 0.2rem 0.6rem; border-radius: 4px; background: ${isApproved ? 'rgba(16, 185, 129, 0.2)' : 'rgba(239, 68, 68, 0.2)'}; color: ${isApproved ? '#10b981' : '#ef4444'}; font-size: 0.8rem;">
                     ${isApproved ? 'Active' : 'Pending'}
                 </span>
             </td>
-            <td style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: right;">
-                ${!isCurrentUser ? `
+            <td class="p-2 md:p-4 flex flex-wrap gap-2 justify-end md:table-cell md:text-right mt-2 md:mt-0">
+                 ${!isCurrentUser ? `
                     ${!isApproved ? `
-                        <button class="btn-approve" data-uid="${user.id}" style="background: #10b981; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">APPROVA</button>
+                        <button class="btn-approve grow md:grow-0 text-center" data-uid="${user.id}" style="background: #10b981; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">APPROVA</button>
                     ` : `
-                        <button class="btn-revoke" data-uid="${user.id}" style="background: #6b7280; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Blocca</button>
+                        <button class="btn-revoke grow md:grow-0 text-center" data-uid="${user.id}" style="background: #6b7280; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Blocca</button>
                     `}
                     ${!isAdmin ? `
-                        <button class="btn-promote" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Promuovi Admin</button>
+                        <button class="btn-promote grow md:grow-0 text-center" data-uid="${user.id}" style="background: #3b82f6; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Promuovi</button>
                     ` : `
-                        <button class="btn-demote" data-uid="${user.id}" style="background: #f59e0b; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-right: 0.5rem;">Rimuovi Admin</button>
+                        <button class="btn-demote grow md:grow-0 text-center" data-uid="${user.id}" style="background: #f59e0b; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Rimuovi</button>
                     `}
-                    <button class="btn-delete" data-uid="${user.id}" style="background: #ef4444; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Elimina</button>
+                    <button class="btn-delete grow md:grow-0 text-center" data-uid="${user.id}" style="background: #ef4444; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">Elimina</button>
                 ` : '<span style="color: var(--text-muted); font-size: 0.8rem;">(Tu)</span>'}
             </td>
         `;
