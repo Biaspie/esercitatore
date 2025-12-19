@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const livesContainer = document.getElementById('lives-container');
     const timerDisplay = document.getElementById('timer-display');
     const timerBar = document.getElementById('timer-bar');
+    const timerContainerUI = document.getElementById('timer-container-ui'); // NEW
     const scoreDisplay = document.getElementById('score-display');
 
     // Content Elements
@@ -186,10 +187,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Update Subject Label
             if (isSurvivalMode) {
                 if (subjectLabel) subjectLabel.textContent = "SURVIVAL MODE";
+                if (timerContainerUI) timerContainerUI.classList.remove('hidden');
             } else if (isSpeedMode) {
                 if (subjectLabel) subjectLabel.textContent = "SPEED MODE";
+                if (timerContainerUI) timerContainerUI.classList.remove('hidden');
             } else {
                 if (subjectLabel) subjectLabel.textContent = subjectParam.toUpperCase();
+                // Hide Timer in Normal Mode
+                if (timerContainerUI) timerContainerUI.classList.add('hidden');
             }
 
             loadQuestion();
@@ -289,7 +294,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             nextBtn.classList.remove('hidden');
         } else {
             nextBtn.classList.add('hidden');
-            startTimer();
+            // Only start timer if Speed or Survival
+            if (isSpeedMode || isSurvivalMode) {
+                startTimer();
+            }
         }
     }
 
