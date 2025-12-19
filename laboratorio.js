@@ -602,6 +602,49 @@ async function init() {
             }
         }
     });
+
+    // Bug Report Logic
+    const reportModal = document.getElementById('report-modal');
+    document.getElementById('report-btn').addEventListener('click', () => {
+        reportModal.classList.remove('hidden');
+        setTimeout(() => reportModal.classList.remove('opacity-0'), 10);
+    });
+
+    document.getElementById('cancel-report-btn').addEventListener('click', () => {
+        reportModal.classList.add('opacity-0');
+        setTimeout(() => reportModal.classList.add('hidden'), 300);
+    });
+
+    document.getElementById('submit-report-btn').addEventListener('click', async () => {
+        const reason = document.getElementById('report-reason').value;
+        if (!reason.trim()) return alert("Inserisci una descrizione.");
+
+        const ex = EXERCISES.find(e => e.id === currentLevel);
+        const code = editor.value;
+
+        try {
+            const success = await UserData.submitReport({
+                type: 'lab',
+                questionId: `LAB-${currentLevel}`, // Pseudo-ID
+                question: ex.title, // Title instead of question text
+                comment: reason,
+                codeContext: code,
+                username: auth.currentUser ? (auth.currentUser.displayName || 'User') : 'Anonymous'
+            });
+
+            if (success) {
+                alert("Segnalazione inviata! Grazie.");
+                document.getElementById('report-reason').value = '';
+                reportModal.classList.add('opacity-0');
+                setTimeout(() => reportModal.classList.add('hidden'), 300);
+            } else {
+                alert("Errore nell'invio.");
+            }
+        } catch (e) {
+            console.error("Report error:", e);
+            alert("Errore imprevisto.");
+        }
+    });
 }
 
 function renderLevelList() {

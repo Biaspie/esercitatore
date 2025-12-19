@@ -233,6 +233,20 @@ export const UserData = {
         }
     },
 
+    async updateUserTheme(theme) {
+        const user = auth.currentUser;
+        if (!user) return false;
+
+        const docRef = doc(db, COLLECTION_NAME, user.uid);
+        try {
+            await setDoc(docRef, { theme: theme }, { merge: true });
+            return true;
+        } catch (e) {
+            console.error("Error updating theme:", e);
+            return false;
+        }
+    },
+
     async recordLogin() {
         const date = new Date().toISOString().split('T')[0];
         const statsRef = doc(db, "stats", date);

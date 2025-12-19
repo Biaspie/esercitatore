@@ -318,11 +318,17 @@ function renderReports(reports) {
 
         item.innerHTML = `
             <div>
-                <div style="color: #f59e0b; font-weight: 600; margin-bottom: 0.5rem;">Domanda ID: ${report.questionId}</div>
+                <div style="color: #f59e0b; font-weight: 600; margin-bottom: 0.5rem;">
+                    ${report.type === 'lab' ? 'Lab Exercise' : `Domanda ID: ${report.questionId}`}
+                </div>
                 <div style="margin-bottom: 0.5rem; font-size: 0.9rem;">"${report.question}"</div>
                 <div style="color: var(--text-muted); font-size: 0.9rem;">
                     <strong>Segnalazione:</strong> ${report.comment}
                 </div>
+                ${report.codeContext ? `
+                <div style="margin-top: 0.5rem; font-size: 0.8rem; background: rgba(0,0,0,0.3); padding: 0.5rem; border-radius: 4px; font-family: monospace; white-space: pre-wrap; max-height: 100px; overflow-y: auto;">
+                    ${report.codeContext}
+                </div>` : ''}
                 <div style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">
                     Da: ${report.username || 'Anonimo'} • ${date}
                 </div>

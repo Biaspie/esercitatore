@@ -192,7 +192,7 @@
                             <span class="material-symbols-outlined text-green-500">terminal</span>
                         </div>
                         <p class="text-[10px] text-white/50 font-mono uppercase tracking-widest mt-2">C Programming <br>
-                            10 Levels</p>
+                            20 Levels</p>
                     </a>
                 </div>
                 <!-- Stats Row -->
@@ -607,6 +607,7 @@
         import { UserData } from './user-data.js';
         import { auth } from './firebase-config.js';
         import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { Theme } from './theme.js';
 
         document.addEventListener('DOMContentLoaded', () => {
             // Handle Modal Transitions matches
@@ -647,6 +648,9 @@
                 if (firebaseUser) {
                     const data = await UserData.getUserData();
                     if (data) {
+                        if (data.theme) {
+                            Theme.setTheme(data.theme);
+                        }
                         const lvl = data.level || 1;
                         const exp = data.exp || 0;
 

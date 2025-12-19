@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             const theme = btn.getAttribute('data-theme');
             Theme.setTheme(theme);
+            if (auth.currentUser) {
+                UserData.updateUserTheme(theme);
+            }
 
             // Visual feedback
             themeBtns.forEach(b => b.classList.remove('ring-2', 'ring-white'));

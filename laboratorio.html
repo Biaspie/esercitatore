@@ -117,6 +117,10 @@
                         class="bg-[#1a1a2e] px-4 py-2 flex justify-between items-center text-xs text-white/50 font-mono border-b border-white/5">
                         <span>main.c</span>
                         <div class="flex gap-2">
+                            <button id="report-btn" class="hover:text-danger transition-colors flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[16px]">bug_report</span>
+                                <span class="hidden md:inline">Report</span>
+                            </button>
                             <button id="reset-btn" class="hover:text-white transition-colors">Reset</button>
                         </div>
                     </div>
@@ -151,6 +155,30 @@
             </div>
         </section>
     </main>
+
+    <!-- Report Bug Modal -->
+    <div id="report-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 hidden opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-surface-dark border-2 border-danger p-6 rounded-lg shadow-2xl max-w-md w-full transform scale-95 transition-transform">
+            <h3 class="text-danger font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined">bug_report</span>
+                Segnala Bug
+            </h3>
+            <p class="text-white/60 text-sm mb-4">Descrivi il problema riscontrato in questo livello.</p>
+            <textarea id="report-reason"
+                class="w-full bg-black/30 border border-white/10 rounded p-3 text-white text-sm h-32 mb-4 focus:border-danger outline-none resize-none"
+                placeholder="Es. Il codice corretto non viene accettato..."></textarea>
+            <div class="flex justify-end gap-3">
+                <button id="cancel-report-btn"
+                    class="text-white/50 hover:text-white text-sm uppercase font-bold tracking-wider">Annulla</button>
+                <button id="submit-report-btn"
+                    class="bg-danger hover:bg-red-600 text-white text-sm font-bold uppercase tracking-wider px-4 py-2 rounded shadow-retro hover:shadow-none hover:translate-y-[1px] transition-all">
+                    Invia Segnalazione
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Success Modal -->
     <div id="success-modal"
