@@ -318,7 +318,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function startTimer() {
         timeLeft = 20;
-        if (isSpeedMode || isSurvivalMode) timeLeft = 10; // Fast timer for both special modes
+        if (isSpeedMode) timeLeft = 10;
+        if (isSurvivalMode) timeLeft = 20; // Explicitly set 20s for Survival
 
         timerDisplay.textContent = timeLeft + "s";
         timerBar.style.width = "100%";
@@ -328,7 +329,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             timerDisplay.textContent = Math.max(0, timeLeft) + "s";
 
             // Bar calculation
-            const maxTime = (isSpeedMode || isSurvivalMode) ? 10 : 20;
+            const maxTime = (isSpeedMode) ? 10 : 20;
             const pct = (timeLeft / maxTime) * 100;
             timerBar.style.width = `${pct}%`;
 
@@ -338,6 +339,30 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }, 1000);
     }
+
+    // Keyboard Controls
+    document.addEventListener('keydown', (e) => {
+        // Only if quiz is active and not showing results
+        if (!quizScreen.classList.contains('hidden') && resultScreen.classList.contains('hidden')) {
+            const key = e.key.toUpperCase();
+
+            // Map A, B, C, D to options
+            const optionsMap = { 'A': 0, 'B': 1, 'C': 2, 'D': 3 };
+
+            if (optionsMap.hasOwnProperty(key)) {
+                const index = optionsMap[key];
+                const buttons = optionsContainer.querySelectorAll('button');
+                if (buttons[index] && !buttons[index].disabled) {
+                    buttons[index].click();
+                }
+            }
+
+            // Enter or ArrowRight for Next
+            if ((e.key === 'Enter' || e.key === 'ArrowRight') && !nextBtn.classList.contains('hidden')) {
+                nextBtn.click();
+            }
+        }
+    });
 
     function selectAnswer(selected, correct) {
         clearInterval(timerInterval);
