@@ -357,14 +357,45 @@ async function requestInput() {
 }
 
 // Initial State
-function init() {
-    // Load progress
+// Initial State
+import { auth } from './firebase-config.js';
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+async function init() {
+    // 1. Try Loading from LocalStorage first (instant)
     const savedLevel = localStorage.getItem('lab_level');
     if (savedLevel) {
         maxUnlockedLevel = parseInt(savedLevel);
-        currentLevel = maxUnlockedLevel > 10 ? 10 : maxUnlockedLevel; // Start at max unlocked or capped
     }
 
+    // 2. Try Loading from Cloud (if logged in)
+    onAuthStateChanged(auth, async (user) => {
+        if (user) {
+            try {
+                const data = await UserData.getUserData();
+                if (data && data.labLevel) {
+                    // Sync: Take the highest
+                    if (data.labLevel > maxUnlockedLevel) {
+                        maxUnlockedLevel = data.labLevel;
+                        localStorage.setItem('lab_level', maxUnlockedLevel);
+                    } else if (maxUnlockedLevel > data.labLevel) {
+                        // Local is ahead? Sync to cloud
+                        UserData.updateLabLevel(maxUnlockedLevel);
+                    }
+                }
+            } catch (e) {
+                console.error("Sync error:", e);
+            }
+        }
+
+        // Ensure constraints
+        currentLevel = maxUnlockedLevel > 10 ? 10 : maxUnlockedLevel;
+        renderLevelList();
+        loadLevel(currentLevel);
+    });
+
+    // Initial render (might be updated after auth)
+    currentLevel = maxUnlockedLevel > 10 ? 10 : maxUnlockedLevel;
     renderLevelList();
     loadLevel(currentLevel);
 
@@ -425,6 +456,8 @@ function loadLevel(id) {
     document.getElementById('mission-goal').innerHTML = ex.goal;
 
     // Load template into editor
+    // Only verify if we are not resetting, maybe keep implementation? 
+    // For now simple reset
     editor.value = ex.template;
 
     // Clear console
@@ -476,8 +509,10 @@ async function runCode() {
                 maxUnlockedLevel++;
                 localStorage.setItem('lab_level', maxUnlockedLevel);
 
-                // Award XP for completing level (once)
-                // (Optional: integrate with UserData if we want backend sync)
+                // Sync to Cloud
+                if (auth.currentUser) {
+                    UserData.updateLabLevel(maxUnlockedLevel);
+                }
             }
         } else {
             appendOutput('<br><span class="text-danger border-t border-danger pt-1 block">Risultato errato. Riprova. Controlla l\'obiettivo.</span>');

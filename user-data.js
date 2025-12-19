@@ -454,5 +454,20 @@ export const UserData = {
         }
 
         return data;
+    },
+    async updateLabLevel(newLevel) {
+        const user = auth.currentUser;
+        if (!user) return false;
+
+        const docRef = doc(db, COLLECTION_NAME, user.uid);
+        try {
+            await setDoc(docRef, {
+                labLevel: newLevel
+            }, { merge: true });
+            return true;
+        } catch (e) {
+            console.error("Error updating lab level:", e);
+            return false;
+        }
     }
 };
