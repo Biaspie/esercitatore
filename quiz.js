@@ -526,6 +526,76 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
+    // --- REPORT LOGIC ---
+    const reportModal = document.getElementById('report-modal');
+    const closeReportBtn = document.getElementById('close-report-btn');
+    const cancelReportBtn = document.getElementById('cancel-report-btn');
+    const submitReportBtn = document.getElementById('submit-report-btn');
+    const reportComment = document.getElementById('report-comment');
+
+    if (reportBtn) {
+        reportBtn.addEventListener('click', () => {
+            if (!auth.currentUser) {
+                alert("Devi essere loggato per segnalare.");
+                return;
+            }
+            reportComment.value = ""; // Clear
+            reportModal.classList.remove('hidden');
+        });
+    }
+
+    const closeReport = () => reportModal.classList.add('hidden');
+    if (closeReportBtn) closeReportBtn.addEventListener('click', closeReport);
+    if (cancelReportBtn) cancelReportBtn.addEventListener('click', closeReport);
+    if (reportModal) {
+        reportModal.addEventListener('click', (e) => {
+            if (e.target === reportModal) closeReport();
+        });
+    }
+
+    if (submitReportBtn) {
+        submitReportBtn.addEventListener('click', async () => {
+            const comment = reportComment.value.trim();
+            if (!comment) {
+                alert("Inserisci un commento per la segnalazione.");
+                return;
+            }
+
+            const q = currentQuestions[currentQuestionIndex];
+            const loadBtnText = submitReportBtn.innerHTML;
+            submitReportBtn.innerHTML = "Inviando...";
+            submitReportBtn.disabled = true;
+
+            try {
+                // Get username safely
+                let username = "Anonimo";
+                if (auth.currentUser) {
+                    try {
+                        const uData = await UserData.getUserData();
+                        if (uData && uData.username) username = uData.username;
+                    } catch (e) { }
+                }
+
+                await UserData.submitReport({
+                    questionId: q.id,
+                    question: q.question,
+                    comment: comment,
+                    userId: auth.currentUser.uid,
+                    username: username
+                });
+
+                alert("Segnalazione inviata con successo! Grazie.");
+                closeReport();
+            } catch (e) {
+                console.error("Report Error:", e);
+                alert("Errore nell'invio della segnalazione.");
+            } finally {
+                submitReportBtn.innerHTML = loadBtnText;
+                submitReportBtn.disabled = false;
+            }
+        });
+    }
+
     function showResults() {
         quizScreen.classList.add('hidden');
         resultScreen.classList.remove('hidden');

@@ -123,12 +123,21 @@
                     </div>
                 </div>
 
-                <!-- Users Section -->
+                <!-- Users/Reports Tabs -->
                 <div class="flex-1 min-h-[300px] flex flex-col">
-                    <h2
-                        class="text-[#9292c9] text-xs font-bold tracking-widest uppercase mb-2 border-l-4 border-primary pl-2">
-                        User Database</h2>
-                    <div
+                    <div class="flex items-center gap-4 mb-2">
+                        <button id="tab-users"
+                            class="text-xs font-bold tracking-widest uppercase border-b-2 border-primary text-white pb-1 transition-colors">
+                            User Database
+                        </button>
+                        <button id="tab-reports"
+                            class="text-xs font-bold tracking-widest uppercase border-b-2 border-transparent text-[#9292c9] hover:text-white pb-1 transition-colors">
+                            Segnalazioni
+                        </button>
+                    </div>
+
+                    <!-- User Table Container -->
+                    <div id="users-view"
                         class="flex-1 bg-[#18182f] border border-[#323267] rounded shadow-retro-sm overflow-hidden flex flex-col">
                         <div class="overflow-x-auto overflow-y-auto flex-1 table-container">
                             <table class="w-full text-left font-mono text-sm">
@@ -149,6 +158,14 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+
+                    <!-- Reports Container (Initially Hidden) -->
+                    <div id="reports-view"
+                        class="flex-1 bg-[#18182f] border border-[#323267] rounded shadow-retro-sm overflow-hidden flex flex-col hidden p-4 overflow-y-auto table-container">
+                        <div id="reports-list" class="space-y-4">
+                            <!-- Reports injected here -->
                         </div>
                     </div>
                 </div>

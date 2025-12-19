@@ -262,27 +262,69 @@
 
                     <!-- Content -->
                     <div class="space-y-4">
-                        <div class="bg-black/30 p-4 rounded border border-white/5">
-                            <p class="text-[#9292c9] text-xs font-bold uppercase tracking-wider mb-1">RISPOSTA CORRETTA
-                            </p>
-                            <p class="text-retro-green font-bold text-lg leading-tight" id="explanation-correct-answer">
-                                --</p>
+                        <div>
+                            <h3 class="text-[#9292c9] text-xs font-bold uppercase tracking-widest mb-1">CORRECT ANSWER
+                            </h3>
+                            <div class="text-retro-green font-bold text-lg leading-tight"
+                                id="explanation-correct-answer">
+                                --
+                            </div>
                         </div>
 
                         <div>
-                            <p class="text-[#9292c9] text-xs font-bold uppercase tracking-wider mb-2">SPIEGAZIONE
-                                TATTICA</p>
-                            <p class="text-white text-base leading-relaxed" id="explanation-text">
-                                Dati non disponibili per questa missione.
-                            </p>
+                            <h3 class="text-[#9292c9] text-xs font-bold uppercase tracking-widest mb-1">TACTICAL INSIGHT
+                            </h3>
+                            <div class="text-white/90 text-sm leading-relaxed whitespace-pre-line"
+                                id="explanation-text">
+                                --
+                            </div>
                         </div>
                     </div>
 
                     <!-- Footer -->
-                    <div class="mt-6 flex justify-end">
+                    <div class="mt-6 pt-4 border-t border-white/10 flex justify-end">
                         <button id="close-explanation-btn-2"
-                            class="px-6 py-2 bg-primary text-white font-retro uppercase tracking-widest rounded hover:brightness-110 active:scale-95 transition-all">
-                            RICEVUTO
+                            class="bg-[#323267] hover:bg-primary text-white px-4 py-2 rounded font-bold uppercase tracking-wider transition-colors">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REPORT MODAL -->
+            <div id="report-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 hidden">
+                <div
+                    class="relative w-full max-w-lg bg-[#232348] border-2 border-retro-red shadow-[0_0_30px_rgba(255,0,0,0.3)] rounded-lg p-6 m-4 animate-in fade-in zoom-in duration-200">
+                    <!-- Close Button -->
+                    <button id="close-report-btn"
+                        class="absolute top-2 right-2 text-white/50 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+
+                    <!-- Header -->
+                    <div class="flex items-center gap-3 mb-4 border-b border-white/10 pb-2">
+                        <span class="material-symbols-outlined text-retro-red text-3xl">bug_report</span>
+                        <h2 class="text-2xl font-bold text-white font-retro tracking-wider">REPORT ISSUE</h2>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="space-y-4">
+                        <p class="text-white/70 text-sm">Descrivi il problema riscontrato in questa domanda.
+                            L'amministratore verificherà la segnalazione.</p>
+                        <textarea id="report-comment" rows="4"
+                            class="w-full bg-[#101022] border border-[#323267] rounded p-3 text-white placeholder-white/30 focus:border-retro-red focus:ring-1 focus:ring-retro-red outline-none resize-none"
+                            placeholder="Es. La risposta corretta è sbagliata..."></textarea>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="mt-6 pt-4 border-t border-white/10 flex justify-end gap-2">
+                        <button id="cancel-report-btn"
+                            class="bg-[#323267] hover:bg-white/10 text-white px-4 py-2 rounded font-bold uppercase tracking-wider transition-colors">
+                            Annulla
+                        </button>
+                        <button id="submit-report-btn"
+                            class="bg-retro-red/80 hover:bg-retro-red text-white px-4 py-2 rounded font-bold uppercase tracking-wider transition-colors flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">send</span> Invia
                         </button>
                     </div>
                 </div>

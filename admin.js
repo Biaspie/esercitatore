@@ -37,6 +37,34 @@ async function loadAdminDashboard() {
     // Load Reports
     const reports = await UserData.getReports();
     renderReports(reports);
+
+    // Tab Logic
+    const tabUsers = document.getElementById('tab-users');
+    const tabReports = document.getElementById('tab-reports');
+    const viewUsers = document.getElementById('users-view');
+    const viewReports = document.getElementById('reports-view');
+
+    if (tabUsers && tabReports) {
+        tabUsers.addEventListener('click', () => {
+            tabUsers.classList.add('border-primary', 'text-white');
+            tabUsers.classList.remove('border-transparent', 'text-[#9292c9]');
+            tabReports.classList.remove('border-primary', 'text-white');
+            tabReports.classList.add('border-transparent', 'text-[#9292c9]');
+
+            viewUsers.classList.remove('hidden');
+            viewReports.classList.add('hidden');
+        });
+
+        tabReports.addEventListener('click', () => {
+            tabReports.classList.add('border-primary', 'text-white');
+            tabReports.classList.remove('border-transparent', 'text-[#9292c9]');
+            tabUsers.classList.remove('border-primary', 'text-white');
+            tabUsers.classList.add('border-transparent', 'text-[#9292c9]');
+
+            viewUsers.classList.add('hidden');
+            viewReports.classList.remove('hidden');
+        });
+    }
 }
 
 function renderStatsCharts(stats) {
