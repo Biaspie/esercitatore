@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Event Listeners ---
 
+    // Selectors
+    const subjectFilterContainer = document.getElementById('subject-filter-container');
+    const subjectChecklist = document.getElementById('subject-checklist');
+
     // Subject Selection
     subjectButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -104,6 +108,28 @@ document.addEventListener('DOMContentLoaded', () => {
             const displayTitle = subjectMap[subject] || "Unknown Subject";
             if (subjectTitle) subjectTitle.textContent = displayTitle;
 
+            // Handle "All Subjects" Filtering UI
+            if (subject === 'all') {
+                if (subjectFilterContainer) {
+                    subjectFilterContainer.classList.remove('hidden');
+                    // Populate Checklist if empty
+                    if (subjectChecklist.children.length === 0) {
+                        const filterableSubjects = Object.keys(subjectMap).filter(k => k !== 'all' && k !== 'speed');
+                        filterableSubjects.forEach(key => {
+                            const label = document.createElement('label');
+                            label.className = "flex items-center gap-2 text-sm text-white/80 cursor-pointer hover:text-white";
+                            label.innerHTML = `
+                                <input type="checkbox" value="${key}" checked class="form-checkbox h-4 w-4 text-primary bg-background-dark border-white/20 rounded focus:ring-0 focus:ring-offset-0">
+                                <span>${subjectMap[key]}</span>
+                            `;
+                            subjectChecklist.appendChild(label);
+                        });
+                    }
+                }
+            } else {
+                if (subjectFilterContainer) subjectFilterContainer.classList.add('hidden');
+            }
+
             openModal(modalStart);
         });
     });
@@ -113,7 +139,21 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.addEventListener('click', () => {
             const count = questionCountSelect.value;
             const difficulty = difficultySelect.value;
-            window.location.href = `quiz.html?subject=${currentCategory}&count=${count}&difficulty=${difficulty}`;
+            let url = `quiz.html?subject=${currentCategory}&count=${count}&difficulty=${difficulty}`;
+
+            // Add exclusions if "All" is selected
+            if (currentCategory === 'all' && subjectChecklist) {
+                const checkboxes = subjectChecklist.querySelectorAll('input[type="checkbox"]');
+                const excluded = [];
+                checkboxes.forEach(cb => {
+                    if (!cb.checked) excluded.push(cb.value);
+                });
+                if (excluded.length > 0) {
+                    url += `&exclude=${excluded.join(',')}`;
+                }
+            }
+
+            window.location.href = url;
         });
     }
 

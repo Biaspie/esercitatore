@@ -126,9 +126,21 @@ document.addEventListener('DOMContentLoaded', async () => {
             const countParam = urlParams.get('count') || '20';
             const difficultyParam = urlParams.get('difficulty') || 'mixed';
             const modeParam = urlParams.get('mode');
-            const historyId = urlParams.get('id');
+            const excludeParam = urlParams.get('exclude'); // Comma separated
 
             let filteredQuestions = [];
+
+            // Category Map for filtering
+            const categoryPrefixMap = {
+                "ps": "Legislazione di Pubblica Sicurezza",
+                "costituzionale": "Diritto Costituzionale",
+                "penale": "Diritto Penale",
+                "procedura_penale": "Procedura Penale",
+                "normativa": "Normativa Disciplinare",
+                "informatica": "Informatica",
+                "amministrativo": "Diritto Amministrativo",
+                "civile": "Diritto Civile"
+            };
 
             if (modeParam === 'favorites') {
                 filteredQuestions = allQuestions.filter(q => userData.favorites.includes(q.id));
@@ -143,19 +155,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Speed: 50 questions, fast timer, NO hearts
                 filteredQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 50);
             } else if (subjectParam === 'all') {
-                filteredQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, parseInt(countParam) || 20);
+                // Handle Exclusions
+                if (excludeParam) {
+                    const excludedKeys = excludeParam.split(',');
+                    const excludedPrefixes = excludedKeys.map(k => categoryPrefixMap[k]).filter(Boolean);
+
+                    filteredQuestions = allQuestions.filter(q => {
+                        // Return true if q.category does NOT start with any excluded prefix
+                        return !excludedPrefixes.some(prefix => q.category.startsWith(prefix));
+                    });
+                } else {
+                    filteredQuestions = allQuestions;
+                }
+
+                filteredQuestions = filteredQuestions.sort(() => 0.5 - Math.random()).slice(0, parseInt(countParam) || 20);
             } else {
                 // Specific Subject
-                const categoryPrefixMap = {
-                    "ps": "Legislazione di Pubblica Sicurezza",
-                    "costituzionale": "Diritto Costituzionale",
-                    "penale": "Diritto Penale",
-                    "procedura_penale": "Procedura Penale",
-                    "normativa": "Normativa Disciplinare",
-                    "informatica": "Informatica",
-                    "amministrativo": "Diritto Amministrativo",
-                    "civile": "Diritto Civile"
-                };
                 const prefix = categoryPrefixMap[subjectParam];
                 if (prefix) {
                     filteredQuestions = allQuestions.filter(q => q.category.startsWith(prefix));
