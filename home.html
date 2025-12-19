@@ -630,8 +630,26 @@
                     if (data) {
                         const lvl = data.level || 1;
                         const exp = data.exp || 0;
+
+                        // Calculate Thresholds
+                        const thresholds = UserData.getLevelThresholds();
+                        const currentThreshold = thresholds[lvl] || 999999;
+                        const prevThreshold = thresholds[lvl - 1] || 0;
+                        const levelProgress = exp - prevThreshold;
+                        const levelTotal = currentThreshold - prevThreshold;
+
+                        let pct = 0;
+                        if (levelTotal > 0) {
+                            pct = Math.min(100, Math.max(0, (levelProgress / levelTotal) * 100));
+                        }
+
                         document.getElementById('header-level').textContent = `Lvl ${lvl}`;
-                        document.getElementById('xp-display').textContent = `${exp}/?`; // Threshold logic needed
+                        // Update specific XP display (current progress / needed for next level)
+                        document.getElementById('xp-display').textContent = `${levelProgress}/${levelTotal}`;
+
+                        // Update Bar Width
+                        const xpBar = document.getElementById('xp-bar');
+                        if (xpBar) xpBar.style.width = `${pct}%`;
 
                         // Avatar
                         const avatarEl = document.getElementById('user-avatar-display');
