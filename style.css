@@ -13,7 +13,7 @@
     --success-color: #10b981;
     --error-color: #ef4444;
 
-    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-family: 'VT323', monospace;
     --radius: 16px;
     --glass-border: 1px solid rgba(255, 255, 255, 0.08);
     --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);

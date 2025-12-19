@@ -28,8 +28,9 @@
                         "retro-yellow": "#ffff00",
                     },
                     fontFamily: {
-                        "display": ["Spline Sans", "sans-serif"],
+                        "display": ['"VT323"', "monospace"],
                         "retro": ['"VT323"', "monospace"],
+                        "sans": ['"VT323"', "monospace"],
                     },
                     borderRadius: {
                         "DEFAULT": "0.125rem",
@@ -126,7 +127,7 @@
     <!-- QUIZ GAME SCREEN -->
     <div class="flex items-center justify-center min-h-screen w-full bg-[#050510] p-4">
         <div id="quiz-screen"
-            class="relative w-full max-w-md bg-background-dark flex flex-col overflow-hidden border-2 border-[#323267] shadow-[0_0_50px_rgba(0,0,0,0.5)] rounded-lg h-[800px] max-h-[90vh]">
+            class="relative w-full max-w-md md:max-w-6xl bg-background-dark flex flex-col overflow-hidden border-2 border-[#323267] shadow-[0_0_50px_rgba(0,0,0,0.5)] rounded-lg h-[800px] max-h-[90vh]">
             <!-- CRT Overlay Effects -->
             <div class="absolute inset-0 z-50 pointer-events-none bg-scanlines bg-[length:100%_4px] opacity-10"></div>
             <div
@@ -151,62 +152,68 @@
             </header>
 
             <!-- Main Content Area -->
-            <main class="flex-1 overflow-y-auto p-4 flex flex-col gap-6 relative z-10 scrollbar-hide">
-                <!-- Dashboard: Timer & Score -->
-                <div class="bg-[#18182f] p-4 rounded border border-[#323267] shadow-[0_4px_0_0_#0d0d1a] transition-all duration-300"
-                    id="hud-stats-container">
-                    <!-- Timer -->
-                    <div class="mb-4 transition-all duration-300" id="timer-container-ui">
-                        <div class="flex justify-between items-end mb-1">
-                            <label class="text-[#9292c9] text-xs font-bold tracking-widest">TIME FORCE</label>
-                            <span class="text-white text-sm font-mono font-bold animate-pulse text-red-400"
-                                id="timer-display">--s</span>
-                        </div>
-                        <div class="h-4 w-full bg-[#0a0a16] rounded-sm p-[2px] border border-[#323267]">
-                            <div id="timer-bar"
-                                class="h-full bg-gradient-to-r from-primary to-blue-400 w-[100%] rounded-sm relative overflow-hidden transition-all duration-1000 linear">
-                                <div
-                                    class="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.2)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.2)_50%,rgba(255,255,255,0.2)_75%,transparent_75%,transparent)] bg-[length:1rem_1rem] opacity-50">
+            <main class="flex-1 overflow-y-auto p-4 flex flex-col md:flex-row gap-6 relative z-10 scrollbar-hide">
+                <!-- LEFT COLUMN DESKTOP: Stats + Question -->
+                <div class="flex flex-col gap-4 md:w-1/2 md:h-full">
+                    <!-- Dashboard: Timer & Score -->
+                    <div class="bg-[#18182f] p-4 rounded border border-[#323267] shadow-[0_4px_0_0_#0d0d1a] transition-all duration-300"
+                        id="hud-stats-container">
+                        <!-- Timer -->
+                        <div class="mb-4 transition-all duration-300" id="timer-container-ui">
+                            <div class="flex justify-between items-end mb-1">
+                                <label class="text-[#9292c9] text-xs font-bold tracking-widest">TIME FORCE</label>
+                                <span class="text-white text-sm font-mono font-bold animate-pulse text-red-400"
+                                    id="timer-display">--s</span>
+                            </div>
+                            <div class="h-4 w-full bg-[#0a0a16] rounded-sm p-[2px] border border-[#323267]">
+                                <div id="timer-bar"
+                                    class="h-full bg-gradient-to-r from-primary to-blue-400 w-[100%] rounded-sm relative overflow-hidden transition-all duration-1000 linear">
+                                    <div
+                                        class="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.2)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.2)_50%,rgba(255,255,255,0.2)_75%,transparent_75%,transparent)] bg-[length:1rem_1rem] opacity-50">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Score -->
+                        <div class="flex justify-between items-center border-t border-[#323267] pt-3"
+                            id="score-container-ui">
+                            <span class="text-[#9292c9] text-xs font-bold tracking-widest">SCORE</span>
+                            <span
+                                class="text-primary text-2xl font-mono font-bold tracking-widest drop-shadow-[0_0_8px_rgba(19,19,236,0.6)]"
+                                id="score-display">00000</span>
+                        </div>
                     </div>
-                    <!-- Score -->
-                    <div class="flex justify-between items-center border-t border-[#323267] pt-3"
-                        id="score-container-ui">
-                        <span class="text-[#9292c9] text-xs font-bold tracking-widest">SCORE</span>
-                        <span
-                            class="text-primary text-2xl font-mono font-bold tracking-widest drop-shadow-[0_0_8px_rgba(19,19,236,0.6)]"
-                            id="score-display">00000</span>
+
+                    <!-- Question Card -->
+                    <div class="flex-1 flex flex-col justify-center min-h-[160px]">
+                        <div
+                            class="relative bg-primary/10 border-2 border-primary p-6 rounded-lg shadow-[0_0_15px_rgba(19,19,236,0.2)] md:h-full md:flex md:items-center md:justify-center">
+                            <!-- Corner decorations -->
+                            <div class="absolute -top-1 -left-1 w-2 h-2 bg-primary"></div>
+                            <div class="absolute -top-1 -right-1 w-2 h-2 bg-primary"></div>
+                            <div class="absolute -bottom-1 -left-1 w-2 h-2 bg-primary"></div>
+                            <div class="absolute -bottom-1 -right-1 w-2 h-2 bg-primary"></div>
+                            <h1 class="text-white text-xl md:text-3xl font-bold leading-tight text-center drop-shadow-md"
+                                id="question-text">
+                                Loading Mission...
+                            </h1>
+                        </div>
+                        <!-- Report Button -->
+                        <div class="flex justify-end mt-2">
+                            <button id="report-btn"
+                                class="text-xs text-[#9292c9] hover:text-white flex items-center gap-1 uppercase tracking-wider">
+                                <span class="material-symbols-outlined text-[14px]">flag</span> Report Bug
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Question Card -->
-                <div class="flex-1 flex flex-col justify-center min-h-[160px]">
-                    <div
-                        class="relative bg-primary/10 border-2 border-primary p-6 rounded-lg shadow-[0_0_15px_rgba(19,19,236,0.2)]">
-                        <!-- Corner decorations -->
-                        <div class="absolute -top-1 -left-1 w-2 h-2 bg-primary"></div>
-                        <div class="absolute -top-1 -right-1 w-2 h-2 bg-primary"></div>
-                        <div class="absolute -bottom-1 -left-1 w-2 h-2 bg-primary"></div>
-                        <div class="absolute -bottom-1 -right-1 w-2 h-2 bg-primary"></div>
-                        <h1 class="text-white text-xl md:text-2xl font-bold leading-tight text-center drop-shadow-md"
-                            id="question-text">
-                            Loading Mission...
-                        </h1>
+                <!-- RIGHT COLUMN DESKTOP: Answers -->
+                <div class="md:w-1/2 md:flex md:flex-col md:justify-center">
+                    <div class="flex flex-col gap-3 pb-4 md:grid md:grid-cols-2 md:gap-4 md:h-full md:content-center"
+                        id="options-container">
+                        <!-- Options injected by JS -->
                     </div>
-                    <!-- Report Button -->
-                    <div class="flex justify-end mt-2">
-                        <button id="report-btn"
-                            class="text-xs text-[#9292c9] hover:text-white flex items-center gap-1 uppercase tracking-wider">
-                            <span class="material-symbols-outlined text-[14px]">flag</span> Report Bug
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Answer Buttons -->
-                <div class="flex flex-col gap-3 pb-4" id="options-container">
-                    <!-- Options injected by JS -->
                 </div>
             </main>
 
