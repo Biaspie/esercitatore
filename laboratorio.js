@@ -142,8 +142,14 @@ int main() {
     
     return 0;
 }`,
-        inputSequence: ['42'],
-        check: (output) => output.includes("42"),
+        // inputSequence ignored in standard run, using manualCheck for validation
+        manualCheck: async (runner) => {
+            let out = "";
+            runner.outputCallback = (t) => out += t;
+            runner.inputCallback = async () => '42';
+            await runner.run(runner.lastCode);
+            return out.includes("42");
+        },
         expectedDesc: "Legge e ristampa un numero"
     },
     {
@@ -608,8 +614,8 @@ function renderLevelList() {
         const isActive = ex.id === currentLevel;
 
         btn.className = `w-full text-left p-3 rounded flex items-center justify-between border ${isActive ? 'bg-primary/20 border-primary text-white' :
-                isLocked ? 'bg-transparent border-transparent text-white/30 cursor-not-allowed' :
-                    'bg-surface-dark border-white/5 text-white/70 hover:bg-white/5'
+            isLocked ? 'bg-transparent border-transparent text-white/30 cursor-not-allowed' :
+                'bg-surface-dark border-white/5 text-white/70 hover:bg-white/5'
             }`;
 
         btn.innerHTML = `
