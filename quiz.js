@@ -431,7 +431,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             saveScoreBtn.onclick = async () => {
                 const name = playerNameInput.value || "UNK";
                 if (window.Leaderboard) {
-                    await window.Leaderboard.saveScore(name, score);
+                    const mode = isSurvivalMode ? 'survival' : (isSpeedMode ? 'speed' : 'normal');
+                    await window.Leaderboard.saveScore(name, score, mode);
                     alert("Punteggio salvato in classifica!");
                     window.location.href = 'home.html';
                 } else {
