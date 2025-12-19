@@ -219,12 +219,15 @@
 
             <!-- Footer Controls -->
             <footer class="relative z-10 bg-[#111122] border-t-2 border-[#323267] p-4">
-                <div class="flex justify-between items-center max-w-[200px] mx-auto">
+                <div class="flex justify-between items-center max-w-[250px] mx-auto gap-2">
+                    <button id="prev-btn"
+                        class="p-3 rounded bg-[#232348] text-[#9292c9] hover:text-white hover:bg-primary/20 border border-transparent hover:border-primary transition-all active:scale-95 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed">
+                        <span class="material-symbols-outlined">skip_previous</span>
+                    </button>
                     <button id="home-btn"
                         class="p-3 rounded bg-[#232348] text-[#9292c9] hover:text-white hover:bg-primary/20 border border-transparent hover:border-primary transition-all active:scale-95 flex items-center justify-center">
                         <span class="material-symbols-outlined">home</span>
                     </button>
-                    <div class="h-4 w-[2px] bg-[#323267]"></div>
                     <!-- Next Btn (Hidden unless needed) -->
                     <button id="next-btn"
                         class="p-3 rounded bg-[#232348] text-[#9292c9] hover:text-white hover:bg-primary/20 border border-transparent hover:border-primary transition-all active:scale-95 flex items-center justify-center hidden">

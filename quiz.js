@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Nav Buttons
     const homeBtn = document.getElementById('home-btn');
     const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn'); // NEW
 
     // Result Elements
     const finalScore = document.getElementById('final-score');
@@ -320,6 +321,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             optionsContainer.appendChild(btn);
         });
 
+        // Navigation Buttons Management
         // Next Btn
         if (question.userAnswer) {
             nextBtn.classList.remove('hidden');
@@ -329,6 +331,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (isSpeedMode || isSurvivalMode) {
                 startTimer();
             }
+        }
+
+        // Prev Btn
+        if (isSpeedMode || isSurvivalMode) {
+            prevBtn.classList.add('hidden'); // No going back in survival/speed
+        } else {
+            prevBtn.classList.remove('hidden');
+            prevBtn.disabled = (currentQuestionIndex === 0);
         }
     }
 
@@ -377,6 +387,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             if ((e.key === 'Enter' || e.key === 'ArrowRight') && !nextBtn.classList.contains('hidden')) {
                 nextBtn.click();
             }
+
+            // ArrowLeft for Prev
+            if (e.key === 'ArrowLeft' && !prevBtn.classList.contains('hidden') && !prevBtn.disabled) {
+                prevBtn.click();
+            }
         }
     });
 
@@ -413,6 +428,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         scoreDisplay.textContent = score.toString().padStart(5, '0');
         loadQuestion();
+    }
+
+    // Listeners
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion();
+            }
+        });
     }
 
     nextBtn.addEventListener('click', () => {
