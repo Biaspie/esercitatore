@@ -645,6 +645,33 @@ async function init() {
             alert("Errore imprevisto.");
         }
     });
+
+    // Mobile Sidebar Logic
+    const sidebar = document.getElementById('level-sidebar');
+    const overlay = document.getElementById('mobile-overlay');
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+
+    function toggleSidebar() {
+        const isClosed = sidebar.classList.contains('-translate-x-full');
+        if (isClosed) {
+            sidebar.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+        } else {
+            sidebar.classList.add('-translate-x-full');
+            setTimeout(() => overlay.classList.add('hidden'), 300); // Wait for transition
+        }
+    }
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', toggleSidebar);
+    }
+    if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', toggleSidebar);
+    }
+    if (overlay) {
+        overlay.addEventListener('click', toggleSidebar);
+    }
 }
 
 function renderLevelList() {
@@ -667,7 +694,16 @@ function renderLevelList() {
         `;
 
         if (!isLocked) {
-            btn.onclick = () => loadLevel(ex.id);
+            btn.onclick = () => {
+                loadLevel(ex.id);
+                // Close sidebar on mobile if open
+                const sidebar = document.getElementById('level-sidebar');
+                const overlay = document.getElementById('mobile-overlay');
+                if (sidebar && !sidebar.classList.contains('-translate-x-full') && window.innerWidth < 768) {
+                    sidebar.classList.add('-translate-x-full');
+                    if (overlay) overlay.classList.add('hidden');
+                }
+            };
         }
 
         list.appendChild(btn);

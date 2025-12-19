@@ -63,14 +63,19 @@
     class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-hidden h-screen flex flex-col selection:bg-success selection:text-black">
 
     <!-- Header -->
-    <header class="h-14 bg-background-dark border-b border-white/10 flex items-center justify-between px-4 shrink-0">
+    <header
+        class="h-14 bg-background-dark border-b border-white/10 flex items-center justify-between px-4 shrink-0 relative z-50">
         <div class="flex items-center gap-4">
+            <button id="mobile-menu-btn" class="md:hidden text-white/50 hover:text-white transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
             <a href="home.html" class="flex items-center text-white/50 hover:text-white transition-colors">
                 <span class="material-symbols-outlined">arrow_back</span>
             </a>
             <h1 class="text-xl font-bold text-success uppercase tracking-widest flex items-center gap-2">
                 <span class="material-symbols-outlined">terminal</span>
-                Laboratorio C
+                <span class="hidden md:inline">Laboratorio C</span>
+                <span class="md:hidden">Lab C</span>
             </h1>
         </div>
         <div class="flex items-center gap-4">
@@ -82,12 +87,19 @@
     </header>
 
     <!-- Main Workspace -->
-    <main class="flex-1 flex overflow-hidden">
+    <main class="flex-1 flex overflow-hidden relative">
+
+        <!-- Mobile Overlay -->
+        <div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-30 hidden md:hidden transition-opacity"></div>
 
         <!-- Sidebar: Level Map -->
-        <aside class="w-64 bg-surface-dark border-r border-white/10 flex flex-col shrink-0">
-            <div class="p-4 border-b border-white/10">
+        <aside id="level-sidebar"
+            class="w-64 bg-surface-dark border-r border-white/10 flex flex-col shrink-0 fixed inset-y-0 left-0 z-40 transform -translate-x-full transition-transform md:relative md:translate-x-0 md:flex">
+            <div class="p-4 border-b border-white/10 flex justify-between items-center">
                 <h2 class="text-xs font-bold uppercase text-white/50 tracking-widest mb-1">Mission Control</h2>
+                <button id="close-sidebar-btn" class="md:hidden text-white/50 hover:text-white">
+                    <span class="material-symbols-outlined font-sm">close</span>
+                </button>
             </div>
             <div class="flex-1 overflow-y-auto p-4 space-y-2" id="level-list">
                 <!-- Injected via JS -->
