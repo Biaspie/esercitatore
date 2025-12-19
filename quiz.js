@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     const homeBtn = document.getElementById('home-btn');
     const nextBtn = document.getElementById('next-btn');
     const prevBtn = document.getElementById('prev-btn'); // NEW
+    const helpBtn = document.getElementById('help-btn'); // NEW
+
+    // Explanation Modal Elements
+    const explanationModal = document.getElementById('explanation-modal');
+    const closeExplanationBtn = document.getElementById('close-explanation-btn');
+    const closeExplanationBtn2 = document.getElementById('close-explanation-btn-2');
+    const explanationCorrectAnswer = document.getElementById('explanation-correct-answer');
+    const explanationText = document.getElementById('explanation-text');
 
     // Result Elements
     const finalScore = document.getElementById('final-score');
@@ -340,6 +348,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             prevBtn.classList.remove('hidden');
             prevBtn.disabled = (currentQuestionIndex === 0);
         }
+
+        // Help/Explanation Btn Management
+        if (helpBtn) { // Check if helpBtn exists
+            if (question.userAnswer) {
+                helpBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                helpBtn.classList.add('animate-pulse'); // Hint to user
+                // Remove pulse after 2s
+                setTimeout(() => helpBtn.classList.remove('animate-pulse'), 2000);
+            } else {
+                helpBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            }
+        }
     }
 
     function startTimer() {
@@ -427,7 +447,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         scoreDisplay.textContent = score.toString().padStart(5, '0');
-        loadQuestion();
+        loadQuestion(); // Re-render to update UI (show next btn, enable help btn)
     }
 
     // Listeners
@@ -458,6 +478,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
     });
+
+    if (helpBtn) {
+        helpBtn.addEventListener('click', () => {
+            const q = currentQuestions[currentQuestionIndex];
+            // Only allowed if answered
+            if (!q.userAnswer) return;
+
+            // Populate Modal
+            explanationCorrectAnswer.textContent = q.answer;
+            explanationText.textContent = q.explanation || "Nessuna spiegazione tattica disponibile nel database per questa domanda.";
+
+            // Show Modal
+            explanationModal.classList.remove('hidden');
+        });
+    }
+
+    // Close Modal Logic
+    const closeExp = () => explanationModal.classList.add('hidden');
+    if (closeExplanationBtn) closeExplanationBtn.addEventListener('click', closeExp);
+    if (closeExplanationBtn2) closeExplanationBtn2.addEventListener('click', closeExp);
+    if (explanationModal) {
+        explanationModal.addEventListener('click', (e) => {
+            if (e.target === explanationModal) closeExp();
+        });
+    }
 
     function showResults() {
         quizScreen.classList.add('hidden');

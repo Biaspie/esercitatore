@@ -233,12 +233,57 @@
                         class="p-3 rounded bg-[#232348] text-[#9292c9] hover:text-white hover:bg-primary/20 border border-transparent hover:border-primary transition-all active:scale-95 flex items-center justify-center hidden">
                         <span class="material-symbols-outlined">skip_next</span>
                     </button>
-                    <button
+                    <button id="help-btn"
                         class="p-3 rounded bg-[#232348] text-[#9292c9] hover:text-white hover:bg-primary/20 border border-transparent hover:border-primary transition-all active:scale-95 flex items-center justify-center opacity-50 cursor-not-allowed">
                         <span class="material-symbols-outlined">help</span>
                     </button>
                 </div>
             </footer>
+            <!-- EXPLANATION MODAL -->
+            <div id="explanation-modal"
+                class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 hidden">
+                <div
+                    class="relative w-full max-w-lg bg-[#232348] border-2 border-primary shadow-[0_0_30px_rgba(0,0,0,0.8)] rounded-lg p-6 m-4 animate-in fade-in zoom-in duration-200">
+                    <!-- Close Button -->
+                    <button id="close-explanation-btn"
+                        class="absolute top-2 right-2 text-white/50 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+
+                    <!-- Header -->
+                    <div class="flex items-center gap-3 mb-4 border-b border-white/10 pb-2">
+                        <span class="material-symbols-outlined text-retro-yellow text-3xl">lightbulb</span>
+                        <h2 class="text-2xl font-bold text-white font-retro tracking-wider">DEBRIEFING</h2>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="space-y-4">
+                        <div class="bg-black/30 p-4 rounded border border-white/5">
+                            <p class="text-[#9292c9] text-xs font-bold uppercase tracking-wider mb-1">RISPOSTA CORRETTA
+                            </p>
+                            <p class="text-retro-green font-bold text-lg leading-tight" id="explanation-correct-answer">
+                                --</p>
+                        </div>
+
+                        <div>
+                            <p class="text-[#9292c9] text-xs font-bold uppercase tracking-wider mb-2">SPIEGAZIONE
+                                TATTICA</p>
+                            <p class="text-white text-base leading-relaxed" id="explanation-text">
+                                Dati non disponibili per questa missione.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="mt-6 flex justify-end">
+                        <button id="close-explanation-btn-2"
+                            class="px-6 py-2 bg-primary text-white font-retro uppercase tracking-widest rounded hover:brightness-110 active:scale-95 transition-all">
+                            RICEVUTO
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- RESULT SCREEN -->
