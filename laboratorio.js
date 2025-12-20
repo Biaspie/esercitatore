@@ -14,6 +14,10 @@ class SimpleC {
     transpile(cCode) {
         let jsCode = cCode;
 
+        // 0. Remove Comments (Crucial to prevent regex matching inside comments)
+        jsCode = jsCode.replace(/\/\*[\s\S]*?\*\//g, ''); // Block comments
+        jsCode = jsCode.replace(/\/\/.*$/gm, '');         // Line comments
+
         // 1. Remove standard includes
         jsCode = jsCode.replace(/#include\s+<.*?>/g, '');
 
