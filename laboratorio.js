@@ -56,9 +56,22 @@ class SimpleC {
         if (typeof args[0] === 'string' && args[0].includes('%')) {
             let format = args[0];
             let argIndex = 1;
-            output = format.replace(/%[dsf]/g, (match) => {
+            /* 
+               Improvement: Regex to capture format specifiers like %.2f, %05d 
+               Matches: % followed by optional digits/dots, ending in d, s, or f
+            */
+            output = format.replace(/%[\d\.]*[dsf]/g, (match) => {
                 let val = args[argIndex++];
-                return val !== undefined ? val : match;
+                // Basic formatting support
+                if (val !== undefined) {
+                    if (match.endsWith('f') && typeof val === 'number' && match.includes('.')) {
+                        // Extract precision if strictly %.Nf
+                        const precision = match.match(/\.(\d+)f/);
+                        if (precision) return val.toFixed(parseInt(precision[1]));
+                    }
+                    return val;
+                }
+                return match;
             });
             output = output.replace(/\\n/g, '<br>');
         } else {
