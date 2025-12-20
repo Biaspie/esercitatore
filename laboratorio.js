@@ -31,7 +31,10 @@ class SimpleC {
         jsCode = jsCode.replace(/scanf\s*\(\s*"%f"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = parseFloat(await this.scan());');
         jsCode = jsCode.replace(/scanf\s*\(\s*"%s"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = await this.scan();');
 
-        // 5. Types -> let
+        // 5a. Handle Arrays: int arr[] = {1, 2, 3}; -> let arr = [1, 2, 3];
+        jsCode = jsCode.replace(/\b(int|float|double|char|long)\s+(\w+)\[\]\s*=\s*\{([^}]+)\};/g, 'let $2 = [$3];');
+
+        // 5b. Types -> let
         jsCode = jsCode.replace(/\b(int|float|double|char|long)\s+/g, 'let ');
 
         // 6. Return 0 -> return
