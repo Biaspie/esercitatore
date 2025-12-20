@@ -147,11 +147,20 @@
                     <h2 class="text-white text-xl font-extrabold leading-none tracking-tight" id="question-counter">1-1
                     </h2>
                 </div>
-                <!-- Hearts / Lives -->
-                <div class="flex items-center gap-1 transition-opacity duration-300" id="lives-container">
-                    <span class="material-symbols-outlined text-red-500 text-[20px]">favorite</span>
-                    <span class="material-symbols-outlined text-red-500 text-[20px]">favorite</span>
-                    <span class="material-symbols-outlined text-red-500 text-[20px]">favorite</span>
+                <!-- Hearts / Lives & Favorite -->
+                <div class="flex items-center gap-4">
+                    <!-- Favorite Toggle (8-bit style) -->
+                    <button id="favorite-btn"
+                        class="font-retro text-3xl leading-none text-white/20 hover:text-retro-yellow hover:scale-110 active:scale-95 transition-all"
+                        title="Add to Favorites">
+                        ★
+                    </button>
+
+                    <div class="flex items-center gap-1 transition-opacity duration-300" id="lives-container">
+                        <span class="material-symbols-outlined text-red-500 text-[20px]">favorite</span>
+                        <span class="material-symbols-outlined text-red-500 text-[20px]">favorite</span>
+                        <span class="material-symbols-outlined text-red-500 text-[20px]">favorite</span>
+                    </div>
                 </div>
             </header>
 

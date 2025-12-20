@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const timerBar = document.getElementById('timer-bar');
     const timerContainerUI = document.getElementById('timer-container-ui'); // NEW
     const scoreDisplay = document.getElementById('score-display');
+    const favoriteBtn = document.getElementById('favorite-btn'); // NEW
 
     // Content Elements
     const questionText = document.getElementById('question-text');
@@ -274,6 +275,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    function updateFavoriteBtn(questionId) {
+        if (!favoriteBtn) return;
+
+        const isFav = userData.favorites.includes(questionId);
+        if (isFav) {
+            favoriteBtn.classList.remove('text-white/20');
+            favoriteBtn.classList.add('text-retro-yellow', 'drop-shadow-[0_0_5px_rgba(255,255,0,0.5)]');
+        } else {
+            favoriteBtn.classList.add('text-white/20');
+            favoriteBtn.classList.remove('text-retro-yellow', 'drop-shadow-[0_0_5px_rgba(255,255,0,0.5)]');
+        }
+    }
+
     function loadQuestion() {
         clearInterval(timerInterval);
         const question = currentQuestions[currentQuestionIndex];
@@ -301,6 +315,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Counter
         questionCounter.textContent = `${currentQuestionIndex + 1}-${currentQuestions.length}`;
+
+        // Update Favorite Status
+        if (typeof updateFavoriteBtn === 'function') updateFavoriteBtn(question.id);
 
         // Text
         questionText.textContent = question.question;
@@ -505,6 +522,28 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
     });
+
+    if (favoriteBtn) {
+        favoriteBtn.addEventListener('click', async () => {
+            const q = currentQuestions[currentQuestionIndex];
+            if (!auth.currentUser) {
+                alert("Devi essere loggato per salvare i preferiti.");
+                return;
+            }
+
+            // Optimistic UI Update
+            const wasFav = userData.favorites.includes(q.id);
+            if (wasFav) {
+                userData.favorites = userData.favorites.filter(id => id !== q.id);
+            } else {
+                userData.favorites.push(q.id);
+            }
+            updateFavoriteBtn(q.id);
+
+            // Backend Sync
+            await UserData.toggleFavorite(q.id);
+        });
+    }
 
     if (helpBtn) {
         helpBtn.addEventListener('click', () => {
