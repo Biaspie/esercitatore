@@ -18,9 +18,15 @@ class SimpleC {
         jsCode = jsCode.replace(/#include\s+<.*?>/g, '');
 
         // 2. Handle main function wrapper
-        const mainMatch = jsCode.match(/int\s+main\s*\(\s*(void)?\s*\)\s*\{([\s\S]*)\}/);
-        if (mainMatch && mainMatch[2]) {
-            jsCode = mainMatch[2];
+        // Allow for int main(), void main(), int main(void) with flexible whitespace
+        // FIX: Preserve code BEFORE main (globals) and unwrap main
+        const mainRegex = /(?:int|void)\s+main\s*\(\s*(?:void)?\s*\)\s*\{/;
+        const mainMatch = jsCode.match(mainRegex);
+        if (mainMatch) {
+            const preMain = jsCode.substring(0, mainMatch.index);
+            const body = jsCode.substring(mainMatch.index + mainMatch[0].length);
+            // Replace the last closing brace with empty string (unwrap main)
+            jsCode = preMain + "\n" + body.replace(/\}\s*$/, '');
         }
 
         // 3. printf -> await this.print
@@ -31,11 +37,13 @@ class SimpleC {
         jsCode = jsCode.replace(/scanf\s*\(\s*"%f"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = parseFloat(await this.scan());');
         jsCode = jsCode.replace(/scanf\s*\(\s*"%s"\s*,\s*&(\w+)\s*\)\s*;/g, '$1 = await this.scan();');
 
-        // 5a. Handle Arrays: int arr[] = {1, 2, 3}; -> let arr = [1, 2, 3];
-        jsCode = jsCode.replace(/\b(int|float|double|char|long)\s+(\w+)\[\]\s*=\s*\{([^}]+)\};/g, 'let $2 = [$3];');
+        // 5. Variable Declarations
+        // 5a. Arrays: int arr[] = {1,2}; -> let arr = [1,2];
+        jsCode = jsCode.replace(/\b(?:const\s+)?(?:unsigned\s+)?(int|float|double|char|long)\s+(\w+)\[\]\s*=\s*\{([^}]+)\};/g, 'let $2 = [$3];');
 
-        // 5b. Types -> let
-        jsCode = jsCode.replace(/\b(int|float|double|char|long)\s+/g, 'let ');
+        // 5b. Standard types: int x; -> let x; | float y = 1.0; -> let y = 1.0;
+        // Handles const, unsigned, and pointers (*ptr)
+        jsCode = jsCode.replace(/\b(?:const\s+)?(?:unsigned\s+)?(?:int|float|double|char|long)(?:\s*\*+)?\s+/g, 'let ');
 
         // 6. Return 0 -> return
         jsCode = jsCode.replace(/return\s+0\s*;/g, 'return;');
