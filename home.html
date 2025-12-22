@@ -432,13 +432,19 @@
                         </div>
                     </div>
 
+                    <!-- Approfondimenti Heading -->
+                    <div class="flex items-center gap-2 mt-4 mb-1">
+                        <div class="h-[1px] bg-white/10 flex-1"></div>
+                        <span
+                            class="text-[10px] text-retro-purple/80 uppercase tracking-widest font-mono">APPROFONDIMENTI</span>
+                        <div class="h-[1px] bg-white/10 flex-1"></div>
+                    </div>
+
                     <!-- Subject: Approfondimenti (Deep Dive) -->
                     <div
                         class="flex flex-row items-stretch bg-retro-panel rounded border border-retro-border hover:border-retro-purple/50 transition-colors shadow-retro overflow-hidden h-28">
-                        <div class="w-24 bg-cover bg-center shrink-0 border-r border-white/5 relative bg-[#2a1a4a]">
-                            <div class="absolute inset-0 flex items-center justify-center opacity-50">
-                                <span class="material-symbols-outlined text-retro-purple text-4xl">library_books</span>
-                            </div>
+                        <div class="w-24 bg-cover bg-center shrink-0 border-r border-white/5"
+                            style='background-image: url("assets/deep_dive_bg.png"); filter: grayscale(20%) contrast(120%);'>
                         </div>
                         <div class="flex flex-col justify-between p-3 grow">
                             <div>
@@ -450,7 +456,7 @@
                             <div class="flex items-end justify-between mt-1">
                                 <span class="text-[10px] text-white/40">Database Esterno</span>
                                 <button id="deep-dive-btn"
-                                    class="px-4 py-1.5 rounded bg-retro-purple text-white text-xs font-bold uppercase tracking-wider shadow-[0_3px_0_0_#6d28d9] active:translate-y-0.5 active:shadow-none transition-all">
+                                    class="relative z-10 px-4 py-1.5 rounded bg-retro-purple text-white text-xs font-bold uppercase tracking-wider shadow-[0_3px_0_0_#6d28d9] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer hover:brightness-110">
                                     Open
                                 </button>
                             </div>
