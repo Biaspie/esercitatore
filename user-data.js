@@ -380,6 +380,22 @@ export const UserData = {
         }
     },
 
+    async markAllReportsAsRead() {
+        const reportsCol = collection(db, "reports");
+        const q = query(reportsCol, where("status", "==", "open"));
+        try {
+            const snapshot = await getDocs(q);
+            const updatePromises = snapshot.docs.map(doc =>
+                updateDoc(doc.ref, { status: "read" })
+            );
+            await Promise.all(updatePromises);
+            return true;
+        } catch (e) {
+            console.error("Error marking all reports as read:", e);
+            return false;
+        }
+    },
+
     // --- EXP & Level System ---
 
     async addExp(amount) {

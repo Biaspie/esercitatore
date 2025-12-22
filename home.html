@@ -732,7 +732,13 @@
                                     // Refresh count on click just to be sure
                                     await checkReports();
                                     if (currentUnread > 0) {
-                                        alert(`Hai ${currentUnread} nuove segnalazioni nell'area Admin.`);
+                                        alert(`Hai ${currentUnread} nuove segnalazioni nell'area Admin.\n\nVerranno segnate come lette.`);
+                                        await UserData.markAllReportsAsRead();
+                                        // Reset UI immediately
+                                        notifyBadge.classList.add('hidden');
+                                        notifyIcon.classList.remove('text-retro-yellow', 'animate-pulse');
+                                        notifyIcon.classList.add('text-white/50');
+                                        currentUnread = 0;
                                     } else {
                                         alert("Nessuna nuova segnalazione.");
                                     }
