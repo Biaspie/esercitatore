@@ -456,7 +456,7 @@
                             <div class="flex items-end justify-between mt-1">
                                 <span class="text-[10px] text-white/40">Database Esterno</span>
                                 <button id="deep-dive-btn"
-                                    class="relative z-10 px-4 py-1.5 rounded bg-retro-purple text-white text-xs font-bold uppercase tracking-wider shadow-[0_3px_0_0_#6d28d9] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer hover:brightness-110">
+                                    class="subject-btn relative z-10 px-4 py-1.5 rounded bg-retro-purple text-white text-xs font-bold uppercase tracking-wider shadow-[0_3px_0_0_#6d28d9] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer hover:brightness-110">
                                     Open
                                 </button>
                             </div>
@@ -645,177 +645,188 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+    </div>
 
-            <!-- DEEP DIVE MODAL -->
-            <div id="deep-dive-modal"
-                class="fixed inset-0 z-50 flex items-center justify-center px-4 hidden modal-overlay opacity-0 transition-opacity duration-300">
-                <div
-                    class="bg-surface-dark border-2 border-retro-purple w-full max-w-sm rounded-lg shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col max-h-[85vh]">
-                    <!-- Header -->
-                    <div
-                        class="bg-retro-purple/20 border-b border-retro-purple/30 p-4 flex justify-between items-center shrink-0">
-                        <h3 class="text-retro-purple font-bold uppercase tracking-widest flex items-center gap-2">
-                            <span class="material-symbols-outlined">library_books</span>
-                            Approfondimenti
-                        </h3>
-                        <button id="close-deep-dive-btn" class="text-white/50 hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">close</span>
-                        </button>
-                    </div>
+    <!-- DEEP DIVE MODAL -->
+    <div id="deep-dive-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center px-4 hidden modal-overlay opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-surface-dark border-2 border-retro-purple w-full max-w-sm rounded-lg shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col max-h-[85vh]">
+            <!-- Header -->
+            <div
+                class="bg-retro-purple/20 border-b border-retro-purple/30 p-4 flex justify-between items-center shrink-0">
+                <h3 class="text-retro-purple font-bold uppercase tracking-widest flex items-center gap-2">
+                    <span class="material-symbols-outlined">dataset</span>
+                    DATABASE ESTERNO
+                </h3>
+                <button id="close-deep-dive-btn" class="text-white/50 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
 
-                    <div class="p-4 bg-black/20 shrink-0">
-                        <p class="text-xs text-white/60 mb-2">Seleziona una materia dal database esterno:</p>
-                        <!-- Search/Filter could go here -->
-                    </div>
-
-                    <!-- Categories List -->
-                    <div id="deep-dive-list" class="overflow-y-auto grow p-4 scrollbar-hide space-y-2">
-                        <!-- Injected by JS -->
-                        <div class="flex items-center justify-center py-8">
-                            <span class="material-symbols-outlined animate-spin text-retro-purple text-3xl">sync</span>
-                        </div>
+            <div class="p-4 bg-black/40 shrink-0 border-b border-white/5">
+                <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-retro-purple text-2xl mt-1">info</span>
+                    <div>
+                        <p class="text-sm text-white font-bold mb-1">Simulazione Isolata</p>
+                        <p class="text-xs text-white/60 leading-relaxed">
+                            Questi quiz utilizzano domande dal database secondario.
+                            <span class="text-retro-purple">Nessun XP</span> verrà assegnato e i risultati non
+                            influiranno sulla classifica.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Logic -->
-            <script type="module" src="leaderboard.js"></script>
-            <script type="module" src="leaderboard.js"></script>
-            <script type="module" src="theme.js"></script>
-            <script src="home.js?v=3"></script>
-            <script type="module">
-                import { UserData } from './user-data.js';
-                import { auth } from './firebase-config.js';
-                import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-                import { Theme } from './theme.js';
+            <!-- Categories List -->
+            <div id="deep-dive-list" class="overflow-y-auto grow p-4 scrollbar-hide space-y-2">
+                <!-- Injected by JS -->
+                <div class="flex items-center justify-center py-8">
+                    <span class="material-symbols-outlined animate-spin text-retro-purple text-3xl">sync</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                document.addEventListener('DOMContentLoaded', () => {
-                    // Handle Modal Transitions matches
-                    const startScreen = document.getElementById('start-screen');
-                    const modalObserver = new MutationObserver((mutations) => {
-                        mutations.forEach((mutation) => {
-                            if (mutation.target.classList.contains('active')) {
-                                mutation.target.classList.remove('hidden');
-                                setTimeout(() => {
-                                    mutation.target.classList.remove('opacity-0');
-                                    mutation.target.querySelector('div').classList.remove('scale-95');
-                                    mutation.target.querySelector('div').classList.add('scale-100');
-                                }, 10);
-                            } else {
-                                if (!mutation.target.classList.contains('hidden')) {
-                                    mutation.target.classList.add('opacity-0');
-                                    mutation.target.querySelector('div').classList.remove('scale-100');
-                                    mutation.target.querySelector('div').classList.add('scale-95');
-                                    setTimeout(() => {
-                                        mutation.target.classList.add('hidden');
-                                    }, 300);
-                                }
-                            }
-                        });
-                    });
-                    // We'll manually handle classes in home.js, but this helper can smooth animations if we toggle specific classes
+    <!-- Logic -->
+    <script type="module" src="leaderboard.js"></script>
+    <script type="module" src="leaderboard.js"></script>
+    <script type="module" src="theme.js"></script>
+    <script src="home.js?v=3"></script>
+    <script type="module">
+        import { UserData } from './user-data.js';
+        import { auth } from './firebase-config.js';
+        import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { Theme } from './theme.js';
 
-                    // ... (Rest of logic will be handled by updated home.js) ...
-                    const user = localStorage.getItem('quizUser');
-                    if (!user) {
-                        window.location.href = 'index.html';
-                        return;
+        document.addEventListener('DOMContentLoaded', () => {
+            // Handle Modal Transitions matches
+            const startScreen = document.getElementById('start-screen');
+            const modalObserver = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.target.classList.contains('active')) {
+                        mutation.target.classList.remove('hidden');
+                        setTimeout(() => {
+                            mutation.target.classList.remove('opacity-0');
+                            mutation.target.querySelector('div').classList.remove('scale-95');
+                            mutation.target.querySelector('div').classList.add('scale-100');
+                        }, 10);
+                    } else {
+                        if (!mutation.target.classList.contains('hidden')) {
+                            mutation.target.classList.add('opacity-0');
+                            mutation.target.querySelector('div').classList.remove('scale-100');
+                            mutation.target.querySelector('div').classList.add('scale-95');
+                            setTimeout(() => {
+                                mutation.target.classList.add('hidden');
+                            }, 300);
+                        }
                     }
+                });
+            });
+            // We'll manually handle classes in home.js, but this helper can smooth animations if we toggle specific classes
 
-                    document.getElementById('header-username').textContent = user;
+            // ... (Rest of logic will be handled by updated home.js) ...
+            const user = localStorage.getItem('quizUser');
+            if (!user) {
+                window.location.href = 'index.html';
+                return;
+            }
 
-                    onAuthStateChanged(auth, async (firebaseUser) => {
-                        if (firebaseUser) {
-                            const data = await UserData.getUserData();
-                            if (data) {
-                                if (data.theme) {
-                                    Theme.setTheme(data.theme);
-                                }
-                                const lvl = data.level || 1;
-                                const exp = data.exp || 0;
+            document.getElementById('header-username').textContent = user;
 
-                                // Calculate Thresholds
-                                const thresholds = UserData.getLevelThresholds();
-                                const currentThreshold = thresholds[lvl] || 999999;
-                                const prevThreshold = thresholds[lvl - 1] || 0;
-                                const levelProgress = exp - prevThreshold;
-                                const levelTotal = currentThreshold - prevThreshold;
+            onAuthStateChanged(auth, async (firebaseUser) => {
+                if (firebaseUser) {
+                    const data = await UserData.getUserData();
+                    if (data) {
+                        if (data.theme) {
+                            Theme.setTheme(data.theme);
+                        }
+                        const lvl = data.level || 1;
+                        const exp = data.exp || 0;
 
-                                let pct = 0;
-                                if (levelTotal > 0) {
-                                    pct = Math.min(100, Math.max(0, (levelProgress / levelTotal) * 100));
-                                }
+                        // Calculate Thresholds
+                        const thresholds = UserData.getLevelThresholds();
+                        const currentThreshold = thresholds[lvl] || 999999;
+                        const prevThreshold = thresholds[lvl - 1] || 0;
+                        const levelProgress = exp - prevThreshold;
+                        const levelTotal = currentThreshold - prevThreshold;
 
-                                document.getElementById('header-level').textContent = `Lvl ${lvl}`;
-                                // Update specific XP display (current progress / needed for next level)
-                                document.getElementById('xp-display').textContent = `${levelProgress}/${levelTotal}`;
+                        let pct = 0;
+                        if (levelTotal > 0) {
+                            pct = Math.min(100, Math.max(0, (levelProgress / levelTotal) * 100));
+                        }
 
-                                // Update Bar Width
-                                const xpBar = document.getElementById('xp-bar');
-                                if (xpBar) xpBar.style.width = `${pct}%`;
+                        document.getElementById('header-level').textContent = `Lvl ${lvl}`;
+                        // Update specific XP display (current progress / needed for next level)
+                        document.getElementById('xp-display').textContent = `${levelProgress}/${levelTotal}`;
 
-                                // Avatar
-                                const avatarEl = document.getElementById('user-avatar-display');
-                                const avatarLvl = Math.min(lvl, 10);
-                                if (avatarEl) avatarEl.style.backgroundImage = `url("assets/avatars/${avatarLvl}.png")`;
+                        // Update Bar Width
+                        const xpBar = document.getElementById('xp-bar');
+                        if (xpBar) xpBar.style.width = `${pct}%`;
 
-                                // Admin
-                                if (data.role === 'admin' || user === 'admin') {
-                                    document.getElementById('admin-btn').classList.remove('hidden');
+                        // Avatar
+                        const avatarEl = document.getElementById('user-avatar-display');
+                        const avatarLvl = Math.min(lvl, 10);
+                        if (avatarEl) avatarEl.style.backgroundImage = `url("assets/avatars/${avatarLvl}.png")`;
 
-                                    // Notification System
-                                    const notifyBtn = document.getElementById('admin-notify-btn');
-                                    const notifyBadge = document.getElementById('notify-badge');
-                                    const notifyIcon = document.getElementById('notify-icon');
+                        // Admin
+                        if (data.role === 'admin' || user === 'admin') {
+                            document.getElementById('admin-btn').classList.remove('hidden');
 
-                                    if (notifyBtn) {
-                                        notifyBtn.classList.remove('hidden');
+                            // Notification System
+                            const notifyBtn = document.getElementById('admin-notify-btn');
+                            const notifyBadge = document.getElementById('notify-badge');
+                            const notifyIcon = document.getElementById('notify-icon');
 
-                                        // Initial check
-                                        let currentUnread = 0;
-                                        const checkReports = async () => {
-                                            try {
-                                                currentUnread = await UserData.getUnreadReportsCount();
-                                                if (currentUnread > 0) {
-                                                    notifyBadge.classList.remove('hidden');
-                                                    notifyIcon.classList.add('text-retro-yellow', 'animate-pulse');
-                                                    notifyIcon.classList.remove('text-white/50');
-                                                } else {
-                                                    notifyBadge.classList.add('hidden');
-                                                    notifyIcon.classList.remove('text-retro-yellow', 'animate-pulse');
-                                                    notifyIcon.classList.add('text-white/50');
-                                                }
-                                            } catch (e) { console.error("Notify check failed", e); }
-                                        };
-                                        checkReports();
+                            if (notifyBtn) {
+                                notifyBtn.classList.remove('hidden');
 
-                                        notifyBtn.addEventListener('click', async () => {
-                                            // Refresh count on click just to be sure
-                                            await checkReports();
-                                            if (currentUnread > 0) {
-                                                alert(`Hai ${currentUnread} nuove segnalazioni nell'area Admin.\n\nVerranno segnate come lette.`);
-                                                await UserData.markAllReportsAsRead();
-                                                // Reset UI immediately
-                                                notifyBadge.classList.add('hidden');
-                                                notifyIcon.classList.remove('text-retro-yellow', 'animate-pulse');
-                                                notifyIcon.classList.add('text-white/50');
-                                                currentUnread = 0;
-                                            } else {
-                                                alert("Nessuna nuova segnalazione.");
-                                            }
-                                        });
+                                // Initial check
+                                let currentUnread = 0;
+                                const checkReports = async () => {
+                                    try {
+                                        currentUnread = await UserData.getUnreadReportsCount();
+                                        if (currentUnread > 0) {
+                                            notifyBadge.classList.remove('hidden');
+                                            notifyIcon.classList.add('text-retro-yellow', 'animate-pulse');
+                                            notifyIcon.classList.remove('text-white/50');
+                                        } else {
+                                            notifyBadge.classList.add('hidden');
+                                            notifyIcon.classList.remove('text-retro-yellow', 'animate-pulse');
+                                            notifyIcon.classList.add('text-white/50');
+                                        }
+                                    } catch (e) { console.error("Notify check failed", e); }
+                                };
+                                checkReports();
+
+                                notifyBtn.addEventListener('click', async () => {
+                                    // Refresh count on click just to be sure
+                                    await checkReports();
+                                    if (currentUnread > 0) {
+                                        alert(`Hai ${currentUnread} nuove segnalazioni nell'area Admin.\n\nVerranno segnate come lette.`);
+                                        await UserData.markAllReportsAsRead();
+                                        // Reset UI immediately
+                                        notifyBadge.classList.add('hidden');
+                                        notifyIcon.classList.remove('text-retro-yellow', 'animate-pulse');
+                                        notifyIcon.classList.add('text-white/50');
+                                        currentUnread = 0;
+                                    } else {
+                                        alert("Nessuna nuova segnalazione.");
                                     }
-                                }
+                                });
                             }
                         }
-                    });
+                    }
+                }
+            });
 
-                    document.getElementById('logout-btn').addEventListener('click', () => {
-                        localStorage.removeItem('quizUser');
-                        window.location.href = 'index.html';
-                    });
-                });
-            </script>
+            document.getElementById('logout-btn').addEventListener('click', () => {
+                localStorage.removeItem('quizUser');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
 </body>
 
 </html>

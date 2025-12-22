@@ -91,6 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Subject Selection
     subjectButtons.forEach(btn => {
+        // Skip Deep Dive button (has its own handler)
+        if (btn.id === 'deep-dive-btn') return;
+
         btn.addEventListener('click', (e) => {
             // Prevent bubbling if inside another clickable
             e.stopPropagation();
@@ -297,14 +300,28 @@ document.addEventListener('DOMContentLoaded', () => {
         subjects.forEach(subject => {
             const count = module.getQuestionsBySubject(questions, subject).length;
             const btn = document.createElement('button');
-            btn.className = 'deep-dive-category-btn group';
+            // Enhanced visual style: Card layout
+            btn.className = 'w-full text-left bg-[#1a1a2e] hover:bg-[#252540] border border-white/10 hover:border-retro-purple rounded-xl p-4 transition-all group flex items-center justify-between shadow-sm hover:shadow-[0_0_15px_rgba(168,85,247,0.2)] mb-2';
+
             btn.innerHTML = `
-                <span>${subject}</span>
-                <span class="count-badge">${count} Q</span>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-retro-purple/10 border border-retro-purple/20 flex items-center justify-center text-retro-purple group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">folder_open</span>
+                    </div>
+                    <div>
+                         <h4 class="font-bold text-white text-sm uppercase tracking-wide group-hover:text-retro-purple transition-colors line-clamp-1">${subject}</h4>
+                         <div class="flex items-center gap-2 mt-1">
+                            <span class="text-[10px] px-2 py-0.5 rounded bg-white/5 text-white/50 border border-white/5">${count} Quesiti</span>
+                         </div>
+                    </div>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-retro-purple group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[18px] text-white/30 group-hover:text-white">play_arrow</span>
+                </div>
             `;
+
             btn.addEventListener('click', () => {
                 // Launch Quiz in Deep Dive Mode
-                // We pass the subject name. The Quiz will use DeepDive module to fetch.
                 window.location.href = `quiz.html?mode=deep-dive&subject=${encodeURIComponent(subject)}`;
             });
             deepDiveList.appendChild(btn);
