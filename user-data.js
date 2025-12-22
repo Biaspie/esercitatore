@@ -357,6 +357,29 @@ export const UserData = {
         }
     },
 
+    async getUnreadReportsCount() {
+        const reportsCol = collection(db, "reports");
+        const q = query(reportsCol, where("status", "==", "open"));
+        try {
+            const snapshot = await getDocs(q);
+            return snapshot.size;
+        } catch (e) {
+            console.error("Error getting unread reports count:", e);
+            return 0;
+        }
+    },
+
+    async markReportAsRead(reportId) {
+        const docRef = doc(db, "reports", reportId);
+        try {
+            await updateDoc(docRef, { status: "read" });
+            return true;
+        } catch (e) {
+            console.error("Error marking report as read:", e);
+            return false;
+        }
+    },
+
     // --- EXP & Level System ---
 
     async addExp(amount) {

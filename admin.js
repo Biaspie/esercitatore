@@ -320,6 +320,7 @@ function renderReports(reports) {
             <div>
                 <div style="color: #f59e0b; font-weight: 600; margin-bottom: 0.5rem;">
                     ${report.type === 'lab' ? 'Lab Exercise' : `Domanda ID: ${report.questionId}`}
+                    ${report.status === 'read' ? '<span class="text-xs text-white/50 ml-2">(Letto)</span>' : '<span class="text-xs text-retro-red ml-2 animate-pulse">(Nuovo)</span>'}
                 </div>
                 <div style="margin-bottom: 0.5rem; font-size: 0.9rem;">"${report.question}"</div>
                 <div style="color: var(--text-muted); font-size: 0.9rem;">
@@ -333,12 +334,30 @@ function renderReports(reports) {
                     Da: ${report.username || 'Anonimo'} • ${date}
                 </div>
             </div>
-            <button class="btn-resolve" data-rid="${report.id}" style="background: #10b981; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; white-space: nowrap; margin-left: 1rem;">
-                Risolvi
-            </button>
+            <div class="flex flex-col gap-2 ml-4">
+                ${report.status !== 'read' ? `
+                <button class="btn-read" data-rid="${report.id}" style="background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; white-space: nowrap;">
+                    Segna Letto
+                </button>` : ''}
+                <button class="btn-resolve" data-rid="${report.id}" style="background: #ef4444; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; white-space: nowrap;">
+                    Elimina
+                </button>
+            </div>
         `;
 
         container.appendChild(item);
+    });
+
+    // Mark Read
+    document.querySelectorAll('.btn-read').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const rid = e.target.dataset.rid;
+            await UserData.markReportAsRead(rid);
+            // Refresh logic - ideally reload just reports, for now full reload to update charts etc or helper
+            // Simple DOM update:
+            e.target.closest('div').parentElement.querySelector('div > div:first-child').innerHTML += ' <span class="text-xs text-white/50 ml-2">(Letto)</span>';
+            e.target.remove();
+        });
     });
 
     // Resolve (Delete) Report

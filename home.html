@@ -110,10 +110,25 @@
                             01</span>
                     </div>
                 </div>
-                <button id="logout-btn"
-                    class="flex items-center justify-center size-10 rounded border-2 border-transparent hover:bg-white/5 active:scale-95 transition-all text-white/70 hover:text-danger">
-                    <span class="material-symbols-outlined">logout</span>
                 </button>
+                <div class="flex items-center gap-2">
+                    <!-- Notification Bell (Admin) -->
+                    <button id="admin-notify-btn"
+                        class="relative hidden p-2 rounded-full hover:bg-white/5 transition-colors group">
+                        <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors"
+                            id="notify-icon">notifications</span>
+                        <!-- Badge -->
+                        <span id="notify-badge" class="absolute top-1 right-1 flex h-3 w-3 hidden">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-retro-red opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-retro-red"></span>
+                        </span>
+                    </button>
+                    <button id="logout-btn"
+                        class="flex items-center justify-center size-10 rounded border-2 border-transparent hover:bg-white/5 active:scale-95 transition-all text-white/70 hover:text-danger">
+                        <span class="material-symbols-outlined">logout</span>
+                    </button>
+                </div>
             </div>
             <!-- XP Bar -->
             <div class="px-4 pb-3">
@@ -682,6 +697,30 @@
                         // Admin
                         if (data.role === 'admin' || user === 'admin') {
                             document.getElementById('admin-btn').classList.remove('hidden');
+
+                            // Notification System
+                            const notifyBtn = document.getElementById('admin-notify-btn');
+                            const notifyBadge = document.getElementById('notify-badge');
+                            const notifyIcon = document.getElementById('notify-icon');
+
+                            if (notifyBtn) {
+                                notifyBtn.classList.remove('hidden');
+                                notifyBtn.addEventListener('click', () => window.location.href = 'admin.html');
+
+                                // Check for unread reports
+                                try {
+                                    const unreadCount = await UserData.getUnreadReportsCount();
+                                    if (unreadCount > 0) {
+                                        notifyBadge.classList.remove('hidden');
+                                        notifyIcon.classList.add('text-retro-yellow', 'animate-pulse');
+                                        notifyIcon.classList.remove('text-white/50');
+                                    } else {
+                                        notifyBadge.classList.add('hidden');
+                                        notifyIcon.classList.remove('text-retro-yellow', 'animate-pulse');
+                                        notifyIcon.classList.add('text-white/50');
+                                    }
+                                } catch (e) { console.error("Notify check failed", e); }
+                            }
                         }
                     }
                 }
