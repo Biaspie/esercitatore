@@ -305,8 +305,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             btn.innerHTML = `
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-retro-purple/10 border border-retro-purple/20 flex items-center justify-center text-retro-purple group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined">folder_open</span>
+                    <div class="w-10 h-10 rounded-lg bg-retro-purple/10 border border-retro-purple/20 flex items-center justify-center text-retro-purple group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-xl">folder_open</span>
                     </div>
                     <div>
                          <h4 class="font-bold text-white text-sm uppercase tracking-wide group-hover:text-retro-purple transition-colors line-clamp-1">${subject}</h4>
