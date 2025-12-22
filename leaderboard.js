@@ -44,7 +44,8 @@ window.Leaderboard = {
                 const querySnapshot = await getDocs(q);
                 querySnapshot.forEach((doc) => {
                     const data = doc.data();
-                    if (data.username) {
+                    // Filter out admin
+                    if (data.username && data.username.toLowerCase() !== 'admin' && data.role !== 'admin') {
                         scores.push({
                             name: data.username,
                             score: data.exp || 0,
@@ -80,7 +81,11 @@ window.Leaderboard = {
 
                 const allScores = [];
                 querySnapshot.forEach((doc) => {
-                    allScores.push(doc.data());
+                    const data = doc.data();
+                    // Filter out admin
+                    if (data.username && data.username.toLowerCase() !== 'admin') {
+                        allScores.push(data);
+                    }
                 });
 
                 // Sort and Limit

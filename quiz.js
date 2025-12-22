@@ -524,24 +524,47 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     if (favoriteBtn) {
-        favoriteBtn.addEventListener('click', async () => {
+        let isToggling = false; // Lock flag
+
+        favoriteBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            if (isToggling) return; // Debounce
+            isToggling = true;
+
             const q = currentQuestions[currentQuestionIndex];
             if (!auth.currentUser) {
                 alert("Devi essere loggato per salvare i preferiti.");
+                isToggling = false;
                 return;
             }
 
-            // Optimistic UI Update
-            const wasFav = userData.favorites.includes(q.id);
-            if (wasFav) {
-                userData.favorites = userData.favorites.filter(id => id !== q.id);
-            } else {
-                userData.favorites.push(q.id);
-            }
-            updateFavoriteBtn(q.id);
+            try {
+                // Optimistic UI Update
+                const wasFav = userData.favorites.includes(q.id);
+                if (wasFav) {
+                    userData.favorites = userData.favorites.filter(id => id !== q.id);
+                } else {
+                    userData.favorites.push(q.id);
+                }
+                updateFavoriteBtn(q.id);
 
-            // Backend Sync
-            await UserData.toggleFavorite(q.id);
+                // Backend Sync
+                await UserData.toggleFavorite(q.id);
+            } catch (err) {
+                console.error("Favorite toggle error:", err);
+                // Revert UI on error (optional but good practice)
+                const isNowFav = userData.favorites.includes(q.id);
+                if (isNowFav) userData.favorites = userData.favorites.filter(id => id !== q.id);
+                else userData.favorites.push(q.id);
+                updateFavoriteBtn(q.id);
+            } finally {
+                // Unlock after a short delay to prevent rage-clicking
+                setTimeout(() => {
+                    isToggling = false;
+                }, 300);
+            }
         });
     }
 
@@ -680,19 +703,42 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Save Score Logic
         if (isSpeedMode || isSurvivalMode) {
-            saveScoreContainer.classList.remove('hidden');
-            saveScoreBtn.onclick = async () => {
-                const name = playerNameInput.value || "UNK";
+            const mode = isSurvivalMode ? 'survival' : (isSpeedMode ? 'speed' : 'normal');
+
+            if (auth.currentUser) {
+                // Auto Importante: Auto-save for logged users
+                const feedbackEl = document.createElement('p');
+                feedbackEl.className = "text-lg font-retro text-retro-yellow text-center mt-2 animate-pulse";
+                feedbackEl.textContent = "UPLOADING TO HQ...";
+                saveScoreContainer.parentNode.insertBefore(feedbackEl, saveScoreContainer);
+
+                // Get name
+                const username = userData.username || "Operative";
+
                 if (window.Leaderboard) {
-                    const mode = isSurvivalMode ? 'survival' : (isSpeedMode ? 'speed' : 'normal');
-                    await window.Leaderboard.saveScore(name, score, mode);
-                    alert("Punteggio salvato in classifica!");
-                    window.location.href = 'home.html';
-                } else {
-                    alert("Score Saved Locally: " + name);
-                    window.location.href = 'home.html';
+                    window.Leaderboard.saveScore(username, score, mode).then(() => {
+                        feedbackEl.textContent = "SCORE RECORDED!";
+                        feedbackEl.classList.remove("text-retro-yellow", "animate-pulse");
+                        feedbackEl.classList.add("text-retro-green");
+                    }).catch(err => {
+                        console.error("Auto-save failed", err);
+                        feedbackEl.textContent = "UPLOAD FAILED";
+                        feedbackEl.classList.remove("text-retro-yellow");
+                        feedbackEl.classList.add("text-retro-red");
+                    });
                 }
-            };
+            } else {
+                // Guest: Manual Input
+                saveScoreContainer.classList.remove('hidden');
+                saveScoreBtn.onclick = async () => {
+                    const name = playerNameInput.value || "UNK";
+                    if (window.Leaderboard) {
+                        await window.Leaderboard.saveScore(name, score, mode);
+                        alert("Punteggio salvato in classifica!");
+                        window.location.href = 'home.html';
+                    }
+                };
+            }
         }
     }
 
