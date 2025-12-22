@@ -55,14 +55,31 @@ export const DeepDive = {
 
         return {
             id: `dd_${rawItem.ID}`,
-            category: rawItem.Materia, // Use 'Materia' as Category
+            category: this._normalizeCategory(rawItem.Materia), // Use Normalized Materia
             question: rawItem.Domanda,
             options: options,
             answer: rawItem.RispostaCorretta,
             difficulty: difficulty,
-            explanation: `Riferimento: ${rawItem.Materia}`, // Generic explanation
+            explanation: `Riferimento: ${rawItem.Materia}`, // Keep original Specific Materia in explanation
             isDeepDive: true // Flag for isolation
         };
+    },
+
+    _normalizeCategory(materia) {
+        if (!materia) return "Altro";
+        let normalized = materia.trim();
+
+        // 1. Merge "PARTE I", "PARTE II" etc. (Split by " - ")
+        if (normalized.includes(" - ")) {
+            normalized = normalized.split(" - ")[0].trim();
+        }
+
+        // 2. Merge details after colon (Split by ":")
+        if (normalized.includes(":")) {
+            normalized = normalized.split(":")[0].trim();
+        }
+
+        return normalized;
     },
 
     getSubjects(questions) {
