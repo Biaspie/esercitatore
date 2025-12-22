@@ -115,8 +115,12 @@
                     <!-- Notification Bell (Admin) -->
                     <button id="admin-notify-btn"
                         class="relative hidden p-2 rounded-full hover:bg-white/5 transition-colors group">
-                        <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors"
-                            id="notify-icon">notifications</span>
+                        <!-- 8-bit Bell SVG -->
+                        <svg id="notify-icon" class="w-6 h-6 text-white/50 group-hover:text-white transition-colors"
+                            viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges">
+                            <path
+                                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" />
+                        </svg>
                         <!-- Badge -->
                         <span id="notify-badge" class="absolute top-1 right-1 flex h-3 w-3 hidden">
                             <span
