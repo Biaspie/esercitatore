@@ -255,4 +255,59 @@ document.addEventListener('DOMContentLoaded', () => {
             leaderboardBody.appendChild(row);
         });
     }
+    // --- Deep Dive Logic ---
+    const deepDiveBtn = document.getElementById('deep-dive-btn');
+    const deepDiveModal = document.getElementById('deep-dive-modal');
+    const closeDeepDiveBtn = document.getElementById('close-deep-dive-btn');
+    const deepDiveList = document.getElementById('deep-dive-list');
+    let deepDiveData = null;
+
+    if (deepDiveBtn) {
+        deepDiveBtn.addEventListener('click', async () => {
+            openModal(deepDiveModal);
+
+            // Load Data if not loaded
+            if (!deepDiveData) {
+                const { DeepDive } = await import('./deep-dive.js');
+                deepDiveData = await DeepDive.loadQuestions();
+                const subjects = DeepDive.getSubjects(deepDiveData);
+                renderDeepDiveSubjects(subjects, deepDiveData, DeepDive);
+            }
+        });
+    }
+
+    if (closeDeepDiveBtn) {
+        closeDeepDiveBtn.addEventListener('click', () => closeModal(deepDiveModal));
+    }
+
+    // Close Deep Dive on background click
+    if (deepDiveModal) {
+        deepDiveModal.addEventListener('click', (e) => {
+            if (e.target === deepDiveModal) closeModal(deepDiveModal);
+        });
+    }
+
+    function renderDeepDiveSubjects(subjects, questions, module) {
+        deepDiveList.innerHTML = '';
+        if (subjects.length === 0) {
+            deepDiveList.innerHTML = '<p class="text-center text-white/50">Nessun approfondimento disponibile.</p>';
+            return;
+        }
+
+        subjects.forEach(subject => {
+            const count = module.getQuestionsBySubject(questions, subject).length;
+            const btn = document.createElement('button');
+            btn.className = 'deep-dive-category-btn group';
+            btn.innerHTML = `
+                <span>${subject}</span>
+                <span class="count-badge">${count} Q</span>
+            `;
+            btn.addEventListener('click', () => {
+                // Launch Quiz in Deep Dive Mode
+                // We pass the subject name. The Quiz will use DeepDive module to fetch.
+                window.location.href = `quiz.html?mode=deep-dive&subject=${encodeURIComponent(subject)}`;
+            });
+            deepDiveList.appendChild(btn);
+        });
+    }
 });

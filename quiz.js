@@ -135,19 +135,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
 
+        // State
+        const modeParam = urlParams.get('mode');
+        let isDeepDive = modeParam === 'deep-dive';
+
         // Fetch Questions
         try {
-            const response = await fetch('questions.json');
-            let allQuestions = await response.json();
+            let allQuestions = [];
+            if (isDeepDive) {
+                const { DeepDive } = await import('./deep-dive.js');
+                const deepData = await DeepDive.loadQuestions();
+                // DeepDive module already formatted them
+                allQuestions = deepData;
+            } else {
+                const response = await fetch('questions.json');
+                allQuestions = await response.json();
 
-            // Normalize questions
-            allQuestions = allQuestions.map(q => {
-                if (Array.isArray(q.options)) return q;
-                const optionsArray = Object.values(q.options);
-                const answerKey = q.answer;
-                const answerText = q.options[answerKey];
-                return { ...q, options: optionsArray, answer: answerText };
-            });
+                // Normalize questions
+                allQuestions = allQuestions.map(q => {
+                    if (Array.isArray(q.options)) return q;
+                    const optionsArray = Object.values(q.options);
+                    const answerKey = q.answer;
+                    const answerText = q.options[answerKey];
+                    return { ...q, options: optionsArray, answer: answerText };
+                });
+            }
 
             // Filter
             const countParam = urlParams.get('count') || '20';
@@ -169,7 +181,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 "civile": "Diritto Civile"
             };
 
-            if (modeParam === 'favorites') {
+            if (isDeepDive) {
+                // Filter by Subject exactly
+                filteredQuestions = allQuestions.filter(q => q.category === subjectParam);
+                // Also apply randomization
+                filteredQuestions = filteredQuestions.sort(() => 0.5 - Math.random());
+            } else if (modeParam === 'favorites') {
                 filteredQuestions = allQuestions.filter(q => userData.favorites.includes(q.id));
             } else if (modeParam === 'errors') {
                 filteredQuestions = allQuestions.filter(q => userData.errors.includes(q.id));
@@ -188,7 +205,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const excludedPrefixes = excludedKeys.map(k => categoryPrefixMap[k]).filter(Boolean);
 
                     filteredQuestions = allQuestions.filter(q => {
-                        // Return true if q.category does NOT start with any excluded prefix
+                        // Return true if categoryPrefixMap[k] is defined
                         return !excludedPrefixes.some(prefix => q.category.startsWith(prefix));
                     });
                 } else {
@@ -202,6 +219,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (prefix) {
                     filteredQuestions = allQuestions.filter(q => q.category.startsWith(prefix));
                 } else {
+                    // Fallback for non-mapped, though normal quiz uses mapped params
+                    // In deep dive this branch is skipped
                     filteredQuestions = allQuestions;
                 }
 
@@ -487,7 +506,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return; // Stop processing
             }
 
-            if (auth.currentUser) UserData.logError(q.id);
+            if (auth.currentUser && !isDeepDive) UserData.logError(q.id);
         }
 
         scoreDisplay.textContent = score.toString().padStart(5, '0');
@@ -529,6 +548,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         favoriteBtn.addEventListener('click', async (e) => {
             e.preventDefault();
             e.stopImmediatePropagation();
+
+            if (isDeepDive) {
+                alert("Salvataggio non disponibile in questa modalità.");
+                return;
+            }
 
             if (isToggling) return; // Debounce
             isToggling = true;
@@ -682,14 +706,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // XP Calculation
         // Base: Diff 1 = 5XP, Diff 2 = 10XP, Diff 3 = 15XP
-        const xp = currentQuestions.reduce((acc, q) => {
-            if (!q.isCorrect) return acc;
-            const diff = q.difficulty || 1;
-            return acc + (diff * 5); // 5, 10, 15
-        }, 0);
+        let xp = 0;
+        if (!isDeepDive) {
+            xp = currentQuestions.reduce((acc, q) => {
+                if (!q.isCorrect) return acc;
+                const diff = q.difficulty || 1;
+                return acc + (diff * 5); // 5, 10, 15
+            }, 0);
+            if (auth.currentUser) UserData.addExp(xp);
+        }
 
-        xpEarnedDisplay.textContent = `+${xp}`;
-        if (auth.currentUser) UserData.addExp(xp);
+        xpEarnedDisplay.textContent = isDeepDive ? "NO XP" : `+${xp}`;
 
         // Stars
         starsContainer.innerHTML = '';
@@ -702,7 +729,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Save Score Logic
-        if (isSpeedMode || isSurvivalMode) {
+        if ((isSpeedMode || isSurvivalMode) && !isDeepDive) {
             const mode = isSurvivalMode ? 'survival' : (isSpeedMode ? 'speed' : 'normal');
 
             if (auth.currentUser) {

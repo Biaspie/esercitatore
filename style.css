@@ -799,6 +799,66 @@ h2 {
     margin-left: 10px;
 }
 
+/* Deep Dive / Approfondimenti Styles */
+.text-retro-purple {
+    color: #a855f7;
+    /* Purple-500 equivalent */
+}
+
+.border-retro-purple {
+    border-color: #a855f7;
+}
+
+.bg-retro-purple {
+    background-color: #a855f7;
+}
+
+.hover\:border-retro-purple\/50:hover {
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.bg-retro-purple\/20 {
+    background-color: rgba(168, 85, 247, 0.2);
+}
+
+.border-retro-purple\/30 {
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+/* Category Button in Deep Dive Modal */
+.deep-dive-category-btn {
+    width: 100%;
+    text-align: left;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deep-dive-category-btn:hover {
+    background: rgba(168, 85, 247, 0.2);
+    border-color: #a855f7;
+    transform: translateX(4px);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+}
+
+.deep-dive-category-btn .count-badge {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .report-btn:hover {
     background: #ef4444;
     color: white;
