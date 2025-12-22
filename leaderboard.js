@@ -45,7 +45,7 @@ window.Leaderboard = {
                 querySnapshot.forEach((doc) => {
                     const data = doc.data();
                     // Filter out admin
-                    if (data.username && data.username.toLowerCase() !== 'admin' && data.role !== 'admin') {
+                    if (data.username && data.username.toLowerCase() !== 'admin') {
                         scores.push({
                             name: data.username,
                             score: data.exp || 0,
