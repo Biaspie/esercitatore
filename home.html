@@ -457,7 +457,7 @@
                                 <span class="text-[10px] text-white/40">Database Esterno</span>
                                 <button id="deep-dive-btn"
                                     class="subject-btn relative z-10 px-4 py-1.5 rounded bg-retro-purple text-white text-xs font-bold uppercase tracking-wider shadow-[0_3px_0_0_#6d28d9] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer hover:brightness-110">
-                                    Open
+                                    START
                                 </button>
                             </div>
                         </div>
@@ -684,6 +684,56 @@
                 <!-- Injected by JS -->
                 <div class="flex items-center justify-center py-8">
                     <span class="material-symbols-outlined animate-spin text-retro-purple text-3xl">sync</span>
+                </div>
+            </div>
+
+            <!-- Settings View (Hidden by default) -->
+            <div id="deep-dive-settings" class="hidden flex flex-col h-full overflow-hidden">
+                <div class="p-4 border-b border-white/5 bg-black/20 flex items-center gap-2">
+                    <button id="deep-dive-back-btn"
+                        class="p-1 rounded hover:bg-white/10 text-white/50 hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <h4 id="deep-dive-selected-subject" class="font-bold text-white uppercase tracking-wide truncate">
+                        Materia</h4>
+                </div>
+
+                <div class="p-4 space-y-4 overflow-y-auto grow scrollbar-hide">
+                    <!-- Question Count -->
+                    <div class="space-y-1">
+                        <label class="text-xs text-retro-purple font-bold uppercase tracking-wider">Quantità
+                            Domande</label>
+                        <select id="deep-dive-count-select"
+                            class="w-full bg-[#1a1a2e] border border-white/10 rounded px-3 py-2 text-white text-sm focus:border-retro-purple focus:ring-0">
+                            <option value="10" selected>10 Domande</option>
+                            <option value="20">20 Domande</option>
+                            <option value="50">50 Domande</option>
+                            <option value="all">Tutte le domande</option>
+                        </select>
+                    </div>
+
+                    <!-- Manual Selection Toggle -->
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <label class="text-xs text-retro-purple font-bold uppercase tracking-wider">Selezione
+                                Manuale</label>
+                            <button id="deep-dive-manual-toggle"
+                                class="text-xs bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-white/50 hover:text-white transition-colors">
+                                MOSTRA LISTA
+                            </button>
+                        </div>
+                        <div id="deep-dive-question-list"
+                            class="hidden space-y-2 max-h-60 overflow-y-auto bg-black/20 rounded border border-white/5 p-2">
+                            <!-- Checkboxes injected here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 border-t border-white/5 bg-black/20">
+                    <button id="deep-dive-start-confirm-btn"
+                        class="w-full py-3 bg-retro-purple hover:bg-[#9333ea] text-white font-bold uppercase tracking-wider rounded shadow-retro-purple transition-all active:translate-y-0.5">
+                        AVVIA QUIZ
+                    </button>
                 </div>
             </div>
         </div>

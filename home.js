@@ -321,10 +321,93 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             btn.addEventListener('click', () => {
-                // Launch Quiz in Deep Dive Mode
-                window.location.href = `quiz.html?mode=deep-dive&subject=${encodeURIComponent(subject)}`;
+                showDeepDiveSettings(subject, module, questions);
             });
             deepDiveList.appendChild(btn);
+        });
+    }
+
+    // --- Deep Dive Settings Logic ---
+    const ddSettingsPanel = document.getElementById('deep-dive-settings');
+    const ddBackBtn = document.getElementById('deep-dive-back-btn');
+    const ddSubjectTitle = document.getElementById('deep-dive-selected-subject');
+    const ddCountSelect = document.getElementById('deep-dive-count-select');
+    const ddManualToggle = document.getElementById('deep-dive-manual-toggle');
+    const ddQuestionList = document.getElementById('deep-dive-question-list');
+    const ddStartBtn = document.getElementById('deep-dive-start-confirm-btn');
+
+    let currentDDSubject = null;
+    let currentDDModule = null;
+    let currentDDData = null;
+
+    if (ddBackBtn) {
+        ddBackBtn.addEventListener('click', () => {
+            ddSettingsPanel.classList.add('hidden');
+            deepDiveList.classList.remove('hidden');
+        });
+    }
+
+    if (ddManualToggle) {
+        ddManualToggle.addEventListener('click', () => {
+            const isHidden = ddQuestionList.classList.contains('hidden');
+            if (isHidden) {
+                ddQuestionList.classList.remove('hidden');
+                ddManualToggle.textContent = "NASCONDI LISTA";
+                renderManualList();
+            } else {
+                ddQuestionList.classList.add('hidden');
+                ddManualToggle.textContent = "MOSTRA LISTA";
+            }
+        });
+    }
+
+    if (ddStartBtn) {
+        ddStartBtn.addEventListener('click', () => {
+            const count = ddCountSelect.value;
+            let url = `quiz.html?mode=deep-dive&subject=${encodeURIComponent(currentDDSubject)}&count=${count}`;
+
+            // Check manual selection
+            if (!ddQuestionList.classList.contains('hidden')) {
+                const checkedBoxes = ddQuestionList.querySelectorAll('input[type="checkbox"]:checked');
+                if (checkedBoxes.length > 0) {
+                    const ids = Array.from(checkedBoxes).map(cb => cb.value).join(',');
+                    url += `&ids=${encodeURIComponent(ids)}`;
+                }
+            }
+            window.location.href = url;
+        });
+    }
+
+    function showDeepDiveSettings(subject, module, questions) {
+        currentDDSubject = subject;
+        currentDDModule = module;
+        currentDDData = questions;
+
+        deepDiveList.classList.add('hidden');
+        ddSettingsPanel.classList.remove('hidden');
+        ddSubjectTitle.textContent = subject;
+
+        // Reset state
+        ddCountSelect.value = "10";
+        ddQuestionList.classList.add('hidden');
+        ddManualToggle.textContent = "MOSTRA LISTA";
+        ddQuestionList.innerHTML = ''; // Lazy clear
+    }
+
+    function renderManualList() {
+        if (!currentDDSubject || !currentDDModule || ddQuestionList.children.length > 0) return;
+
+        const questions = currentDDModule.getQuestionsBySubject(currentDDData, currentDDSubject);
+
+        questions.forEach(q => {
+            const div = document.createElement('div');
+            div.className = "flex items-start gap-2 p-2 rounded hover:bg-white/5";
+            div.innerHTML = `
+                <input type="checkbox" value="${q.id}" class="mt-1 rounded bg-black/40 border-white/20 text-retro-purple focus:ring-retro-purple">
+                <p class="text-xs text-white/80 line-clamp-2 cursor-pointer select-none flex-1">${q.question}</p>
+             `;
+            div.querySelector('p').addEventListener('click', () => div.querySelector('input').click());
+            ddQuestionList.appendChild(div);
         });
     }
 });

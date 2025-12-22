@@ -184,8 +184,30 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (isDeepDive) {
                 // Filter by Subject exactly
                 filteredQuestions = allQuestions.filter(q => q.category === subjectParam);
-                // Also apply randomization
+
+                const idsParam = urlParams.get('ids');
+                const countParam = urlParams.get('count');
+
+                // If specific IDs selected (Manual Selection)
+                if (idsParam) {
+                    const targetIds = idsParam.split(',');
+                    filteredQuestions = filteredQuestions.filter(q => targetIds.includes(q.id));
+                    // Keep order? Or random? Random is fine.
+                }
+
+                // Always Randomize order first
                 filteredQuestions = filteredQuestions.sort(() => 0.5 - Math.random());
+
+                // Apply Count Limit (if not manual IDs, or apply to manuals too? Usually Manual = All selected)
+                // If idsParam is present, user selected specific set, so we shouldn't slice unless count applies?
+                // Logic: If Manual Selection used, 'count' might be ignored in UI or set to 'manual'.
+                // If NO manual selection, 'count' is e.g. 10, 20.
+                if (!idsParam && countParam && countParam !== 'all') {
+                    const limit = parseInt(countParam, 10);
+                    if (!isNaN(limit)) {
+                        filteredQuestions = filteredQuestions.slice(0, limit);
+                    }
+                }
             } else if (modeParam === 'favorites') {
                 filteredQuestions = allQuestions.filter(q => userData.favorites.includes(q.id));
             } else if (modeParam === 'errors') {
