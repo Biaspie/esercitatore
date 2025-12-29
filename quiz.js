@@ -503,6 +503,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     function selectAnswer(selected, correct) {
         clearInterval(timerInterval);
         const q = currentQuestions[currentQuestionIndex];
+
+        // FIX: Se l'utente ha già risposto, ignoriamo altri click
+        if (q.userAnswer) return;
+
         q.userAnswer = selected || "TIMEOUT";
         q.isCorrect = (selected === correct);
 
@@ -528,10 +532,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return; // Stop processing
             }
 
-            if (auth.currentUser && !isDeepDive) UserData.logError(q.id);
+            if (auth.currentUser && !isDeepDive) {
+                try {
+                    UserData.logError(q.id);
+                } catch (e) {
+                    console.warn("Log Error failed", e);
+                }
+            }
         }
 
-        scoreDisplay.textContent = score.toString().padStart(5, '0');
+        if (scoreDisplay) scoreDisplay.textContent = score.toString().padStart(5, '0');
         loadQuestion();
     }
 
